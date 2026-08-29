@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import "./globals.css";
 import { auth } from "@/auth";
@@ -28,6 +28,17 @@ export const metadata: Metadata = {
   title: "ScoreWell — Prep smarter. Score well.",
   description:
     "Free IELTS practice tests, sample answers, and AI-powered writing, speaking, and grammar tools.",
+  // iOS ignores the manifest's icons for the home screen and reads this instead.
+  appleWebApp: { capable: true, title: "ScoreWell", statusBarStyle: "default" },
+  icons: {
+    icon: [{ url: "/icon-192.png", sizes: "192x192", type: "image/png" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+};
+
+/** Tints the browser and status-bar chrome to the nav band's navy. */
+export const viewport: Viewport = {
+  themeColor: "#294563",
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {

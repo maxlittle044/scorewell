@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { InstallHint } from "./install-hint";
 
 const RESOURCES = [
   { label: "Reading tests", href: "/ielts/reading" },
@@ -130,9 +131,12 @@ export function Footer() {
           <p className="text-sm text-zinc-500">
             © {new Date().getFullYear()} ScoreWell. All rights reserved.
           </p>
-          <Link href="/sitemap" className="text-sm text-zinc-500 hover:text-white">
-            Sitemap
-          </Link>
+          <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-6">
+            <InstallHint />
+            <Link href="/sitemap" className="text-sm text-zinc-500 hover:text-white">
+              Sitemap
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
