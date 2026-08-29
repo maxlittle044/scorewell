@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { UtilityRail } from "@/components/layout/utility-rail";
+import { ServiceWorkerRegistrar } from "@/components/layout/service-worker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-full flex-col">
         <ScrollReveal />
+        <ServiceWorkerRegistrar />
         <AnnouncementBar />
         <Header session={session} />
         {children}

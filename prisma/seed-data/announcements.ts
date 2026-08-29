@@ -79,7 +79,7 @@ export const ANNOUNCEMENTS: AnnouncementSeed[] = [
     kind: "New",
     body: [
       "ScoreWell can now be installed like an app: it opens full screen from your home screen with its own icon, without going through an app store. On Android and desktop Chrome your browser will offer to install it; on iPhone, use Share, then Add to Home Screen.",
-      "It still needs a connection — offline study is not supported yet, and we would rather say so than have you install it and find it blank on the train.",
+      "Pages you have already opened on that device will load again without a connection, so a passage you were reading on the train stays readable when the signal goes. Submitting still needs a connection — a test, a written answer or a sitting cannot be saved offline, and the app tells you so rather than letting you start one you would lose.",
     ],
     tags: ["app", "feature"],
   },

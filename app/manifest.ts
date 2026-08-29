@@ -4,9 +4,9 @@ import type { MetadataRoute } from "next";
  * Web app manifest, making the site installable to a home screen
  * (site-build-prompt.md section 4b "PWA install", section 8).
  *
- * Installability only — this does not claim offline support. Serving pages offline needs
- * a service worker caching layer, which isn't built, and a manifest alone would let a
- * learner install the app and then find it blank on the train.
+ * Pages already visited on the device open offline, served by public/sw.js. Submitting
+ * anything still needs a connection, and the offline fallback page says so rather than
+ * letting someone start a sitting that cannot be saved.
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
