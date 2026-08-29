@@ -82,6 +82,7 @@ const GROUPS = [
       { label: "Refer & earn", href: "/refer" },
       { label: "Feature requests", href: "/feature-requests" },
       { label: "What's new", href: "/announcements" },
+      { label: "Success stories", href: "/success-stories" },
     ],
   },
   {

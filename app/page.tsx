@@ -9,6 +9,7 @@ import { HowItWorks } from "@/components/home/how-it-works";
 import { LiveLessonsCarousel } from "@/components/home/live-lessons-carousel";
 import { LatestSamples } from "@/components/home/latest-samples";
 import { PricingTable } from "@/components/home/pricing-table";
+import { SuccessStories } from "@/components/home/success-stories";
 import { PronunciationGrid } from "@/components/home/pronunciation-grid";
 import { RegistrationBanner } from "@/components/home/registration-banner";
 import { Testimonials } from "@/components/home/testimonials";
@@ -40,6 +41,8 @@ export default function Home() {
       <VideoLessonsCarousel />
       <LatestSamples />
       <UserSubmittedAnswers />
+      {/* Section 18 in the spec order. Renders nothing until a real story exists. */}
+      <SuccessStories />
       <PricingTable />
       <CoachingCrossSell />
     </main>
