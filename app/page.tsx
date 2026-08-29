@@ -5,6 +5,7 @@ import { DailyChallenge } from "@/components/home/daily-challenge";
 import { DictationCarousel } from "@/components/home/dictation-carousel";
 import { FeaturedCategories } from "@/components/home/featured-categories";
 import { Hero } from "@/components/home/hero";
+import { HowItWorks } from "@/components/home/how-it-works";
 import { LatestSamples } from "@/components/home/latest-samples";
 import { PricingTable } from "@/components/home/pricing-table";
 import { PronunciationGrid } from "@/components/home/pronunciation-grid";
@@ -25,6 +26,8 @@ export default function Home() {
       <Testimonials />
       <FeaturedCategories />
       <DailyChallenge />
+      {/* Section 7 in the spec's homepage order: after the daily challenge, before the tools grid. */}
+      <HowItWorks />
       <ToolsGrid />
       <CoursesCarousel />
       <AiConversationsCarousel />
