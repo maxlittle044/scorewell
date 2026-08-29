@@ -6,7 +6,8 @@ import { prisma } from "@/lib/prisma";
 import { getUsageStatus } from "@/lib/ai/usage";
 import { PageHeader } from "@/components/layout/page-header";
 import { PremiumBadge } from "@/components/dashboard/premium-lock";
-import { getAnalytics } from "@/lib/analytics";
+import { getAnalytics, getBandTrend } from "@/lib/analytics";
+import { BandTrendChart } from "@/components/dashboard/band-trend-chart";
 
 export const metadata: Metadata = {
   title: "Your dashboard — ScoreWell",
@@ -27,22 +28,24 @@ export default async function DashboardPage() {
 
   const userId = session.user.id;
 
-  const [subscription, recentProgress, latestBySkill, usage, analytics] = await Promise.all([
-    prisma.subscription.findUnique({ where: { userId } }),
-    prisma.progress.findMany({
-      where: { userId },
-      orderBy: { completedAt: "desc" },
-      take: 5,
-      include: { contentItem: { select: { title: true } } },
-    }),
-    prisma.progress.findMany({
-      where: { userId, skill: { not: null }, bandScore: { not: null } },
-      orderBy: { completedAt: "desc" },
-      distinct: ["skill"],
-    }),
-    getUsageStatus(userId),
-    getAnalytics(userId),
-  ]);
+  const [subscription, recentProgress, latestBySkill, usage, analytics, bandTrend] =
+    await Promise.all([
+      prisma.subscription.findUnique({ where: { userId } }),
+      prisma.progress.findMany({
+        where: { userId },
+        orderBy: { completedAt: "desc" },
+        take: 5,
+        include: { contentItem: { select: { title: true } } },
+      }),
+      prisma.progress.findMany({
+        where: { userId, skill: { not: null }, bandScore: { not: null } },
+        orderBy: { completedAt: "desc" },
+        distinct: ["skill"],
+      }),
+      getUsageStatus(userId),
+      getAnalytics(userId),
+      getBandTrend(userId),
+    ]);
 
   const isPremium = subscription?.tier === "PREMIUM";
 
@@ -54,9 +57,24 @@ export default async function DashboardPage() {
           description="Track your progress and manage your plan."
         />
 
+        <div className="mb-6 rounded-2xl border border-zinc-200 bg-white p-6">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <h2 className="font-semibold text-zinc-900">Band score trend</h2>
+            {bandTrend.best !== null && (
+              <p className="text-sm text-zinc-500">
+                Best so far <span className="font-semibold text-zinc-800">{bandTrend.best}</span>
+                {bandTrend.overall.length > 1 && (
+                  <> · {bandTrend.overall.length} banded results</>
+                )}
+              </p>
+            )}
+          </div>
+          <BandTrendChart trend={bandTrend} />
+        </div>
+
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="rounded-2xl border border-zinc-200 bg-white p-6 lg:col-span-2">
-            <h2 className="font-semibold text-zinc-900">Band score progress</h2>
+            <h2 className="font-semibold text-zinc-900">Latest band by skill</h2>
             {latestBySkill.length === 0 ? (
               <p className="mt-5 text-sm text-zinc-500">
                 Complete a practice test to see your band score progress here.

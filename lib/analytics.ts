@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import type { Skill } from "@/generated/prisma/enums";
 
 /**
  * Mistake analytics (site-build-prompt.md section 6 — a Premium feature).
@@ -116,3 +117,101 @@ export async function getAnalytics(userId: string): Promise<Analytics> {
 }
 
 export { MIN_QUESTIONS_TO_JUDGE };
+
+/**
+ * Band-score trend over time (site-build-prompt.md section 6, "average band score trend").
+ *
+ * The dashboard already showed the latest band per skill, which says where a learner is
+ * but not whether they're improving. This adds the time series behind it.
+ *
+ * Only attempts that actually produced a band are plotted. Writing and Speaking practice
+ * carries no band unless it was evaluated, so those points appear when they exist rather
+ * than being interpolated — a gap in the line is a real gap in the record.
+ */
+
+export type TrendPoint = {
+  /** Epoch ms, so the caller can format in the reader's locale. */
+  at: number;
+  band: number;
+  label: string;
+};
+
+export type SkillTrend = {
+  skill: Skill;
+  points: TrendPoint[];
+  first: number;
+  latest: number;
+  /** Positive means improving. Null when a single attempt gives nothing to compare. */
+  change: number | null;
+};
+
+export type BandTrend = {
+  /** Chronological, every banded attempt across all skills. */
+  overall: TrendPoint[];
+  bySkill: SkillTrend[];
+  best: number | null;
+  latest: number | null;
+  /** Latest minus first across the whole record. Null until there are two points. */
+  change: number | null;
+};
+
+/** Enough points that a line means something rather than showing a single dot. */
+const MIN_POINTS_FOR_TREND = 2;
+
+export async function getBandTrend(userId: string): Promise<BandTrend> {
+  const rows = await prisma.progress.findMany({
+    where: { userId, bandScore: { not: null } },
+    orderBy: { completedAt: "asc" },
+    select: {
+      skill: true,
+      bandScore: true,
+      completedAt: true,
+      taskType: true,
+      contentItem: { select: { title: true } },
+    },
+  });
+
+  const overall: TrendPoint[] = rows.map((row) => ({
+    at: row.completedAt.getTime(),
+    band: row.bandScore!,
+    label: row.contentItem?.title ?? row.taskType ?? "Practice",
+  }));
+
+  const grouped = new Map<Skill, TrendPoint[]>();
+  for (const [index, row] of rows.entries()) {
+    if (!row.skill) continue;
+    grouped.set(row.skill, [...(grouped.get(row.skill) ?? []), overall[index]]);
+  }
+
+  const bySkill: SkillTrend[] = [...grouped.entries()]
+    .map(([skill, points]) => {
+      const first = points[0].band;
+      const latest = points[points.length - 1].band;
+      return {
+        skill,
+        points,
+        first,
+        latest,
+        change: points.length >= MIN_POINTS_FOR_TREND ? round1(latest - first) : null,
+      };
+    })
+    .sort((a, b) => a.skill.localeCompare(b.skill));
+
+  return {
+    overall,
+    bySkill,
+    best: overall.length ? Math.max(...overall.map((point) => point.band)) : null,
+    latest: overall.length ? overall[overall.length - 1].band : null,
+    change:
+      overall.length >= MIN_POINTS_FOR_TREND
+        ? round1(overall[overall.length - 1].band - overall[0].band)
+        : null,
+  };
+}
+
+/** Band deltas are halves; float subtraction otherwise yields things like 0.30000000000000004. */
+function round1(value: number): number {
+  return Math.round(value * 10) / 10;
+}
+
+export { MIN_POINTS_FOR_TREND };
