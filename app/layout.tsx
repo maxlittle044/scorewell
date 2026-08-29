@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/header";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { UtilityRail } from "@/components/layout/utility-rail";
 import { ServiceWorkerRegistrar } from "@/components/layout/service-worker";
+import { DictionaryLookup } from "@/components/content/dictionary-lookup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +57,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <AnnouncementBar />
         <Header session={session} />
         {children}
+        <DictionaryLookup />
         <UtilityRail />
         <Footer />
       </body>
