@@ -11,7 +11,10 @@ export function VideoPlayer({ video, title }: { video: LessonVideo; title: strin
       <div className="overflow-hidden rounded-2xl bg-zinc-950">
         {video.kind === "youtube" ? (
           <iframe
-            src={`https://www.youtube-nocookie.com/embed/${video.src}`}
+            // cc_load_policy=1 turns captions on where the video has them, which
+            // matters more here than usual: these are listening-adjacent lessons.
+            // rel=0 keeps the end screen to the same channel.
+            src={`https://www.youtube-nocookie.com/embed/${video.src}?cc_load_policy=1&cc_lang_pref=en&rel=0`}
             title={title}
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

@@ -73,18 +73,27 @@ export async function listVideoLessons(): Promise<VideoLessonSummary[]> {
     select: { slug: true, title: true, topic: true, data: true },
   });
 
-  return items.flatMap((item) => {
-    const parsed = VideoLessonDataSchema.safeParse(item.data);
-    if (!parsed.success) return [];
-    return [
-      {
-        slug: item.slug,
-        title: item.title,
-        topic: item.topic,
-        summary: parsed.data.summary,
-        lessonMinutes: parsed.data.lessonMinutes,
-        isPlaceholderVideo: parsed.data.video.placeholder,
-      },
-    ];
-  });
+  return items
+    .flatMap((item) => {
+      const parsed = VideoLessonDataSchema.safeParse(item.data);
+      if (!parsed.success) return [];
+      return [
+        {
+          slug: item.slug,
+          title: item.title,
+          topic: item.topic,
+          summary: parsed.data.summary,
+          lessonMinutes: parsed.data.lessonMinutes,
+          isPlaceholderVideo: parsed.data.video.placeholder,
+        },
+      ];
+    })
+    // Lessons with real footage lead; the ones still on a stand-in clip sort to the
+    // end rather than being hidden, since their written lesson is genuine. The
+    // placeholder flag lives inside the JSONB column, so this can't be an orderBy.
+    .sort(
+      (a, b) =>
+        Number(a.isPlaceholderVideo) - Number(b.isPlaceholderVideo) ||
+        a.title.localeCompare(b.title),
+    );
 }

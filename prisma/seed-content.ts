@@ -15,6 +15,7 @@ import { PRONUNCIATION_DRILLS } from "./seed-data/pronunciation";
 import { DICTATION_EXERCISES } from "./seed-data/dictation";
 import { AI_CONVERSATIONS } from "./seed-data/ai-conversations";
 import { VIDEO_LESSONS } from "./seed-data/video-lessons";
+import { VOA_VIDEO_LESSONS } from "./seed-data/video-lessons-voa";
 import { TOPIC_POOLS } from "./seed-data/topic-pools";
 import { TOPIC_BANKS } from "./seed-data/topic-banks";
 import { LIVE_LESSONS } from "./seed-data/live-lessons";
@@ -235,7 +236,7 @@ async function main() {
     console.log("ai conversat ", topic.slug);
   }
 
-  for (const lesson of VIDEO_LESSONS) {
+  for (const lesson of [...VIDEO_LESSONS, ...VOA_VIDEO_LESSONS]) {
     const fields = {
       title: lesson.title,
       topic: lesson.topic,
