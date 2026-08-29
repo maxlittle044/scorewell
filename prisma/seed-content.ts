@@ -21,6 +21,7 @@ import { LIVE_LESSONS } from "./seed-data/live-lessons";
 import { collectionFor } from "./seed-data/mock-sets";
 import { PLACEMENT_SEED } from "./seed-data/placement";
 import { GRAMMAR_POINTS } from "./seed-data/grammar-library";
+import { ANNOUNCEMENTS } from "./seed-data/announcements";
 
 // The generated client is engineType "client" (no Rust engine), so it needs a driver
 // adapter here exactly as lib/prisma.ts does — a bare `new PrismaClient()` fails with P2038.
@@ -301,6 +302,25 @@ async function main() {
       update: fields,
     });
     console.log("live lesson  ", lesson.slug);
+  }
+
+  // Platform announcements — ARTICLEs split off by taskType, like the others.
+  for (const item of ANNOUNCEMENTS) {
+    const { slug, title, tags, ...data } = item;
+    const fields = {
+      title,
+      taskType: "announcement",
+      topic: item.kind,
+      tags,
+      published: true,
+      data,
+    };
+    await prisma.contentItem.upsert({
+      where: { slug },
+      create: { slug, contentType: "ARTICLE" as const, ...fields },
+      update: fields,
+    });
+    console.log("announcement ", slug);
   }
 
   // Grammar library points — ARTICLEs split off by taskType, like tips and topic banks.

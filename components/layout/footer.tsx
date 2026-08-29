@@ -18,6 +18,7 @@ const COMPANY = [
   { label: "FAQs", href: "/faq" },
   { label: "Refer & earn", href: "/refer" },
   { label: "Feature requests", href: "/feature-requests" },
+  { label: "What's new", href: "/announcements" },
 ];
 
 const LEGAL = [
