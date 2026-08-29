@@ -59,8 +59,8 @@ export function Quiz({
   return (
     <div className="flex flex-col gap-6">
       {questions.map((q, i) => (
-        <fieldset key={q.id} className="rounded-xl border border-zinc-200 p-5">
-          <legend className="mb-3 px-1 text-sm font-medium text-zinc-800">
+        <fieldset key={q.id} className="rounded-xl border border-line p-5">
+          <legend className="mb-3 px-1 text-sm font-medium text-ink">
             {i + 1}. {q.question}
           </legend>
           <div className="flex flex-col gap-2">
@@ -78,8 +78,8 @@ export function Quiz({
                       : isWrongSelected
                         ? "border-rose-400 bg-rose-50 text-rose-800"
                         : isSelected
-                          ? "border-brand-400 bg-brand-50 text-brand-800"
-                          : "border-zinc-200 hover:border-zinc-300"
+                          ? "border-brand-400 bg-brand-50 text-heading"
+                          : "border-line hover:border-line-strong"
                   }`}
                 >
                   <input
@@ -100,16 +100,16 @@ export function Quiz({
 
       {submitted ? (
         <div className="rounded-xl bg-brand-50 px-5 py-4 text-center">
-          <p className="text-lg font-semibold text-brand-700">
+          <p className="text-lg font-semibold text-link">
             You scored {score} / {questions.length}
           </p>
-          {isPending && <p className="mt-2 text-sm text-zinc-500">Saving your result…</p>}
+          {isPending && <p className="mt-2 text-sm text-ink-muted">Saving your result…</p>}
           {saveState === "saved" && (
             <p className="mt-2 text-sm text-emerald-600">Saved to your dashboard.</p>
           )}
           {saveState === "not-logged-in" && (
-            <p className="mt-2 text-sm text-zinc-500">
-              <Link href="/login" className="font-medium text-brand-600 hover:underline">
+            <p className="mt-2 text-sm text-ink-muted">
+              <Link href="/login" className="font-medium text-link hover:underline">
                 Log in
               </Link>{" "}
               to save your progress and see it on your dashboard.
@@ -121,7 +121,7 @@ export function Quiz({
           type="button"
           disabled={!allAnswered}
           onClick={handleSubmit}
-          className="self-start rounded-full bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+          className="self-start rounded-full bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
         >
           Submit answers
         </button>

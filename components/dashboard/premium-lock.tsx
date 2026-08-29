@@ -13,7 +13,7 @@ function LockIcon() {
 export function PremiumBadge({ className = "" }: { className?: string }) {
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand-700 ${className}`}
+      className={`inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-link ${className}`}
     >
       <LockIcon />
       Premium
@@ -39,8 +39,8 @@ export function PremiumLock({
       <div className="mb-2 flex justify-center">
         <PremiumBadge />
       </div>
-      <h3 className="text-sm font-semibold text-zinc-900">{title}</h3>
-      <p className="mx-auto mt-1.5 max-w-md text-sm leading-relaxed text-zinc-600">{children}</p>
+      <h3 className="text-sm font-semibold text-ink">{title}</h3>
+      <p className="mx-auto mt-1.5 max-w-md text-sm leading-relaxed text-ink-body">{children}</p>
       <Link
         href="/pricing"
         className="mt-4 inline-block rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700"

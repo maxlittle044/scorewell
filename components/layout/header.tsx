@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Session } from "next-auth";
 import { signOutAction } from "@/lib/auth-actions";
+import { ThemeToggle } from "./theme-toggle";
 import { NAV_ITEMS } from "@/lib/nav-data";
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
@@ -47,18 +48,18 @@ export function Header({ session }: { session: Session | null }) {
   return (
     <header className="sticky top-0 z-50">
       {/* Tier 1 — white brand row: logo, search, account actions. */}
-      <div className="border-b border-zinc-200/70 bg-white">
+      <div className="border-b border-line/70 bg-surface">
         <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-8">
           <Logo />
 
           <form action="/search" className="ml-auto hidden max-w-sm flex-1 items-center lg:flex">
             <div className="relative w-full">
-              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" />
+              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ink-muted" />
               <input
                 type="search"
                 name="q"
                 placeholder="Search tests, tips, tools..."
-                className="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pl-9 pr-3 text-sm text-zinc-900 placeholder:text-zinc-400 transition-colors focus:border-brand-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-100"
+                className="w-full rounded-full border border-line bg-surface-muted py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted transition-colors focus:border-brand-400 focus:bg-surface focus:outline-none focus:ring-4 focus:ring-brand-100"
               />
             </div>
           </form>
@@ -74,7 +75,7 @@ export function Header({ session }: { session: Session | null }) {
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             onClick={() => setMobileOpen((v) => !v)}
-            className="ml-auto flex items-center justify-center rounded-full p-2 text-zinc-700 hover:bg-zinc-100 lg:hidden"
+            className="ml-auto flex items-center justify-center rounded-full p-2 text-ink-body hover:bg-surface-sunken lg:hidden"
           >
             {mobileOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
@@ -127,7 +128,7 @@ export function Header({ session }: { session: Session | null }) {
                   {isOpen && (
                     <div
                       className={cn(
-                        "absolute left-0 top-full z-40 mt-2 rounded-2xl border border-zinc-200/80 bg-white p-6 shadow-2xl shadow-zinc-900/15",
+                        "absolute left-0 top-full z-40 mt-2 rounded-2xl border border-line/80 bg-surface p-6 shadow-2xl shadow-zinc-900/15",
                         PANEL_WIDTH[item.columns.length] ?? "w-200",
                       )}
                     >
@@ -146,7 +147,7 @@ export function Header({ session }: { session: Session | null }) {
                                   <Link
                                     href={link.href}
                                     onClick={() => setOpenMenu(null)}
-                                    className="text-sm text-zinc-700 hover:text-brand-600"
+                                    className="text-sm text-ink-body hover:text-link"
                                   >
                                     {link.label}
                                   </Link>
@@ -164,6 +165,9 @@ export function Header({ session }: { session: Session | null }) {
           </nav>
 
           <div className="ml-auto flex items-center gap-1">
+            <div className="mr-2">
+              <ThemeToggle />
+            </div>
             {session?.user ? (
               <>
                 <Link
@@ -202,15 +206,15 @@ export function Header({ session }: { session: Session | null }) {
       </div>
 
       {mobileOpen && (
-        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-zinc-200 bg-white px-4 pb-6 pt-4 lg:hidden">
+        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-line bg-surface px-4 pb-6 pt-4 lg:hidden">
           <form action="/search" className="mb-4">
             <div className="relative">
-              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" />
+              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ink-muted" />
               <input
                 type="search"
                 name="q"
                 placeholder="Search tests, tips, tools..."
-                className="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pl-9 pr-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100"
+                className="w-full rounded-full border border-line bg-surface-muted py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100"
               />
             </div>
           </form>
@@ -223,7 +227,7 @@ export function Header({ session }: { session: Session | null }) {
                     key={item.label}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
-                    className="py-3 text-sm font-medium text-zinc-800"
+                    className="py-3 text-sm font-medium text-ink"
                   >
                     {item.label}
                   </Link>
@@ -232,14 +236,14 @@ export function Header({ session }: { session: Session | null }) {
 
               return (
                 <details key={item.label} className="group py-1">
-                  <summary className="flex cursor-pointer list-none items-center justify-between py-2 text-sm font-medium text-zinc-800">
+                  <summary className="flex cursor-pointer list-none items-center justify-between py-2 text-sm font-medium text-ink">
                     {item.label}
-                    <ChevronDownIcon className="text-zinc-400 transition-transform group-open:rotate-180" />
+                    <ChevronDownIcon className="text-ink-muted transition-transform group-open:rotate-180" />
                   </summary>
                   <div className="grid grid-cols-2 gap-4 pb-3 pl-2">
                     {item.columns.map((column) => (
                       <div key={column.heading}>
-                        <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+                        <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                           {column.heading}
                         </p>
                         <ul className="flex flex-col gap-1.5">
@@ -248,7 +252,7 @@ export function Header({ session }: { session: Session | null }) {
                               <Link
                                 href={link.href}
                                 onClick={() => setMobileOpen(false)}
-                                className="text-sm text-zinc-600"
+                                className="text-sm text-ink-body"
                               >
                                 {link.label}
                               </Link>
@@ -263,20 +267,20 @@ export function Header({ session }: { session: Session | null }) {
             })}
           </div>
 
-          <div className="mt-4 flex flex-col gap-2 border-t border-zinc-100 pt-4">
+          <div className="mt-4 flex flex-col gap-2 border-t border-line pt-4">
             {session?.user ? (
               <>
                 <Link
                   href="/dashboard"
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-md px-3 py-2 text-center text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+                  className="rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
                 >
                   {session.user.name ?? session.user.email}
                 </Link>
                 <form action={signOutAction}>
                   <button
                     type="submit"
-                    className="w-full rounded-md px-3 py-2 text-center text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+                    className="w-full rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
                   >
                     Log out
                   </button>
@@ -286,7 +290,7 @@ export function Header({ session }: { session: Session | null }) {
               <Link
                 href="/login"
                 onClick={() => setMobileOpen(false)}
-                className="rounded-md px-3 py-2 text-center text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+                className="rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
               >
                 Log in
               </Link>

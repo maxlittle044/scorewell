@@ -32,7 +32,7 @@ function asCriterionResult(value: unknown): CriterionResult | null {
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">{children}</div>
     </main>
   );
@@ -48,11 +48,11 @@ export default async function SimulationRunnerPage({
     return (
       <Shell>
         <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             No full simulation here — a sitting needs a collection with a test for all four
             skills.{" "}
-            <Link href="/simulation" className="font-medium text-brand-600 hover:underline">
+            <Link href="/simulation" className="font-medium text-link hover:underline">
               See the ones that are ready
             </Link>
             .
@@ -67,8 +67,8 @@ export default async function SimulationRunnerPage({
     return (
       <Shell>
         <div className="mx-auto max-w-2xl text-center">
-          <h1 className="font-display text-2xl font-bold text-zinc-900">{simulation.name}</h1>
-          <p className="mt-3 text-sm text-zinc-600">
+          <h1 className="font-display text-2xl font-bold text-ink">{simulation.name}</h1>
+          <p className="mt-3 text-sm text-ink-body">
             A sitting runs on a saved clock so it survives a closed tab and can be resumed, which
             means it needs an account. Individual practice tests stay open to everyone.
           </p>
@@ -119,10 +119,10 @@ export default async function SimulationRunnerPage({
   return (
     <Shell>
       <div className="mb-6">
-        <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+        <p className="text-xs font-semibold uppercase tracking-widest text-ink-muted">
           Full simulation
         </p>
-        <h1 className="font-display text-2xl font-bold text-zinc-900">{simulation.name}</h1>
+        <h1 className="font-display text-2xl font-bold text-ink">{simulation.name}</h1>
       </div>
 
       <SimulationRunner set={simulation} initialAttempt={initialAttempt} />

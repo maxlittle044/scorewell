@@ -29,12 +29,12 @@ export default async function VideoLessonPage({
 
   if (!lesson) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             This lesson isn&apos;t available yet.{" "}
-            <Link href="/video-lessons" className="font-medium text-brand-600 hover:underline">
+            <Link href="/video-lessons" className="font-medium text-link hover:underline">
               Browse all lessons
             </Link>
             .
@@ -45,27 +45,27 @@ export default async function VideoLessonPage({
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-zinc-500">
+        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-ink-muted">
           {lesson.topic && (
-            <span className="rounded-full bg-brand-50 px-2.5 py-1 font-semibold text-brand-700">
+            <span className="rounded-full bg-brand-50 px-2.5 py-1 font-semibold text-link">
               {lesson.topic}
             </span>
           )}
           <span>{lesson.lessonMinutes} min lesson</span>
         </div>
 
-        <h1 className="mb-2 text-2xl font-bold text-zinc-900">{lesson.title}</h1>
-        <p className="mb-6 text-sm leading-relaxed text-zinc-600">{lesson.summary}</p>
+        <h1 className="mb-2 text-2xl font-bold text-ink">{lesson.title}</h1>
+        <p className="mb-6 text-sm leading-relaxed text-ink-body">{lesson.summary}</p>
 
         <VideoPlayer video={lesson.video} title={lesson.title} />
 
-        <section className="mt-8 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500">
+        <section className="mt-8 rounded-2xl border border-line bg-surface-muted p-5">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
             What you&apos;ll take away
           </h2>
-          <ul className="flex flex-col gap-2 text-sm leading-relaxed text-zinc-700">
+          <ul className="flex flex-col gap-2 text-sm leading-relaxed text-ink-body">
             {lesson.keyPoints.map((point, i) => (
               <li key={i} className="border-l-2 border-brand-200 pl-3">
                 {point}
@@ -75,10 +75,10 @@ export default async function VideoLessonPage({
         </section>
 
         <section className="mt-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
             Full lesson
           </h2>
-          <div className="flex flex-col gap-4 text-sm leading-relaxed text-zinc-700">
+          <div className="flex flex-col gap-4 text-sm leading-relaxed text-ink-body">
             {lesson.transcript.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}

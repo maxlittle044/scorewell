@@ -27,7 +27,7 @@ export async function DictationCarousel() {
   if (stories.length === 0) return null;
 
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Dictation & shadowing"
@@ -41,17 +41,17 @@ export async function DictationCarousel() {
             <Link
               key={story.slug}
               href={`/dictation-shadowing/${story.slug}`}
-              className={`group w-64 shrink-0 snap-start overflow-hidden rounded-2xl border border-zinc-200/80 bg-white ${CARD_HOVER_CLASS}`}
+              className={`group w-64 shrink-0 snap-start overflow-hidden rounded-2xl border border-line/80 bg-surface ${CARD_HOVER_CLASS}`}
             >
               <div className={`flex h-28 items-center justify-center bg-linear-to-br ${LEVEL_GRADIENTS[story.level] ?? "from-zinc-500 to-zinc-700"}`}>
                 <WaveformIcon />
               </div>
               <div className="p-4">
-                <div className="flex items-center justify-between text-xs text-zinc-500">
+                <div className="flex items-center justify-between text-xs text-ink-muted">
                   <span>{story.level}</span>
                   <span>{story.duration}</span>
                 </div>
-                <h3 className="mt-1.5 font-semibold text-zinc-900 group-hover:text-brand-600">
+                <h3 className="mt-1.5 font-semibold text-ink group-hover:text-link">
                   {story.title}
                 </h3>
               </div>

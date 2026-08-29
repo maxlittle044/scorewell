@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function FlashcardsPage() {
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Flashcards" description="Academic vocabulary that shows up often in Task 2 essays and Part 3 discussions." />
         <FlashcardsDeck />

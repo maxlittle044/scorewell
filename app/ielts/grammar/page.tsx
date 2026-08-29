@@ -14,7 +14,7 @@ export default async function GrammarLibraryPage() {
   const total = countGrammarPoints(categories);
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Grammar library"
@@ -22,18 +22,18 @@ export default async function GrammarLibraryPage() {
         />
 
         {total === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-center text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface p-6 text-center text-sm text-ink-muted">
             Nothing here yet.
           </p>
         ) : (
           <>
-            <p className="mb-8 text-sm text-zinc-500">
+            <p className="mb-8 text-sm text-ink-muted">
               {total} {total === 1 ? "point" : "points"} across {categories.length}{" "}
               {categories.length === 1 ? "category" : "categories"}. Prefer to test yourself
               first?{" "}
               <Link
                 href="/ielts/grammar-tests"
-                className="font-medium text-brand-600 hover:underline"
+                className="font-medium text-link hover:underline"
               >
                 Take a grammar test
               </Link>
@@ -43,7 +43,7 @@ export default async function GrammarLibraryPage() {
             <div className="flex flex-col gap-8">
               {categories.map((category) => (
                 <section key={category.name}>
-                  <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-400">
+                  <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                     {category.name}
                   </h2>
                   <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -51,12 +51,12 @@ export default async function GrammarLibraryPage() {
                       <Link
                         key={point.slug}
                         href={`/ielts/grammar/${point.slug}`}
-                        className="group rounded-xl border border-zinc-200 bg-white p-4 transition-colors hover:border-brand-400 hover:bg-brand-50/40"
+                        className="group rounded-xl border border-line bg-surface p-4 transition-colors hover:border-brand-400 hover:bg-brand-50/40"
                       >
-                        <p className="text-sm font-semibold text-zinc-900 group-hover:text-brand-700">
+                        <p className="text-sm font-semibold text-ink group-hover:text-link">
                           {point.title}
                         </p>
-                        <p className="mt-1 text-sm text-zinc-600">{point.summary}</p>
+                        <p className="mt-1 text-sm text-ink-body">{point.summary}</p>
                         {point.hasPractice && (
                           <span className="mt-2 inline-block rounded-full bg-pop-50 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide text-pop-700">
                             Practice test

@@ -13,21 +13,21 @@ function UsersIcon() {
 
 export function CoachingCrossSell() {
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div
           data-reveal
-          className="flex flex-col items-center gap-6 rounded-3xl border border-zinc-200 bg-linear-to-br from-zinc-50 to-brand-50/40 px-6 py-10 text-center md:flex-row md:text-left"
+          className="flex flex-col items-center gap-6 rounded-3xl border border-line bg-linear-to-br from-zinc-50 to-brand-50/40 px-6 py-10 text-center md:flex-row md:text-left"
         >
-          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white text-brand-600 shadow-md ring-1 ring-inset ring-black/5">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-surface text-link shadow-md ring-1 ring-inset ring-black/5">
             <UsersIcon />
           </span>
 
           <div className="flex-1">
-            <h2 className="text-xl font-bold text-zinc-900">
+            <h2 className="text-xl font-bold text-ink">
               Want personalized coaching?
             </h2>
-            <p className="mt-1.5 max-w-xl text-zinc-600">
+            <p className="mt-1.5 max-w-xl text-ink-body">
               Book 1-on-1 sessions with a human IELTS tutor for feedback the AI
               tools can&apos;t give — mock interviews, essay reviews, and a study
               plan built around your target band.

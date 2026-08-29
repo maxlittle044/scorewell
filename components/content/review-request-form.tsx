@@ -34,9 +34,9 @@ export function ReviewRequestForm({ credits }: { credits: number }) {
   const affordable = credits >= REVIEW_COST_CREDITS;
 
   return (
-    <form action={formAction} className="rounded-2xl border border-zinc-200 bg-white p-6">
-      <h2 className="text-lg font-bold text-zinc-900">Request a review</h2>
-      <p className="mt-1.5 text-sm text-zinc-600">
+    <form action={formAction} className="rounded-2xl border border-line bg-surface p-6">
+      <h2 className="text-lg font-bold text-ink">Request a review</h2>
+      <p className="mt-1.5 text-sm text-ink-body">
         A real examiner reads your answer and writes back — slower than the instant AI score, and
         more specific. Costs {REVIEW_COST_CREDITS} credits, with feedback within{" "}
         {REVIEW_TURNAROUND_HOURS} hours of a reviewer picking it up.
@@ -55,13 +55,13 @@ export function ReviewRequestForm({ credits }: { credits: number }) {
 
       <fieldset disabled={!HUMAN_REVIEW_ENABLED || pending} className="mt-5 flex flex-col gap-4">
         <div>
-          <label htmlFor="taskType" className="mb-1.5 block text-sm font-medium text-zinc-700">
+          <label htmlFor="taskType" className="mb-1.5 block text-sm font-medium text-ink-body">
             What is this?
           </label>
           <select
             id="taskType"
             name="taskType"
-            className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 disabled:bg-zinc-50 disabled:text-zinc-400"
+            className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink disabled:bg-surface-muted disabled:text-ink-muted"
           >
             {TASK_TYPES.map((t) => (
               <option key={t.value} value={t.value}>
@@ -72,20 +72,20 @@ export function ReviewRequestForm({ credits }: { credits: number }) {
         </div>
 
         <div>
-          <label htmlFor="title" className="mb-1.5 block text-sm font-medium text-zinc-700">
-            Question or title <span className="font-normal text-zinc-400">(optional)</span>
+          <label htmlFor="title" className="mb-1.5 block text-sm font-medium text-ink-body">
+            Question or title <span className="font-normal text-ink-muted">(optional)</span>
           </label>
           <input
             id="title"
             name="title"
             type="text"
             placeholder="e.g. Some people think university should be free…"
-            className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 disabled:bg-zinc-50"
+            className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink disabled:bg-surface-muted"
           />
         </div>
 
         <div>
-          <label htmlFor="answerText" className="mb-1.5 block text-sm font-medium text-zinc-700">
+          <label htmlFor="answerText" className="mb-1.5 block text-sm font-medium text-ink-body">
             Your answer
           </label>
           <textarea
@@ -94,7 +94,7 @@ export function ReviewRequestForm({ credits }: { credits: number }) {
             rows={10}
             required
             placeholder={`Paste your full answer — at least ${REVIEW_MIN_WORDS} words.`}
-            className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 disabled:bg-zinc-50"
+            className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink disabled:bg-surface-muted"
           />
         </div>
 
@@ -111,7 +111,7 @@ export function ReviewRequestForm({ credits }: { credits: number }) {
       </fieldset>
 
       {HUMAN_REVIEW_ENABLED && !affordable && (
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-ink-muted">
           You have {credits} credits. A review costs {REVIEW_COST_CREDITS}.
         </p>
       )}

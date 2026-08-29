@@ -63,7 +63,7 @@ export function UtilityRail() {
           <Link
             key={shortcut.href}
             href={shortcut.href}
-            className="flex w-20 flex-col items-center gap-1.5 rounded-2xl border border-zinc-200 bg-white px-2 py-3 text-brand-700 shadow-lg shadow-zinc-900/5 transition-colors hover:border-pop-300 hover:text-pop-600"
+            className="flex w-20 flex-col items-center gap-1.5 rounded-2xl border border-line bg-surface px-2 py-3 text-link shadow-lg shadow-zinc-900/5 transition-colors hover:border-pop-300 hover:text-pop-600"
           >
             <svg
               width="22"

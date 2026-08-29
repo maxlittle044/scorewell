@@ -22,7 +22,7 @@ export const metadata: Metadata = {
  */
 export default function CopyrightPage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Copyright & DMCA"
@@ -30,9 +30,9 @@ export default function CopyrightPage() {
         />
         <LegalNotice />
 
-        <div className="flex flex-col gap-6 text-zinc-700">
+        <div className="flex flex-col gap-6 text-ink-body">
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Our content</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Our content</h2>
             <p>
               The practice tests, question sets, sample answers, explanations, articles, and
               the wording and design of this site are owned by ScoreWell or licensed to us.
@@ -46,12 +46,12 @@ export default function CopyrightPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Content you submit</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Content you submit</h2>
             <p>
               You keep ownership of the answers and other work you submit. Publishing a
               submission to the community feed grants us a licence to display it on the site;
               you can ask us to remove it at any time. See our{" "}
-              <Link href="/terms" className="font-medium text-brand-600 hover:underline">
+              <Link href="/terms" className="font-medium text-link hover:underline">
                 Terms &amp; Conditions
               </Link>{" "}
               for the full position.
@@ -59,7 +59,7 @@ export default function CopyrightPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">
+            <h2 className="mb-2 text-lg font-semibold text-ink">
               Reporting material that infringes your copyright
             </h2>
             <p>
@@ -85,7 +85,7 @@ export default function CopyrightPage() {
             </ul>
             <p className="mt-3">
               Send it through our{" "}
-              <Link href="/contact" className="font-medium text-brand-600 hover:underline">
+              <Link href="/contact" className="font-medium text-link hover:underline">
                 contact page
               </Link>
               . We aim to acknowledge reports quickly and will remove or disable access to
@@ -94,7 +94,7 @@ export default function CopyrightPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">
+            <h2 className="mb-2 text-lg font-semibold text-ink">
               If your material was removed in error
             </h2>
             <p>
@@ -106,7 +106,7 @@ export default function CopyrightPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Repeat infringers</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Repeat infringers</h2>
             <p>
               We suspend or close the accounts of people who repeatedly post material that
               infringes others&apos; copyright.

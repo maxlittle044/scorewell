@@ -16,7 +16,7 @@ const CATEGORIES = [
     href: "/ielts/reading",
     icon: BookIcon,
     bg: "bg-brand-50",
-    fg: "text-brand-600",
+    fg: "text-link",
   },
   {
     label: "Listening",
@@ -57,7 +57,7 @@ export async function FeaturedCategories() {
   );
 
   return (
-    <section className="bg-zinc-50">
+    <section className="bg-surface-muted">
       <div data-reveal className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
@@ -72,13 +72,13 @@ export async function FeaturedCategories() {
                 <span className={`flex h-12 w-12 items-center justify-center rounded-xl ring-1 ring-inset ring-black/5 transition-transform group-hover:scale-110 ${bg} ${fg}`}>
                   <Icon />
                 </span>
-                <span className="rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-semibold text-zinc-600">
+                <span className="rounded-full bg-surface-sunken px-2.5 py-1 text-xs font-semibold text-ink-body">
                   {counts[index]} {counts[index] === 1 ? "test" : "tests"}
                 </span>
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-brand-900">{label}</h3>
-              <p className="mt-1 flex-1 text-sm text-zinc-600">{description}</p>
-              <span className="mt-4 text-sm font-semibold text-brand-600 group-hover:text-accent-600">
+              <h3 className="mt-4 text-lg font-semibold text-heading">{label}</h3>
+              <p className="mt-1 flex-1 text-sm text-ink-body">{description}</p>
+              <span className="mt-4 text-sm font-semibold text-link group-hover:text-accent-600">
                 Start practising →
               </span>
             </Link>

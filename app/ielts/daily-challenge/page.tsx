@@ -47,22 +47,22 @@ export default async function DailyChallengePage() {
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-2 flex items-center justify-between">
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-900">
+          <h1 className="text-3xl font-bold tracking-tight text-ink">
             Today&apos;s challenge
           </h1>
           {questions.length > 0 && <CountdownTimer minutes={3} />}
         </div>
 
         {questions.length === 0 ? (
-          <p className="mt-6 rounded-xl border border-dashed border-zinc-300 px-6 py-10 text-center text-sm text-zinc-500">
+          <p className="mt-6 rounded-xl border border-dashed border-line-strong px-6 py-10 text-center text-sm text-ink-muted">
             No challenge available today — check back soon.
           </p>
         ) : (
           <>
-            <p className="mb-10 text-zinc-600">
+            <p className="mb-10 text-ink-body">
               {questions.length} quick question{questions.length === 1 ? "" : "s"}
               {sourceTitle && <> on {sourceTitle.toLowerCase()}</>}. A new challenge appears each
               day.
@@ -76,9 +76,9 @@ export default async function DailyChallengePage() {
           </>
         )}
 
-        <p className="mt-8 text-center text-sm text-zinc-500">
+        <p className="mt-8 text-center text-sm text-ink-muted">
           Come back tomorrow for a new challenge, or check your ranking on the{" "}
-          <Link href="/leaderboard" className="font-medium text-brand-600 hover:underline">
+          <Link href="/leaderboard" className="font-medium text-link hover:underline">
             leaderboard
           </Link>
           .

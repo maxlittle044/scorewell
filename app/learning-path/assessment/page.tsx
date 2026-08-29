@@ -17,12 +17,12 @@ export default async function PlacementPage() {
 
   if (!placement) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">Placement diagnostic</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">Placement diagnostic</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             The diagnostic isn&apos;t available yet.{" "}
-            <Link href="/exam-library" className="font-medium text-brand-600 hover:underline">
+            <Link href="/exam-library" className="font-medium text-link hover:underline">
               Browse the Exam Library
             </Link>{" "}
             in the meantime.
@@ -34,10 +34,10 @@ export default async function PlacementPage() {
 
   if (!session?.user) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="font-display text-2xl font-bold text-zinc-900">Placement diagnostic</h1>
-          <p className="mt-3 text-sm text-zinc-600">
+          <h1 className="font-display text-2xl font-bold text-ink">Placement diagnostic</h1>
+          <p className="mt-3 text-sm text-ink-body">
             The diagnostic builds a study plan from your result and keeps it up to date as you
             practise, so it needs somewhere to save that — an account.
           </p>
@@ -55,14 +55,14 @@ export default async function PlacementPage() {
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+          <p className="text-xs font-semibold uppercase tracking-widest text-ink-muted">
             Learning Path
           </p>
-          <h1 className="font-display text-2xl font-bold text-zinc-900">Placement diagnostic</h1>
-          <p className="mt-2 max-w-2xl text-sm text-zinc-600">
+          <h1 className="font-display text-2xl font-bold text-ink">Placement diagnostic</h1>
+          <p className="mt-2 max-w-2xl text-sm text-ink-body">
             Twelve questions, no timer, about ten minutes. It measures reading comprehension and
             your grasp of grammar and vocabulary — the two things that can be marked
             objectively. Listening, Writing and Speaking get their own steps in the plan

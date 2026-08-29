@@ -62,7 +62,7 @@ const STEPS: Step[] = [
 
 export function HowItWorks() {
   return (
-    <section className="bg-zinc-50/70">
+    <section className="bg-surface-muted/70">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
@@ -80,13 +80,13 @@ export function HowItWorks() {
             <li key={step.title}>
               <Link
                 href={step.href}
-                className="group flex h-full flex-col rounded-2xl border border-zinc-200 bg-white p-6 transition-colors hover:border-brand-400 hover:bg-brand-50/40"
+                className="group flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-brand-400 hover:bg-brand-50/40"
               >
                 <div className="mb-3 flex items-center gap-3">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">
                     {index + 1}
                   </span>
-                  <h3 className="font-semibold text-zinc-900 group-hover:text-brand-700">
+                  <h3 className="font-semibold text-ink group-hover:text-link">
                     {step.title}
                   </h3>
                   {step.note && (
@@ -95,7 +95,7 @@ export function HowItWorks() {
                     </span>
                   )}
                 </div>
-                <p className="text-sm leading-relaxed text-zinc-600">{step.description}</p>
+                <p className="text-sm leading-relaxed text-ink-body">{step.description}</p>
               </Link>
             </li>
           ))}

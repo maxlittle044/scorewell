@@ -265,12 +265,12 @@ export function SimulationRunner({
 
   if (!attempt) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
-        <h2 className="text-lg font-bold text-zinc-900">Before you begin</h2>
-        <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-sm text-zinc-600">
+      <div className="rounded-2xl border border-line bg-surface p-6 shadow-sm">
+        <h2 className="text-lg font-bold text-ink">Before you begin</h2>
+        <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-sm text-ink-body">
           <li>
             One clock covers all four sections —{" "}
-            <span className="font-semibold text-zinc-800">{set.totalMinutes} minutes</span> in
+            <span className="font-semibold text-ink">{set.totalMinutes} minutes</span> in
             total. It does not pause.
           </li>
           <li>Sections are handed in one at a time and cannot be reopened.</li>
@@ -287,7 +287,7 @@ export function SimulationRunner({
           <Button onClick={begin} size="lg" disabled={isPending}>
             {isPending ? "Starting…" : "Begin sitting"}
           </Button>
-          <Link href="/simulation" className="text-sm text-zinc-500 hover:underline">
+          <Link href="/simulation" className="text-sm text-ink-muted hover:underline">
             Back to simulations
           </Link>
         </div>
@@ -309,21 +309,21 @@ export function SimulationRunner({
     return (
       <div className="flex flex-col gap-6">
         <div className="rounded-2xl border border-brand-200 bg-linear-to-br from-brand-50 to-pop-50 p-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand-700">
+          <p className="text-xs font-semibold uppercase tracking-widest text-link">
             Sitting complete
           </p>
-          <h2 className="mt-1 font-display text-2xl font-bold text-zinc-900">{set.name}</h2>
+          <h2 className="mt-1 font-display text-2xl font-bold text-ink">{set.name}</h2>
 
           <dl className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {scored.map((row) => (
-              <div key={row.label} className="rounded-xl bg-white/70 p-4">
-                <dt className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+              <div key={row.label} className="rounded-xl bg-surface/70 p-4">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
                   {row.label}
                 </dt>
                 <dd
                   className={cn(
                     "mt-1 font-bold",
-                    row.band === null ? "text-sm text-zinc-400" : "text-2xl text-brand-700",
+                    row.band === null ? "text-sm text-ink-muted" : "text-2xl text-link",
                   )}
                 >
                   {row.band === null ? "Not scored" : row.band.toFixed(1)}
@@ -332,16 +332,16 @@ export function SimulationRunner({
             ))}
           </dl>
 
-          <div className="mt-5 rounded-xl bg-white/70 p-4">
-            <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+          <div className="mt-5 rounded-xl bg-surface/70 p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
               Overall band
             </p>
             {attempt.overallBand !== null ? (
-              <p className="mt-1 text-3xl font-bold text-brand-700">
+              <p className="mt-1 text-3xl font-bold text-link">
                 {attempt.overallBand.toFixed(1)}
               </p>
             ) : (
-              <p className="mt-1 text-sm text-zinc-600">
+              <p className="mt-1 text-sm text-ink-body">
                 An IELTS overall band is the average of all four skills, so it stays unset while{" "}
                 {unscored.join(" and ")} {unscored.length === 1 ? "is" : "are"} unscored. Your
                 answers are saved — have them evaluated to complete the picture.
@@ -349,17 +349,17 @@ export function SimulationRunner({
             )}
           </div>
 
-          {isPending && <p className="mt-3 text-sm text-zinc-500">Saving your sitting…</p>}
+          {isPending && <p className="mt-3 text-sm text-ink-muted">Saving your sitting…</p>}
         </div>
 
         {/* Review: what the learner produced, plus the material that was hidden during the exam. */}
         {writingResponse.trim() && (
-          <section className="rounded-2xl border border-zinc-200 bg-white p-6">
-            <h3 className="mb-1 text-sm font-bold text-zinc-900">Your writing response</h3>
-            <p className="mb-3 text-xs text-zinc-500">
+          <section className="rounded-2xl border border-line bg-surface p-6">
+            <h3 className="mb-1 text-sm font-bold text-ink">Your writing response</h3>
+            <p className="mb-3 text-xs text-ink-muted">
               {countWords(writingResponse)} words · {set.writing.title}
             </p>
-            <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-700">
+            <p className="whitespace-pre-wrap text-sm leading-relaxed text-ink-body">
               {writingResponse}
             </p>
 
@@ -376,9 +376,9 @@ export function SimulationRunner({
                 >
                   {evaluating === "WRITING" ? "Evaluating…" : "Evaluate with AI"}
                 </Button>
-                <span className="text-xs text-zinc-500">
+                <span className="text-xs text-ink-muted">
                   Uses one of your AI credits. Or{" "}
-                  <Link href="/reviews" className="font-medium text-brand-600 hover:underline">
+                  <Link href="/reviews" className="font-medium text-link hover:underline">
                     request a human examiner review
                   </Link>
                   .
@@ -392,10 +392,10 @@ export function SimulationRunner({
         )}
 
         {speakingTranscript.trim() && (
-          <section className="rounded-2xl border border-zinc-200 bg-white p-6">
-            <h3 className="mb-1 text-sm font-bold text-zinc-900">Your speaking transcript</h3>
-            <p className="mb-3 text-xs text-zinc-500">{set.speaking.title}</p>
-            <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-700">
+          <section className="rounded-2xl border border-line bg-surface p-6">
+            <h3 className="mb-1 text-sm font-bold text-ink">Your speaking transcript</h3>
+            <p className="mb-3 text-xs text-ink-muted">{set.speaking.title}</p>
+            <p className="whitespace-pre-wrap text-sm leading-relaxed text-ink-body">
               {speakingTranscript}
             </p>
 
@@ -416,7 +416,7 @@ export function SimulationRunner({
                 >
                   {evaluating === "SPEAKING" ? "Evaluating…" : "Evaluate with AI"}
                 </Button>
-                <span className="text-xs text-zinc-500">
+                <span className="text-xs text-ink-muted">
                   Uses one of your AI credits. Scored on three criteria — pronunciation can&apos;t
                   be judged from a transcript.
                 </span>
@@ -428,19 +428,19 @@ export function SimulationRunner({
           </section>
         )}
 
-        <details className="rounded-2xl border border-zinc-200 bg-white p-6">
-          <summary className="cursor-pointer text-sm font-bold text-zinc-900">
+        <details className="rounded-2xl border border-line bg-surface p-6">
+          <summary className="cursor-pointer text-sm font-bold text-ink">
             Listening transcript and reading passage
           </summary>
           <div className="mt-4 flex flex-col gap-6">
             <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                 {set.listening.title}
               </p>
-              <p className="text-sm leading-relaxed text-zinc-700">{set.listening.transcript}</p>
+              <p className="text-sm leading-relaxed text-ink-body">{set.listening.transcript}</p>
             </div>
             <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                 {set.reading.title}
               </p>
               <PassageText passage={set.reading.passage} />
@@ -473,7 +473,7 @@ export function SimulationRunner({
   return (
     <div className="flex flex-col gap-6">
       {/* Exam chrome: section progress and the one clock that governs the whole sitting. */}
-      <div className="sticky top-16 z-30 -mx-4 flex flex-wrap items-center justify-between gap-3 border-y border-zinc-200 bg-white/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border">
+      <div className="sticky top-16 z-30 -mx-4 flex flex-wrap items-center justify-between gap-3 border-y border-line bg-surface/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border">
         <div className="flex flex-wrap items-center gap-1.5">
           {LEG_ORDER.map((skill, index) => (
             <span
@@ -482,7 +482,7 @@ export function SimulationRunner({
                 "rounded-full px-2.5 py-1 text-xs font-semibold",
                 index < legIndex && "bg-emerald-100 text-emerald-700",
                 index === legIndex && "bg-brand-600 text-white",
-                index > legIndex && "bg-zinc-100 text-zinc-400",
+                index > legIndex && "bg-surface-sunken text-ink-muted",
               )}
             >
               {SKILL_LABELS[skill]}
@@ -494,7 +494,7 @@ export function SimulationRunner({
           <span
             className={cn(
               "rounded-full px-3 py-1 font-mono text-sm font-semibold tabular-nums",
-              timeIsShort ? "bg-rose-100 text-rose-700" : "bg-zinc-100 text-zinc-700",
+              timeIsShort ? "bg-rose-100 text-rose-700" : "bg-surface-sunken text-ink-body",
             )}
             aria-live={timeIsShort ? "polite" : "off"}
           >
@@ -519,12 +519,12 @@ export function SimulationRunner({
       {/* -------------------------------------------------------- objective legs */}
       {objectiveLeg && (
         <>
-          <div className="rounded-xl border border-zinc-200 bg-white p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
+          <div className="rounded-xl border border-line bg-surface p-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
               Section {legIndex + 1} of {LEG_ORDER.length} · {SKILL_LABELS[currentSkill!]}
             </p>
-            <h2 className="mt-1 text-lg font-bold text-zinc-900">{objectiveLeg.title}</h2>
-            <p className="mt-1 text-sm text-zinc-500">
+            <h2 className="mt-1 text-lg font-bold text-ink">{objectiveLeg.title}</h2>
+            <p className="mt-1 text-sm text-ink-muted">
               Suggested time {objectiveLeg.minutes} minutes · {answeredCount} of{" "}
               {questions.length} answered
             </p>
@@ -542,8 +542,8 @@ export function SimulationRunner({
           <div className={cn("grid gap-6", currentSkill === "READING" && "lg:grid-cols-2")}>
             {currentSkill === "READING" && (
               <div className="lg:sticky lg:top-36 lg:max-h-[calc(100vh-11rem)] lg:self-start lg:overflow-y-auto">
-                <div className="rounded-xl border border-zinc-200 bg-white p-5">
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+                <div className="rounded-xl border border-line bg-surface p-5">
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                     Reading passage
                   </p>
                   <PassageText passage={set.reading.passage} />
@@ -569,20 +569,20 @@ export function SimulationRunner({
       {/* ----------------------------------------------------------- writing leg */}
       {currentSkill === "WRITING" && (
         <>
-          <div className="rounded-xl border border-zinc-200 bg-white p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
+          <div className="rounded-xl border border-line bg-surface p-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
               Section 3 of 4 · Writing
             </p>
-            <h2 className="mt-1 text-lg font-bold text-zinc-900">{set.writing.title}</h2>
-            <p className="mt-1 text-sm text-zinc-500">
+            <h2 className="mt-1 text-lg font-bold text-ink">{set.writing.title}</h2>
+            <p className="mt-1 text-sm text-ink-muted">
               Suggested time {set.writing.minutes} minutes
             </p>
           </div>
 
-          <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-5">
-            <p className="text-sm leading-relaxed text-zinc-800">{set.writing.prompt}</p>
-            <p className="mt-3 text-sm text-zinc-600">{set.writing.instructions}</p>
-            <p className="mt-3 text-xs text-zinc-500">
+          <div className="rounded-xl border border-line bg-surface-muted p-5">
+            <p className="text-sm leading-relaxed text-ink">{set.writing.prompt}</p>
+            <p className="mt-3 text-sm text-ink-body">{set.writing.instructions}</p>
+            <p className="mt-3 text-xs text-ink-muted">
               Write at least {set.writing.minWords} words.
             </p>
           </div>
@@ -593,12 +593,12 @@ export function SimulationRunner({
               onChange={(event) => setWritingResponse(event.target.value)}
               rows={18}
               placeholder="Type your response here…"
-              className="w-full rounded-xl border border-zinc-200 p-4 text-sm leading-relaxed text-zinc-800 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-xl border border-line p-4 text-sm leading-relaxed text-ink focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p
               className={cn(
                 "mt-2 text-xs",
-                wordCount < set.writing.minWords ? "text-zinc-500" : "text-emerald-700",
+                wordCount < set.writing.minWords ? "text-ink-muted" : "text-emerald-700",
               )}
             >
               {wordCount} {wordCount === 1 ? "word" : "words"} · minimum {set.writing.minWords}
@@ -610,26 +610,26 @@ export function SimulationRunner({
       {/* ---------------------------------------------------------- speaking leg */}
       {currentSkill === "SPEAKING" && (
         <>
-          <div className="rounded-xl border border-zinc-200 bg-white p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
+          <div className="rounded-xl border border-line bg-surface p-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
               Section 4 of 4 · Speaking
             </p>
-            <h2 className="mt-1 text-lg font-bold text-zinc-900">{set.speaking.title}</h2>
-            <p className="mt-1 text-sm text-zinc-500">
+            <h2 className="mt-1 text-lg font-bold text-ink">{set.speaking.title}</h2>
+            <p className="mt-1 text-sm text-ink-muted">
               Suggested time {set.speaking.minutes} minutes
             </p>
           </div>
 
-          <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-5">
+          <div className="rounded-xl border border-line bg-surface-muted p-5">
             {set.speaking.part === "part2" ? (
               <>
-                <p className="mb-2 text-sm font-medium text-zinc-800">
+                <p className="mb-2 text-sm font-medium text-ink">
                   {set.speaking.questions[0]}
                 </p>
                 {set.speaking.cueCardPoints && (
                   <>
-                    <p className="mb-1 text-sm text-zinc-700">You should say:</p>
-                    <ul className="flex list-disc flex-col gap-1 pl-5 text-sm text-zinc-700">
+                    <p className="mb-1 text-sm text-ink-body">You should say:</p>
+                    <ul className="flex list-disc flex-col gap-1 pl-5 text-sm text-ink-body">
                       {set.speaking.cueCardPoints.map((point) => (
                         <li key={point}>{point}</li>
                       ))}
@@ -638,20 +638,20 @@ export function SimulationRunner({
                 )}
               </>
             ) : (
-              <ol className="flex list-decimal flex-col gap-2 pl-5 text-sm text-zinc-800">
+              <ol className="flex list-decimal flex-col gap-2 pl-5 text-sm text-ink">
                 {set.speaking.questions.map((question) => (
                   <li key={question}>{question}</li>
                 ))}
               </ol>
             )}
-            <p className="mt-4 text-sm text-zinc-600">{set.speaking.guidance}</p>
+            <p className="mt-4 text-sm text-ink-body">{set.speaking.guidance}</p>
           </div>
 
           <SpeakingRecorder
             transcript={speakingTranscript}
             onTranscriptChange={setSpeakingTranscript}
           />
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-ink-muted">
             The transcript is what gets saved with your sitting. Recording stays in your browser.
           </p>
         </>

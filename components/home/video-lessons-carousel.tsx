@@ -24,7 +24,7 @@ export async function VideoLessonsCarousel() {
   if (videos.length === 0) return null;
 
   return (
-    <section className="bg-zinc-50">
+    <section className="bg-surface-muted">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Video lessons"
@@ -38,7 +38,7 @@ export async function VideoLessonsCarousel() {
             <Link
               key={video.slug}
               href={`/video-lessons/${video.slug}`}
-              className={`group w-72 shrink-0 snap-start overflow-hidden rounded-2xl border border-zinc-200/80 bg-white ${CARD_HOVER_CLASS}`}
+              className={`group w-72 shrink-0 snap-start overflow-hidden rounded-2xl border border-line/80 bg-surface ${CARD_HOVER_CLASS}`}
             >
               <div className={`relative flex h-40 items-center justify-center bg-linear-to-br ${TOPIC_GRADIENTS[video.topic ?? ""] ?? "from-zinc-600 to-zinc-800"}`}>
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors group-hover:bg-white/30">
@@ -53,8 +53,8 @@ export async function VideoLessonsCarousel() {
                   </span>
                 )}
               </div>
-              <div className="bg-white p-4">
-                <h3 className="font-semibold text-zinc-900 group-hover:text-brand-600">
+              <div className="bg-surface p-4">
+                <h3 className="font-semibold text-ink group-hover:text-link">
                   {video.title}
                 </h3>
               </div>

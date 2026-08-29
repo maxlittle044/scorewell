@@ -12,15 +12,15 @@ export const metadata: Metadata = {
  */
 export default function OfflinePage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-lg px-4 py-24 text-center sm:px-6 lg:px-8">
-        <h1 className="font-display text-2xl font-bold text-zinc-900">You&apos;re offline</h1>
-        <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+        <h1 className="font-display text-2xl font-bold text-ink">You&apos;re offline</h1>
+        <p className="mt-3 text-sm leading-relaxed text-ink-body">
           This page hasn&apos;t been opened on this device before, so there&apos;s no saved
           copy to show you. Pages you have already visited will still open while you&apos;re
           offline.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+        <p className="mt-3 text-sm leading-relaxed text-ink-body">
           Anything you submit — a test, a written answer, a sitting — needs a connection to
           be saved, so it&apos;s worth waiting until you&apos;re back online before starting
           one.

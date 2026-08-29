@@ -35,7 +35,7 @@ function Bubble({ message }: { message: ChatMessage }) {
     <div
       className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
         message.role === "assistant"
-          ? "self-start bg-zinc-100 text-zinc-800"
+          ? "self-start bg-surface-sunken text-ink"
           : "self-end bg-brand-600 text-white"
       }`}
     >
@@ -46,18 +46,18 @@ function Bubble({ message }: { message: ChatMessage }) {
 
 function FeedbackPanel({ feedback }: { feedback: NonNullable<ConversationState["feedback"]> }) {
   return (
-    <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-5">
+    <div className="mt-6 rounded-2xl border border-line bg-surface p-5">
       <div className="mb-4 flex items-baseline gap-3">
-        <span className="text-3xl font-bold text-brand-600">
+        <span className="text-3xl font-bold text-link">
           {feedback.overallBand.toFixed(1)}
         </span>
-        <span className="text-sm font-medium text-zinc-600">estimated overall band</span>
+        <span className="text-sm font-medium text-ink-body">estimated overall band</span>
       </div>
 
-      <p className="mb-5 rounded-xl bg-zinc-50 px-3 py-2 text-xs leading-relaxed text-zinc-600">
+      <p className="mb-5 rounded-xl bg-surface-muted px-3 py-2 text-xs leading-relaxed text-ink-body">
         IELTS Speaking is marked on four criteria, but Pronunciation can&apos;t be judged from typed
         answers — only the three below are scored. For pronunciation, use the{" "}
-        <Link href="/pronunciation" className="font-medium text-brand-600 hover:underline">
+        <Link href="/pronunciation" className="font-medium text-link hover:underline">
           pronunciation drills
         </Link>
         .
@@ -65,14 +65,14 @@ function FeedbackPanel({ feedback }: { feedback: NonNullable<ConversationState["
 
       <div className="flex flex-col gap-3">
         {feedback.criteria.map((criterion) => (
-          <div key={criterion.name} className="rounded-xl border border-zinc-200 p-3">
+          <div key={criterion.name} className="rounded-xl border border-line p-3">
             <div className="mb-1 flex items-center justify-between">
-              <h4 className="text-sm font-semibold text-zinc-900">{criterion.name}</h4>
-              <span className="text-sm font-bold text-brand-600">
+              <h4 className="text-sm font-semibold text-ink">{criterion.name}</h4>
+              <span className="text-sm font-bold text-link">
                 {criterion.band.toFixed(1)}
               </span>
             </div>
-            <p className="text-sm leading-relaxed text-zinc-600">{criterion.feedback}</p>
+            <p className="text-sm leading-relaxed text-ink-body">{criterion.feedback}</p>
           </div>
         ))}
       </div>
@@ -82,7 +82,7 @@ function FeedbackPanel({ feedback }: { feedback: NonNullable<ConversationState["
           <h4 className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-emerald-700">
             Strengths
           </h4>
-          <ul className="flex flex-col gap-1.5 text-sm text-zinc-700">
+          <ul className="flex flex-col gap-1.5 text-sm text-ink-body">
             {feedback.strengths.map((item, i) => (
               <li key={i}>• {item}</li>
             ))}
@@ -92,7 +92,7 @@ function FeedbackPanel({ feedback }: { feedback: NonNullable<ConversationState["
           <h4 className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-amber-700">
             To improve
           </h4>
-          <ul className="flex flex-col gap-1.5 text-sm text-zinc-700">
+          <ul className="flex flex-col gap-1.5 text-sm text-ink-body">
             {feedback.improvements.map((item, i) => (
               <li key={i}>• {item}</li>
             ))}
@@ -102,19 +102,19 @@ function FeedbackPanel({ feedback }: { feedback: NonNullable<ConversationState["
 
       {feedback.rephrasings.length > 0 && (
         <div className="mt-5">
-          <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+          <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
             Say it better
           </h4>
           <div className="flex flex-col gap-2.5">
             {feedback.rephrasings.map((item, i) => (
-              <div key={i} className="rounded-xl border border-zinc-200 p-3 text-sm">
-                <p className="text-zinc-500">
-                  You said: <span className="text-zinc-700">“{item.said}”</span>
+              <div key={i} className="rounded-xl border border-line p-3 text-sm">
+                <p className="text-ink-muted">
+                  You said: <span className="text-ink-body">“{item.said}”</span>
                 </p>
-                <p className="mt-1 text-zinc-900">
+                <p className="mt-1 text-ink">
                   Better: <span className="font-medium">“{item.better}”</span>
                 </p>
-                <p className="mt-1 text-xs text-zinc-500">{item.why}</p>
+                <p className="mt-1 text-xs text-ink-muted">{item.why}</p>
               </div>
             ))}
           </div>
@@ -157,8 +157,8 @@ export function AiConversation({
 
   if (!signedIn) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-center">
-        <p className="text-sm text-zinc-600">
+      <div className="rounded-2xl border border-line bg-surface p-6 text-center">
+        <p className="text-sm text-ink-body">
           Conversation practice uses the AI examiner, so you&apos;ll need to be signed in.
         </p>
         <Link
@@ -173,19 +173,19 @@ export function AiConversation({
 
   if (!started) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-center">
-        <p className="text-sm text-zinc-600">
+      <div className="rounded-2xl border border-line bg-surface p-6 text-center">
+        <p className="text-sm text-ink-body">
           You&apos;ll have a short spoken-style exchange with an AI examiner, then get band-level
           feedback on what you said.
         </p>
-        <p className="mt-2 text-xs text-zinc-500">
+        <p className="mt-2 text-xs text-ink-muted">
           The whole conversation counts as one AI use, not one per message.
         </p>
         <button
           type="button"
           onClick={() => run(() => startConversationAction(slug))}
           disabled={pending}
-          className="mt-4 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+          className="mt-4 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
         >
           {pending ? "Starting…" : "Start conversation"}
         </button>
@@ -204,19 +204,19 @@ export function AiConversation({
 
   return (
     <div>
-      <div className="flex flex-col gap-3 rounded-2xl border border-zinc-200 bg-white p-5">
+      <div className="flex flex-col gap-3 rounded-2xl border border-line bg-surface p-5">
         {messages.map((message, i) => (
           <Bubble key={i} message={message} />
         ))}
         {pending && (
-          <div className="self-start rounded-2xl bg-zinc-100 px-4 py-2.5 text-sm text-zinc-400">
+          <div className="self-start rounded-2xl bg-surface-sunken px-4 py-2.5 text-sm text-ink-muted">
             Thinking…
           </div>
         )}
         <div ref={endRef} />
       </div>
 
-      <p className="mt-2 text-right text-xs text-zinc-500">
+      <p className="mt-2 text-right text-xs text-ink-muted">
         {state.turnsRemaining} of {(state.turnsUsed ?? 0) + (state.turnsRemaining ?? 0)} turns left
       </p>
 
@@ -228,12 +228,12 @@ export function AiConversation({
             onChange={(e) => setDraft(e.target.value)}
             disabled={pending || outOfTurns}
             placeholder={outOfTurns ? "No turns left — ask for feedback" : "Type your answer..."}
-            className="flex-1 rounded-full border border-zinc-300 px-4 py-2.5 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:bg-zinc-50"
+            className="flex-1 rounded-full border border-line-strong px-4 py-2.5 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:bg-surface-muted"
           />
           <button
             type="submit"
             disabled={pending || outOfTurns || draft.trim() === ""}
-            className="rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+            className="rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
           >
             Send
           </button>
@@ -247,7 +247,7 @@ export function AiConversation({
           type="button"
           onClick={() => run(() => requestFeedbackAction(state.conversationId!))}
           disabled={pending || (state.turnsUsed ?? 0) === 0}
-          className="mt-4 rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
+          className="mt-4 rounded-full border border-line-strong px-5 py-2 text-sm font-medium text-ink-body hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-50"
         >
           {pending ? "Reviewing…" : "End & get feedback"}
         </button>
@@ -261,7 +261,7 @@ export function AiConversation({
               run(() => startConversationAction(slug));
             }}
             disabled={pending}
-            className="mt-4 rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
+            className="mt-4 rounded-full border border-line-strong px-5 py-2 text-sm font-medium text-ink-body hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-50"
           >
             Start a new conversation
           </button>

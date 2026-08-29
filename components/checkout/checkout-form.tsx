@@ -50,10 +50,10 @@ export function CheckoutForm({
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white p-6">
-      <div className="flex items-center justify-between border-b border-zinc-100 pb-4">
-        <span className="text-sm text-zinc-600">{summaryLabel}</span>
-        <span className="text-lg font-semibold text-zinc-900">{summaryPrice}</span>
+    <div className="rounded-2xl border border-line bg-surface p-6">
+      <div className="flex items-center justify-between border-b border-line pb-4">
+        <span className="text-sm text-ink-body">{summaryLabel}</span>
+        <span className="text-lg font-semibold text-ink">{summaryPrice}</span>
       </div>
 
       <div className="mt-5 flex gap-2">
@@ -65,7 +65,7 @@ export function CheckoutForm({
             className={`flex-1 rounded-full px-3 py-2 text-sm font-medium transition-colors ${
               method === account.method
                 ? "bg-brand-600 text-white"
-                : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                : "bg-surface-sunken text-ink-body hover:bg-line"
             }`}
           >
             {account.label}
@@ -80,21 +80,21 @@ export function CheckoutForm({
           <img
             src={qrUrl}
             alt={`QR code for paying by ${selected?.label ?? "the selected method"}`}
-            className="h-48 w-48 rounded-lg border border-zinc-200 bg-white p-2"
+            className="h-48 w-48 rounded-lg border border-line bg-surface p-2"
           />
         </div>
       )}
 
       {selected && (
-        <div className="mt-4 rounded-lg bg-zinc-50 px-4 py-3 text-center text-sm">
-          <p className="font-medium text-zinc-800">
+        <div className="mt-4 rounded-lg bg-surface-muted px-4 py-3 text-center text-sm">
+          <p className="font-medium text-ink">
             {selected.label}: <span className="font-mono">{selected.accountId}</span>
           </p>
-          {accountName && <p className="mt-0.5 text-xs text-zinc-500">Account name: {accountName}</p>}
+          {accountName && <p className="mt-0.5 text-xs text-ink-muted">Account name: {accountName}</p>}
         </div>
       )}
 
-      <form action={formAction} className="mt-6 flex flex-col gap-4 border-t border-zinc-100 pt-6">
+      <form action={formAction} className="mt-6 flex flex-col gap-4 border-t border-line pt-6">
         <input type="hidden" name="method" value={method} />
         <input type="hidden" name="purpose" value={isCredits ? "CREDITS" : "SUBSCRIPTION"} />
         {isCredits ? (
@@ -108,7 +108,7 @@ export function CheckoutForm({
         )}
 
         <div>
-          <label htmlFor="transactionRef" className="mb-1.5 block text-sm font-medium text-zinc-700">
+          <label htmlFor="transactionRef" className="mb-1.5 block text-sm font-medium text-ink-body">
             Transaction ID / reference number
           </label>
           <input
@@ -117,20 +117,20 @@ export function CheckoutForm({
             type="text"
             required
             placeholder="e.g. the reference shown after payment"
-            className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
         </div>
 
         <div>
-          <label htmlFor="screenshot" className="mb-1.5 block text-sm font-medium text-zinc-700">
-            Payment screenshot <span className="font-normal text-zinc-400">(optional)</span>
+          <label htmlFor="screenshot" className="mb-1.5 block text-sm font-medium text-ink-body">
+            Payment screenshot <span className="font-normal text-ink-muted">(optional)</span>
           </label>
           <input
             id="screenshot"
             name="screenshot"
             type="file"
             accept="image/*"
-            className="w-full text-sm text-zinc-600 file:mr-3 file:rounded-full file:border-0 file:bg-zinc-100 file:px-3 file:py-2 file:text-sm file:font-medium file:text-zinc-700 hover:file:bg-zinc-200"
+            className="w-full text-sm text-ink-body file:mr-3 file:rounded-full file:border-0 file:bg-surface-sunken file:px-3 file:py-2 file:text-sm file:font-medium file:text-ink-body hover:file:bg-line"
           />
         </div>
 

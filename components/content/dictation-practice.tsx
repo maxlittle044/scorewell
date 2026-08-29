@@ -104,8 +104,8 @@ export function DictationPractice({ segments }: { segments: string[] }) {
     <div>
       <SpeechUnsupportedNote />
 
-      <div className="mb-8 rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
-        <p className="mb-3 text-sm font-medium text-zinc-700">Listen to the whole passage first</p>
+      <div className="mb-8 rounded-2xl border border-line bg-surface-muted p-4">
+        <p className="mb-3 text-sm font-medium text-ink-body">Listen to the whole passage first</p>
         <div className="flex flex-wrap gap-2">
           <SpeakButton text={fullText} variant="primary">
             Play all
@@ -116,7 +116,7 @@ export function DictationPractice({ segments }: { segments: string[] }) {
         </div>
       </div>
 
-      <p className="mb-4 text-sm text-zinc-600">
+      <p className="mb-4 text-sm text-ink-body">
         Now work through it one line at a time: play the line, type what you hear, then check. Once a
         line is correct, play it again and shadow it out loud.
       </p>
@@ -130,9 +130,9 @@ export function DictationPractice({ segments }: { segments: string[] }) {
           const perfect = result !== null && result.matched === result.total && actual.length === expected.length;
 
           return (
-            <li key={index} className="rounded-2xl border border-zinc-200 p-4">
+            <li key={index} className="rounded-2xl border border-line p-4">
               <div className="mb-3 flex flex-wrap items-center gap-2">
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-xs font-semibold text-zinc-600">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-surface-sunken text-xs font-semibold text-ink-body">
                   {index + 1}
                 </span>
                 <SpeakButton text={segment} variant="quiet">
@@ -157,7 +157,7 @@ export function DictationPractice({ segments }: { segments: string[] }) {
                 onChange={(e) => update(index, { attempt: e.target.value, checked: false })}
                 rows={2}
                 placeholder="Type what you hear..."
-                className="w-full rounded-xl border border-zinc-300 p-3 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                className="w-full rounded-xl border border-line-strong p-3 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
               />
 
               <div className="mt-3 flex flex-wrap gap-2">
@@ -165,31 +165,31 @@ export function DictationPractice({ segments }: { segments: string[] }) {
                   type="button"
                   onClick={() => update(index, { checked: true })}
                   disabled={current.attempt.trim() === ""}
-                  className="rounded-full bg-brand-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+                  className="rounded-full bg-brand-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
                 >
                   Check
                 </button>
                 <button
                   type="button"
                   onClick={() => update(index, { revealed: !current.revealed })}
-                  className="rounded-full border border-zinc-300 px-4 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+                  className="rounded-full border border-line-strong px-4 py-1.5 text-sm font-medium text-ink-body hover:bg-surface-muted"
                 >
                   {current.revealed ? "Hide line" : "Reveal line"}
                 </button>
               </div>
 
               {result && (
-                <div className="mt-3 flex flex-col gap-2 rounded-xl bg-zinc-50 p-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                <div className="mt-3 flex flex-col gap-2 rounded-xl bg-surface-muted p-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
                     {result.matched} of {result.total} words matched
                   </p>
                   <div>
-                    <p className="mb-0.5 text-xs text-zinc-500">You typed</p>
+                    <p className="mb-0.5 text-xs text-ink-muted">You typed</p>
                     <MarkedWords tokens={actual} ok={result.actualOk} tone="actual" />
                   </div>
                   {result.matched < result.total && (
                     <div>
-                      <p className="mb-0.5 text-xs text-zinc-500">Highlighted words were missed</p>
+                      <p className="mb-0.5 text-xs text-ink-muted">Highlighted words were missed</p>
                       <MarkedWords tokens={expected} ok={result.expectedOk} tone="expected" />
                     </div>
                   )}
@@ -197,7 +197,7 @@ export function DictationPractice({ segments }: { segments: string[] }) {
               )}
 
               {current.revealed && (
-                <p className="mt-3 rounded-xl border border-zinc-200 bg-white p-3 text-sm leading-relaxed text-zinc-700">
+                <p className="mt-3 rounded-xl border border-line bg-surface p-3 text-sm leading-relaxed text-ink-body">
                   {segment}
                 </p>
               )}
@@ -207,7 +207,7 @@ export function DictationPractice({ segments }: { segments: string[] }) {
       </ol>
 
       {totalWords > 0 && (
-        <p className="mt-6 rounded-xl border border-brand-100 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <p className="mt-6 rounded-xl border border-brand-100 bg-brand-50 px-4 py-3 text-sm text-heading">
           Across the lines you&apos;ve checked: {totalMatched} of {totalWords} words correct (
           {Math.round((totalMatched / totalWords) * 100)}%).
         </p>

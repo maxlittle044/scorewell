@@ -38,7 +38,7 @@ export function SectionHeading({
           </span>
         )}
 
-        <h2 className="font-display text-2xl font-bold tracking-tight text-brand-900 sm:text-3xl">
+        <h2 className="font-display text-2xl font-bold tracking-tight text-heading sm:text-3xl">
           {title}
         </h2>
 
@@ -48,23 +48,23 @@ export function SectionHeading({
           (isCenter ? (
             <div className="mt-3 flex items-center justify-center gap-4">
               <span aria-hidden="true" className="h-px w-10 bg-pop-300" />
-              <p className="text-zinc-600">{description}</p>
+              <p className="text-ink-body">{description}</p>
               <span aria-hidden="true" className="h-px w-10 bg-pop-300" />
             </div>
           ) : (
-            <p className="mt-2 text-zinc-600">{description}</p>
+            <p className="mt-2 text-ink-body">{description}</p>
           ))}
       </div>
 
       {viewAllHref && (
         <Link
           href={viewAllHref}
-          className="hidden shrink-0 items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-accent-600 sm:inline-flex"
+          className="hidden shrink-0 items-center gap-1.5 text-sm font-semibold text-link hover:text-accent-600 sm:inline-flex"
         >
           {viewAllLabel}
           <span
             aria-hidden="true"
-            className="flex h-5 w-5 items-center justify-center rounded-full bg-brand-100 text-[11px] text-brand-700"
+            className="flex h-5 w-5 items-center justify-center rounded-full bg-brand-100 text-[11px] text-link"
           >
             →
           </span>

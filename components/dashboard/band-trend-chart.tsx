@@ -54,7 +54,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
 
   if (all.length === 0) {
     return (
-      <p className="mt-5 text-sm text-zinc-500">
+      <p className="mt-5 text-sm text-ink-muted">
         No band scores recorded yet. Listening and Reading tests are marked automatically, so
         a couple of those will start the trend.
       </p>
@@ -119,14 +119,14 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
                 x2={PAD.left + PLOT_W}
                 y1={yFor(band)}
                 y2={yFor(band)}
-                stroke="#e4e4e7"
+                className="stroke-line"
                 strokeWidth="1"
               />
               <text
                 x={PAD.left - 8}
                 y={yFor(band) + 4}
                 textAnchor="end"
-                className="fill-zinc-400"
+                className="fill-ink-muted"
                 fontSize="11"
               >
                 {band}
@@ -161,7 +161,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
                     cy={point.y}
                     r="4"
                     fill={SKILL_COLORS[entry.skill]}
-                    stroke="#ffffff"
+                    className="stroke-surface"
                     strokeWidth="2"
                   />
                 ))}
@@ -172,7 +172,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
                   x={last.x + 10}
                   y={last.y + 4}
                   fontSize="11"
-                  className="fill-zinc-600"
+                  className="fill-ink-body"
                 >
                   {SKILL_LABELS[entry.skill]} {entry.latest}
                 </text>
@@ -193,7 +193,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
             />
           ))}
 
-          <text x={PAD.left} y={HEIGHT - 8} fontSize="11" className="fill-zinc-400">
+          <text x={PAD.left} y={HEIGHT - 8} fontSize="11" className="fill-ink-muted">
             {formatDate(tMin)}
           </text>
           {/* Only when it differs — repeating one date at both ends reads as an error. */}
@@ -203,7 +203,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
               y={HEIGHT - 8}
               textAnchor="end"
               fontSize="11"
-              className="fill-zinc-400"
+              className="fill-ink-muted"
             >
               {formatDate(tMax)}
             </text>
@@ -231,7 +231,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
       {/* Legend: identity is never carried by colour alone. */}
       <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5">
         {series.map((entry) => (
-          <li key={entry.skill} className="flex items-center gap-1.5 text-xs text-zinc-600">
+          <li key={entry.skill} className="flex items-center gap-1.5 text-xs text-ink-body">
             <span
               aria-hidden="true"
               className="h-2 w-2 rounded-full"
@@ -249,7 +249,7 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
       </ul>
 
       {all.length < 2 && (
-        <p className="mt-3 text-xs text-zinc-500">
+        <p className="mt-3 text-xs text-ink-muted">
           One result so far — the line appears once you have a second in the same skill.
         </p>
       )}

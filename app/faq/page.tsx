@@ -40,18 +40,18 @@ const FAQS = [
 
 export default function FaqPage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Frequently asked questions" />
 
-        <div className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-zinc-200">
+        <div className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-line">
           {FAQS.map((faq) => (
             <details key={faq.question} className="group px-5 py-4">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-zinc-900">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-ink">
                 {faq.question}
-                <span className="shrink-0 text-zinc-400 transition-transform group-open:rotate-45">+</span>
+                <span className="shrink-0 text-ink-muted transition-transform group-open:rotate-45">+</span>
               </summary>
-              <p className="mt-2.5 text-sm text-zinc-600">{faq.answer}</p>
+              <p className="mt-2.5 text-sm text-ink-body">{faq.answer}</p>
             </details>
           ))}
         </div>

@@ -10,18 +10,18 @@ export default function LoginPage() {
   const [state, formAction, pending] = useActionState(authAction, {});
 
   return (
-    <main className="flex flex-1 items-center justify-center bg-zinc-50 px-4 py-16">
-      <div className="w-full max-w-sm rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm">
+    <main className="flex flex-1 items-center justify-center bg-surface-muted px-4 py-16">
+      <div className="w-full max-w-sm rounded-2xl border border-line bg-surface p-8 shadow-sm">
         <div className="flex justify-center">
           <Logo />
         </div>
 
-        <div className="mt-8 flex rounded-full bg-zinc-100 p-1">
+        <div className="mt-8 flex rounded-full bg-surface-sunken p-1">
           <button
             type="button"
             onClick={() => setMode("login")}
             className={`flex-1 rounded-full py-2 text-sm font-semibold transition-colors ${
-              mode === "login" ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500"
+              mode === "login" ? "bg-surface text-ink shadow-sm" : "text-ink-muted"
             }`}
           >
             Log in
@@ -30,7 +30,7 @@ export default function LoginPage() {
             type="button"
             onClick={() => setMode("signup")}
             className={`flex-1 rounded-full py-2 text-sm font-semibold transition-colors ${
-              mode === "signup" ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500"
+              mode === "signup" ? "bg-surface text-ink shadow-sm" : "text-ink-muted"
             }`}
           >
             Sign up
@@ -46,7 +46,7 @@ export default function LoginPage() {
 
           {mode === "signup" && (
             <div>
-              <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-zinc-700">
+              <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-ink-body">
                 Name
               </label>
               <input
@@ -54,13 +54,13 @@ export default function LoginPage() {
                 name="name"
                 type="text"
                 autoComplete="name"
-                className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
               />
             </div>
           )}
 
           <div>
-            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-zinc-700">
+            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-ink-body">
               Email
             </label>
             <input
@@ -68,12 +68,12 @@ export default function LoginPage() {
               name="email"
               type="email"
               autoComplete="email"
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
           </div>
 
           <div>
-            <label htmlFor="password" className="mb-1.5 block text-sm font-medium text-zinc-700">
+            <label htmlFor="password" className="mb-1.5 block text-sm font-medium text-ink-body">
               Password
             </label>
             <input
@@ -81,7 +81,7 @@ export default function LoginPage() {
               name="password"
               type="password"
               autoComplete={mode === "login" ? "current-password" : "new-password"}
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
           </div>
 
@@ -94,31 +94,31 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-zinc-500">
+        <p className="mt-6 text-center text-sm text-ink-muted">
           {mode === "login" ? (
             <>
               New to ScoreWell?{" "}
-              <button type="button" onClick={() => setMode("signup")} className="font-medium text-brand-600 hover:underline">
+              <button type="button" onClick={() => setMode("signup")} className="font-medium text-link hover:underline">
                 Sign up
               </button>
             </>
           ) : (
             <>
               Already have an account?{" "}
-              <button type="button" onClick={() => setMode("login")} className="font-medium text-brand-600 hover:underline">
+              <button type="button" onClick={() => setMode("login")} className="font-medium text-link hover:underline">
                 Log in
               </button>
             </>
           )}
         </p>
 
-        <p className="mt-4 text-center text-xs text-zinc-400">
+        <p className="mt-4 text-center text-xs text-ink-muted">
           By continuing, you agree to our{" "}
-          <Link href="/terms" className="underline hover:text-zinc-600">
+          <Link href="/terms" className="underline hover:text-ink-body">
             Terms
           </Link>{" "}
           and{" "}
-          <Link href="/privacy" className="underline hover:text-zinc-600">
+          <Link href="/privacy" className="underline hover:text-ink-body">
             Privacy Policy
           </Link>
           .

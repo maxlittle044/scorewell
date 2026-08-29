@@ -23,9 +23,9 @@ export default async function TagArchivePage({ params }: PageProps<"/tags/[tag]"
   const items = await getItemsByTag(tag);
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-        <Link href="/tags" className="text-sm font-medium text-brand-600 hover:underline">
+        <Link href="/tags" className="text-sm font-medium text-link hover:underline">
           ← All topics
         </Link>
 
@@ -41,25 +41,25 @@ export default async function TagArchivePage({ params }: PageProps<"/tags/[tag]"
         </div>
 
         {items.length === 0 ? (
-          <div className="rounded-xl border border-dashed border-zinc-300 bg-white px-6 py-10 text-center">
-            <p className="text-sm text-zinc-500">
+          <div className="rounded-xl border border-dashed border-line-strong bg-surface px-6 py-10 text-center">
+            <p className="text-sm text-ink-muted">
               Nothing is tagged &ldquo;{tagLabel(tag)}&rdquo; yet.{" "}
-              <Link href="/tags" className="font-medium text-brand-600 hover:underline">
+              <Link href="/tags" className="font-medium text-link hover:underline">
                 Browse all topics
               </Link>
               .
             </p>
           </div>
         ) : (
-          <ul className="flex flex-col divide-y divide-zinc-100 rounded-2xl border border-zinc-200 bg-white">
+          <ul className="flex flex-col divide-y divide-zinc-100 rounded-2xl border border-line bg-surface">
             {items.map((item) => (
               <li key={item.id}>
-                <Link href={item.href} className="flex items-center gap-4 px-5 py-4 hover:bg-zinc-50">
+                <Link href={item.href} className="flex items-center gap-4 px-5 py-4 hover:bg-surface-muted">
                   <div className="min-w-0 flex-1">
-                    <p className="text-sm font-medium text-zinc-900">{item.title}</p>
-                    {item.meta && <p className="mt-0.5 text-sm text-zinc-500">{item.meta}</p>}
+                    <p className="text-sm font-medium text-ink">{item.title}</p>
+                    {item.meta && <p className="mt-0.5 text-sm text-ink-muted">{item.meta}</p>}
                   </div>
-                  <span className="shrink-0 rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-600">
+                  <span className="shrink-0 rounded-full bg-surface-sunken px-2.5 py-1 text-xs font-medium text-ink-body">
                     {item.kind}
                   </span>
                 </Link>

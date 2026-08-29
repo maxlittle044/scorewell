@@ -38,12 +38,12 @@ export default async function ExamLibraryPage({
   const total = countTests(collections);
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <h1 className="mb-3 text-center font-display text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+        <h1 className="mb-3 text-center font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
           IELTS <span className="text-pop-600">Exam Library</span>
         </h1>
-        <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-zinc-600">
+        <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-ink-body">
           Every practice test on the site, in one place. Filter by test variant, by skill, or
           search the whole library.
         </p>
@@ -53,12 +53,12 @@ export default async function ExamLibraryPage({
         </Suspense>
 
         {total === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-center text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface-muted p-6 text-center text-sm text-ink-muted">
             No tests match these filters yet. Try clearing the search or choosing All Skills.
           </p>
         ) : (
           <>
-            <p className="mb-8 text-sm text-zinc-500">
+            <p className="mb-8 text-sm text-ink-muted">
               {total} {total === 1 ? "test" : "tests"} across {collections.length}{" "}
               {collections.length === 1 ? "collection" : "collections"}.
             </p>
@@ -67,24 +67,24 @@ export default async function ExamLibraryPage({
               {collections.map((collection) => (
                 <section
                   key={collection.name}
-                  className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm"
+                  className="rounded-2xl border border-line bg-surface p-6 shadow-sm"
                 >
                   <div className="flex flex-col gap-6 sm:flex-row">
                     <CollectionCover name={collection.name} />
 
                     <div className="min-w-0 flex-1">
-                      <h2 className="mb-4 text-lg font-bold text-zinc-900">{collection.name}</h2>
+                      <h2 className="mb-4 text-lg font-bold text-ink">{collection.name}</h2>
                       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
                         {collection.tests.map((test) => (
                           <Link
                             key={test.slug}
                             href={test.href}
-                            className="group rounded-xl border border-zinc-200 p-4 transition-colors hover:border-brand-400 hover:bg-brand-50/40"
+                            className="group rounded-xl border border-line p-4 transition-colors hover:border-brand-400 hover:bg-brand-50/40"
                           >
-                            <p className="text-sm font-semibold text-zinc-800 group-hover:text-brand-700">
+                            <p className="text-sm font-semibold text-ink group-hover:text-link">
                               {test.title}
                             </p>
-                            <p className="mt-1 text-xs text-zinc-500">
+                            <p className="mt-1 text-xs text-ink-muted">
                               {SKILL_LABELS[test.skill]}
                               {/* Real Progress count only — nothing shown at zero. */}
                               {test.attempts > 0 && (

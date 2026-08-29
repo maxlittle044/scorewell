@@ -31,7 +31,7 @@ export function LessonRegisterButton({
 
   if (placeholder) {
     return (
-      <span className="rounded-full border border-zinc-200 bg-zinc-50 px-6 py-3 text-sm font-semibold text-zinc-400">
+      <span className="rounded-full border border-line bg-surface-muted px-6 py-3 text-sm font-semibold text-ink-muted">
         Registration not open
       </span>
     );
@@ -39,7 +39,7 @@ export function LessonRegisterButton({
 
   if (isPast) {
     return (
-      <span className="rounded-full border border-zinc-200 bg-zinc-50 px-6 py-3 text-sm font-semibold text-zinc-400">
+      <span className="rounded-full border border-line bg-surface-muted px-6 py-3 text-sm font-semibold text-ink-muted">
         This session has ended
       </span>
     );
@@ -86,7 +86,7 @@ export function LessonRegisterButton({
               type="button"
               disabled={pending}
               onClick={() => run(() => cancelRegistrationAction(slug), false)}
-              className="text-sm font-semibold text-zinc-500 hover:text-zinc-800 disabled:opacity-50"
+              className="text-sm font-semibold text-ink-muted hover:text-ink disabled:opacity-50"
             >
               {pending ? "Working…" : "Cancel registration"}
             </button>

@@ -17,7 +17,7 @@ export default async function WritingExercisesIndexPage() {
   const exercises = await listWritingItems("exercise");
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Writing exercises"
@@ -25,7 +25,7 @@ export default async function WritingExercisesIndexPage() {
         />
 
         {exercises.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
             No writing exercises have been published yet.
           </p>
         ) : (

@@ -26,32 +26,32 @@ export function CriterionFeedback({
   note?: string;
 }) {
   return (
-    <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-5">
+    <div className="rounded-xl border border-line bg-surface-muted p-5">
       <div className="flex items-center justify-between">
-        <span className="text-sm font-medium text-zinc-600">{bandLabel}</span>
-        <span className="text-2xl font-bold text-brand-600">{result.overallBand}</span>
+        <span className="text-sm font-medium text-ink-body">{bandLabel}</span>
+        <span className="text-2xl font-bold text-link">{result.overallBand}</span>
       </div>
 
       <div className="mt-4 flex flex-col gap-3">
         {result.criteria.map((criterion) => (
           <div key={criterion.name}>
             <div className="flex items-center justify-between text-sm">
-              <span className="font-medium text-zinc-800">{criterion.name}</span>
-              <span className="font-semibold text-zinc-900">{criterion.band}</span>
+              <span className="font-medium text-ink">{criterion.name}</span>
+              <span className="font-semibold text-ink">{criterion.band}</span>
             </div>
-            <p className="mt-0.5 text-sm text-zinc-600">{criterion.feedback}</p>
+            <p className="mt-0.5 text-sm text-ink-body">{criterion.feedback}</p>
           </div>
         ))}
       </div>
 
       {note && (
-        <p className="mt-4 rounded-lg bg-white px-3 py-2 text-xs text-zinc-500">{note}</p>
+        <p className="mt-4 rounded-lg bg-surface px-3 py-2 text-xs text-ink-muted">{note}</p>
       )}
 
       <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <p className="text-sm font-semibold text-emerald-700">Strengths</p>
-          <ul className="mt-1.5 list-inside list-disc text-sm text-zinc-600">
+          <ul className="mt-1.5 list-inside list-disc text-sm text-ink-body">
             {result.strengths.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
@@ -59,7 +59,7 @@ export function CriterionFeedback({
         </div>
         <div>
           <p className="text-sm font-semibold text-amber-700">Improvements</p>
-          <ul className="mt-1.5 list-inside list-disc text-sm text-zinc-600">
+          <ul className="mt-1.5 list-inside list-disc text-sm text-ink-body">
             {result.improvements.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

@@ -31,7 +31,7 @@ const EXERCISES = [
 
 export function WritingExercisesList() {
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Recent writing prompts"
@@ -40,7 +40,7 @@ export function WritingExercisesList() {
           viewAllLabel="View all prompts"
         />
 
-        <ul data-reveal className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-zinc-200/80 bg-white shadow-sm shadow-zinc-900/3">
+        <ul data-reveal className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-line/80 bg-surface shadow-sm shadow-zinc-900/3">
           {EXERCISES.map((exercise) => (
             <li key={exercise.href}>
               <Link
@@ -48,12 +48,12 @@ export function WritingExercisesList() {
                 className="group flex items-center justify-between gap-4 px-5 py-4 transition-colors hover:bg-brand-50/50"
               >
                 <div>
-                  <span className="inline-block rounded-full bg-linear-to-r from-brand-50 to-pop-50 px-2.5 py-0.5 text-xs font-medium text-brand-600">
+                  <span className="inline-block rounded-full bg-linear-to-r from-brand-50 to-pop-50 px-2.5 py-0.5 text-xs font-medium text-link">
                     {exercise.tag}
                   </span>
-                  <p className="mt-1.5 font-medium text-zinc-900">{exercise.title}</p>
+                  <p className="mt-1.5 font-medium text-ink">{exercise.title}</p>
                 </div>
-                <span className="shrink-0 text-sm font-medium text-brand-600 opacity-0 transition-opacity group-hover:opacity-100">
+                <span className="shrink-0 text-sm font-medium text-link opacity-0 transition-opacity group-hover:opacity-100">
                   Practice →
                 </span>
               </Link>

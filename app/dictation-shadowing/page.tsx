@@ -19,7 +19,7 @@ export default async function DictationIndexPage() {
   const exercises = await listDictationExercises();
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Dictation & shadowing"
@@ -27,7 +27,7 @@ export default async function DictationIndexPage() {
         />
 
         {exercises.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
             No passages have been published yet.
           </p>
         ) : (
@@ -36,22 +36,22 @@ export default async function DictationIndexPage() {
               <Link
                 key={exercise.slug}
                 href={`/dictation-shadowing/${exercise.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-shadow hover:shadow-md"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-md"
               >
                 <div
                   className={`h-24 bg-gradient-to-br ${
                     LEVEL_GRADIENTS[exercise.level] ?? "from-zinc-500 to-zinc-700"
                   }`}
                 />
-                <div className="flex flex-1 flex-col bg-white p-4">
-                  <div className="flex items-center justify-between text-xs text-zinc-500">
+                <div className="flex flex-1 flex-col bg-surface p-4">
+                  <div className="flex items-center justify-between text-xs text-ink-muted">
                     <span>{exercise.level}</span>
                     <span>{exercise.duration}</span>
                   </div>
-                  <h3 className="mt-1.5 font-semibold text-zinc-900 group-hover:text-brand-600">
+                  <h3 className="mt-1.5 font-semibold text-ink group-hover:text-link">
                     {exercise.title}
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">{exercise.intro}</p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">{exercise.intro}</p>
                 </div>
               </Link>
             ))}

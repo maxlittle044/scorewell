@@ -34,7 +34,7 @@ export function WritingEditor({
         onChange={(e) => setText(e.target.value)}
         rows={12}
         placeholder="Write your response here..."
-        className="w-full rounded-xl border border-zinc-300 p-4 text-sm leading-relaxed text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+        className="w-full rounded-xl border border-line-strong p-4 text-sm leading-relaxed text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
       />
 
       <form action={formAction}>
@@ -50,7 +50,7 @@ export function WritingEditor({
           <button
             type="submit"
             disabled={wordCount === 0 || pending}
-            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
           >
             {pending ? "Checking…" : "Check with AI"}
           </button>
@@ -58,7 +58,7 @@ export function WritingEditor({
       </form>
 
       {title && (
-        <form action={shareAction} className="mt-3 border-t border-zinc-100 pt-3">
+        <form action={shareAction} className="mt-3 border-t border-line pt-3">
           <input type="hidden" name="answerText" value={text} />
           <input type="hidden" name="title" value={title} />
           <input type="hidden" name="taskType" value={taskType} />
@@ -80,11 +80,11 @@ export function WritingEditor({
               <button
                 type="submit"
                 disabled={wordCount === 0 || sharing}
-                className="text-sm font-medium text-brand-600 hover:underline disabled:cursor-not-allowed disabled:text-zinc-400 disabled:no-underline"
+                className="text-sm font-medium text-link hover:underline disabled:cursor-not-allowed disabled:text-ink-muted disabled:no-underline"
               >
                 {sharing ? "Sharing…" : "Share with the community"}
               </button>
-              <span className="text-xs text-zinc-400">
+              <span className="text-xs text-ink-muted">
                 Your answer will be public, shown with your first name.
               </span>
             </div>

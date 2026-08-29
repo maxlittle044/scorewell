@@ -40,7 +40,7 @@ export function VideoPlayer({ video, title }: { video: LessonVideo; title: strin
         )}
       </div>
 
-      <figcaption className="mt-2 text-xs leading-relaxed text-zinc-500">
+      <figcaption className="mt-2 text-xs leading-relaxed text-ink-muted">
         {video.placeholder && (
           <span className="mr-1.5 rounded bg-amber-100 px-1.5 py-0.5 font-semibold text-amber-800">
             Stand-in footage

@@ -13,7 +13,7 @@ export default async function TipsIndexPage() {
   const tips = await listTips();
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Tips" description="Short, practical advice for every part of the exam." />
 
@@ -25,7 +25,7 @@ export default async function TipsIndexPage() {
             <Link
               key={value}
               href={`/ielts/tips/skill/${value}`}
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition-colors hover:border-brand-300"
+              className="rounded-full border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink-body transition-colors hover:border-brand-300"
             >
               {TIP_SKILL_LABELS[value]}
             </Link>
@@ -33,7 +33,7 @@ export default async function TipsIndexPage() {
         </div>
 
         {tips.length === 0 ? (
-          <p className="text-sm text-zinc-500">No articles published yet.</p>
+          <p className="text-sm text-ink-muted">No articles published yet.</p>
         ) : (
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {tips.map((tip) => (

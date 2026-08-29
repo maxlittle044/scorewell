@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  color-scheme: light;
   --background: #ffffff;
   --foreground: #18181b;
 
@@ -37,6 +38,27 @@
   --color-accent-500: #f26522;
   --color-accent-600: #d24d10;
 
+
+  /*
+   * Semantic surface/ink/line tokens — the layer dark mode swaps.
+   *
+   * Pages were written against literal zinc and white utilities, which cannot flip:
+   * `bg-white` is a card surface but `text-white` is a label on a navy button, and both
+   * resolve to the same variable. So the literals were migrated to these roles instead,
+   * and only the roles have a dark value. Anything still literal (the footer, tooltips,
+   * overlays on brand colour) is dark by design in both themes and is left alone.
+   */
+  --surface: #ffffff;        /* cards, panels, anything raised */
+  --surface-muted: #fafafa;  /* the page behind them */
+  --surface-sunken: #f4f4f5; /* chips, tracks, inset controls */
+  --line: #e4e4e7;
+  --line-strong: #d4d4d8;
+  --ink: #18181b;            /* headings and primary text */
+  --ink-body: #3f3f46;       /* body copy */
+  --ink-muted: #71717a;      /* captions, metadata */
+  --heading: #101f36;        /* navy headings (brand-900 on white) */
+  --link: #294563;           /* link and accent text (brand-600 on white) */
+
   --gradient-brand: linear-gradient(135deg, var(--color-brand-700), var(--color-pop-600));
   --gradient-vivid: linear-gradient(135deg, var(--color-brand-600) 0%, var(--color-pop-500) 100%);
   --gradient-warm: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-400));
@@ -69,6 +91,16 @@
   --color-accent-400: var(--color-accent-400);
   --color-accent-500: var(--color-accent-500);
   --color-accent-600: var(--color-accent-600);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-body: var(--ink-body);
+  --color-ink-muted: var(--ink-muted);
+  --color-heading: var(--heading);
+  --color-link: var(--link);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-display-raw);
@@ -80,10 +112,127 @@
   --shadow-glow-accent: 0 20px 45px -12px rgb(var(--shadow-color-accent) / 0.45);
 }
 
+/*
+ * Dark palette. Declared twice on purpose: once for an explicit choice made with the
+ * toggle, once for the OS preference when no choice has been made. The
+ * `:not([data-theme="light"])` guard lets an explicit light choice beat an OS set to dark.
+ *
+ * In light mode cards sit above the page (white on near-white). Dark mode inverts that
+ * relationship rather than the colours: the page recedes and the cards lift.
+ */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0f0f12;
+  --foreground: #fafafa;
+
+  --surface: #1c1c21;
+  --surface-muted: #131316;
+  --surface-sunken: #2a2a30;
+  --line: #35353d;
+  --line-strong: #4a4a54;
+  --ink: #fafafa;
+  --ink-body: #d4d4d8;
+  --ink-muted: #a1a1aa;
+
+  /* Headings and links lift; the solid brand steps are deliberately NOT touched, because
+     bg-brand-600/700 are the navy nav band and primary buttons, which read correctly on a
+     dark page. Only the *text* roles move, which is why they are their own tokens. */
+  --heading: #f4f4f5;
+  --link: #9ec5e6;
+
+  /* Tint backgrounds. Every ramp below is used as a pale wash behind darker text; on a
+     dark page both halves have to swap or the pair becomes unreadable. */
+  --color-brand-50: #1a2733;
+  --color-brand-100: #223449;
+  --color-pop-50: #10312f;
+  --color-pop-100: #14403d;
+  --color-accent-100: #3a2213;
+  --color-emerald-50: #0e2a1e;
+  --color-emerald-100: #123726;
+  --color-rose-50: #331419;
+  --color-rose-100: #431a21;
+  --color-red-50: #331416;
+  --color-red-100: #43191c;
+  --color-amber-50: #33260c;
+  --color-amber-100: #433110;
+  --color-sky-50: #0e2739;
+
+  /* ...and the strong steps that sit on those tints lift to stay legible. */
+  --color-pop-600: #57d6ce;
+  --color-pop-700: #7ee5de;
+  --color-accent-600: #f7975e;
+  --color-emerald-600: #4ade80;
+  --color-emerald-700: #6ee7a1;
+  --color-emerald-800: #86efac;
+  --color-emerald-900: #bbf7d0;
+  --color-rose-600: #fb7185;
+  --color-rose-700: #fda4af;
+  --color-rose-800: #fecdd3;
+  --color-rose-900: #ffe4e6;
+  --color-red-600: #f87171;
+  --color-red-700: #fca5a5;
+  --color-amber-700: #fbbf24;
+  --color-amber-800: #fcd34d;
+  --color-amber-900: #fde68a;
+  --color-sky-600: #7dd3fc;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+  color-scheme: dark;
+  --background: #0f0f12;
+  --foreground: #fafafa;
+
+  --surface: #1c1c21;
+  --surface-muted: #131316;
+  --surface-sunken: #2a2a30;
+  --line: #35353d;
+  --line-strong: #4a4a54;
+  --ink: #fafafa;
+  --ink-body: #d4d4d8;
+  --ink-muted: #a1a1aa;
+
+  /* Headings and links lift; the solid brand steps are deliberately NOT touched, because
+     bg-brand-600/700 are the navy nav band and primary buttons, which read correctly on a
+     dark page. Only the *text* roles move, which is why they are their own tokens. */
+  --heading: #f4f4f5;
+  --link: #9ec5e6;
+
+  /* Tint backgrounds. Every ramp below is used as a pale wash behind darker text; on a
+     dark page both halves have to swap or the pair becomes unreadable. */
+  --color-brand-50: #1a2733;
+  --color-brand-100: #223449;
+  --color-pop-50: #10312f;
+  --color-pop-100: #14403d;
+  --color-accent-100: #3a2213;
+  --color-emerald-50: #0e2a1e;
+  --color-emerald-100: #123726;
+  --color-rose-50: #331419;
+  --color-rose-100: #431a21;
+  --color-red-50: #331416;
+  --color-red-100: #43191c;
+  --color-amber-50: #33260c;
+  --color-amber-100: #433110;
+  --color-sky-50: #0e2739;
+
+  /* ...and the strong steps that sit on those tints lift to stay legible. */
+  --color-pop-600: #57d6ce;
+  --color-pop-700: #7ee5de;
+  --color-accent-600: #f7975e;
+  --color-emerald-600: #4ade80;
+  --color-emerald-700: #6ee7a1;
+  --color-emerald-800: #86efac;
+  --color-emerald-900: #bbf7d0;
+  --color-rose-600: #fb7185;
+  --color-rose-700: #fda4af;
+  --color-rose-800: #fecdd3;
+  --color-rose-900: #ffe4e6;
+  --color-red-600: #f87171;
+  --color-red-700: #fca5a5;
+  --color-amber-700: #fbbf24;
+  --color-amber-800: #fcd34d;
+  --color-amber-900: #fde68a;
+  --color-sky-600: #7dd3fc;
   }
 }
 

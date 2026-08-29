@@ -24,14 +24,14 @@ export function CriteriaBandCalculator({ criteria }: { criteria: [string, string
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {criteria.map((label, i) => (
           <div key={label}>
-            <label htmlFor={`criterion-${i}`} className="mb-1.5 block text-sm font-medium text-zinc-700">
+            <label htmlFor={`criterion-${i}`} className="mb-1.5 block text-sm font-medium text-ink-body">
               {label}
             </label>
             <select
               id={`criterion-${i}`}
               value={scores[i]}
               onChange={(e) => updateScore(i, Number(e.target.value))}
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
             >
               {SCORES.map((s) => (
                 <option key={s} value={s}>
@@ -44,8 +44,8 @@ export function CriteriaBandCalculator({ criteria }: { criteria: [string, string
       </div>
 
       <div className="mt-6 rounded-xl bg-brand-50 px-5 py-4 text-center">
-        <p className="text-xs font-medium uppercase tracking-wide text-brand-600">Estimated band</p>
-        <p className="mt-1 text-3xl font-bold text-brand-700">{band}</p>
+        <p className="text-xs font-medium uppercase tracking-wide text-link">Estimated band</p>
+        <p className="mt-1 text-3xl font-bold text-link">{band}</p>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default async function CoursesIndexPage() {
   const courses = await listCourses();
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Courses"
@@ -20,22 +20,22 @@ export default async function CoursesIndexPage() {
         />
 
         {courses.length === 0 ? (
-          <p className="text-sm text-zinc-500">No courses published yet.</p>
+          <p className="text-sm text-ink-muted">No courses published yet.</p>
         ) : (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {courses.map((course) => (
               <Link
                 key={course.slug}
                 href={`/courses/${course.slug}`}
-                className="group overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-shadow hover:shadow-md"
+                className="group overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className={`h-32 bg-gradient-to-br ${course.gradient}`} />
-                <div className="bg-white p-5">
-                  <h3 className="font-semibold text-zinc-900 group-hover:text-brand-600">
+                <div className="bg-surface p-5">
+                  <h3 className="font-semibold text-ink group-hover:text-link">
                     {course.title}
                   </h3>
-                  <p className="mt-1.5 text-sm text-zinc-600">{course.description}</p>
-                  <p className="mt-3 text-xs font-medium text-zinc-400">
+                  <p className="mt-1.5 text-sm text-ink-body">{course.description}</p>
+                  <p className="mt-3 text-xs font-medium text-ink-muted">
                     {course.lessonCount} lessons
                   </p>
                 </div>

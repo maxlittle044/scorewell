@@ -12,12 +12,12 @@ export default async function GrammarTestPage({
 
   if (!test) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             This test isn&apos;t available yet.{" "}
-            <Link href="/ielts/grammar-tests" className="font-medium text-brand-600 hover:underline">
+            <Link href="/ielts/grammar-tests" className="font-medium text-link hover:underline">
               Browse all grammar tests
             </Link>
             .
@@ -28,9 +28,9 @@ export default async function GrammarTestPage({
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-10 sm:px-6 lg:px-8">
-        <h1 className="mb-6 text-xl font-bold text-zinc-900">{test.title}</h1>
+        <h1 className="mb-6 text-xl font-bold text-ink">{test.title}</h1>
         <Quiz questions={test.questions} title={test.title} contentItemId={test.id} />
         <TagList tags={test.tags} />
       </div>

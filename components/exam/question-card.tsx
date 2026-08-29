@@ -25,8 +25,8 @@ function optionClasses(state: "idle" | "selected" | "correct" | "wrong") {
     "flex w-full cursor-pointer items-center gap-2.5 rounded-lg border px-3 py-2 text-left text-sm transition-colors",
     state === "correct" && "border-emerald-400 bg-emerald-50 text-emerald-900",
     state === "wrong" && "border-rose-400 bg-rose-50 text-rose-900",
-    state === "selected" && "border-brand-400 bg-brand-50 text-brand-900",
-    state === "idle" && "border-zinc-200 hover:border-brand-300 hover:bg-brand-50/40",
+    state === "selected" && "border-brand-400 bg-brand-50 text-heading",
+    state === "idle" && "border-line hover:border-brand-300 hover:bg-brand-50/40",
   );
 }
 
@@ -38,7 +38,7 @@ function FlagButton({ flagged, onToggle }: { flagged: boolean; onToggle: () => v
       aria-pressed={flagged}
       className={cn(
         "shrink-0 rounded-full p-1.5 transition-colors",
-        flagged ? "bg-accent-100 text-accent-600" : "text-zinc-300 hover:bg-zinc-100 hover:text-zinc-500",
+        flagged ? "bg-accent-100 text-accent-600" : "text-zinc-300 hover:bg-surface-sunken hover:text-ink-muted",
       )}
       title={flagged ? "Remove flag" : "Flag for review"}
     >
@@ -104,7 +104,7 @@ export function QuestionCard({
   return (
     <div
       id={`question-${question.id}`}
-      className="scroll-mt-24 rounded-xl border border-zinc-200 bg-white p-5"
+      className="scroll-mt-24 rounded-xl border border-line bg-surface p-5"
     >
       <div className="mb-3 flex items-start gap-3">
         <span
@@ -114,13 +114,13 @@ export function QuestionCard({
               ? result.correct
                 ? "bg-emerald-100 text-emerald-700"
                 : "bg-rose-100 text-rose-700"
-              : "bg-brand-100 text-brand-700",
+              : "bg-brand-100 text-link",
           )}
         >
           {number}
         </span>
 
-        <div className="flex-1 text-sm font-medium text-zinc-800">
+        <div className="flex-1 text-sm font-medium text-ink">
           {question.kind === "true-false-not-given" || question.kind === "yes-no-not-given"
             ? question.statement
             : question.kind === "matching"
@@ -162,7 +162,7 @@ export function QuestionCard({
                 </label>
                 {/* Why this wrong option is wrong — shown only after submitting. */}
                 {locked && index !== question.correctIndex && question.distractorNotes?.[String(index)] && (
-                  <p className="mt-1 pl-3 text-xs text-zinc-500">
+                  <p className="mt-1 pl-3 text-xs text-ink-muted">
                     {question.distractorNotes[String(index)]}
                   </p>
                 )}
@@ -229,7 +229,7 @@ export function QuestionCard({
               ? result.correct
                 ? "border-emerald-400 bg-emerald-50"
                 : "border-rose-400 bg-rose-50"
-              : "border-zinc-200 focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100",
+              : "border-line focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100",
           )}
         >
           <option value="">Select…</option>
@@ -252,23 +252,23 @@ export function QuestionCard({
       )}
 
       {locked && (
-        <div className="mt-4 rounded-lg bg-zinc-50 px-4 py-3 text-sm">
+        <div className="mt-4 rounded-lg bg-surface-muted px-4 py-3 text-sm">
           {!result.correct && (
-            <p className="text-zinc-700">
+            <p className="text-ink-body">
               <span className="font-semibold">Correct answer:</span> {result.correctAnswer}
             </p>
           )}
           {question.evidence && (
             <div className={cn(!result.correct && "mt-2")}>
               {question.evidence.quote ? (
-                <p className="text-zinc-700">
+                <p className="text-ink-body">
                   <span className="font-semibold">Where it says so:</span>{" "}
                   <span className="bg-accent-100 px-1">“{question.evidence.quote}”</span>
                 </p>
               ) : (
-                <p className="font-semibold text-zinc-700">Why:</p>
+                <p className="font-semibold text-ink-body">Why:</p>
               )}
-              <p className="mt-1.5 text-zinc-600">{question.evidence.explanation}</p>
+              <p className="mt-1.5 text-ink-body">{question.evidence.explanation}</p>
             </div>
           )}
         </div>
@@ -309,11 +309,11 @@ function CompletionInput({
               : "border-rose-400 bg-rose-50"
             : over
               ? "border-rose-400 focus:outline-none focus:ring-4 focus:ring-rose-100"
-              : "border-zinc-200 focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100",
+              : "border-line focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100",
         )}
       />
       {wordLimit !== undefined && !locked && (
-        <p className={cn("mt-1 text-xs", over ? "font-medium text-rose-600" : "text-zinc-500")}>
+        <p className={cn("mt-1 text-xs", over ? "font-medium text-rose-600" : "text-ink-muted")}>
           {over
             ? `${words} words — over the ${wordLimit}-word limit, this would be marked wrong.`
             : `${words}/${wordLimit} words`}

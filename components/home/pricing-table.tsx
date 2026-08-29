@@ -40,7 +40,7 @@ function DashIcon() {
 function FeatureValue({ value }: { value: boolean | string }) {
   if (value === true) return <CheckIcon />;
   if (value === false) return <DashIcon />;
-  return <span className="text-sm font-medium text-zinc-700">{value}</span>;
+  return <span className="text-sm font-medium text-ink-body">{value}</span>;
 }
 
 export function PricingTable() {
@@ -48,7 +48,7 @@ export function PricingTable() {
   const total = totalForDuration(selected);
 
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
@@ -65,12 +65,12 @@ export function PricingTable() {
               className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 selected.interval === duration.interval
                   ? "bg-linear-to-r from-brand-600 to-pop-600 text-white shadow-glow-sm"
-                  : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                  : "bg-surface-sunken text-ink-body hover:bg-line"
               }`}
             >
               {duration.label}
               {duration.bestValue && (
-                <span className="absolute -top-2.5 -right-2 rounded-full bg-linear-to-r from-accent-400 to-accent-500 px-1.5 py-0.5 text-[10px] font-semibold text-zinc-900">
+                <span className="absolute -top-2.5 -right-2 rounded-full bg-linear-to-r from-accent-400 to-accent-500 px-1.5 py-0.5 text-[10px] font-semibold text-ink">
                   Best value
                 </span>
               )}
@@ -79,10 +79,10 @@ export function PricingTable() {
         </div>
 
         <div data-reveal className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-zinc-200 p-6">
-            <h3 className="text-lg font-semibold text-zinc-900">Free</h3>
-            <p className="mt-2 text-3xl font-bold text-zinc-900">Rs. 0</p>
-            <p className="mt-1 text-sm text-zinc-500">No payment required</p>
+          <div className="rounded-2xl border border-line p-6">
+            <h3 className="text-lg font-semibold text-ink">Free</h3>
+            <p className="mt-2 text-3xl font-bold text-ink">Rs. 0</p>
+            <p className="mt-1 text-sm text-ink-muted">No payment required</p>
             <Button href="/login" variant="outline" className="mt-6 w-full">
               Get started
             </Button>
@@ -90,22 +90,22 @@ export function PricingTable() {
               {FEATURES.map((feature) => (
                 <li key={feature.label} className="flex items-start gap-2.5">
                   <FeatureValue value={feature.free} />
-                  <span className="text-sm text-zinc-600">{feature.label}</span>
+                  <span className="text-sm text-ink-body">{feature.label}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="relative overflow-hidden rounded-2xl border-2 border-brand-600 bg-linear-to-b from-brand-50/60 to-white p-6 shadow-glow">
+          <div className="relative overflow-hidden rounded-2xl border-2 border-brand-600 bg-linear-to-b from-brand-50/60 to-surface p-6 shadow-glow">
             <span className="absolute -top-3 left-6 rounded-full bg-linear-to-r from-brand-600 to-pop-600 px-3 py-1 text-xs font-semibold text-white">
               Premium
             </span>
-            <h3 className="text-lg font-semibold text-zinc-900">Premium</h3>
-            <p className="mt-2 text-3xl font-bold text-zinc-900">
+            <h3 className="text-lg font-semibold text-ink">Premium</h3>
+            <p className="mt-2 text-3xl font-bold text-ink">
               {formatNpr(selected.pricePerMonthNpr)}
-              <span className="text-base font-normal text-zinc-500">/mo</span>
+              <span className="text-base font-normal text-ink-muted">/mo</span>
             </p>
-            <p className="mt-1 text-sm text-zinc-500">
+            <p className="mt-1 text-sm text-ink-muted">
               {selected.months === 1
                 ? "Billed monthly"
                 : `Billed ${formatNpr(total)} every ${selected.months} months`}
@@ -117,7 +117,7 @@ export function PricingTable() {
               {FEATURES.map((feature) => (
                 <li key={feature.label} className="flex items-start gap-2.5">
                   <FeatureValue value={feature.premium} />
-                  <span className="text-sm text-zinc-600">{feature.label}</span>
+                  <span className="text-sm text-ink-body">{feature.label}</span>
                 </li>
               ))}
             </ul>

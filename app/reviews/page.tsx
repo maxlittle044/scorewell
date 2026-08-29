@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 
 const STATUS_STYLES: Record<string, string> = {
   PENDING: "bg-amber-100 text-amber-800",
-  IN_REVIEW: "bg-brand-100 text-brand-700",
+  IN_REVIEW: "bg-brand-100 text-link",
   COMPLETED: "bg-emerald-100 text-emerald-700",
-  CANCELLED: "bg-zinc-100 text-zinc-600",
+  CANCELLED: "bg-surface-sunken text-ink-body",
 };
 
 export default async function ReviewsPage() {
@@ -36,27 +36,27 @@ export default async function ReviewsPage() {
   ]);
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Examiner review"
           description="A real person reads your answer and writes back, on top of the instant AI score you already get for free."
         />
 
-        <div className="mb-8 rounded-2xl border border-zinc-200 bg-white p-5">
-          <p className="text-sm text-zinc-600">
-            You have <strong className="text-zinc-900">{credits}</strong>{" "}
+        <div className="mb-8 rounded-2xl border border-line bg-surface p-5">
+          <p className="text-sm text-ink-body">
+            You have <strong className="text-ink">{credits}</strong>{" "}
             {credits === 1 ? "credit" : "credits"}.{" "}
-            <Link href="/pricing" className="font-medium text-brand-600 hover:underline">
+            <Link href="/pricing" className="font-medium text-link hover:underline">
               Buy more
             </Link>
           </p>
         </div>
 
         <section className="mb-12">
-          <h2 className="mb-5 text-lg font-bold text-zinc-900">Your requests</h2>
+          <h2 className="mb-5 text-lg font-bold text-ink">Your requests</h2>
           {requests.length === 0 ? (
-            <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+            <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
               You have not requested a review yet.
             </p>
           ) : (
@@ -64,26 +64,26 @@ export default async function ReviewsPage() {
               {requests.map((request) => (
                 <article
                   key={request.id}
-                  className="rounded-2xl border border-zinc-200 bg-white p-5"
+                  className="rounded-2xl border border-line bg-surface p-5"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-3">
-                    <h3 className="font-semibold text-zinc-900">
+                    <h3 className="font-semibold text-ink">
                       {request.submission.title ?? request.submission.taskType ?? "Your answer"}
                     </h3>
                     <span
                       className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${
-                        STATUS_STYLES[request.status] ?? "bg-zinc-100 text-zinc-600"
+                        STATUS_STYLES[request.status] ?? "bg-surface-sunken text-ink-body"
                       }`}
                     >
                       {REVIEW_STATUS_LABELS[request.status] ?? request.status}
                     </span>
                   </div>
 
-                  <p className="mt-2 line-clamp-2 text-sm text-zinc-500">
+                  <p className="mt-2 line-clamp-2 text-sm text-ink-muted">
                     {request.submission.answerText}
                   </p>
 
-                  <p className="mt-3 text-xs text-zinc-500">
+                  <p className="mt-3 text-xs text-ink-muted">
                     Requested{" "}
                     {request.createdAt.toLocaleDateString("en-GB", {
                       day: "numeric",
@@ -114,7 +114,7 @@ export default async function ReviewsPage() {
 
         <ReviewRequestForm credits={credits} />
 
-        <p className="mt-4 text-xs text-zinc-500">
+        <p className="mt-4 text-xs text-ink-muted">
           Turnaround is {REVIEW_TURNAROUND_HOURS} hours from the moment a reviewer picks your
           answer up, not from when you submit it.
         </p>

@@ -28,7 +28,7 @@ export async function LiveLessonsCarousel() {
   const attendees = await getAttendeeCounts(real.map((lesson) => lesson.id));
 
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Live lessons"
@@ -38,15 +38,15 @@ export async function LiveLessonsCarousel() {
         />
 
         {real.length === 0 ? (
-          <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-center">
-            <p className="text-sm text-zinc-600">
+          <div className="rounded-2xl border border-line bg-surface-muted p-6 text-center">
+            <p className="text-sm text-ink-body">
               No live sessions are scheduled at the moment.
             </p>
-            <p className="mt-1 text-sm text-zinc-500">
+            <p className="mt-1 text-sm text-ink-muted">
               The{" "}
               <Link
                 href="/live-lessons"
-                className="font-medium text-brand-600 hover:underline"
+                className="font-medium text-link hover:underline"
               >
                 timetable
               </Link>{" "}
@@ -65,20 +65,20 @@ export async function LiveLessonsCarousel() {
                 <Link
                   key={lesson.slug}
                   href={`/live-lessons/${lesson.slug}`}
-                  className={`flex w-72 shrink-0 snap-start flex-col rounded-2xl border border-zinc-200 bg-white p-5 ${CARD_HOVER_CLASS}`}
+                  className={`flex w-72 shrink-0 snap-start flex-col rounded-2xl border border-line bg-surface p-5 ${CARD_HOVER_CLASS}`}
                 >
                   <span className="mb-2 inline-flex w-fit items-center rounded-full bg-pop-50 px-2.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide text-pop-700">
                     {LESSON_SKILL_LABELS[lesson.skillFocus]}
                   </span>
 
-                  <h3 className="text-sm font-semibold text-zinc-900">{lesson.title}</h3>
-                  <p className="mt-1 text-xs text-zinc-500">
+                  <h3 className="text-sm font-semibold text-ink">{lesson.title}</h3>
+                  <p className="mt-1 text-xs text-ink-muted">
                     {formatLessonTime(lesson.startsAt, lesson.durationMinutes)}
                   </p>
-                  <p className="mt-3 line-clamp-3 text-sm text-zinc-600">{lesson.summary}</p>
+                  <p className="mt-3 line-clamp-3 text-sm text-ink-body">{lesson.summary}</p>
 
-                  <div className="mt-auto pt-4 text-xs text-zinc-500">
-                    <span className="font-medium text-zinc-700">{lesson.instructor.name}</span>
+                  <div className="mt-auto pt-4 text-xs text-ink-muted">
+                    <span className="font-medium text-ink-body">{lesson.instructor.name}</span>
                     {" · "}
                     {lesson.instructor.role}
                     {/* Real registrations only — a session nobody has joined shows nothing. */}

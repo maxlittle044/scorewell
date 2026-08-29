@@ -42,7 +42,7 @@ export default async function TipsBySkillPage({
   const label = TIP_SKILL_LABELS[skill];
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title={`${label} tips`}
@@ -52,7 +52,7 @@ export default async function TipsBySkillPage({
         <div className="mb-10 flex flex-wrap gap-2.5">
           <Link
             href="/ielts/tips"
-            className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition-colors hover:border-brand-300"
+            className="rounded-full border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink-body transition-colors hover:border-brand-300"
           >
             All tips
           </Link>
@@ -63,7 +63,7 @@ export default async function TipsBySkillPage({
               className={
                 value === skill
                   ? "rounded-full border border-brand-600 bg-brand-600 px-4 py-2 text-sm font-semibold text-white"
-                  : "rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition-colors hover:border-brand-300"
+                  : "rounded-full border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink-body transition-colors hover:border-brand-300"
               }
             >
               {TIP_SKILL_LABELS[value]}
@@ -72,7 +72,7 @@ export default async function TipsBySkillPage({
         </div>
 
         {tips.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
             No {label.toLowerCase()} tips published yet.
           </p>
         ) : (

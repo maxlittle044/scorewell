@@ -31,7 +31,7 @@ const COURSES = [
 
 export function CoursesCarousel() {
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Structured courses"
@@ -45,14 +45,14 @@ export function CoursesCarousel() {
             <Link
               key={course.href}
               href={course.href}
-              className={`group w-72 shrink-0 snap-start overflow-hidden rounded-2xl border border-zinc-200/80 bg-white ${CARD_HOVER_CLASS}`}
+              className={`group w-72 shrink-0 snap-start overflow-hidden rounded-2xl border border-line/80 bg-surface ${CARD_HOVER_CLASS}`}
             >
               <div className={`h-32 bg-linear-to-br ${course.gradient}`} />
               <div className="p-5">
-                <h3 className="font-semibold text-zinc-900 group-hover:text-brand-600">
+                <h3 className="font-semibold text-ink group-hover:text-link">
                   {course.title}
                 </h3>
-                <p className="mt-1.5 text-sm text-zinc-600">{course.description}</p>
+                <p className="mt-1.5 text-sm text-ink-body">{course.description}</p>
               </div>
             </Link>
           ))}

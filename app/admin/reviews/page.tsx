@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 
 const STATUS_STYLES: Record<string, string> = {
   PENDING: "bg-amber-100 text-amber-800",
-  IN_REVIEW: "bg-brand-100 text-brand-700",
+  IN_REVIEW: "bg-brand-100 text-link",
   COMPLETED: "bg-emerald-100 text-emerald-700",
-  CANCELLED: "bg-zinc-100 text-zinc-600",
+  CANCELLED: "bg-surface-sunken text-ink-body",
 };
 
 export default async function AdminReviewsPage() {
@@ -34,7 +34,7 @@ export default async function AdminReviewsPage() {
   });
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Examiner review queue"
@@ -42,19 +42,19 @@ export default async function AdminReviewsPage() {
         />
 
         {requests.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
             No review requests yet.
           </p>
         ) : (
           <div className="flex flex-col gap-5">
             {requests.map((request) => (
-              <article key={request.id} className="rounded-2xl border border-zinc-200 bg-white p-6">
+              <article key={request.id} className="rounded-2xl border border-line bg-surface p-6">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
-                    <h2 className="font-semibold text-zinc-900">
+                    <h2 className="font-semibold text-ink">
                       {request.submission.title ?? request.submission.taskType ?? "Answer"}
                     </h2>
-                    <p className="mt-0.5 text-sm text-zinc-500">
+                    <p className="mt-0.5 text-sm text-ink-muted">
                       {request.user.name ?? request.user.email} ·{" "}
                       {countWords(request.submission.answerText)} words ·{" "}
                       {request.creditsCharged} credits · {request.turnaroundHours}h turnaround
@@ -62,15 +62,15 @@ export default async function AdminReviewsPage() {
                   </div>
                   <span
                     className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${
-                      STATUS_STYLES[request.status] ?? "bg-zinc-100 text-zinc-600"
+                      STATUS_STYLES[request.status] ?? "bg-surface-sunken text-ink-body"
                     }`}
                   >
                     {REVIEW_STATUS_LABELS[request.status] ?? request.status}
                   </span>
                 </div>
 
-                <div className="mt-4 max-h-64 overflow-y-auto rounded-xl border border-zinc-200 bg-zinc-50 p-4">
-                  <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-700">
+                <div className="mt-4 max-h-64 overflow-y-auto rounded-xl border border-line bg-surface-muted p-4">
+                  <p className="whitespace-pre-wrap text-sm leading-relaxed text-ink-body">
                     {request.submission.answerText}
                   </p>
                 </div>
@@ -101,7 +101,7 @@ export default async function AdminReviewsPage() {
                 {request.status === "IN_REVIEW" && (
                   <form action={completeReviewAction} className="mt-4 flex flex-col gap-3">
                     <input type="hidden" name="requestId" value={request.id} />
-                    <label htmlFor={`notes-${request.id}`} className="text-sm font-medium text-zinc-700">
+                    <label htmlFor={`notes-${request.id}`} className="text-sm font-medium text-ink-body">
                       Feedback for the learner
                     </label>
                     <textarea
@@ -110,7 +110,7 @@ export default async function AdminReviewsPage() {
                       rows={6}
                       required
                       placeholder="Per-criterion comments and the specific fixes that would raise the band."
-                      className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900"
+                      className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink"
                     />
                     <button
                       type="submit"
@@ -126,7 +126,7 @@ export default async function AdminReviewsPage() {
                     <input type="hidden" name="requestId" value={request.id} />
                     <button
                       type="submit"
-                      className="text-sm font-medium text-zinc-500 hover:text-red-600"
+                      className="text-sm font-medium text-ink-muted hover:text-red-600"
                     >
                       Cannot complete — refund {request.creditsCharged} credits
                     </button>

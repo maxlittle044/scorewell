@@ -13,7 +13,7 @@ export default async function ForecastsPage() {
   const pools = await listTopicPools();
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Recurring exam topics"
@@ -35,45 +35,45 @@ export default async function ForecastsPage() {
         </div>
 
         {pools.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface-muted p-6 text-sm text-ink-muted">
             No topic pools have been published yet.
           </p>
         ) : (
           <>
-            <p className="mb-10 text-sm text-zinc-500">
+            <p className="mb-10 text-sm text-ink-muted">
               {countThemes(pools)} themes across {pools.length} sections of the exam.
             </p>
 
             <div className="flex flex-col gap-12">
               {pools.map((pool) => (
                 <section key={pool.slug}>
-                  <h2 className="text-lg font-bold text-zinc-900">{pool.section}</h2>
-                  <p className="mb-5 mt-1.5 text-sm leading-relaxed text-zinc-600">{pool.intro}</p>
+                  <h2 className="text-lg font-bold text-ink">{pool.section}</h2>
+                  <p className="mb-5 mt-1.5 text-sm leading-relaxed text-ink-body">{pool.intro}</p>
 
                   <div className="flex flex-col gap-4">
                     {pool.themes.map((theme) => (
                       <article
                         key={theme.title}
-                        className="rounded-2xl border border-zinc-200 p-5"
+                        className="rounded-2xl border border-line p-5"
                       >
-                        <h3 className="text-sm font-semibold text-zinc-900">{theme.title}</h3>
+                        <h3 className="text-sm font-semibold text-ink">{theme.title}</h3>
 
-                        <p className="mt-2.5 border-l-2 border-brand-200 pl-3 text-sm italic leading-relaxed text-zinc-600">
+                        <p className="mt-2.5 border-l-2 border-brand-200 pl-3 text-sm italic leading-relaxed text-ink-body">
                           {theme.examplePrompt}
                         </p>
-                        <p className="mt-1 pl-3 text-xs text-zinc-400">
+                        <p className="mt-1 pl-3 text-xs text-ink-muted">
                           Example of this type — not a predicted question.
                         </p>
 
-                        <p className="mt-4 text-sm leading-relaxed text-zinc-600">
-                          <span className="font-medium text-zinc-800">Why it recurs: </span>
+                        <p className="mt-4 text-sm leading-relaxed text-ink-body">
+                          <span className="font-medium text-ink">Why it recurs: </span>
                           {theme.whyItRecurs}
                         </p>
 
-                        <h4 className="mt-4 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                        <h4 className="mt-4 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                           What to prepare
                         </h4>
-                        <ul className="mt-1.5 flex flex-col gap-1.5 text-sm leading-relaxed text-zinc-700">
+                        <ul className="mt-1.5 flex flex-col gap-1.5 text-sm leading-relaxed text-ink-body">
                           {theme.prepare.map((item, i) => (
                             <li key={i}>• {item}</li>
                           ))}
@@ -82,7 +82,7 @@ export default async function ForecastsPage() {
                         {theme.relatedHref && (
                           <Link
                             href={theme.relatedHref}
-                            className="mt-4 inline-block text-sm font-medium text-brand-600 hover:underline"
+                            className="mt-4 inline-block text-sm font-medium text-link hover:underline"
                           >
                             {theme.relatedLabel ?? "Practise this"} →
                           </Link>

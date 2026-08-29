@@ -30,37 +30,37 @@ type CardProps = {
 
 function SessionCard({ lesson, attendees, isSignedIn, isRegistered }: CardProps) {
   return (
-    <article className="flex flex-col rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+    <article className="flex flex-col rounded-2xl border border-line bg-surface p-6 shadow-sm">
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-pop-50 px-2.5 py-0.5 text-xs font-semibold text-pop-700">
           {LESSON_SKILL_LABELS[lesson.skillFocus]}
         </span>
-        <span className="text-xs text-zinc-500">{lesson.level}</span>
+        <span className="text-xs text-ink-muted">{lesson.level}</span>
       </div>
 
-      <h3 className="text-base font-bold text-zinc-900">
-        <Link href={`/live-lessons/${lesson.slug}`} className="hover:text-brand-600">
+      <h3 className="text-base font-bold text-ink">
+        <Link href={`/live-lessons/${lesson.slug}`} className="hover:text-link">
           {lesson.title}
         </Link>
       </h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-zinc-600">{lesson.summary}</p>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-body">{lesson.summary}</p>
 
-      <dl className="mt-5 grid grid-cols-2 gap-4 border-t border-zinc-100 pt-4 text-sm">
+      <dl className="mt-5 grid grid-cols-2 gap-4 border-t border-line pt-4 text-sm">
         <div>
-          <dt className="text-xs text-zinc-500">When</dt>
-          <dd className="font-semibold text-zinc-800">
+          <dt className="text-xs text-ink-muted">When</dt>
+          <dd className="font-semibold text-ink">
             {formatLessonTime(lesson.startsAt, lesson.durationMinutes)}
           </dd>
         </div>
         <div>
-          <dt className="text-xs text-zinc-500">Led by</dt>
-          <dd className="font-semibold text-zinc-800">{lesson.instructor.name}</dd>
+          <dt className="text-xs text-ink-muted">Led by</dt>
+          <dd className="font-semibold text-ink">{lesson.instructor.name}</dd>
         </div>
         {/* Real registration count only — a session nobody has joined shows nothing. */}
         {attendees > 0 && (
           <div>
-            <dt className="text-xs text-zinc-500">Registered</dt>
-            <dd className="font-semibold text-zinc-800">
+            <dt className="text-xs text-ink-muted">Registered</dt>
+            <dd className="font-semibold text-ink">
               {attendees.toLocaleString("en-US")} {attendees === 1 ? "learner" : "learners"}
             </dd>
           </div>
@@ -70,7 +70,7 @@ function SessionCard({ lesson, attendees, isSignedIn, isRegistered }: CardProps)
       <div className="mt-5 flex flex-wrap items-center gap-3">
         <Link
           href={`/live-lessons/${lesson.slug}`}
-          className="rounded-full border border-zinc-200 px-5 py-2.5 text-sm font-semibold text-zinc-700 transition-colors hover:border-brand-400 hover:text-brand-700"
+          className="rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-ink-body transition-colors hover:border-brand-400 hover:text-link"
         >
           Session details
         </Link>
@@ -86,7 +86,7 @@ function SessionCard({ lesson, attendees, isSignedIn, isRegistered }: CardProps)
         {lesson.isPast && lesson.recordingSlug && (
           <Link
             href={`/video-lessons/${lesson.recordingSlug}`}
-            className="text-sm font-semibold text-brand-600 hover:underline"
+            className="text-sm font-semibold text-link hover:underline"
           >
             Watch the recording →
           </Link>
@@ -123,7 +123,7 @@ export default async function LiveLessonsPage({ searchParams }: PageProps<"/live
   );
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Live lessons"
@@ -150,7 +150,7 @@ export default async function LiveLessonsPage({ searchParams }: PageProps<"/live
               "rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
               !skill
                 ? "border-brand-600 bg-brand-600 text-white"
-                : "border-zinc-200 bg-white text-zinc-700 hover:border-brand-300",
+                : "border-line bg-surface text-ink-body hover:border-brand-300",
             )}
           >
             All skills
@@ -163,7 +163,7 @@ export default async function LiveLessonsPage({ searchParams }: PageProps<"/live
                 "rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
                 skill === value
                   ? "border-brand-600 bg-brand-600 text-white"
-                  : "border-zinc-200 bg-white text-zinc-700 hover:border-brand-300",
+                  : "border-line bg-surface text-ink-body hover:border-brand-300",
               )}
             >
               {LESSON_SKILL_LABELS[value]}
@@ -172,9 +172,9 @@ export default async function LiveLessonsPage({ searchParams }: PageProps<"/live
         </div>
 
         <section className="mb-14">
-          <h2 className="mb-5 text-lg font-bold text-zinc-900">Upcoming</h2>
+          <h2 className="mb-5 text-lg font-bold text-ink">Upcoming</h2>
           {upcoming.length === 0 ? (
-            <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+            <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
               Nothing scheduled here yet.
             </p>
           ) : (
@@ -184,7 +184,7 @@ export default async function LiveLessonsPage({ searchParams }: PageProps<"/live
 
         {past.length > 0 && (
           <section>
-            <h2 className="mb-5 text-lg font-bold text-zinc-900">Past sessions</h2>
+            <h2 className="mb-5 text-lg font-bold text-ink">Past sessions</h2>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">{past.map(cardFor)}</div>
           </section>
         )}

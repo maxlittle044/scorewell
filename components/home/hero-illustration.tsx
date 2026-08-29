@@ -13,9 +13,9 @@ export function HeroIllustration() {
         className="absolute -inset-8 -z-10 rounded-[2.5rem] bg-linear-to-br from-pop-400/40 via-brand-300/30 to-accent-400/30 blur-2xl"
       />
 
-      <div className="rounded-3xl border border-zinc-200/80 bg-white p-6 shadow-2xl shadow-brand-900/15">
+      <div className="rounded-3xl border border-line/80 bg-surface p-6 shadow-2xl shadow-brand-900/15">
         <div className="mb-5 flex items-center justify-between">
-          <p className="text-sm font-semibold text-zinc-900">Your band report</p>
+          <p className="text-sm font-semibold text-ink">Your band report</p>
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-linear-to-br from-brand-500 to-pop-500 text-sm font-bold text-white shadow-glow-sm">
             7.5
           </span>
@@ -24,11 +24,11 @@ export function HeroIllustration() {
         <div className="flex flex-col gap-3">
           {SKILLS.map((skill) => (
             <div key={skill.label}>
-              <div className="mb-1 flex items-center justify-between text-xs text-zinc-500">
+              <div className="mb-1 flex items-center justify-between text-xs text-ink-muted">
                 <span>{skill.label}</span>
-                <span className="font-medium text-zinc-700">{skill.score}</span>
+                <span className="font-medium text-ink-body">{skill.score}</span>
               </div>
-              <div className="h-1.5 w-full rounded-full bg-zinc-100">
+              <div className="h-1.5 w-full rounded-full bg-surface-sunken">
                 <div
                   className="h-1.5 rounded-full bg-linear-to-r from-brand-500 to-pop-500"
                   style={{ width: skill.width }}

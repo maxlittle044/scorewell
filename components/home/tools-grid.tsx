@@ -34,7 +34,7 @@ const TOOL_GROUPS: ToolGroup[] = [
   {
     heading: "Writing tools",
     tools: [
-      { label: "Task 1 Academic Checker", href: "/tools/writing-task1-academic-checker", icon: BarChartIcon, bg: "bg-brand-50", fg: "text-brand-600" },
+      { label: "Task 1 Academic Checker", href: "/tools/writing-task1-academic-checker", icon: BarChartIcon, bg: "bg-brand-50", fg: "text-link" },
       { label: "Task 1 General Checker", href: "/tools/writing-task1-general-checker", icon: MailIcon, bg: "bg-sky-50", fg: "text-sky-600" },
       { label: "Task 2 Essay Checker", href: "/tools/writing-task2-checker", icon: DocumentCheckIcon, bg: "bg-emerald-50", fg: "text-emerald-600" },
       { label: "Text Improver", href: "/tools/text-improver", icon: SparklesIcon, bg: "bg-violet-50", fg: "text-violet-600" },
@@ -50,7 +50,7 @@ const TOOL_GROUPS: ToolGroup[] = [
   {
     heading: "Language tools",
     tools: [
-      { label: "Paraphraser", href: "/tools/paraphraser", icon: RefreshIcon, bg: "bg-brand-50", fg: "text-brand-600" },
+      { label: "Paraphraser", href: "/tools/paraphraser", icon: RefreshIcon, bg: "bg-brand-50", fg: "text-link" },
       { label: "Sentence Explainer", href: "/tools/sentence-explainer", icon: LightbulbIcon, bg: "bg-amber-50", fg: "text-accent-600" },
       { label: "Summarizer", href: "/tools/summarizer", icon: ListIcon, bg: "bg-sky-50", fg: "text-sky-600" },
       { label: "Translator", href: "/tools/translator", icon: GlobeIcon, bg: "bg-emerald-50", fg: "text-emerald-600" },
@@ -61,14 +61,14 @@ const TOOL_GROUPS: ToolGroup[] = [
     heading: "Practice tools",
     tools: [
       { label: "Band Score Calculators", href: "/tools/band-calculator/overall", icon: CalculatorIcon, bg: "bg-violet-50", fg: "text-violet-600" },
-      { label: "Flashcards", href: "/flashcards", icon: LayersIcon, bg: "bg-brand-50", fg: "text-brand-600" },
+      { label: "Flashcards", href: "/flashcards", icon: LayersIcon, bg: "bg-brand-50", fg: "text-link" },
     ],
   },
 ];
 
 export function ToolsGrid() {
   return (
-    <section className="bg-zinc-50">
+    <section className="bg-surface-muted">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
@@ -80,7 +80,7 @@ export function ToolsGrid() {
         <div data-reveal className="flex flex-col gap-10">
           {TOOL_GROUPS.map((group) => (
             <div key={group.heading}>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-400">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                 {group.heading}
               </h3>
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
@@ -93,7 +93,7 @@ export function ToolsGrid() {
                     <span className={`flex h-11 w-11 items-center justify-center rounded-lg ring-1 ring-inset ring-black/5 transition-transform group-hover:scale-110 ${bg} ${fg}`}>
                       <Icon />
                     </span>
-                    <span className="text-sm font-medium text-zinc-800">{label}</span>
+                    <span className="text-sm font-medium text-ink">{label}</span>
                   </Link>
                 ))}
               </div>

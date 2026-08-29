@@ -25,12 +25,12 @@ export default async function GrammarPointPage({
 
   if (!point) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             That grammar point isn&apos;t here.{" "}
-            <Link href="/ielts/grammar" className="font-medium text-brand-600 hover:underline">
+            <Link href="/ielts/grammar" className="font-medium text-link hover:underline">
               Browse the grammar library
             </Link>
             .
@@ -41,17 +41,17 @@ export default async function GrammarPointPage({
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          <Link href="/ielts/grammar" className="hover:text-brand-600">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-ink-muted">
+          <Link href="/ielts/grammar" className="hover:text-link">
             Grammar library
           </Link>{" "}
           · {point.category}
         </p>
         <PageHeader title={point.title} description={point.summary} />
 
-        <div className="flex flex-col gap-4 text-zinc-700">
+        <div className="flex flex-col gap-4 text-ink-body">
           {point.explanation.map((paragraph, index) => (
             <p key={index} className="leading-relaxed">
               {paragraph}
@@ -60,10 +60,10 @@ export default async function GrammarPointPage({
         </div>
 
         <section className="mt-10">
-          <h2 className="mb-4 text-lg font-semibold text-zinc-900">In practice</h2>
+          <h2 className="mb-4 text-lg font-semibold text-ink">In practice</h2>
           <div className="flex flex-col gap-4">
             {point.examples.map((example, index) => (
-              <div key={index} className="rounded-xl border border-zinc-200 p-4">
+              <div key={index} className="rounded-xl border border-line p-4">
                 {example.wrong && (
                   <p className="flex gap-2 text-sm text-rose-800">
                     <span aria-hidden="true" className="font-bold">
@@ -87,7 +87,7 @@ export default async function GrammarPointPage({
                   </span>
                 </p>
                 {example.note && (
-                  <p className="mt-2 text-sm text-zinc-500">{example.note}</p>
+                  <p className="mt-2 text-sm text-ink-muted">{example.note}</p>
                 )}
               </div>
             ))}
@@ -95,8 +95,8 @@ export default async function GrammarPointPage({
         </section>
 
         <section className="mt-8 rounded-2xl border border-brand-200 bg-brand-50/60 p-5">
-          <h2 className="mb-1.5 text-sm font-semibold text-brand-900">Why it matters in IELTS</h2>
-          <p className="text-sm leading-relaxed text-brand-900/90">{point.ieltsNote}</p>
+          <h2 className="mb-1.5 text-sm font-semibold text-heading">Why it matters in IELTS</h2>
+          <p className="text-sm leading-relaxed text-heading/90">{point.ieltsNote}</p>
         </section>
 
         {/* Only rendered when the linked quiz was confirmed to still exist. */}
@@ -105,7 +105,7 @@ export default async function GrammarPointPage({
             <Button href={`/ielts/grammar-tests/${point.practice.slug}`} size="sm">
               Practise: {point.practice.title}
             </Button>
-            <span className="text-sm text-zinc-500">Five questions, about five minutes.</span>
+            <span className="text-sm text-ink-muted">Five questions, about five minutes.</span>
           </div>
         )}
 

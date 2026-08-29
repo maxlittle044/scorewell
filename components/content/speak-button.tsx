@@ -39,10 +39,10 @@ type SpeakButtonProps = {
 
 const VARIANTS = {
   primary:
-    "inline-flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300",
-  chip: "inline-flex items-center gap-1.5 rounded-full bg-zinc-100 px-3 py-1.5 text-sm text-zinc-700 hover:bg-brand-50 hover:text-brand-700 disabled:cursor-not-allowed disabled:opacity-50",
+    "inline-flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong",
+  chip: "inline-flex items-center gap-1.5 rounded-full bg-surface-sunken px-3 py-1.5 text-sm text-ink-body hover:bg-brand-50 hover:text-link disabled:cursor-not-allowed disabled:opacity-50",
   quiet:
-    "inline-flex items-center gap-1.5 rounded-full border border-zinc-300 px-4 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50",
+    "inline-flex items-center gap-1.5 rounded-full border border-line-strong px-4 py-1.5 text-sm font-medium text-ink-body hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-50",
 } as const;
 
 function SpeakerIcon({ active }: { active: boolean }) {

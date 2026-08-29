@@ -33,7 +33,7 @@ export function TtsTool() {
 
   return (
     <div>
-      <label htmlFor="tts-input" className="mb-1.5 block text-sm font-medium text-zinc-700">
+      <label htmlFor="tts-input" className="mb-1.5 block text-sm font-medium text-ink-body">
         Text to read aloud
       </label>
       <textarea
@@ -42,7 +42,7 @@ export function TtsTool() {
         onChange={(e) => setText(e.target.value)}
         rows={6}
         placeholder="Type or paste text to hear it spoken..."
-        className="w-full rounded-xl border border-zinc-300 p-4 text-sm leading-relaxed text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+        className="w-full rounded-xl border border-line-strong p-4 text-sm leading-relaxed text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
       />
 
       {!supported ? (
@@ -55,7 +55,7 @@ export function TtsTool() {
             type="button"
             onClick={speak}
             disabled={text.trim() === ""}
-            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
           >
             {speaking ? "Speaking…" : "Play"}
           </button>
@@ -63,7 +63,7 @@ export function TtsTool() {
             <button
               type="button"
               onClick={stop}
-              className="rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+              className="rounded-full border border-line-strong px-5 py-2 text-sm font-medium text-ink-body hover:bg-surface-muted"
             >
               Stop
             </button>

@@ -18,7 +18,7 @@ export default async function BandNineSamplesIndexPage() {
   const samples = await listBandNineSamples();
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Band-9 sample answers"
@@ -26,7 +26,7 @@ export default async function BandNineSamplesIndexPage() {
         />
 
         {samples.length === 0 ? (
-          <p className="text-sm text-zinc-500">No samples published yet.</p>
+          <p className="text-sm text-ink-muted">No samples published yet.</p>
         ) : (
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {samples.map((sample) => (

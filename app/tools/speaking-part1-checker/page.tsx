@@ -49,7 +49,7 @@ export default function SpeakingCheckerPage() {
   const current = PARTS.find((p) => p.key === part)!;
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Speaking checker"
@@ -63,7 +63,7 @@ export default function SpeakingCheckerPage() {
               type="button"
               onClick={() => setPart(p.key)}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                part === p.key ? "bg-brand-600 text-white" : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                part === p.key ? "bg-brand-600 text-white" : "bg-surface-sunken text-ink-body hover:bg-line"
               }`}
             >
               {p.label}
@@ -71,16 +71,16 @@ export default function SpeakingCheckerPage() {
           ))}
         </div>
 
-        <p className="mb-6 rounded-xl border border-zinc-200 bg-zinc-50 p-5 text-sm text-zinc-700">
+        <p className="mb-6 rounded-xl border border-line bg-surface-muted p-5 text-sm text-ink-body">
           {current.prompt}
         </p>
 
-        <div className="mb-6 flex rounded-full bg-zinc-100 p-1">
+        <div className="mb-6 flex rounded-full bg-surface-sunken p-1">
           <button
             type="button"
             onClick={() => setMode("check")}
             className={`flex-1 rounded-full py-2 text-sm font-semibold transition-colors ${
-              mode === "check" ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500"
+              mode === "check" ? "bg-surface text-ink shadow-sm" : "text-ink-muted"
             }`}
           >
             Check my answer
@@ -89,7 +89,7 @@ export default function SpeakingCheckerPage() {
             type="button"
             onClick={() => setMode("generate")}
             className={`flex-1 rounded-full py-2 text-sm font-semibold transition-colors ${
-              mode === "generate" ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500"
+              mode === "generate" ? "bg-surface text-ink shadow-sm" : "text-ink-muted"
             }`}
           >
             Generate a sample
@@ -107,7 +107,7 @@ export default function SpeakingCheckerPage() {
               <button
                 type="submit"
                 disabled={transcript.trim() === "" || checking}
-                className="mt-4 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+                className="mt-4 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
               >
                 {checking ? "Checking…" : "Check with AI"}
               </button>
@@ -134,7 +134,7 @@ export default function SpeakingCheckerPage() {
             <button
               type="submit"
               disabled={generating}
-              className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+              className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
             >
               {generating ? "Generating…" : "Generate sample answer"}
             </button>
@@ -144,7 +144,7 @@ export default function SpeakingCheckerPage() {
             )}
 
             {sampleState.sample && (
-              <div className="mt-4 whitespace-pre-wrap rounded-xl border border-zinc-200 bg-zinc-50 p-5 text-sm leading-relaxed text-zinc-800">
+              <div className="mt-4 whitespace-pre-wrap rounded-xl border border-line bg-surface-muted p-5 text-sm leading-relaxed text-ink">
                 {sampleState.sample}
               </div>
             )}

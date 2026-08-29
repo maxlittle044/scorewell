@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Privacy Policy" description="Last updated: August 24, 2026" />
         <LegalNotice />
 
-        <div className="flex flex-col gap-6 text-zinc-700">
+        <div className="flex flex-col gap-6 text-ink-body">
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Information we collect</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Information we collect</h2>
             <p>
               We collect information you provide directly, such as your name
               and email when you create an account, along with usage data
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">How we use it</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">How we use it</h2>
             <ul className="flex flex-col gap-1.5 pl-5 list-disc">
               <li>To provide and improve practice tests, tools, and progress tracking</li>
               <li>To process subscription payments and send billing receipts</li>
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Third-party services</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Third-party services</h2>
             <p>
               We share data with service providers strictly to operate the
               platform — for example, payment processing, hosting, and the AI
@@ -45,7 +45,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Cookies</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Cookies</h2>
             <p>
               We use cookies to keep you signed in and remember preferences
               like a dismissed announcement banner. You can disable cookies in
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Your rights</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Your rights</h2>
             <p>
               You can request a copy of your data, ask us to correct it, or
               request deletion of your account at any time by contacting us.
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Contact</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Contact</h2>
             <p>Questions about this policy? Reach us via the Contact Us page.</p>
           </section>
         </div>

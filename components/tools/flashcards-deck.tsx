@@ -33,28 +33,28 @@ export function FlashcardsDeck() {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="mb-4 text-sm text-zinc-500">
+      <p className="mb-4 text-sm text-ink-muted">
         {index + 1} / {CARDS.length}
       </p>
 
       <button
         type="button"
         onClick={() => setFlipped((f) => !f)}
-        className="flex h-56 w-full max-w-sm items-center justify-center rounded-2xl border border-zinc-200 bg-white p-6 text-center shadow-sm hover:shadow-md"
+        className="flex h-56 w-full max-w-sm items-center justify-center rounded-2xl border border-line bg-surface p-6 text-center shadow-sm hover:shadow-md"
       >
         {flipped ? (
-          <p className="text-base text-zinc-700">{card.back}</p>
+          <p className="text-base text-ink-body">{card.back}</p>
         ) : (
-          <p className="text-3xl font-bold text-zinc-900">{card.front}</p>
+          <p className="text-3xl font-bold text-ink">{card.front}</p>
         )}
       </button>
-      <p className="mt-3 text-xs text-zinc-400">Click the card to flip it</p>
+      <p className="mt-3 text-xs text-ink-muted">Click the card to flip it</p>
 
       <div className="mt-6 flex gap-3">
         <button
           type="button"
           onClick={prev}
-          className="rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+          className="rounded-full border border-line-strong px-5 py-2 text-sm font-medium text-ink-body hover:bg-surface-muted"
         >
           Previous
         </button>

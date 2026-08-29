@@ -51,27 +51,27 @@ export default async function DashboardPage() {
   const isPremium = subscription?.tier === "PREMIUM";
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title={`Welcome back${session.user.name ? `, ${session.user.name}` : ""}`}
           description="Track your progress and manage your plan."
         />
 
-        <div className="mb-6 rounded-2xl border border-zinc-200 bg-white p-6">
+        <div className="mb-6 rounded-2xl border border-line bg-surface p-6">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h2 className="font-semibold text-zinc-900">Band score trend</h2>
-            <p className="text-sm text-zinc-500">
+            <h2 className="font-semibold text-ink">Band score trend</h2>
+            <p className="text-sm text-ink-muted">
               {bandTrend.best !== null && (
                 <>
-                  Best so far <span className="font-semibold text-zinc-800">{bandTrend.best}</span>
+                  Best so far <span className="font-semibold text-ink">{bandTrend.best}</span>
                   {" · "}
                 </>
               )}
               {/* Only claimed once something was actually measured. */}
               {studyTime.totalSeconds > 0 ? (
                 <>
-                  <span className="font-semibold text-zinc-800">
+                  <span className="font-semibold text-ink">
                     {formatStudyTime(studyTime.totalSeconds)}
                   </span>{" "}
                   studied
@@ -84,7 +84,7 @@ export default async function DashboardPage() {
           <BandTrendChart trend={bandTrend} />
 
           {studyTime.untimedAttempts > 0 && (
-            <p className="mt-3 text-xs text-zinc-500">
+            <p className="mt-3 text-xs text-ink-muted">
               {studyTime.untimedAttempts}{" "}
               {studyTime.untimedAttempts === 1 ? "earlier attempt isn't" : "earlier attempts aren't"}{" "}
               counted in that total — they were taken before study time was measured.
@@ -93,21 +93,21 @@ export default async function DashboardPage() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-          <div className="rounded-2xl border border-zinc-200 bg-white p-6 lg:col-span-2">
-            <h2 className="font-semibold text-zinc-900">Latest band by skill</h2>
+          <div className="rounded-2xl border border-line bg-surface p-6 lg:col-span-2">
+            <h2 className="font-semibold text-ink">Latest band by skill</h2>
             {latestBySkill.length === 0 ? (
-              <p className="mt-5 text-sm text-zinc-500">
+              <p className="mt-5 text-sm text-ink-muted">
                 Complete a practice test to see your band score progress here.
               </p>
             ) : (
               <div className="mt-5 flex flex-col gap-4">
                 {latestBySkill.map((entry) => (
                   <div key={entry.skill}>
-                    <div className="mb-1 flex items-center justify-between text-sm text-zinc-600">
+                    <div className="mb-1 flex items-center justify-between text-sm text-ink-body">
                       <span>{SKILL_LABELS[entry.skill!]}</span>
-                      <span className="font-medium text-zinc-800">{entry.bandScore}</span>
+                      <span className="font-medium text-ink">{entry.bandScore}</span>
                     </div>
-                    <div className="h-2 w-full rounded-full bg-zinc-100">
+                    <div className="h-2 w-full rounded-full bg-surface-sunken">
                       <div
                         className="h-2 rounded-full bg-brand-500"
                         style={{ width: `${Math.min(100, (entry.bandScore! / 9) * 100)}%` }}
@@ -119,12 +119,12 @@ export default async function DashboardPage() {
             )}
           </div>
 
-          <div className="rounded-2xl border border-zinc-200 bg-white p-6">
-            <h2 className="font-semibold text-zinc-900">Subscription</h2>
-            <p className="mt-3 inline-block rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-700">
+          <div className="rounded-2xl border border-line bg-surface p-6">
+            <h2 className="font-semibold text-ink">Subscription</h2>
+            <p className="mt-3 inline-block rounded-full bg-surface-sunken px-3 py-1 text-sm font-medium text-ink-body">
               {isPremium ? "Premium plan" : "Free plan"}
             </p>
-            <p className="mt-3 text-sm text-zinc-500">
+            <p className="mt-3 text-sm text-ink-muted">
               {isPremium
                 ? "Unlimited AI tool usage and priority support."
                 : `${usage.remaining} of ${usage.limit} AI tool uses remaining this month.`}
@@ -133,8 +133,8 @@ export default async function DashboardPage() {
                 showing a non-zero balance always avoids a learner thinking a
                 purchase vanished. */}
             {usage.credits > 0 && (
-              <p className="mt-3 text-sm text-zinc-600">
-                <strong className="text-zinc-900">{usage.credits}</strong> pay-per-use{" "}
+              <p className="mt-3 text-sm text-ink-body">
+                <strong className="text-ink">{usage.credits}</strong> pay-per-use{" "}
                 {usage.credits === 1 ? "credit" : "credits"} in reserve.
               </p>
             )}
@@ -148,13 +148,13 @@ export default async function DashboardPage() {
                 </Link>
                 <Link
                   href="/pricing"
-                  className="block rounded-full border border-zinc-200 px-4 py-2.5 text-center text-sm font-semibold text-zinc-700 hover:border-brand-400"
+                  className="block rounded-full border border-line px-4 py-2.5 text-center text-sm font-semibold text-ink-body hover:border-brand-400"
                 >
                   Buy credits
                 </Link>
                 <Link
                   href="/reviews"
-                  className="block rounded-full border border-zinc-200 px-4 py-2.5 text-center text-sm font-semibold text-zinc-700 hover:border-brand-400"
+                  className="block rounded-full border border-line px-4 py-2.5 text-center text-sm font-semibold text-ink-body hover:border-brand-400"
                 >
                   Examiner review
                 </Link>
@@ -163,40 +163,40 @@ export default async function DashboardPage() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-6">
+        <div className="mt-6 rounded-2xl border border-line bg-surface p-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2">
-              <h2 className="font-semibold text-zinc-900">Mistake analytics</h2>
+              <h2 className="font-semibold text-ink">Mistake analytics</h2>
               {!isPremium && <PremiumBadge />}
             </div>
-            <Link href="/dashboard/analytics" className="text-sm font-medium text-brand-600 hover:underline">
+            <Link href="/dashboard/analytics" className="text-sm font-medium text-link hover:underline">
               {isPremium ? "View breakdown →" : "See what's included →"}
             </Link>
           </div>
           {isPremium ? (
             analytics.weakest ? (
-              <p className="mt-3 text-sm text-zinc-600">
-                Weakest area so far: <strong className="text-zinc-900">{analytics.weakest.label}</strong> —{" "}
+              <p className="mt-3 text-sm text-ink-body">
+                Weakest area so far: <strong className="text-ink">{analytics.weakest.label}</strong> —{" "}
                 {analytics.weakest.correct} of {analytics.weakest.total} correct across{" "}
                 {analytics.analysedAttempts} {analytics.analysedAttempts === 1 ? "attempt" : "attempts"}.
               </p>
             ) : (
-              <p className="mt-3 text-sm text-zinc-500">
+              <p className="mt-3 text-sm text-ink-muted">
                 Take a few more tests and we&apos;ll show which question types are costing you marks.
               </p>
             )
           ) : (
-            <p className="mt-3 text-sm text-zinc-500">
+            <p className="mt-3 text-sm text-ink-muted">
               Premium breaks your results down by IELTS question type, so you can see which
               sub-skill is losing you marks. Your attempts are recorded either way.
             </p>
           )}
         </div>
 
-        <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-6">
-          <h2 className="font-semibold text-zinc-900">Recent results</h2>
+        <div className="mt-6 rounded-2xl border border-line bg-surface p-6">
+          <h2 className="font-semibold text-ink">Recent results</h2>
           {recentProgress.length === 0 ? (
-            <p className="mt-4 text-sm text-zinc-500">
+            <p className="mt-4 text-sm text-ink-muted">
               You haven&apos;t completed any practice tests yet.
             </p>
           ) : (
@@ -204,10 +204,10 @@ export default async function DashboardPage() {
               {recentProgress.map((result) => (
                 <li key={result.id} className="flex items-center justify-between py-3 text-sm">
                   <div>
-                    <p className="font-medium text-zinc-800">
+                    <p className="font-medium text-ink">
                       {result.contentItem?.title ?? result.taskType ?? "Practice activity"}
                     </p>
-                    <p className="text-zinc-500">
+                    <p className="text-ink-muted">
                       {result.completedAt.toLocaleDateString("en-US", {
                         month: "short",
                         day: "numeric",
@@ -215,7 +215,7 @@ export default async function DashboardPage() {
                       })}
                     </p>
                   </div>
-                  <span className="font-medium text-zinc-700">
+                  <span className="font-medium text-ink-body">
                     {result.bandScore ?? "Pending review"}
                   </span>
                 </li>

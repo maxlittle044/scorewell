@@ -28,7 +28,7 @@ export default async function VideoLessonsIndexPage() {
   const lessons = await listVideoLessons();
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Video lessons"
@@ -36,7 +36,7 @@ export default async function VideoLessonsIndexPage() {
         />
 
         {lessons.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface p-6 text-sm text-ink-muted">
             No lessons have been published yet.
           </p>
         ) : (
@@ -45,7 +45,7 @@ export default async function VideoLessonsIndexPage() {
               <Link
                 key={lesson.slug}
                 href={`/video-lessons/${lesson.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-shadow hover:shadow-md"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-md"
               >
                 <div
                   className={`relative flex h-36 items-center justify-center bg-gradient-to-br ${
@@ -64,11 +64,11 @@ export default async function VideoLessonsIndexPage() {
                     </span>
                   )}
                 </div>
-                <div className="flex flex-1 flex-col bg-white p-4">
-                  <h3 className="font-semibold text-zinc-900 group-hover:text-brand-600">
+                <div className="flex flex-1 flex-col bg-surface p-4">
+                  <h3 className="font-semibold text-ink group-hover:text-link">
                     {lesson.title}
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-zinc-500">{lesson.summary}</p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">{lesson.summary}</p>
                 </div>
               </Link>
             ))}

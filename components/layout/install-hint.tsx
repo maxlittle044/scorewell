@@ -53,7 +53,7 @@ export function InstallHint() {
   if (state === "unknown" || state === "installed") return null;
 
   return (
-    <p className="text-sm text-zinc-500">
+    <p className="text-sm text-ink-muted">
       {state === "ios" ? (
         <>
           Install ScoreWell: tap Share, then{" "}

@@ -13,7 +13,7 @@ export default async function SubmittedAnswersIndexPage() {
   const submissions = await listPublishedSubmissions();
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Community-submitted answers"
@@ -21,9 +21,9 @@ export default async function SubmittedAnswersIndexPage() {
         />
 
         {submissions.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-zinc-300 bg-white px-6 py-12 text-center">
-            <p className="text-sm font-medium text-zinc-700">No answers shared yet</p>
-            <p className="mx-auto mt-2 max-w-md text-sm text-zinc-500">
+          <div className="rounded-2xl border border-dashed border-line-strong bg-surface px-6 py-12 text-center">
+            <p className="text-sm font-medium text-ink-body">No answers shared yet</p>
+            <p className="mx-auto mt-2 max-w-md text-sm text-ink-muted">
               Write an answer on any writing test or exercise, then choose &ldquo;Share with the
               community&rdquo; to be the first to post one here.
             </p>

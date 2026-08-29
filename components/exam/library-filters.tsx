@@ -70,7 +70,7 @@ export function LibraryFilters() {
 
   return (
     <div className="mb-10 flex flex-col gap-6">
-      <div className="flex flex-wrap gap-1 border-b border-zinc-200" role="tablist">
+      <div className="flex flex-wrap gap-1 border-b border-line" role="tablist">
         {VARIANT_TABS.map((tab) => {
           const active = variant === tab.value;
           return (
@@ -83,8 +83,8 @@ export function LibraryFilters() {
               className={cn(
                 "-mb-px border-b-2 px-4 py-3 text-sm font-semibold transition-colors",
                 active
-                  ? "border-brand-600 text-brand-700"
-                  : "border-transparent text-zinc-500 hover:text-zinc-800",
+                  ? "border-brand-600 text-link"
+                  : "border-transparent text-ink-muted hover:text-ink",
               )}
             >
               {tab.label}
@@ -107,7 +107,7 @@ export function LibraryFilters() {
                 "inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors",
                 active
                   ? "border-brand-600 bg-brand-600 text-white"
-                  : "border-zinc-200 bg-white text-zinc-700 hover:border-brand-300 hover:text-brand-700",
+                  : "border-line bg-surface text-ink-body hover:border-brand-300 hover:text-link",
               )}
             >
               {Icon && <Icon className="h-4 w-4" />}
@@ -119,14 +119,14 @@ export function LibraryFilters() {
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <div className="relative flex-1">
-          <SearchIcon className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400" />
+          <SearchIcon className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-muted" />
           <input
             type="search"
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
             placeholder="Search tests..."
             aria-label="Search tests"
-            className="w-full rounded-full border border-zinc-200 bg-white py-3 pl-11 pr-4 text-sm text-zinc-800 outline-none placeholder:text-zinc-400 focus:border-brand-500"
+            className="w-full rounded-full border border-line bg-surface py-3 pl-11 pr-4 text-sm text-ink outline-none placeholder:text-ink-muted focus:border-brand-500"
           />
         </div>
         <label className="sr-only" htmlFor="library-sort">
@@ -136,7 +136,7 @@ export function LibraryFilters() {
           id="library-sort"
           value={sort}
           onChange={(event) => apply("sort", event.target.value)}
-          className="rounded-full border border-zinc-200 bg-white px-5 py-3 text-sm font-medium text-zinc-700 outline-none focus:border-brand-500"
+          className="rounded-full border border-line bg-surface px-5 py-3 text-sm font-medium text-ink-body outline-none focus:border-brand-500"
         >
           {SORT_OPTIONS.map((option) => (
             <option key={option.value} value={option.value}>

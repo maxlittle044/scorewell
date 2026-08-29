@@ -40,10 +40,10 @@ export default async function LiveLessonPage({ params }: PageProps<"/live-lesson
   const attendees = attendeeCounts.get(lesson.id) ?? 0;
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
         <p className="mb-4 text-sm">
-          <Link href="/live-lessons" className="font-medium text-brand-600 hover:underline">
+          <Link href="/live-lessons" className="font-medium text-link hover:underline">
             ← All live lessons
           </Link>
         </p>
@@ -52,18 +52,18 @@ export default async function LiveLessonPage({ params }: PageProps<"/live-lesson
           <span className="rounded-full bg-pop-50 px-2.5 py-0.5 text-xs font-semibold text-pop-700">
             {LESSON_SKILL_LABELS[lesson.skillFocus]}
           </span>
-          <span className="text-xs text-zinc-500">{lesson.level}</span>
+          <span className="text-xs text-ink-muted">{lesson.level}</span>
           {lesson.isPast && (
-            <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs font-semibold text-zinc-600">
+            <span className="rounded-full bg-surface-sunken px-2.5 py-0.5 text-xs font-semibold text-ink-body">
               Past session
             </span>
           )}
         </div>
 
-        <h1 className="mb-4 font-display text-3xl font-bold tracking-tight text-zinc-900">
+        <h1 className="mb-4 font-display text-3xl font-bold tracking-tight text-ink">
           {lesson.title}
         </h1>
-        <p className="mb-8 border-l-2 border-brand-200 pl-4 text-base leading-relaxed text-zinc-600">
+        <p className="mb-8 border-l-2 border-brand-200 pl-4 text-base leading-relaxed text-ink-body">
           {lesson.summary}
         </p>
 
@@ -80,40 +80,40 @@ export default async function LiveLessonPage({ params }: PageProps<"/live-lesson
           </div>
         )}
 
-        <dl className="mb-8 grid grid-cols-1 gap-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:grid-cols-3">
+        <dl className="mb-8 grid grid-cols-1 gap-5 rounded-2xl border border-line bg-surface-muted p-6 sm:grid-cols-3">
           <div>
-            <dt className="text-xs text-zinc-500">When</dt>
-            <dd className="mt-1 text-sm font-semibold text-zinc-800">
+            <dt className="text-xs text-ink-muted">When</dt>
+            <dd className="mt-1 text-sm font-semibold text-ink">
               {formatLessonTime(lesson.startsAt, lesson.durationMinutes)}
             </dd>
           </div>
           <div>
-            <dt className="text-xs text-zinc-500">Length</dt>
-            <dd className="mt-1 text-sm font-semibold text-zinc-800">
+            <dt className="text-xs text-ink-muted">Length</dt>
+            <dd className="mt-1 text-sm font-semibold text-ink">
               {lesson.durationMinutes} minutes
             </dd>
           </div>
           <div>
-            <dt className="text-xs text-zinc-500">Led by</dt>
-            <dd className="mt-1 text-sm font-semibold text-zinc-800">{lesson.instructor.name}</dd>
-            <dd className="text-xs text-zinc-500">{lesson.instructor.role}</dd>
+            <dt className="text-xs text-ink-muted">Led by</dt>
+            <dd className="mt-1 text-sm font-semibold text-ink">{lesson.instructor.name}</dd>
+            <dd className="text-xs text-ink-muted">{lesson.instructor.role}</dd>
           </div>
           {/* Real registration count only — nothing is shown at zero. */}
           {attendees > 0 && (
             <div>
-              <dt className="text-xs text-zinc-500">Registered</dt>
-              <dd className="mt-1 text-sm font-semibold text-zinc-800">
+              <dt className="text-xs text-ink-muted">Registered</dt>
+              <dd className="mt-1 text-sm font-semibold text-ink">
                 {attendees.toLocaleString("en-US")} {attendees === 1 ? "learner" : "learners"}
               </dd>
             </div>
           )}
         </dl>
 
-        <h2 className="mb-3 text-lg font-bold text-zinc-900">What the session covers</h2>
+        <h2 className="mb-3 text-lg font-bold text-ink">What the session covers</h2>
         <ol className="mb-8 flex flex-col gap-2.5">
           {lesson.agenda.map((point, index) => (
-            <li key={point} className="flex gap-3 text-sm leading-relaxed text-zinc-700">
-              <span className="font-semibold text-zinc-400">{index + 1}</span>
+            <li key={point} className="flex gap-3 text-sm leading-relaxed text-ink-body">
+              <span className="font-semibold text-ink-muted">{index + 1}</span>
               {point}
             </li>
           ))}
@@ -131,7 +131,7 @@ export default async function LiveLessonPage({ params }: PageProps<"/live-lesson
           {lesson.joinUrl && registeredIds.has(lesson.id) && !lesson.isPast && (
             <a
               href={lesson.joinUrl}
-              className="rounded-full border border-brand-600 px-6 py-3 text-sm font-semibold text-brand-700 transition-colors hover:bg-brand-50"
+              className="rounded-full border border-brand-600 px-6 py-3 text-sm font-semibold text-link transition-colors hover:bg-brand-50"
             >
               Join the session
             </a>
@@ -140,7 +140,7 @@ export default async function LiveLessonPage({ params }: PageProps<"/live-lesson
           {lesson.recordingSlug && (
             <Link
               href={`/video-lessons/${lesson.recordingSlug}`}
-              className="text-sm font-semibold text-brand-600 hover:underline"
+              className="text-sm font-semibold text-link hover:underline"
             >
               Watch the recording →
             </Link>

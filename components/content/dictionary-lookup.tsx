@@ -95,14 +95,14 @@ export function DictionaryLookup() {
       role="dialog"
       aria-label={`Dictionary: ${state.word}`}
     >
-      <div className="max-h-72 w-72 overflow-y-auto rounded-xl border border-zinc-200 bg-white p-3 shadow-xl">
+      <div className="max-h-72 w-72 overflow-y-auto rounded-xl border border-line bg-surface p-3 shadow-xl">
         <div className="flex items-start justify-between gap-2">
-          <p className="text-sm font-semibold text-zinc-900">{state.word}</p>
+          <p className="text-sm font-semibold text-ink">{state.word}</p>
           <button
             type="button"
             onClick={dismiss}
             aria-label="Close dictionary"
-            className="-mr-1 -mt-1 rounded p-1 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-600"
+            className="-mr-1 -mt-1 rounded p-1 text-ink-muted hover:bg-surface-sunken hover:text-ink-body"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
               <path
@@ -126,11 +126,11 @@ export function DictionaryLookup() {
         )}
 
         {state.status === "loading" && (
-          <p className="mt-2 text-xs text-zinc-500">Looking it up…</p>
+          <p className="mt-2 text-xs text-ink-muted">Looking it up…</p>
         )}
 
         {state.status === "error" && (
-          <p className="mt-2 text-xs text-zinc-600">{state.message}</p>
+          <p className="mt-2 text-xs text-ink-body">{state.message}</p>
         )}
 
         {state.status === "done" && (
@@ -145,10 +145,10 @@ export function DictionaryLookup() {
                   )}
                   <ol className="mt-0.5 flex list-decimal flex-col gap-1 pl-4">
                     {entry.senses.map((sense, senseIndex) => (
-                      <li key={senseIndex} className="text-xs leading-relaxed text-zinc-700">
+                      <li key={senseIndex} className="text-xs leading-relaxed text-ink-body">
                         {sense.definition}
                         {sense.examples[0] && (
-                          <span className="mt-0.5 block italic text-zinc-500">
+                          <span className="mt-0.5 block italic text-ink-muted">
                             {sense.examples[0]}
                           </span>
                         )}
@@ -159,13 +159,13 @@ export function DictionaryLookup() {
               ))}
             </div>
             {/* Wiktionary is CC BY-SA: the credit is a licence condition, not a courtesy. */}
-            <p className="mt-3 border-t border-zinc-100 pt-2 text-[0.65rem] text-zinc-400">
+            <p className="mt-3 border-t border-line pt-2 text-[0.65rem] text-ink-muted">
               Definitions from{" "}
               <a
                 href={`https://en.wiktionary.org/wiki/${encodeURIComponent(state.word)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-zinc-600"
+                className="underline hover:text-ink-body"
               >
                 Wiktionary
               </a>

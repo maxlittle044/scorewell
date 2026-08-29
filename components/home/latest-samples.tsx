@@ -76,21 +76,21 @@ function SampleRow({ heading, viewAllHref, cards }: { heading: string; viewAllHr
   return (
     <div>
       <div className="mb-5 flex items-end justify-between">
-        <h3 className="text-lg font-semibold text-zinc-900">{heading}</h3>
-        <Link href={viewAllHref} className="hidden shrink-0 text-sm font-medium text-brand-600 hover:underline sm:inline">
+        <h3 className="text-lg font-semibold text-ink">{heading}</h3>
+        <Link href={viewAllHref} className="hidden shrink-0 text-sm font-medium text-link hover:underline sm:inline">
           View all →
         </Link>
       </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
         {cards.map((card) => (
           <Link key={card.href} href={card.href} className={`${CARD_LINK_CLASS} flex flex-col p-5`}>
-            <span className="inline-block w-fit rounded-full bg-linear-to-r from-brand-50 to-pop-50 px-2.5 py-0.5 text-xs font-medium text-brand-600">
+            <span className="inline-block w-fit rounded-full bg-linear-to-r from-brand-50 to-pop-50 px-2.5 py-0.5 text-xs font-medium text-link">
               {card.tag}
             </span>
-            <h4 className="mt-2.5 font-semibold text-zinc-900 group-hover:text-brand-600">
+            <h4 className="mt-2.5 font-semibold text-ink group-hover:text-link">
               {card.title}
             </h4>
-            <p className="mt-1.5 flex-1 text-sm text-zinc-600">{card.excerpt}</p>
+            <p className="mt-1.5 flex-1 text-sm text-ink-body">{card.excerpt}</p>
           </Link>
         ))}
       </div>
@@ -100,7 +100,7 @@ function SampleRow({ heading, viewAllHref, cards }: { heading: string; viewAllHr
 
 export function LatestSamples() {
   return (
-    <section className="bg-white">
+    <section className="bg-surface">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"

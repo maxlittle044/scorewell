@@ -22,7 +22,7 @@ export async function AiConversationsCarousel() {
   if (topics.length === 0) return null;
 
   return (
-    <section className="bg-zinc-50">
+    <section className="bg-surface-muted">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="AI conversation practice"
@@ -38,13 +38,13 @@ export async function AiConversationsCarousel() {
               href={`/ai-conversations/${topic.slug}`}
               className={`${CARD_LINK_CLASS} w-60 shrink-0 snap-start p-5`}
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-linear-to-br from-brand-50 to-pop-50 text-brand-600 transition-transform group-hover:scale-110">
+              <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-linear-to-br from-brand-50 to-pop-50 text-link transition-transform group-hover:scale-110">
                 <ChatIcon />
               </span>
-              <h3 className="mt-4 font-semibold text-zinc-900 group-hover:text-brand-600">
+              <h3 className="mt-4 font-semibold text-ink group-hover:text-link">
                 {topic.title}
               </h3>
-              <p className="mt-1.5 text-sm text-zinc-500">{topic.blurb}</p>
+              <p className="mt-1.5 text-sm text-ink-muted">{topic.blurb}</p>
             </Link>
           ))}
         </div>

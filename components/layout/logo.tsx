@@ -30,7 +30,7 @@ export function Logo() {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="font-display text-lg font-bold tracking-tight text-zinc-900">
+      <span className="font-display text-lg font-bold tracking-tight text-ink">
         Score<span className="text-gradient">Well</span>
       </span>
     </Link>

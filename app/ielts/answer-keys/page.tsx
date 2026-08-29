@@ -15,11 +15,11 @@ export default async function AnswerKeysPage() {
   const testCount = groups.reduce((n, group) => n + group.entries.length, 0);
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Answer keys" />
 
-        <p className="mb-8 text-sm leading-relaxed text-zinc-600">
+        <p className="mb-8 text-sm leading-relaxed text-ink-body">
           Answer keys aren&apos;t a separate download. Every test below is marked automatically —
           submit it and you&apos;ll see your score, which questions you got wrong, and the correct
           answer for each one. Answers stay hidden until you submit, so the practice is worth
@@ -27,41 +27,41 @@ export default async function AnswerKeysPage() {
         </p>
 
         {groups.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface-muted p-6 text-sm text-ink-muted">
             No marked tests have been published yet.
           </p>
         ) : (
           <>
-            <p className="mb-8 rounded-xl border border-brand-100 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+            <p className="mb-8 rounded-xl border border-brand-100 bg-brand-50 px-4 py-3 text-sm text-heading">
               {testCount} marked tests · {total} questions with answer keys
             </p>
 
             <div className="flex flex-col gap-10">
               {groups.map((group) => (
                 <section key={group.key}>
-                  <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">
+                  <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
                     {group.heading}
                   </h2>
-                  <p className="mb-4 mt-1 text-sm text-zinc-500">{group.description}</p>
+                  <p className="mb-4 mt-1 text-sm text-ink-muted">{group.description}</p>
 
                   <ul className="flex flex-col gap-2.5">
                     {group.entries.map((entry) => (
                       <li key={entry.slug}>
                         <Link
                           href={entry.href}
-                          className="flex items-center justify-between gap-4 rounded-xl border border-zinc-200 px-5 py-3.5 hover:border-brand-300"
+                          className="flex items-center justify-between gap-4 rounded-xl border border-line px-5 py-3.5 hover:border-brand-300"
                         >
                           <span>
-                            <span className="block text-sm font-medium text-zinc-800">
+                            <span className="block text-sm font-medium text-ink">
                               {entry.title}
                             </span>
                             {entry.topic && (
-                              <span className="mt-0.5 block text-xs text-zinc-500">
+                              <span className="mt-0.5 block text-xs text-ink-muted">
                                 {entry.topic}
                               </span>
                             )}
                           </span>
-                          <span className="shrink-0 text-xs font-medium text-zinc-400">
+                          <span className="shrink-0 text-xs font-medium text-ink-muted">
                             {entry.questionCount} questions
                           </span>
                         </Link>

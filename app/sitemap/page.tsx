@@ -99,20 +99,20 @@ const GROUPS = [
 
 export default function SitemapPage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Sitemap" />
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {GROUPS.map((group) => (
             <div key={group.heading}>
-              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-400">
+              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                 {group.heading}
               </h2>
               <ul className="flex flex-col gap-2">
                 {group.links.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-zinc-700 hover:text-brand-600">
+                    <Link href={link.href} className="text-sm text-ink-body hover:text-link">
                       {link.label}
                     </Link>
                   </li>

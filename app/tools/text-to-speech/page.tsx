@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TextToSpeechPage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="Text-to-speech"

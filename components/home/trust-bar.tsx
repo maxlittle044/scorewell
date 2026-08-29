@@ -39,7 +39,7 @@ function CheckIcon() {
 
 export function TrustBar() {
   return (
-    <section className="border-b border-zinc-200 bg-white">
+    <section className="border-b border-line bg-surface">
       <div
         data-reveal
         className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 sm:grid-cols-2 lg:grid-cols-4 lg:px-8"
@@ -50,8 +50,8 @@ export function TrustBar() {
               <CheckIcon />
             </span>
             <div>
-              <p className="font-semibold text-brand-900">{point.title}</p>
-              <p className="mt-1 text-sm text-zinc-600">{point.body}</p>
+              <p className="font-semibold text-heading">{point.title}</p>
+              <p className="mt-1 text-sm text-ink-body">{point.body}</p>
             </div>
           </div>
         ))}

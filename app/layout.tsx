@@ -51,6 +51,15 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} h-full antialiased`}
     >
+      <head>
+        {/* Applies the stored theme before first paint — a deferred script would let a
+            dark-mode reader see a white flash on every navigation. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("scorewell-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}`,
+          }}
+        />
+      </head>
       <body className="flex min-h-full flex-col">
         <ScrollReveal />
         <ServiceWorkerRegistrar />

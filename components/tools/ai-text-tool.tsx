@@ -25,7 +25,7 @@ export function AiTextTool({
     <form action={formAction}>
       <input type="hidden" name="kind" value={kind} />
 
-      <label htmlFor="tool-input" className="mb-1.5 block text-sm font-medium text-zinc-700">
+      <label htmlFor="tool-input" className="mb-1.5 block text-sm font-medium text-ink-body">
         {inputLabel}
       </label>
       <textarea
@@ -35,13 +35,13 @@ export function AiTextTool({
         onChange={(e) => setText(e.target.value)}
         rows={rows}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-zinc-300 p-4 text-sm leading-relaxed text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+        className="w-full rounded-xl border border-line-strong p-4 text-sm leading-relaxed text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
       />
 
       <button
         type="submit"
         disabled={text.trim() === "" || pending}
-        className="mt-3 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-zinc-300"
+        className="mt-3 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
       >
         {pending ? "Working…" : actionLabel}
       </button>
@@ -64,7 +64,7 @@ export function AiTextTool({
       )}
 
       {state.result && (
-        <div className="mt-4 whitespace-pre-wrap rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm leading-relaxed text-zinc-800">
+        <div className="mt-4 whitespace-pre-wrap rounded-xl border border-line bg-surface-muted px-4 py-3 text-sm leading-relaxed text-ink">
           {state.result}
         </div>
       )}

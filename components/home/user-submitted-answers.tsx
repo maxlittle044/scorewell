@@ -11,7 +11,7 @@ export async function UserSubmittedAnswers() {
   if (submissions.length === 0) return null;
 
   return (
-    <section className="bg-zinc-50">
+    <section className="bg-surface-muted">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Community-submitted answers"
@@ -27,7 +27,7 @@ export async function UserSubmittedAnswers() {
               href={`/ielts/submitted-answers/${submission.id}`}
               className={`${CARD_LINK_CLASS} flex flex-col p-5`}
             >
-              <h4 className="font-semibold text-zinc-900 group-hover:text-brand-600">
+              <h4 className="font-semibold text-ink group-hover:text-link">
                 {submission.title}
               </h4>
               <div className="mt-4 flex items-center justify-between">
@@ -35,9 +35,9 @@ export async function UserSubmittedAnswers() {
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-linear-to-br from-brand-500 to-pop-500 text-xs font-semibold text-white">
                     {initials(submission.author)}
                   </span>
-                  <span className="text-sm text-zinc-500">{submission.author}</span>
+                  <span className="text-sm text-ink-muted">{submission.author}</span>
                 </div>
-                <span className="text-xs font-medium text-zinc-500">
+                <span className="text-xs font-medium text-ink-muted">
                   {submission.replyCount} {submission.replyCount === 1 ? "reply" : "replies"}
                 </span>
               </div>

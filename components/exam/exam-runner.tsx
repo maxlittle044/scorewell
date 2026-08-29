@@ -120,11 +120,11 @@ export function ExamRunner({
   return (
     <div className="flex flex-col gap-6">
       {/* Sticky status bar: progress, timer, submit */}
-      <div className="sticky top-16 z-30 -mx-4 flex flex-wrap items-center justify-between gap-3 border-y border-zinc-200 bg-white/90 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border">
-        <p className="text-sm font-medium text-zinc-700">
+      <div className="sticky top-16 z-30 -mx-4 flex flex-wrap items-center justify-between gap-3 border-y border-line bg-surface/90 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border">
+        <p className="text-sm font-medium text-ink-body">
           {submitted ? (
             <>
-              Score <span className="font-bold text-brand-700">{score}</span> / {questions.length}
+              Score <span className="font-bold text-link">{score}</span> / {questions.length}
             </>
           ) : (
             <>
@@ -138,7 +138,7 @@ export function ExamRunner({
             <span
               className={cn(
                 "rounded-full px-3 py-1 font-mono text-sm font-semibold tabular-nums",
-                timeIsShort ? "bg-rose-100 text-rose-700" : "bg-zinc-100 text-zinc-700",
+                timeIsShort ? "bg-rose-100 text-rose-700" : "bg-surface-sunken text-ink-body",
               )}
               aria-live={timeIsShort ? "polite" : "off"}
             >
@@ -170,8 +170,8 @@ export function ExamRunner({
       <div className={cn("grid gap-6", showPassage && "lg:grid-cols-2")}>
         {showPassage && (
           <div className="lg:sticky lg:top-36 lg:max-h-[calc(100vh-11rem)] lg:self-start lg:overflow-y-auto">
-            <div className="rounded-xl border border-zinc-200 bg-white p-5">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+            <div className="rounded-xl border border-line bg-surface p-5">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                 {passageLabel}
               </p>
               <PassageText passage={passage} highlight={activeQuote} />
@@ -181,7 +181,7 @@ export function ExamRunner({
 
         <div className="flex flex-col gap-6">
           {passage && passageHiddenUntilSubmit && !submitted && (
-            <p className="rounded-lg bg-brand-50 px-4 py-3 text-sm text-brand-800">
+            <p className="rounded-lg bg-brand-50 px-4 py-3 text-sm text-heading">
               The transcript stays hidden until you submit — reading along would defeat the
               listening practice.
             </p>
@@ -204,34 +204,34 @@ export function ExamRunner({
             </Button>
           ) : (
             <div className="rounded-2xl border border-brand-200 bg-linear-to-br from-brand-50 to-pop-50 p-6">
-              <p className="text-2xl font-bold text-zinc-900">
+              <p className="text-2xl font-bold text-ink">
                 You scored {score} / {questions.length}
               </p>
-              <p className="mt-1 text-sm text-zinc-600">
-                That scales to about <span className="font-semibold text-brand-700">band {band}</span>{" "}
+              <p className="mt-1 text-sm text-ink-body">
+                That scales to about <span className="font-semibold text-link">band {band}</span>{" "}
                 on a full 40-question paper ({scaledCorrect}/40).
               </p>
               {step && step.needed > 0 && (
-                <p className="mt-1 text-sm text-zinc-600">
+                <p className="mt-1 text-sm text-ink-body">
                   {step.needed} more correct {step.needed === 1 ? "answer" : "answers"} would reach
                   band {step.band}.
                 </p>
               )}
 
-              {isPending && <p className="mt-3 text-sm text-zinc-500">Saving your result…</p>}
+              {isPending && <p className="mt-3 text-sm text-ink-muted">Saving your result…</p>}
               {saveState === "saved" && (
                 <p className="mt-3 text-sm text-emerald-700">Saved to your dashboard.</p>
               )}
               {saveState === "not-logged-in" && (
-                <p className="mt-3 text-sm text-zinc-600">
-                  <Link href="/login" className="font-semibold text-brand-600 hover:underline">
+                <p className="mt-3 text-sm text-ink-body">
+                  <Link href="/login" className="font-semibold text-link hover:underline">
                     Log in
                   </Link>{" "}
                   to save your progress and track your bands over time.
                 </p>
               )}
 
-              <p className="mt-4 text-sm text-zinc-500">
+              <p className="mt-4 text-sm text-ink-muted">
                 Hover a question to highlight where its answer appears in the {passageLabel.toLowerCase()}.
               </p>
             </div>

@@ -24,14 +24,14 @@ export default async function SubmittedAnswerPage({
 
   if (!submission) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">Answer not found</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">Answer not found</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             This answer may have been removed.{" "}
             <Link
               href="/ielts/submitted-answers"
-              className="font-medium text-brand-600 hover:underline"
+              className="font-medium text-link hover:underline"
             >
               Browse all submitted answers
             </Link>
@@ -43,43 +43,43 @@ export default async function SubmittedAnswerPage({
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-10 sm:px-6 lg:px-8">
         {submission.taskType && (
-          <span className="mb-3 inline-block rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-600">
+          <span className="mb-3 inline-block rounded-full bg-surface-sunken px-2.5 py-1 text-xs font-medium text-ink-body">
             {submission.taskType}
           </span>
         )}
-        <h1 className="mb-1 text-xl font-bold text-zinc-900">{submission.title}</h1>
-        <p className="mb-6 text-sm text-zinc-500">
+        <h1 className="mb-1 text-xl font-bold text-ink">{submission.title}</h1>
+        <p className="mb-6 text-sm text-ink-muted">
           Shared by {submission.author} · {formatDate(submission.createdAt)}
         </p>
 
-        <article className="mb-8 whitespace-pre-line rounded-xl border border-zinc-200 bg-zinc-50 p-5 text-sm leading-relaxed text-zinc-700">
+        <article className="mb-8 whitespace-pre-line rounded-xl border border-line bg-surface-muted p-5 text-sm leading-relaxed text-ink-body">
           {submission.answerText}
         </article>
 
-        <h2 className="mb-4 text-sm font-semibold text-zinc-900">
+        <h2 className="mb-4 text-sm font-semibold text-ink">
           Community feedback ({submission.replies.length})
         </h2>
 
         {submission.replies.length === 0 ? (
-          <p className="mb-6 text-sm text-zinc-500">
+          <p className="mb-6 text-sm text-ink-muted">
             No feedback yet — be the first to help this learner out.
           </p>
         ) : (
           <ul className="mb-6 flex flex-col gap-4">
             {submission.replies.map((reply) => (
               <li key={reply.id} className="flex gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-700">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-link">
                   {initials(reply.author)}
                 </span>
                 <div>
-                  <p className="text-sm font-medium text-zinc-800">
+                  <p className="text-sm font-medium text-ink">
                     {reply.author}{" "}
-                    <span className="font-normal text-zinc-400">{formatDate(reply.createdAt)}</span>
+                    <span className="font-normal text-ink-muted">{formatDate(reply.createdAt)}</span>
                   </p>
-                  <p className="text-sm text-zinc-600">{reply.text}</p>
+                  <p className="text-sm text-ink-body">{reply.text}</p>
                 </div>
               </li>
             ))}
@@ -89,8 +89,8 @@ export default async function SubmittedAnswerPage({
         {session?.user ? (
           <ReplyForm submissionId={submission.id} />
         ) : (
-          <p className="text-sm text-zinc-500">
-            <Link href="/login" className="font-medium text-brand-600 hover:underline">
+          <p className="text-sm text-ink-muted">
+            <Link href="/login" className="font-medium text-link hover:underline">
               Log in
             </Link>{" "}
             to leave feedback on this answer.

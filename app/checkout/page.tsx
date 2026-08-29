@@ -25,7 +25,7 @@ export default async function CheckoutPage({ searchParams }: PageProps<"/checkou
     : ({ kind: "subscription", duration: getDuration(durationParam) } as const);
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title={pack ? "Buy credits" : "Upgrade to Premium"}

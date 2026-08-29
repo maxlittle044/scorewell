@@ -58,12 +58,12 @@ export default async function AiConversationPage({
   if (!topic) {
     const others = await listConversationTopics();
     return (
-      <main className="flex flex-1 flex-col bg-zinc-50">
+      <main className="flex flex-1 flex-col bg-surface-muted">
         <div className="mx-auto w-full max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             This conversation topic isn&apos;t available yet.{" "}
-            <Link href="/ai-conversations" className="font-medium text-brand-600 hover:underline">
+            <Link href="/ai-conversations" className="font-medium text-link hover:underline">
               Browse all {others.length} topics
             </Link>
             .
@@ -76,25 +76,25 @@ export default async function AiConversationPage({
   const initial = session?.user ? await resumeState(session.user.id, slug) : {};
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-2xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-zinc-500">
-          <span className="rounded-full bg-brand-50 px-2.5 py-1 font-semibold text-brand-700">
+        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-ink-muted">
+          <span className="rounded-full bg-brand-50 px-2.5 py-1 font-semibold text-link">
             Speaking {topic.part}
           </span>
           <span>up to {MAX_LEARNER_TURNS} turns</span>
         </div>
 
-        <h1 className="mb-2 text-2xl font-bold text-zinc-900">{topic.title}</h1>
-        <p className="mb-6 text-sm text-zinc-600">{topic.blurb}</p>
+        <h1 className="mb-2 text-2xl font-bold text-ink">{topic.title}</h1>
+        <p className="mb-6 text-sm text-ink-body">{topic.blurb}</p>
 
         <AiConversation slug={slug} initial={initial} signedIn={Boolean(session?.user)} />
 
-        <section className="mt-8 rounded-2xl border border-zinc-200 bg-white p-5">
-          <h2 className="mb-2.5 text-sm font-semibold uppercase tracking-wide text-zinc-500">
+        <section className="mt-8 rounded-2xl border border-line bg-surface p-5">
+          <h2 className="mb-2.5 text-sm font-semibold uppercase tracking-wide text-ink-muted">
             Language to aim for
           </h2>
-          <ul className="flex flex-col gap-2 text-sm leading-relaxed text-zinc-700">
+          <ul className="flex flex-col gap-2 text-sm leading-relaxed text-ink-body">
             {topic.targetLanguage.map((item, i) => (
               <li key={i} className="border-l-2 border-brand-200 pl-3">
                 {item}

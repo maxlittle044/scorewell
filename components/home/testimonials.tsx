@@ -68,18 +68,18 @@ export function Testimonials() {
   const current = TESTIMONIALS[Math.min(index, count - 1)];
 
   return (
-    <section className="relative overflow-hidden bg-linear-to-b from-white via-brand-50/50 to-white">
+    <section className="relative overflow-hidden bg-linear-to-b from-surface via-brand-50/50 to-surface">
       <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-pop-600">
           From our learners
         </h2>
-        <p className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">
+        <p className="mt-2 text-2xl font-bold tracking-tight text-ink sm:text-3xl">
           What ScoreWell learners say
         </p>
 
         <div
           data-reveal
-          className="mt-10 rounded-3xl border border-zinc-200/80 bg-white/80 px-6 py-10 shadow-xl shadow-zinc-900/4 backdrop-blur"
+          className="mt-10 rounded-3xl border border-line/80 bg-surface/80 px-6 py-10 shadow-xl shadow-zinc-900/4 backdrop-blur"
         >
           <div className="flex flex-col items-center">
             <div className="rounded-full bg-linear-to-br from-brand-500 to-pop-500 p-0.5 shadow-glow-sm">
@@ -96,13 +96,13 @@ export function Testimonials() {
               ))}
             </div>
 
-            <blockquote className="mt-4 max-w-xl text-lg text-zinc-700">
+            <blockquote className="mt-4 max-w-xl text-lg text-ink-body">
               &ldquo;{current.quote}&rdquo;
             </blockquote>
 
-            <p className="mt-4 text-sm font-medium text-zinc-900">
+            <p className="mt-4 text-sm font-medium text-ink">
               {current.name}
-              <span className="font-normal text-zinc-500"> — {current.role}</span>
+              <span className="font-normal text-ink-muted"> — {current.role}</span>
             </p>
 
             {count > 1 && (
@@ -117,7 +117,7 @@ export function Testimonials() {
                     className={`h-2 rounded-full transition-all ${
                       i === index
                         ? "w-6 bg-linear-to-r from-brand-500 to-pop-500"
-                        : "w-2 bg-zinc-200 hover:bg-zinc-300"
+                        : "w-2 bg-line hover:bg-line-strong"
                     }`}
                   />
                 ))}

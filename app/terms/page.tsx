@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Terms & Conditions" description="Last updated: August 24, 2026" />
         <LegalNotice />
 
-        <div className="flex flex-col gap-6 text-zinc-700">
+        <div className="flex flex-col gap-6 text-ink-body">
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Accounts</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Accounts</h2>
             <p>
               You must provide accurate information when creating an account
               and are responsible for keeping your login credentials secure.
@@ -26,7 +26,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Acceptable use</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Acceptable use</h2>
             <ul className="flex flex-col gap-1.5 pl-5 list-disc">
               <li>Don&apos;t share your account or resell access to our tools</li>
               <li>Don&apos;t attempt to scrape, reverse-engineer, or overload our systems</li>
@@ -35,7 +35,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Subscriptions & billing</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Subscriptions & billing</h2>
             <p>
               Premium subscriptions renew automatically for the billing period
               you select until cancelled. You can cancel any time from your
@@ -45,7 +45,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Intellectual property</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Intellectual property</h2>
             <p>
               All practice tests, sample answers, and site content are owned
               by ScoreWell or licensed to us, except for content you submit
@@ -56,7 +56,7 @@ export default function TermsPage() {
             <p className="mt-3">
               Our content may not be copied, republished, redistributed, sold, or used to
               train or populate another service without our written permission. See{" "}
-              <Link href="/copyright" className="font-medium text-brand-600 hover:underline">
+              <Link href="/copyright" className="font-medium text-link hover:underline">
                 Copyright &amp; DMCA
               </Link>{" "}
               for the full terms and for how to report material that infringes your
@@ -65,7 +65,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Termination</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Termination</h2>
             <p>
               We may suspend or terminate accounts that violate these terms.
               You can close your account at any time.
@@ -73,7 +73,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 text-lg font-semibold text-zinc-900">Limitation of liability</h2>
+            <h2 className="mb-2 text-lg font-semibold text-ink">Limitation of liability</h2>
             <p>
               ScoreWell is provided &ldquo;as is.&rdquo; We aren&apos;t liable
               for exam outcomes, and our AI tools&apos; feedback is an

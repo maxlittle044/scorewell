@@ -20,7 +20,7 @@ export function CountdownTimer({ minutes }: { minutes: number }) {
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold tabular-nums ${
-        secondsLeft <= 60 ? "bg-rose-100 text-rose-700" : "bg-zinc-100 text-zinc-700"
+        secondsLeft <= 60 ? "bg-rose-100 text-rose-700" : "bg-surface-sunken text-ink-body"
       }`}
     >
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

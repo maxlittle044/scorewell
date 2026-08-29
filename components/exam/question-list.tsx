@@ -21,7 +21,7 @@ export type QuestionResult = { correct: boolean; correctAnswer: string };
  */
 export function PassageText({ passage, highlight }: { passage: string; highlight?: string }) {
   return (
-    <div className="flex flex-col gap-4 text-sm leading-relaxed text-zinc-700">
+    <div className="flex flex-col gap-4 text-sm leading-relaxed text-ink-body">
       {passage.split(/\n\n+/).map((paragraph, index) => {
         const at = highlight ? paragraph.indexOf(highlight) : -1;
         if (at === -1) return <p key={index}>{paragraph}</p>;
@@ -29,7 +29,7 @@ export function PassageText({ passage, highlight }: { passage: string; highlight
         return (
           <p key={index}>
             {paragraph.slice(0, at)}
-            <mark className="rounded bg-accent-200 px-0.5 py-px text-zinc-900">
+            <mark className="rounded bg-accent-200 px-0.5 py-px text-ink">
               {paragraph.slice(at, at + highlight!.length)}
             </mark>
             {paragraph.slice(at + highlight!.length)}
@@ -52,8 +52,8 @@ export function QuestionNavigator({
   resultById: Record<string, QuestionResult>;
 }) {
   return (
-    <div className="rounded-xl border border-zinc-200 bg-white p-4">
-      <p className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+    <div className="rounded-xl border border-line bg-surface p-4">
+      <p className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-ink-muted">
         Questions
       </p>
       <div className="flex flex-wrap gap-1.5">
@@ -74,7 +74,7 @@ export function QuestionNavigator({
                     ? "bg-accent-100 text-accent-600 ring-1 ring-accent-400"
                     : done
                       ? "bg-brand-600 text-white"
-                      : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200",
+                      : "bg-surface-sunken text-ink-muted hover:bg-line",
               )}
             >
               {index + 1}
@@ -126,9 +126,9 @@ export function QuestionGroups({
         <div key={group.id} className="flex flex-col gap-4">
           {group.instructions && showInstructions && (
             <div className="rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-2.5">
-              <p className="text-sm font-medium text-brand-900">{group.instructions}</p>
+              <p className="text-sm font-medium text-heading">{group.instructions}</p>
               {group.bank && (
-                <ul className="mt-2 flex flex-col gap-0.5 text-sm text-brand-800">
+                <ul className="mt-2 flex flex-col gap-0.5 text-sm text-heading">
                   {group.bank.map((entry) => (
                     <li key={entry.key}>
                       <span className="font-semibold">{entry.key}.</span> {entry.label}

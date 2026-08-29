@@ -125,7 +125,7 @@ export function SpeakingRecorder({
   }
 
   return (
-    <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-5">
+    <div className="rounded-xl border border-line bg-surface-muted p-5">
       {status === "error" && (
         <p className="mb-3 text-sm text-rose-600">
           Couldn&apos;t access your microphone. Check your browser permissions, or type your answer
@@ -140,7 +140,7 @@ export function SpeakingRecorder({
             onClick={stopRecording}
             className="flex items-center gap-2 rounded-full bg-rose-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-rose-700"
           >
-            <span className="h-2.5 w-2.5 rounded-sm bg-white" />
+            <span className="h-2.5 w-2.5 rounded-sm bg-surface" />
             Stop recording
           </button>
         ) : (
@@ -149,7 +149,7 @@ export function SpeakingRecorder({
             onClick={startRecording}
             className="flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
-            <span className="h-2.5 w-2.5 rounded-full bg-white" />
+            <span className="h-2.5 w-2.5 rounded-full bg-surface" />
             {status === "recorded" ? "Record again" : "Start recording"}
           </button>
         )}
@@ -162,9 +162,9 @@ export function SpeakingRecorder({
       {audioUrl && <audio controls src={audioUrl} className="mt-4 w-full" />}
 
       <div className="mt-4">
-        <label htmlFor="transcript" className="mb-1.5 block text-sm font-medium text-zinc-700">
+        <label htmlFor="transcript" className="mb-1.5 block text-sm font-medium text-ink-body">
           Your answer
-          <span className="ml-1 font-normal text-zinc-400">
+          <span className="ml-1 font-normal text-ink-muted">
             {sttSupported
               ? "(transcribed as you speak — edit if needed)"
               : "(speech-to-text isn't supported in this browser — type your answer)"}
@@ -176,9 +176,9 @@ export function SpeakingRecorder({
           onChange={(e) => setTranscript(e.target.value)}
           rows={6}
           placeholder="Speak, or type your answer here..."
-          className="w-full rounded-xl border border-zinc-300 bg-white p-4 text-sm leading-relaxed text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+          className="w-full rounded-xl border border-line-strong bg-surface p-4 text-sm leading-relaxed text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
         />
-        <p className="mt-2 text-xs text-zinc-400">
+        <p className="mt-2 text-xs text-ink-muted">
           Your recording stays on your device — only the text above is sent for feedback.
         </p>
       </div>

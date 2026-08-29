@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const KIND_STYLES = {
   New: "bg-pop-50 text-pop-700",
-  Improved: "bg-brand-50 text-brand-700",
+  Improved: "bg-brand-50 text-link",
   Fixed: "bg-accent-100 text-accent-600",
 } as const;
 
@@ -24,7 +24,7 @@ export default async function AnnouncementsPage() {
   const announcements = await listAnnouncements();
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader
           title="What's new"
@@ -32,7 +32,7 @@ export default async function AnnouncementsPage() {
         />
 
         {announcements.length === 0 ? (
-          <p className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-center text-sm text-zinc-500">
+          <p className="rounded-2xl border border-line bg-surface-muted p-6 text-center text-sm text-ink-muted">
             Nothing here yet.
           </p>
         ) : (
@@ -40,7 +40,7 @@ export default async function AnnouncementsPage() {
             {announcements.map((announcement) => (
               <li
                 key={announcement.slug}
-                className="border-b border-zinc-100 pb-8 last:border-0 last:pb-0"
+                className="border-b border-line pb-8 last:border-0 last:pb-0"
               >
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span
@@ -53,17 +53,17 @@ export default async function AnnouncementsPage() {
                   </span>
                   <time
                     dateTime={announcement.date}
-                    className="text-xs font-medium text-zinc-500"
+                    className="text-xs font-medium text-ink-muted"
                   >
                     {formatAnnouncementDate(announcement.date)}
                   </time>
                 </div>
 
-                <h2 className="font-display text-lg font-bold text-zinc-900">
+                <h2 className="font-display text-lg font-bold text-ink">
                   {announcement.title}
                 </h2>
 
-                <div className="mt-3 flex flex-col gap-3 text-sm leading-relaxed text-zinc-700">
+                <div className="mt-3 flex flex-col gap-3 text-sm leading-relaxed text-ink-body">
                   {announcement.body.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                   ))}
@@ -72,7 +72,7 @@ export default async function AnnouncementsPage() {
                 {announcement.link && (
                   <Link
                     href={announcement.link.href}
-                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-accent-600"
+                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-link hover:text-accent-600"
                   >
                     {announcement.link.label}
                     <span aria-hidden="true">→</span>

@@ -23,7 +23,7 @@ const PHONEMES = [
 
 export function PronunciationGrid() {
   return (
-    <section className="bg-zinc-50">
+    <section className="bg-surface-muted">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           title="Pronunciation drills"
@@ -39,10 +39,10 @@ export function PronunciationGrid() {
               href={phoneme.href}
               className={`${CARD_LINK_CLASS} flex flex-col items-center py-6`}
             >
-              <span className="text-2xl font-semibold text-brand-600 group-hover:text-pop-600">
+              <span className="text-2xl font-semibold text-link group-hover:text-pop-600">
                 /{phoneme.symbol}/
               </span>
-              <span className="mt-1.5 text-xs text-zinc-500">{phoneme.example}</span>
+              <span className="mt-1.5 text-xs text-ink-muted">{phoneme.example}</span>
             </Link>
           ))}
         </div>

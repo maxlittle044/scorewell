@@ -15,7 +15,7 @@ export async function SuccessStories() {
   if (stories.length === 0) return null;
 
   return (
-    <section className="bg-zinc-50/70">
+    <section className="bg-surface-muted/70">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
@@ -32,18 +32,18 @@ export async function SuccessStories() {
           {stories.map((story) => (
             <article
               key={story.slug}
-              className="flex flex-col rounded-2xl border border-zinc-200 bg-white p-6"
+              className="flex flex-col rounded-2xl border border-line bg-surface p-6"
             >
               <span className="mb-3 inline-flex w-fit rounded-full bg-pop-50 px-2.5 py-0.5 text-xs font-semibold text-pop-700">
                 {story.startingBand !== undefined
                   ? `Band ${story.startingBand} → ${story.achievedBand}`
                   : `Band ${story.achievedBand}`}
               </span>
-              <h3 className="text-sm font-semibold text-zinc-900">{story.title}</h3>
-              <p className="mt-2 line-clamp-4 text-sm leading-relaxed text-zinc-600">
+              <h3 className="text-sm font-semibold text-ink">{story.title}</h3>
+              <p className="mt-2 line-clamp-4 text-sm leading-relaxed text-ink-body">
                 {story.quote[0]}
               </p>
-              <p className="mt-auto pt-4 text-xs text-zinc-500">
+              <p className="mt-auto pt-4 text-xs text-ink-muted">
                 {story.name} · {story.goal}
               </p>
             </article>
@@ -53,7 +53,7 @@ export async function SuccessStories() {
         <div className="mt-8 flex justify-center">
           <Link
             href="/success-stories"
-            className="text-sm font-semibold text-brand-600 hover:text-accent-600"
+            className="text-sm font-semibold text-link hover:text-accent-600"
           >
             Read all success stories →
           </Link>

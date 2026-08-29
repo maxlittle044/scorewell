@@ -38,20 +38,20 @@ export default async function AdminPaymentsPage() {
   );
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Payment review" description="Approve or reject submitted payment proofs." />
 
         {withUrls.length === 0 ? (
-          <p className="text-sm text-zinc-500">No payment submissions yet.</p>
+          <p className="text-sm text-ink-muted">No payment submissions yet.</p>
         ) : (
           <div className="flex flex-col gap-4">
             {withUrls.map((s) => (
-              <div key={s.id} className="rounded-2xl border border-zinc-200 bg-white p-6">
+              <div key={s.id} className="rounded-2xl border border-line bg-surface p-6">
                 <div className="flex flex-wrap items-start justify-between gap-2">
                   <div>
-                    <p className="font-medium text-zinc-900">{s.user.name ?? s.user.email}</p>
-                    <p className="text-sm text-zinc-500">{s.user.email}</p>
+                    <p className="font-medium text-ink">{s.user.name ?? s.user.email}</p>
+                    <p className="text-sm text-ink-muted">{s.user.email}</p>
                   </div>
                   <span
                     className={`rounded-full px-3 py-1 text-xs font-semibold ${
@@ -68,29 +68,29 @@ export default async function AdminPaymentsPage() {
 
                 <div className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
                   <div>
-                    <p className="text-zinc-400">Method</p>
-                    <p className="font-medium text-zinc-800">{METHOD_LABELS[s.method]}</p>
+                    <p className="text-ink-muted">Method</p>
+                    <p className="font-medium text-ink">{METHOD_LABELS[s.method]}</p>
                   </div>
                   <div>
-                    <p className="text-zinc-400">Amount</p>
-                    <p className="font-medium text-zinc-800">{formatNpr(s.amountNpr)}</p>
+                    <p className="text-ink-muted">Amount</p>
+                    <p className="font-medium text-ink">{formatNpr(s.amountNpr)}</p>
                   </div>
                   {/* What approving actually grants — an admin must not have to guess. */}
                   <div>
-                    <p className="text-zinc-400">Buying</p>
-                    <p className="font-medium text-zinc-800">
+                    <p className="text-ink-muted">Buying</p>
+                    <p className="font-medium text-ink">
                       {s.purpose === "CREDITS"
                         ? `${s.creditsPurchased ?? 0} credits`
                         : "Premium subscription"}
                     </p>
                   </div>
                   <div>
-                    <p className="text-zinc-400">Reference</p>
-                    <p className="font-medium text-zinc-800">{s.transactionRef}</p>
+                    <p className="text-ink-muted">Reference</p>
+                    <p className="font-medium text-ink">{s.transactionRef}</p>
                   </div>
                   <div>
-                    <p className="text-zinc-400">Submitted</p>
-                    <p className="font-medium text-zinc-800">
+                    <p className="text-ink-muted">Submitted</p>
+                    <p className="font-medium text-ink">
                       {s.createdAt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
                     </p>
                   </div>
@@ -101,14 +101,14 @@ export default async function AdminPaymentsPage() {
                     href={s.screenshotUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-3 inline-block text-sm font-medium text-brand-600 hover:underline"
+                    className="mt-3 inline-block text-sm font-medium text-link hover:underline"
                   >
                     View payment screenshot
                   </a>
                 )}
 
                 {s.status === "PENDING" && (
-                  <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-zinc-100 pt-4">
+                  <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-line pt-4">
                     <form action={approvePaymentAction}>
                       <input type="hidden" name="submissionId" value={s.id} />
                       <button
@@ -124,7 +124,7 @@ export default async function AdminPaymentsPage() {
                         type="text"
                         name="note"
                         placeholder="Rejection reason (optional)"
-                        className="flex-1 rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                        className="flex-1 rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
                       />
                       <button
                         type="submit"
@@ -137,7 +137,7 @@ export default async function AdminPaymentsPage() {
                 )}
 
                 {s.status === "REJECTED" && s.reviewNote && (
-                  <p className="mt-3 text-sm text-zinc-500">Note: {s.reviewNote}</p>
+                  <p className="mt-3 text-sm text-ink-muted">Note: {s.reviewNote}</p>
                 )}
               </div>
             ))}

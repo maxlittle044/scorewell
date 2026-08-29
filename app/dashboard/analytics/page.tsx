@@ -21,13 +21,13 @@ export default async function AnalyticsPage() {
   const isPremium = subscription?.tier === "PREMIUM" && subscription.status === "ACTIVE";
 
   return (
-    <main className="flex flex-1 flex-col bg-zinc-50">
+    <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-1.5 flex items-center gap-2">
-          <h1 className="text-2xl font-bold text-zinc-900">Mistake analytics</h1>
+          <h1 className="text-2xl font-bold text-ink">Mistake analytics</h1>
           {isPremium && <PremiumBadge />}
         </div>
-        <p className="mb-8 text-sm text-zinc-600">
+        <p className="mb-8 text-sm text-ink-body">
           Where your marks are actually going — broken down by question type, skill and topic.
         </p>
 
@@ -43,7 +43,7 @@ export default async function AnalyticsPage() {
         )}
 
         <p className="mt-8 text-sm">
-          <Link href="/dashboard" className="font-medium text-brand-600 hover:underline">
+          <Link href="/dashboard" className="font-medium text-link hover:underline">
             ← Back to dashboard
           </Link>
         </p>
@@ -57,13 +57,13 @@ async function AnalyticsBody({ userId }: { userId: string }) {
 
   if (analytics.analysedAttempts === 0) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-center">
-        <p className="text-sm text-zinc-600">
+      <div className="rounded-2xl border border-line bg-surface p-6 text-center">
+        <p className="text-sm text-ink-body">
           No analysed attempts yet. Take any Reading, Listening, grammar or mini-exercise test and
           your breakdown will appear here.
         </p>
         {analytics.attemptsWithoutDetail > 0 && (
-          <p className="mt-2 text-xs text-zinc-500">
+          <p className="mt-2 text-xs text-ink-muted">
             {analytics.attemptsWithoutDetail} earlier{" "}
             {analytics.attemptsWithoutDetail === 1 ? "attempt was" : "attempts were"} recorded
             before per-question tracking existed, so {analytics.attemptsWithoutDetail === 1 ? "it has" : "they have"}{" "}
@@ -84,10 +84,10 @@ async function AnalyticsBody({ userId }: { userId: string }) {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="rounded-2xl border border-zinc-200 bg-white p-5">
+      <div className="rounded-2xl border border-line bg-surface p-5">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <span className="text-3xl font-bold text-brand-600">{overall}%</span>
-          <span className="text-sm text-zinc-600">
+          <span className="text-3xl font-bold text-link">{overall}%</span>
+          <span className="text-sm text-ink-body">
             overall accuracy across {analytics.totalQuestions} questions in{" "}
             {analytics.analysedAttempts}{" "}
             {analytics.analysedAttempts === 1 ? "attempt" : "attempts"}
@@ -103,7 +103,7 @@ async function AnalyticsBody({ userId }: { userId: string }) {
         )}
 
         {analytics.attemptsWithoutDetail > 0 && (
-          <p className="mt-3 text-xs text-zinc-500">
+          <p className="mt-3 text-xs text-ink-muted">
             {analytics.attemptsWithoutDetail} earlier{" "}
             {analytics.attemptsWithoutDetail === 1 ? "attempt is" : "attempts are"} excluded —{" "}
             {analytics.attemptsWithoutDetail === 1 ? "it was" : "they were"} recorded before

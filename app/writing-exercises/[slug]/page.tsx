@@ -12,12 +12,12 @@ export default async function WritingExercisePage({
 
   if (!exercise) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             This exercise isn&apos;t available yet.{" "}
-            <Link href="/writing-exercises" className="font-medium text-brand-600 hover:underline">
+            <Link href="/writing-exercises" className="font-medium text-link hover:underline">
               Browse all writing exercises
             </Link>
             .
@@ -28,14 +28,14 @@ export default async function WritingExercisePage({
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
-        <h1 className="mb-6 text-xl font-bold text-zinc-900">{exercise.title}</h1>
+        <h1 className="mb-6 text-xl font-bold text-ink">{exercise.title}</h1>
 
-        <div className="mb-6 rounded-xl border border-zinc-200 bg-zinc-50 p-5">
-          <p className="text-sm leading-relaxed text-zinc-800">{exercise.prompt}</p>
-          <p className="mt-3 text-sm text-zinc-600">{exercise.instructions}</p>
-          <p className="mt-3 text-xs text-zinc-500">Aim for at least {exercise.minWords} words.</p>
+        <div className="mb-6 rounded-xl border border-line bg-surface-muted p-5">
+          <p className="text-sm leading-relaxed text-ink">{exercise.prompt}</p>
+          <p className="mt-3 text-sm text-ink-body">{exercise.instructions}</p>
+          <p className="mt-3 text-xs text-ink-muted">Aim for at least {exercise.minWords} words.</p>
         </div>
 
         <WritingEditor

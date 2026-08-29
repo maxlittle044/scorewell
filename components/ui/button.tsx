@@ -18,10 +18,10 @@ const VARIANT_CLASSES: Record<ButtonVariant, string> = {
   accent:
     "bg-accent-500 text-white shadow-glow-accent hover:bg-accent-600 hover:shadow-glow-lg hover:-translate-y-0.5",
   white:
-    "bg-white text-brand-700 shadow-lg shadow-black/10 hover:bg-brand-50 hover:-translate-y-0.5",
+    "bg-surface text-link shadow-lg shadow-black/10 hover:bg-brand-50 hover:-translate-y-0.5",
   outline:
-    "border-2 border-zinc-200 text-zinc-700 hover:border-brand-500 hover:text-brand-700 hover:bg-brand-50",
-  ghost: "text-zinc-700 hover:bg-zinc-100",
+    "border-2 border-line text-ink-body hover:border-brand-500 hover:text-link hover:bg-brand-50",
+  ghost: "text-ink-body hover:bg-surface-sunken",
   dark: "bg-zinc-900 text-white shadow-lg shadow-zinc-900/20 hover:bg-zinc-800 hover:-translate-y-0.5",
 };
 

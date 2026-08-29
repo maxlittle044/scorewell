@@ -13,12 +13,12 @@ export default async function WritingTestPage({
 
   if (!test) {
     return (
-      <main className="flex flex-1 flex-col bg-white">
+      <main className="flex flex-1 flex-col bg-surface">
         <div className="mx-auto w-full max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h1 className="text-xl font-bold text-zinc-900">{titleFromSlug(slug)}</h1>
-          <p className="mt-4 text-sm text-zinc-500">
+          <h1 className="text-xl font-bold text-ink">{titleFromSlug(slug)}</h1>
+          <p className="mt-4 text-sm text-ink-muted">
             This test isn&apos;t available yet.{" "}
-            <Link href="/ielts/writing" className="font-medium text-brand-600 hover:underline">
+            <Link href="/ielts/writing" className="font-medium text-link hover:underline">
               Browse all writing tests
             </Link>
             .
@@ -29,17 +29,17 @@ export default async function WritingTestPage({
   }
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-zinc-900">{test.title}</h1>
+          <h1 className="text-xl font-bold text-ink">{test.title}</h1>
           {test.minutes > 0 && <CountdownTimer minutes={test.minutes} />}
         </div>
 
-        <div className="mb-6 rounded-xl border border-zinc-200 bg-zinc-50 p-5">
-          <p className="text-sm leading-relaxed text-zinc-800">{test.prompt}</p>
-          <p className="mt-3 text-sm text-zinc-600">{test.instructions}</p>
-          <p className="mt-3 text-xs text-zinc-500">Write at least {test.minWords} words.</p>
+        <div className="mb-6 rounded-xl border border-line bg-surface-muted p-5">
+          <p className="text-sm leading-relaxed text-ink">{test.prompt}</p>
+          <p className="mt-3 text-sm text-ink-body">{test.instructions}</p>
+          <p className="mt-3 text-xs text-ink-muted">Write at least {test.minWords} words.</p>
         </div>
 
         <WritingEditor

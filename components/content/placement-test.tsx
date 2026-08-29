@@ -55,9 +55,9 @@ export function PlacementTest({
   };
 
   const renderQuestion = (question: PlacementQuestion, number: number) => (
-    <div key={question.id} className="rounded-xl border border-zinc-200 bg-white p-5">
-      <p className="mb-3 text-sm font-medium text-zinc-900">
-        <span className="mr-2 text-zinc-400">{number}.</span>
+    <div key={question.id} className="rounded-xl border border-line bg-surface p-5">
+      <p className="mb-3 text-sm font-medium text-ink">
+        <span className="mr-2 text-ink-muted">{number}.</span>
         {question.question}
       </p>
       <div className="flex flex-col gap-2">
@@ -69,8 +69,8 @@ export function PlacementTest({
               className={cn(
                 "flex cursor-pointer items-center gap-2.5 rounded-lg border px-3 py-2 text-sm transition-colors",
                 selected
-                  ? "border-brand-400 bg-brand-50 text-brand-900"
-                  : "border-zinc-200 hover:border-brand-300 hover:bg-brand-50/40",
+                  ? "border-brand-400 bg-brand-50 text-heading"
+                  : "border-line hover:border-brand-300 hover:bg-brand-50/40",
               )}
             >
               <input
@@ -90,8 +90,8 @@ export function PlacementTest({
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="sticky top-16 z-30 -mx-4 flex items-center justify-between gap-3 border-y border-zinc-200 bg-white/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border">
-        <p className="text-sm font-medium text-zinc-700">
+      <div className="sticky top-16 z-30 -mx-4 flex items-center justify-between gap-3 border-y border-line bg-surface/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border">
+        <p className="text-sm font-medium text-ink-body">
           {answeredCount} of {questions.length} answered
         </p>
         <Button size="sm" onClick={submit} disabled={!complete || isPending}>
@@ -101,14 +101,14 @@ export function PlacementTest({
 
       <section className="flex flex-col gap-4">
         <div>
-          <h2 className="font-display text-lg font-bold text-zinc-900">
+          <h2 className="font-display text-lg font-bold text-ink">
             Part 1 · Reading comprehension
           </h2>
-          <p className="text-sm text-zinc-500">Read the passage, then answer the questions.</p>
+          <p className="text-sm text-ink-muted">Read the passage, then answer the questions.</p>
         </div>
 
-        <div className="rounded-xl border border-zinc-200 bg-white p-5">
-          <div className="flex flex-col gap-4 text-sm leading-relaxed text-zinc-700">
+        <div className="rounded-xl border border-line bg-surface p-5">
+          <div className="flex flex-col gap-4 text-sm leading-relaxed text-ink-body">
             {passage.split(/\n\n+/).map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
@@ -120,17 +120,17 @@ export function PlacementTest({
 
       <section className="flex flex-col gap-4">
         <div>
-          <h2 className="font-display text-lg font-bold text-zinc-900">
+          <h2 className="font-display text-lg font-bold text-ink">
             Part 2 · Grammar &amp; vocabulary
           </h2>
-          <p className="text-sm text-zinc-500">Choose the option that best completes each sentence.</p>
+          <p className="text-sm text-ink-muted">Choose the option that best completes each sentence.</p>
         </div>
         {language.map((question, index) => renderQuestion(question, reading.length + index + 1))}
       </section>
 
-      <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
-        <h2 className="font-display text-lg font-bold text-zinc-900">What are you aiming for?</h2>
-        <p className="mt-1 text-sm text-zinc-600">
+      <section className="rounded-2xl border border-line bg-surface-muted p-6">
+        <h2 className="font-display text-lg font-bold text-ink">What are you aiming for?</h2>
+        <p className="mt-1 text-sm text-ink-body">
           Your plan is built around the gap between where you are and the band you need.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
@@ -144,7 +144,7 @@ export function PlacementTest({
                 "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
                 targetBand === band
                   ? "bg-brand-600 text-white"
-                  : "bg-white text-zinc-700 ring-1 ring-zinc-200 hover:bg-brand-50",
+                  : "bg-surface text-ink-body ring-1 ring-zinc-200 hover:bg-brand-50",
               )}
             >
               {band.toFixed(1)}
@@ -160,7 +160,7 @@ export function PlacementTest({
           {isPending ? "Scoring…" : "See my plan"}
         </Button>
         {!complete && (
-          <span className="text-sm text-zinc-500">
+          <span className="text-sm text-ink-muted">
             {questions.length - answeredCount} question
             {questions.length - answeredCount === 1 ? "" : "s"} left.
           </span>

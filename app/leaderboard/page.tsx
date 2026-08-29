@@ -63,7 +63,7 @@ export default async function LeaderboardPage({ searchParams }: PageProps<"/lead
     .filter((r) => r.correct > 0);
 
   return (
-    <main className="flex flex-1 flex-col bg-white">
+    <main className="flex flex-1 flex-col bg-surface">
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Leaderboard" description="Top scorers from the daily timed challenge." />
 
@@ -73,7 +73,7 @@ export default async function LeaderboardPage({ searchParams }: PageProps<"/lead
               key={p.key}
               href={`/leaderboard?period=${p.key}`}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                period.key === p.key ? "bg-brand-600 text-white" : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                period.key === p.key ? "bg-brand-600 text-white" : "bg-surface-sunken text-ink-body hover:bg-line"
               }`}
             >
               {p.label}
@@ -82,25 +82,25 @@ export default async function LeaderboardPage({ searchParams }: PageProps<"/lead
         </div>
 
         {rankings.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-zinc-300 px-6 py-10 text-center">
-            <p className="text-sm text-zinc-500">
+          <div className="rounded-2xl border border-dashed border-line-strong px-6 py-10 text-center">
+            <p className="text-sm text-ink-muted">
               No rankings yet for this period.{" "}
-              <Link href="/ielts/daily-challenge" className="font-medium text-brand-600 hover:underline">
+              <Link href="/ielts/daily-challenge" className="font-medium text-link hover:underline">
                 Take today&apos;s challenge
               </Link>{" "}
               to be the first on the board.
             </p>
           </div>
         ) : (
-          <ol className="flex flex-col divide-y divide-zinc-100 rounded-2xl border border-zinc-200">
+          <ol className="flex flex-col divide-y divide-zinc-100 rounded-2xl border border-line">
             {rankings.map((entry, i) => (
               <li key={entry.userId} className="flex items-center gap-4 px-5 py-3.5">
-                <span className="w-6 text-sm font-semibold text-zinc-400">{i + 1}</span>
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-700">
+                <span className="w-6 text-sm font-semibold text-ink-muted">{i + 1}</span>
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-link">
                   {initials(entry.name)}
                 </span>
-                <span className="flex-1 text-sm font-medium text-zinc-800">{entry.name}</span>
-                <span className="text-sm font-semibold text-zinc-700">
+                <span className="flex-1 text-sm font-medium text-ink">{entry.name}</span>
+                <span className="text-sm font-semibold text-ink-body">
                   {entry.correct} correct
                 </span>
               </li>

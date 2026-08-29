@@ -16,8 +16,8 @@ export function CopyLinkButton({ link }: { link: string }) {
   }
 
   return (
-    <div className="mt-5 flex items-center gap-2 rounded-lg border border-zinc-300 bg-zinc-50 p-2">
-      <span className="flex-1 truncate px-2 text-sm text-zinc-700">{link}</span>
+    <div className="mt-5 flex items-center gap-2 rounded-lg border border-line-strong bg-surface-muted p-2">
+      <span className="flex-1 truncate px-2 text-sm text-ink-body">{link}</span>
       <button
         type="button"
         onClick={handleCopy}
