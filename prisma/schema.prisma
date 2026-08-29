@@ -5,8 +5,9 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
+  provider      = "prisma-client"
+  output        = "../generated/prisma"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {
@@ -119,6 +120,7 @@ model User {
   lessonRegistrations LiveLessonRegistration[]
   creditTransactions  CreditTransaction[]
   reviewRequests      ReviewRequest[]
+  simulationAttempts  SimulationAttempt[]
 }
 
 enum ReferralStatus {
@@ -370,6 +372,12 @@ enum ReviewRequestStatus {
   CANCELLED
 }
 
+enum SimulationStatus {
+  IN_PROGRESS
+  COMPLETED
+  ABANDONED
+}
+
 // Paid human examiner evaluation layered on top of AI scoring (section 6).
 // One request per submission; the turnaround stated at purchase time is stored
 // on the row so a later change to pricing cannot alter a promise already made.
@@ -392,5 +400,43 @@ model ReviewRequest {
   updatedAt DateTime @updatedAt
 
   @@index([userId])
+  @@index([status])
+}
+
+// A full four-skill sitting under one global clock (site-build-prompt.md
+// section 4b: "full four-skill simulation sitting with one global clock").
+// Kept separate from Progress/Submission, which stay driven by standalone
+// per-skill practice, so one sitting's four results and overall band live on
+// a single row instead of a synthetic join across four unrelated tables.
+model SimulationAttempt {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  // The ContentItem.sourceTestSet shared by the four practice tests this
+  // sitting is built from (see lib/content/exam-library.ts collection logic).
+  sourceTestSet String
+  status        SimulationStatus @default(IN_PROGRESS)
+
+  listeningBand Float?
+  readingBand   Float?
+  writingBand   Float?
+  speakingBand  Float?
+  overallBand   Float?
+
+  // Per-skill outcome payloads, same shapes their standalone flows already
+  // produce: Progress.details for Listening/Reading, WritingCheckResult for
+  // Writing, SpeakingCheckResult for Speaking. Null until that skill's leg
+  // of the sitting is completed.
+  listeningDetails Json?
+  readingDetails   Json?
+  writingFeedback  Json?
+  speakingFeedback Json?
+
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  @@index([userId])
+  @@index([sourceTestSet])
   @@index([status])
 }
