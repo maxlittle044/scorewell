@@ -10,6 +10,7 @@ const GROUPS = [
   {
     heading: "IELTS",
     links: [
+      { label: "Full simulation sittings", href: "/simulation" },
       { label: "Reading tests", href: "/ielts/reading" },
       { label: "Listening tests", href: "/ielts/listening" },
       { label: "Writing tests", href: "/ielts/writing" },

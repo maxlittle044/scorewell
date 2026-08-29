@@ -10,7 +10,7 @@ import { allQuestions, toGroups } from "@/lib/exam/schema";
 import type { AnswerValue, QuestionSet } from "@/lib/exam/schema";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
-import { QuestionCard } from "./question-card";
+import { PassageText, QuestionGroups, QuestionNavigator } from "./question-list";
 
 type Props = {
   questionSet: QuestionSet;
@@ -29,32 +29,6 @@ function formatClock(totalSeconds: number) {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
   return `${minutes}:${String(seconds).padStart(2, "0")}`;
-}
-
-/**
- * Renders the passage, marking the sentence a question's answer came from.
- * Falls back to plain text when the quote isn't found verbatim, so a seed-data typo
- * degrades to "no highlight" rather than breaking the passage.
- */
-function PassageText({ passage, highlight }: { passage: string; highlight?: string }) {
-  return (
-    <div className="flex flex-col gap-4 text-sm leading-relaxed text-zinc-700">
-      {passage.split(/\n\n+/).map((paragraph, index) => {
-        const at = highlight ? paragraph.indexOf(highlight) : -1;
-        if (at === -1) return <p key={index}>{paragraph}</p>;
-
-        return (
-          <p key={index}>
-            {paragraph.slice(0, at)}
-            <mark className="rounded bg-accent-200 px-0.5 py-px text-zinc-900">
-              {paragraph.slice(at, at + highlight!.length)}
-            </mark>
-            {paragraph.slice(at + highlight!.length)}
-          </p>
-        );
-      })}
-    </div>
-  );
 }
 
 export function ExamRunner({
@@ -139,8 +113,6 @@ export function ExamRunner({
   const showPassage = passage && (!passageHiddenUntilSubmit || submitted);
   const timeIsShort = secondsLeft !== null && secondsLeft <= 300;
 
-  let questionNumber = 0;
-
   return (
     <div className="flex flex-col gap-6">
       {/* Sticky status bar: progress, timer, submit */}
@@ -183,38 +155,12 @@ export function ExamRunner({
         </p>
       )}
 
-      {/* Question navigator */}
-      <div className="rounded-xl border border-zinc-200 bg-white p-4">
-        <p className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-zinc-400">
-          Questions
-        </p>
-        <div className="flex flex-wrap gap-1.5">
-          {questions.map((q, index) => {
-            const done = isAnswered(q, answers[q.id]);
-            const result = resultById[q.id];
-            return (
-              <a
-                key={q.id}
-                href={`#question-${q.id}`}
-                className={cn(
-                  "flex h-8 w-8 items-center justify-center rounded-lg text-xs font-semibold transition-colors",
-                  result
-                    ? result.correct
-                      ? "bg-emerald-100 text-emerald-700"
-                      : "bg-rose-100 text-rose-700"
-                    : flagged[q.id]
-                      ? "bg-accent-100 text-accent-600 ring-1 ring-accent-400"
-                      : done
-                        ? "bg-brand-600 text-white"
-                        : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200",
-                )}
-              >
-                {index + 1}
-              </a>
-            );
-          })}
-        </div>
-      </div>
+      <QuestionNavigator
+        questions={questions}
+        answers={answers}
+        flagged={flagged}
+        resultById={resultById}
+      />
 
       {/* Split screen: source text left, questions right */}
       <div className={cn("grid gap-6", showPassage && "lg:grid-cols-2")}>
@@ -237,50 +183,16 @@ export function ExamRunner({
             </p>
           )}
 
-          {groups.map((group) => (
-            <div key={group.id} className="flex flex-col gap-4">
-              {group.instructions && groups.length > 1 && (
-                <div className="rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-2.5">
-                  <p className="text-sm font-medium text-brand-900">{group.instructions}</p>
-                  {group.bank && (
-                    <ul className="mt-2 flex flex-col gap-0.5 text-sm text-brand-800">
-                      {group.bank.map((entry) => (
-                        <li key={entry.key}>
-                          <span className="font-semibold">{entry.key}.</span> {entry.label}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              )}
-
-              {group.questions.map((question) => {
-                questionNumber += 1;
-                return (
-                  <div
-                    key={question.id}
-                    onMouseEnter={() => submitted && setActiveQuote(question.evidence?.quote)}
-                    onFocus={() => submitted && setActiveQuote(question.evidence?.quote)}
-                  >
-                    <QuestionCard
-                      question={question}
-                      group={group}
-                      number={questionNumber}
-                      answer={answers[question.id]}
-                      onChange={(value) =>
-                        setAnswers((prev) => ({ ...prev, [question.id]: value }))
-                      }
-                      result={resultById[question.id]}
-                      flagged={Boolean(flagged[question.id])}
-                      onToggleFlag={() =>
-                        setFlagged((prev) => ({ ...prev, [question.id]: !prev[question.id] }))
-                      }
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          ))}
+          <QuestionGroups
+            groups={groups}
+            answers={answers}
+            flagged={flagged}
+            resultById={resultById}
+            showInstructions={groups.length > 1}
+            onChange={(id, value) => setAnswers((prev) => ({ ...prev, [id]: value }))}
+            onToggleFlag={(id) => setFlagged((prev) => ({ ...prev, [id]: !prev[id] }))}
+            onFocusQuestion={(question) => submitted && setActiveQuote(question.evidence?.quote)}
+          />
 
           {!submitted ? (
             <Button onClick={submit} size="lg" className="self-start">

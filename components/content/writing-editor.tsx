@@ -5,6 +5,7 @@ import { useActionState, useState } from "react";
 import { checkWritingAction } from "@/lib/ai/writing-checker-actions";
 import type { WritingTaskType } from "@/lib/ai/writing-checker";
 import { shareAnswerAction } from "@/lib/submission-actions";
+import { CriterionFeedback } from "@/components/tools/criterion-feedback";
 
 export function WritingEditor({
   minWords,
@@ -110,42 +111,8 @@ export function WritingEditor({
       )}
 
       {state.result && (
-        <div className="mt-4 rounded-xl border border-zinc-200 bg-zinc-50 p-5">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-medium text-zinc-600">Overall band</span>
-            <span className="text-2xl font-bold text-brand-600">{state.result.overallBand}</span>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            {state.result.criteria.map((c) => (
-              <div key={c.name}>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-zinc-800">{c.name}</span>
-                  <span className="font-semibold text-zinc-900">{c.band}</span>
-                </div>
-                <p className="mt-0.5 text-sm text-zinc-600">{c.feedback}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <p className="text-sm font-semibold text-emerald-700">Strengths</p>
-              <ul className="mt-1.5 list-inside list-disc text-sm text-zinc-600">
-                {state.result.strengths.map((s, i) => (
-                  <li key={i}>{s}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-amber-700">Improvements</p>
-              <ul className="mt-1.5 list-inside list-disc text-sm text-zinc-600">
-                {state.result.improvements.map((s, i) => (
-                  <li key={i}>{s}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="mt-4">
+          <CriterionFeedback result={state.result} />
         </div>
       )}
     </div>

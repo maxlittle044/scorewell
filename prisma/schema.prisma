@@ -433,6 +433,15 @@ model SimulationAttempt {
   writingFeedback  Json?
   speakingFeedback Json?
 
+  // What the learner actually produced in the two unscorable legs. Kept on the
+  // sitting rather than as Submission rows because a sitting owns its own work:
+  // a Submission is created from this text only when the learner later chooses
+  // to publish it, have it AI-evaluated, or send it for human review, which is
+  // the point those rails need one. Writing and Speaking therefore carry no band
+  // until such an evaluation runs — nothing here infers a score from text alone.
+  writingResponse    String?
+  speakingTranscript String?
+
   startedAt   DateTime  @default(now())
   completedAt DateTime?
 

@@ -2,6 +2,7 @@
 // Upserts by slug, so it's safe to re-run after editing anything in seed-data/.
 import "dotenv/config";
 import { PrismaClient } from "../generated/prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
 import { READING_TESTS } from "./seed-data/reading";
 import { LISTENING_TESTS } from "./seed-data/listening";
 import { GRAMMAR_TESTS, MINI_EXERCISES } from "./seed-data/quizzes";
@@ -17,14 +18,21 @@ import { VIDEO_LESSONS } from "./seed-data/video-lessons";
 import { TOPIC_POOLS } from "./seed-data/topic-pools";
 import { TOPIC_BANKS } from "./seed-data/topic-banks";
 import { LIVE_LESSONS } from "./seed-data/live-lessons";
+import { collectionFor } from "./seed-data/mock-sets";
 
-const prisma = new PrismaClient();
+// The generated client is engineType "client" (no Rust engine), so it needs a driver
+// adapter here exactly as lib/prisma.ts does — a bare `new PrismaClient()` fails with P2038.
+const prisma = new PrismaClient({
+  adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL }),
+});
 
 async function main() {
   for (const test of READING_TESTS) {
     const fields = {
       title: test.title,
-      sourceTestSet: test.sourceTestSet,
+      // Cross-skill collection, so a collection is a full sitting (see mock-sets.ts).
+      // `test.sourceTestSet` stays in the seed type as the variant label it always was.
+      sourceTestSet: collectionFor(test.slug),
       topic: test.topic,
       tags: test.tags,
       published: true,
@@ -42,7 +50,7 @@ async function main() {
     const fields = {
       title: test.title,
       // Collection name — the Exam Library groups on this (spec section 4a).
-      sourceTestSet: "Listening Practice Sets",
+      sourceTestSet: collectionFor(test.slug),
       topic: test.topic,
       tags: test.tags,
       published: true,
@@ -119,7 +127,7 @@ async function main() {
     const fields = {
       title: item.title,
       skill: "WRITING" as const,
-      sourceTestSet: item.kind === "test" ? "Writing Practice" : null,
+      sourceTestSet: item.kind === "test" ? collectionFor(item.slug) : null,
       taskType: item.taskType,
       topic: item.topic,
       tags: item.tags,
@@ -142,7 +150,7 @@ async function main() {
     const fields = {
       title: test.title,
       skill: "SPEAKING" as const,
-      sourceTestSet: "Speaking Practice",
+      sourceTestSet: collectionFor(test.slug),
       taskType: test.part,
       topic: test.topic,
       tags: test.tags,

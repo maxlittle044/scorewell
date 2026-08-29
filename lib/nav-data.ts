@@ -34,6 +34,10 @@ export const NAV_ITEMS: NavItem[] = [
           { label: "General Training tests", href: "/exam-library?variant=general-training" },
         ],
       },
+      {
+        heading: "Full test",
+        links: [{ label: "Simulation sittings", href: "/simulation" }],
+      },
     ],
   },
   {
