@@ -95,6 +95,7 @@ export const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
+  { type: "link", label: "Learning Path", href: "/learning-path" },
   { type: "link", label: "Live Lessons", href: "/live-lessons" },
   { type: "link", label: "Topic Banks", href: "/topics" },
   { type: "link", label: "Courses", href: "/courses" },

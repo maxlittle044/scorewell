@@ -107,6 +107,12 @@ model User {
   // section 6). Assigned lazily the first time the user visits /refer.
   referralCode String? @unique
 
+  // The band the learner is working towards — the "goal" in the goal-based
+  // Learning Path (section 2). Set from the placement diagnostic and editable
+  // afterwards. The plan itself is never stored: it is derived from this plus
+  // live Progress on every visit, so it cannot go stale as the learner practises.
+  targetBand Float?
+
   subscription       Subscription?
   submissions        Submission[]
   progress           Progress[]

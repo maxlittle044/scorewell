@@ -19,6 +19,7 @@ import { TOPIC_POOLS } from "./seed-data/topic-pools";
 import { TOPIC_BANKS } from "./seed-data/topic-banks";
 import { LIVE_LESSONS } from "./seed-data/live-lessons";
 import { collectionFor } from "./seed-data/mock-sets";
+import { PLACEMENT_SEED } from "./seed-data/placement";
 
 // The generated client is engineType "client" (no Rust engine), so it needs a driver
 // adapter here exactly as lib/prisma.ts does — a bare `new PrismaClient()` fails with P2038.
@@ -299,6 +300,24 @@ async function main() {
       update: fields,
     });
     console.log("live lesson  ", lesson.slug);
+  }
+
+  // The placement diagnostic — a MINI_EXERCISE split off by taskType, like the others.
+  {
+    const fields = {
+      title: PLACEMENT_SEED.title,
+      taskType: "placement",
+      topic: PLACEMENT_SEED.topic,
+      tags: PLACEMENT_SEED.tags,
+      published: true,
+      data: PLACEMENT_SEED.data,
+    };
+    await prisma.contentItem.upsert({
+      where: { slug: PLACEMENT_SEED.slug },
+      create: { slug: PLACEMENT_SEED.slug, contentType: "MINI_EXERCISE" as const, ...fields },
+      update: fields,
+    });
+    console.log("placement    ", PLACEMENT_SEED.slug);
   }
 
   const total = await prisma.contentItem.count({ where: { published: true } });
