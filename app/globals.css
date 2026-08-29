@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #18181b;
+
+  /*
+   * Palette derived from an audit of the reference IELTS platforms (see site-build-prompt §0).
+   * All five converge on deep navy as the authority colour with a warm accent for actions —
+   * the earlier indigo/fuchsia read as a generic AI SaaS product rather than exam prep.
+   * Teal is the supporting colour (IOT uses it for primary card actions).
+   */
+
+  /* Navy — structure, headings, primary surfaces. */
+  --color-brand-50: #eff6fb;
+  --color-brand-100: #d9e8f4;
+  --color-brand-200: #b3d0e6;
+  --color-brand-300: #7ba7cc;
+  --color-brand-500: #3f6f9e;
+  --color-brand-600: #294563;
+  --color-brand-700: #1e3450;
+  --color-brand-900: #101f36;
+
+  /* Teal — secondary actions, progress, supporting highlights. */
+  --color-pop-50: #edfbfa;
+  --color-pop-100: #d0f3f0;
+  --color-pop-300: #7edcd6;
+  --color-pop-400: #40c5be;
+  --color-pop-500: #1ba69f;
+  --color-pop-600: #128881;
+  --color-pop-700: #0e6a66;
+
+  /* Warm orange — the call-to-action colour. Used sparingly so it stays loud. */
+  --color-accent-100: #ffedd5;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #fb8c3c;
+  --color-accent-500: #f26522;
+  --color-accent-600: #d24d10;
+
+  --gradient-brand: linear-gradient(135deg, var(--color-brand-700), var(--color-pop-600));
+  --gradient-vivid: linear-gradient(135deg, var(--color-brand-600) 0%, var(--color-pop-500) 100%);
+  --gradient-warm: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-400));
+
+  --shadow-color-brand: 41 69 99;
+  --shadow-color-pop: 27 166 159;
+  --shadow-color-accent: 242 101 34;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-900: var(--color-brand-900);
+  --color-pop-50: var(--color-pop-50);
+  --color-pop-100: var(--color-pop-100);
+  --color-pop-300: var(--color-pop-300);
+  --color-pop-400: var(--color-pop-400);
+  --color-pop-500: var(--color-pop-500);
+  --color-pop-600: var(--color-pop-600);
+  --color-pop-700: var(--color-pop-700);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display-raw);
+
+  --shadow-glow-sm: 0 8px 24px -8px rgb(var(--shadow-color-brand) / 0.35);
+  --shadow-glow: 0 20px 45px -12px rgb(var(--shadow-color-brand) / 0.45);
+  --shadow-glow-lg: 0 30px 70px -15px rgb(var(--shadow-color-brand) / 0.5);
+  --shadow-glow-pop: 0 20px 45px -12px rgb(var(--shadow-color-pop) / 0.4);
+  --shadow-glow-accent: 0 20px 45px -12px rgb(var(--shadow-color-accent) / 0.45);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@utility text-gradient {
+  background-image: var(--gradient-vivid);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility bg-mesh {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgb(var(--shadow-color-pop) / 0.18), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgb(var(--shadow-color-accent) / 0.2), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgb(var(--shadow-color-brand) / 0.16), transparent 55%);
+}
+
+@utility bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+@keyframes float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -18px, 0); }
+}
+
+@utility animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+@utility animate-float-slow {
+  animation: float 9s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-float,
+  .animate-float-slow {
+    animation: none;
+  }
+}

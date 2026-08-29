@@ -1,0 +1,396 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum Skill {
+  READING
+  LISTENING
+  WRITING
+  SPEAKING
+}
+
+// One template/page per type, per site-build-prompt.md section 4
+enum ContentType {
+  PRACTICE_TEST
+  SAMPLE_ANSWER
+  USER_SUBMISSION
+  ARTICLE
+  COURSE
+  AI_CONVERSATION
+  WRITING_EXERCISE
+  PRONUNCIATION_DRILL
+  DICTATION_SHADOWING
+  VIDEO_LESSON
+  MINI_EXERCISE
+}
+
+// Flexible per-content-type payload lives in `data` (JSONB); common
+// filterable fields stay as real columns per site-build-prompt.md section 6a/8.
+model ContentItem {
+  id          String      @id @default(cuid())
+  contentType ContentType
+  slug        String      @unique
+  title       String
+
+  skill         Skill?
+  taskType      String?
+  bandLevel     String?
+  sourceTestSet String?
+  topic         String?
+  tags          String[] @default([])
+
+  data Json
+
+  published Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  submissions   Submission[]
+  progress      Progress[]
+  registrations LiveLessonRegistration[]
+
+  @@index([contentType])
+  @@index([skill])
+  @@index([taskType])
+  @@index([bandLevel])
+  @@index([sourceTestSet])
+  @@index([topic])
+  @@index([tags], type: Gin)
+}
+
+// site-build-prompt.md section 6: free tier = limited monthly AI tool uses,
+// premium = unlimited + saved progress + mistake analytics + priority support.
+enum SubscriptionTier {
+  FREE
+  PREMIUM
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELED
+  EXPIRED
+  TRIALING
+}
+
+// site-build-prompt.md section 3: pricing table offers 1/3/6/12 month billing.
+enum BillingInterval {
+  MONTHLY_1
+  MONTHLY_3
+  MONTHLY_6
+  MONTHLY_12
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String?
+  email        String   @unique
+  image        String?
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Unique share code for the refer-and-earn program (site-build-prompt.md
+  // section 6). Assigned lazily the first time the user visits /refer.
+  referralCode String? @unique
+
+  subscription       Subscription?
+  submissions        Submission[]
+  progress           Progress[]
+  paymentSubmissions PaymentSubmission[]
+  aiUsage            AiUsage[]
+  referralsMade      Referral[]          @relation("ReferralsMade")
+  referralReceived   Referral?           @relation("ReferralReceived")
+  submissionReplies  SubmissionReply[]
+  conversations      Conversation[]
+
+  lessonRegistrations LiveLessonRegistration[]
+  creditTransactions  CreditTransaction[]
+  reviewRequests      ReviewRequest[]
+}
+
+enum ReferralStatus {
+  PENDING // friend signed up but hasn't subscribed yet
+  REWARDED // friend subscribed; both sides credited
+}
+
+model Referral {
+  id String @id @default(cuid())
+
+  referrerId String
+  referrer   User   @relation("ReferralsMade", fields: [referrerId], references: [id])
+
+  // A user can only ever be referred once.
+  referredUserId String @unique
+  referredUser   User   @relation("ReferralReceived", fields: [referredUserId], references: [id])
+
+  status     ReferralStatus @default(PENDING)
+  rewardedAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  @@index([referrerId])
+  @@index([status])
+}
+
+model Subscription {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id])
+
+  tier             SubscriptionTier   @default(FREE)
+  status           SubscriptionStatus @default(ACTIVE)
+  billingInterval  BillingInterval?
+  currentPeriodEnd DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// User-written answers submitted against a practice prompt, per section 4 &
+// the "User-submitted answers" homepage/IELTS sections.
+model Submission {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  contentItemId String?
+  contentItem   ContentItem? @relation(fields: [contentItemId], references: [id])
+
+  // Denormalised so a submission made outside a ContentItem (e.g. from a tool
+  // page) still has something to display as its heading.
+  title      String?
+  skill      Skill?
+  taskType   String?
+  answerText String
+  aiFeedback Json?
+
+  published Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  replies       SubmissionReply[]
+  reviewRequest ReviewRequest?
+
+  @@index([userId])
+  @@index([contentItemId])
+  @@index([skill])
+  @@index([published, createdAt])
+}
+
+/// Community feedback left on another learner's published submission.
+model SubmissionReply {
+  id           String     @id @default(cuid())
+  submissionId String
+  submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  text String
+
+  createdAt DateTime @default(now())
+
+  @@index([submissionId])
+  @@index([userId])
+}
+
+// Per-user results/mistake analytics, backing the account dashboard and
+// the daily/weekly/monthly/yearly leaderboard (section 3a/4).
+model Progress {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  contentItemId String?
+  contentItem   ContentItem? @relation(fields: [contentItemId], references: [id])
+
+  skill        Skill?
+  taskType     String?
+  score        Float?
+  bandScore    Float?
+  correctCount Int?
+  totalCount   Int?
+
+  // Per-question outcomes for mistake analytics (site-build-prompt.md section
+  // 6, a Premium feature): [{ id, type?, correct }]. Nullable because rows
+  // written before analytics existed have no per-question breakdown.
+  details Json?
+
+  completedAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([contentItemId])
+  @@index([skill])
+  @@index([completedAt])
+}
+
+// Free tier gets a limited number of AI tool uses per calendar month
+// (site-build-prompt.md section 6); premium is unlimited. One row per use.
+model AiUsage {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  tool String
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+// No card processor — payment is by scanning a bank/eSewa/Khalti QR code
+// and submitting proof, which an admin manually reviews (section 6:
+// "region-specific payment method... for markets without wide card usage").
+enum PaymentMethod {
+  BANK_TRANSFER
+  ESEWA
+  KHALTI
+}
+
+enum PaymentSubmissionStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// A QR payment can now buy either a subscription or a pack of pay-per-use
+// credits (site-build-prompt.md section 6), so the purpose is explicit rather
+// than inferred — approving a credit purchase must never grant Premium.
+enum PaymentPurpose {
+  SUBSCRIPTION
+  CREDITS
+}
+
+model PaymentSubmission {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  method  PaymentMethod
+  purpose PaymentPurpose @default(SUBSCRIPTION)
+
+  // Null for a credit purchase; set for a subscription. Existing rows all
+  // carry a value, so relaxing this is non-destructive.
+  billingInterval BillingInterval?
+
+  /// Credits bought, for a CREDITS purchase. Null for a subscription.
+  creditsPurchased Int?
+
+  amountNpr      Int
+  transactionRef String
+  screenshotPath String?
+
+  status     PaymentSubmissionStatus @default(PENDING)
+  reviewNote String?
+  reviewedAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([status])
+}
+
+// site-build-prompt.md section 4 "AI conversations". Stored server-side rather
+// than replayed from the client so the turn cap and the one-AI-use-per-
+// conversation charge can't be bypassed by forging a fresh message history.
+model Conversation {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  slug  String // the AI_CONVERSATION ContentItem slug this practises
+  title String
+
+  // [{ role: "assistant" | "user", content: string }] — the opener is stored
+  // as the first assistant message so the transcript is self-contained.
+  messages Json
+
+  // Structured end-of-conversation feedback, once the learner asks for it.
+  feedback Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([slug])
+}
+
+// Registration for a scheduled live lesson (site-build-prompt.md section 4b).
+// The lesson itself is a ContentItem (VIDEO_LESSON + taskType "live-lesson"),
+// so this only records who signed up; the attendee count is a count of rows.
+model LiveLessonRegistration {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  contentItemId String
+  contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  // One registration per learner per session — makes the count honest and
+  // lets "register" be idempotent.
+  @@unique([userId, contentItemId])
+  @@index([contentItemId])
+}
+
+// Pay-per-use credits, the subscription alternative in section 6. Stored as an
+// append-only ledger rather than a mutable balance so a balance can always be
+// explained: positive rows are purchases/grants, negative rows are spends.
+model CreditTransaction {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  delta  Int
+  reason String
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+enum ReviewRequestStatus {
+  PENDING
+  IN_REVIEW
+  COMPLETED
+  CANCELLED
+}
+
+// Paid human examiner evaluation layered on top of AI scoring (section 6).
+// One request per submission; the turnaround stated at purchase time is stored
+// on the row so a later change to pricing cannot alter a promise already made.
+model ReviewRequest {
+  id String @id @default(cuid())
+
+  submissionId String     @unique
+  submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  status          ReviewRequestStatus @default(PENDING)
+  turnaroundHours Int
+  creditsCharged  Int                 @default(0)
+  reviewerNotes   String?
+  completedAt     DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([status])
+}
