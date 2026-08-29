@@ -17,7 +17,7 @@ export function CoachingCrossSell() {
       <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div
           data-reveal
-          className="flex flex-col items-center gap-6 rounded-3xl border border-line bg-linear-to-br from-zinc-50 to-brand-50/40 px-6 py-10 text-center md:flex-row md:text-left"
+          className="flex flex-col items-center gap-6 rounded-3xl border border-line bg-linear-to-br from-surface-muted to-brand-50/40 px-6 py-10 text-center md:flex-row md:text-left"
         >
           <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-surface text-link shadow-md ring-1 ring-inset ring-black/5">
             <UsersIcon />

@@ -127,6 +127,7 @@ model User {
   creditTransactions  CreditTransaction[]
   reviewRequests      ReviewRequest[]
   simulationAttempts  SimulationAttempt[]
+  courseLessons       CourseLessonCompletion[]
 }
 
 enum ReferralStatus {
@@ -463,4 +464,30 @@ model SimulationAttempt {
   @@index([userId])
   @@index([sourceTestSet])
   @@index([status])
+}
+
+// One lesson of a self-study course track ticked off (site-build-prompt.md section 4b,
+// "self-study course track"). Courses were a reading list; this is what makes them a
+// track you work through and can resume.
+//
+// Deliberately not a `Progress` row. Progress feeds the band trend, study-time total and
+// mistake analytics, all of which read its score/details columns — a lesson tick has
+// neither, and would have shown up in the analytics page's "attempts without a
+// breakdown" count as though it were an unanalysed test.
+//
+// Keyed by slug and index rather than a ContentItem relation because a lesson is an entry
+// inside the course's JSONB payload, not a row of its own. Reordering a course's lessons
+// therefore reassigns ticks, which is the same trade the seed data already makes.
+model CourseLessonCompletion {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  courseSlug  String
+  lessonIndex Int
+
+  completedAt DateTime @default(now())
+
+  @@unique([userId, courseSlug, lessonIndex])
+  @@index([userId, courseSlug])
 }

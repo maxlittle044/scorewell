@@ -44,7 +44,7 @@ export default function FaqPage() {
       <div className="mx-auto w-full max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Frequently asked questions" />
 
-        <div className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-line">
+        <div className="flex flex-col divide-y divide-line rounded-2xl border border-line">
           {FAQS.map((faq) => (
             <details key={faq.question} className="group px-5 py-4">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-ink">

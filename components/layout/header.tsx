@@ -219,7 +219,7 @@ export function Header({ session }: { session: Session | null }) {
             </div>
           </form>
 
-          <div className="flex flex-col divide-y divide-zinc-100">
+          <div className="flex flex-col divide-y divide-line">
             {NAV_ITEMS.map((item) => {
               if (item.type === "link") {
                 return (

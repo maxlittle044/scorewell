@@ -40,7 +40,7 @@ export function WritingExercisesList() {
           viewAllLabel="View all prompts"
         />
 
-        <ul data-reveal className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-line/80 bg-surface shadow-sm shadow-zinc-900/3">
+        <ul data-reveal className="flex flex-col divide-y divide-line rounded-2xl border border-line/80 bg-surface shadow-sm shadow-zinc-900/3">
           {EXERCISES.map((exercise) => (
             <li key={exercise.href}>
               <Link

@@ -58,7 +58,7 @@ export default function FeatureRequestsPage() {
           description="Vote on what we build next, or suggest something new."
         />
 
-        <ul className="flex flex-col divide-y divide-zinc-200 rounded-2xl border border-line">
+        <ul className="flex flex-col divide-y divide-line rounded-2xl border border-line">
           {requests.map((request) => (
             <li key={request.id} className="flex items-center gap-4 px-5 py-4">
               <button

@@ -39,7 +39,7 @@ export default async function DictationIndexPage() {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-md"
               >
                 <div
-                  className={`h-24 bg-gradient-to-br ${
+                  className={`h-24 bg-linear-to-br ${
                     LEVEL_GRADIENTS[exercise.level] ?? "from-zinc-500 to-zinc-700"
                   }`}
                 />

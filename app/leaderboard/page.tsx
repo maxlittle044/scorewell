@@ -92,7 +92,7 @@ export default async function LeaderboardPage({ searchParams }: PageProps<"/lead
             </p>
           </div>
         ) : (
-          <ol className="flex flex-col divide-y divide-zinc-100 rounded-2xl border border-line">
+          <ol className="flex flex-col divide-y divide-line rounded-2xl border border-line">
             {rankings.map((entry, i) => (
               <li key={entry.userId} className="flex items-center gap-4 px-5 py-3.5">
                 <span className="w-6 text-sm font-semibold text-ink-muted">{i + 1}</span>

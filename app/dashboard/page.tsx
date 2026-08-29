@@ -200,7 +200,7 @@ export default async function DashboardPage() {
               You haven&apos;t completed any practice tests yet.
             </p>
           ) : (
-            <ul className="mt-4 flex flex-col divide-y divide-zinc-100">
+            <ul className="mt-4 flex flex-col divide-y divide-line">
               {recentProgress.map((result) => (
                 <li key={result.id} className="flex items-center justify-between py-3 text-sm">
                   <div>

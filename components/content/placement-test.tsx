@@ -144,7 +144,7 @@ export function PlacementTest({
                 "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
                 targetBand === band
                   ? "bg-brand-600 text-white"
-                  : "bg-surface text-ink-body ring-1 ring-zinc-200 hover:bg-brand-50",
+                  : "bg-surface text-ink-body ring-1 ring-line hover:bg-brand-50",
               )}
             >
               {band.toFixed(1)}

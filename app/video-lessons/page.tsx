@@ -48,7 +48,7 @@ export default async function VideoLessonsIndexPage() {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-md"
               >
                 <div
-                  className={`relative flex h-36 items-center justify-center bg-gradient-to-br ${
+                  className={`relative flex h-36 items-center justify-center bg-linear-to-br ${
                     TOPIC_GRADIENTS[lesson.topic ?? ""] ?? "from-zinc-600 to-zinc-800"
                   }`}
                 >

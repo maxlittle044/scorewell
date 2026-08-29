@@ -63,7 +63,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/search">)
                 {results.length} result{results.length === 1 ? "" : "s"} for{" "}
                 <span className="font-medium text-ink">&ldquo;{query}&rdquo;</span>
               </p>
-              <ul className="mt-4 flex flex-col divide-y divide-zinc-100 rounded-2xl border border-line">
+              <ul className="mt-4 flex flex-col divide-y divide-line rounded-2xl border border-line">
                 {results.map((result) => (
                   <li key={`${result.kind}-${result.href}`}>
                     <Link

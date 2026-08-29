@@ -51,7 +51,7 @@ export default async function TagArchivePage({ params }: PageProps<"/tags/[tag]"
             </p>
           </div>
         ) : (
-          <ul className="flex flex-col divide-y divide-zinc-100 rounded-2xl border border-line bg-surface">
+          <ul className="flex flex-col divide-y divide-line rounded-2xl border border-line bg-surface">
             {items.map((item) => (
               <li key={item.id}>
                 <Link href={item.href} className="flex items-center gap-4 px-5 py-4 hover:bg-surface-muted">
