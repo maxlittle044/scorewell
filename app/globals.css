@@ -297,3 +297,60 @@ body {
     animation: none;
   }
 }
+
+/*
+ * Print. A printed sheet has no navigation to click, no footer to read, and no dark mode:
+ * printing a dark theme wastes ink and comes out unreadable on white paper, so the tokens
+ * are forced back to their light values for the sheet regardless of the on-screen theme.
+ */
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    color-scheme: light;
+    --background: #ffffff;
+    --foreground: #000000;
+    --surface: #ffffff;
+    --surface-muted: #ffffff;
+    --surface-sunken: #ffffff;
+    --line: #cccccc;
+    --line-strong: #999999;
+    --ink: #000000;
+    --ink-body: #1a1a1a;
+    --ink-muted: #444444;
+    --heading: #000000;
+    --link: #000000;
+  }
+
+  /* Site chrome: useless on paper. */
+  header,
+  footer,
+  nav,
+  [data-utility-rail],
+  [data-announcement-bar] {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  /* Reveal animations never run before printing, which would leave content invisible. */
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Keep a question and its options on the same sheet. */
+  li,
+  section {
+    break-inside: avoid;
+  }
+
+  @page {
+    margin: 18mm 16mm;
+  }
+}

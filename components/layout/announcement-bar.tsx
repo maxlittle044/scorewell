@@ -33,7 +33,10 @@ export function AnnouncementBar() {
   };
 
   return (
-    <div className="relative flex items-center justify-center bg-linear-to-r from-brand-700 via-pop-600 to-brand-700 px-10 py-2 text-center text-sm font-medium text-white">
+    <div
+      data-announcement-bar
+      className="relative flex items-center justify-center bg-linear-to-r from-brand-700 via-pop-600 to-brand-700 px-10 py-2 text-center text-sm font-medium text-white"
+    >
       <p>
         {MESSAGE}{" "}
         <a href="/pricing" className="underline underline-offset-2 hover:no-underline">

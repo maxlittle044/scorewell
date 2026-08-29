@@ -58,7 +58,10 @@ export function UtilityRail() {
 
   return (
     <>
-      <div className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-3 min-[1472px]:flex">
+      <div
+        data-utility-rail
+        className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-3 min-[1472px]:flex"
+      >
         {SHORTCUTS.map((shortcut) => (
           <Link
             key={shortcut.href}
@@ -85,6 +88,7 @@ export function UtilityRail() {
 
       {showTop && (
         <button
+          data-utility-rail
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"

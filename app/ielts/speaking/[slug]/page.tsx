@@ -73,6 +73,14 @@ export default async function SpeakingTestPage({
           .
         </p>
 
+        <p className="mt-6 text-sm text-ink-muted">
+          Prefer paper?{" "}
+          <Link href={`/print/${slug}`} className="font-medium text-link hover:underline">
+            Print this test
+          </Link>{" "}
+          or save it as a PDF.
+        </p>
+
         <TagList tags={test.tags} />
       </div>
     </main>
