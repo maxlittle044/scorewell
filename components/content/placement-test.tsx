@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { submitPlacementAction } from "@/lib/learning-path-actions";
 import { TARGET_BANDS } from "@/lib/learning-path-constants";
 import type { PlacementQuestion } from "@/lib/learning-path";
+import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
 
 /**
  * The placement diagnostic. Two sections — reading comprehension against a passage, then
@@ -29,6 +30,8 @@ export function PlacementTest({
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
+  const elapsedSeconds = useElapsedSeconds();
+
   const reading = useMemo(() => questions.filter((q) => q.section === "reading"), [questions]);
   const language = useMemo(() => questions.filter((q) => q.section === "language"), [questions]);
   const answeredCount = Object.keys(answers).length;
@@ -37,7 +40,11 @@ export function PlacementTest({
   const submit = () => {
     setError(null);
     startTransition(async () => {
-      const result = await submitPlacementAction({ answers, targetBand });
+      const result = await submitPlacementAction({
+        answers,
+        targetBand,
+        durationSeconds: elapsedSeconds(),
+      });
       if (!result.ok) {
         setError(result.error);
         return;

@@ -237,6 +237,15 @@ model Progress {
   // written before analytics existed have no per-question breakdown.
   details Json?
 
+  // Seconds spent on the exercise, from opening it to submitting, backing the
+  // dashboard's total study time (site-build-prompt.md section 6). Nullable
+  // because rows written before this existed have no measurement, and those
+  // attempts are excluded from the total rather than guessed at.
+  //
+  // Capped when recorded: an abandoned tab left open all afternoon would
+  // otherwise report as study time and quietly inflate the figure.
+  durationSeconds Int?
+
   completedAt DateTime @default(now())
 
   @@index([userId])

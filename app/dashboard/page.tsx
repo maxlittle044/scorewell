@@ -6,7 +6,7 @@ import { prisma } from "@/lib/prisma";
 import { getUsageStatus } from "@/lib/ai/usage";
 import { PageHeader } from "@/components/layout/page-header";
 import { PremiumBadge } from "@/components/dashboard/premium-lock";
-import { getAnalytics, getBandTrend } from "@/lib/analytics";
+import { formatStudyTime, getAnalytics, getBandTrend, getStudyTime } from "@/lib/analytics";
 import { BandTrendChart } from "@/components/dashboard/band-trend-chart";
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default async function DashboardPage() {
 
   const userId = session.user.id;
 
-  const [subscription, recentProgress, latestBySkill, usage, analytics, bandTrend] =
+  const [subscription, recentProgress, latestBySkill, usage, analytics, bandTrend, studyTime] =
     await Promise.all([
       prisma.subscription.findUnique({ where: { userId } }),
       prisma.progress.findMany({
@@ -45,6 +45,7 @@ export default async function DashboardPage() {
       getUsageStatus(userId),
       getAnalytics(userId),
       getBandTrend(userId),
+      getStudyTime(userId),
     ]);
 
   const isPremium = subscription?.tier === "PREMIUM";
@@ -60,16 +61,35 @@ export default async function DashboardPage() {
         <div className="mb-6 rounded-2xl border border-zinc-200 bg-white p-6">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h2 className="font-semibold text-zinc-900">Band score trend</h2>
-            {bandTrend.best !== null && (
-              <p className="text-sm text-zinc-500">
-                Best so far <span className="font-semibold text-zinc-800">{bandTrend.best}</span>
-                {bandTrend.overall.length > 1 && (
-                  <> · {bandTrend.overall.length} banded results</>
-                )}
-              </p>
-            )}
+            <p className="text-sm text-zinc-500">
+              {bandTrend.best !== null && (
+                <>
+                  Best so far <span className="font-semibold text-zinc-800">{bandTrend.best}</span>
+                  {" · "}
+                </>
+              )}
+              {/* Only claimed once something was actually measured. */}
+              {studyTime.totalSeconds > 0 ? (
+                <>
+                  <span className="font-semibold text-zinc-800">
+                    {formatStudyTime(studyTime.totalSeconds)}
+                  </span>{" "}
+                  studied
+                </>
+              ) : (
+                "Study time starts counting from your next attempt"
+              )}
+            </p>
           </div>
           <BandTrendChart trend={bandTrend} />
+
+          {studyTime.untimedAttempts > 0 && (
+            <p className="mt-3 text-xs text-zinc-500">
+              {studyTime.untimedAttempts}{" "}
+              {studyTime.untimedAttempts === 1 ? "earlier attempt isn't" : "earlier attempts aren't"}{" "}
+              counted in that total — they were taken before study time was measured.
+            </p>
+          )}
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">

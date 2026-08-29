@@ -11,6 +11,8 @@ export type PlacementSubmission = {
   /** questionId -> chosen option index */
   answers: Record<string, number>;
   targetBand: number;
+  /** Seconds from opening the diagnostic to submitting it. */
+  durationSeconds?: number;
 };
 
 export type PlacementResult =
@@ -62,6 +64,10 @@ export async function submitPlacementAction(
         correctCount: correct,
         totalCount: total,
         details,
+        durationSeconds:
+          submission.durationSeconds && submission.durationSeconds > 0
+            ? Math.min(Math.round(submission.durationSeconds), 3 * 60 * 60)
+            : null,
       },
     }),
     prisma.user.update({

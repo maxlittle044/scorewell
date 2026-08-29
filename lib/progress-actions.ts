@@ -8,6 +8,19 @@ import type { Skill } from "@/generated/prisma/enums";
 /** One question's outcome, stored on Progress.details for mistake analytics. */
 export type QuestionOutcome = { id: string; type?: string; correct: boolean };
 
+/**
+ * Longest single attempt we'll count as study time. Even the full Reading paper is an
+ * hour, so anything beyond three is a tab left open rather than work done — counting it
+ * would quietly inflate the dashboard's total.
+ */
+const MAX_ATTEMPT_SECONDS = 3 * 60 * 60;
+
+/** Discards nonsense (negative, absurd, non-finite) rather than storing it. */
+function sanitiseDuration(seconds: number | undefined): number | null {
+  if (seconds === undefined || !Number.isFinite(seconds) || seconds <= 0) return null;
+  return Math.min(Math.round(seconds), MAX_ATTEMPT_SECONDS);
+}
+
 export async function saveQuizProgressAction(params: {
   skill?: Skill;
   title: string;
@@ -15,6 +28,8 @@ export async function saveQuizProgressAction(params: {
   correctCount: number;
   totalCount: number;
   details?: QuestionOutcome[];
+  /** Seconds from opening the exercise to submitting it. */
+  durationSeconds?: number;
 }): Promise<{ saved: boolean }> {
   const session = await auth();
   if (!session?.user) {
@@ -38,6 +53,7 @@ export async function saveQuizProgressAction(params: {
       correctCount: params.correctCount,
       totalCount: params.totalCount,
       details: params.details ?? undefined,
+      durationSeconds: sanitiseDuration(params.durationSeconds),
     },
   });
 

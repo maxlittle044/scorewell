@@ -10,6 +10,7 @@ import { allQuestions, toGroups } from "@/lib/exam/schema";
 import type { AnswerValue, QuestionSet } from "@/lib/exam/schema";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
+import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
 import { PassageText, QuestionGroups, QuestionNavigator } from "./question-list";
 
 type Props = {
@@ -52,6 +53,8 @@ export function ExamRunner({
   const [activeQuote, setActiveQuote] = useState<string | undefined>();
   const [isPending, startTransition] = useTransition();
 
+  const elapsedSeconds = useElapsedSeconds();
+
   // Read inside the timer effect, which must not restart when answers change.
   const answersRef = useRef(answers);
   answersRef.current = answers;
@@ -77,10 +80,11 @@ export function ExamRunner({
         correctCount,
         totalCount: graded.length,
         details: graded.map((g) => ({ id: g.id, type: g.type, correct: g.correct })),
+        durationSeconds: elapsedSeconds(),
       });
       setSaveState(result.saved ? "saved" : "not-logged-in");
     });
-  }, [groups, skill, title, contentItemId]);
+  }, [groups, skill, title, contentItemId, elapsedSeconds]);
 
   // Countdown. Auto-submits at zero, like the real exam.
   useEffect(() => {

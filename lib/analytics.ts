@@ -215,3 +215,61 @@ function round1(value: number): number {
 }
 
 export { MIN_POINTS_FOR_TREND };
+
+/**
+ * Total study time (site-build-prompt.md section 6).
+ *
+ * Counts only attempts that were actually measured. Rows written before timing existed
+ * carry no duration and are reported separately rather than being estimated — a total
+ * padded with guesses would be worse than a total with a caveat.
+ *
+ * Completed simulation sittings are included from their own start and finish times, since
+ * a sitting is study time that never writes a Progress row.
+ */
+export type StudyTime = {
+  totalSeconds: number;
+  /** Attempts contributing to the total. */
+  measuredAttempts: number;
+  /** Attempts too old to have been timed, so excluded from it. */
+  untimedAttempts: number;
+  sittings: number;
+};
+
+export async function getStudyTime(userId: string): Promise<StudyTime> {
+  const [timed, untimedAttempts, sittings] = await Promise.all([
+    prisma.progress.aggregate({
+      where: { userId, durationSeconds: { not: null } },
+      _sum: { durationSeconds: true },
+      _count: { _all: true },
+    }),
+    prisma.progress.count({ where: { userId, durationSeconds: null } }),
+    prisma.simulationAttempt.findMany({
+      where: { userId, status: "COMPLETED", completedAt: { not: null } },
+      select: { startedAt: true, completedAt: true },
+    }),
+  ]);
+
+  // A sitting's clock is wall-clock, so cap each one at its own generous ceiling for the
+  // same reason single attempts are capped.
+  const sittingSeconds = sittings.reduce((sum, sitting) => {
+    const seconds = (sitting.completedAt!.getTime() - sitting.startedAt.getTime()) / 1000;
+    if (!Number.isFinite(seconds) || seconds <= 0) return sum;
+    return sum + Math.min(Math.round(seconds), 4 * 60 * 60);
+  }, 0);
+
+  return {
+    totalSeconds: (timed._sum.durationSeconds ?? 0) + sittingSeconds,
+    measuredAttempts: timed._count._all,
+    untimedAttempts,
+    sittings: sittings.length,
+  };
+}
+
+/** "1h 24m" / "12m" / "45s" — whichever units actually carry information. */
+export function formatStudyTime(totalSeconds: number): string {
+  if (totalSeconds < 60) return `${Math.max(0, Math.round(totalSeconds))}s`;
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.round((totalSeconds % 3600) / 60);
+  if (!hours) return `${minutes}m`;
+  return minutes ? `${hours}h ${minutes}m` : `${hours}h`;
+}

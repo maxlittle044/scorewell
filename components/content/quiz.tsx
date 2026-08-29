@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import Link from "next/link";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
+import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
 
 export type QuizQuestion = {
   id: string;
@@ -30,6 +31,8 @@ export function Quiz({
   const [saveState, setSaveState] = useState<"idle" | "saved" | "not-logged-in">("idle");
   const [isPending, startTransition] = useTransition();
 
+  const elapsedSeconds = useElapsedSeconds();
+
   const score = questions.filter((q) => answers[q.id] === q.correctIndex).length;
   const allAnswered = questions.every((q) => answers[q.id] !== undefined);
 
@@ -47,6 +50,7 @@ export function Quiz({
           type: q.type,
           correct: answers[q.id] === q.correctIndex,
         })),
+        durationSeconds: elapsedSeconds(),
       });
       setSaveState(result.saved ? "saved" : "not-logged-in");
     });
