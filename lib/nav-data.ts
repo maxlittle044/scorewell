@@ -89,6 +89,7 @@ export const NAV_ITEMS: NavItem[] = [
         links: [
           { label: "Flashcards", href: "/flashcards" },
           { label: "Mini exercises", href: "/ielts/mini-exercises" },
+          { label: "Grammar library", href: "/ielts/grammar" },
           { label: "Grammar tests", href: "/ielts/grammar-tests" },
           { label: "Daily exam & leaderboard", href: "/ielts/daily-challenge" },
         ],

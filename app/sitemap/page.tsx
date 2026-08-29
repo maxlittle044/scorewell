@@ -20,6 +20,7 @@ const GROUPS = [
       { label: "Recurring exam topics", href: "/ielts/forecasts" },
       { label: "Daily challenge & leaderboard", href: "/ielts/daily-challenge" },
       { label: "Mini exercises", href: "/ielts/mini-exercises" },
+      { label: "Grammar library", href: "/ielts/grammar" },
       { label: "Grammar tests", href: "/ielts/grammar-tests" },
       { label: "Band-9 sample answers", href: "/ielts/band-9-samples" },
       { label: "User-submitted answers", href: "/ielts/submitted-answers" },

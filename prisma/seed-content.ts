@@ -20,6 +20,7 @@ import { TOPIC_BANKS } from "./seed-data/topic-banks";
 import { LIVE_LESSONS } from "./seed-data/live-lessons";
 import { collectionFor } from "./seed-data/mock-sets";
 import { PLACEMENT_SEED } from "./seed-data/placement";
+import { GRAMMAR_POINTS } from "./seed-data/grammar-library";
 
 // The generated client is engineType "client" (no Rust engine), so it needs a driver
 // adapter here exactly as lib/prisma.ts does — a bare `new PrismaClient()` fails with P2038.
@@ -300,6 +301,25 @@ async function main() {
       update: fields,
     });
     console.log("live lesson  ", lesson.slug);
+  }
+
+  // Grammar library points — ARTICLEs split off by taskType, like tips and topic banks.
+  for (const point of GRAMMAR_POINTS) {
+    const { slug, title, tags, ...data } = point;
+    const fields = {
+      title,
+      taskType: "grammar-point",
+      topic: point.category,
+      tags,
+      published: true,
+      data,
+    };
+    await prisma.contentItem.upsert({
+      where: { slug },
+      create: { slug, contentType: "ARTICLE" as const, ...fields },
+      update: fields,
+    });
+    console.log("grammar point", slug);
   }
 
   // The placement diagnostic — a MINI_EXERCISE split off by taskType, like the others.
