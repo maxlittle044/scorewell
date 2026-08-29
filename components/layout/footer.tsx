@@ -25,6 +25,7 @@ const LEGAL = [
   { label: "Terms & conditions", href: "/terms" },
   { label: "Disclaimers", href: "/disclaimers" },
   { label: "Refund policy", href: "/refund-policy" },
+  { label: "Copyright & DMCA", href: "/copyright" },
 ];
 
 function TwitterIcon() {

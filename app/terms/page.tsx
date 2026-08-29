@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalNotice } from "@/components/layout/legal-notice";
 import { PageHeader } from "@/components/layout/page-header";
 
@@ -51,6 +52,15 @@ export default function TermsPage() {
               yourself. You keep ownership of what you submit, and grant us a
               license to use it to operate the service (for example, showing
               your public submission to other learners).
+            </p>
+            <p className="mt-3">
+              Our content may not be copied, republished, redistributed, sold, or used to
+              train or populate another service without our written permission. See{" "}
+              <Link href="/copyright" className="font-medium text-brand-600 hover:underline">
+                Copyright &amp; DMCA
+              </Link>{" "}
+              for the full terms and for how to report material that infringes your
+              copyright.
             </p>
           </section>
 

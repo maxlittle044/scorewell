@@ -89,6 +89,7 @@ const GROUPS = [
       { label: "Terms & Conditions", href: "/terms" },
       { label: "Disclaimers", href: "/disclaimers" },
       { label: "Refund Policy", href: "/refund-policy" },
+      { label: "Copyright & DMCA", href: "/copyright" },
     ],
   },
 ];
