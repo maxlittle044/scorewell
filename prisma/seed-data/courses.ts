@@ -3,6 +3,15 @@ export type Lesson = {
   summary: string;
   /** Optional link to real content elsewhere on the site. */
   href?: string;
+  /**
+   * Slug of a VIDEO_LESSON to play inside the track. Must name a lesson that exists in
+   * `video-lessons.ts` or `video-lessons-voa.ts` — an unknown slug degrades to a plain
+   * lesson row rather than erroring, so a typo here fails quietly.
+   *
+   * Set this or `href`, not both: a lesson with a video already links to that lesson's own
+   * page for the transcript, and `href` is ignored on those rows.
+   */
+  videoSlug?: string;
 };
 
 export type CourseSeed = {
@@ -46,6 +55,7 @@ export const COURSES: CourseSeed[] = [
           title: "Writing an introduction that states a position",
           summary:
             "Paraphrase the question, state your view in one sentence, and avoid the padding that wastes your word count.",
+          videoSlug: "writing-task-2-strong-thesis",
         },
         {
           title: "Developing a body paragraph properly",
@@ -93,6 +103,7 @@ export const COURSES: CourseSeed[] = [
           title: "What fluency actually means in IELTS",
           summary:
             "Why hesitation isn't automatically penalised, and what examiners are really listening for.",
+          videoSlug: "how-examiners-score-speaking",
         },
         {
           title: "Part 1: extending without rambling",
@@ -228,6 +239,66 @@ export const COURSES: CourseSeed[] = [
           summary:
             "Review your saved results, work out which skill to push, and confirm what to bring on the day.",
           href: "/dashboard",
+        },
+      ],
+    },
+  },
+  {
+    // A recorded-lesson package (site-build-prompt.md section 4b). Every step here is one of
+    // the VOA-backed video lessons — real public-domain footage, credited by the player —
+    // so the whole track can be watched through without leaving the page. It closes on a
+    // practice step, because watching grammar explained is not the same as getting it right.
+    slug: "grammar-and-usage-on-video",
+    title: "Grammar & Usage on Video",
+    topic: "Grammar",
+    tags: ["course", "grammar", "video", "writing", "speaking"],
+    data: {
+      description:
+        "Six recorded lessons on the structures that decide your accuracy band — watched in order, each with its written lesson, then tested.",
+      level: "Band 5.5 → 7.5",
+      gradient: "from-violet-500 to-violet-700",
+      lessons: [
+        {
+          title: "The passive voice, and when it earns its place",
+          summary:
+            "Start with the structure most often used for the wrong reason. Watch, then check your last Task 1 for passives that add nothing.",
+          videoSlug: "passive-voice-in-reports-and-news",
+        },
+        {
+          title: "The past perfect continuous",
+          summary:
+            "A tense worth one accurate use in an essay. This lesson is about where it belongs, not about using it more.",
+          videoSlug: "past-perfect-continuous",
+        },
+        {
+          title: "Dangling participles",
+          summary:
+            "The error that turns up in exactly the sentences you wrote to show range — and the two ways to fix it.",
+          videoSlug: "dangling-participles",
+        },
+        {
+          title: "Register: polite requests in a formal letter",
+          summary:
+            "Grammar that is correct can still be socially wrong. The request forms General Training Task 1 is really marking.",
+          videoSlug: "polite-requests-in-formal-letters",
+        },
+        {
+          title: "Saying past tenses out loud: -ed endings",
+          summary:
+            "Written accuracy you already have can still be lost in Speaking. Three pronunciations, one spelling.",
+          videoSlug: "pronouncing-ed-endings",
+        },
+        {
+          title: "Hedging and trade-offs on a common topic",
+          summary:
+            "Grammar in service of an argument — the hedged, two-sided language Part 3 and Task 2 reward.",
+          videoSlug: "discussing-technology-and-ai",
+        },
+        {
+          title: "Test what you've watched",
+          summary:
+            "Grammar tests with per-question explanations. Watching an explanation and applying it under time are different skills.",
+          href: "/ielts/grammar-tests",
         },
       ],
     },

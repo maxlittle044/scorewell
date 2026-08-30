@@ -48,7 +48,14 @@ export default async function CoursePage({ params }: PageProps<"/courses/[slug]"
         <h1 className="mb-2 text-2xl font-bold text-ink">{course.title}</h1>
         <p className="mb-1 text-ink-body">{course.description}</p>
         <p className="mb-8 text-sm text-ink-muted">
-          {course.lessons.length} lessons · Self-paced · {course.level}
+          {course.lessons.length} lessons
+          {course.videoCount > 0 && (
+            <>
+              {" "}
+              · {course.videoCount} on video
+            </>
+          )}{" "}
+          · Self-paced · {course.level}
         </p>
 
         <CourseTrack

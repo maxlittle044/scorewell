@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import { getCourseVideos, type LessonVideo } from "@/lib/content/video-lessons";
 
 const CourseDataSchema = z.object({
   description: z.string(),
@@ -10,9 +11,23 @@ const CourseDataSchema = z.object({
       title: z.string(),
       summary: z.string(),
       href: z.string().optional(),
+      /**
+       * A recorded lesson to play inside the track (site-build-prompt.md section 4b,
+       * "recorded-lesson packages" / "multi-lesson video courses"). Takes precedence over
+       * `href`: a lesson with a video links to that video lesson's own page for the
+       * transcript, so setting both in seed data is redundant rather than additive.
+       */
+      videoSlug: z.string().optional(),
     }),
   ),
 });
+
+/** A lesson with its recorded video resolved, if it names one that is actually published. */
+export type CourseLessonVideo = {
+  slug: string;
+  lessonMinutes: number;
+  video: LessonVideo;
+};
 
 export type Course = {
   id: string;
@@ -22,7 +37,14 @@ export type Course = {
   description: string;
   level: string;
   gradient: string;
-  lessons: { title: string; summary: string; href?: string }[];
+  lessons: {
+    title: string;
+    summary: string;
+    href?: string;
+    video?: CourseLessonVideo;
+  }[];
+  /** How many lessons in this track actually play a video. */
+  videoCount: number;
 };
 
 export async function getCourse(slug: string): Promise<Course | null> {
@@ -34,7 +56,30 @@ export async function getCourse(slug: string): Promise<Course | null> {
   const parsed = CourseDataSchema.safeParse(item.data);
   if (!parsed.success) return null;
 
-  return { id: item.id, slug: item.slug, title: item.title, tags: item.tags, ...parsed.data };
+  const { lessons, ...rest } = parsed.data;
+  const videos = await getCourseVideos(
+    lessons.flatMap((lesson) => (lesson.videoSlug ? [lesson.videoSlug] : [])),
+  );
+
+  const resolved: Course["lessons"] = lessons.map(({ videoSlug, ...lesson }) => {
+    const found = videoSlug ? videos.get(videoSlug) : undefined;
+    return found
+      ? {
+          ...lesson,
+          video: { slug: found.slug, lessonMinutes: found.lessonMinutes, video: found.video },
+        }
+      : lesson;
+  });
+
+  return {
+    id: item.id,
+    slug: item.slug,
+    title: item.title,
+    tags: item.tags,
+    ...rest,
+    lessons: resolved,
+    videoCount: resolved.filter((lesson) => lesson.video).length,
+  };
 }
 
 export async function listCourses() {
@@ -44,16 +89,31 @@ export async function listCourses() {
     select: { slug: true, title: true, data: true },
   });
 
-  return items.map((item) => {
-    const parsed = CourseDataSchema.safeParse(item.data);
-    return {
-      slug: item.slug,
-      title: item.title,
-      description: parsed.success ? parsed.data.description : "",
-      gradient: parsed.success ? parsed.data.gradient : "from-zinc-500 to-zinc-700",
-      lessonCount: parsed.success ? parsed.data.lessons.length : 0,
-    };
-  });
+  const parsedItems = items.map((item) => ({ item, parsed: CourseDataSchema.safeParse(item.data) }));
+
+  // Counted against published video lessons rather than against the slugs the seed names, so
+  // a card can't advertise videos a learner would not actually get. One query for the page.
+  const videos = await getCourseVideos([
+    ...new Set(
+      parsedItems.flatMap(({ parsed }) =>
+        parsed.success
+          ? parsed.data.lessons.flatMap((lesson) => (lesson.videoSlug ? [lesson.videoSlug] : []))
+          : [],
+      ),
+    ),
+  ]);
+
+  return parsedItems.map(({ item, parsed }) => ({
+    slug: item.slug,
+    title: item.title,
+    description: parsed.success ? parsed.data.description : "",
+    gradient: parsed.success ? parsed.data.gradient : "from-zinc-500 to-zinc-700",
+    lessonCount: parsed.success ? parsed.data.lessons.length : 0,
+    videoCount: parsed.success
+      ? parsed.data.lessons.filter((lesson) => lesson.videoSlug && videos.has(lesson.videoSlug))
+          .length
+      : 0,
+  }));
 }
 
 /**

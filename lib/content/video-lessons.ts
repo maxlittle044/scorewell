@@ -67,6 +67,41 @@ export type VideoLessonSummary = {
   isPlaceholderVideo: boolean;
 };
 
+/**
+ * Resolves the video lessons a course track embeds, keyed by slug.
+ *
+ * A course names its videos by slug in seed data, so a slug can point at a lesson that was
+ * never published or has since been unpublished. Those slugs are simply absent from the map
+ * and the course row falls back to a plain lesson — a course must not render an empty player
+ * frame for a lesson that does not exist.
+ */
+export async function getCourseVideos(
+  slugs: string[],
+): Promise<Map<string, VideoLessonSummary & { video: LessonVideo }>> {
+  if (slugs.length === 0) return new Map();
+
+  const items = await prisma.contentItem.findMany({
+    where: { slug: { in: slugs }, contentType: "VIDEO_LESSON", published: true, ...IS_A_VIDEO_LESSON },
+    select: { slug: true, title: true, topic: true, data: true },
+  });
+
+  const map = new Map<string, VideoLessonSummary & { video: LessonVideo }>();
+  for (const item of items) {
+    const parsed = VideoLessonDataSchema.safeParse(item.data);
+    if (!parsed.success) continue;
+    map.set(item.slug, {
+      slug: item.slug,
+      title: item.title,
+      topic: item.topic,
+      summary: parsed.data.summary,
+      lessonMinutes: parsed.data.lessonMinutes,
+      isPlaceholderVideo: parsed.data.video.placeholder,
+      video: parsed.data.video,
+    });
+  }
+  return map;
+}
+
 export async function listVideoLessons(): Promise<VideoLessonSummary[]> {
   const items = await prisma.contentItem.findMany({
     where: { contentType: "VIDEO_LESSON", published: true, ...IS_A_VIDEO_LESSON },

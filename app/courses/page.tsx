@@ -35,7 +35,18 @@ export default async function CoursesIndexPage() {
                 href={`/courses/${course.slug}`}
                 className="group overflow-hidden rounded-2xl border border-line shadow-sm transition-shadow hover:shadow-md"
               >
-                <div className={`h-32 bg-linear-to-br ${course.gradient}`} />
+                <div className={`relative h-32 bg-linear-to-br ${course.gradient}`}>
+                  {/* The count, not a "video course" label: it says exactly how much of the
+                      track is recorded, which a threshold-based badge would blur. */}
+                  {course.videoCount > 0 && (
+                    <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-black/35 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                      <svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true">
+                        <path d="M2.5 1.5l8 4.5-8 4.5z" fill="currentColor" />
+                      </svg>
+                      {course.videoCount} {course.videoCount === 1 ? "video" : "videos"}
+                    </span>
+                  )}
+                </div>
                 <div className="bg-surface p-5">
                   <h3 className="font-semibold text-ink group-hover:text-link">
                     {course.title}
