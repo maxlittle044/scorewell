@@ -8,6 +8,7 @@ import { Hero } from "@/components/home/hero";
 import { HowItWorks } from "@/components/home/how-it-works";
 import { LiveLessonsCarousel } from "@/components/home/live-lessons-carousel";
 import { LatestSamples } from "@/components/home/latest-samples";
+import { NewsletterSignup } from "@/components/home/newsletter-signup";
 import { PricingTable } from "@/components/home/pricing-table";
 import { SuccessStories } from "@/components/home/success-stories";
 import { PronunciationGrid } from "@/components/home/pronunciation-grid";
@@ -43,6 +44,8 @@ export default function Home() {
       <UserSubmittedAnswers />
       {/* Section 18 in the spec order. Renders nothing until a real story exists. */}
       <SuccessStories />
+      {/* Section 20: email capture sits between the stories and the pricing table. */}
+      <NewsletterSignup />
       <PricingTable />
       <CoachingCrossSell />
     </main>

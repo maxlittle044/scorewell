@@ -491,3 +491,23 @@ model CourseLessonCompletion {
   @@unique([userId, courseSlug, lessonIndex])
   @@index([userId, courseSlug])
 }
+
+// An email captured by the homepage newsletter block (site-build-prompt.md section 3,
+// item 20).
+//
+// No mailing service is wired up — the standing zero-running-cost rule means one has to be
+// chosen and paid for deliberately — so this table is a list, not a queue. That is also why
+// there is no confirmation token: double opt-in is only meaningful once something can send
+// the confirmation email, and a token column nothing writes to would be a promise the site
+// does not keep. Whoever adds sending adds verification with it.
+//
+// `source` records which block the address came from, so a second capture point later can
+// be told apart from this one without a migration.
+model NewsletterSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  source    String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
