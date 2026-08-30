@@ -12,6 +12,7 @@ const RESOURCES = [
   { label: "Tips", href: "/ielts/tips" },
   { label: "Daily challenge & leaderboard", href: "/ielts/daily-challenge" },
   { label: "Browse by topic", href: "/tags" },
+  { label: "Study abroad", href: "/study-abroad" },
 ];
 
 const COMPANY = [

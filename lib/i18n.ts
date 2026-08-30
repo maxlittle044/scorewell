@@ -155,6 +155,7 @@ const NE: Record<string, string> = {
     "स्मार्ट तयारी। राम्रो स्कोर। सबै सिकारुका लागि निःशुल्क IELTS अभ्यास र एआई टुल्स।",
   "Daily challenge & leaderboard": "दैनिक च्यालेन्ज र लिडरबोर्ड",
   "Browse by topic": "विषय अनुसार हेर्नुहोस्",
+  "Study abroad": "विदेश अध्ययन",
   "About us": "हाम्रो बारेमा",
   "Contact us": "सम्पर्क गर्नुहोस्",
   FAQs: "बारम्बार सोधिने प्रश्न",

@@ -23,6 +23,7 @@ import { collectionFor } from "./seed-data/mock-sets";
 import { PLACEMENT_SEED } from "./seed-data/placement";
 import { GRAMMAR_POINTS } from "./seed-data/grammar-library";
 import { ANNOUNCEMENTS } from "./seed-data/announcements";
+import { DESTINATIONS } from "./seed-data/study-abroad";
 
 // The generated client is engineType "client" (no Rust engine), so it needs a driver
 // adapter here exactly as lib/prisma.ts does — a bare `new PrismaClient()` fails with P2038.
@@ -322,6 +323,26 @@ async function main() {
       update: fields,
     });
     console.log("announcement ", slug);
+  }
+
+  // Study-abroad destinations — ARTICLEs split off by taskType, like the announcements
+  // above. The country goes in `topic` so the index and the institution table can group on
+  // it without reading the JSONB payload.
+  for (const destination of DESTINATIONS) {
+    const fields = {
+      title: destination.title,
+      taskType: "study-abroad",
+      topic: destination.country,
+      tags: destination.tags,
+      published: true,
+      data: destination.data,
+    };
+    await prisma.contentItem.upsert({
+      where: { slug: destination.slug },
+      create: { slug: destination.slug, contentType: "ARTICLE" as const, ...fields },
+      update: fields,
+    });
+    console.log("destination  ", destination.slug);
   }
 
   // Grammar library points — ARTICLEs split off by taskType, like tips and topic banks.

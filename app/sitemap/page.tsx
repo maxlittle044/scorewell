@@ -71,6 +71,7 @@ const GROUPS = [
       { label: "Leaderboard", href: "/leaderboard" },
       { label: "Search", href: "/search" },
       { label: "Exam registration", href: "/exam-registration" },
+      { label: "Study abroad", href: "/study-abroad" },
     ],
   },
   {
