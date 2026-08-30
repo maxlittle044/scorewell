@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { cn } from "@/lib/cn";
+import { useTranslate } from "@/components/i18n/locale-provider";
 
 /**
  * Light/dark toggle (site-build-prompt.md sections 2 and 7).
@@ -92,13 +93,14 @@ const OPTIONS: { value: Theme; label: string; icon: React.ReactNode }[] = [
 ];
 
 export function ThemeToggle() {
+  const { t } = useTranslate();
   const theme = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   return (
     <div
       className="flex items-center gap-0.5 rounded-full bg-white/10 p-0.5"
       role="radiogroup"
-      aria-label="Colour theme"
+      aria-label={t("Colour theme")}
     >
       {OPTIONS.map((option) => (
         <button
@@ -106,8 +108,8 @@ export function ThemeToggle() {
           type="button"
           role="radio"
           aria-checked={theme === option.value}
-          aria-label={option.label}
-          title={option.label}
+          aria-label={t(option.label)}
+          title={t(option.label)}
           onClick={() => choose(option.value)}
           className={cn(
             "flex h-7 w-7 items-center justify-center rounded-full transition-colors",

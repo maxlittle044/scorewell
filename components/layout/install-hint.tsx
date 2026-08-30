@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { useTranslate } from "@/components/i18n/locale-provider";
 
 /**
  * A quiet note that the site can be installed to the home screen
@@ -48,6 +49,7 @@ function getServerSnapshot(): InstallState {
 }
 
 export function InstallHint() {
+  const { t } = useTranslate();
   const state = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   if (state === "unknown" || state === "installed") return null;
@@ -56,11 +58,11 @@ export function InstallHint() {
     <p className="text-sm text-ink-muted">
       {state === "ios" ? (
         <>
-          Install ScoreWell: tap Share, then{" "}
-          <span className="text-zinc-300">Add to Home Screen</span>.
+          {t("Install ScoreWell: tap Share, then")}{" "}
+          <span className="text-zinc-300">{t("Add to Home Screen")}</span>.
         </>
       ) : (
-        <>Install ScoreWell from your browser menu to open it like an app.</>
+        <>{t("Install ScoreWell from your browser menu to open it like an app.")}</>
       )}
     </p>
   );

@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import type { Session } from "next-auth";
 import { signOutAction } from "@/lib/auth-actions";
 import { ThemeToggle } from "./theme-toggle";
+import { LanguageSwitcher } from "./language-switcher";
+import { useTranslate } from "@/components/i18n/locale-provider";
 import { NAV_ITEMS } from "@/lib/nav-data";
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
@@ -20,6 +22,7 @@ const PANEL_WIDTH: Record<number, string> = {
 };
 
 export function Header({ session }: { session: Session | null }) {
+  const { locale, t } = useTranslate();
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -46,7 +49,9 @@ export function Header({ session }: { session: Session | null }) {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50">
+    // The chrome is translated but the page it frames is English, so the language of this
+    // subtree is declared here rather than on <html>.
+    <header lang={locale === "en" ? undefined : locale} className="sticky top-0 z-50">
       {/* Tier 1 — white brand row: logo, search, account actions. */}
       <div className="border-b border-line/70 bg-surface">
         <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-8">
@@ -58,7 +63,7 @@ export function Header({ session }: { session: Session | null }) {
               <input
                 type="search"
                 name="q"
-                placeholder="Search tests, tips, tools..."
+                placeholder={t("Search tests, tips, tools...")}
                 className="w-full rounded-full border border-line bg-surface-muted py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted transition-colors focus:border-brand-400 focus:bg-surface focus:outline-none focus:ring-4 focus:ring-brand-100"
               />
             </div>
@@ -66,14 +71,14 @@ export function Header({ session }: { session: Session | null }) {
 
           <div className="hidden items-center gap-3 lg:flex">
             <Button href="/pricing" size="sm">
-              Upgrade
+              {t("Upgrade")}
             </Button>
           </div>
 
           <button
             type="button"
             aria-expanded={mobileOpen}
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-label={mobileOpen ? t("Close menu") : t("Open menu")}
             onClick={() => setMobileOpen((v) => !v)}
             className="ml-auto flex items-center justify-center rounded-full p-2 text-ink-body hover:bg-surface-sunken lg:hidden"
           >
@@ -87,7 +92,7 @@ export function Header({ session }: { session: Session | null }) {
         <div className="mx-auto flex h-12 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            aria-label="Home"
+            aria-label={t("Home")}
             className="flex items-center rounded-md px-3 py-2 text-white/90 transition-colors hover:bg-white/10 hover:text-white"
           >
             <HomeIcon />
@@ -102,7 +107,7 @@ export function Header({ session }: { session: Session | null }) {
                     href={item.href}
                     className="whitespace-nowrap rounded-md px-3 py-2 text-sm font-semibold text-white/90 transition-colors hover:bg-white/10 hover:text-white"
                   >
-                    {item.label}
+                    {t(item.label)}
                   </Link>
                 );
               }
@@ -119,7 +124,7 @@ export function Header({ session }: { session: Session | null }) {
                       isOpen ? "bg-white/15 text-white" : "text-white/90 hover:bg-white/10 hover:text-white",
                     )}
                   >
-                    {item.label}
+                    {t(item.label)}
                     <ChevronDownIcon
                       className={isOpen ? "rotate-180 transition-transform" : "transition-transform"}
                     />
@@ -139,7 +144,7 @@ export function Header({ session }: { session: Session | null }) {
                         {item.columns.map((column) => (
                           <div key={column.heading}>
                             <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-pop-600">
-                              {column.heading}
+                              {t(column.heading)}
                             </p>
                             <ul className="flex flex-col gap-1.5">
                               {column.links.map((link) => (
@@ -149,7 +154,7 @@ export function Header({ session }: { session: Session | null }) {
                                     onClick={() => setOpenMenu(null)}
                                     className="text-sm text-ink-body hover:text-link"
                                   >
-                                    {link.label}
+                                    {t(link.label)}
                                   </Link>
                                 </li>
                               ))}
@@ -165,7 +170,8 @@ export function Header({ session }: { session: Session | null }) {
           </nav>
 
           <div className="ml-auto flex items-center gap-1">
-            <div className="mr-2">
+            <div className="mr-2 flex items-center gap-2">
+              <LanguageSwitcher />
               <ThemeToggle />
             </div>
             {session?.user ? (
@@ -181,7 +187,7 @@ export function Header({ session }: { session: Session | null }) {
                     type="submit"
                     className="rounded-md px-3 py-2 text-sm font-semibold text-white/90 hover:bg-white/10 hover:text-white"
                   >
-                    Log out
+                    {t("Log out")}
                   </button>
                 </form>
               </>
@@ -191,13 +197,13 @@ export function Header({ session }: { session: Session | null }) {
                   href="/login"
                   className="rounded-md px-3 py-2 text-sm font-semibold text-white/90 hover:bg-white/10 hover:text-white"
                 >
-                  Sign up
+                  {t("Sign up")}
                 </Link>
                 <Link
                   href="/login"
                   className="rounded-md px-3 py-2 text-sm font-semibold text-white/90 hover:bg-white/10 hover:text-white"
                 >
-                  Log in
+                  {t("Log in")}
                 </Link>
               </>
             )}
@@ -213,7 +219,7 @@ export function Header({ session }: { session: Session | null }) {
               <input
                 type="search"
                 name="q"
-                placeholder="Search tests, tips, tools..."
+                placeholder={t("Search tests, tips, tools...")}
                 className="w-full rounded-full border border-line bg-surface-muted py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100"
               />
             </div>
@@ -229,7 +235,7 @@ export function Header({ session }: { session: Session | null }) {
                     onClick={() => setMobileOpen(false)}
                     className="py-3 text-sm font-medium text-ink"
                   >
-                    {item.label}
+                    {t(item.label)}
                   </Link>
                 );
               }
@@ -237,14 +243,14 @@ export function Header({ session }: { session: Session | null }) {
               return (
                 <details key={item.label} className="group py-1">
                   <summary className="flex cursor-pointer list-none items-center justify-between py-2 text-sm font-medium text-ink">
-                    {item.label}
+                    {t(item.label)}
                     <ChevronDownIcon className="text-ink-muted transition-transform group-open:rotate-180" />
                   </summary>
                   <div className="grid grid-cols-2 gap-4 pb-3 pl-2">
                     {item.columns.map((column) => (
                       <div key={column.heading}>
                         <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                          {column.heading}
+                          {t(column.heading)}
                         </p>
                         <ul className="flex flex-col gap-1.5">
                           {column.links.map((link) => (
@@ -254,7 +260,7 @@ export function Header({ session }: { session: Session | null }) {
                                 onClick={() => setMobileOpen(false)}
                                 className="text-sm text-ink-body"
                               >
-                                {link.label}
+                                {t(link.label)}
                               </Link>
                             </li>
                           ))}
@@ -282,7 +288,7 @@ export function Header({ session }: { session: Session | null }) {
                     type="submit"
                     className="w-full rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
                   >
-                    Log out
+                    {t("Log out")}
                   </button>
                 </form>
               </>
@@ -292,12 +298,16 @@ export function Header({ session }: { session: Session | null }) {
                 onClick={() => setMobileOpen(false)}
                 className="rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
               >
-                Log in
+                {t("Log in")}
               </Link>
             )}
             <Button href="/pricing" onClick={() => setMobileOpen(false)} className="w-full">
-              Upgrade
+              {t("Upgrade")}
             </Button>
+
+            <div className="mt-2 border-t border-line pt-4">
+              <LanguageSwitcher variant="menu" />
+            </div>
           </div>
         </div>
       )}

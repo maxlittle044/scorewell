@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslate } from "@/components/i18n/locale-provider";
 
 const DISMISS_KEY = "sw-announcement-dismissed";
 const MESSAGE = "Limited-time offer: 20% off ScoreWell Premium for new learners.";
 
 export function AnnouncementBar() {
+  const { locale, t } = useTranslate();
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -35,18 +37,19 @@ export function AnnouncementBar() {
   return (
     <div
       data-announcement-bar
+      lang={locale === "en" ? undefined : locale}
       className="relative flex items-center justify-center bg-linear-to-r from-brand-700 via-pop-600 to-brand-700 px-10 py-2 text-center text-sm font-medium text-white"
     >
       <p>
-        {MESSAGE}{" "}
+        {t(MESSAGE)}{" "}
         <a href="/pricing" className="underline underline-offset-2 hover:no-underline">
-          Upgrade now
+          {t("Upgrade now")}
         </a>
       </p>
       <button
         type="button"
         onClick={dismiss}
-        aria-label="Dismiss announcement"
+        aria-label={t("Dismiss announcement")}
         className="absolute right-3 rounded p-1 text-white/80 hover:bg-white/10 hover:text-white"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">

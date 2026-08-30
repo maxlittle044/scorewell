@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useTranslate } from "@/components/i18n/locale-provider";
 
 /**
  * Fixed right-edge shortcut rail (spec section 7.1), plus a back-to-top control.
@@ -45,6 +46,7 @@ const SHORTCUTS = [
 ];
 
 export function UtilityRail() {
+  const { locale, t } = useTranslate();
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
@@ -60,6 +62,7 @@ export function UtilityRail() {
     <>
       <div
         data-utility-rail
+        lang={locale === "en" ? undefined : locale}
         className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-3 min-[1472px]:flex"
       >
         {SHORTCUTS.map((shortcut) => (
@@ -81,7 +84,7 @@ export function UtilityRail() {
             >
               {shortcut.icon}
             </svg>
-            <span className="text-xs font-semibold">{shortcut.label}</span>
+            <span className="text-xs font-semibold">{t(shortcut.label)}</span>
           </Link>
         ))}
       </div>
@@ -91,7 +94,7 @@ export function UtilityRail() {
           data-utility-rail
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          aria-label="Back to top"
+          aria-label={t("Back to top")}
           className="fixed bottom-5 right-4 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-brand-700 text-white shadow-lg shadow-brand-900/20 transition-colors hover:bg-brand-600"
         >
           <svg

@@ -9,6 +9,8 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { UtilityRail } from "@/components/layout/utility-rail";
 import { ServiceWorkerRegistrar } from "@/components/layout/service-worker";
 import { DictionaryLookup } from "@/components/content/dictionary-lookup";
+import { LocaleProvider } from "@/components/i18n/locale-provider";
+import { getLocale } from "@/lib/i18n-server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,9 +46,13 @@ export const viewport: Viewport = {
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const session = await auth();
+  const [session, locale] = await Promise.all([auth(), getLocale()]);
 
   return (
+    // `lang` stays "en" whatever the interface language is, because the page's content —
+    // passages, questions, sample answers — is English, and that is what a screen reader
+    // or a translation tool needs to know. The chrome that is translated carries its own
+    // `lang` where it differs.
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} h-full antialiased`}
@@ -61,14 +67,16 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="flex min-h-full flex-col">
-        <ScrollReveal />
-        <ServiceWorkerRegistrar />
-        <AnnouncementBar />
-        <Header session={session} />
-        {children}
-        <DictionaryLookup />
-        <UtilityRail />
-        <Footer />
+        <LocaleProvider locale={locale}>
+          <ScrollReveal />
+          <ServiceWorkerRegistrar />
+          <AnnouncementBar />
+          <Header session={session} />
+          {children}
+          <DictionaryLookup />
+          <UtilityRail />
+          <Footer />
+        </LocaleProvider>
       </body>
     </html>
   );

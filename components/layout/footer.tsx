@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { InstallHint } from "./install-hint";
+import { getTranslator } from "@/lib/i18n-server";
+import type { Translate } from "@/lib/i18n";
 
 const RESOURCES = [
   { label: "Reading tests", href: "/ielts/reading" },
@@ -57,15 +59,23 @@ function YoutubeIcon() {
   );
 }
 
-function FooterColumn({ heading, links }: { heading: string; links: { label: string; href: string }[] }) {
+function FooterColumn({
+  heading,
+  links,
+  t,
+}: {
+  heading: string;
+  links: { label: string; href: string }[];
+  t: Translate;
+}) {
   return (
     <div>
-      <p className="text-sm font-semibold text-white">{heading}</p>
+      <p className="text-sm font-semibold text-white">{t(heading)}</p>
       <ul className="mt-4 flex flex-col gap-2.5">
         {links.map((link) => (
           <li key={link.href}>
             <Link href={link.href} className="text-sm text-zinc-400 hover:text-white">
-              {link.label}
+              {t(link.label)}
             </Link>
           </li>
         ))}
@@ -74,9 +84,14 @@ function FooterColumn({ heading, links }: { heading: string; links: { label: str
   );
 }
 
-export function Footer() {
+export async function Footer() {
+  const { locale, t } = await getTranslator();
+
   return (
-    <footer className="relative overflow-hidden bg-zinc-900">
+    <footer
+      lang={locale === "en" ? undefined : locale}
+      className="relative overflow-hidden bg-zinc-900"
+    >
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-pop-500 to-transparent"
@@ -97,8 +112,9 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 max-w-xs text-sm text-zinc-400">
-              Prep smarter. Score well. Free IELTS practice and AI-powered tools
-              for learners everywhere.
+              {t(
+                "Prep smarter. Score well. Free IELTS practice and AI-powered tools for learners everywhere.",
+              )}
             </p>
             <div className="mt-5 flex items-center gap-3 text-zinc-400">
               <a
@@ -125,19 +141,19 @@ export function Footer() {
             </div>
           </div>
 
-          <FooterColumn heading="Resources" links={RESOURCES} />
-          <FooterColumn heading="Company" links={COMPANY} />
-          <FooterColumn heading="Legal" links={LEGAL} />
+          <FooterColumn heading="Resources" links={RESOURCES} t={t} />
+          <FooterColumn heading="Company" links={COMPANY} t={t} />
+          <FooterColumn heading="Legal" links={LEGAL} t={t} />
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-zinc-800 pt-6 sm:flex-row">
           <p className="text-sm text-zinc-500">
-            © {new Date().getFullYear()} ScoreWell. All rights reserved.
+            © {new Date().getFullYear()} ScoreWell. {t("All rights reserved.")}
           </p>
           <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-6">
             <InstallHint />
             <Link href="/sitemap" className="text-sm text-zinc-500 hover:text-white">
-              Sitemap
+              {t("Sitemap")}
             </Link>
           </div>
         </div>
