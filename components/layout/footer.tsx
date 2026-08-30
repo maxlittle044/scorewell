@@ -17,6 +17,7 @@ const RESOURCES = [
 
 const COMPANY = [
   { label: "About us", href: "/about" },
+  { label: "Our story", href: "/our-story" },
   { label: "Contact us", href: "/contact" },
   { label: "FAQs", href: "/faq" },
   { label: "Refer & earn", href: "/refer" },

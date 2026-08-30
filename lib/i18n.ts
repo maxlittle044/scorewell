@@ -157,6 +157,7 @@ const NE: Record<string, string> = {
   "Browse by topic": "विषय अनुसार हेर्नुहोस्",
   "Study abroad": "विदेश अध्ययन",
   "About us": "हाम्रो बारेमा",
+  "Our story": "हाम्रो कथा",
   "Contact us": "सम्पर्क गर्नुहोस्",
   FAQs: "बारम्बार सोधिने प्रश्न",
   "Refer & earn": "रेफर गरी कमाउनुहोस्",
