@@ -128,6 +128,7 @@ model User {
   reviewRequests      ReviewRequest[]
   simulationAttempts  SimulationAttempt[]
   courseLessons       CourseLessonCompletion[]
+  flashcardReviews    FlashcardReview[]
 }
 
 enum ReferralStatus {
@@ -510,4 +511,35 @@ model NewsletterSubscriber {
   createdAt DateTime @default(now())
 
   @@index([createdAt])
+}
+
+// One learner's scheduling state for one flashcard (site-build-prompt.md section 6,
+// "spaced-repetition prompts for flashcards").
+//
+// Leitner boxes rather than SM-2. The intervals are a fixed ladder (see lib/flashcards.ts),
+// which means a learner can be told exactly when a card comes back and why — SM-2's ease
+// factors drift per card and cannot be explained on screen without teaching the algorithm.
+// For a deck of exam vocabulary the difference in retention is not worth that.
+//
+// Keyed by the card's own stable key rather than its position in the deck, so reordering or
+// inserting cards in the seed does not silently reassign somebody's review history.
+model FlashcardReview {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  deckSlug String
+  cardKey  String
+
+  /** Leitner box, 1 (new/just missed) upwards. Drives the next interval. */
+  box Int @default(1)
+
+  dueAt          DateTime
+  lastReviewedAt DateTime @default(now())
+  reviewCount    Int      @default(0)
+  /** Times this card was answered wrong after having been answered right. */
+  lapses Int @default(0)
+
+  @@unique([userId, deckSlug, cardKey])
+  @@index([userId, dueAt])
 }

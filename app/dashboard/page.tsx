@@ -8,6 +8,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { PremiumBadge } from "@/components/dashboard/premium-lock";
 import { formatStudyTime, getAnalytics, getBandTrend, getStudyTime } from "@/lib/analytics";
 import { BandTrendChart } from "@/components/dashboard/band-trend-chart";
+import { countDueCards } from "@/lib/content/flashcards";
 
 export const metadata: Metadata = {
   title: "Your dashboard — ScoreWell",
@@ -28,8 +29,16 @@ export default async function DashboardPage() {
 
   const userId = session.user.id;
 
-  const [subscription, recentProgress, latestBySkill, usage, analytics, bandTrend, studyTime] =
-    await Promise.all([
+  const [
+    subscription,
+    recentProgress,
+    latestBySkill,
+    usage,
+    analytics,
+    bandTrend,
+    studyTime,
+    dueCards,
+  ] = await Promise.all([
       prisma.subscription.findUnique({ where: { userId } }),
       prisma.progress.findMany({
         where: { userId },
@@ -46,6 +55,7 @@ export default async function DashboardPage() {
       getAnalytics(userId),
       getBandTrend(userId),
       getStudyTime(userId),
+      countDueCards(userId),
     ]);
 
   const isPremium = subscription?.tier === "PREMIUM";
@@ -57,6 +67,28 @@ export default async function DashboardPage() {
           title={`Welcome back${session.user.name ? `, ${session.user.name}` : ""}`}
           description="Track your progress and manage your plan."
         />
+
+        {/* The daily study prompt (site-build-prompt.md section 6). Shown only when there
+            is genuinely something to do — a standing "0 cards due" tile would train the
+            learner to ignore the one place that tells them when to come back. */}
+        {dueCards > 0 && (
+          <div className="mb-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-pop-100 bg-pop-50 p-5">
+            <div>
+              <p className="font-semibold text-ink">
+                {dueCards} {dueCards === 1 ? "flashcard is" : "flashcards are"} ready for review
+              </p>
+              <p className="mt-1 text-sm text-ink-body">
+                Ten minutes now is worth more than an hour of it next week.
+              </p>
+            </div>
+            <Link
+              href="/flashcards"
+              className="shrink-0 rounded-full bg-pop-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-pop-700"
+            >
+              Start review
+            </Link>
+          </div>
+        )}
 
         <div className="mb-6 rounded-2xl border border-line bg-surface p-6">
           <div className="flex flex-wrap items-baseline justify-between gap-2">

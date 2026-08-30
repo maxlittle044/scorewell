@@ -24,6 +24,7 @@ import { PLACEMENT_SEED } from "./seed-data/placement";
 import { GRAMMAR_POINTS } from "./seed-data/grammar-library";
 import { ANNOUNCEMENTS } from "./seed-data/announcements";
 import { DESTINATIONS } from "./seed-data/study-abroad";
+import { FLASHCARD_DECKS } from "./seed-data/flashcards";
 
 // The generated client is engineType "client" (no Rust engine), so it needs a driver
 // adapter here exactly as lib/prisma.ts does — a bare `new PrismaClient()` fails with P2038.
@@ -323,6 +324,25 @@ async function main() {
       update: fields,
     });
     console.log("announcement ", slug);
+  }
+
+  // Flashcard decks — ARTICLEs split off by taskType. The cards used to live in the deck
+  // component, where they could not be scheduled or added to without a deploy.
+  for (const deck of FLASHCARD_DECKS) {
+    const fields = {
+      title: deck.title,
+      taskType: "flashcard-deck",
+      topic: deck.topic,
+      tags: deck.tags,
+      published: true,
+      data: deck.data,
+    };
+    await prisma.contentItem.upsert({
+      where: { slug: deck.slug },
+      create: { slug: deck.slug, contentType: "ARTICLE" as const, ...fields },
+      update: fields,
+    });
+    console.log("flashcards   ", deck.slug, `(${deck.data.cards.length} cards)`);
   }
 
   // Study-abroad destinations — ARTICLEs split off by taskType, like the announcements
