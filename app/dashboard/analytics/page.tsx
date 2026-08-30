@@ -42,6 +42,23 @@ export default async function AnalyticsPage() {
           <AnalyticsBody userId={session.user.id} />
         )}
 
+        {/* Reachable whether or not the breakdown above is unlocked: knowing which question
+            type is weak is the Premium part, but practising the questions you actually got
+            wrong is core learning and is not gated. */}
+        <div className="mt-8 rounded-2xl border border-line bg-surface p-5">
+          <p className="text-sm font-semibold text-ink">Practise the ones you missed</p>
+          <p className="mt-1 text-sm text-ink-body">
+            Questions you&apos;ve got wrong come back on a spaced schedule, so you meet them
+            again just as they start to fade.
+          </p>
+          <Link
+            href="/dashboard/mistakes"
+            className="mt-4 inline-block rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+          >
+            Review your mistakes
+          </Link>
+        </div>
+
         <p className="mt-8 text-sm">
           <Link href="/dashboard" className="font-medium text-link hover:underline">
             ← Back to dashboard

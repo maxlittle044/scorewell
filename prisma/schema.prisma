@@ -129,6 +129,7 @@ model User {
   simulationAttempts  SimulationAttempt[]
   courseLessons       CourseLessonCompletion[]
   flashcardReviews    FlashcardReview[]
+  mistakeReviews      MistakeReview[]
 }
 
 enum ReferralStatus {
@@ -541,5 +542,34 @@ model FlashcardReview {
   lapses Int @default(0)
 
   @@unique([userId, deckSlug, cardKey])
+  @@index([userId, dueAt])
+}
+
+// A question this learner got wrong, scheduled to come back (site-build-prompt.md section 6,
+// "spaced-repetition prompts for ... past mistakes").
+//
+// Shares the Leitner ladder in lib/flashcards.ts with FlashcardReview but not its table: a
+// mistake is identified by the question it belongs to, and squeezing a contentItemId and a
+// questionId into a deck's "cardKey" would have made both features harder to read and one of
+// them impossible to index properly.
+//
+// Only questions from self-contained exercises are queued — see lib/content/mistakes.ts for
+// why a reading-passage question cannot be re-served on its own.
+model MistakeReview {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  contentItemId String
+  questionId    String
+
+  /** Leitner box, 1 upwards. A wrong answer sends it back to 1. */
+  box Int @default(1)
+
+  dueAt          DateTime
+  lastReviewedAt DateTime @default(now())
+  reviewCount    Int      @default(0)
+
+  @@unique([userId, contentItemId, questionId])
   @@index([userId, dueAt])
 }
