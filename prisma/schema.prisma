@@ -130,6 +130,8 @@ model User {
   courseLessons       CourseLessonCompletion[]
   flashcardReviews    FlashcardReview[]
   mistakeReviews      MistakeReview[]
+  featureRequests     FeatureRequest[]
+  featureVotes        FeatureVote[]
 }
 
 enum ReferralStatus {
@@ -572,4 +574,57 @@ model MistakeReview {
 
   @@unique([userId, contentItemId, questionId])
   @@index([userId, dueAt])
+}
+
+enum FeatureRequestStatus {
+  OPEN // submitted, no decision taken
+  PLANNED
+  IN_PROGRESS
+  SHIPPED
+  DECLINED
+}
+
+// The public voting board (site-build-prompt.md section 3a, "Feature Requests page — public
+// roadmap or voting board").
+//
+// It replaces a hard-coded list whose vote counts were invented. Every number this page shows
+// now comes from a row somebody created, because the honesty rules forbid fabricated community
+// activity, and a board that opens with fake momentum is the clearest possible example of it.
+//
+// `status` is only ever set by an admin: "Planned" is a promise about our roadmap, and a
+// learner voting on a request cannot make that promise on our behalf.
+model FeatureRequest {
+  id     String  @id @default(cuid())
+  title  String
+  detail String?
+
+  status FeatureRequestStatus @default(OPEN)
+
+  // Kept nullable so a request outlives the account that suggested it — deleting a user
+  // should not silently delete something other people voted for.
+  createdById String?
+  createdBy   User?   @relation(fields: [createdById], references: [id])
+
+  createdAt DateTime      @default(now())
+  votes     FeatureVote[]
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+// One vote, by one account, on one request. The unique constraint is the whole anti-stuffing
+// story: votes need an account, and the database refuses a second one.
+model FeatureVote {
+  id String @id @default(cuid())
+
+  requestId String
+  request   FeatureRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@unique([requestId, userId])
+  @@index([userId])
 }
