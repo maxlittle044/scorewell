@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PricingTable } from "@/components/home/pricing-table";
 import { CreditPacks } from "@/components/home/credit-packs";
+import { GuaranteeStrip } from "@/components/home/guarantee-strip";
 
 export const metadata: Metadata = {
   title: "Pricing — ScoreWell",
@@ -12,6 +13,9 @@ export default function PricingPage() {
     <main className="flex flex-1 flex-col">
       <PricingTable />
       <CreditPacks />
+      {/* Section 7a asks for the guarantees to be stated near the tier they apply to,
+          so the strip repeats here under the plans rather than only on the homepage. */}
+      <GuaranteeStrip />
     </main>
   );
 }

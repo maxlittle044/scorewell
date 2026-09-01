@@ -4,6 +4,7 @@ import { CoursesCarousel } from "@/components/home/courses-carousel";
 import { DailyChallenge } from "@/components/home/daily-challenge";
 import { DictationCarousel } from "@/components/home/dictation-carousel";
 import { FeaturedCategories } from "@/components/home/featured-categories";
+import { GuaranteeStrip } from "@/components/home/guarantee-strip";
 import { Hero } from "@/components/home/hero";
 import { HowItWorks } from "@/components/home/how-it-works";
 import { LiveLessonsCarousel } from "@/components/home/live-lessons-carousel";
@@ -44,6 +45,9 @@ export default function Home() {
       <UserSubmittedAnswers />
       {/* Section 18 in the spec order. Renders nothing until a real story exists. */}
       <SuccessStories />
+      {/* Section 19: the guarantee strip, which applies because we offer a paid
+          human-reviewed tier. */}
+      <GuaranteeStrip />
       {/* Section 20: email capture sits between the stories and the pricing table. */}
       <NewsletterSignup />
       <PricingTable />
