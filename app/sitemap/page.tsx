@@ -13,6 +13,7 @@ const GROUPS = [
       { label: "Learning Path", href: "/learning-path" },
       { label: "Placement diagnostic", href: "/learning-path/assessment" },
       { label: "Full simulation sittings", href: "/simulation" },
+      { label: "Downloadable practice packs", href: "/practice-packs" },
       { label: "Reading tests", href: "/ielts/reading" },
       { label: "Listening tests", href: "/ielts/listening" },
       { label: "Writing tests", href: "/ielts/writing" },

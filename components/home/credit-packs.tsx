@@ -55,7 +55,11 @@ export function CreditPacks() {
 
         <p className="mt-6 text-center text-xs text-ink-muted">
           Paid by eSewa, Khalti or bank transfer. Credits are added once an admin has confirmed
-          your payment.
+          your payment. They also unlock{" "}
+          <Link href="/practice-packs" className="font-medium text-link hover:underline">
+            downloadable practice packs
+          </Link>
+          .
         </p>
       </div>
     </section>
