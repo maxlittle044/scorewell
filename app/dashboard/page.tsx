@@ -127,10 +127,14 @@ export default async function DashboardPage() {
           <BandTrendChart trend={bandTrend} />
 
           {studyTime.untimedAttempts > 0 && (
+            /* Deliberately does not say *why* these are untimed. Two different things land
+               here — attempts from before study time was measured, and AI-checked writing and
+               speaking, which carry no clock because an essay can be drafted over an hour or
+               pasted in a second. Naming one cause would misdescribe the other. */
             <p className="mt-3 text-xs text-ink-muted">
               {studyTime.untimedAttempts}{" "}
-              {studyTime.untimedAttempts === 1 ? "earlier attempt isn't" : "earlier attempts aren't"}{" "}
-              counted in that total — they were taken before study time was measured.
+              {studyTime.untimedAttempts === 1 ? "attempt isn't" : "attempts aren't"} counted in
+              that total — only exercises taken against a clock are.
             </p>
           )}
         </div>

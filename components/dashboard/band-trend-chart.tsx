@@ -55,8 +55,9 @@ export function BandTrendChart({ trend }: { trend: BandTrend }) {
   if (all.length === 0) {
     return (
       <p className="mt-5 text-sm text-ink-muted">
-        No band scores recorded yet. Listening and Reading tests are marked automatically, so
-        a couple of those will start the trend.
+        No band scores recorded yet. Listening and Reading tests are marked automatically, and
+        a writing or speaking answer checked by the AI is recorded too — a couple of either
+        will start the trend.
       </p>
     );
   }
