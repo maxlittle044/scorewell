@@ -127,7 +127,9 @@ export function WritingEditor({
 
       {state.result && (
         <div className="mt-4">
-          <CriterionFeedback result={state.result} />
+          {/* `text` is what was sent to be scored, so the corrections land on the words the
+              learner actually wrote — even if they have since started editing. */}
+          <CriterionFeedback result={state.result} answerText={text} />
         </div>
       )}
     </div>

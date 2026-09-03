@@ -8,22 +8,33 @@
  * explain via `note`, not something this component should guess at.
  */
 
+import { AnnotatedAnswer, type WritingError } from "./annotated-answer";
+
 export type CriterionResult = {
   overallBand: number;
   criteria: { name: string; band: number; feedback: string }[];
   strengths: string[];
   improvements: string[];
+  /** Optional because results scored before inline marking existed have none. */
+  errors?: WritingError[];
 };
 
 export function CriterionFeedback({
   result,
   bandLabel = "Overall band",
   note,
+  answerText,
 }: {
   result: CriterionResult;
   bandLabel?: string;
   /** Caveat shown under the criteria, e.g. that Pronunciation is excluded. */
   note?: string;
+  /**
+   * The text that was scored. Without it the corrections have nothing to attach to, so the
+   * marked-up copy is simply omitted — which is also what happens for a result stored before
+   * this existed.
+   */
+  answerText?: string;
 }) {
   return (
     <div className="rounded-xl border border-line bg-surface-muted p-5">
@@ -66,6 +77,10 @@ export function CriterionFeedback({
           </ul>
         </div>
       </div>
+
+      {answerText && result.errors && result.errors.length > 0 && (
+        <AnnotatedAnswer text={answerText} errors={result.errors} />
+      )}
     </div>
   );
 }

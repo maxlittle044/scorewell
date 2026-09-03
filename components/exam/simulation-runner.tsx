@@ -365,7 +365,10 @@ export function SimulationRunner({
 
             {attempt.writingFeedback ? (
               <div className="mt-5">
-                <CriterionFeedback result={attempt.writingFeedback} />
+                <CriterionFeedback
+                  result={attempt.writingFeedback}
+                  answerText={writingResponse}
+                />
               </div>
             ) : (
               <div className="mt-5 flex flex-wrap items-center gap-3">
