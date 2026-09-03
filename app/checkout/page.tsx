@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { CheckoutForm } from "@/components/checkout/checkout-form";
 import { getDuration } from "@/lib/pricing";
 import { getCreditPack } from "@/lib/credits";
+import { getCurrency } from "@/lib/currency-server";
 import { getAccountName, getConfiguredAccounts, getQrUrl, paymentsConfigured } from "@/lib/payment-config";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default async function CheckoutPage({ searchParams }: PageProps<"/checkou
     redirect("/login");
   }
 
-  const params = await searchParams;
+  const [params, currency] = await Promise.all([searchParams, getCurrency()]);
   const pack = getCreditPack(typeof params.pack === "string" ? params.pack : undefined);
   const durationParam = typeof params.duration === "string" ? params.duration : undefined;
   const purchase = pack
@@ -37,6 +38,7 @@ export default async function CheckoutPage({ searchParams }: PageProps<"/checkou
             accounts={getConfiguredAccounts()}
             accountName={getAccountName()}
             qrUrl={getQrUrl()}
+            currency={currency}
           />
         ) : (
           <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">

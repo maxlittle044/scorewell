@@ -3,6 +3,7 @@
 import { useActionState, useState } from "react";
 import type { Duration } from "@/lib/pricing";
 import { formatNpr, totalForDuration } from "@/lib/pricing";
+import { BASE_CURRENCY, formatConverted, type Currency } from "@/lib/currency";
 import type { CreditPack } from "@/lib/credits";
 import { submitPaymentAction } from "@/app/checkout/actions";
 import type { PaymentAccount } from "@/lib/payment-config";
@@ -17,12 +18,15 @@ export function CheckoutForm({
   accounts,
   accountName,
   qrUrl,
+  currency = BASE_CURRENCY,
 }: {
   purchase: Purchase;
   /** Only methods that actually have an account behind them. */
   accounts: PaymentAccount[];
   accountName: string | null;
   qrUrl: string | null;
+  /** Only ever a second opinion on the price — the NPR figure below is what is transferred. */
+  currency?: Currency;
 }) {
   const [method, setMethod] = useState<string>(accounts[0]?.method ?? "ESEWA");
   const selected = accounts.find((a) => a.method === method) ?? accounts[0];
@@ -32,9 +36,8 @@ export function CheckoutForm({
   const summaryLabel = isCredits
     ? `${purchase.pack.credits} credits`
     : `${purchase.duration.label} plan`;
-  const summaryPrice = isCredits
-    ? formatNpr(purchase.pack.priceNpr)
-    : formatNpr(totalForDuration(purchase.duration));
+  const amountNpr = isCredits ? purchase.pack.priceNpr : totalForDuration(purchase.duration);
+  const summaryPrice = formatNpr(amountNpr);
 
   if (state.success) {
     return (
@@ -53,7 +56,17 @@ export function CheckoutForm({
     <div className="rounded-2xl border border-line bg-surface p-6">
       <div className="flex items-center justify-between border-b border-line pb-4">
         <span className="text-sm text-ink-body">{summaryLabel}</span>
-        <span className="text-lg font-semibold text-ink">{summaryPrice}</span>
+        {/* Rupees stay the headline here whatever currency the reader chose to browse in:
+            this is the figure they have to type into eSewa, Khalti, or a bank transfer, and
+            a converted number in that position would be the wrong amount to send. */}
+        <span className="text-right">
+          <span className="block text-lg font-semibold text-ink">{summaryPrice}</span>
+          {currency !== BASE_CURRENCY && (
+            <span className="block text-xs text-ink-muted">
+              {formatConverted(amountNpr, currency)}
+            </span>
+          )}
+        </span>
       </div>
 
       <div className="mt-5 flex gap-2">

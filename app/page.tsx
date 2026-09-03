@@ -20,8 +20,11 @@ import { TrustBar } from "@/components/home/trust-bar";
 import { UserSubmittedAnswers } from "@/components/home/user-submitted-answers";
 import { VideoLessonsCarousel } from "@/components/home/video-lessons-carousel";
 import { WritingExercisesList } from "@/components/home/writing-exercises-list";
+import { getCurrency } from "@/lib/currency-server";
 
-export default function Home() {
+export default async function Home() {
+  const currency = await getCurrency();
+
   return (
     <main className="flex flex-1 flex-col">
       <Hero />
@@ -50,7 +53,7 @@ export default function Home() {
       <GuaranteeStrip />
       {/* Section 20: email capture sits between the stories and the pricing table. */}
       <NewsletterSignup />
-      <PricingTable />
+      <PricingTable currency={currency} />
       <CoachingCrossSell />
     </main>
   );

@@ -1,13 +1,19 @@
 import Link from "next/link";
 import { CREDIT_PACKS } from "@/lib/credits";
 import { formatNpr } from "@/lib/pricing";
+import { BASE_CURRENCY, formatConverted, type Currency } from "@/lib/currency";
 import { FREE_MONTHLY_AI_USES } from "@/lib/ai/usage-limits";
 
 /**
  * Pay-per-use credits as the subscription alternative (spec section 6), for
  * learners who want occasional AI scoring without a recurring plan.
+ *
+ * No switcher of its own: this section sits under the pricing table, whose switcher already
+ * set the currency for the whole page.
  */
-export function CreditPacks() {
+export function CreditPacks({ currency = BASE_CURRENCY }: { currency?: Currency }) {
+  const converting = currency !== BASE_CURRENCY;
+
   return (
     <section className="bg-surface py-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -38,10 +44,15 @@ export function CreditPacks() {
               <p className="font-display text-3xl font-bold text-heading">{pack.credits}</p>
               <p className="mt-1 text-sm text-ink-muted">credits</p>
               <p className="mt-4 text-lg font-semibold text-ink">
-                {formatNpr(pack.priceNpr)}
+                {formatConverted(pack.priceNpr, currency)}
               </p>
+              {converting && (
+                <p className="mt-0.5 text-sm font-medium text-ink-body">
+                  Charged as {formatNpr(pack.priceNpr)}
+                </p>
+              )}
               <p className="mt-1 text-xs text-ink-muted">
-                {formatNpr(Math.round(pack.priceNpr / pack.credits))} per use
+                {formatConverted(Math.round(pack.priceNpr / pack.credits), currency)} per use
               </p>
               <Link
                 href={`/checkout?pack=${pack.id}`}

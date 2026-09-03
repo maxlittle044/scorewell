@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { DURATIONS, formatNpr, totalForDuration } from "@/lib/pricing";
 import { FREE_MONTHLY_AI_USES } from "@/lib/ai/usage-limits";
+import { BASE_CURRENCY, formatAmount, formatConverted, type Currency } from "@/lib/currency";
+import { CurrencySwitcher } from "@/components/pricing/currency-switcher";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
 
@@ -43,9 +45,10 @@ function FeatureValue({ value }: { value: boolean | string }) {
   return <span className="text-sm font-medium text-ink-body">{value}</span>;
 }
 
-export function PricingTable() {
+export function PricingTable({ currency = BASE_CURRENCY }: { currency?: Currency }) {
   const [selected, setSelected] = useState(DURATIONS[3]);
   const total = totalForDuration(selected);
+  const converting = currency !== BASE_CURRENCY;
 
   return (
     <section className="bg-surface">
@@ -55,6 +58,10 @@ export function PricingTable() {
           title="Simple, transparent pricing"
           description="Start free. Upgrade any time for unlimited AI tools and saved progress."
         />
+
+        <div className="mb-6 flex justify-center">
+          <CurrencySwitcher currency={currency} />
+        </div>
 
         <div className="mb-10 flex flex-wrap items-center justify-center gap-2">
           {DURATIONS.map((duration) => (
@@ -81,7 +88,8 @@ export function PricingTable() {
         <div data-reveal className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-line p-6">
             <h3 className="text-lg font-semibold text-ink">Free</h3>
-            <p className="mt-2 text-3xl font-bold text-ink">Rs. 0</p>
+            {/* No "≈" on this one: zero converts exactly. */}
+            <p className="mt-2 text-3xl font-bold text-ink">{formatAmount(0, currency)}</p>
             <p className="mt-1 text-sm text-ink-muted">No payment required</p>
             <Button href="/login" variant="outline" className="mt-6 w-full">
               Get started
@@ -102,14 +110,22 @@ export function PricingTable() {
             </span>
             <h3 className="text-lg font-semibold text-ink">Premium</h3>
             <p className="mt-2 text-3xl font-bold text-ink">
-              {formatNpr(selected.pricePerMonthNpr)}
+              {formatConverted(selected.pricePerMonthNpr, currency)}
               <span className="text-base font-normal text-ink-muted">/mo</span>
             </p>
             <p className="mt-1 text-sm text-ink-muted">
               {selected.months === 1
                 ? "Billed monthly"
-                : `Billed ${formatNpr(total)} every ${selected.months} months`}
+                : `Billed ${formatConverted(total, currency)} every ${selected.months} months`}
             </p>
+            {/* The charge is in rupees whatever the switcher says, so the rupee figure stays
+                on screen next to the converted one rather than waiting until checkout. */}
+            {converting && (
+              <p className="mt-1 text-sm font-medium text-ink-body">
+                Charged as {formatNpr(total)}
+                {selected.months > 1 && ` every ${selected.months} months`}
+              </p>
+            )}
             <Button href={`/checkout?duration=${selected.interval}`} className="mt-6 w-full">
               Upgrade to Premium
             </Button>
