@@ -8,7 +8,13 @@
 import "dotenv/config";
 import { prisma } from "@/lib/prisma";
 
-type Q = { id: string; evidence?: { quote?: string } };
+type Q = {
+  id: string;
+  options?: string[];
+  correctIndex?: number;
+  evidence?: { quote?: string };
+  distractorNotes?: Record<string, string>;
+};
 
 async function main() {
   const items = await prisma.contentItem.findMany({
@@ -25,10 +31,22 @@ async function main() {
     const grouped = ((data.groups ?? []) as { questions: Q[] }[]).flatMap((g) => g.questions ?? []);
     for (const q of [...flat, ...grouped]) {
       const quote = q.evidence?.quote;
-      if (!quote) continue;
-      checked++;
-      if (!source) bad.push(`${item.slug} ${q.id}: quote but no passage/transcript to match against`);
-      else if (!source.includes(quote)) bad.push(`${item.slug} ${q.id}: quote not found verbatim — "${quote.slice(0, 60)}"`);
+      if (quote) {
+        checked++;
+        if (!source) bad.push(`${item.slug} ${q.id}: quote but no passage/transcript to match against`);
+        else if (!source.includes(quote)) bad.push(`${item.slug} ${q.id}: quote not found verbatim — "${quote.slice(0, 60)}"`);
+      }
+
+      // A note keyed to the right answer explains why the correct option is wrong, which is
+      // worse than silence — and it is invisible until someone happens to pick that option.
+      for (const key of Object.keys(q.distractorNotes ?? {})) {
+        const index = Number(key);
+        if (!Number.isInteger(index) || index < 0 || index >= (q.options?.length ?? 0)) {
+          bad.push(`${item.slug} ${q.id}: distractor note keyed "${key}", which is not an option index`);
+        } else if (index === q.correctIndex) {
+          bad.push(`${item.slug} ${q.id}: distractor note keyed to the CORRECT option (${key})`);
+        }
+      }
     }
   }
 

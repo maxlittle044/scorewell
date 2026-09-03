@@ -268,6 +268,17 @@ Despite these advances, vertical farming remains limited in what it can produce 
             "It requires more arable land",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "Unlike traditional agriculture, which spreads crops horizontally across open fields, vertical farms stack growing trays in tall, climate-controlled buildings",
+            explanation:
+              "“Unlike” signals the contrast the question is asking about, and both halves of it sit in one sentence. When a passage draws the comparison for you, the answer is rarely assembled from elsewhere.",
+          },
+          distractorNotes: {
+            "0": "The passage says “a fraction of the water”, not none. Absolute words — no, all, never — are worth distrusting when the text has given you a proportion.",
+            "2": "The reverse of the passage: vertical farms are indoors, in buildings. This is the traditional method described back to you.",
+            "3": "Also reversed. Scarce arable land is the problem vertical farming responds to, not something it needs more of.",
+          },
         },
         {
           id: "q2",
@@ -280,6 +291,17 @@ Despite these advances, vertical farming remains limited in what it can produce 
             "Import taxes on leafy greens",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "Early prototypes relied heavily on artificial lighting and were prohibitively expensive to run",
+            explanation:
+              "The cause and the effect are joined by “and” in a single clause. Note “Early” — the sentence goes on to say LEDs have since brought those costs down.",
+          },
+          distractorNotes: {
+            "0": "Transport cost is real in this passage, but as something vertical farming *reduces*, one paragraph earlier. Right topic, opposite role.",
+            "2": "Hydroponics appear as an advance that helped, not a shortage that hurt. No scarcity of them is mentioned.",
+            "3": "Import taxes are never mentioned. Leafy greens are, which is what makes the option feel familiar.",
+          },
         },
         {
           id: "q3",
@@ -292,6 +314,17 @@ Despite these advances, vertical farming remains limited in what it can produce 
             "They grow too quickly for vertical systems",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "Staple crops such as wheat and rice, which require far more space and yield lower profit per square metre, are not yet commercially viable to grow this way",
+            explanation:
+              "Two reasons in one relative clause, and the question wants both. The economics matter as much as the space — profit per square metre is the measure the passage chooses.",
+          },
+          distractorNotes: {
+            "0": "Soil-free growing is described as something the technology already does well, for other crops. The passage never claims wheat cannot manage it.",
+            "2": "Nothing is banned anywhere. Cities appear only as the places these farms are built near.",
+            "3": "Growing quickly is given as an advantage of leafy greens, the crops that *do* work. Lifted from the wrong half of the contrast.",
+          },
         },
         {
           id: "q4",
@@ -304,6 +337,17 @@ Despite these advances, vertical farming remains limited in what it can produce 
             "It cannot be located near cities",
           ],
           correctIndex: 2,
+          evidence: {
+            quote:
+              "the model currently suits well-funded urban markets more than regions where food security is most urgent",
+            explanation:
+              "“Critics also point out” marks whose view this is. The sting is the mismatch it identifies: the technology is least available where the need is greatest.",
+          },
+          distractorNotes: {
+            "0": "Land use is the problem vertical farming answers — it needs less, not more. The passage's own framing inverted.",
+            "1": "Water appears only as something the method saves. Pollution is never raised at all.",
+            "3": "The opposite of the passage, which twice notes these farms sit within or near the cities they supply.",
+          },
         },
       ],
     },
@@ -334,6 +378,17 @@ Interpretation nonetheless demands caution. A wreck records what was being carri
             "They are usually undamaged by seawater",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "Unlike settlements, which were occupied, rebuilt and looted over centuries, a wreck captures a single moment",
+            explanation:
+              "The contrast is the argument: settlements accumulate change, a wreck stops. Everything after this sentence elaborates that one idea.",
+          },
+          distractorNotes: {
+            "0": "Accessibility is never discussed, and an underwater site is plainly harder to reach — the option contradicts common sense as well as the text.",
+            "2": "“Always” should stop you. The passage lists cargo and possessions; written records are never among them.",
+            "3": "Seawater damage is not mentioned. The passage's claim is about time, not preservation conditions.",
+          },
         },
         {
           id: "q2",
@@ -346,6 +401,17 @@ Interpretation nonetheless demands caution. A wreck records what was being carri
             "It carried no metal at all",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "What made the find remarkable was not any single item but their combined origins",
+            explanation:
+              "The passage answers this question in its own words — “not any single item but” tells you to look for a fact about the whole cargo, which the rest of the sentence supplies.",
+          },
+          distractorNotes: {
+            "0": "Gold is never listed. The cargo is copper, tin, glass, ivory, ebony and resin — valuable, but not what this option claims.",
+            "2": "It is dated, not ranked. A date invites you to assume a superlative the passage never makes.",
+            "3": "The reverse: copper and tin ingots are the first items named, and their ratio is the detail the paragraph dwells on.",
+          },
         },
         {
           id: "q3",
@@ -359,6 +425,17 @@ Interpretation nonetheless demands caution. A wreck records what was being carri
             "Most wrecks have already been looted",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "The archaeological record is therefore biased toward the durable and the valuable",
+            explanation:
+              "“Therefore” points back to the reason: perishable bulk cargo leaves little to find. The bias is in what survives, not in who is doing the looking.",
+          },
+          distractorNotes: {
+            "0": "A bias in the evidence is turned into a bias in the researchers. The passage blames survival, and warns historians about it rather than accusing them.",
+            "2": "Regulation is never mentioned anywhere in the passage.",
+            "3": "Looting appears, but as something that happens to settlements — the very thing wrecks are contrasted with in the first paragraph.",
+          },
         },
         {
           id: "q4",
@@ -372,6 +449,17 @@ Interpretation nonetheless demands caution. A wreck records what was being carri
             "Time capsules are a modern invention",
           ],
           correctIndex: 2,
+          evidence: {
+            quote:
+              "though the term understates how much interpretive work is required to read them",
+            explanation:
+              "“Understates” concedes the term is apt but incomplete. The whole final paragraph then demonstrates the interpretation it demands.",
+          },
+          distractorNotes: {
+            "0": "The exact opposite of “understates how much … work is required”.",
+            "1": "Too strong. The writer accepts the phrase and qualifies it — “understates” is not “wrong”, and inference questions punish that jump.",
+            "3": "True of the world, irrelevant to the passage. Nothing here concerns when the phrase was coined.",
+          },
         },
       ],
     },
@@ -402,6 +490,17 @@ The findings should not be overstated. The laboratory conditions were artificial
             "That sleep was rarely mentioned at all",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "hundreds of references to \"first sleep\" and \"second sleep\" — two distinct blocks separated by an hour or more of wakefulness",
+            explanation:
+              "The dash does the defining: the historical terms first, then what they mean. The question paraphrases that definition rather than the terms themselves.",
+          },
+          distractorNotes: {
+            "0": "Total duration is never compared with today. The finding is about the *shape* of the night, not its length.",
+            "2": "Winter appears in the last paragraph, as where the evidence is strongest — not as a time when nobody slept.",
+            "3": "“Hundreds of references” is the opposite of rarely mentioned, and it is the detail the sentence leads with.",
+          },
         },
         {
           id: "q2",
@@ -414,6 +513,16 @@ The findings should not be overstated. The laboratory conditions were artificial
             "They reported worse health outcomes",
           ],
           correctIndex: 2,
+          evidence: {
+            quote: "many gradually settled into a segmented pattern resembling the historical accounts",
+            explanation:
+              "Note “many”, not all — the passage is careful, and the correct option keeps that hedge. Options that harden a hedge into a certainty are usually wrong.",
+          },
+          distractorNotes: {
+            "0": "Fourteen hours is the darkness they were given, not the sleep they took. A number lifted from the sentence and attached to the wrong thing.",
+            "1": "Nothing suggests insomnia. The study found a different pattern of sleep, not an absence of it.",
+            "3": "Health outcomes are not reported. The passage's final point is in fact that treating waking as illness may do the harm.",
+          },
         },
         {
           id: "q3",
@@ -426,6 +535,17 @@ The findings should not be overstated. The laboratory conditions were artificial
             "Historical records were forged",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "The laboratory conditions were artificial in their own way, involving far more darkness than most people now experience, and the sample sizes were small.",
+            explanation:
+              "Both limitations sit in one sentence, and the paragraph opens by announcing them: “The findings should not be overstated.” Signposts like that mark where the caveats live.",
+          },
+          distractorNotes: {
+            "0": "The volunteers' ages are never given. An invented specific among genuine ones.",
+            "2": "Publication is not discussed, and the research is described as established work.",
+            "3": "The historical record is called incomplete for southern latitudes, which is a limit on its reach — not an accusation of forgery.",
+          },
         },
         {
           id: "q4",
@@ -437,6 +557,17 @@ The findings should not be overstated. The laboratory conditions were artificial
             "Brief night waking is not automatically a disorder",
             "Eight hours of sleep is always insufficient",
           ],
+          evidence: {
+            quote:
+              "that brief night waking is not automatically pathological, and that treating it as such may cause more anxiety than the waking itself",
+            explanation:
+              "The passage states its own conclusion and labels it “more modest but still useful”. Match that modesty: the answer is a denial of one claim, not an assertion of its opposite.",
+          },
+          distractorNotes: {
+            "0": "Far stronger than anything argued. The passage explicitly refuses to prescribe segmented sleep for everyone.",
+            "1": "Artificial light is offered as a partial explanation for consolidated sleep, never as something to prohibit.",
+            "3": "“Always” again. The passage questions treating eight hours as universal — it does not replace it with a rule of its own.",
+          },
           correctIndex: 2,
         },
       ],
@@ -476,6 +607,17 @@ Residents with questions about these changes, or who require a larger recycling 
             "It now only covers glass",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "Recycling will now be collected every Tuesday and Friday, instead of the previous Monday-only schedule.",
+            explanation:
+              "Notices state the new arrangement and the old one in the same line. “Instead of” separates them — take the days before it, not after.",
+          },
+          distractorNotes: {
+            "0": "A reduction, when the notice describes an increase from one day to two. Skimming for “change” without reading its direction produces this.",
+            "2": "Only general waste is described as unchanged; nothing is cancelled. The word never appears.",
+            "3": "Glass is one of three bin types listed further down, in a different section of the notice entirely.",
+          },
         },
         {
           id: "q2",
@@ -488,6 +630,17 @@ Residents with questions about these changes, or who require a larger recycling 
             "Outside the building entrance",
           ],
           correctIndex: 2,
+          evidence: {
+            quote:
+              "Recycling bins have been relocated from the basement car park to the ground-floor bin room, next to the main lobby",
+            explanation:
+              "“Relocated from … to …” gives both the old place and the new one. The question asks where they are now, so the words after “to” are the answer.",
+          },
+          distractorNotes: {
+            "0": "The old location, and the first place named in the sentence. Reading “from” as though it were “in” is exactly what this phrasing invites.",
+            "1": "Per-floor bins are never mentioned; the notice describes a single shared room.",
+            "3": "The bin room is inside, beside the lobby. Outside is a plausible guess about a block of flats, not something stated.",
+          },
         },
         {
           id: "q3",
@@ -495,6 +648,16 @@ Residents with questions about these changes, or who require a larger recycling 
           question: "What should residents do with cardboard boxes before recycling them?",
           options: ["Rinse them", "Flatten them", "Tie them together", "Label them"],
           correctIndex: 1,
+          evidence: {
+            quote: "Please flatten cardboard boxes before placing them in the bin to save space.",
+            explanation:
+              "The instruction comes with its reason attached. In notices, look for the imperative — “Please flatten” — rather than for the material being discussed.",
+          },
+          distractorNotes: {
+            "0": "Rinsing is required, but of plastic bottles and containers, in the list immediately before. The right instruction against the wrong material.",
+            "2": "Never mentioned, though it is what many buildings ask for — an assumption from experience rather than from the text.",
+            "3": "Labelling is not required anywhere in the notice.",
+          },
         },
         {
           id: "q4",
@@ -507,6 +670,17 @@ Residents with questions about these changes, or who require a larger recycling 
             "Wait until the next scheduled inspection",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "should contact the building office at least 48 hours before the next scheduled collection",
+            explanation:
+              "The final paragraph covers both questions and bin requests in one instruction. Note the 48 hours — General Training questions often hang on the condition attached to an action.",
+          },
+          distractorNotes: {
+            "0": "Taking another unit's bin is never sanctioned, and the notice's whole purpose is to route requests through the office.",
+            "2": "Plausible for a block of flats, but the notice names a specific channel. Where a procedure is given, an informal alternative is wrong.",
+            "3": "No inspection is mentioned anywhere. The only schedule in the notice is the collection one.",
+          },
         },
       ],
     },
@@ -541,6 +715,17 @@ Please note: A flexible working arrangement changes your working pattern permane
             "Only staff who work part-time",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "supports flexible working for all employees who have completed their six-month probation period",
+            explanation:
+              "“All employees who …” looks inclusive but carries a condition in its own clause. Read to the end of the sentence before deciding a policy applies to everyone.",
+          },
+          distractorNotes: {
+            "0": "Takes “all employees” and stops there, which is precisely the half-sentence the condition qualifies.",
+            "2": "Warehouse and driving staff are restricted to one option, not excluded. A limit on choice read as a limit on eligibility.",
+            "3": "Part-time contracts appear in the closing note, as a separate arrangement — not a prerequisite for this one.",
+          },
         },
         {
           id: "q2",
@@ -553,6 +738,17 @@ Please note: A flexible working arrangement changes your working pattern permane
             "All three options",
           ],
           correctIndex: 2,
+          evidence: {
+            quote:
+              "Warehouse and driving staff are eligible for staggered start times only, as their roles require on-site presence",
+            explanation:
+              "The exception comes after the general list and gives its own reason. Roles needing on-site presence rule out the home-based option, which is the logic behind the rule.",
+          },
+          distractorNotes: {
+            "0": "Hybrid working is the one option their roles cannot accommodate — the exact opposite of the exception.",
+            "1": "Compressed hours are open to other staff. Plausible for a warehouse, but not what the handbook grants.",
+            "3": "The general rule, applied to the group the sentence exists to exempt. “Only” is the word that decides this question.",
+          },
         },
         {
           id: "q3",
@@ -565,6 +761,17 @@ Please note: A flexible working arrangement changes your working pattern permane
             "To the company director",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "Submit a flexible working request form to your line manager, not to Human Resources.",
+            explanation:
+              "The handbook names the wrong destination as well as the right one, because it expects the mistake. Where a text says “not X”, X is usually among the options.",
+          },
+          distractorNotes: {
+            "0": "Explicitly ruled out in the same sentence — and the most natural assumption about an HR process, which is why it is spelled out.",
+            "2": "A department head appears one sentence later, and only to review a refusal. Right people, later stage.",
+            "3": "The director is never mentioned in the handbook.",
+          },
         },
         {
           id: "q4",
@@ -577,6 +784,17 @@ Please note: A flexible working arrangement changes your working pattern permane
             "The arrangement continues regardless",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "you will return to your previous pattern — this is not a disciplinary matter and is not recorded on your file",
+            explanation:
+              "Two reassurances follow the outcome, and the correct option keeps both. When a text goes out of its way to say what something is *not*, expect a question on it.",
+          },
+          distractorNotes: {
+            "0": "Directly contradicted by “not a disciplinary matter”. The handbook anticipates this worry and answers it.",
+            "2": "Nothing suggests dismissal; the passage describes returning to a previous pattern, which assumes the job continues.",
+            "3": "Reverses the point of a trial. The review exists precisely so an arrangement that is not working can end.",
+          },
         },
       ],
     },

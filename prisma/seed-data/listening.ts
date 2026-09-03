@@ -110,6 +110,17 @@ export const LISTENING_TESTS: ListeningSeed[] = [
             "Unlimited personal training",
           ],
           correctIndex: 0,
+          evidence: {
+            quote:
+              "the Basic plan, which gives you access to the gym floor and cardio equipment only",
+            explanation:
+              "“Only” is the whole answer. The plans are described as a ladder, each adding to the one before, so the first rung is defined by what it stops at.",
+          },
+          distractorNotes: {
+            "1": "Classes come with Standard, the next plan up. Every wrong option here is a real feature of a real plan — just not this one.",
+            "2": "Pool access is also Standard. It arrives in the same breath as classes, so mishearing which plan is being described costs both marks.",
+            "3": "Personal training is Premium, the top plan. It is the furthest thing from Basic in the list.",
+          },
         },
         {
           id: "q2",
@@ -117,6 +128,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
           question: "How much does the Standard plan cost per month?",
           options: ["$25", "$40", "$75", "$15"],
           correctIndex: 1,
+          evidence: {
+            quote: "The Standard plan adds group fitness classes and pool access, for forty dollars a month.",
+            explanation:
+              "The price comes at the end of the sentence, after two features. Write the figure against the plan name as soon as you hear it — three more numbers follow.",
+          },
+          distractorNotes: {
+            "0": "$25 is Basic, said one sentence earlier. In a rising list of prices, the previous figure is the easiest one to still have in your head.",
+            "2": "$75 is Premium, the next figure after this one.",
+            "3": "$15 is the joining fee, not a monthly price at all — a one-off charge dropped into the same run of numbers.",
+          },
         },
         {
           id: "q3",
@@ -129,6 +150,17 @@ export const LISTENING_TESTS: ListeningSeed[] = [
             "A free towel",
           ],
           correctIndex: 2,
+          evidence: {
+            quote:
+              "the Premium plan includes everything in Standard plus unlimited personal training sessions",
+            explanation:
+              "“Everything in Standard plus” tells you the answer is the part after “plus”. The question asks what Standard lacks, not what Premium contains.",
+          },
+          distractorNotes: {
+            "0": "Pool access is in Premium — but it is in Standard too, so it cannot be the difference. This is the trap the question is built around.",
+            "1": "Classes are likewise in both. Anything Standard already has is disqualified by the wording of the question.",
+            "3": "Never mentioned. Towels are the sort of gym detail a listener supplies from experience rather than from the recording.",
+          },
         },
         {
           id: "q4",
@@ -141,6 +173,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
             "Only for students",
           ],
           correctIndex: 2,
+          evidence: {
+            quote: "though that's waived if you sign up before the end of this month",
+            explanation:
+              "The condition arrives after “though”, tacked onto the end of the sentence that introduced the fee. Concessions in Section 1 almost always come as an afterthought like this.",
+          },
+          distractorNotes: {
+            "0": "The fee is introduced as applying to all plans, which is true until the very next clause reverses it. Stopping listening at the comma produces this answer.",
+            "1": "The fee is explicitly “for all plans”, so no single plan escapes it.",
+            "3": "Students are never mentioned. A plausible-sounding discount that the recording does not offer.",
+          },
         },
       ],
     },
@@ -165,6 +207,17 @@ export const LISTENING_TESTS: ListeningSeed[] = [
             "The café and gift shop",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "The first floor is dedicated to navigation instruments and maps, and it's also where you'll find our temporary exhibition",
+            explanation:
+              "The talk walks up the building one floor at a time. Track the floors in order as you listen rather than waiting for the one the question names.",
+          },
+          distractorNotes: {
+            "0": "Shipbuilding and the boat models are the ground floor, described immediately before this. Being one floor out is the whole difficulty of an orientation talk.",
+            "2": "The archive is the second floor, described immediately after. The other neighbour, and just as easy to slide into.",
+            "3": "The café is on the ground floor, and a gift shop is never mentioned at all.",
+          },
         },
         {
           id: "q2",
@@ -177,6 +230,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
             "Only by appointment",
           ],
           correctIndex: 2,
+          evidence: {
+            quote: "that's open to the public but only between one and four in the afternoon",
+            explanation:
+              "“Open to the public” and the restriction on it arrive in the same breath, split by “but”. The words after “but” are what the question is testing.",
+          },
+          distractorNotes: {
+            "0": "“Open to the public” is said, and would be the answer if the sentence stopped there. It does not.",
+            "1": "One to four is the afternoon. Morning is the plausible opposite for an archive, supplied by expectation rather than by the talk.",
+            "3": "No appointment is mentioned — but the bag-locker rule nearby makes the archive sound more restricted than it is.",
+          },
         },
         {
           id: "q3",
@@ -189,6 +252,17 @@ export const LISTENING_TESTS: ListeningSeed[] = [
             "They are only available on weekends",
           ],
           correctIndex: 2,
+          evidence: {
+            quote:
+              "are included in your ticket — there's no need to book, just turn up",
+            explanation:
+              "Two facts, both stated negatively: nothing more to pay, nothing to arrange. Options phrased as requirements are wrong precisely because the talk removes both.",
+          },
+          distractorNotes: {
+            "0": "The exact reverse of “no need to book”. Hearing the word “book” and not the “no” in front of it is the fastest way to lose this mark.",
+            "1": "“Included in your ticket” is the phrase that rules this out — again a negative doing the work.",
+            "3": "Times are given (eleven and two) but never days. An option that adds a restriction the talk never mentions.",
+          },
         },
         {
           id: "q4",
@@ -196,6 +270,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
           question: "What is this season's temporary exhibition about?",
           options: ["Lighthouse keepers", "Shipbuilding", "Harbour trade", "Antique maps"],
           correctIndex: 0,
+          evidence: {
+            quote: "our temporary exhibition, which this season is about lighthouse keepers",
+            explanation:
+              "The subject is attached to the exhibition in a subordinate clause, well inside a long sentence about the first floor. It is stated once and not returned to.",
+          },
+          distractorNotes: {
+            "1": "Shipbuilding is the ground floor's permanent subject — a real topic in this museum, just not the temporary show.",
+            "2": "The harbour's industrial history is mentioned on the ground floor; “harbour trade” is close enough to that to feel like it was said.",
+            "3": "Maps are on the first floor, in the very same sentence as the exhibition. The nearest word to the answer, and the wrong one.",
+          },
         },
       ],
     },
@@ -228,6 +312,16 @@ TUTOR: And remember the deadline for your ethics form is next Friday, which is a
             "Another student chose the same topic",
           ],
           correctIndex: 1,
+          evidence: {
+            quote: "but that turned out to be far too broad for the word count",
+            explanation:
+              "The student gives the reason themselves, before the tutor responds. In Section 3 the reason usually sits in the same turn as the decision, not in the reply to it.",
+          },
+          distractorNotes: {
+            "0": "The tutor calls it “a sensible decision” — approving a choice already made. Agreement after the fact is not instruction beforehand.",
+            "2": "Data is never the problem; the student later surveys all three hundred residents, which is the opposite of no data.",
+            "3": "No other student is mentioned anywhere in the tutorial.",
+          },
         },
         {
           id: "q2",
@@ -240,6 +334,16 @@ TUTOR: And remember the deadline for your ethics form is next Friday, which is a
             "Interviews were not permitted by the ethics committee",
           ],
           correctIndex: 1,
+          evidence: {
+            quote: "with three hundred residents I'd never have transcribed them in time",
+            explanation:
+              "The reason is practical, not academic. Note the concession before it — interviews would have been *better* — because the question asks why they were dropped anyway.",
+          },
+          distractorNotes: {
+            "0": "The student says the opposite: interviews “would have given richer detail”. The concession is there to make this option tempting.",
+            "2": "The tutor only asks what the method is, then calls the reasoning sound. Once again, approval after the decision.",
+            "3": "Ethics appear at the very end, as a form with a deadline. Nothing is forbidden — the word is simply in the recording.",
+          },
         },
         {
           id: "q3",
@@ -252,6 +356,16 @@ TUTOR: And remember the deadline for your ethics form is next Friday, which is a
             "They cannot be used in student projects",
           ],
           correctIndex: 2,
+          evidence: {
+            quote: "with closed questions, you only find out what you already thought to ask",
+            explanation:
+              "The opinion is flagged by “Just be careful”. When a tutor softens into a warning like that, the sentence after it is what the question wants.",
+          },
+          distractorNotes: {
+            "0": "Time pressure is the *student's* worry about interviews, transferred here to the wrong speaker and the wrong method.",
+            "1": "Never raised. Closed questions are in fact easier to answer, which is why this sounds wrong on reflection but passes in the moment.",
+            "3": "The tutor is advising on how to use them better, not ruling them out.",
+          },
         },
         {
           id: "q4",
@@ -264,6 +378,17 @@ TUTOR: And remember the deadline for your ethics form is next Friday, which is a
             "At the end of term",
           ],
           correctIndex: 1,
+          evidence: {
+            quote:
+              "the deadline for your ethics form is next Friday, which is a week before the draft itself is due",
+            explanation:
+              "Two dates in one sentence, one defined against the other. Fix the named one first, then place the second relative to it.",
+          },
+          distractorNotes: {
+            "0": "Both deadlines are in the sentence, which makes conflating them easy — but they are explicitly a week apart.",
+            "2": "The right gap in the wrong direction. The form comes first; that is the point of an ethics form.",
+            "3": "Term is never mentioned. A default academic deadline supplied from expectation.",
+          },
         },
       ],
     },
