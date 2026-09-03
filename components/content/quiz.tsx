@@ -20,11 +20,14 @@ export function Quiz({
   skill,
   title,
   contentItemId,
+  onSubmitted,
 }: {
   questions: QuizQuestion[];
   skill?: Skill;
   title: string;
   contentItemId?: string;
+  /** Lets a listening test reveal its transcript only once the answers are locked in. */
+  onSubmitted?: () => void;
 }) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -38,6 +41,7 @@ export function Quiz({
 
   function handleSubmit() {
     setSubmitted(true);
+    onSubmitted?.();
     startTransition(async () => {
       const result = await saveQuizProgressAction({
         skill,

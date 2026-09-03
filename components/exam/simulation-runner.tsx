@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
-import { AudioPlaceholder } from "@/components/content/audio-placeholder";
+import { ListeningPlayer } from "@/components/content/listening-player";
 import { SpeakingRecorder } from "@/components/content/speaking-recorder";
 import { countWords, gradeAll, isAnswered } from "@/lib/exam/grading";
 import { allQuestions, toGroups } from "@/lib/exam/schema";
@@ -533,7 +533,14 @@ export function SimulationRunner({
             </p>
           </div>
 
-          {currentSkill === "LISTENING" && <AudioPlaceholder label={set.listening.audioLabel} />}
+          {/* The sitting never shows the transcript, so this is the only way to hear the
+              listening leg — the same player the standalone listening papers use. */}
+          {currentSkill === "LISTENING" && (
+            <ListeningPlayer
+              transcript={set.listening.transcript}
+              label={set.listening.audioLabel}
+            />
+          )}
 
           <QuestionNavigator
             questions={questions}

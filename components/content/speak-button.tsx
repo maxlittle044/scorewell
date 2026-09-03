@@ -18,7 +18,7 @@ export function useSpeechSupported() {
 }
 
 /** Prefers a British English voice, since IELTS models RP most closely. */
-function pickVoice(): SpeechSynthesisVoice | null {
+export function pickVoice(): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices();
   return (
     voices.find((v) => v.lang.replace("_", "-").startsWith("en-GB")) ??

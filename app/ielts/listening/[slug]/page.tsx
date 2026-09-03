@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { AudioPlaceholder } from "@/components/content/audio-placeholder";
 import { CountdownTimer } from "@/components/content/countdown-timer";
-import { Quiz } from "@/components/content/quiz";
+import { ListeningTest } from "@/components/content/listening-test";
 import { TagList } from "@/components/content/tag-list";
 import { getListeningTest } from "@/lib/content/listening";
 import { titleFromSlug } from "@/lib/slug";
@@ -37,16 +36,13 @@ export default async function ListeningTestPage({
           <CountdownTimer minutes={10} />
         </div>
 
-        <AudioPlaceholder label={test.audioLabel} />
-
-        <details className="mb-8 rounded-xl border border-line bg-surface-muted p-5">
-          <summary className="cursor-pointer text-sm font-medium text-ink-body">
-            Show transcript
-          </summary>
-          <p className="mt-3 text-sm leading-relaxed text-ink-body">{test.transcript}</p>
-        </details>
-
-        <Quiz questions={test.questions} skill="LISTENING" title={test.title} contentItemId={test.id} />
+        <ListeningTest
+          questions={test.questions}
+          title={test.title}
+          contentItemId={test.id}
+          transcript={test.transcript}
+          audioLabel={test.audioLabel}
+        />
 
         <p className="mt-6 text-sm text-ink-muted">
           Prefer paper?{" "}
