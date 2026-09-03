@@ -56,8 +56,16 @@ export function ExamRunner({
   const elapsedSeconds = useElapsedSeconds();
 
   // Read inside the timer effect, which must not restart when answers change.
+  //
+  // Synced after commit rather than during render. React may abandon a render, and the ref
+  // would then hold answers from a pass that never reached the screen — with the auto-submit
+  // at zero reading it, that is the learner's paper being graded from a discarded render.
+  // Every reader runs after commit (a click, or the countdown effect), so nothing sees a
+  // stale value in practice.
   const answersRef = useRef(answers);
-  answersRef.current = answers;
+  useEffect(() => {
+    answersRef.current = answers;
+  }, [answers]);
 
   // Guards against double submission (manual click racing the timer's auto-submit).
   // A ref, not the `submitted` state, because the check has to happen outside render —

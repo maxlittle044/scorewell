@@ -26,7 +26,6 @@ export function VideoPlayer({ video, title }: { video: LessonVideo; title: strin
             preload="metadata"
             playsInline
             className="aspect-video w-full"
-            // eslint-disable-next-line jsx-a11y/media-has-caption
           >
             <source src={video.src} type="video/mp4" />
             {/*
