@@ -1,17 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useActionState, useState } from "react";
-import { SpeakingRecorder } from "@/components/content/speaking-recorder";
+import {
+  AiErrorBox,
+  SpeakingAnswerChecker,
+} from "@/components/content/speaking-answer-checker";
 import { PageHeader } from "@/components/layout/page-header";
-import {
-  CriterionFeedback,
-  TRANSCRIPT_PRONUNCIATION_NOTE,
-} from "@/components/tools/criterion-feedback";
-import {
-  checkSpeakingAction,
-  generateSpeakingSampleAction,
-} from "@/lib/ai/speaking-checker-actions";
+import { generateSpeakingSampleAction } from "@/lib/ai/speaking-checker-actions";
 
 const PARTS = [
   { key: "part1", label: "Part 1", prompt: "What kind of music do you enjoy listening to?" },
@@ -19,31 +14,10 @@ const PARTS = [
   { key: "part3", label: "Part 3", prompt: "Do you think reading habits have changed in the last decade?" },
 ] as const;
 
-function ErrorBox({ error, limitReached }: { error: string; limitReached?: boolean }) {
-  return (
-    <div
-      className={`mt-4 rounded-xl border px-4 py-3 text-sm ${
-        limitReached
-          ? "border-amber-200 bg-amber-50 text-amber-800"
-          : "border-red-200 bg-red-50 text-red-600"
-      }`}
-    >
-      {error}
-      {limitReached && (
-        <Link href="/pricing" className="ml-1 font-semibold underline hover:no-underline">
-          See plans
-        </Link>
-      )}
-    </div>
-  );
-}
-
 export default function SpeakingCheckerPage() {
   const [part, setPart] = useState<(typeof PARTS)[number]["key"]>("part1");
   const [mode, setMode] = useState<"check" | "generate">("check");
-  const [transcript, setTranscript] = useState("");
 
-  const [checkState, checkAction, checking] = useActionState(checkSpeakingAction, {});
   const [sampleState, sampleAction, generating] = useActionState(generateSpeakingSampleAction, {});
 
   const current = PARTS.find((p) => p.key === part)!;
@@ -97,36 +71,11 @@ export default function SpeakingCheckerPage() {
         </div>
 
         {mode === "check" ? (
-          <div>
-            <SpeakingRecorder transcript={transcript} onTranscriptChange={setTranscript} />
-
-            <form action={checkAction}>
-              <input type="hidden" name="part" value={part} />
-              <input type="hidden" name="prompt" value={current.prompt} />
-              <input type="hidden" name="transcript" value={transcript} />
-              <button
-                type="submit"
-                disabled={transcript.trim() === "" || checking}
-                className="mt-4 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
-              >
-                {checking ? "Checking…" : "Check with AI"}
-              </button>
-            </form>
-
-            {checkState.error && (
-              <ErrorBox error={checkState.error} limitReached={checkState.limitReached} />
-            )}
-
-            {checkState.result && (
-              <div className="mt-4">
-                <CriterionFeedback
-                  result={checkState.result}
-                  bandLabel="Estimated band"
-                  note={TRANSCRIPT_PRONUNCIATION_NOTE}
-                />
-              </div>
-            )}
-          </div>
+          // No title or contentItemId: an answer checked here belongs to no test, so it is
+          // saved against the skill alone rather than attributed to one.
+          // `key` remounts on a part switch, clearing a transcript written for the old
+          // question along with the feedback that went with it.
+          <SpeakingAnswerChecker key={part} part={part} prompt={current.prompt} />
         ) : (
           <form action={sampleAction}>
             <input type="hidden" name="part" value={part} />
@@ -140,7 +89,7 @@ export default function SpeakingCheckerPage() {
             </button>
 
             {sampleState.error && (
-              <ErrorBox error={sampleState.error} limitReached={sampleState.limitReached} />
+              <AiErrorBox error={sampleState.error} limitReached={sampleState.limitReached} />
             )}
 
             {sampleState.sample && (

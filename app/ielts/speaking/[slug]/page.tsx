@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SpeakingRecorder } from "@/components/content/speaking-recorder";
+import { SpeakingAnswerChecker } from "@/components/content/speaking-answer-checker";
 import { TagList } from "@/components/content/tag-list";
 import { getSpeakingTest } from "@/lib/content/speaking";
 import { titleFromSlug } from "@/lib/slug";
@@ -28,6 +28,12 @@ export default async function SpeakingTestPage({
   }
 
   const isCueCard = test.part === "part2";
+
+  // The examiner's side of the test, as one block of text for the model to mark against.
+  // A cue card is its topic plus its bullets; Parts 1 and 3 are a numbered run of questions.
+  const examinerPrompt = isCueCard
+    ? [test.questions[0], ...(test.cueCardPoints ?? []).map((point) => `- ${point}`)].join("\n")
+    : test.questions.map((question, index) => `${index + 1}. ${question}`).join("\n");
 
   return (
     <main className="flex flex-1 flex-col bg-surface">
@@ -60,18 +66,15 @@ export default async function SpeakingTestPage({
           </div>
         )}
 
-        <SpeakingRecorder />
-
-        <p className="mt-4 text-center text-sm text-ink-muted">
-          Want AI feedback on an answer?{" "}
-          <Link
-            href="/tools/speaking-part1-checker"
-            className="font-medium text-link hover:underline"
-          >
-            Use the speaking checker
-          </Link>
-          .
-        </p>
+        {/* Scored here rather than on the tool page it used to link out to: an answer checked
+            in the test's own context is saved against the test, so it reaches the learner's
+            history and this test's tile in the Exam Library. */}
+        <SpeakingAnswerChecker
+          part={test.part}
+          prompt={examinerPrompt}
+          title={test.title}
+          contentItemId={test.id}
+        />
 
         <p className="mt-6 text-sm text-ink-muted">
           Prefer paper?{" "}
