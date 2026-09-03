@@ -36,15 +36,17 @@ export type LibraryFilters = {
  * they are sat. That is a gap in what gets recorded, not one this file can paper over, and
  * inventing a state for them would be worse than showing none.
  *
- * The spec's third state, "in progress", is deliberately absent: an attempt is atomic here,
- * submitted or lost, so nothing in the database can distinguish a half-finished test from an
- * unopened one. It becomes real the day attempts are resumable.
+ * The spec's third state, "in progress", comes from the one place the database genuinely
+ * knows a test has been started and not finished: a `SimulationAttempt` still IN_PROGRESS
+ * whose leg for this skill carries no band. Standalone practice remains atomic — submitted
+ * or lost — so a test abandoned outside a sitting still reads as unattempted, which is all
+ * we can honestly say about it.
  */
 export type LearnerState = {
-  /** Best band across every attempt. */
-  bestBand: number;
-  /** How many times this learner has sat it. */
-  attempts: number;
+  /** Best band across every completed attempt, and how many there were. Null until one. */
+  best: { band: number; attempts: number } | null;
+  /** Sat as part of a full sitting this learner has not finished. */
+  inProgress: boolean;
 };
 
 export type LibraryTest = {
@@ -101,6 +103,15 @@ function matchesVariant(tags: string[], variant: Variant | null): boolean {
   return variant === "academic" ? hasAcademic : hasGeneral;
 }
 
+/** Null when there is nothing to say — no result and no open sitting — so the tile stays bare. */
+function learnerState(
+  best: { band: number; attempts: number } | null,
+  inProgress: boolean,
+): LearnerState | null {
+  if (!best && !inProgress) return null;
+  return { best, inProgress };
+}
+
 export async function getLibrary(
   filters: LibraryFilters,
   /** The signed-in reader, if there is one. Signed-out readers get no per-tile state. */
@@ -139,7 +150,7 @@ export async function getLibrary(
 
   // Two grouped queries rather than a pair per test: everyone's attempts for the "practised"
   // sort and the tile's count, and — only when someone is signed in — that reader's own.
-  const [counts, mine] = await Promise.all([
+  const [counts, mine, sittings] = await Promise.all([
     prisma.progress.groupBy({
       by: ["contentItemId"],
       where: { contentItemId: { in: visibleIds } },
@@ -159,14 +170,46 @@ export async function getLibrary(
           _max: { bandScore: true },
         })
       : Promise.resolve([]),
+    // A sitting still open. Its per-skill bands say which legs are finished; the rest are
+    // the tests this learner is in the middle of.
+    userId
+      ? prisma.simulationAttempt.findMany({
+          where: { userId, status: "IN_PROGRESS" },
+          select: {
+            sourceTestSet: true,
+            listeningBand: true,
+            readingBand: true,
+            writingBand: true,
+            speakingBand: true,
+          },
+        })
+      : Promise.resolve([]),
   ]);
 
   const attemptsById = new Map(counts.map((row) => [row.contentItemId, row._count._all]));
-  const learnerById = new Map<string, LearnerState>();
+
+  const bestById = new Map<string, { band: number; attempts: number }>();
   for (const row of mine) {
-    const bestBand = row._max.bandScore;
-    if (row.contentItemId === null || bestBand === null) continue;
-    learnerById.set(row.contentItemId, { bestBand, attempts: row._count._all });
+    const band = row._max.bandScore;
+    if (row.contentItemId === null || band === null) continue;
+    bestById.set(row.contentItemId, { band, attempts: row._count._all });
+  }
+
+  // "<collection>|<SKILL>" for every leg of an open sitting that has no band yet. Writing and
+  // Speaking legs hold no band until something evaluates them, so an unfinished sitting is
+  // the only thing this is read against — a completed one is not in progress whatever its
+  // bands say.
+  const openLegs = new Set<string>();
+  for (const sitting of sittings) {
+    const legs: [Skill, number | null][] = [
+      ["LISTENING", sitting.listeningBand],
+      ["READING", sitting.readingBand],
+      ["WRITING", sitting.writingBand],
+      ["SPEAKING", sitting.speakingBand],
+    ];
+    for (const [skill, band] of legs) {
+      if (band === null) openLegs.add(`${sitting.sourceTestSet}|${skill}`);
+    }
   }
 
   const collections = new Map<string, LibraryTest[]>();
@@ -180,7 +223,10 @@ export async function getLibrary(
       skill,
       href: `${SKILL_PATHS[skill]}/${item.slug}`,
       attempts: attemptsById.get(item.id) ?? 0,
-      learner: learnerById.get(item.id) ?? null,
+      learner: learnerState(
+        bestById.get(item.id) ?? null,
+        item.sourceTestSet !== null && openLegs.has(`${item.sourceTestSet}|${skill}`),
+      ),
     });
     collections.set(name, list);
   }

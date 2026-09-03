@@ -33,16 +33,31 @@ function CollectionCover({ name }: { name: string }) {
 }
 
 /**
- * The reader's own result on a test (section 4a). Shown only when they have one — an
- * "unattempted" badge on every other tile would be a page full of labels reporting that
- * nothing has happened.
+ * The reader's own standing on a test (section 4a). Rendered only when there is something to
+ * report — an "unattempted" badge on every other tile would be a page full of labels saying
+ * nothing has happened. Both states can be true at once: a learner with a result from earlier
+ * practice can also be partway through a sitting that includes this test.
  */
 function LearnerBadge({ state }: { state: LearnerState }) {
   return (
-    <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700">
-      Your best: Band {state.bestBand.toFixed(1)}
-      {state.attempts > 1 && (
-        <span className="font-normal text-brand-700/70">· {state.attempts} attempts</span>
+    <span className="mt-2 flex flex-wrap items-center gap-1.5">
+      {state.inProgress && (
+        <span
+          // The sitting is unfinished; which of its legs the learner is actually on is not
+          // recorded, so the title says what we do know rather than implying more.
+          title="Part of a full sitting you haven't finished yet"
+          className="inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-700"
+        >
+          In progress
+        </span>
+      )}
+      {state.best && (
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700">
+          Your best: Band {state.best.band.toFixed(1)}
+          {state.best.attempts > 1 && (
+            <span className="font-normal text-brand-700/70">· {state.best.attempts} attempts</span>
+          )}
+        </span>
       )}
     </span>
   );
