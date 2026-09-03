@@ -7,6 +7,9 @@ const ListeningQuestionSchema = z.object({
   options: z.array(z.string()),
   correctIndex: z.number(),
   type: z.string().optional(),
+  /** Quoted from the transcript, so review can both show and replay the line. */
+  evidence: z.object({ quote: z.string().optional(), explanation: z.string() }).optional(),
+  distractorNotes: z.record(z.string(), z.string()).optional(),
 });
 
 const ListeningDataSchema = z.object({

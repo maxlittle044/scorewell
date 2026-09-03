@@ -64,6 +64,7 @@ export function ListeningTest({
         title={title}
         contentItemId={contentItemId}
         onSubmitted={() => setSubmitted(true)}
+        speakEvidence
       />
     </div>
   );

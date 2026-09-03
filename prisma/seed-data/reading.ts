@@ -7,6 +7,15 @@ export type QuizQuestion = {
   correctIndex: number;
   /** IELTS sub-skill this question tests, for mistake analytics. */
   type?: string;
+  /**
+   * Where the answer came from and why, shown after submission. `quote` must be copied
+   * verbatim from the passage or transcript — scripts/check-evidence-quotes.ts enforces it,
+   * because a quote that does not match highlights nothing and, on a listening test, would
+   * have review speak words the recording never said.
+   */
+  evidence?: { quote?: string; explanation: string };
+  /** Why one particular wrong option tempts, keyed by that option's index as a string. */
+  distractorNotes?: Record<string, string>;
 };
 
 export type ReadingSeed = {

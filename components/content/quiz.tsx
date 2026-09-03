@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import Link from "next/link";
+import { SpeakButton } from "./speak-button";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
 import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
@@ -13,7 +14,62 @@ export type QuizQuestion = {
   correctIndex: number;
   /** IELTS sub-skill, used for Premium mistake analytics. */
   type?: string;
+  /** Where the answer came from and why it's right — shown once the answers are locked. */
+  evidence?: { quote?: string; explanation: string };
+  /** Why a particular wrong option is wrong, keyed by option index. */
+  distractorNotes?: Record<string, string>;
 };
+
+/**
+ * The post-submission explanation for one question — the same "Locate & Explain" treatment
+ * the full exam runner gives, which every Quiz-based paper (listening, mini exercises,
+ * grammar) previously went without: they marked the answer right or wrong and said no more.
+ *
+ * Renders nothing when the question carries no explanation, rather than an empty box
+ * promising review that was never written.
+ */
+function Review({
+  question,
+  chosen,
+  speak,
+}: {
+  question: QuizQuestion;
+  chosen: number | undefined;
+  speak: boolean;
+}) {
+  const gotItWrong = chosen !== undefined && chosen !== question.correctIndex;
+  const distractorNote = gotItWrong ? question.distractorNotes?.[String(chosen)] : undefined;
+  if (!question.evidence && !distractorNote) return null;
+
+  return (
+    <div className="mt-4 rounded-lg bg-surface-muted px-4 py-3 text-sm">
+      {distractorNote && (
+        <p className="text-ink-body">
+          <span className="font-semibold">Why that one tempts:</span> {distractorNote}
+        </p>
+      )}
+
+      {question.evidence && (
+        <div className={distractorNote ? "mt-2" : undefined}>
+          {question.evidence.quote ? (
+            <div className="flex flex-wrap items-baseline gap-2">
+              <p className="text-ink-body">
+                <span className="font-semibold">
+                  {speak ? "Where you heard it:" : "Where it says so:"}
+                </span>{" "}
+                <span className="bg-accent-100 px-1">“{question.evidence.quote}”</span>
+              </p>
+              {speak && <SpeakButton text={question.evidence.quote} variant="chip">Replay</SpeakButton>}
+            </div>
+          ) : (
+            <p className="font-semibold text-ink-body">Why:</p>
+          )}
+          <p className="mt-1.5 text-ink-body">{question.evidence.explanation}</p>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function Quiz({
   questions,
@@ -21,6 +77,7 @@ export function Quiz({
   title,
   contentItemId,
   onSubmitted,
+  speakEvidence = false,
 }: {
   questions: QuizQuestion[];
   skill?: Skill;
@@ -28,6 +85,11 @@ export function Quiz({
   contentItemId?: string;
   /** Lets a listening test reveal its transcript only once the answers are locked in. */
   onSubmitted?: () => void;
+  /**
+   * Offers to replay the quoted line. Only meaningful where the passage was heard rather
+   * than read — on a reading test the quote is already on screen.
+   */
+  speakEvidence?: boolean;
 }) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -99,6 +161,8 @@ export function Quiz({
               );
             })}
           </div>
+
+          {submitted && <Review question={q} chosen={answers[q.id]} speak={speakEvidence} />}
         </fieldset>
       ))}
 

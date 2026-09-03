@@ -13,7 +13,14 @@ import { z } from "zod";
  * form / diagram completion are all "type a word, respecting a word limit").
  */
 
-/** Locate & Explain data: where the answer lives and why it's right. */
+/**
+ * Locate & Explain data: where the answer lives and why it's right.
+ *
+ * There is no audio timestamp here on purpose. Listening audio is spoken from this same
+ * transcript by the browser, so the quote *is* the position — and unlike a timestamp it stays
+ * correct whatever rate or voice the reader's device uses. Review replays the quoted line
+ * rather than seeking to a second that would drift the moment the voice changed.
+ */
 const EvidenceSchema = z.object({
   /**
    * Verbatim sentence from the passage/transcript, highlighted in place during review.
@@ -22,8 +29,6 @@ const EvidenceSchema = z.object({
    */
   quote: z.string().optional(),
   explanation: z.string(),
-  /** Listening only: seconds into the audio, so review can jump the playhead. */
-  audioSeconds: z.number().optional(),
 });
 
 const BaseFields = {

@@ -24,6 +24,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
           question: "What type of room is the caller applying for?",
           options: ["A shared room", "A single room", "A studio apartment", "A family room"],
           correctIndex: 1,
+          evidence: {
+            quote: "A single room, understood.",
+            explanation:
+              "The speaker offers both options, then confirms the choice back. The confirmation is the answer — not the question that precedes it.",
+          },
+          distractorNotes: {
+            "0": "“share with another student” is said aloud, but as the alternative being offered, not the one taken. Section 1 routinely voices the option you did not choose.",
+            "2": "Never mentioned. Studio apartments belong to the vocabulary of housing generally, not to this recording.",
+            "3": "Never mentioned. Only single and shared rooms are discussed.",
+          },
         },
         {
           id: "q2",
@@ -31,6 +41,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
           question: "Which building is closest to the library?",
           options: ["Cedar House", "Birchwood", "Maple Hall", "None of them"],
           correctIndex: 2,
+          evidence: {
+            quote: "Maple Hall, which is closest to the library",
+            explanation:
+              "Three buildings are listed in one breath, each with one distinguishing feature attached. The feature you need is stated immediately after the name.",
+          },
+          distractorNotes: {
+            "0": "Cedar House is described by distance too — “a fifteen-minute walk from the main campus” — but from campus, not the library. Same kind of fact, different landmark.",
+            "1": "Birchwood is defined by its kitchens and, later, its cleaning service. Nothing is said about its distance from anything.",
+            "3": "One building is named explicitly, so this can be ruled out without recalling which.",
+          },
         },
         {
           id: "q3",
@@ -38,6 +58,16 @@ export const LISTENING_TESTS: ListeningSeed[] = [
           question: "Which building includes a weekly cleaning service?",
           options: ["Maple Hall", "Cedar House", "Birchwood", "All three"],
           correctIndex: 2,
+          evidence: {
+            quote: "All three include utilities, but only Birchwood includes a weekly cleaning service.",
+            explanation:
+              "The sentence contrasts what every building offers with what one does. “Only” is doing the work — listen for it, because it is what separates the answer from the trap.",
+          },
+          distractorNotes: {
+            "0": "Maple Hall's distinguishing feature is the library, mentioned much earlier. Nothing about cleaning attaches to it.",
+            "1": "Cedar House is the cheapest and the furthest out. Its low price makes extra services feel unlikely, and the recording never grants it any.",
+            "3": "“All three” is true of utilities in the very same sentence. Answering from the first half of a contrast is the mistake this question is built to catch.",
+          },
         },
         {
           id: "q4",
@@ -45,6 +75,17 @@ export const LISTENING_TESTS: ListeningSeed[] = [
           question: "What is the monthly rent for Cedar House?",
           options: ["$350", "$390", "$420", "$400"],
           correctIndex: 0,
+          evidence: {
+            quote:
+              "Rent for Maple Hall starts at four hundred and twenty dollars a month, Birchwood at three hundred and ninety, and Cedar House at three hundred and fifty.",
+            explanation:
+              "Three figures arrive in one sentence, in a different order from the options. Note them against the building names as you hear them; there is no second chance to pair them up.",
+          },
+          distractorNotes: {
+            "1": "$390 is Birchwood, named immediately before Cedar House. Slipping one place in a spoken list is the most common way to lose this mark.",
+            "2": "$420 is Maple Hall, the first figure given and the easiest to still be holding when the third arrives.",
+            "3": "$400 is not said at all. It sits between the real figures and sounds plausible if you remember the shape of the number but not the number.",
+          },
         },
       ],
     },
