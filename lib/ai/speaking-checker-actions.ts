@@ -40,6 +40,7 @@ export async function checkSpeakingAction(
   // Absent on the standalone tool page, where the attempt belongs to no test.
   const contentItemId = String(formData.get("contentItemId") ?? "").trim() || null;
   const title = String(formData.get("title") ?? "").trim();
+  const durationSeconds = Number(formData.get("durationSeconds")) || undefined;
 
   if (!transcript) {
     return { error: "Record or type your answer before checking." };
@@ -59,6 +60,7 @@ export async function checkSpeakingAction(
       band: result.overallBand,
       taskType: title || PART_LABELS[part],
       contentItemId,
+      durationSeconds,
     });
     return { result };
   } catch (error) {

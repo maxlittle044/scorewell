@@ -36,6 +36,7 @@ export async function checkWritingAction(
   // Both are absent on the standalone tool pages, where the attempt belongs to no test.
   const contentItemId = String(formData.get("contentItemId") ?? "").trim() || null;
   const title = String(formData.get("title") ?? "").trim();
+  const durationSeconds = Number(formData.get("durationSeconds")) || undefined;
 
   if (!essayText) {
     return { error: "Please write a response before checking." };
@@ -55,6 +56,7 @@ export async function checkWritingAction(
       band: result.overallBand,
       taskType: title || TASK_LABELS[taskType],
       contentItemId,
+      durationSeconds,
     });
     return { result };
   } catch (error) {

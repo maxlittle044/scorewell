@@ -3,23 +3,13 @@
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { rawScoreToBand } from "@/lib/band-conversion";
+// One definition of the cap, shared with the AI-scored path so both kinds of attempt are
+// measured to the same rules.
+import { sanitiseDuration } from "@/lib/progress";
 import type { Skill } from "@/generated/prisma/enums";
 
 /** One question's outcome, stored on Progress.details for mistake analytics. */
 export type QuestionOutcome = { id: string; type?: string; correct: boolean };
-
-/**
- * Longest single attempt we'll count as study time. Even the full Reading paper is an
- * hour, so anything beyond three is a tab left open rather than work done — counting it
- * would quietly inflate the dashboard's total.
- */
-const MAX_ATTEMPT_SECONDS = 3 * 60 * 60;
-
-/** Discards nonsense (negative, absurd, non-finite) rather than storing it. */
-function sanitiseDuration(seconds: number | undefined): number | null {
-  if (seconds === undefined || !Number.isFinite(seconds) || seconds <= 0) return null;
-  return Math.min(Math.round(seconds), MAX_ATTEMPT_SECONDS);
-}
 
 export async function saveQuizProgressAction(params: {
   skill?: Skill;

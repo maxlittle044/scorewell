@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useActionState, useState } from "react";
+import { useActionState, useRef, useState } from "react";
+import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
 import { SpeakingRecorder } from "@/components/content/speaking-recorder";
 import {
   CriterionFeedback,
@@ -60,6 +61,9 @@ export function SpeakingAnswerChecker({
   const [transcript, setTranscript] = useState("");
   const [state, formAction, checking] = useActionState(checkSpeakingAction, {});
 
+  const elapsedSeconds = useElapsedSeconds();
+  const durationRef = useRef<HTMLInputElement>(null);
+
   return (
     <div>
       <SpeakingRecorder transcript={transcript} onTranscriptChange={setTranscript} />
@@ -70,9 +74,15 @@ export function SpeakingAnswerChecker({
         <input type="hidden" name="transcript" value={transcript} />
         {title && <input type="hidden" name="title" value={title} />}
         {contentItemId && <input type="hidden" name="contentItemId" value={contentItemId} />}
+        {/* Only timed when the attempt belongs to a test — see WritingEditor for why this is
+            written from the click rather than during render. */}
+        {contentItemId && <input ref={durationRef} type="hidden" name="durationSeconds" />}
 
         <button
           type="submit"
+          onClick={() => {
+            if (durationRef.current) durationRef.current.value = String(elapsedSeconds() ?? "");
+          }}
           disabled={transcript.trim() === "" || checking}
           className="mt-4 rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
         >

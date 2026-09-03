@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useActionState, useState } from "react";
+import { useActionState, useRef, useState } from "react";
+import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
 import { checkWritingAction } from "@/lib/ai/writing-checker-actions";
 import type { WritingTaskType } from "@/lib/ai/writing-checker";
 import { shareAnswerAction } from "@/lib/submission-actions";
@@ -25,6 +26,9 @@ export function WritingEditor({
   const [state, formAction, pending] = useActionState(checkWritingAction, {});
   const [shareState, shareAction, sharing] = useActionState(shareAnswerAction, {});
 
+  const elapsedSeconds = useElapsedSeconds();
+  const durationRef = useRef<HTMLInputElement>(null);
+
   const wordCount = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
 
   return (
@@ -45,6 +49,10 @@ export function WritingEditor({
             than as a loose "Writing Task 2" entry. Absent on the tool pages. */}
         {title && <input type="hidden" name="title" value={title} />}
         {contentItemId && <input type="hidden" name="contentItemId" value={contentItemId} />}
+        {/* Only timed when the attempt belongs to a test. Written from the button's onClick
+            rather than during render, because the figure has to be the time at submission,
+            not the time this input last happened to render. */}
+        {contentItemId && <input ref={durationRef} type="hidden" name="durationSeconds" />}
 
         <div className="mt-3 flex items-center justify-between">
           <span className={`text-sm ${wordCount < minWords ? "text-rose-600" : "text-emerald-600"}`}>
@@ -53,6 +61,9 @@ export function WritingEditor({
 
           <button
             type="submit"
+            onClick={() => {
+              if (durationRef.current) durationRef.current.value = String(elapsedSeconds() ?? "");
+            }}
             disabled={wordCount === 0 || pending}
             className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-line-strong"
           >

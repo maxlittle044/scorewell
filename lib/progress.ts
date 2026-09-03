@@ -2,6 +2,19 @@ import { prisma } from "@/lib/prisma";
 import type { Skill } from "@/generated/prisma/enums";
 
 /**
+ * Longest single attempt we'll count as study time. Even the full Reading paper is an hour,
+ * so anything beyond three is a tab left open rather than work done — counting it would
+ * quietly inflate the dashboard's total.
+ */
+export const MAX_ATTEMPT_SECONDS = 3 * 60 * 60;
+
+/** Discards nonsense (negative, absurd, non-finite) rather than storing it. */
+export function sanitiseDuration(seconds: number | undefined): number | null {
+  if (seconds === undefined || !Number.isFinite(seconds) || seconds <= 0) return null;
+  return Math.min(Math.round(seconds), MAX_ATTEMPT_SECONDS);
+}
+
+/**
  * Records an AI-scored Writing or Speaking attempt as a `Progress` row.
  *
  * Until this existed, only the exam runner wrote progress, so Reading and Listening were the
@@ -28,6 +41,12 @@ export async function recordAiBandProgress(params: {
   taskType: string;
   /** Set when the attempt was made on a practice test's own page. */
   contentItemId?: string | null;
+  /**
+   * Seconds from opening the test to asking for the check. Sent only from a test page,
+   * where the learner is sitting the task in front of us; a tool-page check is left
+   * untimed because the essay pasted into it may have been written anywhere.
+   */
+  durationSeconds?: number;
 }): Promise<void> {
   try {
     // The id arrives from a form field, so it is checked rather than trusted: a stale or
@@ -49,6 +68,7 @@ export async function recordAiBandProgress(params: {
         taskType: params.taskType,
         contentItemId,
         bandScore: params.band,
+        durationSeconds: sanitiseDuration(params.durationSeconds),
       },
     });
   } catch (error) {
