@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
+import { auth } from "@/auth";
 import { LibraryFilters } from "@/components/exam/library-filters";
 import { countTests, getLibrary, parseFilters } from "@/lib/content/exam-library";
+import type { LearnerState } from "@/lib/content/exam-library";
 import type { Skill } from "@/generated/prisma/enums";
 
 export const metadata: Metadata = {
@@ -30,11 +32,28 @@ function CollectionCover({ name }: { name: string }) {
   );
 }
 
+/**
+ * The reader's own result on a test (section 4a). Shown only when they have one — an
+ * "unattempted" badge on every other tile would be a page full of labels reporting that
+ * nothing has happened.
+ */
+function LearnerBadge({ state }: { state: LearnerState }) {
+  return (
+    <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700">
+      Your best: Band {state.bestBand.toFixed(1)}
+      {state.attempts > 1 && (
+        <span className="font-normal text-brand-700/70">· {state.attempts} attempts</span>
+      )}
+    </span>
+  );
+}
+
 export default async function ExamLibraryPage({
   searchParams,
 }: PageProps<"/exam-library">) {
-  const filters = parseFilters(await searchParams);
-  const collections = await getLibrary(filters);
+  const [params, session] = await Promise.all([searchParams, auth()]);
+  const filters = parseFilters(params);
+  const collections = await getLibrary(filters, session?.user?.id);
   const total = countTests(collections);
 
   return (
@@ -95,6 +114,7 @@ export default async function ExamLibraryPage({
                                 </>
                               )}
                             </p>
+                            {test.learner && <LearnerBadge state={test.learner} />}
                           </Link>
                         ))}
                       </div>

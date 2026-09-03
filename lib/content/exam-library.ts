@@ -24,6 +24,29 @@ export type LibraryFilters = {
   sort: Sort;
 };
 
+/**
+ * What the signed-in learner has done with one test (section 4a: "a completion state for
+ * signed-in learners"). `null` for signed-out readers, and for a test they have never sat —
+ * the tile then shows nothing at all rather than an "unattempted" badge, which would put a
+ * label on every tile on the page to say nothing had happened.
+ *
+ * **Only Reading and Listening can populate this today.** Those run through the exam runner,
+ * which writes a `Progress` row on submit. A Writing or Speaking attempt is checked by the AI
+ * and then forgotten — nothing persists it — so those tiles stay blank however many times
+ * they are sat. That is a gap in what gets recorded, not one this file can paper over, and
+ * inventing a state for them would be worse than showing none.
+ *
+ * The spec's third state, "in progress", is deliberately absent: an attempt is atomic here,
+ * submitted or lost, so nothing in the database can distinguish a half-finished test from an
+ * unopened one. It becomes real the day attempts are resumable.
+ */
+export type LearnerState = {
+  /** Best band across every attempt. */
+  bestBand: number;
+  /** How many times this learner has sat it. */
+  attempts: number;
+};
+
 export type LibraryTest = {
   slug: string;
   title: string;
@@ -31,6 +54,8 @@ export type LibraryTest = {
   href: string;
   /** Real attempt count from Progress. Zero renders as nothing, never as a seeded figure. */
   attempts: number;
+  /** This reader's own history with the test, or null if they have none. */
+  learner: LearnerState | null;
 };
 
 export type LibraryCollection = {
@@ -76,7 +101,11 @@ function matchesVariant(tags: string[], variant: Variant | null): boolean {
   return variant === "academic" ? hasAcademic : hasGeneral;
 }
 
-export async function getLibrary(filters: LibraryFilters): Promise<LibraryCollection[]> {
+export async function getLibrary(
+  filters: LibraryFilters,
+  /** The signed-in reader, if there is one. Signed-out readers get no per-tile state. */
+  userId?: string | null,
+): Promise<LibraryCollection[]> {
   const items = await prisma.contentItem.findMany({
     where: {
       contentType: "PRACTICE_TEST",
@@ -106,13 +135,39 @@ export async function getLibrary(filters: LibraryFilters): Promise<LibraryCollec
 
   const visible = items.filter((item) => item.skill && matchesVariant(item.tags, filters.variant));
 
-  // One grouped count query rather than a per-test count.
-  const counts = await prisma.progress.groupBy({
-    by: ["contentItemId"],
-    where: { contentItemId: { in: visible.map((item) => item.id) } },
-    _count: { _all: true },
-  });
+  const visibleIds = visible.map((item) => item.id);
+
+  // Two grouped queries rather than a pair per test: everyone's attempts for the "practised"
+  // sort and the tile's count, and — only when someone is signed in — that reader's own.
+  const [counts, mine] = await Promise.all([
+    prisma.progress.groupBy({
+      by: ["contentItemId"],
+      where: { contentItemId: { in: visibleIds } },
+      _count: { _all: true },
+    }),
+    userId
+      ? prisma.progress.groupBy({
+          by: ["contentItemId"],
+          where: {
+            userId,
+            contentItemId: { in: visibleIds },
+            // A row with no band cannot report a best band, and counting it would let the
+            // attempt tally disagree with the band it sits next to.
+            bandScore: { not: null },
+          },
+          _count: { _all: true },
+          _max: { bandScore: true },
+        })
+      : Promise.resolve([]),
+  ]);
+
   const attemptsById = new Map(counts.map((row) => [row.contentItemId, row._count._all]));
+  const learnerById = new Map<string, LearnerState>();
+  for (const row of mine) {
+    const bestBand = row._max.bandScore;
+    if (row.contentItemId === null || bestBand === null) continue;
+    learnerById.set(row.contentItemId, { bestBand, attempts: row._count._all });
+  }
 
   const collections = new Map<string, LibraryTest[]>();
   for (const item of visible) {
@@ -125,6 +180,7 @@ export async function getLibrary(filters: LibraryFilters): Promise<LibraryCollec
       skill,
       href: `${SKILL_PATHS[skill]}/${item.slug}`,
       attempts: attemptsById.get(item.id) ?? 0,
+      learner: learnerById.get(item.id) ?? null,
     });
     collections.set(name, list);
   }
