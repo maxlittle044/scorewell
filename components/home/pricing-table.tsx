@@ -104,7 +104,10 @@ export function PricingTable({ currency = BASE_CURRENCY }: { currency?: Currency
             </ul>
           </div>
 
-          <div className="relative overflow-hidden rounded-2xl border-2 border-brand-600 bg-linear-to-b from-brand-50/60 to-surface p-6 shadow-glow">
+          {/* No `overflow-hidden`: the "Premium" badge below is deliberately positioned above
+              the card's top edge, and clipping the card cut it in half. The gradient is
+              bounded by the border radius on its own. */}
+          <div className="relative rounded-2xl border-2 border-brand-600 bg-linear-to-b from-brand-50/60 to-surface p-6 shadow-glow">
             <span className="absolute -top-3 left-6 rounded-full bg-linear-to-r from-brand-600 to-pop-600 px-3 py-1 text-xs font-semibold text-white">
               Premium
             </span>
