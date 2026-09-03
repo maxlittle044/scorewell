@@ -164,6 +164,7 @@ const NE: Record<string, string> = {
   "Feature requests": "सुविधा अनुरोध",
   "What's new": "नयाँ के छ",
   "Success stories": "सफलताका कथा",
+  Careers: "करियर",
   "Privacy policy": "गोपनीयता नीति",
   "Terms & conditions": "नियम तथा सर्त",
   Disclaimers: "अस्वीकरण",

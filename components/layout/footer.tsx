@@ -25,6 +25,7 @@ const COMPANY = [
   { label: "Feature requests", href: "/feature-requests" },
   { label: "What's new", href: "/announcements" },
   { label: "Success stories", href: "/success-stories" },
+  { label: "Careers", href: "/careers" },
 ];
 
 const LEGAL = [
