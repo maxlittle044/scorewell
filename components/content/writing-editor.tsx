@@ -41,6 +41,10 @@ export function WritingEditor({
         <input type="hidden" name="essayText" value={text} />
         <input type="hidden" name="taskType" value={taskType} />
         {examPrompt && <input type="hidden" name="examPrompt" value={examPrompt} />}
+        {/* Identify the test being sat, so the scored attempt is saved against it rather
+            than as a loose "Writing Task 2" entry. Absent on the tool pages. */}
+        {title && <input type="hidden" name="title" value={title} />}
+        {contentItemId && <input type="hidden" name="contentItemId" value={contentItemId} />}
 
         <div className="mt-3 flex items-center justify-between">
           <span className={`text-sm ${wordCount < minWords ? "text-rose-600" : "text-emerald-600"}`}>

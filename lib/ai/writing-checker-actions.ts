@@ -4,6 +4,7 @@ import { describeAiError } from "./anthropic";
 import { checkWritingAnswer, generateSampleAnswer, type WritingTaskType } from "./writing-checker";
 import type { WritingCheckResult } from "./writing-checker";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "./usage";
+import { recordAiBandProgress } from "@/lib/progress";
 
 export type CheckActionState = {
   result?: WritingCheckResult;
@@ -18,6 +19,13 @@ function parseTaskType(value: FormDataEntryValue | null): WritingTaskType {
   return TASK_TYPES.includes(value as WritingTaskType) ? (value as WritingTaskType) : "task2";
 }
 
+/** What the attempt is called on the dashboard when it was not sat on a test's own page. */
+const TASK_LABELS: Record<WritingTaskType, string> = {
+  "task1-academic": "Writing Task 1 (Academic)",
+  "task1-general": "Writing Task 1 (General)",
+  task2: "Writing Task 2",
+};
+
 export async function checkWritingAction(
   _prevState: CheckActionState,
   formData: FormData,
@@ -25,6 +33,9 @@ export async function checkWritingAction(
   const essayText = String(formData.get("essayText") ?? "").trim();
   const taskType = parseTaskType(formData.get("taskType"));
   const examPrompt = String(formData.get("examPrompt") ?? "").trim() || undefined;
+  // Both are absent on the standalone tool pages, where the attempt belongs to no test.
+  const contentItemId = String(formData.get("contentItemId") ?? "").trim() || null;
+  const title = String(formData.get("title") ?? "").trim();
 
   if (!essayText) {
     return { error: "Please write a response before checking." };
@@ -38,6 +49,13 @@ export async function checkWritingAction(
   try {
     const result = await checkWritingAnswer({ taskType, essayText, examPrompt });
     await recordAiUsage(quota.userId, `writing-check:${taskType}`, quota.source);
+    await recordAiBandProgress({
+      userId: quota.userId,
+      skill: "WRITING",
+      band: result.overallBand,
+      taskType: title || TASK_LABELS[taskType],
+      contentItemId,
+    });
     return { result };
   } catch (error) {
     console.error("checkWritingAction failed:", error);
