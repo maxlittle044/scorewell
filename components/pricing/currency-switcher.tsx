@@ -29,6 +29,11 @@ export function CurrencySwitcher({ currency }: { currency: Currency }) {
   return (
     <div className="flex flex-col items-center gap-2">
       <form
+        // React resets a form once its action settles, restoring every field to the value it
+        // mounted with — which left the select reading "NPR" beside prices in dollars, and is
+        // why neither a controlled value nor a keyed select fixed this. Re-keying the form on
+        // the currency remounts it, so the value it resets to is the one now in effect.
+        key={currency}
         ref={formRef}
         action={setCurrencyAction}
         className="flex items-center gap-2"
@@ -40,6 +45,9 @@ export function CurrencySwitcher({ currency }: { currency: Currency }) {
         <select
           id="currency-select"
           name="currency"
+          // Uncontrolled on purpose: the form above is remounted per currency, so this
+          // default is the value in effect, and leaving the browser to own the selection
+          // is what keeps the control usable before hydration.
           defaultValue={currency}
           onChange={() => formRef.current?.requestSubmit()}
           className="rounded-full border border-line bg-surface px-3 py-1.5 text-sm font-medium text-ink"
