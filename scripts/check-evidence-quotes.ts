@@ -17,8 +17,10 @@ type Q = {
 };
 
 async function main() {
+  // Mini exercises are included because they are scored the same way and now carry the same
+  // explanations; the distractor-key rule below has already caught real errors in both.
   const items = await prisma.contentItem.findMany({
-    where: { contentType: "PRACTICE_TEST", published: true, skill: { in: ["READING", "LISTENING"] } },
+    where: { contentType: { in: ["PRACTICE_TEST", "MINI_EXERCISE"] }, published: true },
     select: { slug: true, skill: true, data: true },
   });
 

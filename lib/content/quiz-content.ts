@@ -9,6 +9,10 @@ const QuizDataSchema = z.object({
       options: z.array(z.string()),
       correctIndex: z.number(),
       type: z.string().optional(),
+      // Zod strips what it does not declare, so an explanation absent here never reaches the
+      // page however carefully it was written into the seed.
+      evidence: z.object({ quote: z.string().optional(), explanation: z.string() }).optional(),
+      distractorNotes: z.record(z.string(), z.string()).optional(),
     }),
   ),
 });
