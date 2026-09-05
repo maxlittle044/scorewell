@@ -649,4 +649,124 @@ export const MINI_EXERCISES: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "prepositions-gap-fill",
+    title: "Prepositions: type the missing word",
+    topic: "Grammar",
+    tags: ["grammar", "prepositions", "gap-fill"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          type: "Prepositions",
+          question: "The conference takes place ___ 14 March.",
+          accept: ["on"],
+          evidence: {
+            explanation:
+              "Specific dates take “on”. The ladder is by size: “in” for years and months, “on” for days and dates, “at” for clock times.",
+          },
+        },
+        {
+          id: "q2",
+          type: "Prepositions",
+          question: "She has worked here ___ three years.",
+          accept: ["for"],
+          evidence: {
+            explanation:
+              "“For” measures a length of time; “since” names its starting point. “For three years” and “since 2023” describe the same span from different ends.",
+          },
+        },
+        {
+          id: "q3",
+          type: "Prepositions",
+          question: "We arrived ___ the airport two hours early.",
+          accept: ["at"],
+          evidence: {
+            explanation:
+              "“Arrive at” a place treated as a point — an airport, a station, a meeting. “Arrive in” is for countries and cities, and “arrive to” is never right.",
+          },
+        },
+        {
+          id: "q4",
+          type: "Prepositions",
+          question: "He apologised ___ being late.",
+          accept: ["for"],
+          evidence: {
+            explanation:
+              "A verb that always takes the same preposition — apologise for. These are worth learning as whole phrases rather than deducing.",
+          },
+        },
+        {
+          id: "q5",
+          type: "Prepositions",
+          question: "The report is divided ___ four sections.",
+          accept: ["into"],
+          evidence: {
+            explanation:
+              "“Divide into” describes splitting one thing across several parts. “In” would place the report inside the sections rather than splitting it among them.",
+          },
+        },
+      ],
+    },
+  },
+  {
+    slug: "linking-words-gap-fill",
+    title: "Linking words: type the missing connector",
+    topic: "Cohesion",
+    tags: ["grammar", "linking-words", "gap-fill"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          type: "Linking words",
+          question: "The scheme was expensive; ___ , it achieved very little.",
+          accept: ["however", "nevertheless", "nonetheless"],
+          evidence: {
+            explanation:
+              "The second clause undercuts the first, so the connector must signal contrast. Work out the relationship between the two halves before reaching for a word.",
+          },
+        },
+        {
+          id: "q2",
+          type: "Linking words",
+          question: "___ the rain, the match went ahead as planned.",
+          accept: ["despite", "in spite of"],
+          evidence: {
+            explanation:
+              "A concession before a noun (“the rain”) takes “despite” or “in spite of”. “Although” would need a clause after it — “although it rained”.",
+          },
+        },
+        {
+          id: "q3",
+          type: "Linking words",
+          question: "She missed the deadline ___ she had been unwell for a fortnight.",
+          accept: ["because", "as", "since"],
+          evidence: {
+            explanation:
+              "The second half gives the reason for the first, and all three of these introduce a reason clause. “Because” is the plainest and never wrong here.",
+          },
+        },
+        {
+          id: "q4",
+          type: "Linking words",
+          question: "The sample was small; ___ , the conclusions remain provisional.",
+          accept: ["therefore", "consequently", "thus"],
+          evidence: {
+            explanation:
+              "Result, not contrast: the small sample causes the caution. Compare question 1, where the same punctuation carried the opposite relationship — the words do the work, not the semicolon.",
+          },
+        },
+        {
+          id: "q5",
+          type: "Linking words",
+          question: "___ to reduce costs, the company closed two of its regional offices.",
+          accept: ["in order"],
+          evidence: {
+            explanation:
+              "“In order to” states a purpose. The bare infinitive (“To reduce costs, …”) also works, but the gap here is followed by “to”, which fixes the phrase.",
+          },
+        },
+      ],
+    },
+  },
 ];
