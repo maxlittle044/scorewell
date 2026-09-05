@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { SpeakButton } from "./speak-button";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
 import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
+import { useAttemptDraft } from "@/lib/use-attempt-draft";
 
 export type QuizQuestion = {
   id: string;
@@ -98,12 +99,31 @@ export function Quiz({
 
   const elapsedSeconds = useElapsedSeconds();
 
+  // Autosave, so an unfinished exercise survives a closed tab.
+  const { restored: restoredDraft, clear: clearDraft } = useAttemptDraft({
+    contentItemId,
+    answers,
+    enabled: !submitted,
+  });
+
+  // Applied once, and never over answers the learner has already given.
+  const appliedDraftRef = useRef(false);
+  useEffect(() => {
+    if (!restoredDraft || appliedDraftRef.current) return;
+    appliedDraftRef.current = true;
+    setAnswers((current) =>
+      Object.keys(current).length === 0 ? (restoredDraft as Record<string, number>) : current,
+    );
+  }, [restoredDraft]);
+
   const score = questions.filter((q) => answers[q.id] === q.correctIndex).length;
   const allAnswered = questions.every((q) => answers[q.id] !== undefined);
 
   function handleSubmit() {
     setSubmitted(true);
     onSubmitted?.();
+    // Superseded by the Progress row this is about to write.
+    clearDraft();
     startTransition(async () => {
       const result = await saveQuizProgressAction({
         skill,

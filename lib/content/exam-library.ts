@@ -36,11 +36,10 @@ export type LibraryFilters = {
  * they are sat. That is a gap in what gets recorded, not one this file can paper over, and
  * inventing a state for them would be worse than showing none.
  *
- * The spec's third state, "in progress", comes from the one place the database genuinely
- * knows a test has been started and not finished: a `SimulationAttempt` still IN_PROGRESS
- * whose leg for this skill carries no band. Standalone practice remains atomic — submitted
- * or lost — so a test abandoned outside a sitting still reads as unattempted, which is all
- * we can honestly say about it.
+ * "In progress" has two sources, and both are records of real unfinished work: a saved
+ * `AttemptDraft` for this test, and a `SimulationAttempt` still IN_PROGRESS whose leg for
+ * this skill carries no band. The draft covers standalone practice, which used to be atomic
+ * — submitted or lost — and therefore had no unfinished state to report at all.
  */
 export type LearnerState = {
   /** Best band across every completed attempt, and how many there were. Null until one. */
@@ -150,7 +149,7 @@ export async function getLibrary(
 
   // Two grouped queries rather than a pair per test: everyone's attempts for the "practised"
   // sort and the tile's count, and — only when someone is signed in — that reader's own.
-  const [counts, mine, sittings] = await Promise.all([
+  const [counts, mine, sittings, drafts] = await Promise.all([
     prisma.progress.groupBy({
       by: ["contentItemId"],
       where: { contentItemId: { in: visibleIds } },
@@ -184,6 +183,14 @@ export async function getLibrary(
           },
         })
       : Promise.resolve([]),
+    // Standalone attempts saved part-finished. Restricted to the tests on screen so this
+    // stays one small query however many drafts a long-standing learner has accumulated.
+    userId
+      ? prisma.attemptDraft.findMany({
+          where: { userId, contentItemId: { in: visibleIds } },
+          select: { contentItemId: true },
+        })
+      : Promise.resolve([]),
   ]);
 
   const attemptsById = new Map(counts.map((row) => [row.contentItemId, row._count._all]));
@@ -199,6 +206,8 @@ export async function getLibrary(
   // Speaking legs hold no band until something evaluates them, so an unfinished sitting is
   // the only thing this is read against — a completed one is not in progress whatever its
   // bands say.
+  const draftedIds = new Set(drafts.map((draft) => draft.contentItemId));
+
   const openLegs = new Set<string>();
   for (const sitting of sittings) {
     const legs: [Skill, number | null][] = [
@@ -225,7 +234,8 @@ export async function getLibrary(
       attempts: attemptsById.get(item.id) ?? 0,
       learner: learnerState(
         bestById.get(item.id) ?? null,
-        item.sourceTestSet !== null && openLegs.has(`${item.sourceTestSet}|${skill}`),
+        draftedIds.has(item.id) ||
+          (item.sourceTestSet !== null && openLegs.has(`${item.sourceTestSet}|${skill}`)),
       ),
     });
     collections.set(name, list);

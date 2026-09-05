@@ -62,6 +62,7 @@ model ContentItem {
   submissions   Submission[]
   progress      Progress[]
   registrations LiveLessonRegistration[]
+  attemptDrafts AttemptDraft[]
 
   @@index([contentType])
   @@index([skill])
@@ -132,6 +133,40 @@ model User {
   mistakeReviews      MistakeReview[]
   featureRequests     FeatureRequest[]
   featureVotes        FeatureVote[]
+  attemptDrafts       AttemptDraft[]
+}
+
+// An attempt in progress: the answers someone has given on a test they have not submitted.
+//
+// Until this existed an attempt was atomic — submitted or lost — so closing a tab halfway
+// through a reading paper threw the hour away, and the Exam Library could only show "in
+// progress" for a four-skill sitting, which is the one place the database happened to record
+// an unfinished state (site-build-prompt.md section 4a).
+//
+// Deliberately not a Progress row with a nullable score. Progress means "an attempt that
+// happened": it feeds the band trend, the study-time total, mistake analytics and the
+// leaderboard, all of which would have to learn to skip drafts. A draft is a different kind
+// of thing and gets its own table.
+//
+// One draft per learner per test — starting again replaces what was there, which is what
+// "start again" means. Deleted on submit, when the Progress row supersedes it.
+model AttemptDraft {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  contentItemId String
+  contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+
+  // Answers so far, in the shape the runner already holds them: { [questionId]: answer },
+  // where an answer is an option index, a list of them, or typed text.
+  answers Json
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, contentItemId])
+  @@index([userId])
 }
 
 enum ReferralStatus {

@@ -11,6 +11,7 @@ import type { AnswerValue, QuestionSet } from "@/lib/exam/schema";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
 import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
+import { useAttemptDraft } from "@/lib/use-attempt-draft";
 import { PassageText, QuestionGroups, QuestionNavigator } from "./question-list";
 
 type Props = {
@@ -67,6 +68,24 @@ export function ExamRunner({
     answersRef.current = answers;
   }, [answers]);
 
+  // Autosave, so leaving a paper part-finished does not throw the work away.
+  const { restored: restoredDraft, clear: clearDraft } = useAttemptDraft({
+    contentItemId,
+    answers,
+    enabled: !submitted,
+  });
+
+  // Applied once, and only over an untouched paper: if the learner has started answering
+  // before the lookup returns, their answers win over the stored ones.
+  const appliedDraftRef = useRef(false);
+  useEffect(() => {
+    if (!restoredDraft || appliedDraftRef.current) return;
+    appliedDraftRef.current = true;
+    setAnswers((current) =>
+      Object.keys(current).length === 0 ? (restoredDraft as Record<string, AnswerValue>) : current,
+    );
+  }, [restoredDraft]);
+
   // Guards against double submission (manual click racing the timer's auto-submit).
   // A ref, not the `submitted` state, because the check has to happen outside render —
   // a state updater callback runs *during* render, where side effects aren't allowed.
@@ -80,6 +99,9 @@ export function ExamRunner({
     const graded = gradeAll(groups, answersRef.current);
     const correctCount = graded.filter((g) => g.correct).length;
 
+    // The attempt is about to become a Progress row, which supersedes the draft.
+    clearDraft();
+
     startTransition(async () => {
       const result = await saveQuizProgressAction({
         skill,
@@ -92,7 +114,7 @@ export function ExamRunner({
       });
       setSaveState(result.saved ? "saved" : "not-logged-in");
     });
-  }, [groups, skill, title, contentItemId, elapsedSeconds]);
+  }, [groups, skill, title, contentItemId, elapsedSeconds, clearDraft]);
 
   // Countdown. Auto-submits at zero, like the real exam.
   useEffect(() => {
