@@ -1,4 +1,4 @@
-import { anthropic } from "./anthropic";
+import { anthropic, FALLBACKS, FALLBACK_BETAS, throwIfRefused } from "./anthropic";
 
 export type TextToolKind =
   | "grammar-checker"
@@ -32,13 +32,17 @@ export async function runTextTool(params: {
       ? `${SYSTEM_PROMPTS.translator} Translate into ${params.targetLanguage}.`
       : SYSTEM_PROMPTS[params.kind];
 
-  const response = await anthropic.messages.create({
+  const response = await anthropic.beta.messages.create({
     model: "claude-opus-5",
+    betas: [...FALLBACK_BETAS],
+    fallbacks: FALLBACKS,
     max_tokens: 16000,
     output_config: { effort: "medium" },
     system,
     messages: [{ role: "user", content: params.inputText }],
   });
+
+  throwIfRefused(response);
 
   let text = "";
   for (const block of response.content) {

@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { anthropic } from "./anthropic";
+import { anthropic, FALLBACKS, FALLBACK_BETAS, throwIfRefused } from "./anthropic";
 
 export type WritingTaskType = "task1-academic" | "task1-general" | "task2";
 
@@ -62,8 +62,10 @@ export async function checkWritingAnswer(params: {
 }): Promise<WritingCheckResult> {
   const task = TASK_INFO[params.taskType];
 
-  const response = await anthropic.messages.parse({
+  const response = await anthropic.beta.messages.parse({
     model: "claude-opus-5",
+    betas: [...FALLBACK_BETAS],
+    fallbacks: FALLBACKS,
     max_tokens: 16000,
     output_config: { effort: "medium", format: zodOutputFormat(CheckResultSchema) },
     system: `You are an expert IELTS examiner. Score the candidate's response to this ${task.name} using the official IELTS band descriptors (0-9, half bands allowed). Return exactly four criteria in this order: "${task.firstCriterion}", "Coherence and Cohesion", "Lexical Resource", "Grammatical Range and Accuracy". Be honest and specific in your feedback — quote or reference phrases from the response. Do not inflate scores.
@@ -79,6 +81,8 @@ Also return "errors": the specific places in the response worth correcting, at m
     ],
   });
 
+  throwIfRefused(response);
+
   if (!response.parsed_output) {
     throw new Error("The AI response could not be parsed.");
   }
@@ -92,13 +96,17 @@ export async function generateSampleAnswer(params: {
 }): Promise<string> {
   const task = TASK_INFO[params.taskType];
 
-  const response = await anthropic.messages.create({
+  const response = await anthropic.beta.messages.create({
     model: "claude-opus-5",
+    betas: [...FALLBACK_BETAS],
+    fallbacks: FALLBACKS,
     max_tokens: 16000,
     output_config: { effort: "medium" },
     system: `You are an expert IELTS writing coach. Write a band-9 sample response to the given ${task.name} prompt. Return only the sample response text, with no preamble, headings, or explanation.`,
     messages: [{ role: "user", content: params.examPrompt }],
   });
+
+  throwIfRefused(response);
 
   let text = "";
   for (const block of response.content) {

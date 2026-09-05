@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { anthropic } from "./anthropic";
+import { anthropic, FALLBACKS, FALLBACK_BETAS, throwIfRefused } from "./anthropic";
 import type { ConversationTopic } from "@/lib/content/ai-conversations";
 
 /**
@@ -48,13 +48,17 @@ export async function nextExaminerTurn(params: {
 }): Promise<string> {
   const turnsUsed = countLearnerTurns(params.messages);
 
-  const response = await anthropic.messages.create({
+  const response = await anthropic.beta.messages.create({
     model: "claude-opus-5",
+    betas: [...FALLBACK_BETAS],
+    fallbacks: FALLBACKS,
     max_tokens: 4000,
     output_config: { effort: "low" },
     system: examinerSystemPrompt(params.topic, turnsUsed),
     messages: params.messages.map((m) => ({ role: m.role, content: m.content })),
   });
+
+  throwIfRefused(response);
 
   let text = "";
   for (const block of response.content) {
@@ -97,8 +101,10 @@ export async function reviewConversation(params: {
     .map((m) => `${m.role === "assistant" ? "EXAMINER" : "CANDIDATE"}: ${m.content}`)
     .join("\n\n");
 
-  const response = await anthropic.messages.parse({
+  const response = await anthropic.beta.messages.parse({
     model: "claude-opus-5",
+    betas: [...FALLBACK_BETAS],
+    fallbacks: FALLBACKS,
     max_tokens: 16000,
     output_config: { effort: "medium", format: zodOutputFormat(ConversationFeedbackSchema) },
     system: `You are an expert IELTS Speaking examiner. You are given the transcript of an IELTS Speaking ${params.topic.part} practice conversation on the topic "${params.topic.title}".
@@ -112,6 +118,8 @@ For "rephrasings", quote short phrases the candidate ACTUALLY used and show a st
 Be honest and specific. Do not inflate scores, and do not praise generically.`,
     messages: [{ role: "user", content: transcript }],
   });
+
+  throwIfRefused(response);
 
   if (!response.parsed_output) {
     throw new Error("The AI response could not be parsed.");
