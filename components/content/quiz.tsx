@@ -6,13 +6,25 @@ import { SpeakButton } from "./speak-button";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import type { Skill } from "@/generated/prisma/enums";
 import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
+import { matchesAccepted } from "@/lib/exam/grading";
 import { useAttemptDraft } from "@/lib/use-attempt-draft";
 
 export type QuizQuestion = {
   id: string;
   question: string;
-  options: string[];
-  correctIndex: number;
+  /**
+   * Omitted for a typed answer. Choosing from four options is easier than the real paper,
+   * where most non-multiple-choice questions ask the learner to produce the word themselves —
+   * so an exercise can now ask for it instead of offering it.
+   */
+  options?: string[];
+  correctIndex?: number;
+  /**
+   * Accepted spellings for a typed answer. Matched with the exam runner's own comparison, so
+   * case, surrounding punctuation and British/American spelling are all forgiven here exactly
+   * as they are in a full test — one rule, not two that could drift apart.
+   */
+  accept?: string[];
   /** IELTS sub-skill, used for Premium mistake analytics. */
   type?: string;
   /** Where the answer came from and why it's right — shown once the answers are locked. */
@@ -20,6 +32,27 @@ export type QuizQuestion = {
   /** Why a particular wrong option is wrong, keyed by option index. */
   distractorNotes?: Record<string, string>;
 };
+
+/** An option index for a multiple-choice question, or the text typed into a gap. */
+export type QuizAnswer = number | string;
+
+/**
+ * One grading rule for both question shapes. Typed answers defer to the exam runner's own
+ * comparison, so case, surrounding punctuation and British/American spelling are forgiven
+ * here exactly as they are in a full test rather than by a second rule that could drift.
+ */
+export function isCorrect(question: QuizQuestion, answer: QuizAnswer | undefined): boolean {
+  if (question.accept) {
+    return typeof answer === "string" && matchesAccepted(answer, question.accept);
+  }
+  return answer === question.correctIndex;
+}
+
+/** Blank text is not an answer, so submit stays disabled until every gap has something in it. */
+function isAnswered(question: QuizQuestion, answer: QuizAnswer | undefined): boolean {
+  if (question.accept) return typeof answer === "string" && answer.trim() !== "";
+  return answer !== undefined;
+}
 
 /**
  * The post-submission explanation for one question — the same "Locate & Explain" treatment
@@ -35,11 +68,17 @@ function Review({
   speak,
 }: {
   question: QuizQuestion;
-  chosen: number | undefined;
+  chosen: QuizAnswer | undefined;
   speak: boolean;
 }) {
-  const gotItWrong = chosen !== undefined && chosen !== question.correctIndex;
-  const distractorNote = gotItWrong ? question.distractorNotes?.[String(chosen)] : undefined;
+  // Distractor notes are keyed by option index, so they only exist for the choice questions.
+  // A typed answer has no wrong option to explain — its correction is the accepted answer,
+  // shown beside the input.
+  const gotItWrong = chosen !== undefined && !isCorrect(question, chosen);
+  const distractorNote =
+    gotItWrong && typeof chosen === "number"
+      ? question.distractorNotes?.[String(chosen)]
+      : undefined;
   if (!question.evidence && !distractorNote) return null;
 
   return (
@@ -92,7 +131,7 @@ export function Quiz({
    */
   speakEvidence?: boolean;
 }) {
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, QuizAnswer>>({});
   const [submitted, setSubmitted] = useState(false);
   const [saveState, setSaveState] = useState<"idle" | "saved" | "not-logged-in">("idle");
   const [isPending, startTransition] = useTransition();
@@ -112,12 +151,12 @@ export function Quiz({
     if (!restoredDraft || appliedDraftRef.current) return;
     appliedDraftRef.current = true;
     setAnswers((current) =>
-      Object.keys(current).length === 0 ? (restoredDraft as Record<string, number>) : current,
+      Object.keys(current).length === 0 ? (restoredDraft as Record<string, QuizAnswer>) : current,
     );
   }, [restoredDraft]);
 
-  const score = questions.filter((q) => answers[q.id] === q.correctIndex).length;
-  const allAnswered = questions.every((q) => answers[q.id] !== undefined);
+  const score = questions.filter((q) => isCorrect(q, answers[q.id])).length;
+  const allAnswered = questions.every((q) => isAnswered(q, answers[q.id]));
 
   function handleSubmit() {
     setSubmitted(true);
@@ -134,7 +173,7 @@ export function Quiz({
         details: questions.map((q) => ({
           id: q.id,
           type: q.type,
-          correct: answers[q.id] === q.correctIndex,
+          correct: isCorrect(q, answers[q.id]),
         })),
         durationSeconds: elapsedSeconds(),
       });
@@ -149,38 +188,66 @@ export function Quiz({
           <legend className="mb-3 px-1 text-sm font-medium text-ink">
             {i + 1}. {q.question}
           </legend>
-          <div className="flex flex-col gap-2">
-            {q.options.map((option, optionIndex) => {
-              const isSelected = answers[q.id] === optionIndex;
-              const isCorrect = submitted && optionIndex === q.correctIndex;
-              const isWrongSelected = submitted && isSelected && optionIndex !== q.correctIndex;
+          {q.options ? (
+            <div className="flex flex-col gap-2">
+              {q.options.map((option, optionIndex) => {
+                const isSelected = answers[q.id] === optionIndex;
+                const isRight = submitted && optionIndex === q.correctIndex;
+                const isWrongSelected =
+                  submitted && isSelected && optionIndex !== q.correctIndex;
 
-              return (
-                <label
-                  key={option}
-                  className={`flex cursor-pointer items-center gap-2.5 rounded-lg border px-3 py-2 text-sm transition-colors ${
-                    isCorrect
+                return (
+                  <label
+                    key={option}
+                    className={`flex cursor-pointer items-center gap-2.5 rounded-lg border px-3 py-2 text-sm transition-colors ${
+                      isRight
+                        ? "border-emerald-400 bg-emerald-50 text-emerald-800"
+                        : isWrongSelected
+                          ? "border-rose-400 bg-rose-50 text-rose-800"
+                          : isSelected
+                            ? "border-brand-400 bg-brand-50 text-heading"
+                            : "border-line hover:border-line-strong"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name={q.id}
+                      disabled={submitted}
+                      checked={isSelected}
+                      onChange={() => setAnswers((prev) => ({ ...prev, [q.id]: optionIndex }))}
+                      className="accent-brand-600"
+                    />
+                    {option}
+                  </label>
+                );
+              })}
+            </div>
+          ) : (
+            /* Typed answer. Marked only once submitted — colouring it as the learner types
+               would hand them the answer one keystroke at a time. */
+            <div>
+              <input
+                type="text"
+                value={typeof answers[q.id] === "string" ? (answers[q.id] as string) : ""}
+                disabled={submitted}
+                onChange={(e) => setAnswers((prev) => ({ ...prev, [q.id]: e.target.value }))}
+                placeholder="Type your answer"
+                aria-label={`Answer for question ${i + 1}`}
+                className={`w-full max-w-sm rounded-lg border px-3 py-2 text-sm text-ink outline-none transition-colors placeholder:text-ink-muted ${
+                  !submitted
+                    ? "border-line-strong focus:border-brand-500"
+                    : isCorrect(q, answers[q.id])
                       ? "border-emerald-400 bg-emerald-50 text-emerald-800"
-                      : isWrongSelected
-                        ? "border-rose-400 bg-rose-50 text-rose-800"
-                        : isSelected
-                          ? "border-brand-400 bg-brand-50 text-heading"
-                          : "border-line hover:border-line-strong"
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name={q.id}
-                    disabled={submitted}
-                    checked={isSelected}
-                    onChange={() => setAnswers((prev) => ({ ...prev, [q.id]: optionIndex }))}
-                    className="accent-brand-600"
-                  />
-                  {option}
-                </label>
-              );
-            })}
-          </div>
+                      : "border-rose-400 bg-rose-50 text-rose-800"
+                }`}
+              />
+              {submitted && !isCorrect(q, answers[q.id]) && q.accept && (
+                <p className="mt-2 text-sm text-ink-body">
+                  <span className="font-semibold">Answer:</span> {q.accept.join(" / ")}
+                </p>
+              )}
+            </div>
+          )}
 
           {submitted && <Review question={q} chosen={answers[q.id]} speak={speakEvidence} />}
         </fieldset>

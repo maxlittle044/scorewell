@@ -6,8 +6,11 @@ const QuizDataSchema = z.object({
     z.object({
       id: z.string(),
       question: z.string(),
-      options: z.array(z.string()),
-      correctIndex: z.number(),
+      // Optional so a question can ask the learner to type the answer instead of
+      // picking one. A question carries either options or `accept`, never neither.
+      options: z.array(z.string()).optional(),
+      correctIndex: z.number().optional(),
+      accept: z.array(z.string()).min(1).optional(),
       type: z.string().optional(),
       // Zod strips what it does not declare, so an explanation absent here never reaches the
       // page however carefully it was written into the seed.

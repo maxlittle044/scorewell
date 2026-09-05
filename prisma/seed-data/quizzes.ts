@@ -589,4 +589,64 @@ export const MINI_EXERCISES: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "verb-forms-gap-fill",
+    title: "Verb forms: type the missing word",
+    topic: "Grammar",
+    tags: ["grammar", "verb-forms", "gap-fill"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          type: "Tenses",
+          question: "She has ___ in Manchester since she graduated. (live)",
+          accept: ["lived"],
+          evidence: {
+            explanation:
+              "After “has”, the verb takes its past participle: lived. Producing the form yourself is the point here — recognising it in a list is easier than recalling it.",
+          },
+        },
+        {
+          id: "q2",
+          type: "Tenses",
+          question: "If I had known about the delay, I ___ have left earlier. (will)",
+          accept: ["would"],
+          evidence: {
+            explanation:
+              "A third conditional: “had known” in the if-clause forces “would have” in the result. “Will have” belongs to a real future, which this sentence has already ruled out.",
+          },
+        },
+        {
+          id: "q3",
+          type: "Word formation",
+          question: "The results were highly ___ , which surprised the research team. (significance)",
+          accept: ["significant"],
+          evidence: {
+            explanation:
+              "The gap follows “highly” and describes “the results”, so an adjective is needed, not the noun given in brackets. Word formation questions test the ending, not the meaning.",
+          },
+        },
+        {
+          id: "q4",
+          type: "Passive voice",
+          question: "The report ___ published next week. (be)",
+          accept: ["will be"],
+          evidence: {
+            explanation:
+              "A future passive: the report receives the action rather than performing it, so “will be” plus the past participle. Both words are needed — “be” alone leaves no tense.",
+          },
+        },
+        {
+          id: "q5",
+          type: "Word formation",
+          question: "Her explanation was much ___ than the one in the textbook. (clear)",
+          accept: ["clearer", "more clear"],
+          evidence: {
+            explanation:
+              "“Than” calls for a comparative. Short adjectives usually take -er, so “clearer” is the natural choice — though “more clear” is also accepted here.",
+          },
+        },
+      ],
+    },
+  },
 ];

@@ -3,8 +3,11 @@ import type { QuestionGroup } from "../../lib/exam/schema";
 export type QuizQuestion = {
   id: string;
   question: string;
-  options: string[];
-  correctIndex: number;
+  /** Omit both to ask for a typed answer instead; supply `accept` in that case. */
+  options?: string[];
+  correctIndex?: number;
+  /** Accepted spellings for a typed answer, matched leniently for case and punctuation. */
+  accept?: string[];
   /** IELTS sub-skill this question tests, for mistake analytics. */
   type?: string;
   /**
