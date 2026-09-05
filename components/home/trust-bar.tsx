@@ -8,11 +8,12 @@
  * Each line is a claim to a visitor, so each one has to be true of the product as it stands
  * today — not of the feature in the abstract, and not of where the content is heading.
  *
- * Two of these previously said "each answer" and "every wrong option". The features exist,
- * but the content behind them does not yet: of 46 reading and listening questions, 10 carry
- * evidence, and of 38 multiple-choice questions, 2 carry per-distractor notes. Universal
- * wording made both a promise the site breaks on the first test a visitor opens. They are
- * worth restoring in that form once coverage is there — and only then.
+ * Two of these were softened when the features existed but the content did not: 10 of 46
+ * questions carried evidence and 2 of 38 carried per-distractor notes, which made universal
+ * wording a promise the site broke on the first test anyone opened. Both are stated in full
+ * again because every reading and listening question is now written up — 46 of 46 and 38 of
+ * 38. `scripts/check-evidence-quotes.ts` is what keeps that true; if coverage ever slips
+ * behind these sentences again, soften the sentences rather than hoping nobody checks.
  */
 const POINTS = [
   {
@@ -21,11 +22,11 @@ const POINTS = [
   },
   {
     title: "See where the answer was",
-    body: "Review highlights the sentence in the passage an answer came from, so you can check the reasoning and not just the tick.",
+    body: "Review highlights the exact sentence in the passage that proves each answer.",
   },
   {
-    title: "Sit the whole exam at once",
-    body: "All four skills in one sitting under a single clock — not four exercises on four different days.",
+    title: "Learn why you fell for it",
+    body: "Every wrong option is explained, so you stop repeating the same trap.",
   },
   {
     title: "Transparent band scores",
