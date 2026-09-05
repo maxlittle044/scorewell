@@ -54,3 +54,31 @@ export async function listQuizContent(taskType: "grammar-test" | "mini-exercise"
     select: { id: true, slug: true, title: true, topic: true, data: true },
   });
 }
+
+/**
+ * Index-page cards, built from the database rather than a list kept alongside it.
+ *
+ * Both index pages used to hardcode their entries, so a seeded exercise existed, worked at
+ * its own URL, and was reachable from nowhere — the listing and the content could disagree
+ * indefinitely without anything failing.
+ *
+ * The question count is read from the payload; the reading estimate is derived from it rather
+ * than stored, so it cannot drift from the exercise it describes.
+ */
+export async function listQuizCards(taskType: "grammar-test" | "mini-exercise") {
+  const items = await listQuizContent(taskType);
+
+  return items.map((item) => {
+    const parsed = QuizDataSchema.safeParse(item.data);
+    const count = parsed.success ? parsed.data.questions.length : 0;
+    // Roughly a minute a question, floored at two so a three-question drill does not
+    // advertise itself as instant.
+    const minutes = Math.max(2, count);
+    return {
+      slug: item.slug,
+      title: item.title,
+      tag: item.topic ?? "Practice",
+      meta: `${minutes} min · ${count} ${count === 1 ? "question" : "questions"}`,
+    };
+  });
+}

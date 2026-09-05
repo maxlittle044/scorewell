@@ -2,19 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ContentCard } from "@/components/content/content-card";
 import { PageHeader } from "@/components/layout/page-header";
+import { listQuizCards } from "@/lib/content/quiz-content";
 
 export const metadata: Metadata = {
   title: "Grammar Tests — ScoreWell",
 };
 
-const TESTS = [
-  { tag: "Tenses", title: "Present perfect vs. past simple", meta: "5 min · 5 questions", slug: "present-perfect-vs-past-simple" },
-  { tag: "Conditionals", title: "First and second conditionals", meta: "5 min · 5 questions", slug: "first-second-conditionals" },
-  { tag: "Articles", title: "Definite and indefinite articles", meta: "5 min · 5 questions", slug: "definite-indefinite-articles" },
-  { tag: "Prepositions", title: "Prepositions of time and place", meta: "5 min · 5 questions", slug: "prepositions-time-place" },
-];
+export default async function GrammarTestsIndexPage() {
+  const tests = await listQuizCards("grammar-test");
 
-export default function GrammarTestsIndexPage() {
   return (
     <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
@@ -27,7 +23,7 @@ export default function GrammarTestsIndexPage() {
           .
         </p>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          {TESTS.map((test) => (
+          {tests.map((test) => (
             <ContentCard
               key={test.slug}
               tag={test.tag}
