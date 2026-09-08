@@ -22,6 +22,14 @@ const SYSTEM_PROMPTS: Record<TextToolKind, string> = {
   translator: "You are a translation assistant. Translate the user's text accurately and naturally. Return only the translated text, with no preamble.",
 };
 
+/**
+ * Appended to every tool prompt. The output is rendered as plain text, so markdown arrives on
+ * screen as literal asterisks and hashes — which reads as a broken page rather than emphasis.
+ * The previous model volunteered none; this one formats by default unless told not to.
+ */
+const PLAIN_TEXT_RULE =
+  " Write in plain text only. Do not use markdown: no asterisks, no bold, no headings, no code fences. Where you need a list, start each line with a dash.";
+
 export async function runTextTool(params: {
   kind: TextToolKind;
   inputText: string;
@@ -32,5 +40,5 @@ export async function runTextTool(params: {
       ? `${SYSTEM_PROMPTS.translator} Translate into ${params.targetLanguage}.`
       : SYSTEM_PROMPTS[params.kind];
 
-  return completeText({ system, user: params.inputText });
+  return completeText({ system: system + PLAIN_TEXT_RULE, user: params.inputText });
 }
