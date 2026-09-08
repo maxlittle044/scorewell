@@ -1,6 +1,6 @@
 "use server";
 
-import { describeAiError } from "./anthropic";
+import { describeAiError } from "./provider";
 import { runTextTool, type TextToolKind } from "./text-tool";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "./usage";
 

@@ -6,7 +6,7 @@ import { rawScoreToBand, roundBandAverage } from "@/lib/band-conversion";
 import type { QuestionOutcome } from "@/lib/progress-actions";
 import { getSimulationSet } from "@/lib/exam/simulation";
 import type { LegSkill } from "@/lib/exam/simulation";
-import { describeAiError } from "@/lib/ai/anthropic";
+import { describeAiError } from "@/lib/ai/provider";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "@/lib/ai/usage";
 import { checkWritingAnswer, type WritingTaskType } from "@/lib/ai/writing-checker";
 import { checkSpeakingAnswer, type SpeakingPart } from "@/lib/ai/speaking-checker";

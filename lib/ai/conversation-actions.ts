@@ -3,7 +3,7 @@
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { getConversationTopic } from "@/lib/content/ai-conversations";
-import { describeAiError } from "./anthropic";
+import { describeAiError } from "./provider";
 import {
   ChatMessagesSchema,
   MAX_LEARNER_TURNS,

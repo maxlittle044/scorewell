@@ -1,6 +1,5 @@
 import { z } from "zod";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { anthropic, FALLBACKS, FALLBACK_BETAS, throwIfRefused } from "./anthropic";
+import { completeStructured, completeText } from "./provider";
 
 export type SpeakingPart = "part1" | "part2" | "part3";
 
@@ -38,12 +37,9 @@ export async function checkSpeakingAnswer(params: {
   prompt: string;
   transcript: string;
 }): Promise<SpeakingCheckResult> {
-  const response = await anthropic.beta.messages.parse({
-    model: "claude-opus-5",
-    betas: [...FALLBACK_BETAS],
-    fallbacks: FALLBACKS,
-    max_tokens: 16000,
-    output_config: { effort: "medium", format: zodOutputFormat(SpeakingResultSchema) },
+  const response = await completeStructured({
+    schema: SpeakingResultSchema,
+    schemaName: "speakingresult",
     system: `You are an expert IELTS speaking examiner. You are given a TEXT TRANSCRIPT of a candidate's spoken answer to a ${PART_INFO[params.part]} question.
 
 Score it using the official IELTS Speaking band descriptors (0-9, half bands allowed). Return exactly three criteria in this order: "Fluency and Coherence", "Lexical Resource", "Grammatical Range and Accuracy".
@@ -51,44 +47,22 @@ Score it using the official IELTS Speaking band descriptors (0-9, half bands all
 Do NOT score Pronunciation — it cannot be assessed from a transcript. The overall band should be your best estimate from these three criteria only.
 
 Because this is a transcript of speech, judge it as speech, not writing: false starts, self-correction, fillers and contractions are normal and should not be penalised as they would be in writing. Be honest and specific, referencing the candidate's actual words. Do not inflate scores.`,
-    messages: [
-      {
-        role: "user",
-        content: `Question:\n${params.prompt}\n\nCandidate's transcribed answer:\n${params.transcript}`,
-      },
-    ],
+    user: `Question:\n${params.prompt}\n\nCandidate's transcribed answer:\n${params.transcript}`,
   });
 
-  throwIfRefused(response);
-
-  if (!response.parsed_output) {
-    throw new Error("The AI response could not be parsed.");
-  }
-
-  return response.parsed_output;
+  return response;
 }
 
 export async function generateSpeakingSample(params: {
   part: SpeakingPart;
   prompt: string;
 }): Promise<string> {
-  const response = await anthropic.beta.messages.create({
-    model: "claude-opus-5",
-    betas: [...FALLBACK_BETAS],
-    fallbacks: FALLBACKS,
-    max_tokens: 16000,
-    output_config: { effort: "medium" },
+  const response = await completeText({
     system: `You are an expert IELTS speaking coach. Write a band-9 model spoken answer to the given ${PART_INFO[params.part]} question.
 
 Write it the way a confident candidate would actually speak — natural spoken English with contractions and natural discourse markers, not a written essay. Return only the answer text, with no preamble, headings, or explanation.`,
-    messages: [{ role: "user", content: params.prompt }],
+    user: params.prompt,
   });
 
-  throwIfRefused(response);
-
-  let text = "";
-  for (const block of response.content) {
-    if (block.type === "text") text += block.text;
-  }
-  return text.trim();
+  return response;
 }

@@ -1,6 +1,6 @@
 "use server";
 
-import { describeAiError } from "./anthropic";
+import { describeAiError } from "./provider";
 import { checkWritingAnswer, generateSampleAnswer, type WritingTaskType } from "./writing-checker";
 import type { WritingCheckResult } from "./writing-checker";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "./usage";

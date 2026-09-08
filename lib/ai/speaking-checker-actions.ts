@@ -1,6 +1,6 @@
 "use server";
 
-import { describeAiError } from "./anthropic";
+import { describeAiError } from "./provider";
 import {
   checkSpeakingAnswer,
   generateSpeakingSample,

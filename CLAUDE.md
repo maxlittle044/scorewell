@@ -12,9 +12,14 @@ Every dependency and service must be free at our scale. Check before adding one.
 Browser APIs over paid services: `speechSynthesis` for TTS, `SpeechRecognition` for
 transcription, `dictionaryapi.dev` (no key) for word lookup. Media must be CC0/CC BY, credited.
 
-The Anthropic API is the **only** paid component. It stays quota-gated and non-blocking —
-every core learning feature must work with AI switched off. Nothing outside the AI tool pages
-may depend on an API call.
+AI runs on Groq's free tier (`openai/gpt-oss-120b`), so there is no paid component. It is
+metered rather than billed — a per-minute and per-day rate limit — so it stays quota-gated and
+non-blocking exactly as before: every core learning feature must work with AI switched off,
+and nothing outside the AI tool pages may depend on an API call.
+
+The model is weaker than the paid frontier models this ran on previously, which is why every
+band estimate carries the disclosure in `lib/ai/model-info.ts`. If a band is ever presented
+without it, that is a bug.
 
 ## Honesty rules
 

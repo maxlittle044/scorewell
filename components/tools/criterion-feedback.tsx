@@ -9,6 +9,7 @@
  */
 
 import { AnnotatedAnswer, type WritingError } from "./annotated-answer";
+import { AI_BAND_DISCLOSURE } from "@/lib/ai/model-info";
 
 export type CriterionResult = {
   overallBand: number;
@@ -58,6 +59,12 @@ export function CriterionFeedback({
       {note && (
         <p className="mt-4 rounded-lg bg-surface px-3 py-2 text-xs text-ink-muted">{note}</p>
       )}
+
+      {/* Stated on every band, not buried in a FAQ: a learner deciding whether to book the
+          test deserves to know what produced the number. */}
+      <p className="mt-2 rounded-lg bg-surface px-3 py-2 text-xs text-ink-muted">
+        {AI_BAND_DISCLOSURE}
+      </p>
 
       <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>

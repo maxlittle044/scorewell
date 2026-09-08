@@ -1,6 +1,5 @@
 import { z } from "zod";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { anthropic, FALLBACKS, FALLBACK_BETAS, throwIfRefused } from "./anthropic";
+import { completeStructured, completeText } from "./provider";
 
 export type WritingTaskType = "task1-academic" | "task1-general" | "task2";
 
@@ -62,32 +61,18 @@ export async function checkWritingAnswer(params: {
 }): Promise<WritingCheckResult> {
   const task = TASK_INFO[params.taskType];
 
-  const response = await anthropic.beta.messages.parse({
-    model: "claude-opus-5",
-    betas: [...FALLBACK_BETAS],
-    fallbacks: FALLBACKS,
-    max_tokens: 16000,
-    output_config: { effort: "medium", format: zodOutputFormat(CheckResultSchema) },
+  const response = await completeStructured({
+    schema: CheckResultSchema,
+    schemaName: "checkresult",
     system: `You are an expert IELTS examiner. Score the candidate's response to this ${task.name} using the official IELTS band descriptors (0-9, half bands allowed). Return exactly four criteria in this order: "${task.firstCriterion}", "Coherence and Cohesion", "Lexical Resource", "Grammatical Range and Accuracy". Be honest and specific in your feedback — quote or reference phrases from the response. Do not inflate scores.
 
 Also return "errors": the specific places in the response worth correcting, at most 12, ordered as they appear. Each "quote" must be copied verbatim from the candidate's response — character for character, including its original spelling and punctuation — and must be long enough to occur only once, but no longer than a sentence. Never paraphrase a quote, never correct it, and never quote the exam prompt. If the response has no errors worth marking, return an empty list rather than inventing ones.`,
-    messages: [
-      {
-        role: "user",
-        content: params.examPrompt
+    user: params.examPrompt
           ? `Exam prompt:\n${params.examPrompt}\n\nCandidate's response:\n${params.essayText}`
           : `Candidate's response:\n${params.essayText}`,
-      },
-    ],
   });
 
-  throwIfRefused(response);
-
-  if (!response.parsed_output) {
-    throw new Error("The AI response could not be parsed.");
-  }
-
-  return response.parsed_output;
+  return response;
 }
 
 export async function generateSampleAnswer(params: {
@@ -96,23 +81,10 @@ export async function generateSampleAnswer(params: {
 }): Promise<string> {
   const task = TASK_INFO[params.taskType];
 
-  const response = await anthropic.beta.messages.create({
-    model: "claude-opus-5",
-    betas: [...FALLBACK_BETAS],
-    fallbacks: FALLBACKS,
-    max_tokens: 16000,
-    output_config: { effort: "medium" },
+  const response = await completeText({
     system: `You are an expert IELTS writing coach. Write a band-9 sample response to the given ${task.name} prompt. Return only the sample response text, with no preamble, headings, or explanation.`,
-    messages: [{ role: "user", content: params.examPrompt }],
+    user: params.examPrompt,
   });
 
-  throwIfRefused(response);
-
-  let text = "";
-  for (const block of response.content) {
-    if (block.type === "text") {
-      text += block.text;
-    }
-  }
-  return text.trim();
+  return response;
 }

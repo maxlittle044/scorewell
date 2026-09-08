@@ -1,6 +1,5 @@
 import { z } from "zod";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { anthropic, FALLBACKS, FALLBACK_BETAS, throwIfRefused } from "./anthropic";
+import { completeChat, completeStructured } from "./provider";
 import type { ConversationTopic } from "@/lib/content/ai-conversations";
 
 /**
@@ -48,23 +47,10 @@ export async function nextExaminerTurn(params: {
 }): Promise<string> {
   const turnsUsed = countLearnerTurns(params.messages);
 
-  const response = await anthropic.beta.messages.create({
-    model: "claude-opus-5",
-    betas: [...FALLBACK_BETAS],
-    fallbacks: FALLBACKS,
-    max_tokens: 4000,
-    output_config: { effort: "low" },
+  return completeChat({
     system: examinerSystemPrompt(params.topic, turnsUsed),
     messages: params.messages.map((m) => ({ role: m.role, content: m.content })),
   });
-
-  throwIfRefused(response);
-
-  let text = "";
-  for (const block of response.content) {
-    if (block.type === "text") text += block.text;
-  }
-  return text.trim();
 }
 
 // Same honesty constraint as the standalone speaking checker: IELTS Speaking
@@ -101,12 +87,9 @@ export async function reviewConversation(params: {
     .map((m) => `${m.role === "assistant" ? "EXAMINER" : "CANDIDATE"}: ${m.content}`)
     .join("\n\n");
 
-  const response = await anthropic.beta.messages.parse({
-    model: "claude-opus-5",
-    betas: [...FALLBACK_BETAS],
-    fallbacks: FALLBACKS,
-    max_tokens: 16000,
-    output_config: { effort: "medium", format: zodOutputFormat(ConversationFeedbackSchema) },
+  return completeStructured({
+    schema: ConversationFeedbackSchema,
+    schemaName: "conversation_feedback",
     system: `You are an expert IELTS Speaking examiner. You are given the transcript of an IELTS Speaking ${params.topic.part} practice conversation on the topic "${params.topic.title}".
 
 Assess ONLY the CANDIDATE's turns, using the official IELTS Speaking band descriptors (0-9, half bands allowed). Return exactly three criteria in this order: "Fluency and Coherence", "Lexical Resource", "Grammatical Range and Accuracy".
@@ -116,14 +99,6 @@ Do NOT score Pronunciation — the candidate typed these answers, so there is no
 For "rephrasings", quote short phrases the candidate ACTUALLY used and show a stronger version, with a one-line reason. Never invent quotes they did not say. If their English was already strong throughout, return fewer rephrasings rather than manufacturing weak ones.
 
 Be honest and specific. Do not inflate scores, and do not praise generically.`,
-    messages: [{ role: "user", content: transcript }],
+    user: transcript,
   });
-
-  throwIfRefused(response);
-
-  if (!response.parsed_output) {
-    throw new Error("The AI response could not be parsed.");
-  }
-
-  return response.parsed_output;
 }
