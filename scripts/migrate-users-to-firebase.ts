@@ -15,6 +15,7 @@
 import "dotenv/config";
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
+import { normalisePrivateKey } from "@/lib/firebase/admin";
 import { prisma } from "@/lib/prisma";
 
 const APPLY = process.argv.includes("--apply");
@@ -24,16 +25,15 @@ const BCRYPT_ROUNDS = 10;
 
 function admin() {
   if (getApps().length) return getApps()[0];
-  const { FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY } = process.env;
-  if (!FIREBASE_PROJECT_ID || !FIREBASE_CLIENT_EMAIL || !FIREBASE_PRIVATE_KEY) {
+  const { FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL } = process.env;
+  // Share the app's own key handling rather than a second, narrower copy: this script ran
+  // against a key that the server would have rejected, which is a difference worth not having.
+  const privateKey = normalisePrivateKey(process.env.FIREBASE_PRIVATE_KEY);
+  if (!FIREBASE_PROJECT_ID || !FIREBASE_CLIENT_EMAIL || !privateKey) {
     throw new Error("Firebase server credentials are not set.");
   }
   return initializeApp({
-    credential: cert({
-      projectId: FIREBASE_PROJECT_ID,
-      clientEmail: FIREBASE_CLIENT_EMAIL,
-      privateKey: FIREBASE_PRIVATE_KEY.replace(/\\n/g, "\n"),
-    }),
+    credential: cert({ projectId: FIREBASE_PROJECT_ID, clientEmail: FIREBASE_CLIENT_EMAIL, privateKey }),
   });
 }
 

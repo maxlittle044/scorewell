@@ -6,6 +6,7 @@ import "dotenv/config";
 import bcrypt from "bcryptjs";
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
+import { normalisePrivateKey } from "@/lib/firebase/admin";
 import { prisma } from "@/lib/prisma";
 
 /**
@@ -15,16 +16,14 @@ import { prisma } from "@/lib/prisma";
  */
 function adminApp() {
   if (getApps().length) return getApps()[0];
-  const { FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY } = process.env;
-  if (!FIREBASE_PROJECT_ID || !FIREBASE_CLIENT_EMAIL || !FIREBASE_PRIVATE_KEY) {
+  const { FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL } = process.env;
+  // Same key handling as the server, for the same reason as in migrate-users-to-firebase.ts.
+  const privateKey = normalisePrivateKey(process.env.FIREBASE_PRIVATE_KEY);
+  if (!FIREBASE_PROJECT_ID || !FIREBASE_CLIENT_EMAIL || !privateKey) {
     throw new Error("Firebase server credentials are not set.");
   }
   return initializeApp({
-    credential: cert({
-      projectId: FIREBASE_PROJECT_ID,
-      clientEmail: FIREBASE_CLIENT_EMAIL,
-      privateKey: FIREBASE_PRIVATE_KEY.replace(/\\n/g, "\n"),
-    }),
+    credential: cert({ projectId: FIREBASE_PROJECT_ID, clientEmail: FIREBASE_CLIENT_EMAIL, privateKey }),
   });
 }
 
