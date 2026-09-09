@@ -100,6 +100,19 @@ model User {
   name         String?
   email        String   @unique
   image        String?
+  /**
+   * Set once the account signs in through Firebase, which owns identity from that point on.
+   * Nullable because accounts created before the switch have not signed in yet, and because
+   * the two are matched by email on first Firebase sign-in.
+   */
+  firebaseUid String? @unique
+
+  /**
+   * Deliberately kept after the move to Firebase. It is the revert path: while every hash is
+   * still here, going back to credentials auth is a change to auth.ts alone — no data
+   * migration, no forced resets, nobody locked out. Do not drop this column until Firebase
+   * has been running unremarkably for a good while.
+   */
   passwordHash String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
