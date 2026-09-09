@@ -108,12 +108,16 @@ model User {
   firebaseUid String? @unique
 
   /**
-   * Deliberately kept after the move to Firebase. It is the revert path: while every hash is
-   * still here, going back to credentials auth is a change to auth.ts alone — no data
+   * Deliberately kept after the move to Firebase. It is the revert path: while these hashes
+   * are still here, going back to credentials auth is a change to auth.ts alone — no data
    * migration, no forced resets, nobody locked out. Do not drop this column until Firebase
    * has been running unremarkably for a good while.
+   *
+   * Nullable because accounts created through Firebase never had a local password. Reverting
+   * would give those users a "reset your password" path rather than a broken login, which is
+   * the honest outcome — they never set one here.
    */
-  passwordHash String
+  passwordHash String?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
