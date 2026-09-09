@@ -59,7 +59,35 @@ export function isFirebaseConfigured(): boolean {
 export async function verifyIdToken(idToken: string): Promise<DecodedIdToken | null> {
   try {
     return await getAuth(getAdminApp()).verifyIdToken(idToken, true);
-  } catch {
+  } catch (error) {
+    // A rejected token and a missing server credential both end up here, and they look
+    // identical from outside — every sign-in simply fails. Distinguishing them in the log is
+    // the difference between "someone typed the wrong password" and "nobody can sign in",
+    // which is a diagnosis that otherwise costs an afternoon.
+    if (error instanceof FirebaseNotConfiguredError) {
+      console.error(
+        "Firebase server credentials are missing — every sign-in will fail. Set FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL and FIREBASE_PRIVATE_KEY.",
+      );
+    } else if (isCredentialError(error)) {
+      console.error(
+        "Firebase rejected the server credentials themselves, so no token can be verified. Check FIREBASE_PRIVATE_KEY — its \\n escapes must survive whatever set it:",
+        error instanceof Error ? error.message : error,
+      );
+    }
     return null;
   }
+}
+
+/**
+ * Tells a broken service account apart from an ordinary bad token. The former means the whole
+ * deployment is unable to authenticate anyone; the latter is a routine, expected outcome and
+ * must stay quiet, or the logs fill with noise every time someone mistypes a password.
+ */
+function isCredentialError(error: unknown): boolean {
+  const message = error instanceof Error ? error.message : String(error);
+  return (
+    /private key|credential|PEM|DECODER|invalid_grant|Getting metadata|unauthorized_client/i.test(
+      message,
+    ) && !/expired|revoked|argument|must be a/i.test(message)
+  );
 }
