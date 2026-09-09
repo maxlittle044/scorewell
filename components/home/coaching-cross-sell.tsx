@@ -1,4 +1,18 @@
 import { Button } from "@/components/ui/button";
+import { REVIEW_COST_CREDITS, REVIEW_TURNAROUND_HOURS } from "@/lib/review";
+
+/**
+ * The human-review cross-sell (site-build-prompt.md section 3, item 23).
+ *
+ * This previously advertised 1-on-1 tutoring, mock interviews and a bespoke study plan via an
+ * affiliate partner, behind a "Find a tutor" button pointing at /coaching — a page that does
+ * not exist and returned 404 from the homepage. The spec makes that cross-sell optional and
+ * conditional on actually having a partner; there is none.
+ *
+ * So it now sells the thing that is genuinely built: a real examiner reading one submission,
+ * for a stated price and a stated turnaround, both imported from the same constants the
+ * checkout enforces so the pitch cannot drift from the product.
+ */
 
 function UsersIcon() {
   return (
@@ -25,17 +39,17 @@ export function CoachingCrossSell() {
 
           <div className="flex-1">
             <h2 className="text-xl font-bold text-ink">
-              Want personalized coaching?
+              Want a human to read it?
             </h2>
             <p className="mt-1.5 max-w-xl text-ink-body">
-              Book 1-on-1 sessions with a human IELTS tutor for feedback the AI
-              tools can&apos;t give — mock interviews, essay reviews, and a study
-              plan built around your target band.
+              Send a writing or speaking answer for review by a real examiner — the judgement
+              an automated score can&apos;t give you. {REVIEW_COST_CREDITS} credits, back
+              within {REVIEW_TURNAROUND_HOURS} hours.
             </p>
           </div>
 
-          <Button href="/coaching" variant="dark" className="shrink-0">
-            Find a tutor
+          <Button href="/reviews" variant="dark" className="shrink-0">
+            Request a review
           </Button>
         </div>
       </div>
