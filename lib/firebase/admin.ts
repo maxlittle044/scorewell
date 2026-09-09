@@ -14,6 +14,37 @@ import { getAuth, type DecodedIdToken } from "firebase-admin/auth";
  * needs it, not the whole site.
  */
 
+/**
+ * Accepts a service-account private key in any of the shapes a paste produces, because there
+ * are several and they all look plausible:
+ *
+ * - one line with `\n` escapes, as it appears inside the JSON file
+ * - genuinely multi-line, as Vercel's textarea and a copied PEM both give
+ * - double-escaped `\\n`, which is what happens when the value passes through one layer of
+ *   quoting too many — the failure that cost an hour here, twice
+ * - wrapped in quotes that some editors add and some strip
+ *
+ * Being liberal here is worth it: every one of these is *obviously* the right key to a human
+ * looking at it, and rejecting them differs from accepting them only in how long it takes to
+ * work out why nobody can sign in.
+ */
+export function normalisePrivateKey(raw: string | undefined): string | undefined {
+  if (!raw) return undefined;
+
+  let key = raw.trim();
+  if ((key.startsWith('"') && key.endsWith('"')) || (key.startsWith("'") && key.endsWith("'"))) {
+    key = key.slice(1, -1);
+  }
+  // Collapse any depth of escaping to a real newline, then tidy Windows line endings.
+  key = key.replace(/\\+n/g, "\n").replace(/\r/g, "");
+
+  // A key that lost its markers is unusable and worth saying so plainly rather than handing
+  // OpenSSL something it will reject with a decoder error nobody can read.
+  if (!key.includes("-----BEGIN")) return undefined;
+
+  return key.endsWith("\n") ? key : `${key}\n`;
+}
+
 export class FirebaseNotConfiguredError extends Error {
   constructor() {
     super("Firebase server credentials are not set.");
@@ -28,9 +59,7 @@ function getAdminApp(): App {
 
   const projectId = process.env.FIREBASE_PROJECT_ID;
   const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
-  // Stored with literal \n because environment variables are single-line; Vercel's UI and
-  // .env both keep it that way, so the escapes have to be turned back into real newlines.
-  const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n");
+  const privateKey = normalisePrivateKey(process.env.FIREBASE_PRIVATE_KEY);
 
   if (!projectId || !clientEmail || !privateKey) throw new FirebaseNotConfiguredError();
 
