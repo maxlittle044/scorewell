@@ -10,6 +10,7 @@ import { UtilityRail } from "@/components/layout/utility-rail";
 import { ServiceWorkerRegistrar } from "@/components/layout/service-worker";
 import { DictionaryLookup } from "@/components/content/dictionary-lookup";
 import { LocaleProvider } from "@/components/i18n/locale-provider";
+import { SITE_URL } from "@/lib/site/site-url";
 import { getLocale } from "@/lib/i18n-server";
 
 const geistSans = Geist({
@@ -29,6 +30,10 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
+  // Every relative URL in metadata — canonicals, and the share tags still to be added —
+  // resolves against this. Without it Next falls back to localhost, which silently produces
+  // unusable absolute URLs in production.
+  metadataBase: new URL(SITE_URL),
   title: "ScoreWell — Prep smarter. Score well.",
   description:
     "Free IELTS practice tests, sample answers, and AI-powered writing, speaking, and grammar tools.",
