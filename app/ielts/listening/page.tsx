@@ -21,7 +21,7 @@ export default function ListeningIndexPage() {
           title="Listening tests"
           description="Real exam-style audio sections with transcripts and instant scoring."
         />
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {TESTS.map((test) => (
             <ContentCard
               key={test.slug}

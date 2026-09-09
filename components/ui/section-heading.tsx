@@ -25,6 +25,7 @@ export function SectionHeading({
 
   return (
     <div
+      data-reveal
       className={cn(
         "mb-10 flex gap-6",
         isCenter ? "flex-col items-center text-center" : "items-end justify-between",

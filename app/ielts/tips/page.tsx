@@ -35,7 +35,7 @@ export default async function TipsIndexPage() {
         {tips.length === 0 ? (
           <p className="text-sm text-ink-muted">No articles published yet.</p>
         ) : (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {tips.map((tip) => (
               <ContentCard
                 key={tip.slug}

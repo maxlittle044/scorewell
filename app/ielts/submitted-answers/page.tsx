@@ -35,7 +35,7 @@ export default async function SubmittedAnswersIndexPage() {
             </Link>
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {submissions.map((sub) => (
               <ContentCard
                 key={sub.id}

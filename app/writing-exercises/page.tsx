@@ -29,7 +29,7 @@ export default async function WritingExercisesIndexPage() {
             No writing exercises have been published yet.
           </p>
         ) : (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {exercises.map((exercise) => (
               <ContentCard
                 key={exercise.slug}

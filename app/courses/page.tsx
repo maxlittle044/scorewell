@@ -28,7 +28,7 @@ export default async function CoursesIndexPage() {
         {courses.length === 0 ? (
           <p className="text-sm text-ink-muted">No courses published yet.</p>
         ) : (
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div data-reveal-group className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {courses.map((course) => (
               <Link
                 key={course.slug}

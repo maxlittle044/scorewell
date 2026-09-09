@@ -5,8 +5,10 @@ export function PageHeader({
   title: string;
   description?: string;
 }) {
+  // Reveals on scroll like the home page's sections do. Every inner page renders its title
+  // through here, so this is the one edit that gives the whole site the same entrance.
   return (
-    <div className="relative mb-12">
+    <div data-reveal className="relative mb-12">
       <div
         aria-hidden="true"
         className="absolute -left-6 -top-6 h-16 w-16 rounded-full bg-pop-400/20 blur-2xl"

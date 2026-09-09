@@ -76,7 +76,7 @@ export default async function TipsBySkillPage({
             No {label.toLowerCase()} tips published yet.
           </p>
         ) : (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {tips.map((tip) => (
               <ContentCard
                 key={tip.slug}

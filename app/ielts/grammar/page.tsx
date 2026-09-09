@@ -46,7 +46,7 @@ export default async function GrammarLibraryPage() {
                   <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                     {category.name}
                   </h2>
-                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <div data-reveal-group className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                     {category.points.map((point) => (
                       <Link
                         key={point.slug}

@@ -285,11 +285,53 @@ body {
   transform: translateY(0);
 }
 
+/*
+ * A reveal inside a reveal defers to its ancestor. Page headings and section headings carry
+ * their own [data-reveal] so they animate on the inner pages, but on the home page they sit
+ * inside a section that already reveals as one block — without this they would fade twice,
+ * out of step with the panel around them.
+ */
+[data-reveal] [data-reveal] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/*
+ * Staggered reveal for a grid of cards. Each card is observed in its own right, so a card
+ * animates when it reaches the viewport rather than when the grid does. Observing the
+ * container instead looked correct on a short grid and did nothing useful on a long one: a
+ * thirty-card list is tall enough to intersect while its last row is three screens down, so
+ * every card would finish animating before anyone scrolled far enough to see it.
+ *
+ * Delays repeat every third card rather than climbing with the index. Three is the widest
+ * these grids get, so a row cascades left to right, and the fortieth card still waits 120ms
+ * at most — an index-based delay would leave it blank for several seconds and make the
+ * animation the thing you are waiting for. The shift is smaller than the section reveal's
+ * (12px, not 20px) because many small movements at full size read as noise.
+ */
+[data-reveal-group] > * {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal-group] > *.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal-group] > *:nth-child(3n + 1) { transition-delay: 0ms; }
+[data-reveal-group] > *:nth-child(3n + 2) { transition-delay: 60ms; }
+[data-reveal-group] > *:nth-child(3n + 3) { transition-delay: 120ms; }
+
 @media (prefers-reduced-motion: reduce) {
-  [data-reveal] {
+  [data-reveal],
+  [data-reveal-group] > * {
     opacity: 1;
     transform: none;
     transition: none;
+    transition-delay: 0ms;
   }
 
   .animate-float,
@@ -335,7 +377,8 @@ body {
   }
 
   /* Reveal animations never run before printing, which would leave content invisible. */
-  [data-reveal] {
+  [data-reveal],
+  [data-reveal-group] > * {
     opacity: 1 !important;
     transform: none !important;
   }

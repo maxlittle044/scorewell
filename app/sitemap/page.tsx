@@ -21,7 +21,7 @@ export default function SitemapPage() {
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <PageHeader title="Sitemap" />
 
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-reveal-group className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {GROUPS.map((group) => (
             <div key={group.heading}>
               <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">

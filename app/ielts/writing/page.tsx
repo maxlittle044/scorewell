@@ -21,7 +21,7 @@ export default function WritingIndexPage() {
           title="Writing tests"
           description="Task 1 and Task 2 prompts, checked by AI in seconds."
         />
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {TESTS.map((test) => (
             <ContentCard
               key={test.slug}

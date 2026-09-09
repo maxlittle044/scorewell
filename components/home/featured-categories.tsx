@@ -65,7 +65,7 @@ export async function FeaturedCategories() {
           description="Pick a skill and start with a full-length, timed test."
         />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-reveal-group className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {CATEGORIES.map(({ label, description, href, icon: Icon, bg, fg }, index) => (
             <Link key={label} href={href} className={`${CARD_LINK_CLASS} flex flex-col p-6`}>
               <div className="flex items-start justify-between">

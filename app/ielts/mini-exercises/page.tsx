@@ -17,7 +17,7 @@ export default async function MiniExercisesIndexPage() {
           title="Mini exercises"
           description="Short, low-commitment practice — a few minutes, a few questions."
         />
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {exercises.map((exercise) => (
             <ContentCard
               key={exercise.slug}

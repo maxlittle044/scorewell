@@ -25,7 +25,7 @@ export default async function TopicBanksIndexPage() {
             No topic banks have been published yet.
           </p>
         ) : (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {banks.map((bank) => (
               <ContentCard
                 key={bank.slug}

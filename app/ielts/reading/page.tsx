@@ -23,7 +23,7 @@ export default function ReadingIndexPage() {
           title="Reading tests"
           description="Full-length, timed reading tests with instant scoring."
         />
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {TESTS.map((test) => (
             <ContentCard
               key={test.slug}

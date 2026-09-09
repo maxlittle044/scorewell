@@ -25,7 +25,7 @@ export default async function AiConversationsIndexPage() {
             No conversation topics have been published yet.
           </p>
         ) : (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {topics.map((topic) => (
               <Link
                 key={topic.slug}
