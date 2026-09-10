@@ -31,7 +31,7 @@ export default async function BandNineSamplesIndexPage() {
           <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {samples.map((sample) => (
               <ContentCard
-              headingLevel={2}
+                headingLevel={2}
                 key={sample.slug}
                 tag={sample.taskType ?? "Sample"}
                 title={sample.title}
