@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { getSignedScreenshotUrl } from "@/lib/storage";
 import { formatNpr } from "@/lib/pricing";
 import { PageHeader } from "@/components/layout/page-header";
 import { approvePaymentAction, rejectPaymentAction } from "./actions";
+import { requireAdminPage } from "@/lib/admin";
 
 export const metadata: Metadata = {
   title: "Payment review — ScoreWell",
@@ -19,10 +17,8 @@ const METHOD_LABELS: Record<string, string> = {
 };
 
 export default async function AdminPaymentsPage() {
-  const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
-    notFound();
-  }
+  // The gate. See requireAdminPage — the layout alone does not stop this page running.
+  await requireAdminPage();
 
   const submissions = await prisma.paymentSubmission.findMany({
     orderBy: [{ status: "asc" }, { createdAt: "desc" }],

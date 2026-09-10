@@ -2,21 +2,23 @@
 
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
+import { isAdminUser } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { getDuration } from "@/lib/pricing";
 import { rewardReferralIfPending } from "@/lib/referral";
 import { grantCredits } from "@/lib/credits";
+import { logAdminActivity } from "@/lib/admin-activity";
 
 async function requireAdmin() {
   const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
+  if (!session?.user?.id || !(await isAdminUser(session.user.id))) {
     throw new Error("Not authorized.");
   }
+  return session;
 }
 
 export async function approvePaymentAction(formData: FormData) {
-  await requireAdmin();
+  const session = await requireAdmin();
 
   const submissionId = String(formData.get("submissionId") ?? "");
   const submission = await prisma.paymentSubmission.findUniqueOrThrow({ where: { id: submissionId } });
@@ -34,6 +36,15 @@ export async function approvePaymentAction(formData: FormData) {
       submission.creditsPurchased ?? 0,
       `Credit pack purchase (${submission.transactionRef})`,
     );
+    await logAdminActivity({
+      adminId: session.user.id,
+      adminEmail: session.user.email ?? "unknown",
+      action: "APPROVE_PAYMENT",
+      entityType: "PAYMENT_SUBMISSION",
+      entityId: submissionId,
+      summary: `Approved credit payment for ${submission.transactionRef}`,
+      metadata: { purpose: submission.purpose, userId: submission.userId },
+    });
     revalidatePath("/admin/payments");
     return;
   }
@@ -68,12 +79,21 @@ export async function approvePaymentAction(formData: FormData) {
   // If this user was referred, both sides earn a free month — runs after the
   // subscription upsert so the credit extends the period just purchased.
   await rewardReferralIfPending(submission.userId);
+  await logAdminActivity({
+    adminId: session.user.id,
+    adminEmail: session.user.email ?? "unknown",
+    action: "APPROVE_PAYMENT",
+    entityType: "PAYMENT_SUBMISSION",
+    entityId: submissionId,
+    summary: `Approved subscription payment for ${submission.transactionRef}`,
+    metadata: { purpose: submission.purpose, userId: submission.userId },
+  });
 
   revalidatePath("/admin/payments");
 }
 
 export async function rejectPaymentAction(formData: FormData) {
-  await requireAdmin();
+  const session = await requireAdmin();
 
   const submissionId = String(formData.get("submissionId") ?? "");
   const note = String(formData.get("note") ?? "").trim();
@@ -81,6 +101,15 @@ export async function rejectPaymentAction(formData: FormData) {
   await prisma.paymentSubmission.update({
     where: { id: submissionId },
     data: { status: "REJECTED", reviewedAt: new Date(), reviewNote: note || null },
+  });
+  await logAdminActivity({
+    adminId: session.user.id,
+    adminEmail: session.user.email ?? "unknown",
+    action: "REJECT_PAYMENT",
+    entityType: "PAYMENT_SUBMISSION",
+    entityId: submissionId,
+    summary: `Rejected payment ${submissionId}`,
+    metadata: { note },
   });
 
   revalidatePath("/admin/payments");

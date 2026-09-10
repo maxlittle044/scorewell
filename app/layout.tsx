@@ -1,12 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import "./globals.css";
+
 import { auth } from "@/auth";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { UtilityRail } from "@/components/layout/utility-rail";
+import { AdminChrome } from "@/components/layout/admin-chrome";
 import { ServiceWorkerRegistrar } from "@/components/layout/service-worker";
 import { DictionaryLookup } from "@/components/content/dictionary-lookup";
 import { LocaleProvider } from "@/components/i18n/locale-provider";
@@ -30,28 +32,47 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  // Every relative URL in metadata — canonicals, and the share tags still to be added —
-  // resolves against this. Without it Next falls back to localhost, which silently produces
-  // unusable absolute URLs in production.
   metadataBase: new URL(SITE_URL),
+
   title: "ScoreWell — Prep smarter. Score well.",
+
   description:
     "Free IELTS practice tests, sample answers, and AI-powered writing, speaking, and grammar tools.",
-  // iOS ignores the manifest's icons for the home screen and reads this instead.
-  appleWebApp: { capable: true, title: "ScoreWell", statusBarStyle: "default" },
+
+  appleWebApp: {
+    capable: true,
+    title: "ScoreWell",
+    statusBarStyle: "default",
+  },
+
   icons: {
-    icon: [{ url: "/icon-192.png", sizes: "192x192", type: "image/png" }],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    icon: [
+      {
+        url: "/icon-192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+    ],
   },
 };
 
-/** Tints the browser and status-bar chrome to the nav band's navy. */
 export const viewport: Viewport = {
   themeColor: "#294563",
 };
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const [session, locale] = await Promise.all([auth(), getLocale()]);
+export default async function RootLayout({
+  children,
+}: LayoutProps<"/">) {
+  const [session, locale] = await Promise.all([
+    auth(),
+    getLocale(),
+  ]);
 
   return (
     // `lang` stays "en" whatever the interface language is, because the page's content —
@@ -74,13 +95,25 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col">
         <LocaleProvider locale={locale}>
           <ScrollReveal />
+
           <ServiceWorkerRegistrar />
+
           <AnnouncementBar />
-          <Header session={session} />
+
+          <AdminChrome>
+            <Header session={session} />
+          </AdminChrome>
+
           {children}
+
           <DictionaryLookup />
+
           <UtilityRail />
-          <Footer />
+
+          <AdminChrome>
+            <Footer />
+          </AdminChrome>
+          
         </LocaleProvider>
       </body>
     </html>

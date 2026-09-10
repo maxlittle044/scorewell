@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
+import { isAdminUser } from "@/lib/admin";
 import { PageHeader } from "@/components/layout/page-header";
 import { FeatureBoard, FeatureRequestForm } from "@/components/content/feature-board";
 import { listFeatureRequests } from "@/lib/feature-requests";
@@ -15,6 +15,7 @@ export default async function FeatureRequestsPage() {
   const session = await auth();
   const requests = await listFeatureRequests(session?.user?.id ?? null);
   const signedIn = Boolean(session?.user);
+  const isAdmin = session?.user ? await isAdminUser(session.user.id) : false;
 
   return (
     <main className="flex flex-1 flex-col bg-surface">
@@ -38,7 +39,7 @@ export default async function FeatureRequestsPage() {
           <FeatureBoard
             requests={requests}
             signedIn={signedIn}
-            isAdmin={isAdminEmail(session?.user?.email)}
+            isAdmin={isAdmin}
           />
         )}
 

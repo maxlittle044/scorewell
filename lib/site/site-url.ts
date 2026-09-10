@@ -15,7 +15,8 @@
  * are worse than neither: they tell a crawler to fetch URLs that canonicalise elsewhere.
  */
 
-const FALLBACK = "http://localhost:3000";
+// const FALLBACK = "http://localhost:3000";
+const FALLBACK = "https://super-duper-guide-6994rpg67xwrh4qq5-3000.app.github.dev";
 
 function resolve(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();

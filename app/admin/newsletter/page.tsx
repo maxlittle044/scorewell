@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { PageHeader } from "@/components/layout/page-header";
+import { requireAdminPage } from "@/lib/admin";
 
 export const metadata: Metadata = {
   title: "Newsletter list — ScoreWell",
@@ -18,10 +16,8 @@ export const metadata: Metadata = {
  * is a list to copy out of, not a compose box that would imply one exists.
  */
 export default async function AdminNewsletterPage() {
-  const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
-    notFound();
-  }
+  // The gate. See requireAdminPage — the layout alone does not stop this page running.
+  await requireAdminPage();
 
   const [total, subscribers] = await Promise.all([
     prisma.newsletterSubscriber.count(),
