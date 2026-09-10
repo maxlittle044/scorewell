@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
 import { HeroIllustration } from "./hero-illustration";
@@ -37,9 +38,49 @@ function ArrowBadge({ tone }: { tone: "on-dark" | "on-light" }) {
   );
 }
 
-export async function Hero() {
+/**
+ * The three counters under the hero, and the only part of it that needs the database.
+ *
+ * Split out because the whole hero used to be `async`: two COUNT queries against Postgres in
+ * another region had to finish before the headline — the page's largest contentful paint —
+ * could be sent at all. Nothing above it depends on those numbers.
+ */
+async function HeroStats() {
   const stats = await getLibraryStats();
 
+  return (
+    <>
+      {stats.map((stat) => (
+        <div key={stat.label} className="text-center">
+          <dt className="sr-only">{stat.label}</dt>
+          <dd className="font-display text-2xl font-bold text-heading sm:text-3xl">
+            {stat.value}
+          </dd>
+          <p className="mt-1 text-xs text-ink-muted sm:text-sm">{stat.label}</p>
+        </div>
+      ))}
+    </>
+  );
+}
+
+/**
+ * The same three cells at the same height while the counts are still in flight, so the row
+ * does not change size when they arrive and nothing below it moves.
+ */
+function HeroStatsFallback() {
+  return (
+    <>
+      {[0, 1, 2].map((i) => (
+        <div key={i} className="text-center" aria-hidden="true">
+          <div className="mx-auto h-8 w-16 rounded bg-surface-sunken sm:h-9" />
+          <div className="mx-auto mt-1 h-4 w-24 rounded bg-surface-sunken sm:h-5" />
+        </div>
+      ))}
+    </>
+  );
+}
+
+export function Hero() {
   return (
     <section className="relative overflow-hidden bg-surface">
       {/* Soft pale wash instead of a full-bleed dark band (spec section 7.1). */}
@@ -87,15 +128,9 @@ export async function Hero() {
         </div>
 
         <dl className="mx-auto mt-14 grid max-w-3xl grid-cols-3 gap-4 border-t border-line pt-8">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <dt className="sr-only">{stat.label}</dt>
-              <dd className="font-display text-2xl font-bold text-heading sm:text-3xl">
-                {stat.value}
-              </dd>
-              <p className="mt-1 text-xs text-ink-muted sm:text-sm">{stat.label}</p>
-            </div>
-          ))}
+          <Suspense fallback={<HeroStatsFallback />}>
+            <HeroStats />
+          </Suspense>
         </dl>
       </div>
     </section>
