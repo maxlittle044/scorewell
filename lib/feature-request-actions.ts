@@ -2,10 +2,11 @@
 
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
+import { isAdminUser } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { MAX_DETAIL_LENGTH, MAX_TITLE_LENGTH, STATUSES } from "@/lib/feature-request-constants";
 import type { FeatureRequestStatus } from "@/generated/prisma/enums";
+import { logAdminActivity } from "@/lib/admin-activity";
 
 export type SubmitState = { error?: string; submitted?: boolean };
 
@@ -87,10 +88,21 @@ export async function setFeatureRequestStatusAction(
   status: FeatureRequestStatus,
 ): Promise<{ ok: boolean; error?: string }> {
   const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) return { ok: false, error: "Not allowed." };
+  if (!session?.user?.id || !(await isAdminUser(session.user.id))) {
+    return { ok: false, error: "Not allowed." };
+  }
   if (!STATUSES.includes(status)) return { ok: false, error: "Unknown status." };
 
   await prisma.featureRequest.update({ where: { id: requestId }, data: { status } });
+  await logAdminActivity({
+    adminId: session.user.id,
+    adminEmail: session.user.email ?? "unknown",
+    action: "UPDATE_FEATURE_REQUEST_STATUS",
+    entityType: "FEATURE_REQUEST",
+    entityId: requestId,
+    summary: `Changed feature request ${requestId} to ${status}`,
+    metadata: { status },
+  });
   revalidatePath("/feature-requests");
   return { ok: true };
 }

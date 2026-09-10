@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { getSignedScreenshotUrl } from "@/lib/storage";
 import { formatNpr } from "@/lib/pricing";
@@ -19,11 +16,6 @@ const METHOD_LABELS: Record<string, string> = {
 };
 
 export default async function AdminPaymentsPage() {
-  const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
-    notFound();
-  }
-
   const submissions = await prisma.paymentSubmission.findMany({
     orderBy: [{ status: "asc" }, { createdAt: "desc" }],
     include: { user: { select: { name: true, email: true } } },

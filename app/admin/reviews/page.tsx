@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { PageHeader } from "@/components/layout/page-header";
 import { REVIEW_STATUS_LABELS, countWords } from "@/lib/review";
@@ -19,11 +16,6 @@ const STATUS_STYLES: Record<string, string> = {
 };
 
 export default async function AdminReviewsPage() {
-  const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
-    notFound();
-  }
-
   const requests = await prisma.reviewRequest.findMany({
     orderBy: [{ status: "asc" }, { createdAt: "asc" }],
     include: {

@@ -2,24 +2,34 @@
 
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
+import { isAdminUser } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
+import { logAdminActivity } from "@/lib/admin-activity";
 
 async function requireAdmin() {
   const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
+  if (!session?.user?.id || !(await isAdminUser(session.user.id))) {
     throw new Error("Not authorized.");
   }
+  return session;
 }
 
 /** Claim a pending request, which starts the stated turnaround clock. */
 export async function startReviewAction(formData: FormData) {
-  await requireAdmin();
+  const session = await requireAdmin();
 
   const id = String(formData.get("requestId") ?? "");
   await prisma.reviewRequest.update({
     where: { id },
     data: { status: "IN_REVIEW" },
+  });
+  await logAdminActivity({
+    adminId: session.user.id,
+    adminEmail: session.user.email ?? "unknown",
+    action: "START_REVIEW",
+    entityType: "REVIEW_REQUEST",
+    entityId: id,
+    summary: `Started review ${id}`,
   });
 
   revalidatePath("/admin/reviews");
@@ -27,7 +37,7 @@ export async function startReviewAction(formData: FormData) {
 }
 
 export async function completeReviewAction(formData: FormData) {
-  await requireAdmin();
+  const session = await requireAdmin();
 
   const id = String(formData.get("requestId") ?? "");
   const notes = String(formData.get("notes") ?? "").trim();
@@ -40,6 +50,14 @@ export async function completeReviewAction(formData: FormData) {
     where: { id },
     data: { status: "COMPLETED", reviewerNotes: notes, completedAt: new Date() },
   });
+  await logAdminActivity({
+    adminId: session.user.id,
+    adminEmail: session.user.email ?? "unknown",
+    action: "COMPLETE_REVIEW",
+    entityType: "REVIEW_REQUEST",
+    entityId: id,
+    summary: `Completed review ${id}`,
+  });
 
   revalidatePath("/admin/reviews");
   revalidatePath("/reviews");
@@ -47,7 +65,7 @@ export async function completeReviewAction(formData: FormData) {
 
 /** Refund and close a request the team cannot complete. */
 export async function refundReviewAction(formData: FormData) {
-  await requireAdmin();
+  const session = await requireAdmin();
 
   const id = String(formData.get("requestId") ?? "");
   const request = await prisma.reviewRequest.findUniqueOrThrow({ where: { id } });
@@ -63,6 +81,14 @@ export async function refundReviewAction(formData: FormData) {
       },
     }),
   ]);
+  await logAdminActivity({
+    adminId: session.user.id,
+    adminEmail: session.user.email ?? "unknown",
+    action: "REFUND_REVIEW",
+    entityType: "REVIEW_REQUEST",
+    entityId: id,
+    summary: `Refunded review ${id}`,
+  });
 
   revalidatePath("/admin/reviews");
   revalidatePath("/reviews");

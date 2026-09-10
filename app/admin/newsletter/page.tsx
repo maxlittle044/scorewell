@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { auth } from "@/auth";
-import { isAdminEmail } from "@/lib/admin";
 import { prisma } from "@/lib/prisma";
 import { PageHeader } from "@/components/layout/page-header";
 
@@ -18,11 +15,6 @@ export const metadata: Metadata = {
  * is a list to copy out of, not a compose box that would imply one exists.
  */
 export default async function AdminNewsletterPage() {
-  const session = await auth();
-  if (!isAdminEmail(session?.user?.email)) {
-    notFound();
-  }
-
   const [total, subscribers] = await Promise.all([
     prisma.newsletterSubscriber.count(),
     prisma.newsletterSubscriber.findMany({

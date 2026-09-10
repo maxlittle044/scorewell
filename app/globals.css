@@ -242,6 +242,47 @@ body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-300) var(--surface-sunken);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--surface-sunken);
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 3px solid var(--surface-sunken);
+  border-radius: 999px;
+  background: var(--color-brand-300);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pop-500);
+}
+
+.admin-scrollbar {
+  scrollbar-color: rgb(126 220 214 / 0.55) rgb(16 31 54 / 0.45);
+}
+
+.admin-scrollbar::-webkit-scrollbar-track {
+  background: rgb(16 31 54 / 0.45);
+}
+
+.admin-scrollbar::-webkit-scrollbar-thumb {
+  border-color: rgb(16 31 54 / 0.45);
+  background: rgb(126 220 214 / 0.55);
+}
+
+.admin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pop-300);
+}
+
 @utility text-gradient {
   background-image: var(--gradient-vivid);
   background-clip: text;
@@ -283,6 +324,94 @@ body {
 [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.swal2-container {
+  z-index: 100;
+}
+
+.scorewell-swal-popup {
+  border: 1px solid var(--line) !important;
+  border-radius: 1rem !important;
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  box-shadow: 0 24px 70px rgb(16 31 54 / 0.22) !important;
+}
+
+.scorewell-swal-title {
+  color: var(--heading) !important;
+  font-family: var(--font-display-raw), sans-serif !important;
+}
+
+.scorewell-swal-text,
+.scorewell-swal-popup .swal2-html-container,
+.scorewell-swal-popup .swal2-input {
+  color: var(--ink-body) !important;
+}
+
+.scorewell-swal-popup .scorewell-user-field {
+  box-sizing: border-box !important;
+  width: calc(100% - 2em) !important;
+  margin: 0.5em auto 1em !important;
+}
+
+.scorewell-swal-popup .swal2-select {
+  border: 1px solid var(--line-strong) !important;
+  border-radius: 0.75rem !important;
+  background: var(--surface) !important;
+  color: var(--ink-body) !important;
+  padding: 0.85rem 1rem !important;
+  font: inherit !important;
+}
+
+.scorewell-swal-popup .swal2-select:focus {
+  border-color: var(--color-pop-500) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgb(var(--shadow-color-pop) / 0.18) !important;
+}
+
+.scorewell-swal-popup .swal2-input {
+  border: 1px solid var(--line-strong) !important;
+  border-radius: 0.75rem !important;
+  background: var(--surface) !important;
+}
+
+.scorewell-swal-popup .swal2-input:focus {
+  border-color: var(--color-pop-500) !important;
+  box-shadow: 0 0 0 3px rgb(var(--shadow-color-pop) / 0.18) !important;
+}
+
+.scorewell-swal-confirm,
+.scorewell-swal-cancel,
+.scorewell-swal-danger {
+  border-radius: 9999px !important;
+  padding: 0.7rem 1.15rem !important;
+  font-weight: 700 !important;
+}
+
+.scorewell-swal-confirm {
+  background: var(--color-brand-600) !important;
+}
+
+.scorewell-swal-confirm:hover {
+  background: var(--color-brand-700) !important;
+}
+
+.scorewell-swal-cancel {
+  background: var(--surface-sunken) !important;
+  color: var(--ink-body) !important;
+}
+
+.scorewell-swal-cancel:hover {
+  background: var(--line) !important;
+}
+
+.scorewell-swal-danger {
+  background: #b91c1c !important;
+}
+
+.scorewell-swal-danger:hover {
+  background: #991b1b !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

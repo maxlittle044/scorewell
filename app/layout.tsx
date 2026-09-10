@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { UtilityRail } from "@/components/layout/utility-rail";
+import { AdminChrome } from "@/components/layout/admin-chrome";
 import { ServiceWorkerRegistrar } from "@/components/layout/service-worker";
 import { DictionaryLookup } from "@/components/content/dictionary-lookup";
 import { LocaleProvider } from "@/components/i18n/locale-provider";
@@ -86,7 +87,9 @@ export default async function RootLayout({
 
           <AnnouncementBar />
 
-          <Header session={session} />
+          <AdminChrome>
+            <Header session={session} />
+          </AdminChrome>
 
           {children}
 
@@ -94,7 +97,10 @@ export default async function RootLayout({
 
           <UtilityRail />
 
-          <Footer />
+          <AdminChrome>
+            <Footer />
+          </AdminChrome>
+          
         </LocaleProvider>
       </body>
     </html>

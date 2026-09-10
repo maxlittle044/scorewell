@@ -87,6 +87,11 @@ enum SubscriptionStatus {
   TRIALING
 }
 
+enum UserRole {
+  USER
+  ADMIN
+}
+
 // site-build-prompt.md section 3: pricing table offers 1/3/6/12 month billing.
 enum BillingInterval {
   MONTHLY_1
@@ -96,23 +101,23 @@ enum BillingInterval {
 }
 
 model User {
-  id           String   @id @default(cuid())
-  name         String?
-  email        String   @unique
-  image        String?
+  id          String   @id @default(cuid())
+  name        String?
+  email       String   @unique
+  image       String?
   /**
    * Set once the account signs in through Firebase, which owns identity from that point on.
    * Nullable because accounts created before the switch have not signed in yet, and because
    * the two are matched by email on first Firebase sign-in.
    */
-  firebaseUid String? @unique
+  firebaseUid String?  @unique
+  role        UserRole @default(USER)
 
   /**
    * Deliberately kept after the move to Firebase. It is the revert path: while these hashes
    * are still here, going back to credentials auth is a change to auth.ts alone — no data
    * migration, no forced resets, nobody locked out. Do not drop this column until Firebase
    * has been running unremarkably for a good while.
-   *
    * Nullable because accounts created through Firebase never had a local password. Reverting
    * would give those users a "reset your password" path rather than a broken login, which is
    * the honest outcome — they never set one here.
@@ -151,6 +156,27 @@ model User {
   featureRequests     FeatureRequest[]
   featureVotes        FeatureVote[]
   attemptDrafts       AttemptDraft[]
+  adminActivityLogs   AdminActivityLog[]
+}
+
+// Append-only record of changes made from the admin workspace.
+// The email snapshot keeps the audit trail readable even if the admin account is later removed.
+model AdminActivityLog {
+  id         String  @id @default(cuid())
+  adminId    String?
+  admin      User?   @relation(fields: [adminId], references: [id], onDelete: SetNull)
+  adminEmail String
+
+  action     String
+  entityType String
+  entityId   String?
+  summary    String
+  metadata   Json?
+  createdAt  DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([adminId, createdAt])
+  @@index([entityType, entityId])
 }
 
 // An attempt in progress: the answers someone has given on a test they have not submitted.
@@ -586,14 +612,18 @@ model FlashcardReview {
   deckSlug String
   cardKey  String
 
-  /** Leitner box, 1 (new/just missed) upwards. Drives the next interval. */
+  /**
+   * Leitner box, 1 (new/just missed) upwards. Drives the next interval.
+   */
   box Int @default(1)
 
   dueAt          DateTime
   lastReviewedAt DateTime @default(now())
   reviewCount    Int      @default(0)
-  /** Times this card was answered wrong after having been answered right. */
-  lapses Int @default(0)
+  /**
+   * Times this card was answered wrong after having been answered right.
+   */
+  lapses         Int      @default(0)
 
   @@unique([userId, deckSlug, cardKey])
   @@index([userId, dueAt])
@@ -617,7 +647,9 @@ model MistakeReview {
   contentItemId String
   questionId    String
 
-  /** Leitner box, 1 upwards. A wrong answer sends it back to 1. */
+  /**
+   * Leitner box, 1 upwards. A wrong answer sends it back to 1.
+   */
   box Int @default(1)
 
   dueAt          DateTime
