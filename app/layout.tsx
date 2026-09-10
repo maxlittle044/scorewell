@@ -39,6 +39,33 @@ export const metadata: Metadata = {
   description:
     "Free IELTS practice tests, sample answers, and AI-powered writing, speaking, and grammar tools.",
 
+  /**
+   * Share cards. Without these a link pasted into WhatsApp or Facebook rendered as a bare
+   * URL — no title, no description, no image — which is the first thing a person sees of
+   * the site and, for a site passed between students, often the only thing.
+   *
+   * **Deliberately no `title` or `description` here.** Child routes inherit this object
+   * whole, so pinning a title makes every one of the 170 content pages share as the home
+   * page — measured: with a title set, /ielts/tips and /tools/paraphraser both advertised
+   * "ScoreWell — Prep smarter. Score well.". Leaving them out lets Next derive og:title and
+   * og:description from each page's own metadata, which is what makes a shared link say
+   * "Tips — ScoreWell". Add them back and you silently flatten every page into one.
+   *
+   * The image comes from app/opengraph-image.tsx and applies to every route that does not
+   * override it, so a card without its own artwork still gets the brand one.
+   */
+  openGraph: {
+    type: "website",
+    siteName: "ScoreWell",
+    locale: "en_US",
+    url: SITE_URL,
+  },
+
+  twitter: {
+    // "summary_large_image" is what renders the 1200x630 card rather than a thumbnail.
+    card: "summary_large_image",
+  },
+
   appleWebApp: {
     capable: true,
     title: "ScoreWell",

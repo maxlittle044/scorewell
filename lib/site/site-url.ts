@@ -15,8 +15,19 @@
  * are worse than neither: they tell a crawler to fetch URLs that canonicalise elsewhere.
  */
 
-// const FALLBACK = "http://localhost:3000";
-const FALLBACK = "https://super-duper-guide-6994rpg67xwrh4qq5-3000.app.github.dev";
+/**
+ * Localhost, and it must stay localhost.
+ *
+ * This is the value used when neither NEXT_PUBLIC_SITE_URL nor Vercel's production URL is
+ * available — in other words, only when nobody has said where the site lives. It briefly held
+ * a developer's Codespace hostname, which is the kind of thing that works perfectly until the
+ * day the environment variable is missing in production and every canonical URL, sitemap
+ * entry and share card starts pointing at a stranger's machine.
+ *
+ * To develop against a tunnelled or cloud host, set NEXT_PUBLIC_SITE_URL in your own .env —
+ * that is what the first branch of resolve() is for, and it stays on your machine.
+ */
+const FALLBACK = "http://localhost:3000";
 
 function resolve(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
