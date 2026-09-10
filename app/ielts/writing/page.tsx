@@ -24,6 +24,7 @@ export default function WritingIndexPage() {
         <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {TESTS.map((test) => (
             <ContentCard
+              headingLevel={2}
               key={test.slug}
               tag={test.tag}
               title={test.title}

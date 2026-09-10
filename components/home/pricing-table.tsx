@@ -45,16 +45,26 @@ function FeatureValue({ value }: { value: boolean | string }) {
   return <span className="text-sm font-medium text-ink-body">{value}</span>;
 }
 
-export function PricingTable({ currency = BASE_CURRENCY }: { currency?: Currency }) {
+export function PricingTable({
+  currency = BASE_CURRENCY,
+  headingLevel,
+}: {
+  currency?: Currency;
+  /** 1 when this table *is* the page, as on /pricing; left alone as a home-page section. */
+  headingLevel?: 1 | 2;
+}) {
   const [selected, setSelected] = useState(DURATIONS[3]);
   const total = totalForDuration(selected);
   const converting = currency !== BASE_CURRENCY;
+  // Plan names sit one level under whatever the table's own heading is.
+  const PlanHeading = headingLevel === 1 ? "h2" : "h3";
 
   return (
     <section className="bg-surface">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
+          headingLevel={headingLevel}
           title="Simple, transparent pricing"
           description="Start free. Upgrade any time for unlimited AI tools and saved progress."
         />
@@ -87,7 +97,7 @@ export function PricingTable({ currency = BASE_CURRENCY }: { currency?: Currency
 
         <div data-reveal className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-line p-6">
-            <h3 className="text-lg font-semibold text-ink">Free</h3>
+            <PlanHeading className="text-lg font-semibold text-ink">Free</PlanHeading>
             {/* No "≈" on this one: zero converts exactly. */}
             <p className="mt-2 text-3xl font-bold text-ink">{formatAmount(0, currency)}</p>
             <p className="mt-1 text-sm text-ink-muted">No payment required</p>
@@ -111,7 +121,7 @@ export function PricingTable({ currency = BASE_CURRENCY }: { currency?: Currency
             <span className="absolute -top-3 left-6 rounded-full bg-linear-to-r from-brand-600 to-pop-600 px-3 py-1 text-xs font-semibold text-white">
               Premium
             </span>
-            <h3 className="text-lg font-semibold text-ink">Premium</h3>
+            <PlanHeading className="text-lg font-semibold text-ink">Premium</PlanHeading>
             <p className="mt-2 text-3xl font-bold text-ink">
               {formatConverted(selected.pricePerMonthNpr, currency)}
               <span className="text-base font-normal text-ink-muted">/mo</span>

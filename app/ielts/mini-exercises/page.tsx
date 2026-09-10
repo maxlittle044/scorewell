@@ -20,6 +20,7 @@ export default async function MiniExercisesIndexPage() {
         <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {exercises.map((exercise) => (
             <ContentCard
+              headingLevel={2}
               key={exercise.slug}
               tag={exercise.tag}
               title={exercise.title}

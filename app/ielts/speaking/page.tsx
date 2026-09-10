@@ -38,6 +38,7 @@ export default async function SpeakingIndexPage() {
               const label = PART_LABELS[test.part];
               return (
                 <ContentCard
+              headingLevel={2}
                   key={test.slug}
                   tag={label?.tag ?? "Speaking"}
                   title={test.title}

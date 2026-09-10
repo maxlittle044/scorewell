@@ -14,7 +14,8 @@ export default async function PricingPage() {
 
   return (
     <main className="flex flex-1 flex-col">
-      <PricingTable currency={currency} />
+      {/* This table is the page here, not a section of one, so its heading is the h1. */}
+      <PricingTable currency={currency} headingLevel={1} />
       <CreditPacks currency={currency} />
       {/* Section 7a asks for the guarantees to be stated near the tier they apply to,
           so the strip repeats here under the plans rather than only on the homepage. */}

@@ -10,6 +10,13 @@ type SectionHeadingProps = {
   viewAllHref?: string;
   viewAllLabel?: string;
   className?: string;
+  /**
+   * The heading level this actually is. Defaults to 2, which is right when the section sits
+   * inside a page that has its own h1. A component reused as a *page's* main heading — the
+   * pricing table is both a home-page section and the whole of /pricing — passes 1, so the
+   * page is not left without an h1 for anyone navigating by headings.
+   */
+  headingLevel?: 1 | 2;
 };
 
 export function SectionHeading({
@@ -20,8 +27,10 @@ export function SectionHeading({
   viewAllHref,
   viewAllLabel = "View all",
   className,
+  headingLevel = 2,
 }: SectionHeadingProps) {
   const isCenter = align === "center";
+  const Heading = headingLevel === 1 ? "h1" : "h2";
 
   return (
     <div
@@ -39,9 +48,9 @@ export function SectionHeading({
           </span>
         )}
 
-        <h2 className="font-display text-2xl font-bold tracking-tight text-heading sm:text-3xl">
+        <Heading className="font-display text-2xl font-bold tracking-tight text-heading sm:text-3xl">
           {title}
-        </h2>
+        </Heading>
 
         {/* Thin rules flanking the subheading — the section-divider treatment the reference
             IELTS platforms use to separate a section from the cards beneath it. */}

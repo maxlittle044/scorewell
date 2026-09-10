@@ -65,9 +65,9 @@ export default async function VideoLessonsIndexPage() {
                   )}
                 </div>
                 <div className="flex flex-1 flex-col bg-surface p-4">
-                  <h3 className="font-semibold text-ink group-hover:text-link">
+                  <h2 className="font-semibold text-ink group-hover:text-link">
                     {lesson.title}
-                  </h3>
+                  </h2>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">{lesson.summary}</p>
                 </div>
               </Link>

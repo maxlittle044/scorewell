@@ -25,6 +25,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/search">)
             <input
               type="search"
               name="q"
+              aria-label="Search"
               defaultValue={query}
               placeholder="Search tests, tips, tools..."
               autoFocus

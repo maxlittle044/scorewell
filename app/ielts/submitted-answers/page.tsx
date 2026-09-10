@@ -38,6 +38,7 @@ export default async function SubmittedAnswersIndexPage() {
           <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {submissions.map((sub) => (
               <ContentCard
+              headingLevel={2}
                 key={sub.id}
                 tag={sub.taskType ?? "Answer"}
                 title={sub.title}

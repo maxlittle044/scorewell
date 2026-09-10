@@ -28,6 +28,7 @@ export default async function TopicBanksIndexPage() {
           <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {banks.map((bank) => (
               <ContentCard
+              headingLevel={2}
                 key={bank.slug}
                 tag={bank.topic ?? "Topic bank"}
                 title={bank.title}

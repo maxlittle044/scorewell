@@ -32,6 +32,7 @@ export default async function WritingExercisesIndexPage() {
           <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {exercises.map((exercise) => (
               <ContentCard
+              headingLevel={2}
                 key={exercise.slug}
                 tag={TASK_TYPE_LABELS[exercise.taskType] ?? "Writing"}
                 title={exercise.title}

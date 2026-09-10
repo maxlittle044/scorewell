@@ -38,6 +38,7 @@ export default async function TipsIndexPage() {
           <div data-reveal-group className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {tips.map((tip) => (
               <ContentCard
+              headingLevel={2}
                 key={tip.slug}
                 tag={tip.topic ?? "Tips"}
                 title={tip.title}

@@ -48,9 +48,9 @@ export default async function CoursesIndexPage() {
                   )}
                 </div>
                 <div className="bg-surface p-5">
-                  <h3 className="font-semibold text-ink group-hover:text-link">
+                  <h2 className="font-semibold text-ink group-hover:text-link">
                     {course.title}
-                  </h3>
+                  </h2>
                   <p className="mt-1.5 text-sm text-ink-body">{course.description}</p>
                   <p className="mt-3 text-xs font-medium text-ink-muted">
                     {course.lessonCount} lessons

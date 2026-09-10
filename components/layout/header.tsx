@@ -63,6 +63,9 @@ export function Header({ session }: { session: Session | null }) {
               <input
                 type="search"
                 name="q"
+                /* A placeholder is not a label — it vanishes on focus and is not reliably
+                   announced. The visible cue stays; this is what a screen reader reads. */
+                aria-label={t("Search")}
                 placeholder={t("Search tests, tips, tools...")}
                 className="w-full rounded-full border border-line bg-surface-muted py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted transition-colors focus:border-brand-400 focus:bg-surface focus:outline-none focus:ring-4 focus:ring-brand-100"
               />
@@ -219,6 +222,9 @@ export function Header({ session }: { session: Session | null }) {
               <input
                 type="search"
                 name="q"
+                /* A placeholder is not a label — it vanishes on focus and is not reliably
+                   announced. The visible cue stays; this is what a screen reader reads. */
+                aria-label={t("Search")}
                 placeholder={t("Search tests, tips, tools...")}
                 className="w-full rounded-full border border-line bg-surface-muted py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100"
               />

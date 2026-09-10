@@ -117,8 +117,14 @@ export default function LoginPage() {
           </div>
         )}
 
-        {mode === "reset" && (
+        {mode === "reset" ? (
           <h1 className="mt-8 text-center text-lg font-bold text-ink">Reset your password</h1>
+        ) : (
+          /* The card is identified visually by the logo and the Log in / Sign up tabs, which
+             leaves anyone navigating by headings on a page with none at all. */
+          <h1 className="sr-only">
+            {mode === "login" ? "Log in to ScoreWell" : "Create a ScoreWell account"}
+          </h1>
         )}
 
         <form action={handleSubmit} className="mt-6 flex flex-col gap-4">
