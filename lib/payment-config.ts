@@ -12,11 +12,19 @@ import type { PaymentMethod } from "@/generated/prisma/enums";
  *
  * Set these in `.env` locally and in the Vercel project settings to open
  * checkout:
- *   PAYMENT_ACCOUNT_NAME  — the name money should be sent to
- *   PAYMENT_ESEWA_ID      — eSewa ID
- *   PAYMENT_KHALTI_ID     — Khalti ID
- *   PAYMENT_BANK_ACCOUNT  — bank name + account number
- *   PAYMENT_QR_URL        — optional image URL of the real QR code
+ *   PAYMENT_ACCOUNT_NAME   — the name money should be sent to
+ *   PAYMENT_ESEWA_ID       — eSewa ID
+ *   PAYMENT_KHALTI_ID      — Khalti ID
+ *   PAYMENT_BANK_ACCOUNT   — bank name + account number
+ *   PAYMENT_ESEWA_QR_URL   — image of the real eSewa QR
+ *   PAYMENT_KHALTI_QR_URL  — image of the real Khalti QR
+ *   PAYMENT_BANK_QR_URL    — image of the real bank QR, if the bank issues one
+ *
+ * **A QR belongs to one method.** There used to be a single PAYMENT_QR_URL shown
+ * against whichever method was selected, captioned "QR code for paying by
+ * Khalti" even when the image was the eSewa one — an instruction to scan the
+ * wrong code and send money to the wrong place. Each method now carries its own
+ * or shows none.
  */
 
 export type PaymentAccount = {
@@ -24,6 +32,8 @@ export type PaymentAccount = {
   label: string;
   /** Null when this particular method has not been configured. */
   accountId: string | null;
+  /** This method's own QR image. Null when none has been supplied for it. */
+  qrUrl: string | null;
 };
 
 function read(name: string): string | null {
@@ -33,9 +43,24 @@ function read(name: string): string | null {
 
 export function getPaymentAccounts(): PaymentAccount[] {
   return [
-    { method: "ESEWA", label: "eSewa", accountId: read("PAYMENT_ESEWA_ID") },
-    { method: "KHALTI", label: "Khalti", accountId: read("PAYMENT_KHALTI_ID") },
-    { method: "BANK_TRANSFER", label: "Bank transfer", accountId: read("PAYMENT_BANK_ACCOUNT") },
+    {
+      method: "ESEWA",
+      label: "eSewa",
+      accountId: read("PAYMENT_ESEWA_ID"),
+      qrUrl: read("PAYMENT_ESEWA_QR_URL"),
+    },
+    {
+      method: "KHALTI",
+      label: "Khalti",
+      accountId: read("PAYMENT_KHALTI_ID"),
+      qrUrl: read("PAYMENT_KHALTI_QR_URL"),
+    },
+    {
+      method: "BANK_TRANSFER",
+      label: "Bank transfer",
+      accountId: read("PAYMENT_BANK_ACCOUNT"),
+      qrUrl: read("PAYMENT_BANK_QR_URL"),
+    },
   ];
 }
 
@@ -50,9 +75,4 @@ export function paymentsConfigured(): boolean {
 
 export function getAccountName(): string | null {
   return read("PAYMENT_ACCOUNT_NAME");
-}
-
-/** Real QR image, if one has been supplied. Never a generated stand-in. */
-export function getQrUrl(): string | null {
-  return read("PAYMENT_QR_URL");
 }

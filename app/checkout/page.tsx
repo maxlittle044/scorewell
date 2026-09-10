@@ -6,7 +6,7 @@ import { CheckoutForm } from "@/components/checkout/checkout-form";
 import { getDuration } from "@/lib/pricing";
 import { getCreditPack } from "@/lib/credits";
 import { getCurrency } from "@/lib/currency-server";
-import { getAccountName, getConfiguredAccounts, getQrUrl, paymentsConfigured } from "@/lib/payment-config";
+import { getAccountName, getConfiguredAccounts, paymentsConfigured } from "@/lib/payment-config";
 
 export const metadata: Metadata = {
   title: "Checkout — ScoreWell",
@@ -37,7 +37,6 @@ export default async function CheckoutPage({ searchParams }: PageProps<"/checkou
             purchase={purchase}
             accounts={getConfiguredAccounts()}
             accountName={getAccountName()}
-            qrUrl={getQrUrl()}
             currency={currency}
           />
         ) : (

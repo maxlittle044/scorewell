@@ -17,14 +17,12 @@ export function CheckoutForm({
   purchase,
   accounts,
   accountName,
-  qrUrl,
   currency = BASE_CURRENCY,
 }: {
   purchase: Purchase;
   /** Only methods that actually have an account behind them. */
   accounts: PaymentAccount[];
   accountName: string | null;
-  qrUrl: string | null;
   /** Only ever a second opinion on the price — the NPR figure below is what is transferred. */
   currency?: Currency;
 }) {
@@ -86,15 +84,17 @@ export function CheckoutForm({
         ))}
       </div>
 
-      {/* A QR is shown only when a real one has been supplied — never a stand-in. */}
-      {qrUrl && (
-        <div className="mt-6 flex justify-center">
+      {/* The selected method's own QR, and only a real one — never a stand-in, and never
+          another method's code captioned as this one's. */}
+      {selected?.qrUrl && (
+        <div className="mt-6 flex flex-col items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={qrUrl}
-            alt={`QR code for paying by ${selected?.label ?? "the selected method"}`}
+            src={selected.qrUrl}
+            alt={`QR code for paying by ${selected.label}`}
             className="h-48 w-48 rounded-lg border border-line bg-surface p-2"
           />
+          <p className="mt-2 text-xs text-ink-muted">Scan with {selected.label}</p>
         </div>
       )}
 

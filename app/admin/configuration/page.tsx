@@ -113,7 +113,9 @@ const GROUPS: Group[] = [
       { name: "PAYMENT_ESEWA_ID", importance: "optional", consequence: "eSewa is not offered." },
       { name: "PAYMENT_KHALTI_ID", importance: "optional", consequence: "Khalti is not offered." },
       { name: "PAYMENT_BANK_ACCOUNT", importance: "optional", consequence: "Bank transfer is not offered." },
-      { name: "PAYMENT_QR_URL", importance: "optional", consequence: "No QR code is shown. A stand-in is never invented." },
+      { name: "PAYMENT_ESEWA_QR_URL", importance: "optional", consequence: "No QR is shown when eSewa is selected — the ID is still shown. A stand-in is never invented." },
+      { name: "PAYMENT_KHALTI_QR_URL", importance: "optional", consequence: "No QR is shown when Khalti is selected — the ID is still shown." },
+      { name: "PAYMENT_BANK_QR_URL", importance: "optional", consequence: "No QR is shown for bank transfer. Most banks do not issue one." },
     ],
   },
   {
