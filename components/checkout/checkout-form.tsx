@@ -88,13 +88,41 @@ export function CheckoutForm({
           another method's code captioned as this one's. */}
       {selected?.qrUrl && (
         <div className="mt-6 flex flex-col items-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={selected.qrUrl}
-            alt={`QR code for paying by ${selected.label}`}
-            className="h-48 w-48 rounded-lg border border-line bg-surface p-2"
-          />
-          <p className="mt-2 text-xs text-ink-muted">Scan with {selected.label}</p>
+          {/* Two things this has to get right, because both fail only at the moment someone
+              tries to pay:
+
+              Aspect ratio is preserved. A fixed square box stretched the real eSewa card —
+              1029x1600 — into 192x192, and a QR squashed out of square stops scanning.
+
+              Size. These are whole payment cards with branding and whitespace around a small
+              code, so the QR inside ends up a fraction of the image. At the old height the
+              Khalti code came out about 90px across, which is marginal to scan off a screen.
+              It is given more room, and opens full size in a new tab for anyone whose camera
+              still will not read it. */}
+          <a
+            href={selected.qrUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-100"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={selected.qrUrl}
+              alt={`QR code for paying by ${selected.label}`}
+              className="max-h-104 w-auto max-w-full rounded-lg border border-line bg-surface object-contain p-2"
+            />
+          </a>
+          <p className="mt-2 text-xs text-ink-muted">
+            Scan with {selected.label} —{" "}
+            <a
+              href={selected.qrUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-link hover:underline"
+            >
+              open full size
+            </a>
+          </p>
         </div>
       )}
 
