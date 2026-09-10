@@ -20,6 +20,12 @@
  * move `RATES_AS_OF` to the date you checked. These are approximations recorded at the date
  * shown, not quotes. The NPR pricing they convert is itself still placeholder — see
  * `lib/pricing.ts` and `lib/credits.ts`.
+ *
+ * Last checked against two independent sources that agreed to within half a percent
+ * (open.er-api.com and frankfurter.dev), cross-checked by the INR row: both put NPR/INR at
+ * 1.594-1.60, which is the peg, so a source that disagreed there would have been discarded.
+ * The previous figures had drifted 9-17% low, which showed overseas readers a price up to a
+ * fifth higher than the rupees actually leaving their account.
  */
 
 export const CURRENCIES = ["NPR", "INR", "USD", "GBP", "EUR", "AUD", "CAD"] as const;
@@ -31,7 +37,7 @@ export const BASE_CURRENCY: Currency = "NPR";
 export const CURRENCY_COOKIE = "scorewell_currency";
 
 /** The date the rates below were last checked, shown wherever a converted price appears. */
-export const RATES_AS_OF = "September 2026";
+export const RATES_AS_OF = "10 September 2026";
 
 export type CurrencyInfo = {
   /** Written before the amount, e.g. "$12". */
@@ -51,11 +57,11 @@ export const CURRENCY_INFO: Record<Currency, CurrencyInfo> = {
   // Not an estimate: the Nepalese rupee is pegged to the Indian rupee at a fixed 1.6, and has
   // been for decades. This is the one row below that does not drift.
   INR: { symbol: "₹", name: "Indian rupee", nprPerUnit: 1.6 },
-  USD: { symbol: "$", name: "US dollar", nprPerUnit: 138 },
-  GBP: { symbol: "£", name: "British pound", nprPerUnit: 178 },
-  EUR: { symbol: "€", name: "Euro", nprPerUnit: 152 },
-  AUD: { symbol: "A$", name: "Australian dollar", nprPerUnit: 91 },
-  CAD: { symbol: "C$", name: "Canadian dollar", nprPerUnit: 100 },
+  USD: { symbol: "$", name: "US dollar", nprPerUnit: 152 },
+  GBP: { symbol: "£", name: "British pound", nprPerUnit: 206 },
+  EUR: { symbol: "€", name: "Euro", nprPerUnit: 177 },
+  AUD: { symbol: "A$", name: "Australian dollar", nprPerUnit: 110 },
+  CAD: { symbol: "C$", name: "Canadian dollar", nprPerUnit: 110 },
 };
 
 export function isCurrency(value: unknown): value is Currency {
