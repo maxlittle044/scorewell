@@ -221,11 +221,11 @@ model Referral {
   id String @id @default(cuid())
 
   referrerId String
-  referrer   User   @relation("ReferralsMade", fields: [referrerId], references: [id])
+  referrer   User   @relation("ReferralsMade", fields: [referrerId], references: [id], onDelete: Cascade)
 
   // A user can only ever be referred once.
   referredUserId String @unique
-  referredUser   User   @relation("ReferralReceived", fields: [referredUserId], references: [id])
+  referredUser   User   @relation("ReferralReceived", fields: [referredUserId], references: [id], onDelete: Cascade)
 
   status     ReferralStatus @default(PENDING)
   rewardedAt DateTime?
@@ -239,7 +239,7 @@ model Referral {
 model Subscription {
   id     String @id @default(cuid())
   userId String @unique
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   tier             SubscriptionTier   @default(FREE)
   status           SubscriptionStatus @default(ACTIVE)
@@ -255,7 +255,7 @@ model Subscription {
 model Submission {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   contentItemId String?
   contentItem   ContentItem? @relation(fields: [contentItemId], references: [id])
@@ -288,7 +288,7 @@ model SubmissionReply {
   submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
 
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   text String
 
@@ -303,7 +303,7 @@ model SubmissionReply {
 model Progress {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   contentItemId String?
   contentItem   ContentItem? @relation(fields: [contentItemId], references: [id])
@@ -342,7 +342,7 @@ model Progress {
 model AiUsage {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   tool String
 
@@ -377,7 +377,7 @@ enum PaymentPurpose {
 model PaymentSubmission {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   method  PaymentMethod
   purpose PaymentPurpose @default(SUBSCRIPTION)
@@ -409,7 +409,7 @@ model PaymentSubmission {
 model Conversation {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   slug  String // the AI_CONVERSATION ContentItem slug this practises
   title String
@@ -434,7 +434,7 @@ model Conversation {
 model LiveLessonRegistration {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   contentItemId String
   contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
@@ -453,7 +453,7 @@ model LiveLessonRegistration {
 model CreditTransaction {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   delta  Int
   reason String
@@ -486,7 +486,7 @@ model ReviewRequest {
   submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
 
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   status          ReviewRequestStatus @default(PENDING)
   turnaroundHours Int
@@ -509,7 +509,7 @@ model ReviewRequest {
 model SimulationAttempt {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   // The ContentItem.sourceTestSet shared by the four practice tests this
   // sitting is built from (see lib/content/exam-library.ts collection logic).
@@ -563,7 +563,7 @@ model SimulationAttempt {
 model CourseLessonCompletion {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   courseSlug  String
   lessonIndex Int
@@ -607,7 +607,7 @@ model NewsletterSubscriber {
 model FlashcardReview {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   deckSlug String
   cardKey  String
@@ -642,7 +642,7 @@ model FlashcardReview {
 model MistakeReview {
   id     String @id @default(cuid())
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   contentItemId String
   questionId    String
@@ -705,7 +705,7 @@ model FeatureVote {
   request   FeatureRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
 
   userId String
-  user   User   @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
 

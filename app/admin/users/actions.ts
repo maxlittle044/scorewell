@@ -216,10 +216,12 @@ export async function deleteUserAction(userId: string): Promise<ActionResult> {
     }
 
     // Order matters, and it used to be the other way round. Firebase was deleted first, so
-    // when the Postgres delete then failed — and it fails for anyone who owns rows in a
-    // table that restricts deletes, which is most real accounts — the person was left
-    // unable to sign in while all of their data was still here. A half-deleted user is
-    // worse than a failed delete.
+    // when the Postgres delete then failed the person was left unable to sign in while all
+    // of their data was still here. A half-deleted user is worse than a failed delete.
+    //
+    // The Postgres delete now cascades: the account and everything it owns — subscription,
+    // progress, submissions, payment records — go together. That is what deleting a user
+    // means, and it is why the confirmation in the UI is worded the way it is.
     //
     // Inside a transaction the Postgres delete goes first and throws immediately if it is
     // not allowed, before anything irreversible happens to their sign-in. If Firebase then
@@ -249,14 +251,13 @@ export async function deleteUserAction(userId: string): Promise<ActionResult> {
   } catch (error) {
     console.error("Admin could not delete user:", error);
 
-    // Most accounts own rows — a subscription, saved results, submissions — in tables that
-    // refuse to have their owner deleted out from under them. Prisma reports that as a
-    // constraint name, which means nothing to whoever clicked the button, so say what
-    // actually happened and that nothing was changed.
+    // Deleting a user now cascades to everything they own, so a foreign key complaint here
+    // means a table was added that points at User without a delete rule. Say that plainly
+    // rather than showing a constraint name, and confirm nothing was changed.
     if (/[Ff]oreign key constraint/.test(String(error))) {
       return {
         error:
-          "This account still has data attached to it — a subscription, saved results or submissions — so it cannot be deleted yet. Nothing was changed. Disable the account instead, or ask a developer to remove their records first.",
+          "This account could not be deleted because something still references it. Nothing was changed — this needs a developer to look at.",
       };
     }
 
