@@ -119,7 +119,9 @@ export function UsersTable({ users, defaultRole = "USER" }: { users: UserRow[]; 
                       </span>
                     </td>
                     <td className="whitespace-nowrap px-6 py-4">
-                      <div className="flex items-center gap-2 text-sm text-ink-muted"><CalendarDays className="h-4 w-4 shrink-0" />{new Date(user.createdAt).toLocaleDateString()}</div>
+                      {/* suppressHydrationWarning: the server formats in its timezone, the browser in the
+                          reader's, so the two passes can differ by a day near midnight. */}
+                      <div suppressHydrationWarning className="flex items-center gap-2 text-sm text-ink-muted"><CalendarDays className="h-4 w-4 shrink-0" />{new Date(user.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</div>
                     </td>
                     <td className="whitespace-nowrap px-6 py-4">
                       <UserActionsMenu userId={user.id} email={user.email} name={user.name} role={user.role} disabled={user.disabled} />

@@ -56,9 +56,9 @@ export default async function AdminUsersPage() {
         <div data-reveal>
           <PageHeader
             title="Users"
-            description={`${totalUsers} registered ${
-              totalUsers === 1 ? "user" : "users"
-            }.`}
+            description={`${totalUsers} ${
+              totalUsers === 1 ? "account" : "accounts"
+            } with the standard role. Administrators are listed under Admins.`}
           />
         </div>
 
@@ -71,7 +71,10 @@ export default async function AdminUsersPage() {
               </div>
 
               <div>
-                <p className="text-sm text-ink-muted">Total users</p>
+                {/* Not "Total users": this list excludes admins, and the overview's own
+                    "Total users" counts everybody. Two cards with the same label and
+                    different numbers is how someone ends up mistrusting both. */}
+                <p className="text-sm text-ink-muted">Standard users</p>
                 <p className="mt-1 text-2xl font-semibold text-ink-body">
                   {totalUsers}
                 </p>
@@ -89,7 +92,7 @@ export default async function AdminUsersPage() {
                 <p className="text-sm text-ink-muted">Latest signup</p>
                 <p className="mt-1 text-lg font-semibold text-ink-body">
                   {users.length > 0
-                    ? users[0].createdAt.toLocaleDateString()
+                    ? users[0].createdAt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
                     : "—"}
                 </p>
               </div>
