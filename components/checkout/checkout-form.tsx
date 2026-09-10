@@ -7,6 +7,7 @@ import { BASE_CURRENCY, formatConverted, type Currency } from "@/lib/currency";
 import type { CreditPack } from "@/lib/credits";
 import { submitPaymentAction } from "@/app/checkout/actions";
 import type { PaymentAccount } from "@/lib/payment-config";
+import { MAX_TRANSACTION_REF_LENGTH, checkScreenshot } from "@/lib/input-limits";
 
 /** One form serves both purchases; the purpose decides labels and hidden fields. */
 export type Purchase =
@@ -29,6 +30,15 @@ export function CheckoutForm({
   const [method, setMethod] = useState<string>(accounts[0]?.method ?? "ESEWA");
   const selected = accounts.find((a) => a.method === method) ?? accounts[0];
   const [state, formAction, pending] = useActionState(submitPaymentAction, {});
+
+  /**
+   * The same size and type check the server runs, done here as well.
+   *
+   * Not belt and braces: a request bigger than Next's Server Action body limit is refused in
+   * transport, so the action never runs and the server has no way to say anything. Without
+   * this, attaching a large phone screenshot looked exactly like the button doing nothing.
+   */
+  const [fileError, setFileError] = useState<string | null>(null);
 
   const isCredits = purchase.kind === "credits";
   const summaryLabel = isCredits
@@ -157,6 +167,7 @@ export function CheckoutForm({
             name="transactionRef"
             type="text"
             required
+            maxLength={MAX_TRANSACTION_REF_LENGTH}
             placeholder="e.g. the reference shown after payment"
             className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
@@ -170,9 +181,17 @@ export function CheckoutForm({
             id="screenshot"
             name="screenshot"
             type="file"
-            accept="image/*"
+            accept="image/png,image/jpeg,image/webp"
+            onChange={(event) => {
+              const file = event.target.files?.[0];
+              const problem = file ? checkScreenshot(file) : null;
+              setFileError(problem);
+              // Clear it, so an unusable file cannot be submitted by ignoring the message.
+              if (problem) event.target.value = "";
+            }}
             className="w-full text-sm text-ink-body file:mr-3 file:rounded-full file:border-0 file:bg-surface-sunken file:px-3 file:py-2 file:text-sm file:font-medium file:text-ink-body hover:file:bg-line"
           />
+          {fileError && <p className="mt-1.5 text-sm text-red-600">{fileError}</p>}
         </div>
 
         <button

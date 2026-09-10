@@ -13,24 +13,32 @@ const DEV_ORIGINS = [
 const nextConfig: NextConfig = {
   allowedDevOrigins: DEV_ORIGINS,
 
-  /**
-   * Server Action origins are a CSRF control: a request whose Origin is on this list is
-   * allowed to invoke a Server Action. The cloud-workstation hosts have to be here for
-   * development to work at all, but `*.app.github.dev` is a domain anyone can get a
-   * Codespace on — trusting it in production would let any of them post to our actions.
-   *
-   * So it is applied in development only. Production keeps Next's default, which is to
-   * accept the deployment's own origin and nothing else.
-   */
-  ...(process.env.NODE_ENV === "development"
-    ? {
-        experimental: {
-          serverActions: {
-            allowedOrigins: ["localhost:3000", ...DEV_ORIGINS],
-          },
-        },
-      }
-    : {}),
+  experimental: {
+    serverActions: {
+      /**
+       * Next defaults this to 1MB, and a Server Action that exceeds it is rejected with a 413
+       * before any of our code runs — so the visitor sees nothing at all. A payment screenshot
+       * taken on a phone is routinely 2-5MB, which meant attaching proof of payment, pressing
+       * submit, and having the page sit there.
+       *
+       * Set above the 5MB screenshot cap in lib/input-limits.ts, with room for the boundaries
+       * and part headers multipart adds. The real limit is the one in that file, because that
+       * is the one that can explain itself to the person uploading.
+       */
+      bodySizeLimit: "6mb",
+
+      /**
+       * Origins allowed to invoke a Server Action — a CSRF control. The cloud-workstation
+       * hosts have to be here for development to work at all, but `*.app.github.dev` is a
+       * domain anyone can get a Codespace on, and trusting it in production would let any of
+       * them post to our actions. Development only; production keeps Next's default of the
+       * deployment's own origin and nothing else.
+       */
+      ...(process.env.NODE_ENV === "development"
+        ? { allowedOrigins: ["localhost:3000", ...DEV_ORIGINS] }
+        : {}),
+    },
+  },
 
   async headers() {
     return [

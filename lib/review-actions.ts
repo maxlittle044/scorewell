@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
+import { MAX_ANSWER_LENGTH, checkLength } from "@/lib/input-limits";
 import { getCreditBalance, spendCredits } from "@/lib/credits";
 import {
   HUMAN_REVIEW_ENABLED,
@@ -44,6 +45,10 @@ export async function requestReviewAction(
   const taskType = (TASK_TYPES as readonly string[]).includes(taskTypeRaw) ? taskTypeRaw : "task2";
 
   if (!answerText) return { error: "Paste your answer before requesting a review." };
+
+  // There was a minimum word count but no maximum, so the field was unbounded.
+  const tooLong = checkLength(answerText, MAX_ANSWER_LENGTH, "answer");
+  if (tooLong) return { error: tooLong };
   if (countWords(answerText) < REVIEW_MIN_WORDS) {
     return { error: `Answers need at least ${REVIEW_MIN_WORDS} words for a useful review.` };
   }

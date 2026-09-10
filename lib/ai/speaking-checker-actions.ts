@@ -9,6 +9,7 @@ import {
 } from "./speaking-checker";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "./usage";
 import { recordAiBandProgress } from "@/lib/progress";
+import { MAX_AI_INPUT_LENGTH, checkLength } from "@/lib/input-limits";
 
 export type SpeakingCheckState = {
   result?: SpeakingCheckResult;
@@ -45,6 +46,9 @@ export async function checkSpeakingAction(
   if (!transcript) {
     return { error: "Record or type your answer before checking." };
   }
+
+  const tooLong = checkLength(transcript, MAX_AI_INPUT_LENGTH, "answer");
+  if (tooLong) return { error: tooLong };
 
   const quota = await checkAiQuota();
   if (!quota.allowed) {

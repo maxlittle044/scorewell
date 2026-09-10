@@ -3,6 +3,7 @@
 import { describeAiError } from "./provider";
 import { runTextTool, type TextToolKind } from "./text-tool";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "./usage";
+import { MAX_AI_INPUT_LENGTH, checkLength } from "@/lib/input-limits";
 
 export type TextToolActionState = { result?: string; error?: string; limitReached?: boolean };
 
@@ -26,6 +27,9 @@ export async function runTextToolAction(
 
   if (!kind) return { error: "Unknown tool." };
   if (!inputText) return { error: "Please enter some text first." };
+
+  const tooLong = checkLength(inputText, MAX_AI_INPUT_LENGTH, "text");
+  if (tooLong) return { error: tooLong };
 
   const quota = await checkAiQuota();
   if (!quota.allowed) {

@@ -3,6 +3,12 @@
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
+import {
+  MAX_ANSWER_LENGTH,
+  MAX_ANSWER_TITLE_LENGTH,
+  MAX_REPLY_LENGTH,
+  checkLength,
+} from "@/lib/input-limits";
 
 export type ShareState = { shared?: boolean; error?: string };
 
@@ -22,6 +28,13 @@ export async function shareAnswerAction(
   const contentItemId = String(formData.get("contentItemId") ?? "").trim() || null;
 
   if (!answerText) return { error: "Write an answer before sharing it." };
+
+  // This is published to a public feed, so the only previous limit on its size was whatever
+  // the browser chose to send.
+  const tooLong =
+    checkLength(answerText, MAX_ANSWER_LENGTH, "answer") ??
+    (title ? checkLength(title, MAX_ANSWER_TITLE_LENGTH, "title") : null);
+  if (tooLong) return { error: tooLong };
 
   await prisma.submission.create({
     data: {
@@ -54,6 +67,9 @@ export async function postReplyAction(
   const text = String(formData.get("text") ?? "").trim();
 
   if (!text) return { error: "Write some feedback first." };
+
+  const tooLong = checkLength(text, MAX_REPLY_LENGTH, "feedback");
+  if (tooLong) return { error: tooLong };
 
   const submission = await prisma.submission.findFirst({
     where: { id: submissionId, published: true },

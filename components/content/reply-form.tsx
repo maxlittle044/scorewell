@@ -2,6 +2,7 @@
 
 import { useActionState, useRef } from "react";
 import { postReplyAction } from "@/lib/submission-actions";
+import { MAX_REPLY_LENGTH } from "@/lib/input-limits";
 
 export function ReplyForm({ submissionId }: { submissionId: string }) {
   const [state, formAction, pending] = useActionState(postReplyAction, {});
@@ -18,6 +19,7 @@ export function ReplyForm({ submissionId }: { submissionId: string }) {
     >
       <input type="hidden" name="submissionId" value={submissionId} />
       <textarea
+        maxLength={MAX_REPLY_LENGTH}
         name="text"
         rows={3}
         placeholder="Leave feedback on this answer..."

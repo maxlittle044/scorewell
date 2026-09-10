@@ -5,6 +5,7 @@ import { checkWritingAnswer, generateSampleAnswer, type WritingTaskType } from "
 import type { WritingCheckResult } from "./writing-checker";
 import { checkAiQuota, quotaMessage, recordAiUsage } from "./usage";
 import { recordAiBandProgress } from "@/lib/progress";
+import { MAX_AI_INPUT_LENGTH, checkLength } from "@/lib/input-limits";
 
 export type CheckActionState = {
   result?: WritingCheckResult;
@@ -41,6 +42,9 @@ export async function checkWritingAction(
   if (!essayText) {
     return { error: "Please write a response before checking." };
   }
+
+  const tooLong = checkLength(essayText, MAX_AI_INPUT_LENGTH, "response");
+  if (tooLong) return { error: tooLong };
 
   const quota = await checkAiQuota();
   if (!quota.allowed) {
