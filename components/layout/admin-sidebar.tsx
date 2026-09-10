@@ -12,6 +12,7 @@ import {
   Mail,
   MessageSquareText,
   ShieldCheck,
+  SlidersHorizontal,
   X,
   Users,
 } from "lucide-react";
@@ -27,6 +28,7 @@ const navigation = [
   { href: "/admin/reviews", label: "Reviews", icon: MessageSquareText },
   { href: "/admin/newsletter", label: "Newsletter", icon: Mail },
   { href: "/admin/activity-logs", label: "Activity logs", icon: ClipboardList },
+  { href: "/admin/configuration", label: "Configuration", icon: SlidersHorizontal },
 ];
 
 function isActive(pathname: string, href: string) {
@@ -82,7 +84,7 @@ export function AdminSidebar({ email }: Props) {
                   }`}
                   aria-current={active ? "page" : undefined}
                 >
-                  <Icon className={`h-[18px] w-[18px] ${active ? "text-pop-600" : "text-white/45 group-hover:text-pop-300"}`} />
+                  <Icon className={`h-4.5 w-4.5 ${active ? "text-pop-600" : "text-white/45 group-hover:text-pop-300"}`} />
                   {label}
                   {active && <span className="ml-auto h-1.5 w-1.5 rounded-full bg-pop-500" />}
                 </Link>
@@ -92,7 +94,7 @@ export function AdminSidebar({ email }: Props) {
         </div>
 
         <div className="mt-auto p-4">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
+          <div className="rounded-2xl border border-white/10 bg-white/6 p-4">
             <div className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pop-500/20 text-sm font-bold text-pop-300">
                 {email.charAt(0).toUpperCase()}
@@ -184,7 +186,7 @@ export function AdminSidebar({ email }: Props) {
                     }`}
                     aria-current={active ? "page" : undefined}
                   >
-                    <Icon className={`h-[18px] w-[18px] ${active ? "text-pop-600" : "text-white/45"}`} />
+                    <Icon className={`h-4.5 w-4.5 ${active ? "text-pop-600" : "text-white/45"}`} />
                     {label}
                   </Link>
                 );
