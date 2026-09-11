@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { loginUrl } from "@/lib/safe-redirect";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { getCreditBalance } from "@/lib/credits";
@@ -23,7 +24,7 @@ const STATUS_STYLES: Record<string, string> = {
 
 export default async function ReviewsPage() {
   const session = await auth();
-  if (!session?.user) redirect("/login");
+  if (!session?.user) redirect(loginUrl("/reviews"));
 
   const userId = session.user.id;
   const [requests, credits] = await Promise.all([

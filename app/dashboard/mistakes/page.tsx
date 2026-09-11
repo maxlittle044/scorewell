@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { loginUrl } from "@/lib/safe-redirect";
 import { auth } from "@/auth";
 import { PageHeader } from "@/components/layout/page-header";
 import { MistakeReview } from "@/components/dashboard/mistake-review";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 export default async function MistakeReviewPage() {
   const session = await auth();
   if (!session?.user) {
-    redirect("/login");
+    redirect(loginUrl("/dashboard/mistakes"));
   }
 
   const queue = await getMistakeQueue(session.user.id);

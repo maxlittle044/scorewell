@@ -4,23 +4,31 @@ import { cookies } from "next/headers";
 import { AuthError } from "next-auth";
 import { signIn } from "@/auth";
 import { REFERRAL_COOKIE, recordReferralSignup } from "@/lib/referral";
+import { safeCallbackUrl } from "@/lib/safe-redirect";
 
 export type AuthActionState = { error?: string };
 
 /**
  * Exchanges a verified Firebase ID token for a ScoreWell session.
  *
- * The browser has already signed in with Firebase by this point (see the login page), so all
+ * The browser has already signed in with Firebase by this point (see the login form), so all
  * that is left is to hand the token to NextAuth, which verifies it server-side and resolves it
  * to the Postgres user — the session cookie behaves exactly as it did before the switch.
  *
  * `isNewSignup` exists only to credit a referral. It is a hint from the client rather than a
  * decision: `recordReferralSignup` still checks the code and the account, so a forged flag
  * cannot manufacture a reward.
+ *
+ * `callbackUrl` is where the visitor was trying to go. It used to be ignored — every sign-in
+ * went to the dashboard, so an admin opening /admin while signed out, or someone halfway to
+ * paying at /checkout, signed in and then had to find their way back. It arrives from the
+ * browser and is therefore checked here, not trusted: anything that is not a path on this site
+ * falls back to the dashboard.
  */
 export async function completeSignInAction(
   idToken: string,
   isNewSignup: boolean,
+  callbackUrl?: string,
 ): Promise<AuthActionState> {
   if (!idToken) return { error: "Sign-in failed. Please try again." };
 
@@ -44,7 +52,7 @@ export async function completeSignInAction(
   }
 
   try {
-    await signIn("credentials", { idToken, redirectTo: "/dashboard" });
+    await signIn("credentials", { idToken, redirectTo: safeCallbackUrl(callbackUrl) });
   } catch (error) {
     if (error instanceof AuthError) {
       return { error: "We couldn't sign you in. Please try again." };

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { loginUrl } from "@/lib/safe-redirect";
 import { auth } from "@/auth";
 import { PageHeader } from "@/components/layout/page-header";
 import { CopyLinkButton } from "@/components/refer/copy-link-button";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 export default async function ReferPage() {
   const session = await auth();
   if (!session?.user) {
-    redirect("/login");
+    redirect(loginUrl("/refer"));
   }
 
   const [code, stats, headerList] = await Promise.all([

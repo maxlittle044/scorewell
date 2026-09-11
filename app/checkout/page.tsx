@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { loginUrl } from "@/lib/safe-redirect";
 import { auth } from "@/auth";
 import { PageHeader } from "@/components/layout/page-header";
 import { CheckoutForm } from "@/components/checkout/checkout-form";
@@ -13,12 +14,16 @@ export const metadata: Metadata = {
 };
 
 export default async function CheckoutPage({ searchParams }: PageProps<"/checkout">) {
-  const session = await auth();
+  const [session, params, currency] = await Promise.all([auth(), searchParams, getCurrency()]);
   if (!session?.user) {
-    redirect("/login");
+    // Back to this same checkout afterwards, with the plan or pack they picked, rather than
+    // the dashboard — someone who was about to pay should not have to choose again.
+    const keep = new URLSearchParams();
+    if (typeof params.pack === "string") keep.set("pack", params.pack);
+    if (typeof params.duration === "string") keep.set("duration", params.duration);
+    const qs = keep.toString();
+    redirect(loginUrl(qs ? `/checkout?${qs}` : "/checkout"));
   }
-
-  const [params, currency] = await Promise.all([searchParams, getCurrency()]);
   const pack = getCreditPack(typeof params.pack === "string" ? params.pack : undefined);
   const durationParam = typeof params.duration === "string" ? params.duration : undefined;
   const purchase = pack

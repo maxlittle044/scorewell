@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { loginUrl } from "@/lib/safe-redirect";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { getAnalytics } from "@/lib/analytics";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 export default async function AnalyticsPage() {
   const session = await auth();
-  if (!session?.user) redirect("/login");
+  if (!session?.user) redirect(loginUrl("/dashboard/analytics"));
 
   const subscription = await prisma.subscription.findUnique({
     where: { userId: session.user.id },
