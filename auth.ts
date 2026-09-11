@@ -32,12 +32,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const decoded = await verifyIdToken(idToken);
         if (!decoded?.email) return null;
 
-        // An unverified email would let someone sign up as an address they do not control and
-        // inherit that person's account through the email match in linkFirebaseUser. Password
-        // sign-ups are allowed through unverified — Firebase has at least proved possession of
-        // the password — but a federated identity must have verified the address.
-        const viaPassword = decoded.firebase?.sign_in_provider === "password";
-        if (!decoded.email_verified && !viaPassword) return null;
+        if (!decoded.email_verified) return null;
 
         try {
           const user = await linkFirebaseUser({
