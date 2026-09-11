@@ -1,7 +1,8 @@
 "use client";
 
 import { useDeferredValue, useState } from "react";
-import { CalendarDays, ChevronLeft, ChevronRight, Mail, Search, Users } from "lucide-react";
+import Link from "next/link";
+import { CalendarDays, CheckCircle2, ChevronLeft, ChevronRight, Mail, Search, Users, XCircle } from "lucide-react";
 import { CreateUserButton } from "./create-user-button";
 import { UserActionsMenu } from "./user-actions-menu";
 
@@ -14,6 +15,7 @@ type UserRow = {
   role: "USER" | "ADMIN";
   createdAt: string;
   disabled: boolean;
+  emailVerified: boolean;
 };
 
 export function UsersTable({ users, defaultRole = "USER" }: { users: UserRow[]; defaultRole?: "USER" | "ADMIN" }) {
@@ -76,7 +78,7 @@ export function UsersTable({ users, defaultRole = "USER" }: { users: UserRow[]; 
               <tr>
                 <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-ink-muted">User</th>
                 <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-ink-muted">Email</th>
-                <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-ink-muted">Role</th>
+                <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-ink-muted">Email verified</th>
                 <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-ink-muted">Status</th>
                 <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-ink-muted">Joined</th>
                 <th className="px-6 py-4 text-right text-xs font-semibold uppercase tracking-wider text-ink-muted">Actions</th>
@@ -90,6 +92,7 @@ export function UsersTable({ users, defaultRole = "USER" }: { users: UserRow[]; 
                 return (
                   <tr key={user.id} className="transition-colors hover:bg-ink-body/2">
                     <td className="whitespace-nowrap px-6 py-4">
+                      <Link href={`/admin/users/${user.id}`} className="block rounded-lg outline-none focus:ring-2 focus:ring-brand-500/30">
                       <div className="flex items-center gap-3">
                         {user.image ? (
                           // Arbitrary provider avatar URLs; next/image would need every one
@@ -104,13 +107,15 @@ export function UsersTable({ users, defaultRole = "USER" }: { users: UserRow[]; 
                           <p className="mt-0.5 text-xs text-ink-muted">ID: {user.id}</p>
                         </div>
                       </div>
+                      </Link>
                     </td>
                     <td className="whitespace-nowrap px-6 py-4">
                       <div className="flex items-center gap-2 text-sm text-ink-muted"><Mail className="h-4 w-4 shrink-0" />{user.email}</div>
                     </td>
                     <td className="whitespace-nowrap px-6 py-4">
-                      <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${user.role === "ADMIN" ? "bg-brand-100 text-link" : "bg-surface-sunken text-ink-muted"}`}>
-                        {user.role === "ADMIN" ? "Admin" : "User"}
+                      <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${user.emailVerified ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-800"}`}>
+                        {user.emailVerified ? <CheckCircle2 className="h-3.5 w-3.5" /> : <XCircle className="h-3.5 w-3.5" />}
+                        {user.emailVerified ? "Verified" : "Not verified"}
                       </span>
                     </td>
                     <td className="whitespace-nowrap px-6 py-4">

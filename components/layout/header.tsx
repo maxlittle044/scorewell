@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Session } from "next-auth";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import { signOutAction } from "@/lib/auth-actions";
 import { ThemeToggle } from "./theme-toggle";
 import { LanguageSwitcher } from "./language-switcher";
@@ -20,6 +22,48 @@ const PANEL_WIDTH: Record<number, string> = {
   3: "w-200",
   4: "w-240",
 };
+
+const swalButtons = {
+  customClass: {
+    popup: "scorewell-swal-popup",
+    title: "scorewell-swal-title",
+    htmlContainer: "scorewell-swal-text",
+    confirmButton: "scorewell-swal-confirm",
+    cancelButton: "scorewell-swal-cancel",
+  },
+};
+
+function LogoutButton({ label, mobile = false }: { label: string; mobile?: boolean }) {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  async function confirmLogout() {
+    const result = await Swal.fire({
+      icon: "question",
+      title: "Log out?",
+      text: "You can sign back in at any time.",
+      showCancelButton: true,
+      confirmButtonText: "Log out",
+      cancelButtonText: "Stay signed in",
+      ...swalButtons,
+    });
+
+    if (result.isConfirmed) formRef.current?.requestSubmit();
+  }
+
+  return (
+    <form ref={formRef} action={signOutAction}>
+      <button
+        type="button"
+        onClick={() => void confirmLogout()}
+        className={mobile
+          ? "w-full rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
+          : "rounded-md px-3 py-2 text-sm font-semibold text-white/90 hover:bg-white/10 hover:text-white"}
+      >
+        {label}
+      </button>
+    </form>
+  );
+}
 
 export function Header({ session }: { session: Session | null }) {
   const { locale, t } = useTranslate();
@@ -185,14 +229,7 @@ export function Header({ session }: { session: Session | null }) {
                 >
                   {session.user.name ?? session.user.email}
                 </Link>
-                <form action={signOutAction}>
-                  <button
-                    type="submit"
-                    className="rounded-md px-3 py-2 text-sm font-semibold text-white/90 hover:bg-white/10 hover:text-white"
-                  >
-                    {t("Log out")}
-                  </button>
-                </form>
+                <LogoutButton label={t("Log out")} />
               </>
             ) : (
               <>
@@ -289,14 +326,7 @@ export function Header({ session }: { session: Session | null }) {
                 >
                   {session.user.name ?? session.user.email}
                 </Link>
-                <form action={signOutAction}>
-                  <button
-                    type="submit"
-                    className="w-full rounded-md px-3 py-2 text-center text-sm font-medium text-ink-body hover:bg-surface-muted"
-                  >
-                    {t("Log out")}
-                  </button>
-                </form>
+                <LogoutButton label={t("Log out")} mobile />
               </>
             ) : (
               <Link
