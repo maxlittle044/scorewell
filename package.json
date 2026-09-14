@@ -12,6 +12,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^6.19.3",
     "@prisma/client": "^6.19.3",
+    "@react-email/render": "^2.1.0",
     "@supabase/supabase-js": "^2.109.0",
     "bcryptjs": "^3.0.3",
     "firebase": "^12.18.0",
@@ -23,6 +24,7 @@
     "pg": "^8.23.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "resend": "^6.28.0",
     "sweetalert2": "^11.26.25",
     "zod": "^4.4.3"
   },
