@@ -12,6 +12,7 @@ import {
   UserRound,
   XCircle,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { getFirebaseAdminAuth, isFirebaseConfigured } from "@/lib/firebase/admin";
@@ -179,12 +180,12 @@ export default async function AdminUserDetailsPage({ params }: PageProps<"/admin
         </div>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {[
+          {([
             [FileText, "Submissions", user._count.submissions],
             [Target, "Practice results", user._count.progress],
             [MessageSquare, "AI conversations", user._count.conversations],
             [CreditCard, "Payments", user._count.paymentSubmissions],
-          ].map(([Icon, label, value]) => (
+          ] satisfies Array<[LucideIcon, string, number]>).map(([Icon, label, value]) => (
             <div key={String(label)} className="rounded-2xl border border-line bg-surface p-5 shadow-sm transition-shadow hover:shadow-md">
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-100 text-link"><Icon className="h-5 w-5" /></span>
               <p className="mt-4 text-sm text-ink-muted">{String(label)}</p>
