@@ -27,6 +27,7 @@ const navigation = [
   { href: "/admin/payments", label: "Payments", icon: CreditCard },
   { href: "/admin/reviews", label: "Reviews", icon: MessageSquareText },
   { href: "/admin/newsletter", label: "Newsletter", icon: Mail },
+  { href: "/admin/email-notifications", label: "Email notifications", icon: Mail },
   { href: "/admin/activity-logs", label: "Activity logs", icon: ClipboardList },
   { href: "/admin/configuration", label: "Configuration", icon: SlidersHorizontal },
 ];

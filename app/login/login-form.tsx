@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { useState, useTransition } from "react";
+import { Eye, EyeOff, LockKeyhole, Mail, UserRound } from "lucide-react";
 import {
   createUserWithEmailAndPassword,
+  sendEmailVerification,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   updateProfile,
+  type User,
 } from "firebase/auth";
 import { Logo } from "@/components/layout/logo";
 import { describeAuthError, getFirebaseAuth, isFirebaseClientConfigured } from "@/lib/firebase/client";
@@ -33,9 +36,31 @@ export function LoginForm({
   const [mode, setMode] = useState<Mode>(initialMode);
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
+  const [unverifiedUser, setUnverifiedUser] = useState<User | null>(null);
+  const [resending, setResending] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [pending, startTransition] = useTransition();
 
   const configured = isFirebaseClientConfigured();
+
+  function showError(message: string) {
+    setError(message);
+  }
+
+  async function resendVerificationEmail(user = unverifiedUser) {
+    if (!user) return;
+
+    setResending(true);
+    try {
+      await sendEmailVerification(user);
+      setError(null);
+      setNotice("Verification email sent. Check your inbox and follow the link to verify your email address.");
+    } catch (err) {
+      showError(describeAuthError(err));
+    } finally {
+      setResending(false);
+    }
+  }
 
   async function handleSubmit(formData: FormData) {
     setError(null);
@@ -45,7 +70,9 @@ export function LoginForm({
     const password = String(formData.get("password") ?? "");
     const name = String(formData.get("name") ?? "").trim();
 
-    if (!email) return setError("Please enter your email address.");
+    setUnverifiedUser(null);
+
+    if (!email) return showError("Please enter your email address.");
 
     try {
       const auth = getFirebaseAuth();
@@ -58,7 +85,7 @@ export function LoginForm({
         return;
       }
 
-      if (!password) return setError("Please enter your password.");
+      if (!password) return showError("Please enter your password.");
 
       const credential =
         mode === "signup"
@@ -69,15 +96,27 @@ export function LoginForm({
         await updateProfile(credential.user, { displayName: name });
       }
 
+      await credential.user.reload();
+      if (!credential.user.emailVerified) {
+        setUnverifiedUser(credential.user);
+        if (mode === "signup") {
+          await sendEmailVerification(credential.user);
+          setNotice("Signup successful. We sent a verification link to your email address. Verify it before logging in.");
+        } else {
+          setError("Email verification required. Please verify your email address before accessing ScoreWell.");
+        }
+        return;
+      }
+
       // Forced refresh so the token carries the display name just set.
       const idToken = await credential.user.getIdToken(true);
 
       startTransition(async () => {
         const result = await completeSignInAction(idToken, mode === "signup", callbackUrl);
-        if (result?.error) setError(result.error);
+        if (result?.error) showError(result.error);
       });
     } catch (err) {
-      setError(describeAuthError(err));
+      showError(describeAuthError(err));
     }
   }
 
@@ -98,7 +137,7 @@ export function LoginForm({
 
   return (
     <main className="flex flex-1 items-center justify-center bg-surface-muted px-4 py-16">
-      <div className="w-full max-w-sm rounded-2xl border border-line bg-surface p-8 shadow-sm">
+      <div className="login-card w-full max-w-sm rounded-2xl border border-line bg-surface p-8 shadow-sm">
         <div className="flex justify-center">
           <Logo />
         </div>
@@ -142,18 +181,32 @@ export function LoginForm({
             <p className="rounded-lg bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{notice}</p>
           )}
 
+          {unverifiedUser && mode === "login" && (
+            <button
+              type="button"
+              onClick={() => void resendVerificationEmail()}
+              disabled={resending}
+              className="w-full rounded-full border border-brand-500 bg-brand-100 px-4 py-2.5 text-sm font-semibold text-gray-200 transition-colors hover:border-brand-600 hover:bg-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-200 disabled:cursor-not-allowed disabled:border-brand-400 disabled:bg-brand-100 disabled:text-brand-700"
+            >
+              {resending ? "Sending…" : "Resend Verification Email"}
+            </button>
+          )}
+
           {mode === "signup" && (
             <div>
               <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-ink-body">
                 Name
               </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autoComplete="name"
-                className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
-              />
+              <div className="relative">
+                <UserRound className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-muted" />
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autoComplete="name"
+                  className="w-full rounded-lg border border-line-strong py-2 pl-10 pr-3 text-sm text-ink transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                />
+              </div>
             </div>
           )}
 
@@ -161,14 +214,17 @@ export function LoginForm({
             <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-ink-body">
               Email
             </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              autoComplete="email"
-              className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
-            />
+            <div className="relative">
+              <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-muted" />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+                className="w-full rounded-lg border border-line-strong py-2 pl-10 pr-3 text-sm text-ink transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              />
+            </div>
           </div>
 
           {mode !== "reset" && (
@@ -176,14 +232,30 @@ export function LoginForm({
               <label htmlFor="password" className="mb-1.5 block text-sm font-medium text-ink-body">
                 Password
               </label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                autoComplete={mode === "login" ? "current-password" : "new-password"}
-                className="w-full rounded-lg border border-line-strong px-3 py-2 text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
-              />
+              <div className="relative">
+                <LockKeyhole className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-muted" />
+                <input
+                  id="password"
+                  name="password"
+                  type={showPassword ? "text" : "password"}
+                  required
+                  autoComplete={mode === "login" ? "current-password" : "new-password"}
+                  className="w-full rounded-lg border border-line-strong py-2 pl-10 pr-12 text-sm text-ink transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((visible) => !visible)}
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                  title={showPassword ? "Hide password" : "Show password"}
+                  className="absolute right-1 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-brand-600 transition-colors hover:bg-brand-50 hover:text-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-200"
+                >
+                  {showPassword ? (
+                    <EyeOff className="h-[18px] w-[18px] stroke-[2.25]" />
+                  ) : (
+                    <Eye className="h-[18px] w-[18px] stroke-[2.25]" />
+                  )}
+                </button>
+              </div>
             </div>
           )}
 

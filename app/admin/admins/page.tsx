@@ -30,6 +30,7 @@ export default async function AdminsPage() {
   });
 
   const disabledByFirebaseUid = new Map<string, boolean>();
+  const emailVerifiedByFirebaseUid = new Map<string, boolean>();
   if (isFirebaseConfigured()) {
     const firebaseAuth = getFirebaseAdminAuth();
     await Promise.all(
@@ -38,7 +39,10 @@ export default async function AdminsPage() {
           ? [
               firebaseAuth
                 .getUser(user.firebaseUid)
-                .then((firebaseUser) => disabledByFirebaseUid.set(user.firebaseUid!, firebaseUser.disabled))
+                .then((firebaseUser) => {
+                  disabledByFirebaseUid.set(user.firebaseUid!, firebaseUser.disabled);
+                  emailVerifiedByFirebaseUid.set(user.firebaseUid!, firebaseUser.emailVerified);
+                })
                 .catch(() => undefined),
             ]
           : [],
@@ -90,6 +94,7 @@ export default async function AdminsPage() {
             ...user,
             createdAt: user.createdAt.toISOString(),
             disabled: user.firebaseUid ? disabledByFirebaseUid.get(user.firebaseUid) ?? false : false,
+            emailVerified: user.firebaseUid ? emailVerifiedByFirebaseUid.get(user.firebaseUid) ?? false : false,
           }))}
         />
       </div>

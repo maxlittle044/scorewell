@@ -6,6 +6,12 @@ import { prisma } from "@/lib/prisma";
 import { getFirebaseAdminAuth, isFirebaseConfigured } from "@/lib/firebase/admin";
 import { UserRole } from "@/generated/prisma/client";
 import { logAdminActivity } from "@/lib/admin-activity";
+import { sendEmail } from "@/lib/email/send-email";
+import { AccountDeletedEmail } from "@/lib/email/templates/account-deleted";
+import { AccountEnabledEmail } from "@/lib/email/templates/account-enabled";
+import { AccountSuspendedEmail } from "@/lib/email/templates/account-suspended";
+import { WelcomeUserEmail } from "@/lib/email/templates/welcome-user";
+import { absoluteUrl } from "@/lib/site/site-url";
 
 type ActionResult = { error?: string; success?: string };
 type UserRoleValue = "USER" | "ADMIN";
@@ -28,7 +34,7 @@ async function requireAdmin() {
 async function findUser(id: string) {
   const user = await prisma.user.findUnique({
     where: { id },
-    select: { id: true, email: true, firebaseUid: true },
+    select: { id: true, name: true, email: true, firebaseUid: true },
   });
   if (!user) throw new Error("That user no longer exists.");
   return user;
@@ -72,7 +78,32 @@ export async function createUserAction(input: CreateUserInput): Promise<ActionRe
         // is subtly different from a self-registered one for no reason anybody would guess.
         subscription: { create: {} },
       },
-      select: { id: true },
+      select: { id: true, name: true, email: true },
+    });
+
+    // A link to choose their own password, rather than the password itself. Emailing a
+    // password leaves it sitting in the recipient's mailbox for good; this link is single-use,
+    // and completing it also marks the address verified, which sign-in now requires.
+    //
+    // Generated defensively: a create that succeeded must not be reported as a failure — and
+    // rolled back — because a link could not be produced. Without one the email explains how
+    // to use the reset link on the sign-in page instead.
+    let setPasswordUrl: string | null = null;
+    try {
+      setPasswordUrl = await getFirebaseAdminAuth().generatePasswordResetLink(email);
+    } catch (error) {
+      console.error("Could not generate a set-password link for the welcome email:", error);
+    }
+
+    await sendEmail({
+      to: user.email,
+      subject: "Welcome to ScoreWell",
+      react: WelcomeUserEmail({
+        name: user.name?.trim() || "there",
+        email: user.email,
+        setPasswordUrl,
+        loginUrl: absoluteUrl("/login"),
+      }),
     });
 
     await logAdminActivity({
@@ -199,6 +230,13 @@ export async function setUserDisabledAction(
       entityId: user.id,
       summary: `${disabled ? "Disabled" : "Enabled"} ${user.email}`,
     });
+    await sendEmail({
+      to: user.email,
+      subject: disabled ? "Your ScoreWell account has been suspended" : "Your ScoreWell account has been re-enabled",
+      react: disabled
+        ? AccountSuspendedEmail({ name: user.name?.trim() || "there", email: user.email })
+        : AccountEnabledEmail({ name: user.name?.trim() || "there", email: user.email, loginUrl: absoluteUrl("/login") }),
+    });
     return { success: disabled ? "User account disabled." : "User account enabled." };
   } catch (error) {
     console.error("Admin could not change user status:", error);
@@ -246,6 +284,11 @@ export async function deleteUserAction(userId: string): Promise<ActionResult> {
       entityType: "USER",
       entityId: user.id,
       summary: `Deleted ${user.email}`,
+    });
+    await sendEmail({
+      to: user.email,
+      subject: "Your ScoreWell account has been deleted",
+      react: AccountDeletedEmail({ name: user.name?.trim() || "there", email: user.email }),
     });
     return { success: "User deleted." };
   } catch (error) {

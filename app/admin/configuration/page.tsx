@@ -92,6 +92,22 @@ const GROUPS: Group[] = [
     ],
   },
   {
+    heading: "Email notifications",
+    note: "Required for account lifecycle emails and the admin email preview page. Values are never shown.",
+    checks: [
+      {
+        name: "RESEND_API_KEY",
+        importance: "recommended",
+        consequence: "ScoreWell cannot deliver welcome, suspension, re-enable, deletion, or preview emails.",
+      },
+      {
+        name: "RESEND_FROM_EMAIL",
+        importance: "recommended",
+        consequence: "ScoreWell has no verified sender address for outgoing notifications.",
+      },
+    ],
+  },
+  {
     heading: "AI tools",
     checks: [
       { name: "GROQ_API_KEY", importance: "recommended", consequence: "Every AI tool degrades to unavailable. The rest of the site is unaffected by design." },
@@ -153,8 +169,8 @@ export default async function AdminConfigurationPage() {
     <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-4xl px-4 py-10 sm:px-8 sm:py-14">
         <PageHeader
-          title="Configuration"
-          description="Which environment variables this deployment has. Names and presence only — no values are read or shown."
+          title="Configuration center"
+          description="Keep ScoreWell's core services ready. Review connection health and setup status without exposing any secret values."
         />
 
         <div

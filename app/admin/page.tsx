@@ -38,9 +38,9 @@ export default async function AdminOverviewPage() {
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
   const [totalUsers, adminUsers, newUsers, pendingPayments, openReviews, newsletterSubscribers, recentActivity] = await Promise.all([
-    prisma.user.count(),
+    prisma.user.count({ where: { role: "USER" } }),
     prisma.user.count({ where: { role: "ADMIN" } }),
-    prisma.user.count({ where: { createdAt: { gte: thirtyDaysAgo } } }),
+    prisma.user.count({ where: { role: "USER", createdAt: { gte: thirtyDaysAgo } } }),
     prisma.paymentSubmission.count({ where: { status: "PENDING" } }),
     prisma.reviewRequest.count({ where: { status: { in: ["PENDING", "IN_REVIEW"] } } }),
     prisma.newsletterSubscriber.count(),
