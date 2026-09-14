@@ -10,6 +10,7 @@ import { formatStudyTime, getAnalytics, getBandTrend, getStudyTime } from "@/lib
 import { BandTrendChart } from "@/components/dashboard/band-trend-chart";
 import { countDueCards } from "@/lib/content/flashcards";
 import { countDueMistakes } from "@/lib/content/mistakes";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Your dashboard — ScoreWell",
@@ -66,10 +67,15 @@ export default async function DashboardPage() {
   return (
     <main className="flex flex-1 flex-col bg-surface-muted">
       <div className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <PageHeader
-          title={`Welcome back${session.user.name ? `, ${session.user.name}` : ""}`}
-          description="Track your progress and manage your plan."
-        />
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <PageHeader
+            title={`Welcome back${session.user.name ? `, ${session.user.name}` : ""}`}
+            description="Track your progress and manage your plan."
+          />
+          <Button href="/dashboard/account" variant="outline" size="sm" className="mb-12 shrink-0">
+            Manage account
+          </Button>
+        </div>
 
         {/* The daily study prompt (site-build-prompt.md section 6). Shown only when there
             is genuinely something to do — a standing "0 due" tile would train the learner to
