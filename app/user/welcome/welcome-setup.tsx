@@ -84,7 +84,7 @@ export function WelcomeSetup({ token, tokenError }: { token: string; tokenError?
           <Logo />
         </div>
         <div className="mx-auto mt-8 flex h-12 w-12 items-center justify-center rounded-full bg-brand-100 text-brand-700">
-          <KeyRound className="h-5 w-5 text-brand-700" aria-hidden="true" />
+          <KeyRound className="h-5 w-5 text-white" aria-hidden="true" />
         </div>
         <h1 className="mt-5 text-center text-lg font-bold text-ink">Set your password</h1>
         <p className="mt-2 text-center text-sm text-ink-muted">
