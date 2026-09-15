@@ -1,22 +1,19 @@
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import { QuestionSetSchema } from "@/lib/exam/schema";
+import type { QuestionSet } from "@/lib/exam/schema";
 
-const ListeningQuestionSchema = z.object({
-  id: z.string(),
-  question: z.string(),
-  options: z.array(z.string()),
-  correctIndex: z.number(),
-  type: z.string().optional(),
-  /** Quoted from the transcript, so review can both show and replay the line. */
-  evidence: z.object({ quote: z.string().optional(), explanation: z.string() }).optional(),
-  distractorNotes: z.record(z.string(), z.string()).optional(),
-});
-
-const ListeningDataSchema = z.object({
-  audioLabel: z.string(),
-  transcript: z.string(),
-  questions: z.array(ListeningQuestionSchema),
-});
+/**
+ * Accepts both shapes: legacy `{ audioLabel, transcript, questions: [...] }` (flat multiple
+ * choice, seeded before v2) and `{ audioLabel, transcript, groups: [...] }` (real IELTS
+ * question types — note/form completion, matching, multiple choice). QuestionSetSchema
+ * handles the union, mirroring lib/content/reading.ts, so no reseed is required for old
+ * content to keep working.
+ */
+const ListeningDataSchema = z.intersection(
+  z.object({ audioLabel: z.string(), transcript: z.string() }),
+  QuestionSetSchema,
+);
 
 export type ListeningTest = {
   id: string;
@@ -24,7 +21,7 @@ export type ListeningTest = {
   tags: string[];
   audioLabel: string;
   transcript: string;
-  questions: z.infer<typeof ListeningQuestionSchema>[];
+  questionSet: QuestionSet;
 };
 
 export async function getListeningTest(slug: string): Promise<ListeningTest | null> {
@@ -36,5 +33,6 @@ export async function getListeningTest(slug: string): Promise<ListeningTest | nu
   const parsed = ListeningDataSchema.safeParse(item.data);
   if (!parsed.success) return null;
 
-  return { id: item.id, title: item.title, tags: item.tags, ...parsed.data };
+  const { audioLabel, transcript, ...questionSet } = parsed.data;
+  return { id: item.id, title: item.title, tags: item.tags, audioLabel, transcript, questionSet };
 }

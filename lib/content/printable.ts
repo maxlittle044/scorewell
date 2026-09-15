@@ -3,7 +3,7 @@ import { getReadingTest } from "./reading";
 import { getListeningTest } from "./listening";
 import { getWritingItem } from "./writing";
 import { getSpeakingTest } from "./speaking";
-import { QuestionSetSchema, toGroups } from "@/lib/exam/schema";
+import { toGroups } from "@/lib/exam/schema";
 import type { QuestionGroup } from "@/lib/exam/schema";
 
 /**
@@ -140,10 +140,7 @@ export async function getPrintable(slug: string): Promise<PrintableDoc | null> {
   if (item.skill === "LISTENING") {
     const test = await getListeningTest(slug);
     if (!test) return null;
-    // Listening stores flat multiple choice, which the shared schema normalises.
-    const parsed = QuestionSetSchema.safeParse({ questions: test.questions });
-    if (!parsed.success) return null;
-    const { questions, groups } = fromGroups(toGroups(parsed.data));
+    const { questions, groups } = fromGroups(toGroups(test.questionSet));
     return {
       slug,
       title: test.title,

@@ -36,11 +36,10 @@ const LISTENING_MINUTES = 30;
 const READING_MINUTES = 60;
 const SPEAKING_MINUTES = 15;
 
-const ListeningDataSchema = z.object({
-  audioLabel: z.string(),
-  transcript: z.string(),
-  questions: z.array(z.unknown()),
-});
+const ListeningDataSchema = z.intersection(
+  z.object({ audioLabel: z.string(), transcript: z.string() }),
+  QuestionSetSchema,
+);
 
 const ReadingDataSchema = z.intersection(
   z.object({ passage: z.string(), durationMinutes: z.number().optional() }),
@@ -95,9 +94,9 @@ function buildSet(name: string, rows: Row[]): SimulationSet | null {
     return null;
   }
 
-  // Listening stores flat multiple choice, which QuestionSetSchema accepts and normalises,
-  // so both objective legs reach the shared grader in the same shape.
-  const listeningQuestions = QuestionSetSchema.safeParse({ questions: listeningData.data.questions });
+  // Listening stores either flat multiple choice or real IELTS groups; QuestionSetSchema
+  // accepts both, so both objective legs reach the shared grader in the same shape.
+  const listeningQuestions = QuestionSetSchema.safeParse(listeningData.data);
   if (!listeningQuestions.success) return null;
 
   const { passage, durationMinutes, ...readingQuestionSet } = readingData.data;

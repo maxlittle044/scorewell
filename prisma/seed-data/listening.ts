@@ -1,11 +1,17 @@
 import type { QuizQuestion } from "./reading";
+import type { QuestionGroup } from "../../lib/exam/schema";
 
+/**
+ * `questions` is the legacy flat multiple-choice shape; `groups` is the v2 shape supporting
+ * real IELTS listening question types (note/form completion, matching, multiple choice).
+ * Mirrors ReadingSeed in ./reading -- both parse via the same QuestionSetSchema union.
+ */
 export type ListeningSeed = {
   slug: string;
   title: string;
   topic: string;
   tags: string[];
-  data: { audioLabel: string; transcript: string; questions: QuizQuestion[] };
+  data: { audioLabel: string; transcript: string; questions?: QuizQuestion[]; groups?: QuestionGroup[] };
 };
 
 export const LISTENING_TESTS: ListeningSeed[] = [
