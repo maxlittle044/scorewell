@@ -11,6 +11,7 @@ import { BandTrendChart } from "@/components/dashboard/band-trend-chart";
 import { countDueCards } from "@/lib/content/flashcards";
 import { countDueMistakes } from "@/lib/content/mistakes";
 import { Button } from "@/components/ui/button";
+import { isAdminUser } from "@/lib/admin";
 
 export const metadata: Metadata = {
   title: "Your dashboard — ScoreWell",
@@ -63,6 +64,7 @@ export default async function DashboardPage() {
     ]);
 
   const isPremium = subscription?.tier === "PREMIUM";
+  const isAdmin = await isAdminUser(userId);
 
   return (
     <main className="flex flex-1 flex-col bg-surface-muted">
@@ -72,9 +74,16 @@ export default async function DashboardPage() {
             title={`Welcome back${session.user.name ? `, ${session.user.name}` : ""}`}
             description="Track your progress and manage your plan."
           />
-          <Button href="/dashboard/account" variant="outline" size="sm" className="mb-12 shrink-0">
-            Manage account
-          </Button>
+          <div className="mb-12 flex flex-wrap gap-2 sm:shrink-0">
+            <Button href="/dashboard/account" variant="outline" size="sm">
+              Manage account
+            </Button>
+            {isAdmin && (
+              <Button href="/admin" variant="dark" size="sm">
+                Visit admin panel
+              </Button>
+            )}
+          </div>
         </div>
 
         {/* The daily study prompt (site-build-prompt.md section 6). Shown only when there

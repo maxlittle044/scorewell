@@ -9,6 +9,7 @@ import { AccountEnabledEmail } from "@/lib/email/templates/account-enabled";
 import { AccountSuspendedEmail } from "@/lib/email/templates/account-suspended";
 import { WelcomeUserEmail } from "@/lib/email/templates/welcome-user";
 import { absoluteUrl } from "@/lib/site/site-url";
+import { createUserWelcomeToken } from "@/lib/user-welcome-token";
 
 type EmailTemplate = "welcome" | "suspended" | "enabled" | "deleted";
 type ActionResult = { error?: string; success?: string };
@@ -39,8 +40,8 @@ export async function sendAdminEmailPreview(template: EmailTemplate): Promise<Ac
         email: recipient,
         // A preview, so no real link is minted: a genuine one is single-use and would be
         // spent by whoever opened the preview. This shows the wording, which is the point.
-        setPasswordUrl: absoluteUrl("/login?mode=reset"),
-        loginUrl: absoluteUrl("/login"),
+        setPasswordUrl: null,
+        loginUrl: absoluteUrl(`/user/welcome?token=${createUserWelcomeToken(recipient)}`),
       }),
       suspended: AccountSuspendedEmail({ name, email: recipient }),
       enabled: AccountEnabledEmail({ name, email: recipient, loginUrl: absoluteUrl("/login") }),

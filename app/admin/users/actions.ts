@@ -12,6 +12,7 @@ import { AccountEnabledEmail } from "@/lib/email/templates/account-enabled";
 import { AccountSuspendedEmail } from "@/lib/email/templates/account-suspended";
 import { WelcomeUserEmail } from "@/lib/email/templates/welcome-user";
 import { absoluteUrl } from "@/lib/site/site-url";
+import { createUserWelcomeToken } from "@/lib/user-welcome-token";
 
 type ActionResult = { error?: string; success?: string };
 type UserRoleValue = "USER" | "ADMIN";
@@ -67,6 +68,10 @@ export async function createUserAction(input: CreateUserInput): Promise<ActionRe
     });
     firebaseUid = firebaseUser.uid;
 
+    // The encrypted token lets the custom page set the password through the Admin SDK. This
+    // avoids exposing Firebase's hosted action URL or relying on a short-lived oobCode.
+    const setPasswordUrl = absoluteUrl(`/user/welcome?token=${createUserWelcomeToken(email)}`);
+
     const user = await prisma.user.create({
       data: {
         name,
@@ -80,20 +85,6 @@ export async function createUserAction(input: CreateUserInput): Promise<ActionRe
       },
       select: { id: true, name: true, email: true },
     });
-
-    // A link to choose their own password, rather than the password itself. Emailing a
-    // password leaves it sitting in the recipient's mailbox for good; this link is single-use,
-    // and completing it also marks the address verified, which sign-in now requires.
-    //
-    // Generated defensively: a create that succeeded must not be reported as a failure — and
-    // rolled back — because a link could not be produced. Without one the email explains how
-    // to use the reset link on the sign-in page instead.
-    let setPasswordUrl: string | null = null;
-    try {
-      setPasswordUrl = await getFirebaseAdminAuth().generatePasswordResetLink(email);
-    } catch (error) {
-      console.error("Could not generate a set-password link for the welcome email:", error);
-    }
 
     await sendEmail({
       to: user.email,

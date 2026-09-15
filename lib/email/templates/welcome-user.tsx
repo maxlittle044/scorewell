@@ -4,7 +4,7 @@ type WelcomeUserEmailProps = {
   name: string;
   email: string;
   /**
-   * A single-use Firebase link that lets the person choose their own password.
+   * An encrypted ScoreWell link that lets the person choose their own password.
    *
    * This used to be the temporary password itself, printed in the message. Email is not a
    * private channel — it sits in the recipient's mailbox indefinitely, is copied across mail
@@ -12,8 +12,8 @@ type WelcomeUserEmailProps = {
    * sent that way is compromised from the moment it is sent, and asking the reader to change
    * it afterwards does not undo that.
    *
-   * The link is also what gets the account working: completing it marks the address verified
-   * in Firebase, which sign-in now requires.
+  * Completing it sets the password and marks the address verified in Firebase, which sign-in
+  * requires.
    *
    * Null when the link could not be generated, which must not block the account being made.
    */
@@ -37,17 +37,16 @@ export function WelcomeUserEmail({ name, email, setPasswordUrl, loginUrl }: Welc
         <>
           <EmailButton href={setPasswordUrl}>Choose your password</EmailButton>
           <p style={{ color: emailColors.muted, fontSize: "14px", margin: "24px 0 0" }}>
-            This link is personal to you and can only be used once. Setting your password also
-            confirms your email address, which you need to do before you can sign in.
+            This link is personal to you. Setting your password also confirms your email address,
+            which you need to do before you can sign in.
           </p>
         </>
       ) : (
         <>
           <EmailButton href={loginUrl}>Go to ScoreWell</EmailButton>
           <p style={{ color: emailColors.muted, fontSize: "14px", margin: "24px 0 0" }}>
-            To set your password, choose &ldquo;Forgotten your password?&rdquo; on the sign-in
-            page and enter this address. That link also confirms your email, which you need to
-            do before you can sign in.
+            This page will automatically send a secure link to set your password and confirm your
+            email address, which you need to do before you can sign in.
           </p>
         </>
       )}
