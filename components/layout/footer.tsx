@@ -74,11 +74,11 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <p className="text-sm font-semibold text-white">{t(heading)}</p>
+      <p className="text-sm font-semibold text-ink">{t(heading)}</p>
       <ul className="mt-4 flex flex-col gap-2.5">
         {links.map((link) => (
           <li key={link.href}>
-            <Link href={link.href} className="text-sm text-zinc-400 hover:text-white">
+            <Link href={link.href} className="text-sm text-ink-muted hover:text-ink">
               {t(link.label)}
             </Link>
           </li>
@@ -94,7 +94,7 @@ export async function Footer() {
   return (
     <footer
       lang={locale === "en" ? undefined : locale}
-      className="relative overflow-hidden bg-zinc-900"
+      className="relative overflow-hidden border-t border-line bg-surface"
     >
       <div
         aria-hidden="true"
@@ -111,34 +111,34 @@ export async function Footer() {
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-linear-to-br from-brand-500 to-pop-500 text-sm font-bold text-white">
                 S
               </span>
-              <span className="text-base font-semibold text-white">
+              <span className="text-base font-semibold text-ink">
                 Score<span className="text-gradient">Well</span>
               </span>
             </Link>
-            <p className="mt-3 max-w-xs text-sm text-zinc-400">
+            <p className="mt-3 max-w-xs text-sm text-ink-muted">
               {t(
                 "Prep smarter. Score well. Free IELTS practice and AI-powered tools for learners everywhere.",
               )}
             </p>
-            <div className="mt-5 flex items-center gap-3 text-zinc-400">
+            <div className="mt-5 flex items-center gap-3 text-ink-muted">
               <a
                 href="#"
                 aria-label="ScoreWell on Twitter"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-white/10 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-sunken transition-colors hover:bg-brand-100 hover:text-ink"
               >
                 <TwitterIcon />
               </a>
               <a
                 href="#"
                 aria-label="ScoreWell on Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-white/10 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-sunken transition-colors hover:bg-brand-100 hover:text-ink"
               >
                 <InstagramIcon />
               </a>
               <a
                 href="#"
                 aria-label="ScoreWell on YouTube"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-white/10 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-sunken transition-colors hover:bg-brand-100 hover:text-ink"
               >
                 <YoutubeIcon />
               </a>
@@ -150,13 +150,13 @@ export async function Footer() {
           <FooterColumn heading="Legal" links={LEGAL} t={t} />
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-zinc-800 pt-6 sm:flex-row">
-          <p className="text-sm text-zinc-500">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-line pt-6 sm:flex-row">
+          <p className="text-sm text-ink-muted">
             © {new Date().getFullYear()} ScoreWell. {t("All rights reserved.")}
           </p>
           <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-6">
             <InstallHint />
-            <Link href="/sitemap" className="text-sm text-zinc-500 hover:text-white">
+            <Link href="/sitemap" className="text-sm text-ink-muted hover:text-ink">
               {t("Sitemap")}
             </Link>
           </div>
