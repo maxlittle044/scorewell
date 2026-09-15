@@ -9,7 +9,7 @@ type EmailTemplate = "welcome" | "suspended" | "enabled" | "deleted";
 type Props = { recipient: string };
 
 const templates: Array<{ value: EmailTemplate; label: string; description: string }> = [
-  { value: "welcome", label: "Welcome user", description: "Account details, temporary password, and login link" },
+  { value: "welcome", label: "Welcome user", description: "Sign-in email and a link to choose a password" },
   { value: "suspended", label: "Account suspended", description: "Access restriction notification" },
   { value: "enabled", label: "Account re-enabled", description: "Restored access notification with login link" },
   { value: "deleted", label: "Account deleted", description: "Professional account closure notification" },

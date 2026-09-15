@@ -37,7 +37,9 @@ export async function sendAdminEmailPreview(template: EmailTemplate): Promise<Ac
       welcome: WelcomeUserEmail({
         name,
         email: recipient,
-        temporaryPassword: "Example-Password-123",
+        // A preview, so no real link is minted: a genuine one is single-use and would be
+        // spent by whoever opened the preview. This shows the wording, which is the point.
+        setPasswordUrl: absoluteUrl("/login?mode=reset"),
         loginUrl: absoluteUrl("/login"),
       }),
       suspended: AccountSuspendedEmail({ name, email: recipient }),

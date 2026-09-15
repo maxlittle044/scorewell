@@ -81,13 +81,27 @@ export async function createUserAction(input: CreateUserInput): Promise<ActionRe
       select: { id: true, name: true, email: true },
     });
 
+    // A link to choose their own password, rather than the password itself. Emailing a
+    // password leaves it sitting in the recipient's mailbox for good; this link is single-use,
+    // and completing it also marks the address verified, which sign-in now requires.
+    //
+    // Generated defensively: a create that succeeded must not be reported as a failure — and
+    // rolled back — because a link could not be produced. Without one the email explains how
+    // to use the reset link on the sign-in page instead.
+    let setPasswordUrl: string | null = null;
+    try {
+      setPasswordUrl = await getFirebaseAdminAuth().generatePasswordResetLink(email);
+    } catch (error) {
+      console.error("Could not generate a set-password link for the welcome email:", error);
+    }
+
     await sendEmail({
       to: user.email,
       subject: "Welcome to ScoreWell",
       react: WelcomeUserEmail({
         name: user.name?.trim() || "there",
         email: user.email,
-        temporaryPassword: password,
+        setPasswordUrl,
         loginUrl: absoluteUrl("/login"),
       }),
     });
