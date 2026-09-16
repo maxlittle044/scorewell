@@ -4,12 +4,16 @@ import "dotenv/config";
 import { PrismaClient } from "../generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { READING_TESTS } from "./seed-data/reading";
+import { READING_TESTS_GENERATED } from "./seed-data/reading-ielts-pipeline";
 import { LISTENING_TESTS } from "./seed-data/listening";
+import { LISTENING_TESTS_GENERATED } from "./seed-data/listening-ielts-pipeline";
 import { GRAMMAR_TESTS, MINI_EXERCISES } from "./seed-data/quizzes";
 import { BAND_9_SAMPLES } from "./seed-data/samples";
 import { TIPS } from "./seed-data/tips";
 import { WRITING_ITEMS } from "./seed-data/writing";
+import { WRITING_ITEMS_GENERATED } from "./seed-data/writing-ielts-pipeline";
 import { SPEAKING_TESTS } from "./seed-data/speaking";
+import { SPEAKING_TESTS_GENERATED } from "./seed-data/speaking-ielts-pipeline";
 import { COURSES } from "./seed-data/courses";
 import { PRONUNCIATION_DRILLS } from "./seed-data/pronunciation";
 import { DICTATION_EXERCISES } from "./seed-data/dictation";
@@ -33,7 +37,7 @@ const prisma = new PrismaClient({
 });
 
 async function main() {
-  for (const test of READING_TESTS) {
+  for (const test of [...READING_TESTS, ...READING_TESTS_GENERATED]) {
     const fields = {
       title: test.title,
       // Cross-skill collection, so a collection is a full sitting (see mock-sets.ts).
@@ -52,7 +56,7 @@ async function main() {
     console.log("reading      ", test.slug);
   }
 
-  for (const test of LISTENING_TESTS) {
+  for (const test of [...LISTENING_TESTS, ...LISTENING_TESTS_GENERATED]) {
     const fields = {
       title: test.title,
       // Collection name — the Exam Library groups on this (spec section 4a).
@@ -129,7 +133,7 @@ async function main() {
     console.log("tip article  ", tip.slug);
   }
 
-  for (const item of WRITING_ITEMS) {
+  for (const item of [...WRITING_ITEMS, ...WRITING_ITEMS_GENERATED]) {
     const fields = {
       title: item.title,
       skill: "WRITING" as const,
@@ -152,7 +156,7 @@ async function main() {
     console.log(item.kind === "test" ? "writing test " : "writing exer ", item.slug);
   }
 
-  for (const test of SPEAKING_TESTS) {
+  for (const test of [...SPEAKING_TESTS, ...SPEAKING_TESTS_GENERATED]) {
     const fields = {
       title: test.title,
       skill: "SPEAKING" as const,

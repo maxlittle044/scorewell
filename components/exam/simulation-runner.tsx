@@ -221,11 +221,37 @@ export function SimulationRunner({
   const objectiveLeg =
     currentSkill === "LISTENING" ? set.listening : currentSkill === "READING" ? set.reading : null;
 
-  const groups = useMemo(
-    () => (objectiveLeg ? toGroups(objectiveLeg.questionSet) : []),
+  // Which passage/section of the current objective leg is showing. Reset whenever the leg
+  // changes, so a fresh section always opens on its first part rather than wherever the
+  // previous section's tab happened to be.
+  const [activePart, setActivePart] = useState(0);
+  useEffect(() => {
+    setActivePart(0);
+  }, [legIndex]);
+
+  const partGroups = useMemo(
+    () => (objectiveLeg ? objectiveLeg.parts.map((part) => toGroups(part.questionSet)) : []),
     [objectiveLeg],
   );
+  const partQuestions = useMemo(
+    () => partGroups.map((partGroup) => allQuestions(partGroup)),
+    [partGroups],
+  );
+  const startNumbers = useMemo(() => {
+    const starts: number[] = [];
+    let running = 0;
+    for (const qs of partQuestions) {
+      starts.push(running);
+      running += qs.length;
+    }
+    return starts;
+  }, [partQuestions]);
+
+  // Hand-in and the score both grade every part together — the leg is one section of the
+  // real exam even when it spans several passages/audio sections.
+  const groups = useMemo(() => partGroups.flat(), [partGroups]);
   const questions = useMemo(() => allQuestions(groups), [groups]);
+  const activeQuestions = partQuestions[activePart] ?? [];
 
   /** Hands in the current section and moves on. There is no way back afterwards. */
   const handIn = () => {
@@ -433,21 +459,25 @@ export function SimulationRunner({
 
         <details className="rounded-2xl border border-line bg-surface p-6">
           <summary className="cursor-pointer text-sm font-bold text-ink">
-            Listening transcript and reading passage
+            Listening transcripts and reading passages
           </summary>
           <div className="mt-4 flex flex-col gap-6">
-            <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                {set.listening.title}
-              </p>
-              <p className="text-sm leading-relaxed text-ink-body">{set.listening.transcript}</p>
-            </div>
-            <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                {set.reading.title}
-              </p>
-              <PassageText passage={set.reading.passage} />
-            </div>
+            {set.listening.parts.map((part) => (
+              <div key={part.key}>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  {part.title}
+                </p>
+                <p className="text-sm leading-relaxed text-ink-body">{part.transcript}</p>
+              </div>
+            ))}
+            {set.reading.parts.map((part) => (
+              <div key={part.key}>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  {part.title}
+                </p>
+                <PassageText passage={part.passage ?? ""} />
+              </div>
+            ))}
           </div>
         </details>
 
@@ -533,20 +563,53 @@ export function SimulationRunner({
             </p>
           </div>
 
+          {/* Passage/section tabs — only meaningful (and only rendered beyond one pill) for
+              a full-length leg. Free navigation, unlike the forced-forward skill order:
+              the real exam lets a candidate move between passages/sections at will. */}
+          {objectiveLeg.parts.length > 1 && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              {objectiveLeg.parts.map((part, index) => {
+                const partAnswered = partQuestions[index].filter((q) =>
+                  isAnswered(q, answers[q.id]),
+                ).length;
+                return (
+                  <button
+                    key={part.key}
+                    type="button"
+                    onClick={() => setActivePart(index)}
+                    className={cn(
+                      "rounded-full px-3 py-1 text-xs font-semibold transition-colors",
+                      index === activePart
+                        ? "bg-brand-600 text-white"
+                        : partAnswered === partQuestions[index].length
+                          ? "bg-emerald-100 text-emerald-700"
+                          : "bg-surface-sunken text-ink-muted hover:bg-line",
+                    )}
+                  >
+                    {currentSkill === "READING" ? "Passage" : "Section"} {part.partNumber} ·{" "}
+                    {partAnswered}/{partQuestions[index].length}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
           {/* The sitting never shows the transcript, so this is the only way to hear the
               listening leg — the same player the standalone listening papers use. */}
-          {currentSkill === "LISTENING" && (
+          {currentSkill === "LISTENING" && objectiveLeg.parts[activePart]?.transcript && (
             <ListeningPlayer
-              transcript={set.listening.transcript}
-              label={set.listening.audioLabel}
+              key={objectiveLeg.parts[activePart].key}
+              transcript={objectiveLeg.parts[activePart].transcript!}
+              label={objectiveLeg.parts[activePart].audioLabel ?? objectiveLeg.parts[activePart].title}
             />
           )}
 
           <QuestionNavigator
-            questions={questions}
+            questions={activeQuestions}
             answers={answers}
             flagged={flagged}
             resultById={{}}
+            startNumber={startNumbers[activePart]}
           />
 
           <div className={cn("grid gap-6", currentSkill === "READING" && "lg:grid-cols-2")}>
@@ -556,18 +619,19 @@ export function SimulationRunner({
                   <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
                     Reading passage
                   </p>
-                  <PassageText passage={set.reading.passage} />
+                  <PassageText passage={objectiveLeg.parts[activePart]?.passage ?? ""} />
                 </div>
               </div>
             )}
 
             <div className="flex flex-col gap-6">
               <QuestionGroups
-                groups={groups}
+                groups={partGroups[activePart] ?? []}
                 answers={answers}
                 flagged={flagged}
                 resultById={{}}
                 showInstructions
+                startNumber={startNumbers[activePart]}
                 onChange={(id, value) => setAnswers((prev) => ({ ...prev, [id]: value }))}
                 onToggleFlag={(id) => setFlagged((prev) => ({ ...prev, [id]: !prev[id] }))}
               />

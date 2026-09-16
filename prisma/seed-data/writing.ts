@@ -1,3 +1,5 @@
+import type { ChartData } from "@/lib/content/writing";
+
 export type WritingTaskType = "task1-academic" | "task1-general" | "task2";
 
 export type WritingSeed = {
@@ -14,6 +16,8 @@ export type WritingSeed = {
     instructions: string;
     minWords: number;
     minutes: number;
+    /** The chart/graph/table a Task 1 Academic prompt refers to. */
+    chart?: ChartData;
   };
 };
 
@@ -33,6 +37,15 @@ export const WRITING_ITEMS: WritingSeed[] = [
         "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
       minWords: 150,
       minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "%",
+        categories: ["Norway", "Germany", "Brazil", "United States"],
+        series: [
+          { label: "2010", values: [58, 17, 41, 10] },
+          { label: "2020", values: [72, 44, 63, 20] },
+        ],
+      },
     },
   },
   {
@@ -115,6 +128,15 @@ export const WRITING_ITEMS: WritingSeed[] = [
         "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
       minWords: 150,
       minutes: 0,
+      chart: {
+        type: "bar",
+        unit: "hours per week",
+        categories: ["13–17", "18–34", "35–54", "55+"],
+        series: [
+          { label: "2015", values: [22, 19, 11, 4] },
+          { label: "2025", values: [31, 27, 18, 9] },
+        ],
+      },
     },
   },
   {
@@ -162,6 +184,181 @@ export const WRITING_ITEMS: WritingSeed[] = [
       instructions:
         "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
       minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "kg per person",
+        xLabels: ["1990", "2000", "2010", "2020"],
+        series: [
+          { label: "Finland", values: [11.5, 11.9, 12.2, 12.0] },
+          { label: "Italy", values: [4.8, 5.4, 5.8, 6.1] },
+          { label: "United States", values: [4.0, 4.2, 4.5, 4.7] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (was thin at 2 items across a formal/semi-formal/
+  // informal range the real exam covers) ----
+  {
+    slug: "letter-inviting-friend-farewell-party",
+    title: "Letter inviting a friend to a farewell gathering",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "test",
+    data: {
+      prompt:
+        "A close friend of yours is moving to another city. Write a letter to invite them to a small farewell gathering before they leave. In your letter: say when and where the gathering will be, explain who else will be there, and tell them what you are looking forward to about the evening.",
+      instructions:
+        "This is an informal letter to a close friend — a warm, conversational tone is appropriate. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-applying-part-time-job",
+    title: "Letter applying for a part-time job",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "formal"],
+    kind: "test",
+    data: {
+      prompt:
+        "You saw an advertisement for a part-time position at your local library. Write a letter to apply for the job. In your letter: explain which position you are applying for and where you saw it advertised, describe your relevant skills or experience, and say when you would be available for an interview.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. Keep the tone formal throughout, since you do not know the reader personally.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-cancelling-gym-membership",
+    title: "Letter cancelling a gym membership",
+    taskType: "task1-general",
+    topic: "Consumer",
+    tags: ["writing", "task-1-general", "letters", "semi-formal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You need to cancel your membership at a gym because you are relocating to another city. Write a letter to the gym manager. In your letter: explain why you are cancelling, ask about the cancellation process and any fees involved, and request confirmation once it is processed.",
+      instructions:
+        "A semi-formal register suits this best — you have an ongoing relationship with the gym, but it is still a business matter.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-complaint-delayed-delivery",
+    title: "Letter of complaint about a delayed delivery",
+    taskType: "task1-general",
+    topic: "Consumer",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "test",
+    data: {
+      prompt:
+        "You ordered an item online two weeks ago, and it still has not arrived. Write a letter to the company. In your letter: give details of your order, explain the problem, and say what you would like the company to do.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. State the problem clearly and keep the tone firm but polite.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-advice-friend-moving-city",
+    title: "Letter giving advice to a friend moving to your city",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "A friend of yours is planning to move to your city for a new job. Write a letter to them. In your letter: say how you feel about them moving nearby, give some advice about the area they might live in, and offer to help them settle in.",
+      instructions:
+        "Keep this informal and personal — write as you would to a genuine friend, not a stranger.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-requesting-assignment-extension",
+    title: "Letter requesting a coursework extension",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "formal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You are unable to submit a university assignment on time because you have been unwell. Write a letter to your course tutor. In your letter: explain your situation, apologise for the inconvenience, and request a short extension.",
+      instructions:
+        "Keep this formal and concise — a tutor reading many such requests will appreciate directness over a long explanation.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+
+  // ---- More Task 2 essays (fresh topics, avoiding overlap with existing prompts) ----
+  {
+    slug: "task2-social-media-relationships",
+    title: "Task 2: Social media and relationships",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "society", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that social media has strengthened relationships between friends and family, while others believe it has weakened them. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-remote-work-benefits",
+    title: "Task 2: The benefits and drawbacks of remote work",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that working from home benefits both employees and employers, while others believe it creates more problems than it solves. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-public-transport-investment",
+    title: "Task 2: Should governments prioritise public transport over roads?",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Governments should invest more in public transport systems rather than building new roads for private cars. To what extent do you agree or disagree?",
+      instructions:
+        "Take a clear position and support it throughout — this is an opinion essay, not a discussion of both sides.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-environmental-responsibility",
+    title: "Task 2: Who is responsible for protecting the environment?",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "discussion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that individuals are primarily responsible for protecting the environment, while others think this responsibility belongs mainly to governments and large corporations. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
       minutes: 0,
     },
   },

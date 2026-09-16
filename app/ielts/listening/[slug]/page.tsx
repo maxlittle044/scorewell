@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { CountdownTimer } from "@/components/content/countdown-timer";
-import { ListeningTest } from "@/components/content/listening-test";
+import { ListeningExam } from "@/components/content/listening-exam";
 import { TagList } from "@/components/content/tag-list";
 import { getListeningTest } from "@/lib/content/listening";
+import { allQuestions, toGroups } from "@/lib/exam/schema";
 import { titleFromSlug } from "@/lib/slug";
 
 export default async function ListeningTestPage({
@@ -28,20 +28,23 @@ export default async function ListeningTestPage({
     );
   }
 
-  return (
-    <main className="flex flex-1 flex-col bg-surface">
-      <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mb-6 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-ink">{test.title}</h1>
-          <CountdownTimer minutes={10} />
-        </div>
+  // Scaled from the real 40-question / 30-minute paper, so a short single-section practice
+  // set and a full 4-section test each get a proportional clock rather than one fixed value.
+  const questionCount = allQuestions(toGroups(test.questionSet)).length;
+  const durationMinutes = Math.max(10, Math.round((questionCount / 40) * 30));
 
-        <ListeningTest
-          questions={test.questions}
+  return (
+    <main className="flex flex-1 flex-col bg-surface-muted">
+      <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <h1 className="font-display mb-6 text-2xl font-bold text-ink">{test.title}</h1>
+
+        <ListeningExam
+          questionSet={test.questionSet}
           title={test.title}
           contentItemId={test.id}
           transcript={test.transcript}
           audioLabel={test.audioLabel}
+          durationMinutes={durationMinutes}
         />
 
         <p className="mt-6 text-sm text-ink-muted">

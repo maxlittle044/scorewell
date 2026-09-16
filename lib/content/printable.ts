@@ -2,8 +2,9 @@ import { prisma } from "@/lib/prisma";
 import { getReadingTest } from "./reading";
 import { getListeningTest } from "./listening";
 import { getWritingItem } from "./writing";
+import type { ChartData } from "./writing";
 import { getSpeakingTest } from "./speaking";
-import { QuestionSetSchema, toGroups } from "@/lib/exam/schema";
+import { toGroups } from "@/lib/exam/schema";
 import type { QuestionGroup } from "@/lib/exam/schema";
 
 /**
@@ -54,6 +55,8 @@ export type PrintableDoc = {
   prompt?: string;
   promptPoints?: string[];
   minWords?: number;
+  /** Task 1 Academic's chart/graph/table, rendered on the sheet as the on-screen version does. */
+  chart?: ChartData;
 };
 
 /** The answer a key should show, derived from the same data the grader uses. */
@@ -140,10 +143,7 @@ export async function getPrintable(slug: string): Promise<PrintableDoc | null> {
   if (item.skill === "LISTENING") {
     const test = await getListeningTest(slug);
     if (!test) return null;
-    // Listening stores flat multiple choice, which the shared schema normalises.
-    const parsed = QuestionSetSchema.safeParse({ questions: test.questions });
-    if (!parsed.success) return null;
-    const { questions, groups } = fromGroups(toGroups(parsed.data));
+    const { questions, groups } = fromGroups(toGroups(test.questionSet));
     return {
       slug,
       title: test.title,
@@ -170,6 +170,7 @@ export async function getPrintable(slug: string): Promise<PrintableDoc | null> {
       instructions: test.instructions,
       prompt: test.prompt,
       minWords: test.minWords,
+      chart: test.chart,
       groups: [],
       questions: [],
     };

@@ -13,14 +13,27 @@ export type LegSkill = (typeof LEG_ORDER)[number];
 
 export type Variant = "academic" | "general-training";
 
+/** One passage or section within a leg — a leg has exactly one for a short sitting, several
+ *  for a full-length one, and the runner renders both the same way (tabs are just trivial
+ *  when there's only one). */
+export type LegPart = {
+  key: string;
+  partNumber: number;
+  title: string;
+  questionSet: QuestionSet;
+  /** Reading only. */
+  passage?: string;
+  /** Listening only. */
+  transcript?: string;
+  audioLabel?: string;
+};
+
 export type ListeningLeg = {
   skill: "LISTENING";
   slug: string;
   title: string;
   minutes: number;
-  audioLabel: string;
-  transcript: string;
-  questionSet: QuestionSet;
+  parts: LegPart[];
 };
 
 export type ReadingLeg = {
@@ -28,8 +41,7 @@ export type ReadingLeg = {
   slug: string;
   title: string;
   minutes: number;
-  passage: string;
-  questionSet: QuestionSet;
+  parts: LegPart[];
 };
 
 export type WritingLeg = {

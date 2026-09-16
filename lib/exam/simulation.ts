@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { QuestionSetSchema } from "./schema";
 import { LEG_ORDER, setSlug } from "./simulation-types";
 import type {
+  LegPart,
   ListeningLeg,
   ReadingLeg,
   SimulationSet,
@@ -36,11 +37,10 @@ const LISTENING_MINUTES = 30;
 const READING_MINUTES = 60;
 const SPEAKING_MINUTES = 15;
 
-const ListeningDataSchema = z.object({
-  audioLabel: z.string(),
-  transcript: z.string(),
-  questions: z.array(z.unknown()),
-});
+const ListeningDataSchema = z.intersection(
+  z.object({ audioLabel: z.string(), transcript: z.string() }),
+  QuestionSetSchema,
+);
 
 const ReadingDataSchema = z.intersection(
   z.object({ passage: z.string(), durationMinutes: z.number().optional() }),
@@ -78,48 +78,106 @@ type Row = {
   data: unknown;
 };
 
+/** "…-p3" / "…-s4" → 3 / 4. A row with no such suffix is the sitting's only part. */
+function partNumberFromSlug(slug: string): number {
+  const match = slug.match(/-[ps](\d+)$/);
+  return match ? Number(match[1]) : 1;
+}
+
+/** Strips a "-p<N>" / "-s<N>" suffix, or returns the slug unchanged if it has none. */
+function baseSlugOf(slug: string): string {
+  return slug.replace(/-[ps]\d+$/, "");
+}
+
+/**
+ * True only when every row is the sitting's sole item for that skill, or a part of the same
+ * bundled paper — never an arbitrary mix of unrelated tests that happen to share a collection.
+ * Without this check, the ungrouped "Extra Practice" catch-all (every generated passage/
+ * section with no named sitting) would look like one enormous multi-part leg.
+ */
+function formsOnePaper(rows: Row[]): boolean {
+  if (rows.length <= 1) return true;
+  return new Set(rows.map((row) => baseSlugOf(row.slug))).size === 1;
+}
+
+/**
+ * Builds a multi-part leg from every row for one skill in a collection. A short sitting's
+ * skill has exactly one row (partNumber 1); a full-length sitting's has three (Reading) or
+ * four (Listening), following the same `-p<N>`/`-s<N>` slug convention as the standalone
+ * full papers in lib/content/full-paper.ts.
+ */
+function buildReadingLeg(rows: Row[]): ReadingLeg | null {
+  const parts: LegPart[] = [];
+  for (const row of rows) {
+    const parsed = ReadingDataSchema.safeParse(row.data);
+    if (!parsed.success) return null;
+    const { passage, ...questionSet } = parsed.data;
+    parts.push({
+      key: row.slug,
+      partNumber: partNumberFromSlug(row.slug),
+      title: row.title,
+      passage,
+      questionSet: { questions: questionSet.questions, groups: questionSet.groups },
+    });
+  }
+  if (parts.length === 0) return null;
+  parts.sort((a, b) => a.partNumber - b.partNumber);
+
+  const first = rows[0];
+  const single = parts.length === 1 ? ReadingDataSchema.safeParse(rows[0].data) : null;
+  const minutes =
+    parts.length > 1 ? READING_MINUTES : (single?.success && single.data.durationMinutes) || READING_MINUTES;
+
+  return { skill: "READING", slug: first.slug, title: first.title, minutes, parts };
+}
+
+function buildListeningLeg(rows: Row[]): ListeningLeg | null {
+  const parts: LegPart[] = [];
+  for (const row of rows) {
+    const parsed = ListeningDataSchema.safeParse(row.data);
+    if (!parsed.success) return null;
+    // Listening stores either flat multiple choice or real IELTS groups; QuestionSetSchema
+    // accepts both, so both shapes reach the shared grader the same way.
+    const questions = QuestionSetSchema.safeParse(parsed.data);
+    if (!questions.success) return null;
+    parts.push({
+      key: row.slug,
+      partNumber: partNumberFromSlug(row.slug),
+      title: row.title,
+      transcript: parsed.data.transcript,
+      audioLabel: parsed.data.audioLabel,
+      questionSet: questions.data,
+    });
+  }
+  if (parts.length === 0) return null;
+  parts.sort((a, b) => a.partNumber - b.partNumber);
+
+  const first = rows[0];
+
+  return { skill: "LISTENING", slug: first.slug, title: first.title, minutes: LISTENING_MINUTES, parts };
+}
+
 /** Builds the four legs from one collection's rows, or null if any skill is missing/invalid. */
 function buildSet(name: string, rows: Row[]): SimulationSet | null {
-  const bySkill = new Map(rows.map((row) => [row.skill, row]));
-  const listeningRow = bySkill.get("LISTENING");
-  const readingRow = bySkill.get("READING");
-  const writingRow = bySkill.get("WRITING");
-  const speakingRow = bySkill.get("SPEAKING");
-  if (!listeningRow || !readingRow || !writingRow || !speakingRow) return null;
+  const byskill = new Map<string, Row[]>();
+  for (const row of rows) {
+    if (!row.skill) continue;
+    byskill.set(row.skill, [...(byskill.get(row.skill) ?? []), row]);
+  }
+  const listeningRows = byskill.get("LISTENING");
+  const readingRows = byskill.get("READING");
+  const writingRow = byskill.get("WRITING")?.[0];
+  const speakingRow = byskill.get("SPEAKING")?.[0];
+  if (!listeningRows || !readingRows || !writingRow || !speakingRow) return null;
+  if (!formsOnePaper(listeningRows) || !formsOnePaper(readingRows)) return null;
 
-  const listeningData = ListeningDataSchema.safeParse(listeningRow.data);
-  const readingData = ReadingDataSchema.safeParse(readingRow.data);
+  const listening = buildListeningLeg(listeningRows);
+  const reading = buildReadingLeg(readingRows);
+  if (!listening || !reading) return null;
+
   const writingData = WritingDataSchema.safeParse(writingRow.data);
   const speakingData = SpeakingDataSchema.safeParse(speakingRow.data);
-  if (!listeningData.success || !readingData.success || !writingData.success || !speakingData.success) {
-    return null;
-  }
-
-  // Listening stores flat multiple choice, which QuestionSetSchema accepts and normalises,
-  // so both objective legs reach the shared grader in the same shape.
-  const listeningQuestions = QuestionSetSchema.safeParse({ questions: listeningData.data.questions });
-  if (!listeningQuestions.success) return null;
-
-  const { passage, durationMinutes, ...readingQuestionSet } = readingData.data;
-
-  const listening: ListeningLeg = {
-    skill: "LISTENING",
-    slug: listeningRow.slug,
-    title: listeningRow.title,
-    minutes: LISTENING_MINUTES,
-    audioLabel: listeningData.data.audioLabel,
-    transcript: listeningData.data.transcript,
-    questionSet: listeningQuestions.data,
-  };
-
-  const reading: ReadingLeg = {
-    skill: "READING",
-    slug: readingRow.slug,
-    title: readingRow.title,
-    minutes: durationMinutes ?? READING_MINUTES,
-    passage,
-    questionSet: readingQuestionSet,
-  };
+  if (!writingData.success || !speakingData.success) return null;
 
   const writing: WritingLeg = {
     skill: "WRITING",
@@ -145,7 +203,7 @@ function buildSet(name: string, rows: Row[]): SimulationSet | null {
 
   return {
     name,
-    variant: variantFromTags(readingRow.tags) ?? variantFromTags(writingRow.tags),
+    variant: variantFromTags(readingRows[0].tags) ?? variantFromTags(writingRow.tags),
     totalMinutes: listening.minutes + reading.minutes + writing.minutes + speaking.minutes,
     listening,
     reading,

@@ -18,8 +18,13 @@ export type MockSet = {
   name: string;
   /** Listening and Speaking are shared across variants; Reading and Writing are not. */
   variant: "academic" | "general-training";
-  listening: string;
-  reading: string;
+  /**
+   * A short sitting names one test; a full-length sitting names every passage/section of a
+   * bundled paper (lib/content/full-paper.ts), in order — e.g. all three Reading passages
+   * or all four Listening sections of one generated paper.
+   */
+  listening: string | string[];
+  reading: string | string[];
   writing: string;
   speaking: string;
 };
@@ -57,6 +62,26 @@ export const MOCK_SETS: MockSet[] = [
     writing: "task1-letter-refund-request",
     speaking: "part3-travel-and-tourism",
   },
+  // Real exam length: the full 3-passage/40-question Reading paper and 4-section/
+  // 40-question Listening paper, not a single short item. Offered alongside the shorter
+  // mock sets above rather than replacing them, so nothing already in progress breaks.
+  {
+    name: "Full-Length Mock Test 1",
+    variant: "academic",
+    listening: [
+      "generated-listening-academic-0002-s1",
+      "generated-listening-academic-0002-s2",
+      "generated-listening-academic-0002-s3",
+      "generated-listening-academic-0002-s4",
+    ],
+    reading: [
+      "generated-reading-academic-0001-p1",
+      "generated-reading-academic-0001-p2",
+      "generated-reading-academic-0001-p3",
+    ],
+    writing: "generated-writing-academic-task1-0003",
+    speaking: "generated-speaking-p1-0001",
+  },
 ];
 
 /** Where tests that aren't part of a complete sitting are collected instead. */
@@ -64,9 +89,9 @@ export const SPARE_COLLECTION = "Extra Practice";
 
 const BY_SLUG = new Map<string, string>(
   MOCK_SETS.flatMap((set) =>
-    [set.listening, set.reading, set.writing, set.speaking].map(
-      (slug) => [slug, set.name] as const,
-    ),
+    [set.listening, set.reading, set.writing, set.speaking]
+      .flat()
+      .map((slug) => [slug, set.name] as const),
   ),
 );
 
