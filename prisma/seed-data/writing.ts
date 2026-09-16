@@ -1,3 +1,5 @@
+import type { ChartData } from "@/lib/content/writing";
+
 export type WritingTaskType = "task1-academic" | "task1-general" | "task2";
 
 export type WritingSeed = {
@@ -14,6 +16,8 @@ export type WritingSeed = {
     instructions: string;
     minWords: number;
     minutes: number;
+    /** The chart/graph/table a Task 1 Academic prompt refers to. */
+    chart?: ChartData;
   };
 };
 
@@ -33,6 +37,15 @@ export const WRITING_ITEMS: WritingSeed[] = [
         "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
       minWords: 150,
       minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "%",
+        categories: ["Norway", "Germany", "Brazil", "United States"],
+        series: [
+          { label: "2010", values: [58, 17, 41, 10] },
+          { label: "2020", values: [72, 44, 63, 20] },
+        ],
+      },
     },
   },
   {
@@ -115,6 +128,15 @@ export const WRITING_ITEMS: WritingSeed[] = [
         "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
       minWords: 150,
       minutes: 0,
+      chart: {
+        type: "bar",
+        unit: "hours per week",
+        categories: ["13–17", "18–34", "35–54", "55+"],
+        series: [
+          { label: "2015", values: [22, 19, 11, 4] },
+          { label: "2025", values: [31, 27, 18, 9] },
+        ],
+      },
     },
   },
   {
@@ -163,6 +185,16 @@ export const WRITING_ITEMS: WritingSeed[] = [
         "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
       minWords: 150,
       minutes: 0,
+      chart: {
+        type: "line",
+        unit: "kg per person",
+        xLabels: ["1990", "2000", "2010", "2020"],
+        series: [
+          { label: "Finland", values: [11.5, 11.9, 12.2, 12.0] },
+          { label: "Italy", values: [4.8, 5.4, 5.8, 6.1] },
+          { label: "United States", values: [4.0, 4.2, 4.5, 4.7] },
+        ],
+      },
     },
   },
 ];

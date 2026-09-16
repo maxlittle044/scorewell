@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { Task1Chart } from "@/components/content/task1-chart";
 import { TagList } from "@/components/content/tag-list";
 import { WritingEditor } from "@/components/content/writing-editor";
-import { getWritingItem } from "@/lib/content/writing";
+import { chartDataAsText, getWritingItem } from "@/lib/content/writing";
 import { titleFromSlug } from "@/lib/slug";
 
 export default async function WritingExercisePage({
@@ -38,10 +39,12 @@ export default async function WritingExercisePage({
           <p className="mt-3 text-xs text-ink-muted">Aim for at least {exercise.minWords} words.</p>
         </div>
 
+        {exercise.chart && <Task1Chart data={exercise.chart} />}
+
         <WritingEditor
           minWords={exercise.minWords}
           taskType={exercise.taskType}
-          examPrompt={exercise.prompt}
+          examPrompt={exercise.chart ? `${exercise.prompt}\n\n${chartDataAsText(exercise.chart)}` : exercise.prompt}
           title={exercise.title}
           contentItemId={exercise.id}
         />

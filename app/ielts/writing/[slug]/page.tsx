@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { CountdownTimer } from "@/components/content/countdown-timer";
+import { Task1Chart } from "@/components/content/task1-chart";
 import { TagList } from "@/components/content/tag-list";
 import { WritingEditor } from "@/components/content/writing-editor";
-import { getWritingItem } from "@/lib/content/writing";
+import { chartDataAsText, getWritingItem } from "@/lib/content/writing";
 import { titleFromSlug } from "@/lib/slug";
 
 export default async function WritingTestPage({
@@ -42,10 +43,12 @@ export default async function WritingTestPage({
           <p className="mt-3 text-xs text-ink-muted">Write at least {test.minWords} words.</p>
         </div>
 
+        {test.chart && <Task1Chart data={test.chart} />}
+
         <WritingEditor
           minWords={test.minWords}
           taskType={test.taskType}
-          examPrompt={test.prompt}
+          examPrompt={test.chart ? `${test.prompt}\n\n${chartDataAsText(test.chart)}` : test.prompt}
           title={test.title}
           contentItemId={test.id}
         />

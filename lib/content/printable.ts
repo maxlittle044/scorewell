@@ -2,6 +2,7 @@ import { prisma } from "@/lib/prisma";
 import { getReadingTest } from "./reading";
 import { getListeningTest } from "./listening";
 import { getWritingItem } from "./writing";
+import type { ChartData } from "./writing";
 import { getSpeakingTest } from "./speaking";
 import { toGroups } from "@/lib/exam/schema";
 import type { QuestionGroup } from "@/lib/exam/schema";
@@ -54,6 +55,8 @@ export type PrintableDoc = {
   prompt?: string;
   promptPoints?: string[];
   minWords?: number;
+  /** Task 1 Academic's chart/graph/table, rendered on the sheet as the on-screen version does. */
+  chart?: ChartData;
 };
 
 /** The answer a key should show, derived from the same data the grader uses. */
@@ -167,6 +170,7 @@ export async function getPrintable(slug: string): Promise<PrintableDoc | null> {
       instructions: test.instructions,
       prompt: test.prompt,
       minWords: test.minWords,
+      chart: test.chart,
       groups: [],
       questions: [],
     };

@@ -1,4 +1,5 @@
 import type { PrintableDoc } from "@/lib/content/printable";
+import { Task1Chart } from "./task1-chart";
 
 /**
  * The print rendering of one practice test, lifted out of app/print/[slug]/page.tsx so a
@@ -50,6 +51,11 @@ export function PrintableDocBody({ doc }: { doc: PrintableDoc }) {
         <section>
           <div className="rounded-lg border border-line p-4">
             <p className="text-sm font-medium text-ink">{doc.prompt}</p>
+            {doc.chart && (
+              <div className="mt-3">
+                <Task1Chart data={doc.chart} />
+              </div>
+            )}
             {doc.promptPoints && doc.promptPoints.length > 0 && (
               <ul className="mt-2 flex list-disc flex-col gap-1 pl-5 text-sm text-ink-body">
                 {doc.promptPoints.map((point) => (
