@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "Listening Tests — ScoreWell",
 };
 
+// Meta reflects each test's actual content — a single section, not the full 4-section/
+// 40-question paper the real exam uses. Claiming otherwise would violate the site's own
+// honesty rule (CLAUDE.md), so these stay short single-section practice items until they're
+// bundled into full-length papers.
 const TESTS = [
-  { title: "Listening Practice Set 1", meta: "30 min · 4 sections · 40 questions", slug: "practice-set-1" },
-  { title: "Listening Practice Set 2", meta: "30 min · 4 sections · 40 questions", slug: "practice-set-2" },
-  { title: "Listening Practice Set 3", meta: "30 min · 4 sections · 40 questions", slug: "practice-set-3" },
-  { title: "Listening Practice Set 4", meta: "30 min · 4 sections · 40 questions", slug: "practice-set-4" },
+  { title: "Listening Practice Set 1", meta: "10 min · 1 section · 4 questions", slug: "practice-set-1" },
+  { title: "Listening Practice Set 2", meta: "10 min · 1 section · 4 questions", slug: "practice-set-2" },
+  { title: "Listening Practice Set 3", meta: "10 min · 1 section · 4 questions", slug: "practice-set-3" },
+  { title: "Listening Practice Set 4", meta: "10 min · 1 section · 4 questions", slug: "practice-set-4" },
 ];
 
 export default function ListeningIndexPage() {
@@ -26,7 +30,7 @@ export default function ListeningIndexPage() {
             <ContentCard
               headingLevel={2}
               key={test.slug}
-              tag="Sections 1–4"
+              tag="Practice set"
               title={test.title}
               meta={test.meta}
               href={`/ielts/listening/${test.slug}`}

@@ -6,13 +6,17 @@ export const metadata: Metadata = {
   title: "Reading Tests — ScoreWell",
 };
 
+// Meta reflects each test's actual content — a single passage, not the full 3-passage/
+// 40-question paper the real exam uses. Claiming otherwise would violate the site's own
+// honesty rule (CLAUDE.md), so these stay short single-passage practice items until they're
+// bundled into full-length papers.
 const TESTS = [
-  { title: "Academic Reading Test 1", tag: "Academic", meta: "60 min · 3 passages · 40 questions", slug: "academic-test-1" },
-  { title: "Academic Reading Test 2", tag: "Academic", meta: "60 min · 3 passages · 40 questions", slug: "academic-test-2" },
-  { title: "Academic Reading Test 3", tag: "Academic", meta: "60 min · 3 passages · 40 questions", slug: "academic-test-3" },
-  { title: "General Training Reading Test 1", tag: "General Training", meta: "60 min · 3 sections · 40 questions", slug: "gt-test-1" },
-  { title: "General Training Reading Test 2", tag: "General Training", meta: "60 min · 3 sections · 40 questions", slug: "gt-test-2" },
-  { title: "Academic Reading Test 4", tag: "Academic", meta: "60 min · 3 passages · 40 questions", slug: "academic-test-4" },
+  { title: "Academic Reading Test 1", tag: "Academic", meta: "20 min · 1 passage · 10 questions", slug: "academic-test-1" },
+  { title: "Academic Reading Test 2", tag: "Academic", meta: "20 min · 1 passage · 4 questions", slug: "academic-test-2" },
+  { title: "Academic Reading Test 3", tag: "Academic", meta: "20 min · 1 passage · 4 questions", slug: "academic-test-3" },
+  { title: "General Training Reading Test 1", tag: "General Training", meta: "20 min · 1 passage · 4 questions", slug: "gt-test-1" },
+  { title: "General Training Reading Test 2", tag: "General Training", meta: "20 min · 1 passage · 4 questions", slug: "gt-test-2" },
+  { title: "Academic Reading Test 4", tag: "Academic", meta: "20 min · 1 passage · 4 questions", slug: "academic-test-4" },
 ];
 
 export default function ReadingIndexPage() {
