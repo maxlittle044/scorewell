@@ -45,11 +45,14 @@ export function QuestionNavigator({
   answers,
   flagged,
   resultById,
+  startNumber = 0,
 }: {
   questions: Question[];
   answers: Record<string, AnswerValue>;
   flagged: Record<string, boolean>;
   resultById: Record<string, QuestionResult>;
+  /** Offsets numbering, e.g. Passage 2 of a bundled paper starting at 14 rather than 1. */
+  startNumber?: number;
 }) {
   return (
     <div className="rounded-xl border border-line bg-surface p-4">
@@ -77,7 +80,7 @@ export function QuestionNavigator({
                       : "bg-surface-sunken text-ink-muted hover:bg-line",
               )}
             >
-              {index + 1}
+              {startNumber + index + 1}
             </a>
           );
         })}
@@ -95,6 +98,7 @@ export function QuestionGroups({
   onToggleFlag,
   onFocusQuestion,
   showInstructions,
+  startNumber = 0,
 }: {
   groups: QuestionGroup[];
   answers: Record<string, AnswerValue>;
@@ -105,12 +109,14 @@ export function QuestionGroups({
   /** Fired on hover/focus so the caller can highlight the answer's source sentence. */
   onFocusQuestion?: (question: Question) => void;
   showInstructions: boolean;
+  /** Offsets numbering, e.g. Passage 2 of a bundled paper starting at 14 rather than 1. */
+  startNumber?: number;
 }) {
   // Numbered up front rather than counted during the render, so the sequence can't depend
   // on render order. Numbering runs across groups, matching the printed paper.
   const numberById = useMemo(() => {
     const map = new Map<string, number>();
-    let next = 0;
+    let next = startNumber;
     for (const group of groups) {
       for (const question of group.questions) {
         next += 1;
@@ -118,7 +124,7 @@ export function QuestionGroups({
       }
     }
     return map;
-  }, [groups]);
+  }, [groups, startNumber]);
 
   return (
     <>
