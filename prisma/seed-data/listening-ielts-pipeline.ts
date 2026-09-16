@@ -308,6 +308,115 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
     }
   },
   {
+    "slug": "generated-listening-academic-0001-s3",
+    "title": "Research Project Planning – Listening Section 3",
+    "topic": "Education",
+    "tags": [
+      "academic",
+      "education",
+      "multiple-choice"
+    ],
+    "data": {
+      "audioLabel": "Research Project Planning – Listening Section 3",
+      "transcript": "Tutor: So, Maya, Tom — let's go over the plan for your urban wildlife survey. First, which habitat type are you focusing on for the main survey?\nMaya: We're focusing on... um, riverside parkland.\nTutor: Riverside parkland, good. And how many survey sites have you selected in total?\nTom: We've chosen six sites.\nTutor: Six sites. Now, what's the main method you'll use to record bird species?\nMaya: We'll be using point counts — actually, no, sorry, line transects, that's more suitable for a river corridor.\nTutor: Line transects, yes. And which piece of equipment is most important to book in advance?\nTom: We'll need binoculars — but the digital recorder for capturing bird calls is the one that's in short supply, so that's the one to book early.\nTutor: Good point. What time of day do you plan to carry out most of your observations?\nMaya: Early morning, around dawn, since that's when birds are most active.\nTutor: Good choice. And finally, how many weeks have you allocated for the fieldwork stage?\nTom: We've allowed four weeks for fieldwork.\nTutor: Four weeks, that sounds reasonable. Now, let's go through who's responsible for each part of the report. Maya, you'll handle the introduction and literature review. Tom, you'll take care of the methodology section. For the results section, that will be a joint effort between both of you. And the discussion and conclusion will also be written by Maya, with Tom checking it over.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0001-s3-g1",
+          "instructions": "Choose the correct answer from the four options given.",
+          "questions": [
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0001-q021",
+              "question": "Which habitat type is the main focus of the survey?",
+              "options": ["Woodland edge", "Riverside parkland", "Urban rooftop", "Wetland reserve"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Maya says they're focusing on riverside parkland." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0001-q022",
+              "question": "How many survey sites have been selected?",
+              "options": ["Four", "Five", "Six", "Eight"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Tom says they've chosen six sites." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0001-q023",
+              "question": "Which method will be used to record bird species?",
+              "options": ["Point counts", "Line transects", "Camera traps", "Mist netting"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Maya corrects herself and confirms they'll use line transects." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0001-q024",
+              "question": "Which piece of equipment is most important to book in advance?",
+              "options": ["Binoculars", "Digital recorder", "GPS unit", "Field microscope"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Tom says the digital recorder is in short supply, so it's the one to book early." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0001-q025",
+              "question": "When will most observations be carried out?",
+              "options": ["Early morning", "Midday", "Late afternoon", "After dark"],
+              "correctIndex": 0,
+              "evidence": { "explanation": "Maya says early morning, around dawn, is when birds are most active." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0001-q026",
+              "question": "How many weeks have been allocated for fieldwork?",
+              "options": ["Two weeks", "Three weeks", "Four weeks", "Six weeks"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Tom says they've allowed four weeks for fieldwork." }
+            }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0001-s3-g2",
+          "instructions": "Who is responsible for each part of the report? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Maya" },
+            { "key": "B", "label": "Tom" },
+            { "key": "C", "label": "Both students" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0001-q027",
+              "prompt": "Introduction and literature review",
+              "answer": "A",
+              "evidence": { "explanation": "The tutor assigns the introduction and literature review to Maya." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0001-q028",
+              "prompt": "Methodology section",
+              "answer": "B",
+              "evidence": { "explanation": "The tutor assigns the methodology section to Tom." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0001-q029",
+              "prompt": "Results section",
+              "answer": "C",
+              "evidence": { "explanation": "The tutor says the results section will be a joint effort between both students." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0001-q030",
+              "prompt": "Discussion and conclusion",
+              "answer": "A",
+              "evidence": { "explanation": "The tutor says the discussion and conclusion will also be written by Maya, with Tom checking it over." }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-listening-academic-0001-s4",
     "title": "Community Sports Centre Enquiry – Listening Section 4",
     "topic": "Leisure and fitness",
@@ -740,7 +849,7 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
     ],
     "data": {
       "audioLabel": "Museum Tour Briefing – Listening Section 3",
-      "transcript": "Guide: Good morning, everyone, and welcome to the City Heritage Museum. Before we start, I'll run through a quick briefing – and, um, I'll also ask a few check‐in questions so you can see how much you've picked up.\n\n21. First question – what year was the museum founded?\nAnswer: The correct year is... uh... 1928.\n\n22. Next – which floor houses the Egyptian collection?\nAnswer: That would be the first floor.\n\n23. How long is the standard guided tour?\nAnswer: The tour lasts sixty minutes.\n\n24. Now, what is the policy on flash photography?\nAnswer: Some people think it's allowed with permission, but – actually – it's prohibited completely.\n\n25. Which artifact is highlighted as the centerpiece of the Egyptian gallery?\nAnswer: The centerpiece is Tutankhamun's mask.\n\n26. What time does the museum close on Fridays?\nAnswer: We close at seven pm on Fridays.\n\n27. Let's match the three rooms with their primary theme.\nAnswer: Gallery of Modern Art – 20th‐century paintings; Hall of Natural History – dinosaur fossils; Medieval Armoury – knightly weaponry.\n\n28. Match the audio guide languages to their codes.\nAnswer: English – EN; Mandarin – MA; Spanish – ES.\n\n29. Match the ticket types to their prices.\nAnswer: Adult – $12; Student – $8; Child – $5.\n\n30. Finally, match the accessibility features to the facilities where they are available.\nAnswer: Wheelchair ramp – main entrance; Audio description devices – auditorium; Braille signage – Gallery of Modern Art.\n\nThat's all for the briefing – if you have any questions, just raise your hand and I'll be happy to clarify.",
+      "transcript": "Guide: Good morning, everyone, and welcome to the City Heritage Museum. Before we start, I'll run through a quick briefing – and, um, I'll also ask a few check‐in questions so you can see how much you've picked up.\n\n21. First question – what year was the museum founded?\nAnswer: The correct year is... uh... 1928.\n\n22. Next – which floor houses the Egyptian collection?\nAnswer: That would be the first floor.\n\n23. How long is the standard guided tour?\nAnswer: The tour lasts sixty minutes.\n\n24. Now, what is the policy on flash photography?\nAnswer: Some people think it's allowed with permission, but – actually – it's prohibited completely.\n\n25. Which artifact is highlighted as the centerpiece of the Egyptian gallery?\nAnswer: The centerpiece is Tutankhamun's mask.\n\n26. What time does the museum close on Fridays?\nAnswer: We close at seven pm on Fridays.\n\nFinally, let's match our audio guide languages to their two‐letter codes. English is coded EN, French is coded FR, Mandarin is coded MA, and Spanish is coded ES. Please pick up the correct handset at the entrance. That covers questions twenty‐seven to thirty.\n\nThat's all for the briefing – if you have any questions, just raise your hand and I'll be happy to clarify.",
       "groups": [
         {
           "id": "generated-listening-academic-0002-s3-g1",
@@ -835,6 +944,46 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
               "evidence": {
                 "explanation": "The guide states the museum closes at seven pm on Fridays."
               }
+            }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0002-s3-g2",
+          "instructions": "Match each language to its audio guide code. Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "EN" },
+            { "key": "B", "label": "FR" },
+            { "key": "C", "label": "MA" },
+            { "key": "D", "label": "ES" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0002-q027",
+              "prompt": "English",
+              "answer": "A",
+              "evidence": { "explanation": "The guide says English is coded EN." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0002-q028",
+              "prompt": "French",
+              "answer": "B",
+              "evidence": { "explanation": "The guide says French is coded FR." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0002-q029",
+              "prompt": "Mandarin",
+              "answer": "C",
+              "evidence": { "explanation": "The guide says Mandarin is coded MA." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0002-q030",
+              "prompt": "Spanish",
+              "answer": "D",
+              "evidence": { "explanation": "The guide says Spanish is coded ES." }
             }
           ]
         }
@@ -1274,7 +1423,7 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
     ],
     "data": {
       "audioLabel": "Listening Section 3 – Environmental Science Lecture",
-      "transcript": "Good morning, everyone. Today we're going to look at the urban heat island phenomenon—uh, that's the warming we see in cities compared with surrounding rural areas. So, first, what is the primary cause? It's, um, lack of vegetation—yes, lack of vegetation. That answers question twenty‐one.\n\nNext, which gas contributes most to the greenhouse effect in cities? That's carbon dioxide. That's the answer for question twenty‐two.\n\nNow, over the past three decades, summer night temperatures in megacities have risen by about three to five percent. That's question twenty‐three.\n\nMoving on to mitigation, many people think green roofs are the cheapest option—actually, hold on, I misspoke. The most cost‐effective strategy is cool pavements. That's question twenty‐four.\n\nOur case study comes from Melbourne, which provides a clear example of these measures in action. That's question twenty‐five.\n\nFinally, the specific term for heat trapped by tall building arrangements is the urban canyon effect. That's question twenty‐six.\n\nNow let's match some mitigation features with their main impacts. First, green roofs—C. Second, tree planting along streets—D. Third, reflective road surfaces—A. Fourth, water bodies within city limits—B. Those correspond to questions twenty‐seven to thirty.",
+      "transcript": "Good morning, everyone. Today we're going to look at the urban heat island phenomenon—uh, that's the warming we see in cities compared with surrounding rural areas. So, first, what is the primary cause? It's, um, lack of vegetation—yes, lack of vegetation. That answers question twenty‐one.\n\nNext, which gas contributes most to the greenhouse effect in cities? That's carbon dioxide. That's the answer for question twenty‐two.\n\nNow, over the past three decades, summer night temperatures in megacities have risen by about three to five percent. That's question twenty‐three.\n\nMoving on to mitigation, many people think green roofs are the cheapest option—actually, hold on, I misspoke. The most cost‐effective strategy is cool pavements. That's question twenty‐four.\n\nOur case study comes from Melbourne, which provides a clear example of these measures in action. That's question twenty‐five.\n\nFinally, the specific term for heat trapped by tall building arrangements is the urban canyon effect. That's question twenty‐six.\n\nNow let's match four mitigation features with their main impact. Option A is lowering surface temperature by reflecting more sunlight; option B is cooling the surrounding air through evaporation; option C is improving building insulation and reducing energy use; and option D is providing shade and reducing ambient air temperature. Green roofs are matched with C, tree planting along streets with D, reflective road surfaces with A, and water bodies within city limits with B. Those correspond to questions twenty‐seven to thirty.",
       "groups": [
         {
           "id": "generated-listening-academic-0003-s3-g1",
@@ -1369,6 +1518,46 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
               "evidence": {
                 "explanation": "The term given is urban canyon effect."
               }
+            }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0003-s3-g2",
+          "instructions": "Match each mitigation feature to its main impact. Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Lowers surface temperature by reflecting more sunlight" },
+            { "key": "B", "label": "Cools the surrounding air through evaporation" },
+            { "key": "C", "label": "Improves building insulation and reduces energy use" },
+            { "key": "D", "label": "Provides shade and reduces ambient air temperature" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0003-q027",
+              "prompt": "Green roofs",
+              "answer": "C",
+              "evidence": { "explanation": "The lecturer matches green roofs with option C." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0003-q028",
+              "prompt": "Tree planting along streets",
+              "answer": "D",
+              "evidence": { "explanation": "The lecturer matches tree planting along streets with option D." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0003-q029",
+              "prompt": "Reflective road surfaces",
+              "answer": "A",
+              "evidence": { "explanation": "The lecturer matches reflective road surfaces with option A." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0003-q030",
+              "prompt": "Water bodies within city limits",
+              "answer": "B",
+              "evidence": { "explanation": "The lecturer matches water bodies within city limits with option B." }
             }
           ]
         }
@@ -1905,6 +2094,46 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
               }
             }
           ]
+        },
+        {
+          "id": "generated-listening-academic-0004-s3-g2",
+          "instructions": "Which room is each gallery in? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Room A" },
+            { "key": "B", "label": "Room B" },
+            { "key": "C", "label": "Room C" },
+            { "key": "D", "label": "Room D" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0004-q027",
+              "prompt": "Ancient Egypt gallery",
+              "answer": "A",
+              "evidence": { "explanation": "The guide says Room A is the Ancient Egypt gallery." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0004-q028",
+              "prompt": "Renaissance gallery",
+              "answer": "B",
+              "evidence": { "explanation": "The guide says Room B is the Renaissance gallery." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0004-q029",
+              "prompt": "Modern Art gallery",
+              "answer": "C",
+              "evidence": { "explanation": "The guide says Room C is the Modern Art gallery." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0004-q030",
+              "prompt": "Natural History gallery",
+              "answer": "D",
+              "evidence": { "explanation": "The guide says Room D is the Natural History gallery." }
+            }
+          ]
         }
       ]
     }
@@ -2325,6 +2554,116 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
               "evidence": {
                 "explanation": "The guide advises \"You can pick up your map at the information kiosk\""
               }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0005-s3",
+    "title": "Library Study Skills Workshop – Listening Section 3",
+    "topic": "Education",
+    "tags": [
+      "academic",
+      "education",
+      "multiple-choice"
+    ],
+    "data": {
+      "audioLabel": "Library Study Skills Workshop – Listening Section 3",
+      "transcript": "Librarian: Morning, Chloe, Ben — let's go through what you'll need for the literature review. First, which referencing style are you using for this module?\nChloe: We're using Harvard — actually, no, sorry, this module uses APA.\nLibrarian: APA, that's right. And how many sources does the assignment require as a minimum?\nBen: The brief says a minimum of twelve sources.\nLibrarian: Twelve, good. For your topic in psychology, which database should you search first?\nChloe: I'd probably start with JSTOR — but actually PsycINFO is the specialist one for psychology, so that's the better starting point.\nLibrarian: Exactly, PsycINFO. Now, what's the word limit for the literature review section itself?\nBen: That section has a limit of two thousand words.\nLibrarian: Two thousand, right. If you want extra help, where can you book a one‐to‐one research consultation?\nChloe: Through the library website — there's a booking form there.\nLibrarian: Good. And finally, when is the draft bibliography due?\nBen: It's due Friday next week.\nLibrarian: Friday next week, noted. Now let's talk about what different types of source are best used for. Textbooks are best for background reading and general overviews. Peer‐reviewed journal articles are best for in‐depth, peer‐reviewed findings. Conference proceedings are best for the most recent, cutting‐edge research. And government statistics sites are best for reliable numerical and demographic data.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0005-s3-g1",
+          "instructions": "Choose the correct answer from the four options given.",
+          "questions": [
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0005-q021",
+              "question": "Which referencing style should be used for this module?",
+              "options": ["Harvard", "APA", "MLA", "Chicago"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Chloe corrects herself and confirms this module uses APA." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0005-q022",
+              "question": "What is the minimum number of sources required?",
+              "options": ["8", "10", "12", "15"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Ben says the brief requires a minimum of twelve sources." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0005-q023",
+              "question": "Which database should be searched first for the psychology topic?",
+              "options": ["JSTOR", "PsycINFO", "PubMed", "Google Scholar"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Chloe corrects herself and the librarian confirms PsycINFO is the better starting point." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0005-q024",
+              "question": "What is the word limit for the literature review section?",
+              "options": ["1500", "2000", "2500", "3000"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Ben says that section has a limit of two thousand words." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0005-q025",
+              "question": "Where can students book a one‐to‐one research consultation?",
+              "options": ["Library website", "Department office", "Student portal", "Email the librarian"],
+              "correctIndex": 0,
+              "evidence": { "explanation": "Chloe says a consultation can be booked through the library website." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0005-q026",
+              "question": "When is the draft bibliography due?",
+              "options": ["Friday this week", "Monday next week", "Friday next week", "End of month"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Ben says the draft bibliography is due Friday next week." }
+            }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0005-s3-g2",
+          "instructions": "What is each type of source best used for? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Background reading and general overviews" },
+            { "key": "B", "label": "In‐depth, peer‐reviewed findings" },
+            { "key": "C", "label": "The most recent, cutting‐edge research" },
+            { "key": "D", "label": "Reliable numerical and demographic data" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0005-q027",
+              "prompt": "Textbooks",
+              "answer": "A",
+              "evidence": { "explanation": "The librarian says textbooks are best for background reading and general overviews." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0005-q028",
+              "prompt": "Peer‐reviewed journal articles",
+              "answer": "B",
+              "evidence": { "explanation": "The librarian says journal articles are best for in‐depth, peer‐reviewed findings." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0005-q029",
+              "prompt": "Conference proceedings",
+              "answer": "C",
+              "evidence": { "explanation": "The librarian says conference proceedings are best for the most recent, cutting‐edge research." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0005-q030",
+              "prompt": "Government statistics sites",
+              "answer": "D",
+              "evidence": { "explanation": "The librarian says government statistics sites are best for reliable numerical and demographic data." }
             }
           ]
         }
@@ -2754,6 +3093,116 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
     }
   },
   {
+    "slug": "generated-listening-academic-0006-s3",
+    "title": "Internship Programme Briefing – Listening Section 3",
+    "topic": "Work and careers",
+    "tags": [
+      "academic",
+      "work-and-careers",
+      "multiple-choice"
+    ],
+    "data": {
+      "audioLabel": "Internship Programme Briefing – Listening Section 3",
+      "transcript": "Advisor: Morning, Oliver, Priya — let's talk through this year's internship programme. First, which sector has the most places available this year?\nOliver: I heard finance had the most — actually, no, technology has opened up the most places this year.\nAdvisor: That's right, technology. And how many weeks does the standard placement last?\nPriya: The standard placement is eight weeks.\nAdvisor: Eight weeks, good. What's the application deadline?\nOliver: I think it's the fifteenth of March — sorry, that's wrong, it's the first of April.\nAdvisor: The first of April, yes. Besides the CV, which other document is required?\nPriya: A cover letter needs to go with it.\nAdvisor: Right, a cover letter. Where will the internship fair be held this year?\nOliver: It's in the Business School atrium.\nAdvisor: Business School atrium, noted. And finally, what's the minimum GPA requirement to apply?\nPriya: The minimum is three point two.\nAdvisor: Three point two, that's correct. Now, let's go through what each type of employer tends to offer. Large corporations often offer a guaranteed graduate job offer at the end of the internship. Non‐profit organisations tend to offer a structured mentorship programme. Start‐ups usually offer flexible remote working. And government agencies typically offer paid travel expenses.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0006-s3-g1",
+          "instructions": "Choose the correct answer from the four options given.",
+          "questions": [
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0006-q021",
+              "question": "Which sector has the most internship places available this year?",
+              "options": ["Finance", "Engineering", "Marketing", "Technology"],
+              "correctIndex": 3,
+              "evidence": { "explanation": "Oliver corrects himself and confirms technology has opened up the most places." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0006-q022",
+              "question": "How many weeks does the standard internship placement last?",
+              "options": ["4", "6", "8", "10"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Priya says the standard placement is eight weeks." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0006-q023",
+              "question": "What is the application deadline?",
+              "options": ["15 March", "1 April", "15 April", "1 May"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Oliver corrects himself and confirms the deadline is the first of April." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0006-q024",
+              "question": "Which document is required in addition to the CV?",
+              "options": ["Cover letter", "Reference letter", "Academic transcript", "Portfolio"],
+              "correctIndex": 0,
+              "evidence": { "explanation": "Priya says a cover letter needs to go with the CV." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0006-q025",
+              "question": "Where will the internship fair be held?",
+              "options": ["Main Hall", "Student Union", "Business School atrium", "Sports Centre"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Oliver says the fair is in the Business School atrium." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0006-q026",
+              "question": "What is the minimum GPA requirement to apply?",
+              "options": ["2.5", "3.0", "3.2", "3.5"],
+              "correctIndex": 2,
+              "evidence": { "explanation": "Priya says the minimum GPA requirement is three point two." }
+            }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0006-s3-g2",
+          "instructions": "What does each type of employer typically offer? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "A guaranteed graduate job offer" },
+            { "key": "B", "label": "Paid travel expenses" },
+            { "key": "C", "label": "Flexible remote working" },
+            { "key": "D", "label": "A structured mentorship programme" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0006-q027",
+              "prompt": "Large corporations",
+              "answer": "A",
+              "evidence": { "explanation": "The advisor says large corporations often offer a guaranteed graduate job offer." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0006-q028",
+              "prompt": "Non‐profit organisations",
+              "answer": "D",
+              "evidence": { "explanation": "The advisor says non‐profit organisations tend to offer a structured mentorship programme." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0006-q029",
+              "prompt": "Start‐ups",
+              "answer": "C",
+              "evidence": { "explanation": "The advisor says start‐ups usually offer flexible remote working." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0006-q030",
+              "prompt": "Government agencies",
+              "answer": "B",
+              "evidence": { "explanation": "The advisor says government agencies typically offer paid travel expenses." }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-listening-academic-0006-s4",
     "title": "Environmental Science Lecture: Introduction to Ecosystem Services",
     "topic": "Environment",
@@ -3169,6 +3618,116 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
               "evidence": {
                 "explanation": "The lecturer mentions \"roughly three degrees of warming ... option C\"."
               }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0007-s3",
+    "title": "Course Module Selection – Listening Section 3",
+    "topic": "Education",
+    "tags": [
+      "academic",
+      "education",
+      "multiple-choice"
+    ],
+    "data": {
+      "audioLabel": "Course Module Selection – Listening Section 3",
+      "transcript": "Advisor: Morning, Ella, Sam — let's sort out your optional module choices. First, how many optional modules do you need to choose this year?\nElla: We need to choose four — actually, sorry, it's three this year, they reduced it.\nAdvisor: Three, that's right. Now, which of the modules has a prerequisite requirement?\nSam: Data Analysis needs a prerequisite — you have to have passed Statistics 1.\nAdvisor: Correct, Data Analysis. What's the maximum class size for the seminar‐based modules?\nElla: I believe it's capped at twenty students.\nAdvisor: Twenty, good. When does the module selection form need to be submitted?\nSam: By the end of this week — no, wait, sorry, it's the end of next week.\nAdvisor: End of next week, yes. Now, which module is being discontinued after this year?\nElla: Urban Planning is being dropped from the programme.\nAdvisor: That's right, Urban Planning. And finally, where can you find the full reading list for each module?\nSam: It's all in the course handbook.\nAdvisor: Good, the course handbook. Now let's go through how each module is assessed. Data Analysis is assessed by a written examination. Comparative Literature is assessed through an individual research essay. Marine Biology is assessed with a practical fieldwork report. And Urban Planning is assessed by a group presentation.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0007-s3-g1",
+          "instructions": "Choose the correct answer from the four options given.",
+          "questions": [
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0007-q021",
+              "question": "How many optional modules must students choose this year?",
+              "options": ["2", "3", "4", "5"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Ella corrects herself and confirms it's three modules this year." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0007-q022",
+              "question": "Which module has a prerequisite requirement?",
+              "options": ["Data Analysis", "Comparative Literature", "Marine Biology", "Urban Planning"],
+              "correctIndex": 0,
+              "evidence": { "explanation": "Sam says Data Analysis needs a prerequisite — Statistics 1." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0007-q023",
+              "question": "What is the maximum class size for the seminar‐based modules?",
+              "options": ["15", "20", "25", "30"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Ella says the class size is capped at twenty students." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0007-q024",
+              "question": "When does the module selection form need to be submitted?",
+              "options": ["End of this week", "End of next week", "End of the month", "Start of next term"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Sam corrects himself and confirms the deadline is the end of next week." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0007-q025",
+              "question": "Which module is being discontinued after this year?",
+              "options": ["Marine Biology", "Urban Planning", "Comparative Literature", "Data Analysis"],
+              "correctIndex": 1,
+              "evidence": { "explanation": "Ella says Urban Planning is being dropped from the programme." }
+            },
+            {
+              "kind": "multiple-choice",
+              "id": "generated-listening-academic-0007-q026",
+              "question": "Where can students find the full reading list for each module?",
+              "options": ["Course handbook", "Library website", "Department noticeboard", "Module coordinator's email"],
+              "correctIndex": 0,
+              "evidence": { "explanation": "Sam says the full reading list is in the course handbook." }
+            }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0007-s3-g2",
+          "instructions": "How is each module assessed? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Written examination" },
+            { "key": "B", "label": "Group presentation" },
+            { "key": "C", "label": "Individual research essay" },
+            { "key": "D", "label": "Practical fieldwork report" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0007-q027",
+              "prompt": "Data Analysis",
+              "answer": "A",
+              "evidence": { "explanation": "The advisor says Data Analysis is assessed by a written examination." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0007-q028",
+              "prompt": "Comparative Literature",
+              "answer": "C",
+              "evidence": { "explanation": "The advisor says Comparative Literature is assessed through an individual research essay." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0007-q029",
+              "prompt": "Marine Biology",
+              "answer": "D",
+              "evidence": { "explanation": "The advisor says Marine Biology is assessed with a practical fieldwork report." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-listening-academic-0007-q030",
+              "prompt": "Urban Planning",
+              "answer": "B",
+              "evidence": { "explanation": "The advisor says Urban Planning is assessed by a group presentation." }
             }
           ]
         }
