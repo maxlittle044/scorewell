@@ -4103,5 +4103,416 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0008-p1",
+    "title": "The Silent Network: How Fungi Connect Forest Ecosystems",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": [
+      "academic",
+      "nature",
+      "matching-headings",
+      "sentence-completion",
+      "true-false-not-given"
+    ],
+    "data": {
+      "passage": "A. Beneath the visible world of trunks and canopies lies a second forest, invisible to the casual walker but no less vital: a vast web of fungal threads that laces through the soil, linking the roots of separate trees into a single living network. These mycorrhizal associations, in which a fungus colonises a tree's root system in exchange for sugars produced through photosynthesis, are thought to connect more than 90% of land‐plant species in some form. Researchers now estimate that a single hectare of temperate forest can contain several hundred kilometres of fungal filament, a scale that has led some ecologists to describe the network, only half‐jokingly, as the \"wood wide web\". Far from a poetic flourish, the phrase captures a genuine shift in how forest ecosystems are understood: not as a collection of competing individuals, but as a connected community.\n\nB. Interest in these underground partnerships is not new. The German botanist Albert Frank first coined the term \"mycorrhiza\" in 1885 after observing that truffle‐producing fungi seemed to thrive only in close contact with tree roots. For decades afterward, the relationship was treated mainly as a curiosity of nutrient exchange, of interest chiefly to specialists in soil science. It was not until the 1997 doctoral work of Canadian forest ecologist Dr. Suzanne Marchetti, who used radioactive carbon isotopes to trace sugars moving between individual birch and fir trees through a shared fungal network, that the scale of inter‐tree communication became widely appreciated. Her findings, initially met with scepticism, are now considered a foundational moment in forest ecology.\n\nC. The mechanics of the network are intricate. A fungal thread, or hypha, penetrates a root's outer cells and extends outward through the soil, vastly increasing the root system's effective surface area for absorbing water and minerals such as phosphorus and nitrogen. In return, the host tree supplies the fungus with carbon‐rich sugars it cannot otherwise obtain. Because a single fungal individual can associate with the roots of several trees at once, even of different species, carbon and nutrients can pass not just from soil to tree but from tree to tree, travelling along fungal highways that may stretch for tens of metres. A 2019 survey by the Nordic Institute for Forest Sciences mapped one such network beneath a Norwegian spruce stand and found a single dominant fungal individual connected to 47 separate trees.\n\nD. Perhaps the most striking recent discovery concerns the role of older, larger trees within these networks. Field studies led by Professor Elena Vukovic at the University of Alberta identified specific large, well‐connected trees — informally termed \"hub\" or \"mother\" trees — that appear disproportionately important to the stability of the wider network, in some plots connecting to more than 40 neighbouring seedlings. Vukovic's team recorded seedlings growing in the shade of a hub tree receiving measurably more carbon through fungal connections than isolated seedlings of the same age, particularly during periods of drought stress. Some researchers have proposed that this transfer amounts to a form of resource‐sharing that improves the survival odds of younger trees, though the extent to which this is a deliberate exchange rather than a passive by‐product of the network remains debated.\n\nE. These networks are not invulnerable. Clear‐cut logging severs fungal connections outright, and even selective logging can fragment a network enough to isolate remaining trees from established fungal partners, forcing seedlings to rebuild associations from scratch. Soil compaction from heavy machinery further disrupts hyphal growth, while the repeated application of certain fertilisers has been shown to reduce fungal diversity in managed plantations. A 2021 review compiled by the Global Forest Soils Consortium estimated that intensively managed plantation forests support, on average, 35% fewer distinct fungal species than adjacent old‐growth stands, a gap the review's authors linked to reduced resilience against drought and disease in the plantations studied.\n\nF. Recognition of the network's ecological importance is beginning to influence forestry practice. Several national forestry agencies, including those of Finland and New Zealand, have introduced guidelines encouraging the retention of hub trees during partial harvests, on the reasoning that preserving these highly connected individuals helps a cleared area regenerate more quickly. DNA‐sequencing techniques are also making it possible, for the first time, to map fungal networks at a landscape scale rather than within a single research plot, and pilot mapping projects are now under way in Canada, Sweden, and Chile. Advocates argue that treating the fungal network as forest infrastructure, worthy of protection in its own right, represents a genuine shift in silviculture — one that moves the unit of management from the individual tree to the connected stand.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0008-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The physical scale and nature of the fungal network" },
+            { "key": "ii", "label": "Early research and a landmark study on inter‐tree transfer" },
+            { "key": "iii", "label": "How the fungus‐root exchange actually works" },
+            { "key": "iv", "label": "The special role of large, well‐connected trees" },
+            { "key": "v", "label": "Threats posed by forestry practices" },
+            { "key": "vi", "label": "Changes in forestry policy and future mapping projects" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q001",
+              "prompt": "Which heading best summarises paragraph A?",
+              "answer": "i",
+              "evidence": { "explanation": "Paragraph A describes the scale of the fungal network beneath a forest." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q002",
+              "prompt": "Which heading best summarises paragraph B?",
+              "answer": "ii",
+              "evidence": { "explanation": "Paragraph B covers Frank's early work and Marchetti's landmark study." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q003",
+              "prompt": "Which heading best summarises paragraph D?",
+              "answer": "iv",
+              "evidence": { "explanation": "Paragraph D discusses hub/mother trees and their role." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q004",
+              "prompt": "Which heading best summarises paragraph E?",
+              "answer": "v",
+              "evidence": { "explanation": "Paragraph E describes how logging and fertiliser use threaten the network." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q005",
+              "prompt": "Which heading best summarises paragraph F?",
+              "answer": "vi",
+              "evidence": { "explanation": "Paragraph F discusses changing forestry guidelines and new mapping projects." }
+            }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0008-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q006",
+              "statement": "Albert Frank coined the term \"mycorrhiza\" after studying truffle‐producing fungi.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph B states Frank coined the term after observing truffle fungi near tree roots." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q007",
+              "statement": "Dr. Suzanne Marchetti's findings were immediately accepted without dispute.",
+              "answer": "FALSE",
+              "evidence": { "explanation": "Paragraph B says her findings were 'initially met with scepticism'." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q008",
+              "statement": "The Nordic Institute's mapped fungal individual was connected to fewer than 40 trees.",
+              "answer": "FALSE",
+              "evidence": { "explanation": "Paragraph C states it was connected to 47 separate trees." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q009",
+              "statement": "New Zealand's forestry agency has introduced guidelines to protect hub trees.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph F names New Zealand among the agencies with such guidelines." }
+            }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0008-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q010",
+              "prompt": "Mycorrhizal associations are thought to connect more than ______ of land‐plant species.",
+              "accept": ["90%"],
+              "evidence": { "explanation": "Paragraph A gives the figure 90% of land‐plant species." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q011",
+              "prompt": "Marchetti traced sugar movement between birch and fir trees using ______.",
+              "accept": ["radioactive carbon isotopes", "carbon isotopes"],
+              "evidence": { "explanation": "Paragraph B says she used radioactive carbon isotopes." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q012",
+              "prompt": "In Vukovic's field studies, some hub trees connected to more than ______ neighbouring seedlings.",
+              "accept": ["40"],
+              "evidence": { "explanation": "Paragraph D gives the figure of more than 40 neighbouring seedlings." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q013",
+              "prompt": "Plantation forests were found to support ______ fewer fungal species than old‐growth stands.",
+              "accept": ["35%"],
+              "evidence": { "explanation": "Paragraph E states plantations support 35% fewer distinct fungal species." }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0008-p2",
+    "title": "Measuring Time Before Clocks: A History of Early Timekeeping",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": [
+      "academic",
+      "history",
+      "matching-headings",
+      "sentence-completion",
+      "true-false-not-given"
+    ],
+    "data": {
+      "passage": "A. Long before the mechanical clock existed, human societies faced a practical problem that any coordinated activity — a shared meal, a religious rite, a trading arrangement — depends on solving: how to agree on when something should happen. The earliest solutions were rooted in direct observation of the sky and the shadows it casts, and while these methods now seem primitive beside a wristwatch accurate to the second, they represent a remarkable feat of applied observation, refined and re‐refined across many centuries and civilisations. Understanding how early societies measured time offers a window not only into ancient astronomy but into the social structures that timekeeping made possible.\n\nB. The gnomon, a simple vertical stick whose shadow lengthens and shortens through the day, is among the oldest known timekeeping devices, with archaeological evidence of deliberate shadow‐markers in Egypt dating to roughly 3500 BCE. By around 1500 BCE, Egyptian sundials had developed into more sophisticated instruments, marked with unequal hour divisions that stretched or compressed depending on the season, since daylight itself varies through the year. The historian Dr. Helena Roskilde, in a widely cited 2015 study of Egyptian timekeeping artefacts, argued that this seasonal variability suggests the instruments were designed less for precise scheduling than for structuring the rhythm of temple rituals, which were understood to shift with the sun's changing path.\n\nC. Sundials, however, are useless after dark or under cloud, a limitation that spurred the development of water clocks, or clepsydrae, which measure time through the steady, gravity‐driven flow of water from one vessel to another. The Greek engineer Ctesibius is credited with substantially improving clepsydra design around 250 BCE, introducing a float mechanism that kept the flow rate constant regardless of the water level remaining in the upper vessel — a refinement that dramatically improved accuracy. Roman courts later adopted water clocks to time the speeches of advocates, allocating each speaker a fixed volume of water and, by extension, a fixed duration to make their case, a practice some legal historians regard as an early ancestor of the modern courtroom time limit.\n\nD. In East Asia, a parallel tradition of water‐based and incense‐based timekeeping developed largely independently. Incense clocks, which measured the passage of time by the steady burning of a marked stick or coiled length of incense, appear in Chinese records from at least the sixth century CE and were later adopted across Japan and Korea. Some elaborate versions incorporated small threads strung with metal balls at measured intervals along the incense coil; as the burning reached each thread, the ball would drop into a metal tray below, producing an audible signal without requiring anyone to watch the device continuously. Textile historian Professor Wen Jia has argued that incense clocks were especially valued in contexts, such as overnight vigils or medical dosing schedules, where an audible alert mattered more than constant visual monitoring.\n\nE. The candle clock, a wax candle marked with evenly spaced lines corresponding to measured units of burning time, offers a further variation on the same underlying principle: convert a steady physical process into a readable measure of elapsed time. References to graduated candles appear in English sources from the ninth century, with one account attributing their systematic use to King Alfred the Great, who reportedly burned six candles daily, each lasting four hours, to divide his day into a fixed schedule of prayer, administration, and rest. Though the historical accuracy of this specific anecdote is debated among medievalists, graduated candles are well attested as household timekeeping tools in medieval Europe, particularly before mechanical clocks became affordable outside monasteries and wealthy households.\n\nF. The eventual displacement of these devices by the mechanical clock, which emerged in European monasteries during the thirteenth century, was neither immediate nor total. Sundials remained in everyday use as accuracy checks for early mechanical clocks, which were notoriously unreliable, well into the eighteenth century, and incense clocks persisted in parts of East Asia alongside imported mechanical timepieces for a further century after that. Historian of science Dr. Marcus Feld has suggested that the long overlap between these older methods and the mechanical clock reflects not technological backwardness but a rational calculation: older devices were cheap, needed no specialised maintenance, and, in the case of the sundial, provided an independent check against an imported technology whose accuracy could not yet be taken for granted.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0008-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Why early societies needed to measure time at all" },
+            { "key": "ii", "label": "Shadow‐based devices and their ritual purpose" },
+            { "key": "iii", "label": "Water‐driven timekeeping and its legal application" },
+            { "key": "iv", "label": "An independently developed East Asian tradition" },
+            { "key": "v", "label": "A burning device used to structure a fixed daily routine" },
+            { "key": "vi", "label": "Why older methods persisted alongside mechanical clocks" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q014",
+              "prompt": "Which heading best summarises paragraph A?",
+              "answer": "i",
+              "evidence": { "explanation": "Paragraph A introduces the general problem early societies faced in measuring time." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q015",
+              "prompt": "Which heading best summarises paragraph C?",
+              "answer": "iii",
+              "evidence": { "explanation": "Paragraph C covers water clocks and their use timing Roman court speeches." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q016",
+              "prompt": "Which heading best summarises paragraph D?",
+              "answer": "iv",
+              "evidence": { "explanation": "Paragraph D describes the independent East Asian incense-clock tradition." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q017",
+              "prompt": "Which heading best summarises paragraph E?",
+              "answer": "v",
+              "evidence": { "explanation": "Paragraph E describes the candle clock and King Alfred's fixed routine." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q018",
+              "prompt": "Which heading best summarises paragraph F?",
+              "answer": "vi",
+              "evidence": { "explanation": "Paragraph F explains why older devices persisted after mechanical clocks appeared." }
+            }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0008-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q019",
+              "statement": "Dr. Helena Roskilde argues Egyptian sundials were designed mainly for precise scheduling.",
+              "answer": "FALSE",
+              "evidence": { "explanation": "Paragraph B says Roskilde argues they were designed less for precise scheduling than for ritual structure." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q020",
+              "statement": "Ctesibius introduced a float mechanism that kept a clepsydra's flow rate constant.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph C states Ctesibius introduced a float mechanism for constant flow." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q021",
+              "statement": "Incense clocks were never adopted outside China.",
+              "answer": "FALSE",
+              "evidence": { "explanation": "Paragraph D says they were later adopted across Japan and Korea." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q022",
+              "statement": "Sundials were used to check the accuracy of early mechanical clocks.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph F states sundials remained in use as accuracy checks for mechanical clocks." }
+            }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0008-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q023",
+              "prompt": "Deliberate shadow‐markers have been found in Egypt dating to roughly ______.",
+              "accept": ["3500 BCE"],
+              "evidence": { "explanation": "Paragraph B gives the date 3500 BCE." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q024",
+              "prompt": "Ctesibius improved clepsydra design at around ______.",
+              "accept": ["250 BCE"],
+              "evidence": { "explanation": "Paragraph C gives the date 250 BCE." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q025",
+              "prompt": "King Alfred reportedly burned six candles daily, each lasting ______.",
+              "accept": ["four hours"],
+              "evidence": { "explanation": "Paragraph E states each candle lasted four hours." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q026",
+              "prompt": "The mechanical clock emerged in European monasteries during the ______ century.",
+              "accept": ["thirteenth"],
+              "evidence": { "explanation": "Paragraph F states the mechanical clock emerged in the thirteenth century." }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0008-p3",
+    "title": "The Physics of Gridlock: Understanding and Easing Urban Traffic",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": [
+      "academic",
+      "society",
+      "matching-headings",
+      "sentence-completion",
+      "true-false-not-given"
+    ],
+    "data": {
+      "passage": "A. Anyone who has sat motionless in a queue of cars, with no obstruction visible ahead, has encountered one of traffic science's more counterintuitive findings: congestion often has no single cause. It can emerge spontaneously from the ordinary interactions of drivers responding to one another, in a manner physicists have found strikingly similar to the way particles behave when a fluid shifts from smooth to turbulent flow. This branch of study, sometimes called traffic flow theory, treats a stream of vehicles not as a collection of independent decisions but as a dynamic system with its own emergent behaviour, one that can be modelled, predicted, and, to a meaningful degree, managed.\n\nB. The mathematical study of traffic dates to the 1930s, when American engineer Bruce Greenshields collected observational data on vehicle spacing and speed on Ohio roads, producing one of the first quantitative models relating traffic density to flow rate. Greenshields found that as density increases, average speed decreases in a roughly linear fashion, up to a critical density beyond which the entire flow can collapse into stop‐and‐go conditions. His work, initially of interest mainly to specialists in civil engineering, gained renewed attention in the 1990s when physicists began applying tools from statistical mechanics to refine and extend his original models, treating congestion as a phase transition analogous to those seen in physical systems.\n\nC. One of the most striking demonstrations of this phenomenon is the so‐called \"phantom jam\", a traffic slowdown that appears to have no cause and eventually dissolves without one either. In a landmark 2008 experiment, a team led by Professor Yuki Sugiyama arranged 22 vehicles to drive in a circle at a steady speed with no lane changes and no obstruction of any kind. Within minutes, a wave of braking spontaneously appeared and propagated backward through the line of cars, even though every driver was attempting to maintain a constant, even pace. Sugiyama's experiment demonstrated conclusively that a minor, almost imperceptible variation in one driver's spacing can amplify as it passes backward through following vehicles, eventually producing a full stop even without any external trigger.\n\nD. Understanding this dynamic has practical implications for infrastructure design. Ramp metering, in which traffic lights control the rate at which vehicles merge onto a motorway, is one widely adopted intervention, and a comprehensive 2017 review of North American ramp‐metering schemes found an average 15% reduction in total delay on managed corridors, alongside a modest reduction in collision rates attributed to smoother merging speeds. Variable speed limits, which lower the posted speed ahead of a developing slowdown to smooth the flow before it collapses into stop‐and‐go conditions, have shown similar benefits on European motorways, most notably on stretches of the British M25 orbital route around London, where such systems have operated since the early 2000s.\n\nE. Yet infrastructure interventions alone cannot resolve every case, and researchers increasingly point to induced demand as a limit on what road expansion can achieve. This is the well‐documented tendency for widened roads to attract additional traffic that erodes much of the intended benefit within a few years, a pattern economist Professor Aisha Bello has termed \"the fundamental law of road congestion\" in reference to studies she conducted across several major American metropolitan areas between 2011 and 2016. Bello's analysis found that a 10% increase in a city's lane‐miles was associated with, on average, a corresponding 9–10% increase in vehicle travel within five years, largely cancelling out any congestion relief the expansion had initially provided.\n\nF. Partly in response to these findings, several cities have shifted toward demand‐management strategies rather than pure capacity expansion. Congestion pricing, which charges drivers a fee to enter designated zones during peak periods, has been implemented in cities including London, Stockholm, and, more recently, New York, with Stockholm's scheme credited with an approximately 20% reduction in traffic volume within the priced zone in its first year of full operation. Advocates argue that such measures address the root economic cause of gridlock — the fact that road space during peak hours is a scarce resource offered, in most cities, entirely free of charge — rather than simply attempting to accommodate ever‐growing demand with ever‐larger roads.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0008-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Congestion as an emergent, physics‐like phenomenon" },
+            { "key": "ii", "label": "Early quantitative modelling of traffic" },
+            { "key": "iii", "label": "A controlled experiment demonstrating causeless jams" },
+            { "key": "iv", "label": "Infrastructure measures that smooth traffic flow" },
+            { "key": "v", "label": "Why expanding roads may not reduce congestion" },
+            { "key": "vi", "label": "Pricing as an alternative to road expansion" }
+          ],
+          "questions": [
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q027",
+              "prompt": "Which heading best summarises paragraph A?",
+              "answer": "i",
+              "evidence": { "explanation": "Paragraph A frames congestion as an emergent phenomenon similar to fluid turbulence." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q028",
+              "prompt": "Which heading best summarises paragraph B?",
+              "answer": "ii",
+              "evidence": { "explanation": "Paragraph B covers Greenshields' early quantitative traffic model." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q029",
+              "prompt": "Which heading best summarises paragraph D?",
+              "answer": "iv",
+              "evidence": { "explanation": "Paragraph D covers ramp metering and variable speed limits." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q030",
+              "prompt": "Which heading best summarises paragraph E?",
+              "answer": "v",
+              "evidence": { "explanation": "Paragraph E discusses induced demand limiting the benefit of road expansion." }
+            },
+            {
+              "kind": "matching",
+              "id": "generated-reading-academic-0008-q031",
+              "prompt": "Which heading best summarises paragraph F?",
+              "answer": "vi",
+              "evidence": { "explanation": "Paragraph F discusses congestion pricing as an alternative approach." }
+            }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0008-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q032",
+              "statement": "Greenshields found that average speed decreases roughly linearly as density increases, up to a point.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph B describes this roughly linear relationship up to a critical density." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q033",
+              "statement": "Sugiyama's 2008 experiment involved vehicles changing lanes to trigger a jam.",
+              "answer": "FALSE",
+              "evidence": { "explanation": "Paragraph C states there were no lane changes and no obstruction in the experiment." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q034",
+              "statement": "Variable speed limits have been used on the British M25 since the early 2000s.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph D states such systems have operated on the M25 since the early 2000s." }
+            },
+            {
+              "kind": "true-false-not-given",
+              "id": "generated-reading-academic-0008-q035",
+              "statement": "Congestion pricing has been implemented in London and Stockholm.",
+              "answer": "TRUE",
+              "evidence": { "explanation": "Paragraph F names London and Stockholm among cities using congestion pricing." }
+            }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0008-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q036",
+              "prompt": "A 2017 review found ramp metering reduced total delay on managed corridors by an average of ______.",
+              "accept": ["15%"],
+              "evidence": { "explanation": "Paragraph D gives the figure 15% reduction in delay." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q037",
+              "prompt": "Bello found a 10% increase in lane‐miles was linked to about a ______ increase in vehicle travel.",
+              "accept": ["9-10%", "9–10%"],
+              "evidence": { "explanation": "Paragraph E gives the figure of a corresponding 9-10% increase." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q038",
+              "prompt": "Stockholm's congestion charge reduced traffic volume in the priced zone by about ______ in its first year.",
+              "accept": ["20%"],
+              "evidence": { "explanation": "Paragraph F gives the figure of approximately 20% reduction." }
+            },
+            {
+              "kind": "completion",
+              "id": "generated-reading-academic-0008-q039",
+              "prompt": "Sugiyama's experiment arranged ______ vehicles to drive in a circle.",
+              "accept": ["22"],
+              "evidence": { "explanation": "Paragraph C states 22 vehicles were arranged in a circle." }
+            }
+          ]
+        }
+      ]
+    }
   }
 ];

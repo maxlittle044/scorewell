@@ -3866,5 +3866,143 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0008-s1",
+    "title": "Student Accommodation Office Enquiry – Listening Section 1",
+    "topic": "Housing",
+    "tags": ["academic", "housing", "note-completion"],
+    "data": {
+      "audioLabel": "Student Accommodation Office Enquiry – Listening Section 1",
+      "transcript": "Officer: Good afternoon, Student Housing Office, how can I help?\nCaller: Hi, I'm calling about renting a room for next term — I saw a listing online.\nOfficer: Sure, let me pull that up. Can I get your name first?\nCaller: It's Megan Fairweather.\nOfficer: Thanks, Megan. And do you have the property reference number?\nCaller: Yes, it's HR‐2291.\nOfficer: Great, found it. This is a studio flat, is that right?\nCaller: Actually, I was told it's a one‐bedroom flat, not a studio.\nOfficer: Sorry, you're right, one‐bedroom flat, my mistake. The monthly rent on that one is four hundred and eighty pounds.\nCaller: Four eighty, got it. And when could I move in?\nOfficer: The earliest available date is the third of September.\nCaller: Third of September, perfect. What about the deposit?\nOfficer: The deposit is one hundred and fifty pounds — refundable, of course.\nCaller: One fifty. And is it close to public transport?\nOfficer: Yes, the nearest bus stop is on Elm Road, about a five‐minute walk.\nCaller: Elm Road, great. Could I arrange a viewing?\nOfficer: Of course — we do viewings on Thursday afternoons.\nCaller: Thursday afternoon works for me. Should I email to confirm?\nOfficer: Yes, please email bookings@studenthousing.ac.uk to confirm your slot.\nCaller: Will do. Is there anything else I should know?\nOfficer: Just that there's a one‐off admin fee of thirty pounds on top of the deposit.\nCaller: Thirty pounds, understood. Thanks so much for your help.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0008-s1-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0008-q001", "prompt": "Caller's name: ______", "accept": ["Megan Fairweather"], "evidence": { "explanation": "The caller gives her name as Megan Fairweather." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q002", "prompt": "Property reference number: ______", "accept": ["HR-2291", "HR2291"], "evidence": { "explanation": "The caller gives the reference number HR-2291." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q003", "prompt": "Property type: ______", "accept": ["one-bedroom flat", "one bedroom flat"], "evidence": { "explanation": "The officer corrects herself and confirms it's a one-bedroom flat." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q004", "prompt": "Monthly rent: £______", "accept": ["480"], "evidence": { "explanation": "The officer states the monthly rent is four hundred and eighty pounds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q005", "prompt": "Earliest move-in date: ______", "accept": ["3rd September", "third of September", "3 September"], "evidence": { "explanation": "The officer says the earliest available date is the third of September." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q006", "prompt": "Deposit: £______", "accept": ["150"], "evidence": { "explanation": "The officer states the deposit is one hundred and fifty pounds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q007", "prompt": "Nearest bus stop: ______", "accept": ["Elm Road"], "evidence": { "explanation": "The officer says the nearest bus stop is on Elm Road." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q008", "prompt": "Viewing day: ______", "accept": ["Thursday", "Thursday afternoon"], "evidence": { "explanation": "The officer says viewings happen on Thursday afternoons." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q009", "prompt": "Email to confirm booking: ______", "accept": ["bookings@studenthousing.ac.uk"], "evidence": { "explanation": "The officer gives the booking confirmation email address." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q010", "prompt": "Admin fee: £______", "accept": ["30"], "evidence": { "explanation": "The officer mentions a one-off admin fee of thirty pounds." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0008-s2",
+    "title": "Riverside Community Garden Scheme Briefing – Listening Section 2",
+    "topic": "Leisure and community",
+    "tags": ["academic", "leisure-and-community", "multiple-choice"],
+    "data": {
+      "audioLabel": "Riverside Community Garden Scheme Briefing – Listening Section 2",
+      "transcript": "Good evening, everyone, and welcome to this information session about the Riverside Community Garden Scheme. I'll run through the key details, then take a few questions.\n\nFirst, location — the garden is on Willow Lane, just behind the old library building. We currently have thirty-two plots available, each measuring about five metres by five metres. The annual fee for a full plot is thirty-five pounds — actually, sorry, that's gone up this year, it's now forty pounds. There is currently a waiting list, and the average wait is around six months, though it can be shorter if someone withdraws early.\n\nTools are provided in a shared shed on site — you don't need to bring your own spade or fork, though gloves are recommended. New members are required to attend an induction session, which runs every second Saturday of the month. Members' meetings, where we discuss shared decisions like planting the communal beds, are held on the first Tuesday of each month.\n\nNow, let me go through the different zones of the garden and what's typically grown in each. Zone A, nearest the entrance, is mainly used for salad crops and herbs. Zone B, in the middle of the site, is reserved for fruit bushes and soft fruit. Zone C, along the back fence, is where most members grow root vegetables like carrots and potatoes. And Zone D, the shadiest corner, is generally kept for shade‐tolerant plants such as rhubarb.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0008-s2-g1",
+          "instructions": "Choose the correct answer from the four options given.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q011", "question": "Where is the garden located?", "options": ["On Willow Lane", "On Elm Road", "Behind the town hall", "Next to the river"], "correctIndex": 0, "evidence": { "explanation": "The speaker says the garden is on Willow Lane." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q012", "question": "How many plots are currently available?", "options": ["Twenty-two", "Twenty-eight", "Thirty-two", "Thirty-six"], "correctIndex": 2, "evidence": { "explanation": "The speaker states there are thirty-two plots available." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q013", "question": "What is the current annual fee for a full plot?", "options": ["£30", "£35", "£40", "£45"], "correctIndex": 2, "evidence": { "explanation": "The speaker corrects herself and confirms the fee is now forty pounds." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q014", "question": "What is the average waiting time for a plot?", "options": ["Three months", "Six months", "Nine months", "One year"], "correctIndex": 1, "evidence": { "explanation": "The speaker says the average wait is around six months." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q015", "question": "What are new members required to attend?", "options": ["A safety course", "An induction session", "A planting workshop", "An interview"], "correctIndex": 1, "evidence": { "explanation": "The speaker says new members must attend an induction session." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q016", "question": "When are members' meetings held?", "options": ["Every Saturday", "First Tuesday of the month", "Last Friday of the month", "Every second Sunday"], "correctIndex": 1, "evidence": { "explanation": "The speaker says members' meetings are held on the first Tuesday of each month." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0008-s2-g2",
+          "instructions": "What is typically grown in each zone? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Salad crops and herbs" },
+            { "key": "B", "label": "Fruit bushes and soft fruit" },
+            { "key": "C", "label": "Root vegetables" },
+            { "key": "D", "label": "Shade-tolerant plants" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0008-q017", "prompt": "Zone A", "answer": "A", "evidence": { "explanation": "The speaker says Zone A is mainly used for salad crops and herbs." } },
+            { "kind": "matching", "id": "generated-listening-academic-0008-q018", "prompt": "Zone B", "answer": "B", "evidence": { "explanation": "The speaker says Zone B is reserved for fruit bushes and soft fruit." } },
+            { "kind": "matching", "id": "generated-listening-academic-0008-q019", "prompt": "Zone C", "answer": "C", "evidence": { "explanation": "The speaker says Zone C is where most members grow root vegetables." } },
+            { "kind": "matching", "id": "generated-listening-academic-0008-q020", "prompt": "Zone D", "answer": "D", "evidence": { "explanation": "The speaker says Zone D is kept for shade-tolerant plants." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0008-s3",
+    "title": "Choosing a Dissertation Topic – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice"],
+    "data": {
+      "audioLabel": "Choosing a Dissertation Topic – Listening Section 3",
+      "transcript": "Dr. Reyes: Morning, Priya, Daniel — let's talk through your dissertation topic options. Priya, which subject area are you leaning towards?\nPriya: I was thinking about consumer behaviour — actually, no, sorry, I've decided on supply chain sustainability instead.\nDr. Reyes: Supply chain sustainability, good choice. And Daniel, what about you?\nDaniel: I'm interested in remote work productivity.\nDr. Reyes: Remote work productivity, noted. Now, how many case studies does the department require for a dissertation of this kind?\nPriya: I believe it's a minimum of three case studies.\nDr. Reyes: Three, that's right. What's the required word count for the final submission?\nDaniel: Twelve thousand words.\nDr. Reyes: Twelve thousand, good. When is the topic proposal form due?\nPriya: It's due the first of November — actually wait, sorry, that's wrong, it's the eighth of November.\nDr. Reyes: Eighth of November, yes. And who is the second marker for dissertations this year?\nDaniel: I think it's Professor Whitfield.\nDr. Reyes: That's correct, Professor Whitfield. Now let's talk about what kind of research method suits each of your topics. For supply chain sustainability, a mixed‐methods approach combining surveys and case interviews works well. For remote work productivity, a longitudinal survey tracking the same participants over time is often most effective. For consumer behaviour topics generally, focus groups tend to generate the richest qualitative data. And for topics involving financial performance, secondary data analysis of company reports is usually the standard approach.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0008-s3-g1",
+          "instructions": "Choose the correct answer from the four options given.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q021", "question": "Which subject area has Priya decided on?", "options": ["Consumer behaviour", "Supply chain sustainability", "Remote work productivity", "Financial performance"], "correctIndex": 1, "evidence": { "explanation": "Priya corrects herself and confirms supply chain sustainability." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q022", "question": "What is Daniel's chosen topic area?", "options": ["Consumer behaviour", "Supply chain sustainability", "Remote work productivity", "Financial performance"], "correctIndex": 2, "evidence": { "explanation": "Daniel says he is interested in remote work productivity." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q023", "question": "What is the minimum number of case studies required?", "options": ["Two", "Three", "Four", "Five"], "correctIndex": 1, "evidence": { "explanation": "Priya says a minimum of three case studies is required." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q024", "question": "What is the required word count for the dissertation?", "options": ["Ten thousand", "Twelve thousand", "Fifteen thousand", "Eighteen thousand"], "correctIndex": 1, "evidence": { "explanation": "Daniel says the required word count is twelve thousand words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q025", "question": "When is the topic proposal form due?", "options": ["1 November", "8 November", "15 November", "1 December"], "correctIndex": 1, "evidence": { "explanation": "Priya corrects herself and confirms the eighth of November." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0008-q026", "question": "Who is the second marker for dissertations this year?", "options": ["Dr. Reyes", "Professor Whitfield", "Professor Okafor", "Dr. Lindqvist"], "correctIndex": 1, "evidence": { "explanation": "Daniel says the second marker is Professor Whitfield." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0008-s3-g2",
+          "instructions": "Match each topic area to its recommended research method. Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Mixed-methods combining surveys and case interviews" },
+            { "key": "B", "label": "A longitudinal survey tracking the same participants over time" },
+            { "key": "C", "label": "Focus groups" },
+            { "key": "D", "label": "Secondary data analysis of company reports" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0008-q027", "prompt": "Supply chain sustainability", "answer": "A", "evidence": { "explanation": "Dr. Reyes recommends a mixed-methods approach for supply chain sustainability." } },
+            { "kind": "matching", "id": "generated-listening-academic-0008-q028", "prompt": "Remote work productivity", "answer": "B", "evidence": { "explanation": "Dr. Reyes recommends a longitudinal survey for remote work productivity." } },
+            { "kind": "matching", "id": "generated-listening-academic-0008-q029", "prompt": "Consumer behaviour", "answer": "C", "evidence": { "explanation": "Dr. Reyes says focus groups suit consumer behaviour topics." } },
+            { "kind": "matching", "id": "generated-listening-academic-0008-q030", "prompt": "Financial performance", "answer": "D", "evidence": { "explanation": "Dr. Reyes recommends secondary data analysis of company reports for financial performance topics." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0008-s4",
+    "title": "The History of Solar Power – Listening Section 4",
+    "topic": "Technology",
+    "tags": ["academic", "technology", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Solar Power – Listening Section 4",
+      "transcript": "Good morning. Today's lecture traces the history of solar power, from early scientific curiosity to a mainstream energy source. The photovoltaic effect — the process by which certain materials generate electricity when exposed to light — was first observed by French physicist Edmond Becquerel in 1839, when he was just nineteen years old. However, it wasn't until 1954 that the first practical silicon solar cell was developed, by a team at Bell Labs in the United States. That first cell converted only about six percent of sunlight into electricity — a modest figure by today's standards, but revolutionary at the time. Early solar cells were extremely expensive, which meant their first major application was not on Earth at all, but in space: they were used to power the Vanguard 1 satellite, launched in 1958.\n\nThrough the 1970s, rising oil prices prompted renewed government interest in solar research, and public funding for solar technology increased substantially across several countries. By the 1980s, costs had begun to fall, though solar remained a niche technology used mainly for remote power applications such as lighthouses and rural telecommunications. The real turning point came in the 2000s, when manufacturing improvements and economies of scale — particularly from large-scale production in China — drove costs down dramatically. Between 2010 and 2020 alone, the cost of solar panels fell by roughly eighty-five percent, making solar competitive with fossil fuels in many markets for the first time.\n\nToday, global installed solar capacity exceeds one terawatt, and the technology continues to improve: newer cell designs, such as those using perovskite materials, promise even higher efficiency at lower cost in the years ahead.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0008-s4-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0008-q031", "prompt": "The photovoltaic effect was first observed by ______ in 1839.", "accept": ["Edmond Becquerel"], "evidence": { "explanation": "The lecturer names Edmond Becquerel as the discoverer." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q032", "prompt": "Becquerel was ______ years old at the time.", "accept": ["nineteen", "19"], "evidence": { "explanation": "The lecturer says he was nineteen years old." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q033", "prompt": "The first practical silicon solar cell was developed in ______.", "accept": ["1954"], "evidence": { "explanation": "The lecturer gives the year 1954." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q034", "prompt": "That cell was developed by a team at ______.", "accept": ["Bell Labs"], "evidence": { "explanation": "The lecturer names Bell Labs." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q035", "prompt": "The first cell converted about ______ of sunlight into electricity.", "accept": ["six percent", "6%"], "evidence": { "explanation": "The lecturer gives the figure six percent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q036", "prompt": "Early solar cells were used to power the ______ satellite.", "accept": ["Vanguard 1"], "evidence": { "explanation": "The lecturer names the Vanguard 1 satellite." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q037", "prompt": "That satellite was launched in ______.", "accept": ["1958"], "evidence": { "explanation": "The lecturer gives the year 1958." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q038", "prompt": "Rising ______ prices in the 1970s renewed government interest.", "accept": ["oil"], "evidence": { "explanation": "The lecturer mentions rising oil prices." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q039", "prompt": "Between 2010 and 2020, panel costs fell by roughly ______.", "accept": ["85%", "eighty-five percent"], "evidence": { "explanation": "The lecturer gives the figure eighty-five percent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0008-q040", "prompt": "Newer cell designs use ______ materials for higher efficiency.", "accept": ["perovskite"], "evidence": { "explanation": "The lecturer names perovskite materials." } }
+          ]
+        }
+      ]
+    }
   }
 ];
