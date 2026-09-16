@@ -1366,5 +1366,158 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0101",
+    "title": "Part 1: Reading habits",
+    "part": "part1",
+    "topic": "Reading habits",
+    "tags": ["speaking", "part-1", "reading-habits"],
+    "data": {
+      "questions": [
+        "Do you enjoy reading in your free time?",
+        "What kind of books or magazines do you usually read?",
+        "Did you read a lot of books when you were a child?",
+        "Do you prefer reading printed books or e-books?",
+        "How has your reading habit changed over the years?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0102",
+    "title": "Part 1: Sport and exercise",
+    "part": "part1",
+    "topic": "Sport and exercise",
+    "tags": ["speaking", "part-1", "sport-and-exercise"],
+    "data": {
+      "questions": [
+        "Do you play any sports?",
+        "What sport did you enjoy when you were a child?",
+        "How often do you exercise?",
+        "Do you prefer exercising alone or with other people?",
+        "Is sport popular where you live?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0103",
+    "title": "Part 1: Shopping",
+    "part": "part1",
+    "topic": "Shopping",
+    "tags": ["speaking", "part-1", "shopping"],
+    "data": {
+      "questions": [
+        "Do you enjoy shopping?",
+        "How often do you go shopping for clothes?",
+        "Do you prefer shopping online or in physical stores?",
+        "What was the last thing you bought?",
+        "Do you usually plan your purchases in advance, or buy things on impulse?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0104",
+    "title": "Part 2: Describe a book you would recommend to a friend",
+    "part": "part2",
+    "topic": "Reading habits",
+    "tags": ["speaking", "part-2", "reading-habits"],
+    "data": {
+      "questions": ["Describe a book you would recommend to a friend"],
+      "cueCardPoints": [
+        "what the book is about",
+        "when you read it",
+        "why you would recommend it",
+        "and explain how you think it might benefit the person you recommend it to"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0105",
+    "title": "Part 2: Describe a sport or physical activity you would like to try",
+    "part": "part2",
+    "topic": "Sport and exercise",
+    "tags": ["speaking", "part-2", "sport-and-exercise"],
+    "data": {
+      "questions": ["Describe a sport or physical activity you would like to try"],
+      "cueCardPoints": [
+        "what the sport or activity is",
+        "why you have not tried it yet",
+        "what you would need to do to try it",
+        "and explain why you think you would enjoy it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0106",
+    "title": "Part 2: Describe a memorable purchase you made",
+    "part": "part2",
+    "topic": "Shopping",
+    "tags": ["speaking", "part-2", "shopping"],
+    "data": {
+      "questions": ["Describe a memorable purchase you made"],
+      "cueCardPoints": [
+        "what you bought",
+        "where you bought it",
+        "why you decided to buy it",
+        "and explain how you felt about the purchase afterwards"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0107",
+    "title": "Part 3: Reading in the modern world",
+    "part": "part3",
+    "topic": "Reading habits",
+    "tags": ["speaking", "part-3", "reading-habits"],
+    "data": {
+      "questions": [
+        "Do you think reading habits have changed in the age of smartphones and social media?",
+        "What are the benefits of reading fiction compared to non-fiction?",
+        "Should schools require students to read a certain number of books each year?",
+        "Do you think audiobooks provide the same benefits as reading a physical book?",
+        "How might libraries need to change to stay relevant in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0108",
+    "title": "Part 3: Sport in society",
+    "part": "part3",
+    "topic": "Sport and exercise",
+    "tags": ["speaking", "part-3", "sport-and-exercise"],
+    "data": {
+      "questions": [
+        "Why do you think some sports are more popular in certain countries than others?",
+        "Should schools place more emphasis on physical education?",
+        "Do you think professional athletes are paid too much?",
+        "How has technology changed the way people train for sports?",
+        "What role does sport play in bringing communities together?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0109",
+    "title": "Part 3: Consumer culture and shopping",
+    "part": "part3",
+    "topic": "Shopping",
+    "tags": ["speaking", "part-3", "shopping"],
+    "data": {
+      "questions": [
+        "What are the advantages and disadvantages of online shopping compared to shopping in stores?",
+        "Do you think advertising influences people to buy things they do not need?",
+        "How has shopping changed in your country over the last twenty years?",
+        "Should there be more regulation of how companies advertise to children?",
+        "Do you think people today are more materialistic than in the past?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
