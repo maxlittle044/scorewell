@@ -10,21 +10,22 @@ import { allQuestions, toGroups } from "@/lib/exam/schema";
 import type { AnswerValue, QuestionGroup } from "@/lib/exam/schema";
 import { saveQuizProgressAction } from "@/lib/progress-actions";
 import { useElapsedSeconds } from "@/lib/use-elapsed-seconds";
+import { ListeningPlayer } from "@/components/content/listening-player";
+import { useSpeechSupported } from "@/components/content/speak-button";
 import { PassageText, QuestionGroups, QuestionNavigator } from "./question-list";
-import type { ReadingPaper } from "@/lib/content/full-paper";
+import type { FullPaper } from "@/lib/content/full-paper";
 
 /**
- * A bundled Reading paper: every passage under one 60-minute clock instead of three
- * disconnected short tests, matching how the real exam and reference test-library sites
- * present a full paper. Passages are freely switchable — unlike the four-skill simulation's
- * forced-forward legs, the real Reading paper lets a candidate move between passages at will.
+ * A bundled Reading or Listening paper: every part under one shared clock instead of three or
+ * four disconnected short tests, matching how the real exam and reference test-library sites
+ * present a full paper. Parts are freely switchable — unlike the four-skill simulation's
+ * forced-forward legs, the real Reading/Listening paper lets a candidate move between passages
+ * or sections at will.
  *
- * No new persistence: each passage keeps working as its own standalone test elsewhere, and
- * this only adds one combined Progress row on finish (Progress.contentItemId is nullable
- * already, so a paper-level attempt needs no schema change).
+ * No new persistence: each part keeps working as its own standalone test elsewhere, and this
+ * only adds one combined Progress row on finish (Progress.contentItemId is nullable already,
+ * so a paper-level attempt needs no schema change).
  */
-
-const READING_PAPER_MINUTES = 60;
 
 function formatClock(totalSeconds: number) {
   const minutes = Math.floor(totalSeconds / 60);
@@ -32,7 +33,14 @@ function formatClock(totalSeconds: number) {
   return `${minutes}:${String(seconds).padStart(2, "0")}`;
 }
 
-export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
+export function FullPaperRunner({ paper }: { paper: FullPaper }) {
+  const isListening = paper.skill === "LISTENING";
+  const speechSupported = useSpeechSupported();
+  // Listening hides the transcript during the test, exactly like the standalone listening
+  // page — reading along would defeat the point. The one exception is a browser that can't
+  // speak at all, where the transcript is the only way to attempt it.
+  const transcriptHiddenUntilSubmit = isListening && speechSupported;
+
   const partGroups = useMemo(
     () => paper.parts.map((part) => toGroups(part.questionSet)),
     [paper],
@@ -57,7 +65,7 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
   const [flagged, setFlagged] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
   const [saveState, setSaveState] = useState<"idle" | "saved" | "not-logged-in">("idle");
-  const [secondsLeft, setSecondsLeft] = useState(READING_PAPER_MINUTES * 60);
+  const [secondsLeft, setSecondsLeft] = useState(paper.minutes * 60);
   const [isPending, startTransition] = useTransition();
   const elapsedSeconds = useElapsedSeconds();
 
@@ -81,7 +89,7 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
 
     startTransition(async () => {
       const result = await saveQuizProgressAction({
-        skill: "READING",
+        skill: paper.skill,
         title: paper.title,
         correctCount,
         totalCount: graded.length,
@@ -90,10 +98,10 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
       });
       setSaveState(result.saved ? "saved" : "not-logged-in");
     });
-  }, [partGroups, paper.title, elapsedSeconds]);
+  }, [partGroups, paper.skill, paper.title, elapsedSeconds]);
 
   // Countdown, ticking client-side only — a fresh page load resets it, same trade-off the
-  // standalone single-passage tests already make (no wall-clock persistence for those either).
+  // standalone single-part tests already make (no wall-clock persistence for those either).
   useEffect(() => {
     const id = setInterval(() => {
       setSecondsLeft((prev) => {
@@ -142,8 +150,8 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
           </p>
         )}
         <div className="mt-5 flex flex-wrap gap-3">
-          <Button href="/ielts/reading" size="sm">
-            All reading tests
+          <Button href={isListening ? "/ielts/listening" : "/ielts/reading"} size="sm">
+            All {isListening ? "listening" : "reading"} tests
           </Button>
           <Button href="/dashboard" variant="outline" size="sm">
             Dashboard
@@ -154,8 +162,11 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
   }
 
   const timeIsShort = secondsLeft <= 300;
+  const activePartData = paper.parts[activePart];
   const activeQuestions = partQuestions[activePart];
   const answeredInPart = activeQuestions.filter((q) => isAnswered(q, answers[q.id])).length;
+  const showSource =
+    !isListening || !transcriptHiddenUntilSubmit;
 
   return (
     <div className="flex flex-col gap-6">
@@ -178,7 +189,7 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
                       : "bg-surface-sunken text-ink-muted hover:bg-line",
                 )}
               >
-                Passage {part.partNumber} · {answeredCount}/{questions.length}
+                {paper.partLabel} {part.partNumber} · {answeredCount}/{questions.length}
               </button>
             );
           })}
@@ -208,14 +219,22 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
 
       <div className="rounded-xl border border-line bg-surface p-5">
         <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
-          Passage {paper.parts[activePart].partNumber} of {paper.parts.length}
+          {paper.partLabel} {activePartData.partNumber} of {paper.parts.length}
         </p>
-        <h2 className="mt-1 text-lg font-bold text-ink">{paper.parts[activePart].title}</h2>
+        <h2 className="mt-1 text-lg font-bold text-ink">{activePartData.title}</h2>
         <p className="mt-1 text-sm text-ink-muted">
-          {answeredInPart} of {activeQuestions.length} answered in this passage ·{" "}
-          {totalQuestions} questions across the whole paper
+          {answeredInPart} of {activeQuestions.length} answered in this{" "}
+          {paper.partLabel.toLowerCase()} · {totalQuestions} questions across the whole paper
         </p>
       </div>
+
+      {isListening && activePartData.transcript && (
+        <ListeningPlayer
+          key={activePartData.contentItemId}
+          transcript={activePartData.transcript}
+          label={activePartData.audioLabel ?? activePartData.title}
+        />
+      )}
 
       <QuestionNavigator
         questions={activeQuestions}
@@ -225,17 +244,26 @@ export function FullPaperRunner({ paper }: { paper: ReadingPaper }) {
         startNumber={startNumbers[activePart]}
       />
 
-      <div className="grid gap-6 lg:grid-cols-2">
-        <div className="lg:sticky lg:top-36 lg:max-h-[calc(100vh-11rem)] lg:self-start lg:overflow-y-auto">
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
-              Reading passage
-            </p>
-            <PassageText passage={paper.parts[activePart].passage} />
+      <div className={cn("grid gap-6", showSource && "lg:grid-cols-2")}>
+        {showSource && (
+          <div className="lg:sticky lg:top-36 lg:max-h-[calc(100vh-11rem)] lg:self-start lg:overflow-y-auto">
+            <div className="rounded-xl border border-line bg-surface p-5">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                {isListening ? "Transcript" : "Reading passage"}
+              </p>
+              <PassageText passage={(isListening ? activePartData.transcript : activePartData.passage) ?? ""} />
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="flex flex-col gap-6">
+          {isListening && transcriptHiddenUntilSubmit && (
+            <p className="rounded-lg bg-brand-50 px-4 py-3 text-sm text-heading">
+              The transcript stays hidden until you finish the paper — reading along would
+              defeat the listening practice.
+            </p>
+          )}
+
           <QuestionGroups
             groups={partGroups[activePart]}
             answers={answers}
