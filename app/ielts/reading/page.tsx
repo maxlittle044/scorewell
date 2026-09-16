@@ -43,9 +43,9 @@ export default async function ReadingIndexPage() {
                 <ContentCard
                   headingLevel={2}
                   key={paper.slug}
-                  tag="Full paper"
+                  tag={paper.variant === "general-training" ? "General Training" : "Academic"}
                   title={paper.title}
-                  meta={`60 min · ${paper.partCount} passages · ${paper.questionCount} questions`}
+                  meta={`60 min · ${paper.partCount} ${paper.partLabel.toLowerCase()}s · ${paper.questionCount} questions`}
                   href={`/ielts/reading/full/${paper.slug}`}
                 />
               ))}

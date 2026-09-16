@@ -43,9 +43,17 @@ export type FullPaper = {
 export type FullPaperSummary = {
   slug: string;
   title: string;
+  variant: "academic" | "general-training";
+  /** "Passage" for Reading, "Section" for Listening — and General Training Reading, whose
+   *  parts are not continuous passages the way Academic Reading's are. */
+  partLabel: string;
   partCount: number;
   questionCount: number;
 };
+
+function variantOf(baseSlug: string): "academic" | "general-training" {
+  return baseSlug.includes("general") ? "general-training" : "academic";
+}
 
 function questionCountOf(questionSet: QuestionSet): number {
   const groups = questionSet.groups ?? [];
@@ -67,6 +75,12 @@ function readingPaperTitle(baseSlug: string): string {
   const num = baseSlug.match(/(\d+)$/)?.[1];
   const variant = baseSlug.includes("general") ? "General Training" : "Academic";
   return `${variant} Reading — Full Paper ${num ? parseInt(num, 10) : ""}`.trim();
+}
+
+/** General Training's Section 1/2 are short notices/workplace texts, not one continuous
+ *  passage the way Academic Reading's are — "Passage" would overclaim what they are. */
+function readingPartLabel(baseSlug: string): string {
+  return baseSlug.includes("general") ? "Section" : "Passage";
 }
 
 export async function listFullReadingPapers(): Promise<FullPaperSummary[]> {
@@ -93,6 +107,8 @@ export async function listFullReadingPapers(): Promise<FullPaperSummary[]> {
     papers.push({
       slug: base,
       title: readingPaperTitle(base),
+      variant: variantOf(base),
+      partLabel: readingPartLabel(base),
       partCount: parts.length,
       questionCount: parts.reduce((sum, p) => sum + p.questionCount, 0),
     });
@@ -137,7 +153,7 @@ export async function getFullReadingPaper(baseSlug: string): Promise<FullPaper |
     slug: baseSlug,
     title: readingPaperTitle(baseSlug),
     skill: "READING",
-    partLabel: "Passage",
+    partLabel: readingPartLabel(baseSlug),
     minutes: 60,
     parts,
   };
@@ -183,6 +199,8 @@ export async function listFullListeningPapers(): Promise<FullPaperSummary[]> {
     papers.push({
       slug: base,
       title: listeningPaperTitle(base),
+      variant: variantOf(base),
+      partLabel: "Section",
       partCount: parts.length,
       questionCount: parts.reduce((sum, p) => sum + p.questionCount, 0),
     });

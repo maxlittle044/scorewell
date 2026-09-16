@@ -4514,5 +4514,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0001-p1",
+    "title": "General Training Reading — Section 1: Library and Leisure Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nMEADOWBROOK COMMUNITY LIBRARY\nMembership and Borrowing Guide\n\nJoining the library is free for all residents of Meadowbrook and the surrounding parishes. To join, bring a form of photo ID and proof of your current address to the front desk; membership cards are issued on the spot and are valid for three years before renewal is required.\n\nStandard members may borrow up to eight items at a time, for a loan period of three weeks. Items may be renewed twice online, provided no other member has requested them. Overdue items incur a charge of 20 pence per day, per item, up to a maximum fine of £5 per item.\n\nThe library's DVD and audiobook collection is held separately from the main catalogue and can only be borrowed by members who have held their card for at least six months, to help offset the higher replacement cost of these items.\n\nReference materials, including local history archives and back issues of newspapers, may not be removed from the building but may be photocopied at the front desk for a small fee of 10 pence per page.\n\nThe library will be closed for annual stock-taking during the last full week of January; all other services, including the online catalogue, remain unaffected during this period.\n\nTEXT 2\n\nFERNWOOD LEISURE CENTRE\nWeekend Yoga and Pilates Classes — Autumn Term\n\nJoin us for a relaxing start to your weekend! All classes take place in Studio 2 and are suitable for beginners unless otherwise noted.\n\nSaturday Morning Yoga — 9:00–10:00am — £8 per session, or £60 for a block of eight sessions booked in advance.\n\nSaturday Pilates (Intermediate) — 10:15–11:15am — Some prior experience recommended. £9 per session.\n\nSunday Gentle Yoga — 9:30–10:30am — Suitable for all ages and abilities, including those recovering from injury. £8 per session.\n\nAll participants should bring their own mat; a limited number of mats are available to borrow at reception, subject to availability. Please arrive at least ten minutes before your class begins, as latecomers cannot be admitted once the session has started, for safety reasons.\n\nTo book, visit the reception desk or call 01632 960 482. Block bookings must be paid in full at the time of booking and are non-refundable, though a session may be transferred to another member if you are unable to attend.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0001-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q001", "statement": "Library membership must be renewed every year.", "answer": "FALSE", "evidence": { "explanation": "Membership cards are valid for three years before renewal is required." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q002", "statement": "Standard members can renew a borrowed item as many times as they like.", "answer": "FALSE", "evidence": { "explanation": "Items may be renewed twice online, provided no other member has requested them." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q003", "statement": "A member must hold their card for six months before borrowing a DVD.", "answer": "TRUE", "evidence": { "explanation": "DVDs can only be borrowed by members who have held their card for at least six months." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q004", "statement": "Reference materials can be taken home overnight.", "answer": "FALSE", "evidence": { "explanation": "Reference materials may not be removed from the building." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q005", "statement": "The online library catalogue is unavailable during the stock-taking week.", "answer": "FALSE", "evidence": { "explanation": "The notice says the online catalogue remains unaffected during this period." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q006", "statement": "A block booking of Saturday Morning Yoga sessions can be refunded if you change your mind.", "answer": "FALSE", "evidence": { "explanation": "Block bookings are described as non-refundable." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0001-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0001-q007", "prompt": "New members must bring photo ID and proof of ______.", "accept": ["address", "their address", "current address"], "evidence": { "explanation": "Text 1 asks new members to bring proof of their current address." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q008", "prompt": "Standard members may borrow up to ______ items at a time.", "accept": ["eight", "8"], "evidence": { "explanation": "Text 1 states members may borrow up to eight items." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q009", "prompt": "Overdue items are charged ______ per day, per item.", "accept": ["20 pence", "20p", "£0.20"], "evidence": { "explanation": "Text 1 gives the overdue charge as 20 pence per day." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q010", "prompt": "Participants should arrive at least ______ before their class begins.", "accept": ["ten minutes", "10 minutes"], "evidence": { "explanation": "Text 2 asks participants to arrive at least ten minutes early." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0001-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0001-q011", "question": "What is the maximum fine for one overdue library item?", "options": ["£1", "£3", "£5", "£10"], "correctIndex": 2, "evidence": { "explanation": "Text 1 states the maximum fine is £5 per item." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0001-q012", "question": "Which class is recommended only for those with some prior experience?", "options": ["Saturday Morning Yoga", "Saturday Pilates", "Sunday Gentle Yoga", "None of them"], "correctIndex": 1, "evidence": { "explanation": "Text 2 notes Saturday Pilates has 'some prior experience recommended'." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0001-q013", "question": "How much does it cost to photocopy one page of reference material?", "options": ["5 pence", "10 pence", "15 pence", "20 pence"], "correctIndex": 1, "evidence": { "explanation": "Text 1 gives the photocopying fee as 10 pence per page." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0001-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Annual Leave Policy",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "GREENOAK MANUFACTURING\nStaff Handbook — Section 6: Annual Leave Policy\n\nAll full-time employees are entitled to 25 days of paid annual leave per calendar year, in addition to the eight public holidays observed in this region. Part-time employees receive leave on a pro-rata basis, calculated according to their contracted weekly hours.\n\nThe leave year runs from 1 April to 31 March. Employees may carry over a maximum of 5 unused days into the following leave year, provided a written request is submitted to their line manager no later than 15 March. Any unused leave beyond this carry-over limit is forfeited and cannot be paid out, except where an employee leaves the company partway through the year, in which case any accrued but untaken leave is paid as part of their final salary.\n\nLeave requests must be submitted through the online HR portal at least two weeks in advance for single days, and at least four weeks in advance for any period longer than five consecutive days. Requests submitted with less notice may still be considered at the manager's discretion but are not guaranteed approval.\n\nDuring the peak production period, which runs from 1 November to 15 January each year, no more than two members of any single department may be on leave at the same time, to maintain adequate staffing. Employees wishing to take leave during this period are strongly advised to submit requests as early as possible, as approval is granted on a first-come, first-served basis.\n\nNew employees do not accrue annual leave during their first month of employment but begin accruing leave retroactively from their start date once this probationary month has been completed. Employees are encouraged to take at least two consecutive weeks of leave at some point during the year, as the company's wellbeing policy discourages excessive carry-over as a substitute for genuine rest.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0001-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q014", "statement": "Part-time employees receive the same amount of leave as full-time employees.", "answer": "FALSE", "evidence": { "explanation": "Part-time employees receive leave on a pro-rata basis." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q015", "statement": "Employees can carry over up to five unused days into the next leave year.", "answer": "TRUE", "evidence": { "explanation": "The handbook states a maximum of 5 unused days may be carried over." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q016", "statement": "Unused leave beyond the carry-over limit can always be paid out in cash.", "answer": "FALSE", "evidence": { "explanation": "It is forfeited, except when an employee leaves the company partway through the year." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q017", "statement": "During the peak production period, no more than two employees from the same department may be on leave at once.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this limit directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q018", "statement": "New employees begin accruing leave from their very first day of employment.", "answer": "FALSE", "evidence": { "explanation": "Leave does not accrue during the first month, only retroactively afterward." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0001-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0001-q019", "prompt": "Full-time employees are entitled to ______ days of paid annual leave per year.", "accept": ["25"], "evidence": { "explanation": "The handbook states 25 days of paid annual leave." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q020", "prompt": "The leave year runs from 1 April to ______.", "accept": ["31 March"], "evidence": { "explanation": "The handbook gives the leave year's end date as 31 March." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q021", "prompt": "Carry-over requests must be submitted to a line manager no later than ______.", "accept": ["15 March"], "evidence": { "explanation": "The handbook gives this deadline for carry-over requests." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q022", "prompt": "Leave periods longer than five consecutive days require at least ______ notice.", "accept": ["four weeks"], "evidence": { "explanation": "The handbook requires four weeks' notice for longer periods." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q023", "prompt": "The peak production period runs from 1 November to ______.", "accept": ["15 January"], "evidence": { "explanation": "The handbook gives the end of the peak production period as 15 January." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0001-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0001-q024", "question": "How is leave approved during the peak production period?", "options": ["By seniority", "First-come, first-served", "By department vote", "Randomly"], "correctIndex": 1, "evidence": { "explanation": "The handbook says approval is granted on a first-come, first-served basis." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0001-q025", "question": "What happens to accrued but untaken leave if an employee leaves the company?", "options": ["It is forfeited", "It is paid as part of their final salary", "It is carried over automatically", "It is donated to charity"], "correctIndex": 1, "evidence": { "explanation": "The handbook says it is paid as part of the employee's final salary." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0001-q026", "question": "What does the company's wellbeing policy encourage?", "options": ["Maximum carry-over each year", "At least two consecutive weeks of leave", "Working through public holidays", "Splitting leave into single days only"], "correctIndex": 1, "evidence": { "explanation": "The handbook encourages at least two consecutive weeks of leave." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0001-p3",
+    "title": "The Return of the Beaver: How One Species Is Reshaping River Conservation",
+    "sourceTestSet": "General Training",
+    "topic": "Nature",
+    "tags": ["general-training", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few animals illustrate the concept of an 'ecosystem engineer' as vividly as the beaver, a species whose dam‐building activity can transform a modest stream into a complex mosaic of ponds, wetlands and side channels within a matter of years. Once found across nearly all of Britain's river systems, the beaver vanished from the landscape by the early sixteenth century, hunted to extinction for its fur, meat and castoreum, a secretion once prized in perfumery and medicine. In recent years, however, a series of licensed reintroduction projects has returned beavers to selected sites across England, Wales and Scotland, prompting fresh debate about the animal's place in a modern, heavily managed countryside.\n\nB. The first significant reintroduction trial in Britain began in 2009, when a small population was released into Knapdale Forest in Scotland under a carefully monitored five‐year licence. The trial's stated purpose was narrow — to establish whether beavers could survive and reproduce successfully in the wild after a roughly four‐hundred‐year absence — but its results proved influential well beyond Scotland, informing subsequent licensing decisions for England's first legal wild release, on the River Otter in Devon, in 2015.\n\nC. The ecological changes beavers bring are substantial. By felling smaller trees and building dams from the resulting material, beavers slow the flow of water through a catchment, creating a network of pools that trap sediment, filter pollutants, and raise the local water table. This engineered wetland habitat, in turn, tends to support a marked increase in invertebrate, amphibian and bird populations compared with an unmodified stretch of river. Slower‐moving water also reduces the severity of flash flooding downstream during heavy rainfall, since the beaver ponds absorb and gradually release excess water rather than letting it surge unchecked toward settlements further down the catchment.\n\nD. Monitoring of the River Otter population, carried out over a five‐year period by the University of Exeter, recorded a 37% increase in fish abundance at sites downstream of beaver dams, alongside a documented reduction in peak flood flow of up to 30% during several significant storm events. The same study found that water quality improved measurably at dammed sites, with beaver ponds acting as a natural filter that trapped agricultural sediment and reduced downstream turbidity.\n\nE. Not every landowner welcomes the beaver's return, however. Dam‐building can flood low‐lying agricultural land, and burrowing into riverbanks occasionally undermines flood defences or damages irrigation infrastructure, generating real costs for farmers working land adjacent to beaver territory. In response, several reintroduction projects now fund rapid‐response teams who can install flow‐control devices — pipes that pass through a dam to regulate water levels without removing it entirely — reducing conflict without undoing the ecological benefits the dam provides.\n\nF. Official policy is gradually catching up with these on‐the‐ground developments. In 2022, the government granted beavers protected species status in England, making it illegal to kill, injure or capture them without a licence, and a national strategy for further licensed releases is now under development. Conservation groups are using GPS‐tagging and citizen‐science sightings to map the species' natural spread from existing populations, data that policymakers say will guide decisions on where future reintroductions can proceed with the least conflict and the greatest ecological benefit.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0001-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The historical disappearance and modern return of a keystone species" },
+            { "key": "ii", "label": "An early trial and its influence on later decisions" },
+            { "key": "iii", "label": "How dam-building physically reshapes a river system" },
+            { "key": "iv", "label": "Measured outcomes from a five-year monitoring study" },
+            { "key": "v", "label": "Conflicts with landowners and how they are managed" },
+            { "key": "vi", "label": "Changing government policy and future planning" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0001-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the beaver's disappearance and its modern return." } },
+            { "kind": "matching", "id": "generated-reading-general-0001-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the Knapdale trial and its influence on the River Otter release." } },
+            { "kind": "matching", "id": "generated-reading-general-0001-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C explains how dam-building reshapes river habitat." } },
+            { "kind": "matching", "id": "generated-reading-general-0001-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D reports the University of Exeter's five-year monitoring results." } },
+            { "kind": "matching", "id": "generated-reading-general-0001-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers changing government policy and future planning." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0001-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q032", "statement": "The beaver was hunted to extinction in Britain by the early sixteenth century.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states the beaver vanished by the early sixteenth century." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q033", "statement": "The Knapdale trial aimed to test whether beavers could survive and reproduce in the wild.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B describes this as the trial's stated purpose." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q034", "statement": "The River Otter release in 2015 was England's first legal wild beaver release.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B describes the River Otter release as England's first legal wild release." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q035", "statement": "The University of Exeter study found no change in downstream water quality.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says water quality improved measurably at dammed sites." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0001-q036", "statement": "All landowners near beaver territory have welcomed their return.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E states not every landowner welcomes the beaver's return." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0001-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0001-q037", "prompt": "The River Otter study recorded a ______ increase in fish abundance downstream of dams.", "accept": ["37%"], "evidence": { "explanation": "Paragraph D gives the figure 37%." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q038", "prompt": "Beaver dams were found to reduce peak flood flow by up to ______ during storm events.", "accept": ["30%"], "evidence": { "explanation": "Paragraph D gives the figure of up to 30%." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q039", "prompt": "Flow-control devices are pipes that pass through a dam to regulate ______.", "accept": ["water levels"], "evidence": { "explanation": "Paragraph E describes flow-control devices regulating water levels." } },
+            { "kind": "completion", "id": "generated-reading-general-0001-q040", "prompt": "In ______, beavers were granted protected species status in England.", "accept": ["2022"], "evidence": { "explanation": "Paragraph F gives the year 2022." } }
+          ]
+        }
+      ]
+    }
   }
 ];
