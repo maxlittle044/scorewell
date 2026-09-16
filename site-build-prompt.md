@@ -125,21 +125,21 @@ Individual per-skill index pages are not enough on their own: the defining surfa
 
 ### 4b. Full surface inventory (parity target)
 
-Every row is in scope. "Have" means built and reachable; "partial" means the capability exists but not in the shape or at the depth the reference has it.
+Every row is in scope. "Have" means built and reachable; "partial" means the capability exists but not in the shape or at the depth the reference has it. Last verified against the running code on 2026-09-16 — this table had drifted well behind what was actually shipped (several rows below were marked "missing" for features that had already been built), so treat any future "missing" claim here with the same suspicion and check the code before trusting it.
 
-**Test library and practice** — Exam Library with collections + filters (have); per-skill test pages (have); full four-skill simulation sitting with one global clock (missing); daily timed exam + leaderboard (have); mini exercises and grammar tests (have); answer keys (have).
+**Test library and practice** — Exam Library with collections + filters (have); per-skill test pages (have); full four-skill simulation sitting with one global clock (have — a short-form sitting per mock set, plus a real-exam-length sitting built on full-length Reading/Listening papers); daily timed exam + leaderboard (have); mini exercises and grammar tests (have); answer keys (have).
 
-**Guidance content** — tips hub split into one page per skill, not a single mixed index (partial); grammar library organised by point rather than as tests (partial); announcements / platform news feed (missing); topic banks (have); band-9 sample answers (have); user-submitted answers with community replies (have).
+**Guidance content** — tips hub split into one page per skill (have, `/ielts/tips/skill/[skill]`); grammar library organised by point, separate from the grammar tests (have); announcements / platform news feed (have); topic banks (have); band-9 sample answers (have); user-submitted answers with community replies (have).
 
-**Live and video** — live lessons listing filtered by skill, one page per session, instructor card, registration, attendee count, archived recording afterwards (missing); recorded-lesson packages (missing); self-study course track (missing); video lessons with captions (have); multi-lesson video courses (partial — courses exist, not video-based).
+**Live and video** — live lessons listing filtered by skill, one page per session, instructor card, registration, attendee count, archived recording afterwards (have — the page, filtering, registration and recording link-out are all built; every seeded session is currently a disclosed placeholder with no real instructor or joining link, which the page states plainly, so there is nothing to actually attend yet — a content/scheduling gap, not a code one); recorded-lesson packages (have); self-study course track (have); video lessons with captions (have); multi-lesson video courses (have — a course page links out to a lesson's video where one exists).
 
-**Scored services** — AI writing evaluation per criterion (have); AI speaking evaluation (have); **human examiner evaluation as a paid add-on with a stated turnaround** (missing); downloadable practice packs as a purchasable product (missing).
+**Scored services** — AI writing evaluation per criterion (have); AI speaking evaluation (have); human examiner evaluation as a paid add-on with a stated turnaround (have — credits, request form, status tracking, admin-side processing at `/admin/reviews`); downloadable practice packs as a purchasable product (have).
 
-**Study abroad** — destination pages per country and an institution list (missing). Lowest priority of the group: it is adjacent to exam prep rather than part of it, and carries no learning functionality.
+**Study abroad** — destination pages per country and an institution list (have, 7 destinations seeded). Lowest priority of the group: it is adjacent to exam prep rather than part of it, and carries no learning functionality.
 
-**Account and commerce** — login/signup (have); dashboard with history and subscription state (have); band-score trend and study-time totals (partial — latest-per-skill only, no time series); mistake analytics by question type (have); referral programme (have); pricing with multiple durations (have); **pay-per-use credits (missing)**; eSewa/Khalti QR checkout with admin approval (have — keep).
+**Account and commerce** — login/signup (have); dashboard with history and subscription state (have); band-score trend and study-time totals (have — a real chronological trend per skill, not just the latest score); mistake analytics by question type (have); referral programme (have); pricing with multiple durations (have); pay-per-use credits (have); eSewa/Khalti QR checkout with admin approval (have — keep).
 
-**Shell** — two-tier header with the nav in its own band (§2); light centred page shell (§7.1); persistent utility rail; dark-mode toggle (missing); interface language switcher (missing); PWA install (missing).
+**Shell** — two-tier header with the nav in its own band (§2, have); light centred page shell (§7.1, have); persistent utility rail (have); dark-mode toggle (have); interface language switcher (have); PWA install (have — manifest, icons, and an offline shell via `public/sw.js`).
 
 ### 5. AI-Powered Tools (each as its own page/tool)
 - Writing Task 1 (Academic report) checker + generator
