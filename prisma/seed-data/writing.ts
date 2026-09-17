@@ -608,4 +608,135 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (fresh chart types/topics: bar, table, pie, line) ----
+  {
+    slug: "task1-domestic-chores-bar-chart",
+    title: "Task 1: Time spent on domestic chores by gender (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Society",
+    tags: ["writing", "task-1-academic", "society", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average number of hours per week men and women spent on domestic chores in three countries in 2022. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "hours per week",
+        categories: ["Sweden", "Japan", "Mexico"],
+        series: [
+          { label: "Men", values: [18, 10, 8] },
+          { label: "Women", values: [22, 28, 34] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-education-spending-table",
+    title: "Task 1: Public spending on education (Table)",
+    taskType: "task1-academic",
+    topic: "Education",
+    tags: ["writing", "task-1-academic", "education", "table"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The table below shows public spending on education as a percentage of GDP in four countries in 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "table",
+        columns: ["Country", "2000 (%)", "2020 (%)"],
+        rows: [
+          { label: "South Korea", values: [4.2, 5.1] },
+          { label: "Germany", values: [3.8, 4.5] },
+          { label: "Brazil", values: [5.0, 4.7] },
+          { label: "Nigeria", values: [2.9, 3.6] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-electricity-sources-pie-chart",
+    title: "Task 1: Sources of electricity generation (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Environment",
+    tags: ["writing", "task-1-academic", "environment", "pie-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The pie chart below shows the sources of electricity generation in one country in 2022. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "pie",
+        unit: "%",
+        slices: [
+          { label: "Coal", value: 35 },
+          { label: "Natural gas", value: 25 },
+          { label: "Renewables", value: 20 },
+          { label: "Nuclear", value: 15 },
+          { label: "Other", value: 5 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-international-students-line-graph",
+    title: "Task 1: International students studying abroad (Line graph)",
+    taskType: "task1-academic",
+    topic: "Education",
+    tags: ["writing", "task-1-academic", "education", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the number of international students studying abroad from three countries between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "thousand students",
+        xLabels: ["2000", "2005", "2010", "2015", "2020"],
+        series: [
+          { label: "China", values: [40, 90, 180, 320, 410] },
+          { label: "India", values: [25, 55, 100, 190, 260] },
+          { label: "South Korea", values: [20, 35, 50, 60, 55] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-teenager-leisure-bar-chart",
+    title: "Task 1: Teenagers' weekly leisure activities (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Society",
+    tags: ["writing", "task-1-academic", "society", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average number of hours per week teenagers in one country spent on five leisure activities on weekdays and weekends. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "hours per week",
+        categories: ["Watching TV", "Social media", "Sport", "Reading", "Gaming"],
+        series: [
+          { label: "Weekday", values: [5, 9, 3, 2, 6] },
+          { label: "Weekend", values: [4, 6, 5, 3, 8] },
+        ],
+      },
+    },
+  },
 ];
