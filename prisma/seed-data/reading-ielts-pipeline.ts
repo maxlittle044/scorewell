@@ -4655,5 +4655,287 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0002-p1",
+    "title": "General Training Reading — Section 1: Community Centre and Swimming Pool Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nRIVERSIDE COMMUNITY CENTRE\nRoom Hire and Booking Policy\n\nThe Riverside Community Centre offers three rooms for hire by local residents, community groups and small businesses: the Main Hall (capacity 80), the Garden Room (capacity 30), and the Meeting Room (capacity 12).\n\nBookings can be made online or in person at reception at least three working days in advance. Same-day bookings are not accepted, as rooms require time to be prepared and checked beforehand.\n\nHire rates for local residents and registered charities are discounted by 20% from the standard rate shown on our website. To qualify for the discounted rate, proof of local address or a charity registration number must be provided at the time of booking.\n\nA refundable deposit of £50 is required for the Main Hall only; this is returned within five working days of the event provided no damage is reported. The Garden Room and Meeting Room do not require a deposit.\n\nCancellations made more than seven days before the booking receive a full refund of the hire fee. Cancellations made within seven days receive a 50% refund. No refund is given for cancellations made within 48 hours of the booking, except in cases of medical emergency, which are considered individually by the centre manager.\n\nAll bookings include use of the kitchenette facilities, but hirers must bring their own crockery and cutlery. The centre's own tables and chairs may be used free of charge, but any additional furniture must be arranged separately by the hirer.\n\nTEXT 2\n\nGREENFIELD SWIMMING POOL\nPublic Session Timetable and Membership\n\nOur public swimming sessions run every day except Mondays, when the pool is closed for routine maintenance and water testing.\n\nAdult sessions take place from 6:00am to 8:00am and again from 7:00pm to 9:00pm on weekdays. Family sessions, during which children under 12 must be accompanied by an adult in the water, run from 10:00am to 12:00pm on Saturdays and Sundays.\n\nA single adult swim costs £4.50; children under 16 pay £2.50. An annual family membership, covering two adults and up to three children, costs £320 and includes unlimited entry to all public sessions as well as a 10% discount on swimming lessons.\n\nLane swimming is reserved for members only during the early morning sessions, to allow serious swimmers uninterrupted use of the pool before the working day begins. Non-members wishing to swim lengths should attend the evening session instead.\n\nSwimming lessons for children run in six-week blocks and must be booked in advance through the front desk; places are limited to eight children per class to maintain a safe teacher-to-pupil ratio. A place on the waiting list can be requested if a block is fully booked.\n\nLocker hire costs £1, refunded on return of the key. Members are advised to bring their own padlock for locker use, as centre padlocks are in limited supply and cannot be guaranteed.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0002-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q001", "statement": "Same-day bookings can be made if a room happens to be free.", "answer": "FALSE", "evidence": { "explanation": "Same-day bookings are not accepted, as rooms require time to be prepared beforehand." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q002", "statement": "The Garden Room requires a refundable deposit.", "answer": "FALSE", "evidence": { "explanation": "Only the Main Hall requires a deposit; the Garden Room does not." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q003", "statement": "A cancellation within 48 hours of the booking can never be refunded under any circumstances.", "answer": "FALSE", "evidence": { "explanation": "Medical emergencies are considered individually by the centre manager, so a refund is not always ruled out." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q004", "statement": "Hirers must supply their own cutlery.", "answer": "TRUE", "evidence": { "explanation": "Hirers must bring their own crockery and cutlery." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q005", "statement": "The pool is closed on Mondays for maintenance.", "answer": "TRUE", "evidence": { "explanation": "Public sessions run every day except Mondays, when the pool is closed for maintenance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q006", "statement": "Children under 16 pay the same price as adults for a single swim.", "answer": "FALSE", "evidence": { "explanation": "A single adult swim costs £4.50, while children under 16 pay £2.50." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0002-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0002-q007", "prompt": "To receive the discounted hire rate, hirers must show proof of local address or a charity ______.", "accept": ["registration number"], "evidence": { "explanation": "Text 1 requires proof of local address or a charity registration number." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q008", "prompt": "The Main Hall deposit is refunded within ______ working days.", "accept": ["five", "5"], "evidence": { "explanation": "Text 1 states the deposit is returned within five working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q009", "prompt": "Lane swimming during early morning sessions is reserved for ______.", "accept": ["members", "members only"], "evidence": { "explanation": "Text 2 reserves early-morning lane swimming for members only." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q010", "prompt": "Children's swimming lesson blocks last ______.", "accept": ["six weeks", "6 weeks"], "evidence": { "explanation": "Text 2 states lessons run in six-week blocks." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0002-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0002-q011", "question": "What is the maximum capacity of the Meeting Room?", "options": ["8", "12", "30", "80"], "correctIndex": 1, "evidence": { "explanation": "Text 1 gives the Meeting Room capacity as 12." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0002-q012", "question": "When do family swim sessions take place?", "options": ["Weekday mornings", "Weekday evenings", "Saturday and Sunday mornings", "Every evening"], "correctIndex": 2, "evidence": { "explanation": "Text 2 says family sessions run 10am-12pm on Saturdays and Sundays." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0002-q013", "question": "How much does locker hire cost?", "options": ["50p", "£1", "£2.50", "£4.50"], "correctIndex": 1, "evidence": { "explanation": "Text 2 states locker hire costs £1, refunded on return of the key." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0002-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Expenses and Business Travel",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "BRIGHTON RETAIL GROUP\nStaff Handbook — Section 4: Expenses and Business Travel\n\nEmployees who incur reasonable costs while carrying out company business may claim reimbursement through the online expenses system. Claims must be submitted within 30 days of the expense being incurred; claims submitted after this period will not normally be approved, except where prior agreement has been reached with a line manager.\n\nAll claims over £25 require an itemised receipt to be uploaded with the claim. Claims under this amount may be submitted with a brief description only, though staff are encouraged to retain receipts wherever possible in case of a query.\n\nEmployees travelling by car on company business may claim mileage at a rate of 45 pence per mile for the first 10,000 miles in a tax year, and 25 pence per mile thereafter. Mileage claims must include the start and end postcode of the journey, calculated using the shortest reasonable route.\n\nWhere overnight accommodation is required, employees should book through the company's approved travel provider wherever possible, as this allows costs to be billed directly to the company rather than claimed afterward. Accommodation costs are capped at £120 per night outside London and £160 per night within London, excluding exceptional circumstances agreed in advance.\n\nA daily subsistence allowance of £25 is available to cover meals when travelling overnight, or when a single day's travel exceeds ten hours from the employee's normal start time. This allowance does not require itemised receipts but should not be combined with a separately claimed meal expense for the same day.\n\nClaims are typically processed and paid within 15 working days of approval by a line manager. Employees are reminded that expenses claims are subject to periodic audit, and any claim found to misrepresent the nature or amount of an expense may result in disciplinary action.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0002-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q014", "statement": "Expense claims can always be submitted more than 30 days after the cost was incurred.", "answer": "FALSE", "evidence": { "explanation": "Late claims are not normally approved unless prior agreement was reached with a line manager." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q015", "statement": "A claim for £20 must include an itemised receipt.", "answer": "FALSE", "evidence": { "explanation": "Only claims over £25 require an itemised receipt." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q016", "statement": "The mileage rate decreases after an employee has driven 10,000 miles in a tax year.", "answer": "TRUE", "evidence": { "explanation": "The rate drops from 45 pence to 25 pence per mile after 10,000 miles." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q017", "statement": "Employees must always book accommodation through the approved travel provider.", "answer": "FALSE", "evidence": { "explanation": "Employees should book through the provider 'wherever possible', not as an absolute requirement." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q018", "statement": "The subsistence allowance can be claimed in addition to a separate meal expense on the same day.", "answer": "FALSE", "evidence": { "explanation": "The allowance should not be combined with a separately claimed meal expense for the same day." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0002-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0002-q019", "prompt": "Mileage claims must include the start and end ______ of the journey.", "accept": ["postcode", "postcodes"], "evidence": { "explanation": "Mileage claims must include the start and end postcode of the journey." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q020", "prompt": "Accommodation costs are capped at £160 per night within ______.", "accept": ["London"], "evidence": { "explanation": "Accommodation is capped at £160 per night within London." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q021", "prompt": "The daily subsistence allowance is ______.", "accept": ["£25", "25 pounds"], "evidence": { "explanation": "The daily subsistence allowance is stated as £25." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q022", "prompt": "Approved claims are typically paid within ______ working days.", "accept": ["15", "fifteen"], "evidence": { "explanation": "Claims are typically processed and paid within 15 working days of approval." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q023", "prompt": "The subsistence allowance is also available when a day's travel exceeds ______ hours from the normal start time.", "accept": ["ten", "10"], "evidence": { "explanation": "The allowance applies when a day's travel exceeds ten hours from the normal start time." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0002-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0002-q024", "question": "What happens to a claim submitted after the 30-day deadline?", "options": ["It is automatically rejected", "It is not normally approved unless pre-agreed", "It is paid at a reduced rate", "It is delayed by 15 days"], "correctIndex": 1, "evidence": { "explanation": "Late claims will not normally be approved except where prior agreement was reached." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0002-q025", "question": "What is the mileage rate after the first 10,000 miles in a tax year?", "options": ["25 pence", "35 pence", "45 pence", "55 pence"], "correctIndex": 0, "evidence": { "explanation": "The rate is 25 pence per mile after the first 10,000 miles." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0002-q026", "question": "What might happen if a claim misrepresents an expense?", "options": ["Nothing, as long as it is under £25", "The employee is billed for the difference", "Disciplinary action", "Automatic dismissal"], "correctIndex": 2, "evidence": { "explanation": "Misrepresenting a claim may result in disciplinary action." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0002-p3",
+    "title": "Bees in the City: The Rise of Urban Beekeeping",
+    "sourceTestSet": "General Training",
+    "topic": "Nature",
+    "tags": ["general-training", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few insects generate as much public affection, or as much anxiety about their decline, as the honeybee. Over the past two decades, growing awareness of pollinator loss has coincided with an unlikely trend: the rise of beekeeping not in the countryside, where it has always been practised, but on the rooftops, balconies and vacant lots of major cities. What began as a scattering of hobbyist hives has, in some cities, grown into an organised movement complete with dedicated suppliers, training courses and even municipal support.\n\nB. The first widely publicised urban apiary scheme was launched on the rooftop of a department store in the early 2000s, chosen partly for its height above street level, which keeps bees away from pedestrians, and partly for the publicity value of harvesting honey in the heart of a city centre. Within a decade, similar rooftop hives had appeared on hotels, office buildings and public libraries in dozens of cities worldwide, often marketed as a visible symbol of a company's environmental commitment.\n\nC. The timing was not accidental. Reports of colony collapse disorder, a phenomenon in which the majority of worker bees in a colony abruptly disappear, began circulating widely from the mid-2000s onward, and though its precise causes remain debated, researchers generally point to a combination of pesticide exposure, parasitic mites, habitat loss and disease as contributing factors. Because roughly a third of global food crops depend at least partly on insect pollination, the prospect of a serious decline in bee populations drew concern well beyond the beekeeping community itself.\n\nD. A widely cited five-year survey of one European capital's rooftop hives recorded a near-tripling in the number of registered urban colonies, from around 200 to close to 560, alongside average honey yields of 15 to 20 kilograms per hive per year — figures comparable to, and in some seasons higher than, many rural apiaries, attributed to the wider variety of flowering plants found in parks, gardens and street trees across a city. Foraging bees from a single urban hive were found to range across an area of up to seven square kilometres in search of nectar.\n\nE. Not every ecologist has welcomed the trend uncritically, however. Some researchers argue that a dense concentration of honeybee hives in a small urban area can place unsustainable pressure on the very limited flowering resources available, effectively competing with wild and solitary bee species, many of which are considered more at risk than the domesticated honeybee and receive far less public attention or protective policy. A city that adds hives without also expanding its planting of pollinator-friendly flowers, these critics warn, may inadvertently harm the pollinators it intends to help.\n\nF. In response to such concerns, several cities have introduced formal regulation of urban beekeeping over the past decade, typically requiring hives to be registered with a local authority, capping the number of hives permitted per rooftop or plot, and mandating a basic training course before a resident is permitted to keep bees. Advocates argue that, managed responsibly alongside a parallel effort to increase urban planting, beekeeping can remain a valuable tool for public engagement with pollinator conservation rather than working against it.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0002-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An unlikely urban trend takes root" },
+            { "key": "ii", "label": "A pioneering scheme sets a visible example" },
+            { "key": "iii", "label": "The economic cost of maintaining rooftop hives" },
+            { "key": "iv", "label": "Survey data reveals surprising productivity in city hives" },
+            { "key": "v", "label": "A note of caution about unintended competition" },
+            { "key": "vi", "label": "Rules introduced to keep the trend sustainable" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0002-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the rise of urban beekeeping alongside concern over bee decline." } },
+            { "kind": "matching", "id": "generated-reading-general-0002-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the pioneering rooftop scheme and its influence on later imitators." } },
+            { "kind": "matching", "id": "generated-reading-general-0002-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D reports the five-year survey's productivity figures." } },
+            { "kind": "matching", "id": "generated-reading-general-0002-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E raises concerns about competition with wild and solitary bee species." } },
+            { "kind": "matching", "id": "generated-reading-general-0002-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers the regulation introduced to keep the trend sustainable." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0002-p3-g2",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q032", "statement": "The first widely publicised urban apiary was located at street level.", "answer": "FALSE", "evidence": { "explanation": "It was on a rooftop, chosen partly for its height above street level." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q033", "statement": "Colony collapse disorder's causes are fully understood and agreed upon by researchers.", "answer": "FALSE", "evidence": { "explanation": "The precise causes remain debated, according to the passage." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q034", "statement": "Urban hives in the cited survey produced honey yields lower than most rural apiaries.", "answer": "FALSE", "evidence": { "explanation": "Yields were comparable to, and in some seasons higher than, rural apiaries." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q035", "statement": "Some researchers believe wild and solitary bee species receive less public attention than honeybees.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states these species receive far less public attention or protective policy." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0002-q036", "statement": "All cities that have introduced beekeeping regulation require a training course before someone can keep bees.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says 'several cities' typically require this, not that every regulating city does." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0002-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0002-q037", "prompt": "The surveyed city's registered urban hives rose from around 200 to close to ______.", "accept": ["560"], "evidence": { "explanation": "Paragraph D gives the figure of close to 560 hives." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q038", "prompt": "Urban honey yields in the survey ranged from 15 to ______ kilograms per hive per year.", "accept": ["20", "20kg", "20 kg"], "evidence": { "explanation": "Paragraph D gives the range as 15 to 20 kilograms per hive per year." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q039", "prompt": "Foraging bees from a single urban hive were found to range across an area of up to ______ square kilometres.", "accept": ["seven", "7"], "evidence": { "explanation": "Paragraph D gives this range as up to seven square kilometres." } },
+            { "kind": "completion", "id": "generated-reading-general-0002-q040", "prompt": "Roughly a ______ of global food crops depend at least partly on insect pollination.", "accept": ["third", "one third"], "evidence": { "explanation": "Paragraph C states roughly a third of global food crops depend at least partly on insect pollination." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0003-p1",
+    "title": "General Training Reading — Section 1: Allotment and Cinema Club Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSUNNYSIDE ALLOTMENT ASSOCIATION\nPlot Rental Guide\n\nThe Sunnyside Allotment Association manages 64 plots across two sites, available for rent to residents of the local district. Plots are offered in three sizes: full plots (approximately 250 square metres), half plots (125 square metres), and starter plots (60 square metres), the last of which are reserved for first-time growers.\n\nAnnual rent is £45 for a full plot, £25 for a half plot, and £12 for a starter plot, payable in full by 1 March each year. New tenants joining after 1 September pay a reduced rate of half the annual fee for their first partial year.\n\nAll plot holders must keep at least 75% of their plot cultivated at all times; plots found to be significantly overgrown after a written warning may be reallocated to someone on the waiting list. Sheds and greenhouses may be erected without prior approval provided they do not exceed 2.5 metres in height, though larger structures require written permission from the committee.\n\nWater is available free of charge from communal standpipes between April and October. Hosepipes connected directly to the mains are not permitted at any site, in order to conserve the shared water supply during busy periods.\n\nThe current waiting list stands at around eighteen months for a full plot, though starter plots typically become available more quickly, usually within three to six months.\n\nTEXT 2\n\nCITY CINEMA CLUB\nMembership and Screening Guide\n\nCity Cinema Club shows independent and classic films every Tuesday and Thursday evening at 7:30pm, with an additional Sunday afternoon matinee at 2:00pm aimed at families.\n\nAnnual membership costs £30 and includes a £2 discount on every ticket, access to members-only preview screenings, and a free ticket on your birthday month. Non-members are welcome at all regular screenings but pay the full ticket price of £8.50.\n\nTickets for Tuesday and Thursday evening screenings can be booked online up to two weeks in advance. Sunday matinee tickets are not bookable online and are sold only on the day, on a first-come, first-served basis, from one hour before the screening.\n\nGroup bookings of ten or more people receive a 15% discount on the standard ticket price, but this discount cannot be combined with individual membership discounts. Group bookings must be arranged at least five working days in advance by contacting the box office directly.\n\nThe club's small on-site café serves drinks and snacks from thirty minutes before each screening until the film begins, but food and drink other than bottled water may not be taken into the screening room itself.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0003-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q001", "statement": "Starter plots are available to any resident, regardless of gardening experience.", "answer": "FALSE", "evidence": { "explanation": "Starter plots are reserved for first-time growers." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q002", "statement": "Tenants joining after 1 September pay the full annual rent for their first year.", "answer": "FALSE", "evidence": { "explanation": "They pay a reduced rate of half the annual fee for their first partial year." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q003", "statement": "A greenhouse taller than 2.5 metres can be built without committee permission.", "answer": "FALSE", "evidence": { "explanation": "Structures larger than 2.5 metres require written permission from the committee." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q004", "statement": "Hosepipes may be connected directly to the mains supply at Sunnyside sites.", "answer": "FALSE", "evidence": { "explanation": "Mains-connected hosepipes are not permitted at any site." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q005", "statement": "Annual cinema club membership includes a free ticket during your birthday month.", "answer": "TRUE", "evidence": { "explanation": "Membership includes a free ticket on your birthday month." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q006", "statement": "Group booking discounts can be combined with individual membership discounts.", "answer": "FALSE", "evidence": { "explanation": "The group discount cannot be combined with individual membership discounts." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0003-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0003-q007", "prompt": "Water from communal standpipes is free between April and ______.", "accept": ["October"], "evidence": { "explanation": "Free water is available between April and October." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q008", "prompt": "The waiting list for a full allotment plot is around ______ months.", "accept": ["eighteen", "18"], "evidence": { "explanation": "The waiting list for a full plot is around eighteen months." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q009", "prompt": "Sunday matinee tickets go on sale ______ before the screening.", "accept": ["one hour"], "evidence": { "explanation": "Matinee tickets are sold from one hour before the screening." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q010", "prompt": "Group bookings must be arranged at least ______ in advance.", "accept": ["five working days", "5 working days"], "evidence": { "explanation": "Group bookings must be arranged at least five working days in advance." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0003-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0003-q011", "question": "What size is a half plot at Sunnyside?", "options": ["60 sq m", "125 sq m", "180 sq m", "250 sq m"], "correctIndex": 1, "evidence": { "explanation": "A half plot is 125 square metres." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0003-q012", "question": "How much is a standard non-member cinema ticket?", "options": ["£6.50", "£8.50", "£10", "£12"], "correctIndex": 1, "evidence": { "explanation": "Non-members pay the full ticket price of £8.50." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0003-q013", "question": "What discount do group bookings of ten or more receive?", "options": ["5%", "10%", "15%", "20%"], "correctIndex": 2, "evidence": { "explanation": "Group bookings of ten or more receive a 15% discount." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0003-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Home Working and Equipment Policy",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "NORTHFIELD INSURANCE\nStaff Handbook — Section 7: Home Working and Equipment Policy\n\nEmployees whose role has been approved for home working may claim a one-off equipment allowance of £200 to set up a suitable workspace, covering items such as a desk, chair, or monitor. Claims must be submitted with receipts within three months of the home-working arrangement being approved.\n\nThe company provides a laptop and headset to all home-working staff free of charge; these remain company property and must be returned within ten working days of an employee leaving the company or ceasing to work from home. A charge equal to the item's replacement cost may be applied if equipment is not returned or is returned significantly damaged.\n\nEmployees working from home are expected to maintain a reliable internet connection of at least 10 megabits per second; a monthly contribution of £15 toward home broadband costs is available on request to employees who do not already receive this as part of another allowance.\n\nHome-working staff are expected to be reachable by phone and instant messaging during their agreed working hours, in the same way as office-based staff, and should notify their manager promptly of any unplanned absence or connectivity issue lasting more than thirty minutes.\n\nHealth and safety regulations require every home workstation to be assessed using the company's online self-assessment checklist before home working begins, and again annually thereafter. Employees identified as needing further support, such as additional ergonomic equipment, will be referred to the occupational health team for a more detailed assessment.\n\nRequests to change an existing home-working arrangement, whether to increase, reduce or end the number of home-working days, should be submitted in writing to a line manager at least four weeks before the intended change, except in cases of medical necessity.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0003-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q014", "statement": "The equipment allowance can be claimed at any time after home working begins.", "answer": "FALSE", "evidence": { "explanation": "Claims must be submitted within three months of the arrangement being approved." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q015", "statement": "The company-provided laptop remains the employee's property after they leave.", "answer": "FALSE", "evidence": { "explanation": "The laptop remains company property and must be returned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q016", "statement": "All home-working employees automatically receive a broadband contribution as part of every allowance package.", "answer": "FALSE", "evidence": { "explanation": "It is available on request only to those who do not already receive it as part of another allowance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q017", "statement": "A home workstation must be reassessed every year.", "answer": "TRUE", "evidence": { "explanation": "The workstation must be assessed before home working begins, and again annually thereafter." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q018", "statement": "Changes to a home-working arrangement always require four weeks' written notice.", "answer": "FALSE", "evidence": { "explanation": "Four weeks' notice is required except in cases of medical necessity." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0003-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0003-q019", "prompt": "Equipment must be returned within ______ working days of leaving the company.", "accept": ["ten", "10"], "evidence": { "explanation": "Equipment must be returned within ten working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q020", "prompt": "Employees must maintain an internet connection of at least ______.", "accept": ["10 megabits per second", "10 Mbps"], "evidence": { "explanation": "A connection of at least 10 megabits per second is required." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q021", "prompt": "The monthly broadband contribution available is ______.", "accept": ["£15"], "evidence": { "explanation": "A monthly contribution of £15 is available." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q022", "prompt": "Managers should be notified of a connectivity issue lasting more than ______.", "accept": ["thirty minutes", "30 minutes"], "evidence": { "explanation": "Managers should be notified of an issue lasting more than thirty minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q023", "prompt": "Employees needing further support are referred to the ______ team.", "accept": ["occupational health"], "evidence": { "explanation": "Employees are referred to the occupational health team." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0003-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0003-q024", "question": "What is the value of the one-off equipment allowance?", "options": ["£100", "£150", "£200", "£250"], "correctIndex": 2, "evidence": { "explanation": "The one-off equipment allowance is £200." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0003-q025", "question": "What must be completed before home working begins?", "options": ["A manager interview", "An online self-assessment checklist", "A medical exam", "A trial period"], "correctIndex": 1, "evidence": { "explanation": "An online self-assessment checklist must be completed before home working begins." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0003-q026", "question": "What happens if company equipment is returned significantly damaged?", "options": ["Nothing", "A replacement-cost charge may apply", "The employee is dismissed", "It is repaired for free"], "correctIndex": 1, "evidence": { "explanation": "A charge equal to the replacement cost may apply for damaged equipment." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0003-p3",
+    "title": "The Comeback of the Night Train",
+    "sourceTestSet": "General Training",
+    "topic": "Travel",
+    "tags": ["general-training", "travel", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For much of the twentieth century, the night train was the default way to cross a continent at reasonable cost, carrying travellers to sleep through hundreds of kilometres of a journey and arrive, ideally rested, in a different country by morning. From the 1990s onward, though, the arrival of budget airlines undercut sleeper services on both price and speed, and one long-distance night route after another was quietly withdrawn, until barely a handful survived across Europe by the early 2010s. In the past several years, however, this decline has begun to reverse, with several countries reintroducing routes that had been discontinued for decades.\n\nB. One of the clearest examples of this revival came when a national rail operator relaunched a direct overnight service between two capital cities in 2021, a route that had last run in 2014 before being cancelled for lack of demand. Passenger numbers on the relaunched service exceeded the operator's own forecasts within the first twelve months, prompting the introduction of a second nightly departure the following year. Industry figures note that night-train ridership across the continent had peaked in the mid-1980s, before a decades-long decline that this recent revival has only partly reversed.\n\nC. Climate concerns have driven much of this renewed interest. A single short-haul flight between two cities can produce roughly six to eight times the carbon emissions of the equivalent overnight rail journey, according to widely cited transport-emissions comparisons, a gap that has become increasingly difficult for environmentally conscious travellers, and in some cases government policy, to ignore. Several governments have introduced measures discouraging short domestic flights where a reasonable rail alternative exists, indirectly boosting demand for overnight services covering similar distances.\n\nD. This shift in demand has been matched, cautiously, by investment. National governments and rail operators have jointly committed to funding new sleeper carriages, since much of the existing rolling stock still in service dates from the 1980s and is approaching the end of its practical working life. One order placed in 2022 for over thirty new sleeper carriages was described by the operator as the largest single investment in night-train rolling stock in the region for more than thirty years, with deliveries expected to continue through the mid-2020s.\n\nE. The revival has not been without obstacles. Cross-border sleeper routes often require coordination between several national rail infrastructure managers, each with its own signalling systems and ticketing platforms, making a single seamless booking across multiple countries considerably harder to arrange than booking a domestic journey or, for that matter, a flight. Track capacity is a further constraint: night trains often compete for the same overnight freight and maintenance slots as cargo services, limiting how many additional sleeper paths can realistically be added to an already busy network without further infrastructure investment.\n\nF. Looking ahead, rail alliances involving multiple national operators have announced plans to introduce several new overnight routes by the end of the decade, alongside a stated ambition to double overall night-train passenger numbers across the continent within the same period. Whether this target is met will likely depend as much on continued political and financial support for cross-border rail coordination as on passenger demand itself, which industry surveys currently suggest remains strong.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0003-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Investment renews an ageing fleet" },
+            { "key": "ii", "label": "A relaunch outperforms expectations" },
+            { "key": "iii", "label": "A long decline gives way to renewed demand" },
+            { "key": "iv", "label": "The environmental case for overnight travel" },
+            { "key": "v", "label": "Coordination problems slow down expansion" },
+            { "key": "vi", "label": "Ambitious targets for the years ahead" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0003-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "iii", "evidence": { "explanation": "Paragraph A describes the long decline of night trains and its recent reversal." } },
+            { "kind": "matching", "id": "generated-reading-general-0003-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes a relaunched service that exceeded forecasts." } },
+            { "kind": "matching", "id": "generated-reading-general-0003-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iv", "evidence": { "explanation": "Paragraph C sets out the emissions case for overnight rail travel." } },
+            { "kind": "matching", "id": "generated-reading-general-0003-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes coordination and capacity obstacles to expansion." } },
+            { "kind": "matching", "id": "generated-reading-general-0003-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F sets out ambitious targets for the coming decade." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0003-p3-g2",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q032", "statement": "By the early 2010s, only a small number of night-train routes still operated across Europe.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says barely a handful of routes survived by the early 2010s." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q033", "statement": "The relaunched overnight service between the two capitals immediately failed to meet expectations.", "answer": "FALSE", "evidence": { "explanation": "Passenger numbers exceeded the operator's own forecasts within the first twelve months." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q034", "statement": "Night-train ridership across the continent is now higher than it was at its mid-1980s peak.", "answer": "FALSE", "evidence": { "explanation": "The recent revival has only partly reversed the decades-long decline since the mid-1980s peak." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q035", "statement": "All of the existing sleeper rolling stock was built after 2000.", "answer": "FALSE", "evidence": { "explanation": "Much of the existing rolling stock still in service dates from the 1980s." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0003-q036", "statement": "Every country along a cross-border sleeper route uses an identical signalling system.", "answer": "FALSE", "evidence": { "explanation": "Each national infrastructure manager has its own signalling systems." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0003-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0003-q037", "prompt": "A short-haul flight can produce roughly ______ times the emissions of an equivalent night-train journey.", "accept": ["six to eight", "6 to 8"], "evidence": { "explanation": "Paragraph C gives this figure as six to eight times." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q038", "prompt": "The 2022 order was for over ______ new sleeper carriages.", "accept": ["thirty", "30"], "evidence": { "explanation": "Paragraph D gives the figure as over thirty new sleeper carriages." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q039", "prompt": "Night trains often compete with ______ services for overnight track capacity.", "accept": ["freight", "freight and maintenance"], "evidence": { "explanation": "Paragraph E says night trains compete for the same freight and maintenance slots." } },
+            { "kind": "completion", "id": "generated-reading-general-0003-q040", "prompt": "Rail alliances aim to ______ night-train passenger numbers by the end of the decade.", "accept": ["double"], "evidence": { "explanation": "Paragraph F states the ambition to double passenger numbers." } }
+          ]
+        }
+      ]
+    }
   }
 ];
