@@ -4937,5 +4937,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0009-p1",
+    "title": "Bioluminescence: Nature's Living Light",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Light produced by living organisms, known as bioluminescence, is far more widespread in nature than most people realise. While the flashing of fireflies on a summer evening is the most familiar example to most, the phenomenon is overwhelmingly a marine one: researchers estimate that as many as 76% of species living in the open ocean below 200 metres are capable of producing their own light in some form, from single-celled plankton to fish, squid and jellyfish. On land, by contrast, bioluminescent organisms remain comparatively rare, limited mainly to certain insects, fungi and a handful of soil-dwelling worms.\n\nB. Scientific curiosity about the phenomenon dates back centuries, but a genuine understanding of its chemical basis did not emerge until the twentieth century. French physiologist Raphaël Dubois first proposed, in the 1880s, that light-producing organisms relied on two distinct substances, which he named luciferin and luciferase, though it took several further decades before the precise chemical reaction between them was isolated in the laboratory. It was not until 1961 that Japanese biochemist Osamu Shimomura, working with vast numbers of jellyfish collected from the waters off Washington state, succeeded in isolating a light-emitting protein that would later prove far more significant to science than its original discovery suggested.\n\nC. In most bioluminescent organisms, light is produced when the molecule luciferin reacts with oxygen in the presence of the enzyme luciferase, releasing energy in the form of photons rather than heat, a process markedly more efficient than the light bulb humans rely on. The colour of the light produced, which ranges from blue-green in most deep-sea species to yellow in fireflies and even red in a small number of specialised fish, depends on subtle differences in the structure of the luciferin molecule involved, as well as the exact chemical environment surrounding the reaction. Blue-green wavelengths dominate in the deep ocean because they travel further through seawater than other colours, making them the most effective for organisms that depend on light for survival in that environment.\n\nD. The functions this light serves are strikingly varied. Some species, most famously the deep-sea anglerfish, use a glowing lure to draw unsuspecting prey within striking distance of their jaws. Others use light defensively: certain species of squid can adjust the intensity of light emitted from their undersides to match the faint glow of sunlight filtering down from the surface, a technique known as counter-illumination that renders their silhouette effectively invisible to predators lurking below. Fireflies, meanwhile, use their rhythmic flashing primarily for communication, with each species relying on a distinct flash pattern to help individuals identify and attract a suitable mate of the same species in the dark.\n\nE. Beyond its role in the natural world, bioluminescence has proved unexpectedly valuable to human science. The light-emitting protein Shimomura isolated from jellyfish in 1961, later named green fluorescent protein, or GFP, can be attached to other proteins inside living cells, causing them to glow and allowing researchers to track processes inside a living organism that would otherwise be invisible under a microscope. The discovery's significance was formally recognised in 2008, when Shimomura shared the Nobel Prize in Chemistry for the work, decades after the protein was first extracted. GFP and related proteins are now standard tools in laboratories worldwide, used to study everything from cancer cell growth to the development of nerve cells in the brain.\n\nF. Current research is pushing the applications of bioluminescence further still. Synthetic biology researchers have engineered bacteria and, more recently, plants to express luciferase genes, producing organisms capable of glowing faintly without any external light source, an area of research with potential applications ranging from low-energy lighting to environmental sensors that glow in the presence of pollutants. Significant obstacles remain, however, particularly around achieving a light output bright enough to be practically useful, and researchers caution that commercially viable glowing plants, despite considerable recent investment, likely remain some years away from widespread use.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0009-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A phenomenon more common in the ocean than on land" },
+            { "key": "ii", "label": "Early theories and a discovery decades ahead of its true significance" },
+            { "key": "iii", "label": "The chemistry behind the glow" },
+            { "key": "iv", "label": "Multiple survival strategies built around light" },
+            { "key": "v", "label": "Turning a natural glow into a scientific tool" },
+            { "key": "vi", "label": "New engineering efforts and their current limits" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0009-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains that bioluminescence is far more common in the ocean than on land." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B covers Dubois's early theory and Shimomura's 1961 discovery." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C explains the chemical reaction that produces the light." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes predation, defence and communication uses of light." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F discusses synthetic biology research and its current limits." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0009-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q006", "statement": "Bioluminescent organisms are more common on land than in the ocean.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A states bioluminescence is overwhelmingly a marine phenomenon, rare on land." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q007", "statement": "Osamu Shimomura isolated a light-emitting protein from jellyfish collected off Washington state.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states Shimomura worked with jellyfish collected from waters off Washington state." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q008", "statement": "Blue-green light dominates in the deep ocean because it is the easiest colour for luciferase to produce.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says blue-green dominates because it travels further through seawater, not because it is easier to produce." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q009", "statement": "Shimomura received the Nobel Prize in the same year he isolated green fluorescent protein.", "answer": "FALSE", "evidence": { "explanation": "He isolated the protein in 1961 but received the Nobel Prize decades later, in 2008." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0009-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0009-q010", "prompt": "Researchers estimate that up to ______ of species below 200 metres can produce their own light.", "accept": ["76%"], "evidence": { "explanation": "Paragraph A gives the figure of 76% of deep-ocean species." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q011", "prompt": "Raphaël Dubois proposed that light production relied on ______ and luciferase.", "accept": ["luciferin"], "evidence": { "explanation": "Paragraph B names luciferin and luciferase as the two substances Dubois proposed." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q012", "prompt": "Squid use a technique called ______ to make their silhouette invisible to predators below.", "accept": ["counter-illumination"], "evidence": { "explanation": "Paragraph D names counter-illumination as this defensive technique." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q013", "prompt": "Shimomura shared the Nobel Prize in Chemistry in ______.", "accept": ["2008"], "evidence": { "explanation": "Paragraph E gives the year as 2008." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0009-p2",
+    "title": "The Caravanserai: Lifeline of the Silk Road",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Long before railways or ports linked distant regions, a network of fortified roadside inns known as caravanserais made overland trade across Asia and into the Mediterranean world logistically possible. Spaced along the trade routes collectively known as the Silk Road, these structures offered merchants, their pack animals, and their goods a secure place to rest overnight, sheltered from bandits, extreme weather, and the general hazards of travelling for months at a time across open, often sparsely populated terrain.\n\nB. Although smaller roadside shelters had existed for centuries beforehand, the systematic construction of large, standardised caravanserais is most closely associated with the Seljuk Empire, which built an extensive network of them across Anatolia during the twelfth and thirteenth centuries. Seljuk rulers typically spaced their caravanserais at intervals of roughly 30 to 40 kilometres, corresponding to a single day's travel for a loaded camel caravan, ensuring that merchants were rarely more than a day's journey from secure shelter regardless of where along the route they found themselves.\n\nC. Architecturally, a typical caravanserai was built around a large open central courtyard, surrounded by thick stone or mud-brick outer walls with a single, heavily fortified entrance gate large enough to admit a loaded camel. Ground-floor chambers around the courtyard's perimeter served as stables and storage for goods, while upper-floor rooms, where they existed, provided sleeping quarters for merchants themselves. The thick outer walls served a dual purpose beyond security, helping regulate the interior temperature against the extreme heat of the day and cold of the desert night. Larger caravanserais often incorporated a small mosque, a well, and even modest shops selling food and basic supplies.\n\nD. Far from being simple shelters, caravanserais functioned as genuine hubs of economic and cultural exchange. Merchants travelling in different directions would meet, trade goods directly, exchange news from distant regions, and in some cases arrange informal moneylending arrangements to finance the remainder of a journey. Many rulers actively encouraged this trade by exempting merchants from local taxes while they stayed at a caravanserai, or by funding the construction of new caravanserais outright as a way of attracting trade routes, and the commercial revenue that came with them, through their territory rather than a rival's.\n\nE. From the sixteenth century onward, the strategic importance of the overland caravanserai network began a slow but steady decline, driven primarily by the rise of maritime trade routes around Africa and through the Indian Ocean, which allowed merchants to move goods between Europe and Asia in bulk far more cheaply than an overland camel caravan ever could. Political fragmentation across the regions the old trade routes once passed through further disrupted the coordinated maintenance these structures required, and by the eighteenth century many caravanserais had been abandoned outright, left to the elements once the trade that had sustained them dried up.\n\nF. In recent decades, however, interest in these structures has revived considerably. Several countries along the old Silk Road routes have undertaken substantial restoration projects, and UNESCO has formally recognised a number of surviving caravanserais as World Heritage sites, citing their historical importance to global trade and cultural exchange. A handful of restored caravanserais have found new life as boutique hotels or cultural centres catering to tourists retracing the old trade routes, while archaeologists continue excavating others, uncovering fresh evidence of the daily life once lived within their courtyard walls.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0009-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A network built for the rhythm of camel travel" },
+            { "key": "ii", "label": "More than shelter: hubs of trade and exchange" },
+            { "key": "iii", "label": "Design built for security and climate" },
+            { "key": "iv", "label": "Trade routes shift, and the network fades" },
+            { "key": "v", "label": "A vital form of shelter along a vast trade network" },
+            { "key": "vi", "label": "Restoration and a renewed appreciation" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0009-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "v", "evidence": { "explanation": "Paragraph A introduces caravanserais as vital shelter along the Silk Road." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "i", "evidence": { "explanation": "Paragraph B describes Seljuk caravanserais spaced to match a day's camel travel." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the security- and climate-driven design of caravanserais." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes the decline of overland trade as maritime routes rose." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes modern restoration and heritage recognition." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0009-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q019", "statement": "The Seljuk Empire was the first civilisation to build any roadside shelters for travellers.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says smaller roadside shelters had existed for centuries beforehand." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q020", "statement": "Seljuk caravanserais were typically spaced to match a day's camel travel.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states the spacing corresponded to a single day's travel for a loaded camel caravan." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q021", "statement": "Upper-floor rooms, where they existed, were used mainly for storing goods.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says ground-floor chambers stored goods, while upper floors were sleeping quarters." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q022", "statement": "Maritime trade routes made moving goods between Europe and Asia cheaper than overland caravans.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states maritime routes allowed bulk goods movement far more cheaply than overland caravans." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0009-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0009-q023", "prompt": "Seljuk caravanserais were spaced roughly ______ apart, matching a day's camel travel.", "accept": ["30 to 40 kilometres", "30-40 km"], "evidence": { "explanation": "Paragraph B gives this spacing as roughly 30 to 40 kilometres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q024", "prompt": "Merchants staying at a caravanserai were sometimes exempted from local ______.", "accept": ["taxes"], "evidence": { "explanation": "Paragraph D says rulers sometimes exempted merchants from local taxes." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q025", "prompt": "By the ______ century, many caravanserais had been abandoned outright.", "accept": ["eighteenth", "18th"], "evidence": { "explanation": "Paragraph E gives the eighteenth century as when many were abandoned." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q026", "prompt": "UNESCO has recognised several surviving caravanserais as ______ sites.", "accept": ["World Heritage"], "evidence": { "explanation": "Paragraph F says UNESCO recognised them as World Heritage sites." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0009-p3",
+    "title": "Machine Translation: Teaching Computers to Read Between Languages",
+    "sourceTestSet": "Academic",
+    "topic": "Technology",
+    "tags": ["academic", "technology", "society", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Billions of individual translations are now generated every day by free, publicly available software, quietly bridging language barriers for ordinary users who might never have considered hiring a professional translator for the task. What is often taken for granted today, however, represents the culmination of more than seventy years of research into one of computing's most persistently difficult problems: teaching a machine not merely to swap words between languages, but to preserve meaning, tone, and grammatical structure in the process.\n\nB. The first serious attempt at machine translation is generally dated to a 1954 collaboration between Georgetown University and IBM, which publicly demonstrated a system capable of automatically translating a small set of Russian sentences into English, generating considerable optimism, and funding, on the assumption that fully automatic translation was only a few years away. This optimism was fuelled partly by Cold War-era interest in automatically processing large volumes of Russian scientific and military text. The rule-based approach these early systems relied on, however, encoded translation as a fixed set of grammatical rules and bilingual dictionaries, an approach that proved hopelessly inadequate for handling the ambiguity, idiom, and context-dependent meaning present in ordinary language, and progress stalled badly through the 1960s and 1970s.\n\nC. A genuine shift in approach did not arrive until the 1990s, when researchers began developing statistical machine translation systems that learned translation patterns automatically from vast quantities of existing bilingual text, rather than being explicitly programmed with grammatical rules by human linguists. The proceedings of multinational institutions such as the European Parliament, which are painstakingly translated into multiple official languages by human translators as a matter of policy, proved an unusually valuable source of training data for these early statistical systems, offering millions of sentence pairs already aligned between languages. While a considerable improvement over rule-based systems, statistical machine translation still tended to produce output that, while broadly comprehensible, often read as stilted or grammatically awkward, particularly for language pairs with very different underlying sentence structures.\n\nD. The next major leap came with the application of deep neural networks to the translation problem, an approach known as neural machine translation, which began outperforming statistical systems in research settings around 2014 and was adopted at scale by major technology companies within a few years. The introduction of the transformer architecture in 2017, initially developed for other natural-language tasks, further accelerated progress by allowing models to weigh the relevance of every word in a sentence against every other word simultaneously, rather than processing text strictly in sequence as earlier neural approaches had. One major technology company reported in 2016 that switching its translation service to a neural architecture reduced translation errors by more than 55% compared with its previous statistical system, a leap in quality that surprised even researchers working in the field.\n\nE. Substantial challenges remain, however. Languages with comparatively little existing digital text available for training, sometimes termed low-resource languages, continue to produce noticeably weaker translation quality than well-resourced languages such as English, French or Mandarin, since neural systems depend heavily on the sheer volume of example text available to learn from. Idiomatic expressions, culturally specific references, and the subtler stylistic choices found in literary or legal writing also continue to challenge even the most advanced current systems, which is why professional human translators remain essential for high-stakes documents such as international contracts, medical records, and literary works, where a subtle mistranslation could carry serious legal, medical, or artistic consequences.\n\nF. Looking ahead, research is increasingly focused on real-time spoken translation, aiming to reduce the delay between a speaker finishing a sentence and a translated version becoming available to listeners, an especially demanding technical challenge given how differently speech and written text are structured. Some researchers are also exploring systems that can be personalised to an individual user's vocabulary, tone, or professional field. The technology's rapid progress has not been without controversy, however: professional translators' associations in several countries have raised concerns about declining demand for certain categories of translation work, while other critics have pointed to evidence that translation systems can inherit and even amplify biases, such as assumptions about gender roles, present in the text used to train them.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0009-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An early breakthrough followed by decades of little progress" },
+            { "key": "ii", "label": "A statistical approach trained on real translated text" },
+            { "key": "iii", "label": "A technology now used without a second thought" },
+            { "key": "iv", "label": "A new architecture produces a dramatic leap in quality" },
+            { "key": "v", "label": "Limits that remain even for advanced systems" },
+            { "key": "vi", "label": "New directions, and new concerns, for the technology ahead" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0009-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "iii", "evidence": { "explanation": "Paragraph A describes machine translation as a technology now used without a second thought." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "i", "evidence": { "explanation": "Paragraph B describes the 1954 breakthrough followed by decades of stalled progress." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the transformer architecture's dramatic quality leap." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes limits that remain even for advanced systems." } },
+            { "kind": "matching", "id": "generated-reading-academic-0009-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes new research directions and controversies ahead." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0009-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q032", "statement": "The 1954 Georgetown-IBM demonstration translated a large volume of everyday Russian text.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it translated only a small set of Russian sentences." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q033", "statement": "Rule-based machine translation systems struggled with ambiguity and idiom.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says the rule-based approach was hopelessly inadequate for ambiguity and idiom." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q034", "statement": "European Parliament proceedings were useful training data because they are translated into multiple languages by human translators.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C says this made the proceedings a valuable source of aligned bilingual training data." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q035", "statement": "Neural machine translation began outperforming statistical systems only after the transformer architecture was introduced in 2017.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says neural systems began outperforming statistical ones around 2014, before the 2017 transformer architecture." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0009-q036", "statement": "Low-resource languages currently produce translation quality comparable to well-resourced languages like English.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says low-resource languages continue to produce noticeably weaker translation quality." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0009-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0009-q037", "prompt": "One major technology company reported a neural system reduced translation errors by more than ______ in 2016.", "accept": ["55%"], "evidence": { "explanation": "Paragraph D gives this figure as more than 55%." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q038", "prompt": "The transformer architecture allows models to weigh every word against every other word ______.", "accept": ["simultaneously"], "evidence": { "explanation": "Paragraph D says the architecture weighs every word against every other word simultaneously." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q039", "prompt": "Professional translators remain essential for high-stakes documents such as international ______.", "accept": ["contracts"], "evidence": { "explanation": "Paragraph E names international contracts as one such high-stakes document." } },
+            { "kind": "completion", "id": "generated-reading-academic-0009-q040", "prompt": "Critics have pointed to evidence that translation systems can inherit and amplify ______ present in training text.", "accept": ["biases"], "evidence": { "explanation": "Paragraph F says systems can inherit and amplify biases present in training text." } }
+          ]
+        }
+      ]
+    }
   }
 ];
