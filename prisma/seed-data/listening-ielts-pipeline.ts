@@ -4136,5 +4136,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0010-s1",
+    "title": "Hotel Booking Enquiry – Listening Section 1",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "form-completion"],
+    "data": {
+      "audioLabel": "Hotel Booking Enquiry – Listening Section 1",
+      "transcript": "Agent: Good afternoon, Lakeside Hotel, how can I help?\nCaller: Hi, I'd like to check availability for a room next month.\nAgent: Sure, what dates are you thinking of?\nCaller: From the 22nd to the 26th.\nAgent: That's four nights. What type of room would you like?\nCaller: A double room, please, with a view if possible.\nAgent: We have a double room with a lake view available at £95 per night.\nCaller: That sounds good. Is breakfast included?\nAgent: Breakfast is included for stays of three nights or more, so yours would qualify.\nCaller: Great. Is there a cancellation fee if my plans change?\nAgent: Cancellations made more than 48 hours before arrival are free; after that, we charge one night's rate.\nCaller: Understood. Do you have parking available?\nAgent: Yes, on-site parking is available for £8 per day.\nCaller: And what time is check-in?\nAgent: Check-in is from 3pm, and check-out is by 11am.\nCaller: Is the hotel pet-friendly?\nAgent: We do allow small pets, but there's a one-off cleaning fee of £25 per stay.\nCaller: Okay, I'll bring my dog then. Could I get a confirmation number now?\nAgent: Of course, your booking reference is LH2298.\nCaller: Perfect, thank you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0010-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0010-q001", "prompt": "Booking dates: from the 22nd to the ______.", "accept": ["26th", "26"], "evidence": { "explanation": "The caller says from the 22nd to the 26th." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q002", "prompt": "Number of nights: ______.", "accept": ["four", "4"], "evidence": { "explanation": "The agent confirms that's four nights." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q003", "prompt": "Room type requested: a ______ room.", "accept": ["double"], "evidence": { "explanation": "The caller asks for a double room." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q004", "prompt": "Price per night: £______.", "accept": ["95"], "evidence": { "explanation": "The agent gives the price as £95 per night." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q005", "prompt": "Breakfast is included for stays of ______ nights or more.", "accept": ["three", "3"], "evidence": { "explanation": "The agent says breakfast is included for stays of three nights or more." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q006", "prompt": "Free cancellation applies more than ______ before arrival.", "accept": ["48 hours"], "evidence": { "explanation": "The agent states cancellations more than 48 hours before arrival are free." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q007", "prompt": "Parking costs £______ per day.", "accept": ["8"], "evidence": { "explanation": "The agent gives the parking cost as £8 per day." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q008", "prompt": "Check-in time: from ______.", "accept": ["3pm"], "evidence": { "explanation": "The agent states check-in is from 3pm." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q009", "prompt": "Pet cleaning fee: £______ per stay.", "accept": ["25"], "evidence": { "explanation": "The agent gives the pet cleaning fee as £25 per stay." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q010", "prompt": "Booking reference number: ______.", "accept": ["LH2298"], "evidence": { "explanation": "The agent gives the booking reference as LH2298." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0010-s2",
+    "title": "Community Garden Volunteer Orientation – Listening Section 2",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Community Garden Volunteer Orientation – Listening Section 2",
+      "transcript": "Welcome everyone to your first day volunteering at Elmwood Community Garden. Let me run through a few things before we get started.\n\nThe garden was established in 2016 on a plot of previously unused council land, and today it covers just over half a hectare, with forty individual growing plots tended by local residents.\n\nWe ask all volunteers to wear closed-toe shoes at all times, for safety around tools and uneven ground. Gloves are provided at the shed, but you're welcome to bring your own if you prefer.\n\nVolunteer sessions run every Tuesday and Saturday morning, from 9am until midday. If you can only make it for part of that time, that's absolutely fine — just let the session coordinator know when you arrive and when you'll need to leave.\n\nWe grow a wide variety of produce here, but the most common crop by far is tomatoes, which take up nearly a quarter of our growing space. Excess produce is donated to the local food bank, which currently receives around 200 kilograms of vegetables from us each year.\n\nTools are stored in the green shed near the entrance, and must be cleaned and returned there after each session — please don't leave anything out overnight, as it can rust in wet weather.\n\nWater for the garden comes from a rainwater collection system, though during dry spells we do sometimes need to supplement it from the mains supply.\n\nNow, a couple of quick check questions. What is the total area of the garden? A) A quarter hectare  B) Just over half a hectare  C) One hectare  D) Two hectares. The answer is B.\n\nWhat is the most commonly grown crop? A) Carrots  B) Potatoes  C) Tomatoes  D) Lettuce. The answer is C.\n\nHow much produce is donated to the food bank each year? A) 100 kilograms  B) 150 kilograms  C) 200 kilograms  D) 300 kilograms. The answer is C.\n\nWhere should tools be stored after use? A) In volunteers' own bags  B) In the green shed near the entrance  C) In the food bank  D) Left in the garden overnight. The answer is B.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0010-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0010-q011", "prompt": "The garden was established in ______.", "accept": ["2016"], "evidence": { "explanation": "The speaker says the garden was established in 2016." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q012", "prompt": "The garden covers just over ______ hectare.", "accept": ["half a", "half"], "evidence": { "explanation": "The speaker says the garden covers just over half a hectare." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q013", "prompt": "The garden has ______ individual growing plots.", "accept": ["forty", "40"], "evidence": { "explanation": "The speaker says the garden has forty individual growing plots." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q014", "prompt": "Volunteers must wear ______ shoes at all times.", "accept": ["closed-toe"], "evidence": { "explanation": "The speaker says volunteers must wear closed-toe shoes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q015", "prompt": "Volunteer sessions run every Tuesday and ______ morning.", "accept": ["Saturday"], "evidence": { "explanation": "The speaker says sessions run every Tuesday and Saturday morning." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q016", "prompt": "Water mainly comes from a ______ collection system.", "accept": ["rainwater"], "evidence": { "explanation": "The speaker says water comes from a rainwater collection system." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0010-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q017", "question": "What is the total area of the garden?", "options": ["A quarter hectare", "Just over half a hectare", "One hectare", "Two hectares"], "correctIndex": 1, "evidence": { "explanation": "The speaker confirms the answer is just over half a hectare." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q018", "question": "What is the most commonly grown crop?", "options": ["Carrots", "Potatoes", "Tomatoes", "Lettuce"], "correctIndex": 2, "evidence": { "explanation": "The speaker confirms tomatoes are the most common crop." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q019", "question": "How much produce is donated to the food bank each year?", "options": ["100 kilograms", "150 kilograms", "200 kilograms", "300 kilograms"], "correctIndex": 2, "evidence": { "explanation": "The speaker confirms 200 kilograms are donated each year." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q020", "question": "Where should tools be stored after use?", "options": ["In volunteers' own bags", "In the green shed near the entrance", "In the food bank", "Left in the garden overnight"], "correctIndex": 1, "evidence": { "explanation": "The speaker confirms tools go in the green shed near the entrance." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0010-s3",
+    "title": "Choosing a Study Abroad Programme – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Choosing a Study Abroad Programme – Listening Section 3",
+      "transcript": "Advisor: Hi Maria, come in. So you're considering studying abroad next year – tell me what you're thinking.\nMaria: Yes, I'm interested in a semester abroad, but I'm not sure which country to choose.\nAdvisor: Okay, what's most important to you – cost, language, or academic reputation?\nMaria: Probably language. I really want to improve my French.\nAdvisor: In that case, our partner university in Lyon would be a strong option. It offers a wide range of courses taught partly in English, partly in French.\nMaria: That sounds ideal. How much does tuition cost there?\nAdvisor: Tuition is waived under the exchange agreement, but you'd need to budget around €600 per month for living costs.\nAdvisor: Housing is usually arranged through the university's student residence, though some students choose to rent privately instead.\nMaria: I think I'd prefer the student residence, it sounds more convenient.\nAdvisor: Good choice for a first time abroad. Now, when would you need to apply by?\nMaria: I was told the deadline is sometime in spring.\nAdvisor: Yes, applications close on the 15th of March for the following autumn semester.\nMaria: Got it. And do I need a specific language qualification to apply?\nAdvisor: You'll need to demonstrate at least an intermediate level of French, which for most students means completing our B1 language course beforehand.\nMaria: I've actually already finished that course last semester.\nAdvisor: Perfect, then you're already eligible. One last thing – will you need a visa?\nMaria: I'm not sure, actually.\nAdvisor: Since the programme is longer than 90 days, yes, you'll need a student visa, so I'd recommend starting that process as soon as your place is confirmed.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0010-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q021", "question": "What is Maria's main priority in choosing a country?", "options": ["Cost", "Language", "Academic reputation", "Distance from home"], "correctIndex": 1, "evidence": { "explanation": "Maria says she really wants to improve her French." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q022", "question": "Which city does the advisor recommend?", "options": ["Paris", "Lyon", "Nice", "Marseille"], "correctIndex": 1, "evidence": { "explanation": "The advisor recommends the partner university in Lyon." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q023", "question": "How is tuition handled under the exchange agreement?", "options": ["Full tuition is charged", "Tuition is waived", "Tuition is discounted by half", "Tuition depends on grades"], "correctIndex": 1, "evidence": { "explanation": "The advisor says tuition is waived under the exchange agreement." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q024", "question": "What accommodation option does Maria prefer?", "options": ["Private rental", "Homestay", "Student residence", "Hotel"], "correctIndex": 2, "evidence": { "explanation": "Maria says she'd prefer the student residence." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q025", "question": "When is the application deadline?", "options": ["15 January", "15 February", "15 March", "15 April"], "correctIndex": 2, "evidence": { "explanation": "The advisor says applications close on the 15th of March." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0010-q026", "question": "What language qualification has Maria already completed?", "options": ["A1 course", "A2 course", "B1 course", "B2 course"], "correctIndex": 2, "evidence": { "explanation": "Maria says she's already finished the B1 language course." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0010-s3-g2",
+          "instructions": "At what stage does each of the following happen? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Before applying" },
+            { "key": "B", "label": "At the time of application" },
+            { "key": "C", "label": "After acceptance" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0010-q027", "prompt": "Completing the B1 French language course", "answer": "A", "evidence": { "explanation": "Maria says she completed the B1 course last semester, before applying." } },
+            { "kind": "matching", "id": "generated-listening-academic-0010-q028", "prompt": "Submitting the application by 15 March", "answer": "B", "evidence": { "explanation": "The advisor says applications close on 15 March, i.e. the application stage itself." } },
+            { "kind": "matching", "id": "generated-listening-academic-0010-q029", "prompt": "Confirming housing at the student residence", "answer": "C", "evidence": { "explanation": "Housing arrangement is discussed as a next step once a place is secured." } },
+            { "kind": "matching", "id": "generated-listening-academic-0010-q030", "prompt": "Applying for a student visa", "answer": "C", "evidence": { "explanation": "The advisor says to start the visa process as soon as the place is confirmed." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0010-s4",
+    "title": "The History of Vaccination – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Vaccination – Listening Section 4",
+      "transcript": "Today's lecture traces the development of vaccination, from its earliest origins to the modern era.\n\nThe earliest documented form of immunisation, known as variolation, involved deliberately exposing a healthy person to material from a smallpox sore, and was practised in China as early as the 10th century, long before the concept of vaccination as we know it today.\n\nThe term \"vaccine\" itself derives from the Latin word for cow, vacca, after the English physician Edward Jenner observed in 1796 that milkmaids who had previously caught the relatively mild cowpox virus seemed to be protected against the far deadlier smallpox. Jenner tested this by inoculating a young boy, James Phipps, with material from a cowpox sore, and later exposing him to smallpox without the boy developing the disease.\n\nNearly a century later, French scientist Louis Pasteur extended the principle to other diseases, developing a vaccine for rabies in 1885, and it was Pasteur who popularised the term \"vaccine\" more broadly, in tribute to Jenner's earlier work.\n\nThe 20th century saw rapid expansion of vaccine development, including the introduction of a polio vaccine in 1955, developed by Jonas Salk, which dramatically reduced global polio cases within just a few decades of its rollout.\n\nA major public health milestone came in 1980, when the World Health Organization formally declared smallpox eradicated worldwide, following an extensive global vaccination campaign – the first, and to date only, human disease to be eradicated in this way.\n\nMore recently, the development of mRNA vaccine technology, first widely deployed during the COVID-19 pandemic beginning in 2020, represented a significant technical shift, allowing vaccines to be designed and manufactured considerably faster than traditional methods, once the underlying platform had been established.\n\nToday, global vaccination programmes are estimated to prevent between 3.5 and 5 million deaths every year, primarily among children in low and middle income countries, making vaccination one of the most cost-effective public health interventions available.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0010-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0010-q031", "prompt": "The earliest documented form of immunisation was known as ______.", "accept": ["variolation"], "evidence": { "explanation": "The lecturer names variolation as the earliest documented form." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q032", "prompt": "Variolation was practised in China as early as the ______ century.", "accept": ["10th"], "evidence": { "explanation": "The lecturer gives the 10th century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q033", "prompt": "The word 'vaccine' derives from the Latin word for ______.", "accept": ["cow"], "evidence": { "explanation": "The lecturer says vaccine derives from the Latin word for cow." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q034", "prompt": "Edward Jenner made his key observation in ______.", "accept": ["1796"], "evidence": { "explanation": "The lecturer gives the year 1796." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q035", "prompt": "Jenner tested his theory on a young boy named ______.", "accept": ["James Phipps"], "evidence": { "explanation": "The lecturer names James Phipps." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q036", "prompt": "Louis Pasteur developed a vaccine for ______ in 1885.", "accept": ["rabies"], "evidence": { "explanation": "The lecturer says Pasteur developed a rabies vaccine in 1885." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q037", "prompt": "The polio vaccine was developed by ______ in 1955.", "accept": ["Jonas Salk"], "evidence": { "explanation": "The lecturer names Jonas Salk." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q038", "prompt": "The WHO declared smallpox eradicated worldwide in ______.", "accept": ["1980"], "evidence": { "explanation": "The lecturer gives the year 1980." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q039", "prompt": "mRNA vaccine technology was first widely deployed during the ______ pandemic.", "accept": ["COVID-19"], "evidence": { "explanation": "The lecturer names the COVID-19 pandemic." } },
+            { "kind": "completion", "id": "generated-listening-academic-0010-q040", "prompt": "Vaccination programmes are estimated to prevent between 3.5 and ______ million deaths every year.", "accept": ["5"], "evidence": { "explanation": "The lecturer gives the range 3.5 to 5 million deaths." } }
+          ]
+        }
+      ]
+    }
   }
 ];
