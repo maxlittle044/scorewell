@@ -1519,5 +1519,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0201",
+    "title": "Part 1: Weather",
+    "part": "part1",
+    "topic": "Weather",
+    "tags": ["speaking", "part-1", "weather"],
+    "data": {
+      "questions": [
+        "What's your favourite kind of weather?",
+        "Does the weather affect your mood?",
+        "What's the weather usually like in your country?",
+        "Do you check weather forecasts often?",
+        "Has the weather in your area changed compared to when you were young?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0202",
+    "title": "Part 1: Pets and animals",
+    "part": "part1",
+    "topic": "Pets and animals",
+    "tags": ["speaking", "part-1", "pets-and-animals"],
+    "data": {
+      "questions": [
+        "Do you have any pets?",
+        "Did you have any pets when you were a child?",
+        "Are pets popular in your country?",
+        "Do you think keeping wild animals as pets is a good idea?",
+        "What kind of animal would you like to have as a pet if you could have any?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0203",
+    "title": "Part 1: Neighbours and neighbourhoods",
+    "part": "part1",
+    "topic": "Neighbours and neighbourhoods",
+    "tags": ["speaking", "part-1", "neighbours"],
+    "data": {
+      "questions": [
+        "Do you know your neighbours well?",
+        "What makes a good neighbour?",
+        "Is your neighbourhood quiet or noisy?",
+        "Have you ever helped a neighbour, or been helped by one?",
+        "Would you prefer a neighbourhood with a strong sense of community, or one where people keep to themselves?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0204",
+    "title": "Part 1: Photography",
+    "part": "part1",
+    "topic": "Photography",
+    "tags": ["speaking", "part-1", "photography"],
+    "data": {
+      "questions": [
+        "Do you like taking photographs?",
+        "What kind of things do you usually take photos of?",
+        "Did you ever have a hobby of photography, or know someone who did?",
+        "How has taking photos changed since smartphones became common?",
+        "Do you prefer looking at printed photos or digital ones?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0205",
+    "title": "Part 1: Learning languages",
+    "part": "part1",
+    "topic": "Learning languages",
+    "tags": ["speaking", "part-1", "learning-languages"],
+    "data": {
+      "questions": [
+        "Have you ever tried to learn a foreign language?",
+        "Do you think it's important to learn other languages?",
+        "What is the most difficult part of learning a new language for you?",
+        "Do you use any apps or resources to help you learn a language?",
+        "Would you like to learn another language in the future?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0201",
+    "title": "Part 2: Describe a time when the weather affected your plans",
+    "part": "part2",
+    "topic": "Weather",
+    "tags": ["speaking", "part-2", "weather"],
+    "data": {
+      "questions": ["Describe a time when the weather affected your plans"],
+      "cueCardPoints": [
+        "what the plans were",
+        "what the weather was like",
+        "how you changed your plans because of it",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0202",
+    "title": "Part 2: Describe an animal you find interesting",
+    "part": "part2",
+    "topic": "Pets and animals",
+    "tags": ["speaking", "part-2", "pets-and-animals"],
+    "data": {
+      "questions": ["Describe an animal you find interesting"],
+      "cueCardPoints": [
+        "what the animal is",
+        "where it lives",
+        "how you learned about it",
+        "and explain why you find it interesting"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0203",
+    "title": "Part 2: Describe a neighbour you remember well",
+    "part": "part2",
+    "topic": "Neighbours and neighbourhoods",
+    "tags": ["speaking", "part-2", "neighbours"],
+    "data": {
+      "questions": ["Describe a neighbour you remember well"],
+      "cueCardPoints": [
+        "who this person was",
+        "how you knew them",
+        "what they were like",
+        "and explain why you remember them"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0204",
+    "title": "Part 2: Describe a photograph that is important to you",
+    "part": "part2",
+    "topic": "Photography",
+    "tags": ["speaking", "part-2", "photography"],
+    "data": {
+      "questions": ["Describe a photograph that is important to you"],
+      "cueCardPoints": [
+        "when and where it was taken",
+        "who or what is in the photograph",
+        "why the photo was taken",
+        "and explain why it is important to you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0205",
+    "title": "Part 2: Describe a foreign language you would like to learn",
+    "part": "part2",
+    "topic": "Learning languages",
+    "tags": ["speaking", "part-2", "learning-languages"],
+    "data": {
+      "questions": ["Describe a foreign language you would like to learn"],
+      "cueCardPoints": [
+        "what the language is",
+        "why you are interested in it",
+        "how you would go about learning it",
+        "and explain how learning it might benefit you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0201",
+    "title": "Part 3: Weather and climate",
+    "part": "part3",
+    "topic": "Weather",
+    "tags": ["speaking", "part-3", "weather"],
+    "data": {
+      "questions": [
+        "How does weather affect people's daily routines in your country?",
+        "Do you think climate change is altering traditional weather patterns?",
+        "Why do some cultures place more importance on weather-related festivals than others?",
+        "Should schools teach children more about climate and weather science?",
+        "How might extreme weather events affect future city planning?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0202",
+    "title": "Part 3: Animals and conservation",
+    "part": "part3",
+    "topic": "Pets and animals",
+    "tags": ["speaking", "part-3", "pets-and-animals"],
+    "data": {
+      "questions": [
+        "Why do you think some people prefer pets to human company?",
+        "Should zoos still exist in the modern world?",
+        "How does animal conservation benefit a country's economy?",
+        "What responsibilities come with owning a pet?",
+        "Do you think attitudes toward animal welfare have changed in recent decades?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0203",
+    "title": "Part 3: Community and neighbourhoods",
+    "part": "part3",
+    "topic": "Neighbours and neighbourhoods",
+    "tags": ["speaking", "part-3", "neighbours"],
+    "data": {
+      "questions": [
+        "Do you think people are less connected to their neighbours than in the past?",
+        "How does apartment living affect relationships between neighbours compared with houses?",
+        "What role can local communities play in supporting vulnerable residents?",
+        "Should local governments do more to encourage neighbourly relationships?",
+        "How might technology change the way neighbours interact in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0204",
+    "title": "Part 3: Photography and media",
+    "part": "part3",
+    "topic": "Photography",
+    "tags": ["speaking", "part-3", "photography"],
+    "data": {
+      "questions": [
+        "How has photography changed the way people remember events?",
+        "Do you think smartphones have made professional photography less valued?",
+        "What role does photography play in journalism and reporting news?",
+        "How might photo-editing technology affect trust in images we see online?",
+        "Should there be limits on how much photos are edited before being shared publicly?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0205",
+    "title": "Part 3: Language learning and culture",
+    "part": "part3",
+    "topic": "Learning languages",
+    "tags": ["speaking", "part-3", "learning-languages"],
+    "data": {
+      "questions": [
+        "Why do some people find it easier to learn languages than others?",
+        "Do you think technology such as translation apps will reduce the need to learn languages?",
+        "How does learning a foreign language help someone understand a different culture?",
+        "Should schools introduce foreign language learning at an earlier age?",
+        "What are the advantages and disadvantages of learning a language through immersion versus formal study?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
