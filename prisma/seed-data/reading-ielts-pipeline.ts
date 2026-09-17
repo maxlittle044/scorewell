@@ -5238,5 +5238,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0010-p1",
+    "title": "The Science of Hibernation",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For many mammals living in regions with harsh winters, survival depends not on migrating away from the cold or storing enough food to last the season, but on a radical, if temporary, shutting down of the body itself. Hibernation, the most extreme form of this dormancy, is often confused with simple deep sleep, but the two states are physiologically distinct: a sleeping animal can be woken almost instantly, while rousing a deeply hibernating ground squirrel can take the better part of an hour, and the animal is, for practical purposes, unresponsive to its surroundings for the duration.\n\nB. The physiological changes involved are dramatic. In the Arctic ground squirrel, one of the most extensively studied hibernators, body temperature can fall from a normal 37°C to just below freezing, occasionally reaching as low as -2.9°C in supercooled blood without the animal's tissues actually freezing solid. Heart rate, which beats around 200 to 400 times per minute when the animal is active, can slow to as few as 3 to 5 beats per minute during deep hibernation, and overall metabolic rate can drop to less than 2% of the animal's normal resting level, a reduction that allows the stored fat reserves built up over the preceding summer to last through months of complete food scarcity.\n\nC. Contrary to popular belief, hibernation is rarely one continuous, unbroken state. Most hibernating mammals periodically rouse themselves from deep torpor every one to three weeks, warming their bodies back to near-normal temperature for a period lasting less than a day before dropping back into torpor. These brief, energetically costly arousals can consume as much as 80% of the total energy used across an entire hibernation season, a cost so significant that researchers have long debated why they occur at all; leading hypotheses suggest the arousals may be necessary to restore immune function, process accumulated metabolic waste, or allow a limited amount of restorative sleep, since deep torpor itself does not appear to satisfy an animal's underlying sleep need.\n\nD. Understanding what triggers and regulates hibernation at a molecular level has proved a persistent scientific challenge. Researchers have identified a seasonal cycle in gene expression, with certain genes associated with fat metabolism and cold tolerance becoming dramatically more active in the weeks before hibernation begins, while others associated with normal digestive function are effectively switched off for the duration. A widely publicised but still debated line of research in the 1990s proposed the existence of a specific circulating blood compound, termed the \"hibernation induction trigger,\" that could reportedly induce a torpor-like state when transfused into non-hibernating animals, though subsequent attempts to isolate and precisely characterise this compound have produced inconsistent results.\n\nE. The prospect of inducing a similar state in humans, however imperfectly, has attracted considerable interest well beyond basic biology. Medical researchers have explored induced hypothermia, a milder relative of true hibernation, as a way of protecting organs during transplant surgery or reducing brain damage following cardiac arrest, by slowing the metabolic processes that cause tissue damage when oxygen supply is interrupted. More speculatively, space agencies have funded research into whether a hibernation-like state could reduce the food, water, and life-support requirements of astronauts during long-duration missions, such as a multi-year crewed journey to Mars, potentially easing several of the most significant engineering challenges such a mission would face.\n\nF. Substantial obstacles remain before anything resembling true human hibernation becomes plausible, however. Human physiology differs from that of small hibernating mammals in ways that are not yet fully understood, and the metabolic pathways that allow a ground squirrel to survive months of near-freezing body temperature may simply not be available, even in principle, to a much larger-bodied species like our own. Researchers caution that induced torpor for human spaceflight, while an active area of study, likely remains at best a distant, uncertain prospect rather than a near-term engineering solution.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0010-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A state easily confused with ordinary sleep" },
+            { "key": "ii", "label": "Dramatic drops in body temperature and metabolism" },
+            { "key": "iii", "label": "Periodic arousals interrupt a supposedly continuous state" },
+            { "key": "iv", "label": "Searching for the biological trigger behind hibernation" },
+            { "key": "v", "label": "From organ preservation to space travel" },
+            { "key": "vi", "label": "Why full human hibernation remains a distant prospect" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0010-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A distinguishes hibernation from ordinary sleep." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes drops in temperature, heart rate and metabolism." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes periodic arousals interrupting hibernation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E covers organ preservation and space travel applications." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F explains why human hibernation remains a distant prospect." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0010-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q006", "statement": "A hibernating ground squirrel can be woken almost as quickly as a sleeping one.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says rousing a hibernating squirrel can take the better part of an hour." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q007", "statement": "The Arctic ground squirrel's blood can drop below freezing without the animal's tissues freezing solid.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B describes supercooled blood reaching -2.9°C without tissues freezing solid." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q008", "statement": "Periodic arousals during hibernation use very little of the animal's total seasonal energy budget.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says arousals can consume as much as 80% of total seasonal energy use." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q009", "statement": "The 'hibernation induction trigger' compound has been consistently isolated and confirmed by later research.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says subsequent attempts produced inconsistent results." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0010-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0010-q010", "prompt": "Heart rate can slow to as few as ______ beats per minute during deep hibernation.", "accept": ["3 to 5", "3-5"], "evidence": { "explanation": "Paragraph B gives this range." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q011", "prompt": "Metabolic rate can drop to less than ______ of normal resting level.", "accept": ["2%"], "evidence": { "explanation": "Paragraph B gives this figure." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q012", "prompt": "Most hibernating mammals rouse themselves every ______ weeks.", "accept": ["one to three", "1 to 3"], "evidence": { "explanation": "Paragraph C gives this interval." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q013", "prompt": "Space agencies have funded research into induced torpor for missions such as a crewed journey to ______.", "accept": ["Mars"], "evidence": { "explanation": "Paragraph E names Mars as the example mission." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0010-p2",
+    "title": "The Invention of the Printing Press and Its Spread Across Europe",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. When Johannes Gutenberg developed his printing system in the German city of Mainz around 1440, he was not, strictly speaking, inventing printing itself; woodblock printing had existed in East Asia for centuries, and a form of movable metal type had already been developed in Korea decades earlier. What made Gutenberg's system transformative for Europe was not any single component in isolation, but the way he combined several existing and new techniques into a single, reliable, and — crucially — scalable process: durable metal type cast from a reusable mould, an oil-based ink suited to metal type rather than the water-based inks used for woodblock printing, and a press mechanism adapted from the existing technology of wine and olive presses.\n\nB. The new technology spread with remarkable speed once its commercial potential became apparent. Within roughly two decades of Gutenberg's first printed Bible, printing presses had been established in cities across present-day Germany, Italy, and France, and historians estimate that by the year 1500, presses across Europe had collectively produced somewhere in the region of twenty million individual printed volumes, an output that would have been almost unimaginable under the previous system of hand-copied manuscripts, each of which could take a skilled scribe many months to complete.\n\nC. The consequences for religious and intellectual life were profound. Martin Luther's writings, most notably his printed pamphlets criticising practices of the Catholic Church from 1517 onward, spread across German-speaking Europe with a speed that would have been impossible under a manuscript-copying system, contributing substantially to the rapid growth of the Protestant Reformation. Printing also played a significant role in standardising vernacular languages: because printers needed to settle on consistent spelling and grammar to produce texts efficiently at scale, regional dialects gradually gave way, in print at least, to more standardised national languages.\n\nD. The economic effects were equally significant. The cost of producing a book fell dramatically, since a single set of type, once prepared, could produce hundreds or thousands of identical copies at a fraction of the labour cost of hand-copying each one individually. This collapse in production cost created an entirely new commercial trade, with printing workshops emerging as significant employers in major cities, while simultaneously reducing demand for professional manuscript scribes, many of whom were forced to find alternative work or apply their skills to the new printing trade instead.\n\nE. Perhaps the most consequential long-term effect concerned the reliability of knowledge itself. Hand-copied manuscripts inevitably accumulated errors with each successive copy, as scribes made mistakes that were then further compounded by subsequent copyists working from an already-flawed text. Printing allowed a single, carefully checked edition to be reproduced identically across thousands of copies, ensuring that scholars in distant cities could work from precisely the same text and reference the same page numbers, a consistency historians credit as an important, if underappreciated, precondition for the rapid pace of the later Scientific Revolution, when researchers across Europe needed to build reliably on one another's precisely published findings.\n\nF. Some historians have drawn direct comparisons between the printing revolution and the more recent digital revolution, arguing that both dramatically lowered the cost of reproducing and distributing information, disrupted existing intellectual and economic gatekeepers, and enabled ideas to spread far faster than existing social and political institutions could easily control or contain. Others caution against pushing the comparison too far, noting that the printing press took generations to achieve the social transformations historians now credit it with, a reminder that even a genuinely revolutionary technology's full effects can take considerably longer to unfold than they might first appear to observers living through the change itself.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0010-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Combining existing techniques into one scalable system" },
+            { "key": "ii", "label": "Rapid adoption across European cities" },
+            { "key": "iii", "label": "Fuelling religious change and shaping language" },
+            { "key": "iv", "label": "Making knowledge more reliable and consistent" },
+            { "key": "v", "label": "A useful, if imperfect, comparison to a modern revolution" },
+            { "key": "vi", "label": "Falling costs disrupt an old trade" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0010-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes Gutenberg combining existing techniques into one system." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes rapid adoption across European cities." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes religious change and language standardisation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes printing making knowledge more reliable and consistent." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F compares the printing revolution to the digital revolution." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0010-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q019", "statement": "Gutenberg was the first person in the world to invent any form of movable type.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says movable metal type had already been developed in Korea decades earlier." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q020", "statement": "By 1500, European presses had collectively produced around twenty million printed volumes.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B gives this figure." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q021", "statement": "Printing had no effect on the standardisation of vernacular languages.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says printing played a significant role in standardising vernacular languages." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q022", "statement": "Hand-copied manuscripts tended to accumulate errors with each successive copy.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0010-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0010-q023", "prompt": "Gutenberg developed his printing system in the German city of ______ around 1440.", "accept": ["Mainz"], "evidence": { "explanation": "Paragraph A names Mainz." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q024", "prompt": "Luther's printed pamphlets, from ______ onward, criticised practices of the Catholic Church.", "accept": ["1517"], "evidence": { "explanation": "Paragraph C gives the year 1517." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q025", "prompt": "The press mechanism was adapted from existing wine and ______ presses.", "accept": ["olive"], "evidence": { "explanation": "Paragraph A names olive presses." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q026", "prompt": "Consistent printed texts are credited as a precondition for the pace of the later ______.", "accept": ["Scientific Revolution"], "evidence": { "explanation": "Paragraph E names the Scientific Revolution." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0010-p3",
+    "title": "The Gig Economy: Flexibility at a Cost",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The term \"gig economy\" describes a labour market increasingly organised around short-term, task-based work arranged through digital platforms, rather than traditional, ongoing employment relationships with a single employer. Ride-hailing and food-delivery services are perhaps the most visible examples to most people, but the model now extends to freelance writing, graphic design, household task platforms, and short-term professional consulting, among many other categories. Estimates of the gig economy's overall size vary considerably depending on definition, but some labour economists suggest that as much as 15% of the workforce in certain developed economies now participates in some form of platform-mediated gig work, at least occasionally, alongside or instead of traditional employment.\n\nB. Early gig platforms, many of which launched in the years immediately following the 2008 global financial crisis, initially marketed themselves primarily as a source of flexible supplemental income for people already in other work, or as a stopgap for those between traditional jobs during a period of high unemployment. Rapid expansion through the 2010s, driven by widespread smartphone adoption and substantial venture capital investment in platform companies, gradually shifted the gig economy from a niche supplemental activity into, for a significant minority of workers, a primary and sometimes sole source of income.\n\nC. This shift has fuelled an intense and largely unresolved legal debate over how gig workers should be classified. Most platforms classify their workers as independent contractors rather than employees, a distinction that in most jurisdictions exempts the platform from providing benefits such as minimum wage guarantees, paid sick leave, unemployment insurance, or employer pension contributions. Several notable legal challenges to this classification have emerged in different countries; a 2021 ruling by the UK Supreme Court found that a major ride-hailing company's drivers should be classified as \"workers,\" a status distinct from full employment but entitling them to certain minimum protections, including a guaranteed minimum wage while actively working and paid holiday time.\n\nD. Proponents of the gig model point to genuine advantages it offers many participants. Workers can typically choose their own hours with far greater flexibility than conventional employment allows, an arrangement that particularly appeals to people balancing work with caregiving responsibilities, further study, or a preference for variable or part-time income. The barrier to entry for many gig platforms is also comparatively low, often requiring little more than a smartphone, a vehicle or relevant equipment, and a background check, making such work more immediately accessible than many traditional jobs requiring formal qualifications or lengthy hiring processes.\n\nE. Critics, however, point to significant downsides that fall disproportionately on workers rather than the platforms themselves. Income from gig work can be highly unpredictable, fluctuating substantially with demand, weather, seasonal patterns, and algorithmic changes to how the platform allocates available work, changes over which individual workers typically have no visibility and no influence whatsoever. Some researchers have also raised concerns about \"algorithmic management,\" in which software rather than a human manager directs, monitors, and evaluates a worker's performance in real time, sometimes in ways critics argue are opaque, difficult to appeal, or subtly designed to encourage longer working hours than a worker might otherwise choose. Unlike traditional employees, gig workers also typically lack access to collective bargaining mechanisms such as trade unions, limiting their ability to negotiate collectively for better terms.\n\nF. Regulatory responses have so far varied considerably between countries and even between individual states or regions within the same country. Some jurisdictions have introduced laws requiring platforms to guarantee gig workers a specified minimum hourly rate while actively engaged in a task, while others have pursued the more far-reaching approach of reclassifying certain categories of gig workers as employees outright, entitling them to the full range of standard employment benefits. Platform companies have generally resisted the most far-reaching of these reforms, arguing that reclassification as employees would force a fundamental restructuring of their business models and substantially reduce the flexibility that draws many workers to gig platforms in the first place. The underlying policy tension, between preserving the flexibility that genuinely attracts many workers and ensuring a basic, reliable level of protection and predictable income for those who depend on gig work as their primary livelihood, remains, for the most part, unresolved.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0010-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A model that grew from side income to primary livelihood for many" },
+            { "key": "ii", "label": "A largely unresolved legal question of worker status" },
+            { "key": "iii", "label": "Defining a labour market built on short-term digital-platform tasks" },
+            { "key": "iv", "label": "Downsides that fall mainly on workers themselves" },
+            { "key": "v", "label": "Different countries, different rules, and an unresolved tension" },
+            { "key": "vi", "label": "Genuine advantages behind the model's appeal" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0010-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "iii", "evidence": { "explanation": "Paragraph A defines the gig economy as short-term, platform-mediated work." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "i", "evidence": { "explanation": "Paragraph B describes the shift from side income to primary livelihood for many." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "ii", "evidence": { "explanation": "Paragraph C describes the unresolved legal debate over worker classification." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes downsides that fall mainly on workers." } },
+            { "kind": "matching", "id": "generated-reading-academic-0010-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F describes varying regulatory responses and an unresolved tension." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0010-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q032", "statement": "The gig economy is limited mainly to ride-hailing and food-delivery services.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says the model extends to freelance writing, design, household tasks and consulting." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q033", "statement": "Some labour economists estimate up to 15% of the workforce in certain developed economies participates in gig work at least occasionally.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A gives this figure." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q034", "statement": "Most gig platforms classify their workers as full employees.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says most platforms classify workers as independent contractors." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q035", "statement": "The UK Supreme Court's 2021 ruling classified the drivers in question as full employees with all standard benefits.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they were classified as 'workers', a status distinct from full employment." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0010-q036", "statement": "Gig workers typically have access to trade unions for collective bargaining in the same way traditional employees do.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says gig workers typically lack access to collective bargaining mechanisms such as trade unions." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0010-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0010-q037", "prompt": "Many early gig platforms launched in the years immediately following the ______ global financial crisis.", "accept": ["2008"], "evidence": { "explanation": "Paragraph B gives the year 2008." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q038", "prompt": "The UK Supreme Court ruling entitled certain drivers to a guaranteed minimum wage and paid ______.", "accept": ["holiday time", "holiday"], "evidence": { "explanation": "Paragraph C mentions paid holiday time." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q039", "prompt": "Some researchers have raised concerns about ______, in which software directs and evaluates worker performance.", "accept": ["algorithmic management"], "evidence": { "explanation": "Paragraph E names algorithmic management." } },
+            { "kind": "completion", "id": "generated-reading-academic-0010-q040", "prompt": "Some jurisdictions have pursued reclassifying certain gig workers as ______ outright.", "accept": ["employees"], "evidence": { "explanation": "Paragraph F states this directly." } }
+          ]
+        }
+      ]
+    }
   }
 ];
