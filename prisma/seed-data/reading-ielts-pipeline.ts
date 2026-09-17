@@ -5097,5 +5097,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0004-p1",
+    "title": "General Training Reading — Section 1: Apartment and Book Club Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nPARKVIEW APARTMENTS\nVisitor Parking and Building Rules\n\nResidents of Parkview Apartments are reminded of the following rules regarding visitor parking and shared building facilities.\n\nVisitor parking spaces, marked with a blue sign, are available on a first-come, first-served basis and are limited to a maximum stay of four hours. Residents must not use visitor spaces for their own vehicles at any time; vehicles found in breach of this rule may be clamped without further warning.\n\nThe building's shared laundry room, located in the basement, is open from 7am to 10pm daily. Each washing machine cycle costs £2.50, payable by contactless card only; the room does not accept cash. Residents are asked to remove their laundry promptly once a cycle has finished, to allow others to use the machines.\n\nThe rooftop terrace is available for resident use between 9am and 9pm, weather permitting. Barbecues and open flames are not permitted on the terrace under any circumstances, in line with the building's fire safety policy. Furniture on the terrace must not be removed to individual apartments.\n\nRecycling and general waste bins are collected every Tuesday and Friday morning. Residents should have bins out by 7am on collection days; bins left out overnight on non-collection days may result in a fine from the local council.\n\nAny maintenance issues within a resident's own apartment should be reported through the online resident portal, not directly to the building's cleaning staff, to ensure requests are properly logged and assigned.\n\nTEXT 2\n\nRIVERBANK BOOK CLUB\nMembership and Meeting Guide\n\nRiverbank Book Club meets on the first Thursday of every month at 7pm, at the community hall on Willow Street, except in December, when the meeting moves to the third Thursday to avoid the holiday period.\n\nMembership costs £15 per year and includes a discount card offering 10% off at Riverbank Books, the independent bookshop that sponsors the club. Non-members are welcome to attend up to two meetings before deciding whether to join.\n\nEach month, one member takes a turn suggesting the book the group will read; suggestions are collected two months in advance to give everyone enough time to read the chosen title. Members are not required to finish the book to attend, though they are asked to avoid revealing major plot details for the benefit of those still reading.\n\nThe club maintains a small lending library of past selections, which members can borrow for up to four weeks at a time, free of charge. A £5 fee applies if a borrowed book is not returned within this period.\n\nNew members are welcome to join at any time during the year; membership does not need to be renewed until twelve months from the date of joining, regardless of when in the year someone signs up.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0004-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q001", "statement": "Residents may park their own car in a visitor space overnight if no visitors are expected.", "answer": "FALSE", "evidence": { "explanation": "Residents must not use visitor spaces for their own vehicles at any time." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q002", "statement": "The laundry room accepts cash payments.", "answer": "FALSE", "evidence": { "explanation": "The laundry room does not accept cash; payment is by contactless card only." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q003", "statement": "Barbecues are allowed on the rooftop terrace if residents are careful.", "answer": "FALSE", "evidence": { "explanation": "Barbecues and open flames are not permitted under any circumstances." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q004", "statement": "Bins left out overnight on non-collection days may result in a council fine.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q005", "statement": "Book club membership must be renewed every January.", "answer": "FALSE", "evidence": { "explanation": "Membership is renewed twelve months from the date of joining, not every January." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q006", "statement": "Non-members can attend up to two meetings before joining.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0004-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0004-q007", "prompt": "Visitor parking spaces are limited to a maximum stay of ______.", "accept": ["four hours", "4 hours"], "evidence": { "explanation": "Text 1 states a maximum stay of four hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q008", "prompt": "The laundry room is open from 7am to ______.", "accept": ["10pm"], "evidence": { "explanation": "Text 1 gives the laundry room hours as 7am to 10pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q009", "prompt": "In December, the book club meeting moves to the ______ Thursday.", "accept": ["third"], "evidence": { "explanation": "Text 2 says the December meeting moves to the third Thursday." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q010", "prompt": "Borrowed books from the lending library can be kept for up to ______.", "accept": ["four weeks", "4 weeks"], "evidence": { "explanation": "Text 2 states books can be borrowed for up to four weeks." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0004-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0004-q011", "question": "How much does one washing machine cycle cost?", "options": ["£1.50", "£2", "£2.50", "£3"], "correctIndex": 2, "evidence": { "explanation": "Text 1 gives the cost as £2.50 per cycle." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0004-q012", "question": "What discount does book club membership give at Riverbank Books?", "options": ["5%", "10%", "15%", "20%"], "correctIndex": 1, "evidence": { "explanation": "Text 2 states a 10% discount at Riverbank Books." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0004-q013", "question": "What happens to a borrowed book not returned within four weeks?", "options": ["Nothing", "A £5 fee applies", "Membership is cancelled", "It must be replaced"], "correctIndex": 1, "evidence": { "explanation": "Text 2 states a £5 fee applies if a book is not returned within four weeks." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0004-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, IT Security and Password Policy",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "SANDPOINT FINANCIAL SERVICES\nStaff Handbook — Section 9: IT Security and Password Policy\n\nAll employees are issued a unique company username and must set a personal password on their first day, which must be changed again within 90 days and every 90 days thereafter. Passwords must be at least twelve characters long and include at least one number and one symbol.\n\nEmployees must not share their login credentials with any other member of staff, including colleagues covering their workload during absence; temporary access for cover purposes should instead be requested through the IT helpdesk, which can grant time-limited permissions.\n\nCompany laptops must be locked whenever left unattended, even for short periods within the office, and must never be left visible in an unattended vehicle. Any lost or stolen device must be reported to the IT helpdesk within one hour of the loss being discovered, so that remote access to company systems can be disabled promptly.\n\nEmployees working remotely must connect to company systems only through the approved virtual private network, or VPN, application, which encrypts data transmitted between a home connection and company servers. Public wifi networks, such as those in cafes or airports, should never be used to access company systems without the VPN active.\n\nAll new software must be requested and approved through the IT helpdesk before installation on a company device; employees are not permitted to install software independently, even where it appears to be free of charge, since unapproved software has previously introduced security vulnerabilities to the network.\n\nSuspicious emails, particularly those requesting payment details or login credentials, should be forwarded to the dedicated phishing-report address rather than replied to or deleted, allowing the IT security team to investigate and warn other staff if necessary.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0004-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q014", "statement": "Employees can keep the same password indefinitely once it meets the length requirement.", "answer": "FALSE", "evidence": { "explanation": "Passwords must be changed every 90 days regardless of length." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q015", "statement": "Colleagues covering for an absent employee should be given that employee's login details directly.", "answer": "FALSE", "evidence": { "explanation": "Temporary access should be requested through the IT helpdesk instead." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q016", "statement": "Company laptops may be left unlocked briefly within the office if the employee is nearby.", "answer": "FALSE", "evidence": { "explanation": "Laptops must be locked whenever left unattended, even for short periods." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q017", "statement": "Lost devices must be reported to the IT helpdesk within one hour of discovery.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q018", "statement": "Employees may install free software on company devices without approval.", "answer": "FALSE", "evidence": { "explanation": "All software, even if free, requires approval through the IT helpdesk first." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0004-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0004-q019", "prompt": "Passwords must be changed every ______ days.", "accept": ["90"], "evidence": { "explanation": "The handbook requires a password change every 90 days." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q020", "prompt": "Passwords must be at least ______ characters long.", "accept": ["twelve", "12"], "evidence": { "explanation": "The handbook requires a minimum of twelve characters." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q021", "prompt": "Remote employees must connect through the approved ______.", "accept": ["VPN"], "evidence": { "explanation": "Remote employees must use the approved VPN application." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q022", "prompt": "Suspicious emails should be forwarded to the dedicated ______ address.", "accept": ["phishing-report"], "evidence": { "explanation": "The handbook names the dedicated phishing-report address." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q023", "prompt": "Temporary access for cover purposes should be requested through the ______.", "accept": ["IT helpdesk"], "evidence": { "explanation": "The handbook directs employees to the IT helpdesk for temporary access." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0004-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0004-q024", "question": "What must a password include at minimum?", "options": ["Only letters", "One number and one symbol", "Only numbers", "A minimum of two symbols"], "correctIndex": 1, "evidence": { "explanation": "The handbook requires at least one number and one symbol." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0004-q025", "question": "What should employees avoid using to access company systems without a VPN?", "options": ["Company laptops", "Public wifi networks", "The office network", "Company phones"], "correctIndex": 1, "evidence": { "explanation": "Public wifi networks should never be used without the VPN active." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0004-q026", "question": "Why has unapproved software been restricted?", "options": ["It is too expensive", "It has previously introduced security vulnerabilities", "It slows down laptops", "IT does not have time to help"], "correctIndex": 1, "evidence": { "explanation": "The handbook says unapproved software has previously introduced security vulnerabilities." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0004-p3",
+    "title": "The Rise of Vertical Farming",
+    "sourceTestSet": "General Training",
+    "topic": "Technology",
+    "tags": ["general-training", "technology", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. As urban populations grow and available agricultural land per person shrinks, a growing number of companies have turned to vertical farming — the practice of growing crops in stacked layers within climate-controlled indoor facilities, often located inside cities rather than on their outskirts. Proponents argue the approach can dramatically reduce the distance food travels from farm to consumer, while producing far higher yields per square metre of land than conventional outdoor farming.\n\nB. The concept is not entirely new in theory, having been discussed in academic circles since the early 2000s, but the first large-scale commercial vertical farms did not begin operating until the early 2010s. One widely cited pioneering facility, opened in Japan in 2014, used exclusively LED lighting and produced around 10,000 heads of lettuce per day from a former semiconductor factory, demonstrating that industrial-scale indoor farming was commercially viable, at least for certain crops.\n\nC. The technology underpinning modern vertical farms has advanced considerably since then. LED lighting systems can now be tuned to emit specific wavelengths that plants use most efficiently for photosynthesis, reducing wasted energy compared with earlier, less targeted lighting. Most vertical farms use hydroponic or aeroponic growing systems, in which plant roots are suspended in a nutrient-rich water solution or mist rather than soil, a method that industry figures suggest uses up to 95% less water than conventional field-based agriculture for the same crop.\n\nD. Despite these efficiencies, the economics of vertical farming remain challenging. Electricity to power lighting and climate control typically represents the single largest ongoing operating cost, and this cost structure has limited most commercial operations to fast-growing, high-value crops such as leafy greens, herbs and strawberries, rather than staple grains like wheat or rice, which would be far less profitable to grow this way given current energy prices. Several prominent vertical farming companies that expanded rapidly in the late 2010s subsequently filed for bankruptcy in the early 2020s, unable to reach profitability at the scale investors had expected.\n\nE. The environmental case for vertical farming is more complicated than it first appears. While the approach undeniably reduces land use, water consumption and the need for pesticides compared with conventional farming, its heavy reliance on electricity means its overall environmental benefit depends substantially on how that electricity is generated. A vertical farm powered mainly by coal-fired electricity may, by some measures, have a larger overall carbon footprint than an equivalent outdoor farm, despite its water and land savings, whereas one powered by renewable electricity presents a considerably stronger environmental case.\n\nF. Looking ahead, industry analysts expect continued improvements in LED efficiency and falling renewable energy costs to gradually improve the economics and environmental credentials of vertical farming. Some researchers are also exploring whether the technique could eventually be adapted for a wider range of crops beyond leafy greens, though this remains some way off. Advocates maintain that vertical farming will not replace conventional agriculture entirely, but rather complement it, providing a reliable, weather-independent, near-consumer source of fresh produce as part of a more resilient and diversified future food system.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0004-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A concept whose commercial viability arrived later than the theory behind it" },
+            { "key": "ii", "label": "Rising indoors as cities and land pressures grow" },
+            { "key": "iii", "label": "New technology reduces water and energy waste" },
+            { "key": "iv", "label": "A more complicated environmental picture than it first appears" },
+            { "key": "v", "label": "High costs limit the range of viable crops" },
+            { "key": "vi", "label": "Looking ahead to a complementary role in food production" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0004-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "ii", "evidence": { "explanation": "Paragraph A introduces vertical farming as a response to urban growth and land pressure." } },
+            { "kind": "matching", "id": "generated-reading-general-0004-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "i", "evidence": { "explanation": "Paragraph B describes the gap between early theory and later commercial viability." } },
+            { "kind": "matching", "id": "generated-reading-general-0004-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes LED and hydroponic technology reducing water and energy waste." } },
+            { "kind": "matching", "id": "generated-reading-general-0004-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E discusses the complicated environmental trade-offs of vertical farming." } },
+            { "kind": "matching", "id": "generated-reading-general-0004-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F looks ahead to vertical farming's complementary future role." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0004-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q032", "statement": "Vertical farming facilities are usually located on the outskirts of cities, far from consumers.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says such facilities are often located inside cities rather than on their outskirts." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q033", "statement": "The pioneering Japanese facility that opened in 2014 used exclusively LED lighting.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states the facility used exclusively LED lighting." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q034", "statement": "Hydroponic and aeroponic systems use more water than conventional field-based agriculture.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says these systems use up to 95% less water than conventional agriculture." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q035", "statement": "Most vertical farms currently focus on growing staple grains such as wheat and rice.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says operations are limited to leafy greens, herbs and strawberries instead." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0004-q036", "statement": "A vertical farm's overall environmental benefit depends on how its electricity is generated.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0004-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0004-q037", "prompt": "The pioneering Japanese facility produced around ______ heads of lettuce per day.", "accept": ["10,000", "10000"], "evidence": { "explanation": "Paragraph B gives the figure of around 10,000 heads of lettuce per day." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q038", "prompt": "Hydroponic and aeroponic systems can use up to ______ less water than conventional farming.", "accept": ["95%"], "evidence": { "explanation": "Paragraph C gives the figure of up to 95% less water." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q039", "prompt": "Several vertical farming companies filed for ______ in the early 2020s.", "accept": ["bankruptcy"], "evidence": { "explanation": "Paragraph D states several companies filed for bankruptcy in the early 2020s." } },
+            { "kind": "completion", "id": "generated-reading-general-0004-q040", "prompt": "A vertical farm powered by ______ electricity presents a stronger environmental case.", "accept": ["renewable"], "evidence": { "explanation": "Paragraph E states this directly." } }
+          ]
+        }
+      ]
+    }
   }
 ];
