@@ -445,4 +445,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 2 essays (fresh topics: health, urban planning, government policy,
+  // culture, crime, media, tourism, ageing population, space, advertising) ----
+  {
+    slug: "task2-sugar-tax-public-health",
+    title: "Task 2: Should governments tax unhealthy food and drinks?",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some governments have introduced taxes on sugary drinks and unhealthy food in order to improve public health. To what extent do you agree or disagree with this approach?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-limiting-building-height",
+    title: "Task 2: Should cities limit the height of new buildings?",
+    taskType: "task2",
+    topic: "Urban planning",
+    tags: ["writing", "task-2", "urban-planning", "discussion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people think cities should limit the height of new buildings, while others believe tall buildings are necessary to accommodate a growing population. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-compulsory-voting",
+    title: "Task 2: The advantages and disadvantages of compulsory voting",
+    taskType: "task2",
+    topic: "Government",
+    tags: ["writing", "task-2", "government", "advantages-disadvantages"],
+    kind: "test",
+    data: {
+      prompt:
+        "In some countries, citizens are legally required to vote in national elections. Discuss the advantages and disadvantages of compulsory voting.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-globalisation-culture",
+    title: "Task 2: Has globalisation made cultures more similar?",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Globalisation has made the world's cultures more similar to one another rather than more diverse. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-youth-crime-approaches",
+    title: "Task 2: How should young offenders be dealt with?",
+    taskType: "task2",
+    topic: "Crime",
+    tags: ["writing", "task-2", "crime", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that prison is the most effective way to deal with young offenders, while others think community service and rehabilitation programmes work better. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-fake-news-online",
+    title: "Task 2: The problem of false information online",
+    taskType: "task2",
+    topic: "Media",
+    tags: ["writing", "task-2", "media", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The spread of false information online is a growing problem. What problems does this cause, and what solutions can you suggest?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-tourism-natural-sites",
+    title: "Task 2: Protecting popular natural tourist sites",
+    taskType: "task2",
+    topic: "Tourism",
+    tags: ["writing", "task-2", "tourism", "two-part"],
+    kind: "test",
+    data: {
+      prompt:
+        "Tourist numbers to popular natural sites have increased rapidly in recent years. Why has this happened, and what can be done to protect these sites from damage?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-elderly-care-responsibility",
+    title: "Task 2: Who should care for elderly relatives?",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "ageing-population", "discussion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that caring for elderly relatives should be the responsibility of the family, while others think the government should provide this care. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-space-exploration-spending",
+    title: "Task 2: Is space exploration spending justified?",
+    taskType: "task2",
+    topic: "Science",
+    tags: ["writing", "task-2", "science", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Governments spend large sums of money on space exploration programmes. Some people think this money would be better spent solving problems on Earth. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-advertising-to-children",
+    title: "Task 2: Advertising aimed at children",
+    taskType: "task2",
+    topic: "Advertising",
+    tags: ["writing", "task-2", "advertising", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Advertising aimed specifically at children has become increasingly common in recent years. Discuss the advantages and disadvantages of this trend.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
