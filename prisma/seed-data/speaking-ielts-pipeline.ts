@@ -1774,5 +1774,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0206",
+    "title": "Part 1: Clothes and fashion",
+    "part": "part1",
+    "topic": "Clothes and fashion",
+    "tags": ["speaking", "part-1", "clothes-and-fashion"],
+    "data": {
+      "questions": [
+        "Do you enjoy shopping for clothes?",
+        "What kind of clothes do you usually wear on a normal day?",
+        "Has your taste in clothing changed as you've grown older?",
+        "Do you prefer buying clothes online or in physical stores?",
+        "Is fashion generally important in your country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0207",
+    "title": "Part 1: Social media",
+    "part": "part1",
+    "topic": "Social media",
+    "tags": ["speaking", "part-1", "social-media"],
+    "data": {
+      "questions": [
+        "Do you use social media?",
+        "Which social media platform do you use most often?",
+        "How much time do you spend on social media each day?",
+        "Did you use social media differently when you first started using it?",
+        "Do you think social media makes people happier or less happy?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0208",
+    "title": "Part 1: Public holidays and festivals",
+    "part": "part1",
+    "topic": "Public holidays and festivals",
+    "tags": ["speaking", "part-1", "public-holidays-and-festivals"],
+    "data": {
+      "questions": [
+        "What is your favourite public holiday?",
+        "How do people in your country usually celebrate festivals?",
+        "Did your family have any special traditions for holidays when you were young?",
+        "Do you prefer celebrating holidays with family or friends?",
+        "Are there any festivals you would like to experience in another country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0209",
+    "title": "Part 1: Art and creativity",
+    "part": "part1",
+    "topic": "Art and creativity",
+    "tags": ["speaking", "part-1", "art-and-creativity"],
+    "data": {
+      "questions": [
+        "Are you interested in art?",
+        "Did you study art at school?",
+        "Do you like visiting art galleries or museums?",
+        "What kind of art do you find most appealing?",
+        "Do you think everyone has some creative ability?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0210",
+    "title": "Part 1: Childhood memories",
+    "part": "part1",
+    "topic": "Childhood memories",
+    "tags": ["speaking", "part-1", "childhood-memories"],
+    "data": {
+      "questions": [
+        "What is one of your happiest childhood memories?",
+        "Did you have a favourite toy or game as a child?",
+        "Who did you spend most of your time with as a child?",
+        "Has your childhood neighbourhood changed much since then?",
+        "Do you think childhood today is different from when you were young?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0206",
+    "title": "Part 2: Describe an item of clothing you like to wear",
+    "part": "part2",
+    "topic": "Clothes and fashion",
+    "tags": ["speaking", "part-2", "clothes-and-fashion"],
+    "data": {
+      "questions": ["Describe an item of clothing you like to wear"],
+      "cueCardPoints": [
+        "what it is",
+        "where you got it",
+        "when you usually wear it",
+        "and explain why you like it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0207",
+    "title": "Part 2: Describe a social media post you remember",
+    "part": "part2",
+    "topic": "Social media",
+    "tags": ["speaking", "part-2", "social-media"],
+    "data": {
+      "questions": ["Describe a social media post you remember"],
+      "cueCardPoints": [
+        "what the post was about",
+        "who shared it",
+        "how you found out about it",
+        "and explain why you remember it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0208",
+    "title": "Part 2: Describe a festival or celebration you enjoyed",
+    "part": "part2",
+    "topic": "Public holidays and festivals",
+    "tags": ["speaking", "part-2", "public-holidays-and-festivals"],
+    "data": {
+      "questions": ["Describe a festival or celebration you enjoyed"],
+      "cueCardPoints": [
+        "what the festival was",
+        "where and when it took place",
+        "what happened during it",
+        "and explain why you enjoyed it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0209",
+    "title": "Part 2: Describe a piece of art you find interesting",
+    "part": "part2",
+    "topic": "Art and creativity",
+    "tags": ["speaking", "part-2", "art-and-creativity"],
+    "data": {
+      "questions": ["Describe a piece of art you find interesting"],
+      "cueCardPoints": [
+        "what the artwork is",
+        "where you saw it",
+        "what it depicts or represents",
+        "and explain why you find it interesting"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0210",
+    "title": "Part 2: Describe a memorable event from your childhood",
+    "part": "part2",
+    "topic": "Childhood memories",
+    "tags": ["speaking", "part-2", "childhood-memories"],
+    "data": {
+      "questions": ["Describe a memorable event from your childhood"],
+      "cueCardPoints": [
+        "what the event was",
+        "when it happened",
+        "who was involved",
+        "and explain why it is memorable to you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0206",
+    "title": "Part 3: Fashion and the environment",
+    "part": "part3",
+    "topic": "Clothes and fashion",
+    "tags": ["speaking", "part-3", "clothes-and-fashion"],
+    "data": {
+      "questions": [
+        "Why do fashion trends change so quickly nowadays?",
+        "What impact does fast fashion have on the environment?",
+        "Do you think school uniforms are a good idea?",
+        "How does clothing reflect a person's identity or culture?",
+        "Should governments regulate the fashion industry's environmental impact?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0207",
+    "title": "Part 3: Social media and society",
+    "part": "part3",
+    "topic": "Social media",
+    "tags": ["speaking", "part-3", "social-media"],
+    "data": {
+      "questions": [
+        "How has social media changed the way people communicate with each other?",
+        "What are the risks of young people spending too much time on social media?",
+        "Do you think social media companies should be responsible for the content posted on their platforms?",
+        "How has social media affected the way news spreads?",
+        "Will social media platforms look very different in twenty years?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0208",
+    "title": "Part 3: Festivals and tradition",
+    "part": "part3",
+    "topic": "Public holidays and festivals",
+    "tags": ["speaking", "part-3", "public-holidays-and-festivals"],
+    "data": {
+      "questions": [
+        "Why are traditional festivals important to a society?",
+        "Do you think festivals are becoming more commercialised over time?",
+        "How can tourism affect the way local festivals are celebrated?",
+        "Should governments create new public holidays to mark important social issues?",
+        "How might celebrations change as societies become more multicultural?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0209",
+    "title": "Part 3: Art, culture and society",
+    "part": "part3",
+    "topic": "Art and creativity",
+    "tags": ["speaking", "part-3", "art-and-creativity"],
+    "data": {
+      "questions": [
+        "Why do governments often fund public art and museums?",
+        "Do you think art education is as important as other school subjects?",
+        "How has technology changed the way art is created and shared?",
+        "Should street art be considered a legitimate art form?",
+        "What role does art play in expressing social or political ideas?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0210",
+    "title": "Part 3: Childhood and upbringing",
+    "part": "part3",
+    "topic": "Childhood memories",
+    "tags": ["speaking", "part-3", "childhood-memories"],
+    "data": {
+      "questions": [
+        "How does technology affect the way children play compared to the past?",
+        "Do you think childhood experiences shape a person's adult personality?",
+        "Should children have more unstructured free time?",
+        "How do family structures affect the way children are raised today?",
+        "Is childhood becoming shorter due to modern pressures like school and technology?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
