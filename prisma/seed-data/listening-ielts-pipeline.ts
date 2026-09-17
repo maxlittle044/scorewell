@@ -4004,5 +4004,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0009-s1",
+    "title": "Car Rental Enquiry – Listening Section 1",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "form-completion"],
+    "data": {
+      "audioLabel": "Car Rental Enquiry – Listening Section 1",
+      "transcript": "Agent: Good afternoon, Cascade Car Rentals, how can I help you today?\nCaller: Hi, I'd like to book a car for an upcoming trip.\nAgent: Sure, what dates are you looking at?\nCaller: I need it from the 14th to the 19th of next month.\nAgent: Ok, that's five days. What type of vehicle would you like?\nCaller: I was thinking a compact car, something fuel-efficient.\nAgent: Great, our compact model is called the Swift Two, and it's £32 per day.\nCaller: That sounds reasonable. Is there a deposit required?\nAgent: Yes, we require a refundable deposit of £150, held on your card until the car is returned undamaged.\nCaller: Understood. What about insurance – is basic cover included?\nAgent: Basic cover is included in the daily rate, but you can add full cover for an extra £8 per day.\nCaller: I think I'll add the full cover, just to be safe.\nAgent: No problem. And where would you like to pick the car up?\nCaller: Could I pick it up from the airport branch?\nAgent: Of course. Pickup is available from 9am at the airport branch.\nCaller: And I assume I need to return it there too?\nAgent: You can return it at the airport branch, or at our downtown branch, whichever is more convenient – just let us know in advance.\nCaller: I'll return it downtown then, that's closer to where I'm staying.\nAgent: Great, noted. Just so you know, there is a mileage limit of 200 kilometres per day; anything beyond that is charged at 15 pence per kilometre.\nCaller: That should be plenty for what I need. What's the fuel policy?\nAgent: The car should be returned with a full tank; if it isn't, we charge a refuelling fee plus the cost of fuel.\nCaller: Understood. Is there a number I can call if I have questions during the rental?\nAgent: Yes, our customer support line is 0800 445 210, available 24 hours.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0009-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0009-q001", "prompt": "Rental start date: the ______ of next month.", "accept": ["14th", "14"], "evidence": { "explanation": "The caller says they need the car from the 14th to the 19th of next month." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q002", "prompt": "Number of rental days: ______.", "accept": ["five", "5"], "evidence": { "explanation": "The agent confirms that's five days." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q003", "prompt": "Vehicle model requested: the ______.", "accept": ["Swift Two"], "evidence": { "explanation": "The agent names the compact model as the Swift Two." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q004", "prompt": "Daily rate: £______.", "accept": ["32"], "evidence": { "explanation": "The agent gives the daily rate as £32." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q005", "prompt": "Refundable deposit: £______.", "accept": ["150"], "evidence": { "explanation": "The agent states a refundable deposit of £150." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q006", "prompt": "Cost of full insurance cover per day: £______.", "accept": ["8"], "evidence": { "explanation": "The agent gives the cost of full cover as an extra £8 per day." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q007", "prompt": "Pickup location: the ______ branch.", "accept": ["airport"], "evidence": { "explanation": "The caller asks to pick up from the airport branch." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q008", "prompt": "Return location: the ______ branch.", "accept": ["downtown"], "evidence": { "explanation": "The caller says they'll return it downtown." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q009", "prompt": "Mileage limit per day: ______ kilometres.", "accept": ["200"], "evidence": { "explanation": "The agent states a mileage limit of 200 kilometres per day." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q010", "prompt": "Customer support number: ______.", "accept": ["0800 445 210"], "evidence": { "explanation": "The agent gives the customer support line as 0800 445 210." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0009-s2",
+    "title": "New Recycling Centre Facilities Tour – Listening Section 2",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "New Recycling Centre Facilities Tour – Listening Section 2",
+      "transcript": "Good afternoon everyone, and welcome to the new Riverside Recycling Centre. I'll take you through what we offer here today.\n\nThe centre officially opened in March this year, replacing the old facility on Mill Road, which had become too small for the volume of waste the area now produces. We process around 40 tonnes of recyclable material every week, roughly double what the old site could manage.\n\nWe accept a wide range of materials here: paper and cardboard, glass, most plastics, metal cans, and garden waste. However, one material we cannot accept on-site is electronic waste — items like old phones, laptops, and televisions need to be taken instead to our partner facility, the Electronics Recovery Centre, about ten minutes further down the road.\n\nGarden waste is processed separately and turned into compost, which is actually available for local residents to collect for free, up to two bags per household per visit. Just bring your own containers.\n\nWe're open every day except Wednesday, when the site closes for essential maintenance. On weekdays we operate from 8am to 6pm, while on weekends our hours are slightly shorter, from 9am to 4pm.\n\nIf you'd like to volunteer here, we run a programme every Saturday morning where local residents help sort donated items before they're recycled; you can sign up for that at the front desk.\n\nNow let me ask you a few questions to check what you've picked up. First: what is the maximum number of compost bags a household can collect per visit? A) One  B) Two  C) Three  D) Four. The answer is B, two bags.\n\nNext: which day is the centre closed for maintenance? A) Sunday  B) Monday  C) Wednesday  D) Saturday. The answer is C, Wednesday.\n\nNext: where should electronic waste be taken instead? A) The old Mill Road site  B) The Electronics Recovery Centre  C) The compost area  D) It can be left at reception. The answer is B, the Electronics Recovery Centre.\n\nFinally: on weekends, what time does the centre close? A) 4pm  B) 5pm  C) 6pm  D) 8pm. The answer is A, 4pm.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0009-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0009-q011", "prompt": "The new centre opened in ______ this year.", "accept": ["March"], "evidence": { "explanation": "The speaker says the centre officially opened in March this year." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q012", "prompt": "The centre replaced the old facility on ______.", "accept": ["Mill Road"], "evidence": { "explanation": "The speaker says it replaced the old facility on Mill Road." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q013", "prompt": "The centre processes around ______ tonnes of material each week.", "accept": ["40"], "evidence": { "explanation": "The speaker states around 40 tonnes of recyclable material every week." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q014", "prompt": "Garden waste is turned into ______.", "accept": ["compost"], "evidence": { "explanation": "The speaker says garden waste is processed and turned into compost." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q015", "prompt": "Weekday opening hours run from 8am to ______.", "accept": ["6pm"], "evidence": { "explanation": "The speaker says weekday hours are 8am to 6pm." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q016", "prompt": "Volunteers help sort donated items every ______ morning.", "accept": ["Saturday"], "evidence": { "explanation": "The speaker says the volunteer programme runs every Saturday morning." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0009-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q017", "question": "What is the maximum number of compost bags a household can collect per visit?", "options": ["One", "Two", "Three", "Four"], "correctIndex": 1, "evidence": { "explanation": "The speaker confirms the answer is two bags." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q018", "question": "Which day is the centre closed for maintenance?", "options": ["Sunday", "Monday", "Wednesday", "Saturday"], "correctIndex": 2, "evidence": { "explanation": "The speaker confirms the centre is closed on Wednesday." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q019", "question": "Where should electronic waste be taken instead?", "options": ["The old Mill Road site", "The Electronics Recovery Centre", "The compost area", "It can be left at reception"], "correctIndex": 1, "evidence": { "explanation": "The speaker confirms electronic waste goes to the Electronics Recovery Centre." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q020", "question": "On weekends, what time does the centre close?", "options": ["4pm", "5pm", "6pm", "8pm"], "correctIndex": 0, "evidence": { "explanation": "The speaker confirms weekend closing time is 4pm." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0009-s3",
+    "title": "Renewable Energy Survey Project Planning – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Renewable Energy Survey Project Planning – Listening Section 3",
+      "transcript": "Tutor: So, Priya, Daniel, let's check in on your group project about renewable energy adoption. What's your main research question going to be?\nPriya: We've decided to focus on why household adoption of solar panels varies so much between regions.\nTutor: Good, that's nice and specific. And what's your main method for gathering data?\nDaniel: We're planning to run a survey – actually, we originally wanted to do interviews, but a survey will let us reach far more households in the time we have.\nTutor: Sensible change. How many responses are you aiming for?\nPriya: We're aiming for at least 150 responses.\nTutor: That should give you a decent sample. Which age group will you be targeting mainly?\nDaniel: Mainly homeowners aged 35 to 60, since they're the ones most likely to have made a decision about solar panels already.\nTutor: Makes sense. What software will you use to analyse the survey data?\nPriya: We'll be using a program called StatEasy – it's free for students and handles the kind of analysis we need.\nTutor: Good choice. And how many weeks do you have left before the deadline?\nDaniel: We've got six weeks left.\nTutor: That's tight, but workable if you stay organised. Now, let's divide up responsibilities. Priya, you'll design the survey questions. Daniel, you'll handle recruiting participants. For the data analysis, that'll be a joint effort between you both. And the final written report will mainly be written by Daniel, with Priya reviewing it before submission.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0009-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q021", "question": "What is the group's main research question about?", "options": ["Wind turbine efficiency", "Why solar panel adoption varies between regions", "Government energy subsidies", "Public transport emissions"], "correctIndex": 1, "evidence": { "explanation": "Priya says they're focusing on why solar panel adoption varies between regions." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q022", "question": "Why did they switch from interviews to a survey?", "options": ["Interviews were too expensive", "A survey reaches more households in the time available", "Their tutor required a survey", "Interviews are not scientific"], "correctIndex": 1, "evidence": { "explanation": "Daniel says a survey will let them reach far more households in the time they have." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q023", "question": "How many survey responses are they aiming for?", "options": ["100", "150", "200", "250"], "correctIndex": 1, "evidence": { "explanation": "Priya says they're aiming for at least 150 responses." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q024", "question": "Which age group are they mainly targeting?", "options": ["18 to 34", "35 to 60", "61 to 75", "All ages equally"], "correctIndex": 1, "evidence": { "explanation": "Daniel says they're mainly targeting homeowners aged 35 to 60." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q025", "question": "What software will they use to analyse the data?", "options": ["SurveyPro", "DataWorks", "StatEasy", "AnalyzeIt"], "correctIndex": 2, "evidence": { "explanation": "Priya says they'll be using a program called StatEasy." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0009-q026", "question": "How many weeks do they have left before the deadline?", "options": ["Four", "Five", "Six", "Eight"], "correctIndex": 2, "evidence": { "explanation": "Daniel says they've got six weeks left." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0009-s3-g2",
+          "instructions": "Who is responsible for each part of the project? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Priya" },
+            { "key": "B", "label": "Daniel" },
+            { "key": "C", "label": "Both students" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0009-q027", "prompt": "Designing the survey questions", "answer": "A", "evidence": { "explanation": "The tutor assigns Priya to design the survey questions." } },
+            { "kind": "matching", "id": "generated-listening-academic-0009-q028", "prompt": "Recruiting participants", "answer": "B", "evidence": { "explanation": "The tutor assigns Daniel to handle recruiting participants." } },
+            { "kind": "matching", "id": "generated-listening-academic-0009-q029", "prompt": "Data analysis", "answer": "C", "evidence": { "explanation": "The tutor says data analysis will be a joint effort between both students." } },
+            { "kind": "matching", "id": "generated-listening-academic-0009-q030", "prompt": "Writing the final report", "answer": "B", "evidence": { "explanation": "The tutor says the final report will mainly be written by Daniel, with Priya reviewing it." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0009-s4",
+    "title": "The History of the Coffee Trade – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion"],
+    "data": {
+      "audioLabel": "The History of the Coffee Trade – Listening Section 4",
+      "transcript": "Good morning. Today's lecture looks at how coffee moved from a regional crop to one of the most widely traded commodities in the world.\n\nCoffee is believed to have first been cultivated in Ethiopia, where local legend credits a goat herder named Kaldi with noticing his goats became unusually energetic after eating berries from a certain shrub. From there, cultivation spread to Yemen by around the 15th century, where it was grown and traded through the port city of Mocha – a name that later became closely associated with coffee itself.\n\nBy the 17th century, coffee had reached Europe, and coffeehouses began appearing in major cities. The first coffeehouse in England opened in Oxford in 1650, and within decades London alone had several hundred.\n\nEuropean colonial powers soon began establishing coffee plantations in their overseas territories to reduce dependence on imports from Yemen. The Dutch were among the first, introducing coffee cultivation to the island of Java in the late 17th century – a name that, like Mocha, became closely tied to the drink itself.\n\nBrazil entered the coffee trade later but came to dominate it completely; by the late 19th century, Brazil was producing around 70% of the world's coffee supply, a position it has never entirely relinquished, remaining the largest producer today.\n\nThe 20th century brought major changes to how coffee was traded internationally. In 1963, producing and consuming countries established the International Coffee Organization, aiming to stabilise prices that had historically been highly volatile due to unpredictable harvests.\n\nMore recently, the rise of the specialty coffee movement from the 1980s onward shifted consumer attention toward the origin and quality of beans, rather than price alone, leading to greater interest in practices like direct trade between roasters and individual farms.\n\nToday, coffee is grown in more than 70 countries and is one of the most valuable agricultural commodities traded internationally, supporting the livelihoods of an estimated 25 million farmers worldwide.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0009-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0009-q031", "prompt": "Coffee is believed to have first been cultivated in ______.", "accept": ["Ethiopia"], "evidence": { "explanation": "The lecturer says coffee is believed to have first been cultivated in Ethiopia." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q032", "prompt": "Local legend credits a goat herder named ______ with discovering coffee's effects.", "accept": ["Kaldi"], "evidence": { "explanation": "The lecturer names the goat herder Kaldi." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q033", "prompt": "By around the 15th century, coffee cultivation had spread to ______.", "accept": ["Yemen"], "evidence": { "explanation": "The lecturer says cultivation spread to Yemen by around the 15th century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q034", "prompt": "Yemeni coffee was traded through the port city of ______.", "accept": ["Mocha"], "evidence": { "explanation": "The lecturer names the port city of Mocha." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q035", "prompt": "The first coffeehouse in England opened in ______ in 1650.", "accept": ["Oxford"], "evidence": { "explanation": "The lecturer says the first English coffeehouse opened in Oxford in 1650." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q036", "prompt": "The Dutch introduced coffee cultivation to the island of ______.", "accept": ["Java"], "evidence": { "explanation": "The lecturer says the Dutch introduced cultivation to the island of Java." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q037", "prompt": "By the late 19th century, ______ was producing around 70% of the world's coffee supply.", "accept": ["Brazil"], "evidence": { "explanation": "The lecturer says Brazil was producing around 70% of the world's coffee supply." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q038", "prompt": "The International Coffee Organization was established in ______.", "accept": ["1963"], "evidence": { "explanation": "The lecturer gives the year 1963." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q039", "prompt": "The specialty coffee movement grew from the ______ onward.", "accept": ["1980s"], "evidence": { "explanation": "The lecturer says the movement grew from the 1980s onward." } },
+            { "kind": "completion", "id": "generated-listening-academic-0009-q040", "prompt": "Coffee farming supports an estimated ______ farmers worldwide.", "accept": ["25 million"], "evidence": { "explanation": "The lecturer gives the figure of an estimated 25 million farmers." } }
+          ]
+        }
+      ]
+    }
   }
 ];
