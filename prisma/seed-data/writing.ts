@@ -362,4 +362,87 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- Still more Task 1 General letters (was at 8 against Academic's 13 reports;
+  // rounds registers out to a formal/semi-formal/informal split matching real GT papers) ----
+  {
+    slug: "letter-complaint-noisy-business",
+    title: "Letter of complaint about noise from a neighbouring business",
+    taskType: "task1-general",
+    topic: "Community",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "test",
+    data: {
+      prompt:
+        "A new business has opened near your home and its noise is disturbing you, especially in the evenings. Write a letter to the local council. In your letter: describe the problem and when it happens, explain how it is affecting you, and say what action you would like the council to take.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. State the problem factually and keep the tone firm but polite throughout.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-requesting-reference-former-manager",
+    title: "Letter requesting a reference from a former manager",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You are applying for a new job and need a reference from a previous employer. Write a letter to your former manager. In your letter: remind them of when and where you worked together, explain what the new job involves, and ask if they would be willing to write the reference.",
+      instructions:
+        "A semi-formal register suits this best — you know the reader, but it remains a professional request.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-request-switch-class-time",
+    title: "Letter asking a course coordinator to switch a class time",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "semi-formal"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are enrolled in an evening course, but a new work schedule now clashes with your class time. Write a letter to the course coordinator. In your letter: explain the situation, ask whether you could move to a different class group, and say what times would suit you better.",
+      instructions:
+        "A semi-formal register suits this best — you have some ongoing contact with the coordinator, but it is still an institutional request.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-congratulating-family-new-job",
+    title: "Letter congratulating a family member on a new job",
+    taskType: "task1-general",
+    topic: "Family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "A member of your family has just started a new job. Write a letter to them. In your letter: congratulate them on the new job, ask how the first few days have gone, and offer to celebrate together soon.",
+      instructions:
+        "Keep this informal and warm — write as you would to someone you are close to.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-asking-friend-look-after-pet",
+    title: "Letter asking a friend to look after your pet",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are going away for two weeks and need someone to look after your pet. Write a letter to a friend. In your letter: explain your travel plans, describe what looking after the pet would involve, and say why you thought of asking them.",
+      instructions:
+        "Keep this informal — a friendly, conversational tone is appropriate throughout.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
 ];
