@@ -7806,5 +7806,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0013-p1",
+    "title": "General Training Reading — Section 1: Campsite and Legal Advice Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nRIVERBEND CAMPSITE\nBooking Information and Rules\n\nThe campsite is open from April to the end of October. Standard pitches cost £16 per night, and pitches with an electric hook-up cost £20 per night. A maximum of six people may stay on one pitch. Arrival is from 2:00pm and departure is by 11:00am. On peak weekends, a minimum stay of two nights applies.\n\nQuiet time is from 10:00pm to 7:00am, and no music may be played after 10:00pm. Campfires are permitted only in the designated fire pits, and bags of firewood can be bought at reception for £5. Dogs are welcome on leads, at a charge of £3 per dog per night. Showers cost a 20p token.\n\nCancellations made at least 14 days before arrival are refunded, minus a £10 fee.\n\nTEXT 2\n\nOPEN DOOR LEGAL ADVICE CLINIC\nFree Advice Sessions\n\nOur volunteer solicitors offer free 30-minute advice sessions on Tuesdays from 5:00pm to 8:00pm, on a first-come, first-served basis, and on the first Saturday of each month from 10:00am to 1:00pm, by appointment only.\n\nWe can advise on housing, employment, consumer and family matters. We cannot advise on immigration or criminal cases, and we cannot represent you in court. Please bring any relevant documents. Interpreters are available if booked at least three days in advance. All advice is confidential. The clinic is open from September to July and is closed in August.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0013-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q001", "statement": "The campsite is open all year round.", "answer": "FALSE", "evidence": { "explanation": "It is open from April to the end of October." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q002", "statement": "Dogs are allowed on the campsite.", "answer": "TRUE", "evidence": { "explanation": "Dogs are welcome on leads." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q003", "statement": "Campfires may be lit anywhere on the site.", "answer": "FALSE", "evidence": { "explanation": "Campfires are permitted only in the designated fire pits." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q004", "statement": "Firewood can be bought at the campsite.", "answer": "TRUE", "evidence": { "explanation": "Bags of firewood are sold at reception." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q005", "statement": "The campsite has a shop selling groceries.", "answer": "NOT GIVEN", "evidence": { "explanation": "A grocery shop is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q006", "statement": "The clinic's solicitors can represent clients in court.", "answer": "FALSE", "evidence": { "explanation": "The clinic cannot represent you in court." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0013-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0013-q007", "prompt": "A pitch with an electric hook-up costs ______ per night.", "accept": ["£20", "20 pounds"], "evidence": { "explanation": "Text 1 gives £20." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q008", "prompt": "Quiet time at the campsite begins at ______.", "accept": ["10:00pm", "10pm", "10.00pm"], "evidence": { "explanation": "Quiet time is from 10:00pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q009", "prompt": "Interpreters must be booked at least ______ days in advance.", "accept": ["three", "3"], "evidence": { "explanation": "Text 2 says three days." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q010", "prompt": "The clinic is closed in ______.", "accept": ["August"], "evidence": { "explanation": "The clinic is closed in August." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0013-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0013-q011", "question": "How many people may stay on one pitch?", "options": ["Four", "Five", "Six", "Eight"], "correctIndex": 2, "evidence": { "explanation": "A maximum of six people may stay on one pitch." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0013-q012", "question": "How much is the charge per dog per night?", "options": ["£2", "£3", "£4", "£5"], "correctIndex": 1, "evidence": { "explanation": "The charge is £3 per dog per night." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0013-q013", "question": "Which type of case does the clinic not advise on?", "options": ["Housing", "Employment", "Immigration", "Consumer"], "correctIndex": 2, "evidence": { "explanation": "The clinic cannot advise on immigration or criminal cases." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0013-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Customer Complaints Procedure",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "WINDSOR HOME STORES\nStaff Handbook — Section 4: Customer Complaints Procedure\n\nWhen a customer makes a complaint, staff must listen without interrupting, apologise for the inconvenience and record the complaint in the complaints log on the same day. Staff must never argue with a customer or admit legal liability.\n\nStaff may approve refunds of up to £50 on their own authority. Refunds above £50 require the approval of a supervisor.\n\nWritten complaints must be acknowledged within two working days, and a full reply must be sent within ten working days. Serious complaints, such as those about safety or discrimination, must be passed to the manager immediately. A customer who is still dissatisfied may be referred to the customer service director.\n\nAll complaints are reviewed at a monthly team meeting so that any patterns can be identified and dealt with.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0013-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q014", "statement": "Staff may approve refunds of up to £50 without a supervisor.", "answer": "TRUE", "evidence": { "explanation": "Refunds up to £50 are within staff authority." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q015", "statement": "Written complaints must be answered in full within two working days.", "answer": "FALSE", "evidence": { "explanation": "They must be acknowledged within two days; a full reply is due within ten." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q016", "statement": "Complaints about safety must be passed to the manager immediately.", "answer": "TRUE", "evidence": { "explanation": "Serious complaints such as safety go to the manager immediately." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q017", "statement": "Staff should admit legal liability to calm an angry customer.", "answer": "FALSE", "evidence": { "explanation": "Staff must never admit legal liability." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q018", "statement": "Customers who complain receive a discount voucher.", "answer": "NOT GIVEN", "evidence": { "explanation": "Vouchers are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0013-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0013-q019", "prompt": "Complaints are recorded in the complaints ______ on the same day.", "accept": ["log"], "evidence": { "explanation": "Complaints are recorded in the complaints log." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q020", "prompt": "Written complaints are acknowledged within ______ working days.", "accept": ["two", "2"], "evidence": { "explanation": "Acknowledgement is within two working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q021", "prompt": "A full reply must be sent within ______ working days.", "accept": ["ten", "10"], "evidence": { "explanation": "A full reply is due within ten working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q022", "prompt": "Complaints are reviewed at a ______ team meeting.", "accept": ["monthly"], "evidence": { "explanation": "Reviews take place at a monthly meeting." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q023", "prompt": "Refunds above £50 require the approval of a ______.", "accept": ["supervisor"], "evidence": { "explanation": "A supervisor must approve larger refunds." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0013-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0013-q024", "question": "What should staff do first when a customer complains?", "options": ["Interrupt with an explanation", "Listen without interrupting", "Refer them to the manager", "Offer a refund"], "correctIndex": 1, "evidence": { "explanation": "Staff must listen without interrupting." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0013-q025", "question": "Who deals with serious complaints about discrimination?", "options": ["The customer", "The manager", "The cashier", "The supplier"], "correctIndex": 1, "evidence": { "explanation": "Serious complaints are passed to the manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0013-q026", "question": "Why are complaints reviewed each month?", "options": ["To find patterns", "To punish staff", "To set prices", "To plan sales"], "correctIndex": 0, "evidence": { "explanation": "Reviews identify patterns." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0013-p3",
+    "title": "The Life and Work of Marie Curie",
+    "sourceTestSet": "General Training",
+    "topic": "Science",
+    "tags": ["general-training", "science", "biography", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Marie Curie is one of the most celebrated scientists in history, and the first person to win Nobel Prizes in two different sciences. Her career, which combined brilliant laboratory work with determination in the face of obstacles, opened doors for women in science and gave the world a new understanding of radioactivity, a word that she herself coined.\n\nB. She was born Maria Skłodowska in Warsaw in 1867, in a Poland then divided between foreign empires. Women were not admitted to the university there, so she worked as a governess to help pay for her sister's medical studies in Paris, and she studied in secret in an underground \"floating university\". In 1891, she moved to Paris, where she studied physics and mathematics at the Sorbonne, often surviving on little more than bread and tea.\n\nC. In 1895 she married the physicist Pierre Curie, and the couple began a partnership that would change science. Intrigued by the mysterious rays discovered by Henri Becquerel in uranium, Marie Curie measured the radiation given off by various minerals and found that one ore was far more radioactive than its uranium content could explain. In 1898 she and Pierre announced the discovery of two new elements, polonium, which she named after her homeland, and radium.\n\nD. In 1903, Marie, Pierre and Becquerel shared the Nobel Prize in Physics, making her the first woman to win a Nobel Prize. After Pierre was killed in a road accident in 1906, she took over his professorship, becoming the first woman to teach at the Sorbonne. In 1911, she was awarded a second Nobel Prize, this time in Chemistry, for the discovery and isolation of radium.\n\nE. During the First World War, Curie recognised that X-ray machines could help surgeons to locate bullets and shrapnel in wounded soldiers. She helped to equip vehicles with X-ray apparatus and drove them to the front, and about twenty of these mobile units, nicknamed \"Little Curies\", were used in the field. She also trained women to operate the equipment.\n\nF. Curie's work had a lasting effect on medicine, since radium was used to treat cancer, but she and her colleagues did not appreciate the dangers of radiation. She died in 1934 of aplastic anaemia, an illness probably caused by long exposure. Her laboratory notebooks are still radioactive today, and are kept in lead-lined boxes.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0013-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A pioneer who broke barriers" },
+            { "key": "ii", "label": "A determined student in Paris" },
+            { "key": "iii", "label": "The search for new elements" },
+            { "key": "iv", "label": "Two prizes in two sciences" },
+            { "key": "v", "label": "Taking X-rays to the battlefield" },
+            { "key": "vi", "label": "A legacy paid for with her health" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0013-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A presents Curie as a pioneer." } },
+            { "kind": "matching", "id": "generated-reading-general-0013-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes her student years in Warsaw and Paris." } },
+            { "kind": "matching", "id": "generated-reading-general-0013-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the two Nobel Prizes." } },
+            { "kind": "matching", "id": "generated-reading-general-0013-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes mobile X-ray units in the First World War." } },
+            { "kind": "matching", "id": "generated-reading-general-0013-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F links her legacy to her radiation illness." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0013-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q032", "statement": "Marie Curie was born in Poland.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says she was born in Warsaw." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q033", "statement": "Women were admitted to the university in Warsaw when she was young.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says women were not admitted." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q034", "statement": "Curie won Nobel Prizes in both Physics and Chemistry.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D describes both prizes." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q035", "statement": "Curie's daughter also won a Nobel Prize.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention her daughter." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0013-q036", "statement": "Curie's laboratory notebooks are still radioactive today.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0013-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0013-q037", "prompt": "Curie moved to Paris in ______.", "accept": ["1891"], "evidence": { "explanation": "Paragraph B gives 1891." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q038", "prompt": "In 1898 Curie and her husband announced the discovery of polonium and ______.", "accept": ["radium"], "evidence": { "explanation": "Paragraph C names radium." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q039", "prompt": "The mobile X-ray vehicles were nicknamed 'Little ______'.", "accept": ["Curies"], "evidence": { "explanation": "Paragraph E names Little Curies." } },
+            { "kind": "completion", "id": "generated-reading-general-0013-q040", "prompt": "Curie died in 1934 of an illness called ______ anaemia.", "accept": ["aplastic"], "evidence": { "explanation": "Paragraph F names aplastic anaemia." } }
+          ]
+        }
+      ]
+    }
   }
 ];
