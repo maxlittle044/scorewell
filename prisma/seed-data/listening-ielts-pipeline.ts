@@ -4928,5 +4928,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0016-s1",
+    "title": "Bicycle Repair Booking – Listening Section 1",
+    "topic": "Everyday life",
+    "tags": ["academic", "everyday-life", "form-completion"],
+    "data": {
+      "audioLabel": "Bicycle Repair Booking – Listening Section 1",
+      "transcript": "Mechanic: Good morning, Harbour Cycles. How can I help?\nCaller: Hello, I'd like to book my mountain bike in for a repair.\nMechanic: Certainly. What seems to be the problem?\nCaller: The brakes aren't working properly. They're very weak.\nMechanic: We can fix that. Could you bring it in on Monday morning, at nine o'clock?\nCaller: Monday at nine is fine.\nMechanic: Brake repairs usually cost about £35, including parts. I'll confirm the exact price when I've seen it.\nCaller: That's fine. When will it be ready?\nMechanic: It should be ready by Friday.\nCaller: I use the bike every day. Is there anything you can offer in the meantime?\nMechanic: We lend a free helmet with our loan bikes, and the loan bike itself is free for repairs over £30.\nCaller: Great. Where exactly is the shop?\nMechanic: We're on Harbour Street, opposite the station.\nCaller: And could I give you my details? My surname is Aldridge, A-L-D-R-I-D-G-E, and my number is 07700 900774.\nMechanic: Thank you, Mr Aldridge. See you on Monday.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0016-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0016-q001", "prompt": "Surname: ______.", "accept": ["Aldridge"], "evidence": { "explanation": "The caller spells A-L-D-R-I-D-G-E." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q002", "prompt": "Type of bike: ______ bike.", "accept": ["mountain"], "evidence": { "explanation": "The caller has a mountain bike." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q003", "prompt": "Problem: the ______.", "accept": ["brakes"], "evidence": { "explanation": "The brakes are not working properly." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q004", "prompt": "Day to bring the bike in: ______.", "accept": ["Monday"], "evidence": { "explanation": "The mechanic suggests Monday morning." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q005", "prompt": "Time to bring the bike in: ______ o'clock.", "accept": ["nine", "9"], "evidence": { "explanation": "The mechanic says nine o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q006", "prompt": "Estimated cost: £______.", "accept": ["35"], "evidence": { "explanation": "Brake repairs cost about £35." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q007", "prompt": "The bike should be ready by ______.", "accept": ["Friday"], "evidence": { "explanation": "The mechanic says it should be ready by Friday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q008", "prompt": "A free ______ is lent with loan bikes.", "accept": ["helmet"], "evidence": { "explanation": "The mechanic says a free helmet is lent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q009", "prompt": "The shop is on ______ Street.", "accept": ["Harbour"], "evidence": { "explanation": "The shop is on Harbour Street." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q010", "prompt": "Contact number: ______.", "accept": ["07700 900774"], "evidence": { "explanation": "The caller gives 07700 900774." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0016-s2",
+    "title": "Welcome to the Botanic Garden – Listening Section 2",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Welcome to the Botanic Garden – Listening Section 2",
+      "transcript": "Good morning, and welcome to the Botanic Garden. Let me give you some information before you begin your visit.\n\nThe garden was founded in 1846 and covers twelve hectares. The roses are at their best in June, so this is a wonderful time to visit. In summer we are open from nine in the morning until six in the evening.\n\nAn adult ticket costs £8, and students pay £5 with a valid card. If you'd like a guided tour, they start at eleven o'clock from the tropical glasshouse and last about an hour.\n\nPicnics are welcome on the main lawn, but please note that barbecues are not allowed anywhere in the garden. The café is beside the lake, and it serves hot and cold drinks as well as light meals.\n\nPlease keep to the paths in the flower beds, and take care near the water. Enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0016-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0016-q011", "prompt": "The garden was founded in ______.", "accept": ["1846"], "evidence": { "explanation": "The speaker says it was founded in 1846." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q012", "prompt": "The garden covers ______ hectares.", "accept": ["twelve", "12"], "evidence": { "explanation": "The speaker says twelve hectares." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q013", "prompt": "The roses are at their best in ______.", "accept": ["June"], "evidence": { "explanation": "The speaker says June." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q014", "prompt": "In summer, the garden closes at ______.", "accept": ["six", "6", "6pm"], "evidence": { "explanation": "The speaker says six in the evening." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q015", "prompt": "An adult ticket costs £______.", "accept": ["8", "eight"], "evidence": { "explanation": "The speaker says £8." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q016", "prompt": "Student tickets cost £______.", "accept": ["5", "five"], "evidence": { "explanation": "The speaker says students pay £5." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0016-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q017", "question": "Where do the guided tours start?", "options": ["At the main gate", "From the tropical glasshouse", "At the café", "At the rose garden"], "correctIndex": 1, "evidence": { "explanation": "Tours start from the tropical glasshouse." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q018", "question": "What are visitors allowed to do on the main lawn?", "options": ["Have picnics", "Play football", "Have barbecues", "Camp overnight"], "correctIndex": 0, "evidence": { "explanation": "Picnics are welcome on the main lawn." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q019", "question": "Where is the café?", "options": ["Beside the lake", "Next to the entrance", "Inside the glasshouse", "By the rose garden"], "correctIndex": 0, "evidence": { "explanation": "The café is beside the lake." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q020", "question": "What is not allowed anywhere in the garden?", "options": ["Picnics", "Barbecues", "Photography", "Walking on paths"], "correctIndex": 1, "evidence": { "explanation": "Barbecues are not allowed anywhere in the garden." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0016-s3",
+    "title": "Preparing a History Seminar – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Preparing a History Seminar – Listening Section 3",
+      "transcript": "Tutor: Come in, Maya. You're presenting in the seminar next month, aren't you?\nMaya: Yes, on the fifth of November. My topic is the introduction of railways in the 1840s.\nTutor: Good. And how long is your presentation?\nMaya: Fifteen minutes, plus questions.\nTutor: I'd start with the university archive. It holds some useful original material.\nMaya: What kinds of sources should I look for?\nTutor: Primary sources first: diaries and letters from the period, and official documents such as a government report from 1905. Those are all primary sources, because they were produced at the time.\nMaya: And a recent biography of one of the railway engineers?\nTutor: That's a secondary source. It's useful for background, because it's written later by a historian.\nMaya: What about a personal blog I found on railway history?\nTutor: I'd avoid it. The author has no formal training and doesn't give sources, so it isn't reliable enough for academic work.\nMaya: I see. Should I work alone?\nTutor: You'll present in a group of three, so talk to the others about dividing the topics. And be careful not to rely too much on internet sources.\nMaya: I'll make sure I use the archive. Thank you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0016-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q021", "question": "What is the topic of Maya's presentation?", "options": ["The introduction of railways in the 1840s", "The history of canals", "Steam engine design", "Victorian architecture"], "correctIndex": 0, "evidence": { "explanation": "Maya says her topic is the introduction of railways in the 1840s." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q022", "question": "When is the seminar?", "options": ["5 October", "5 November", "15 November", "5 December"], "correctIndex": 1, "evidence": { "explanation": "Maya says the fifth of November." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q023", "question": "How long is the presentation?", "options": ["Ten minutes", "Fifteen minutes", "Twenty minutes", "Thirty minutes"], "correctIndex": 1, "evidence": { "explanation": "Maya says fifteen minutes, plus questions." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q024", "question": "Where does the tutor suggest Maya should start?", "options": ["The university archive", "The town library", "An online forum", "A railway museum"], "correctIndex": 0, "evidence": { "explanation": "The tutor says to start with the university archive." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q025", "question": "What does the tutor warn Maya against?", "options": ["Relying too much on internet sources", "Speaking too quickly", "Using diaries", "Working in a group"], "correctIndex": 0, "evidence": { "explanation": "The tutor says not to rely too much on internet sources." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0016-q026", "question": "How many students will be in Maya's group?", "options": ["Two", "Three", "Four", "Five"], "correctIndex": 1, "evidence": { "explanation": "The tutor says she will present in a group of three." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0016-s3-g2",
+          "instructions": "What kind of source is each of the following? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "A primary source" },
+            { "key": "B", "label": "A secondary source" },
+            { "key": "C", "label": "Not reliable enough" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0016-q027", "prompt": "A diary from the period", "answer": "A", "evidence": { "explanation": "The tutor lists diaries as primary sources." } },
+            { "kind": "matching", "id": "generated-listening-academic-0016-q028", "prompt": "A recent biography of a railway engineer", "answer": "B", "evidence": { "explanation": "The tutor calls a recent biography a secondary source." } },
+            { "kind": "matching", "id": "generated-listening-academic-0016-q029", "prompt": "A personal blog about railway history", "answer": "C", "evidence": { "explanation": "The tutor says the blog is not reliable enough." } },
+            { "kind": "matching", "id": "generated-listening-academic-0016-q030", "prompt": "A government report from 1905", "answer": "A", "evidence": { "explanation": "The tutor lists the 1905 report as a primary source." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0016-s4",
+    "title": "The Science of Colour Perception – Listening Section 4",
+    "topic": "Science",
+    "tags": ["academic", "science", "note-completion"],
+    "data": {
+      "audioLabel": "The Science of Colour Perception – Listening Section 4",
+      "transcript": "Today I'd like to explain how we see colour.\n\nVisible light is a small part of the electromagnetic spectrum, with wavelengths from about 400 to 700 nanometres. In 1666, Isaac Newton passed sunlight through a glass prism and showed that white light is made up of a spectrum of colours. He chose to name seven colours, partly because of a belief that seven was a significant number, echoing the seven notes of the musical scale.\n\nThe human eye contains two kinds of light-sensitive cells. Rod cells work in dim light but do not detect colour. Cone cells work in brighter light, and there are three types, which respond most strongly to red, green and blue light. The brain combines their signals to produce the full range of colours we see.\n\nSome people lack one type of cone, or have one that works differently, which causes colour blindness. The most common form, red-green colour blindness, affects about one in twelve men but only about one in two hundred women.\n\nOther animals see colour very differently. Bees can see ultraviolet light, which is invisible to us, and flowers have patterns that guide bees to nectar. The mantis shrimp has as many as twelve types of colour receptor, although research suggests that it does not necessarily see more colours than we do.\n\nFinally, our brain adjusts for changes in lighting, so that a red apple looks red in sunlight or under a lamp. This ability is known as colour constancy.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0016-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0016-q031", "prompt": "Visible light has wavelengths from about 400 to ______ nanometres.", "accept": ["700"], "evidence": { "explanation": "The lecturer says about 400 to 700 nanometres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q032", "prompt": "Newton showed white light is made of a spectrum using a glass ______.", "accept": ["prism"], "evidence": { "explanation": "The lecturer says Newton used a glass prism." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q033", "prompt": "Newton did this experiment in ______.", "accept": ["1666"], "evidence": { "explanation": "The lecturer gives 1666." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q034", "prompt": "Newton named ______ colours.", "accept": ["seven", "7"], "evidence": { "explanation": "The lecturer says he named seven colours." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q035", "prompt": "______ cells work in dim light but do not detect colour.", "accept": ["Rod"], "evidence": { "explanation": "The lecturer says rod cells work in dim light." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q036", "prompt": "There are ______ types of cone cell.", "accept": ["three", "3"], "evidence": { "explanation": "The lecturer says there are three types." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q037", "prompt": "Red-green colour blindness affects about one in ______ men.", "accept": ["twelve", "12"], "evidence": { "explanation": "The lecturer says about one in twelve men." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q038", "prompt": "Bees can see ______ light.", "accept": ["ultraviolet"], "evidence": { "explanation": "The lecturer says bees can see ultraviolet light." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q039", "prompt": "The mantis shrimp has as many as ______ types of colour receptor.", "accept": ["twelve", "12"], "evidence": { "explanation": "The lecturer says as many as twelve." } },
+            { "kind": "completion", "id": "generated-listening-academic-0016-q040", "prompt": "The brain's ability to adjust for lighting is known as colour ______.", "accept": ["constancy"], "evidence": { "explanation": "The lecturer names colour constancy." } }
+          ]
+        }
+      ]
+    }
   }
 ];
