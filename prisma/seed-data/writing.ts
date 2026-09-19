@@ -739,4 +739,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       },
     },
   },
+
+  // ---- More Task 2 essays (sleep and school, payments, animal testing, working week,
+  // museums, sport, retirement, online learning, packaging, city traffic) ----
+  {
+    slug: "task2-later-school-start-times",
+    title: "Task 2: Should schools start later in the morning?",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "health", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that secondary schools should start later in the morning so that teenagers can get more sleep. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-cashless-society",
+    title: "Task 2: The move towards a cashless society",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "In many countries, cash is being replaced by card and mobile payments. Discuss the advantages and disadvantages of moving towards a cashless society.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-animal-testing",
+    title: "Task 2: Animal testing for medical research",
+    taskType: "task2",
+    topic: "Science",
+    tags: ["writing", "task-2", "science", "ethics", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that testing new medicines on animals is necessary to protect human health, while others think it is morally unacceptable. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-four-day-working-week",
+    title: "Task 2: A shorter working week",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some companies are experimenting with a four-day working week without reducing employees' pay. Do you think this is a positive development? To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-free-museum-entry",
+    title: "Task 2: Should museums be free to enter?",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "government", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that museums and art galleries should be free for everyone to enter, while others believe visitors should pay an admission fee. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-sport-national-pride",
+    title: "Task 2: International sport and national identity",
+    taskType: "task2",
+    topic: "Sport",
+    tags: ["writing", "task-2", "sport", "society", "two-part"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "International sporting events often generate great national pride. Why do you think sport has this effect on people, and is it always a positive influence?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-retirement-age",
+    title: "Task 2: Raising the retirement age",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "ageing-population", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "In many countries the population is ageing, which puts pressure on pension systems. Some governments have responded by raising the retirement age. What problems does an ageing population cause, and is raising the retirement age a good solution?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-online-learning-vs-classroom",
+    title: "Task 2: Online learning compared with classroom teaching",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "technology", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "More and more students are choosing to study online rather than attend classes in person. Discuss the advantages and disadvantages of this trend.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-plastic-packaging",
+    title: "Task 2: Reducing plastic packaging",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "Plastic packaging is a major source of waste around the world. What are the causes of this problem, and what measures could reduce it?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-banning-cars-city-centres",
+    title: "Task 2: Should cars be banned from city centres?",
+    taskType: "task2",
+    topic: "Urban planning",
+    tags: ["writing", "task-2", "urban-planning", "transport", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people argue that private cars should be banned from city centres altogether. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
