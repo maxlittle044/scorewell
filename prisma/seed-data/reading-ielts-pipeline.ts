@@ -7646,5 +7646,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0018-p1",
+    "title": "The Gut Microbiome: A Hidden Community",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "health", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The human gut is home to trillions of microorganisms, most of them bacteria but also including viruses and fungi. One widely cited estimate suggests that the number of bacterial cells in a typical person is roughly equal to the number of human cells, and that together the gut's microbes weigh around a kilogram or two. This community, known as the gut microbiome, is unique to each individual, like a fingerprint.\n\nB. The microbes do work that the body cannot do for itself. Humans lack the enzymes to digest many plant fibres, but gut bacteria ferment them, producing short-chain fatty acids that nourish the cells lining the intestine. Microbes also make some vitamins, and they help to train the immune system to distinguish harmless substances from dangerous ones. A healthy community crowds out harmful bacteria by competing with them for food and space.\n\nC. The microbiome begins to form at birth. Babies born vaginally pick up microbes from their mothers during delivery, and breast milk contains sugars that feed particular beneficial bacteria. Studies suggest that babies born by caesarean section, or given antibiotics early in life, may develop a different microbiome, although the long-term consequences of these differences are still being investigated.\n\nD. Diet is one of the strongest influences on the community. People who eat a wide variety of plant foods, such as vegetables, pulses, whole grains and fruit, tend to have a more diverse microbiome, and researchers generally regard diversity as a sign of health. Fermented foods such as yoghurt and kimchi supply live bacteria, although it is not clear how long these bacteria remain in the gut.\n\nE. Doctors have begun to use this knowledge in treatment. Antibiotics save lives but can also destroy beneficial bacteria along with harmful ones, sometimes allowing a dangerous infection called Clostridioides difficile to take hold. In such cases, a faecal transplant, in which a healthy donor's gut bacteria are introduced to the patient, has cured a large majority of patients who had failed to respond to other treatments.\n\nF. Some of the most exciting, and least certain, research concerns the gut-brain axis, the two-way communication between the gut and the brain. Studies in animals show that changing the microbiome can alter behaviour, and some human studies link differences in gut bacteria with depression and anxiety. Scientists caution, however, that such correlations do not prove cause and effect, and that many commercial claims for products that claim to improve mood are not supported by evidence.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0018-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A vast community inside every person" },
+            { "key": "ii", "label": "Jobs done by microbes: digestion and defence" },
+            { "key": "iii", "label": "How babies acquire their first microbes" },
+            { "key": "iv", "label": "Feeding the community with variety" },
+            { "key": "v", "label": "Treatments that reset the balance" },
+            { "key": "vi", "label": "Promising but unproven links to mood" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0018-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the size of the gut community." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes digestion and immune functions." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q003", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the role of a varied diet." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes faecal transplants after antibiotic damage." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes uncertain links between gut and mood." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0018-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q006", "statement": "Most of the microorganisms in the gut are bacteria.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q007", "statement": "Humans can digest all plant fibres without help from gut bacteria.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says humans lack the enzymes to digest many plant fibres." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q008", "statement": "Faecal transplants have been used to treat a serious infection.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E describes their use against Clostridioides difficile." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q009", "statement": "Probiotic supplements are more effective than yoghurt.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare supplements with yoghurt." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0018-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0018-q010", "prompt": "The human gut is home to trillions of ______.", "accept": ["microorganisms", "microbes"], "evidence": { "explanation": "Paragraph A says trillions of microorganisms." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q011", "prompt": "Gut bacteria ferment plant fibres to produce short-chain ______.", "accept": ["fatty acids"], "evidence": { "explanation": "Paragraph B names short-chain fatty acids." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q012", "prompt": "Eating a wide variety of ______ foods is linked with a more diverse microbiome.", "accept": ["plant"], "evidence": { "explanation": "Paragraph D refers to a wide variety of plant foods." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q013", "prompt": "Communication between the gut and the brain is called the gut-______ axis.", "accept": ["brain"], "evidence": { "explanation": "Paragraph F names the gut-brain axis." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0018-p2",
+    "title": "Cutting Through Panama: The Canal Builders",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "engineering", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For centuries, sailors dreamed of a passage across the narrow isthmus of Panama that would avoid the long and dangerous voyage around the southern tip of South America. A ship travelling from New York to San Francisco had to sail some 20,000 kilometres around Cape Horn; through a canal, the journey could be cut by more than half. By the nineteenth century, growing trade and the California gold rush made the case for a canal irresistible.\n\nB. The first serious attempt began in 1881, led by the French diplomat Ferdinand de Lesseps, who had built the Suez Canal. But Panama was very different from the flat Egyptian desert. Landslides repeatedly buried the diggings, the rivers flooded and, above all, disease killed thousands of workers. By 1889 the company had gone bankrupt, having spent enormous sums and lost an estimated 20,000 lives.\n\nC. The United States took over in 1904, after Panama had gained independence from Colombia. American engineers recognised that disease was the main obstacle. Doctor William Gorgas, who had earlier fought yellow fever in Cuba, organised a campaign to drain swamps, spray standing water and screen houses, since the illnesses were spread by mosquitoes. By 1906, yellow fever had been eliminated from the Canal Zone, and malaria was greatly reduced.\n\nD. The engineering was on a scale never before attempted. Rather than dig a channel at sea level, the builders created a large artificial lake, Gatun Lake, and used a series of locks to lift ships about 26 metres above sea level and lower them again at the other side. Workers also excavated the Culebra Cut through the continental divide, moving vast quantities of earth and rock.\n\nE. The canal opened in August 1914, just as the First World War began in Europe, and its early years were overshadowed by events elsewhere. Yet it transformed world trade by shortening the routes between the Atlantic and Pacific oceans. More than 5,000 workers, most of them labourers from the Caribbean, had died during the American phase of construction, a cost that is often overlooked.\n\nF. Today the canal handles a significant share of global shipping, and an expansion project completed in 2016 added a new set of wider locks so that larger container ships could pass. The canal depends on rainfall to fill its lakes, however, and periods of drought have forced authorities to limit the number of ships, raising questions about how well it can cope in a changing climate.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0018-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A shortcut long dreamed of" },
+            { "key": "ii", "label": "A costly first attempt" },
+            { "key": "iii", "label": "Defeating mosquito-borne disease" },
+            { "key": "iv", "label": "Locks and a giant cut through the mountains" },
+            { "key": "v", "label": "Opening and the transformation of trade" },
+            { "key": "vi", "label": "A modern canal facing new limits" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0018-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the long-held dream of a shortcut." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the failed French attempt." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Gorgas's campaign against mosquitoes." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the opening and its effect on trade." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes expansion and drought limits." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0018-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q019", "statement": "The French attempt to build the canal was completed successfully.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the company went bankrupt by 1889." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q020", "statement": "A sanitation campaign led by William Gorgas helped to control mosquitoes.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C describes his campaign." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q021", "statement": "The canal opened in 1914.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives August 1914." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q022", "statement": "Tolls on the Panama Canal are lower than on other canals.", "answer": "NOT GIVEN", "evidence": { "explanation": "Tolls are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0018-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0018-q023", "prompt": "The French attempt to build the canal began in ______.", "accept": ["1881"], "evidence": { "explanation": "Paragraph B gives 1881." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q024", "prompt": "Yellow fever was eliminated from the Canal Zone by ______.", "accept": ["1906"], "evidence": { "explanation": "Paragraph C gives 1906." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q025", "prompt": "The locks lift ships about ______ metres above sea level.", "accept": ["26", "twenty-six"], "evidence": { "explanation": "Paragraph D gives about 26 metres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q026", "prompt": "An expansion project with wider locks was completed in ______.", "accept": ["2016"], "evidence": { "explanation": "Paragraph F gives 2016." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0018-p3",
+    "title": "The Bilingual Brain",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "psychology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Bilingualism is the norm rather than the exception. Estimates vary depending on how a speaker is defined, but a large share of the world's population, perhaps half or more, uses two or more languages regularly, whether in the home, at school or at work. In many countries, such as India and Nigeria, several languages are used in daily life, and children grow up moving between them without thinking of it as unusual.\n\nB. In many English-speaking countries, however, there was long a belief that raising a child with two languages would be harmful. Early twentieth-century studies, some of them poorly designed, appeared to show that bilingual children performed worse on intelligence tests, and parents were sometimes advised to use only one language at home. Later research showed that the differences were caused by other factors, such as poverty and the fact that children were tested in a language they did not know well. Bilingual children may mix languages in a sentence, but this is a normal stage and does not indicate confusion.\n\nC. Brain-imaging studies suggest that both languages are active in a bilingual person's mind even when only one is being used. This means that the brain must constantly select the right language and suppress the other, a task that is thought to exercise what psychologists call executive function: the ability to focus attention, ignore distractions and switch between tasks.\n\nD. This has led to a bold hypothesis, that bilingualism may protect the brain against ageing. In a well-known study of patients with dementia in Canada, bilingual patients were found, on average, to show the first symptoms around four years later than monolingual patients with similar backgrounds. Scientists emphasise that bilingualism does not prevent dementia, but suggest that it may help the brain to cope for longer with the damage.\n\nE. Not all researchers are convinced. Several later studies have failed to replicate the early results, and critics argue that the benefits of bilingualism may have been exaggerated, or may apply only to people who use both languages very frequently. It is also difficult to run experiments in which people are randomly assigned to be bilingual, so most studies compare groups that may differ in other ways, such as education and family background.\n\nF. For parents and teachers, the practical message is straightforward. Learning a second language has clear benefits for communication and cultural understanding, whatever its effect on the brain, and there is no evidence that it slows a child's development in other subjects. Some schools now teach half of the day in each of two languages in dual-language programmes, and studies of these programmes report good results in both languages.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0018-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A common experience in most of the world" },
+            { "key": "ii", "label": "Overturning an old worry about confusion" },
+            { "key": "iii", "label": "What brain scans reveal" },
+            { "key": "iv", "label": "Possible protection in later life" },
+            { "key": "v", "label": "Questions about how strong the advantage is" },
+            { "key": "vi", "label": "Lessons for schools and families" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0018-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A says bilingualism is the norm across much of the world." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes and rejects the old belief." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes possible protection against dementia." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes failures to replicate and criticisms." } },
+            { "kind": "matching", "id": "generated-reading-academic-0018-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F gives practical lessons for parents and teachers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0018-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q032", "statement": "A large share of the world's population uses two or more languages regularly.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q033", "statement": "Early researchers believed that bilingualism harmed children's performance.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B describes early studies suggesting bilingual children performed worse." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q034", "statement": "All later studies have confirmed a cognitive advantage for bilingual people.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says several later studies failed to replicate the early results." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q035", "statement": "A bilingual child who mixes languages in a sentence is confused.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says mixing is normal and does not indicate confusion." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0018-q036", "statement": "Bilingual education is cheaper than monolingual education.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says nothing about cost." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0018-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0018-q037", "prompt": "The ability to focus attention and switch between tasks is called ______ function.", "accept": ["executive"], "evidence": { "explanation": "Paragraph C names executive function." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q038", "prompt": "In one Canadian study, bilingual patients showed the first symptoms of dementia around ______ years later.", "accept": ["four", "4"], "evidence": { "explanation": "Paragraph D gives around four years." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q039", "prompt": "Several later studies have failed to ______ the early results.", "accept": ["replicate"], "evidence": { "explanation": "Paragraph E says they failed to replicate the early results." } },
+            { "kind": "completion", "id": "generated-reading-academic-0018-q040", "prompt": "Some schools teach half the day in each of two languages in ______ programmes.", "accept": ["dual-language", "dual language"], "evidence": { "explanation": "Paragraph F names dual-language programmes." } }
+          ]
+        }
+      ]
+    }
   }
 ];
