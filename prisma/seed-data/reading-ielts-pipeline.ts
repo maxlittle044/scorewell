@@ -7345,5 +7345,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0017-p1",
+    "title": "Life in the Deep Ocean",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. More than half of the Earth's surface is covered by ocean that is over 3,000 metres deep, yet this is the least explored environment on the planet. Sunlight fades quickly in seawater: by about 200 metres, little remains, and virtually none reaches depths below about 1,000 metres. Beneath that point the ocean is in permanent darkness, and the animals living there have never known daylight.\n\nB. The deep sea is also a place of extreme pressure. The pressure increases by about one atmosphere for every ten metres of depth, and at the bottom of the Challenger Deep in the Pacific Ocean, the deepest known point at nearly 11,000 metres, it is more than a thousand times the pressure at the surface. Temperatures are close to freezing over most of the deep ocean floor. For a long time, scientists assumed that these conditions made life impossible.\n\nC. That view changed in 1977, when researchers in a small submersible near the Galápagos Islands discovered hydrothermal vents, cracks in the sea floor from which water heated by volcanic activity pours out, rich in dissolved chemicals. Around the vents, they found dense communities of animals, including giant tube worms more than two metres long and clams the size of dinner plates. Their food chain was based not on sunlight but on bacteria that obtain energy from chemicals such as hydrogen sulphide, a process called chemosynthesis.\n\nD. Elsewhere, deep-sea animals have evolved a variety of adaptations to darkness and scarcity. Many produce their own light, a phenomenon called bioluminescence, which they use to attract prey or mates, or to confuse predators. Some fish have huge mouths and stretchy stomachs to swallow prey larger than themselves, since meals are infrequent, and many animals have slow metabolisms that allow them to survive long periods without food.\n\nE. Away from the vents, most life depends on food that drifts down from the sunlit waters above. This \"marine snow\" consists of dead plankton, faecal pellets and other organic particles, and it falls slowly through the water, so that only a small fraction of what is produced near the surface ever reaches the sea floor. Occasionally, a large object such as a whale carcass sinks to the bottom, and provides a feast that can support specialised animals for decades.\n\nF. Scientists estimate that most of the deep ocean has never been directly observed. Exploration relies on expensive submersibles and remotely operated vehicles, and new species are found on almost every expedition. This new knowledge comes at a time when the deep sea is coming under pressure: fishing boats now trawl at depths of over a thousand metres, and companies are seeking permission to mine metal-rich nodules from the sea floor, raising concerns that habitats may be destroyed before they are understood.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0017-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A world beyond the reach of sunlight" },
+            { "key": "ii", "label": "Extreme depth and crushing pressure" },
+            { "key": "iii", "label": "A surprising source of energy" },
+            { "key": "iv", "label": "Ways of surviving in the dark" },
+            { "key": "v", "label": "Food falling from above" },
+            { "key": "vi", "label": "Exploration and emerging threats" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0017-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the fading of sunlight and permanent darkness." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes depth and pressure." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes chemosynthesis at hydrothermal vents." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes marine snow drifting down." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers exploration, trawling and mining." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0017-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q006", "statement": "Sunlight can penetrate to the bottom of the deepest parts of the ocean.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says virtually no light reaches depths below about 1,000 metres." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q007", "statement": "Hydrothermal vents were discovered in 1977.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1977." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q008", "statement": "The bacteria around hydrothermal vents depend on sunlight for energy.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they obtain energy from chemicals, not sunlight." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q009", "statement": "Deep-sea fish are usually larger than fish in shallow water.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare sizes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0017-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0017-q010", "prompt": "Virtually no light reaches depths below about ______ metres.", "accept": ["1,000", "1000"], "evidence": { "explanation": "Paragraph A gives about 1,000 metres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q011", "prompt": "The Challenger Deep is nearly ______ metres deep.", "accept": ["11,000", "11000"], "evidence": { "explanation": "Paragraph B gives nearly 11,000 metres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q012", "prompt": "Vent bacteria obtain energy from chemicals such as ______ sulphide.", "accept": ["hydrogen"], "evidence": { "explanation": "Paragraph C names hydrogen sulphide." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q013", "prompt": "Particles drifting down from above are known as marine ______.", "accept": ["snow"], "evidence": { "explanation": "Paragraph E names marine snow." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0017-p2",
+    "title": "The Invention of the Telephone",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. On 7 March 1876, the Scottish-born inventor Alexander Graham Bell was granted a patent for what he called \"improvements in telegraphy\", a description that seems modest for a device that would transform communication. Three days later, working in Boston, he spoke into his apparatus the words \"Mr Watson, come here, I want to see you\", and his assistant, Thomas Watson, heard them from another room.\n\nB. Bell was not alone. On the same day that Bell's application was filed, another inventor, Elisha Gray, submitted a document describing a similar idea, and the question of who had priority led to years of lawsuits. Bell's patent was upheld, and it is often described as one of the most valuable ever granted. Historians still debate how far the outcome reflected the merits of the claims rather than the timing of paperwork.\n\nC. The telephone spread quickly. The first commercial exchange, which allowed any subscriber to be connected to any other, opened in New Haven, Connecticut, in 1878, and by the end of the century, cities across the United States and Europe had their own exchanges staffed by operators who connected calls by hand. By 1900, the United States had more than a million telephones.\n\nD. The effects on daily life were considerable. Businesses could respond to customers in minutes, doctors could be summoned in an emergency, and families separated by distance could hear each other's voices. Some critics feared that the telephone would damage face-to-face conversation and erode privacy, concerns that would be echoed by later technologies.\n\nE. Long-distance calls were at first limited by the weakness of the signal, which faded over distance. Improvements in amplification allowed calls between distant cities, but crossing the Atlantic had to wait until 1956, when the first transatlantic telephone cable began operating, initially able to carry only a few dozen conversations at once.\n\nF. The most recent revolution has been the removal of the wire. The first call from a handheld mobile phone was made in 1973 by the engineer Martin Cooper, and mobile networks spread from the 1980s. The arrival of the smartphone in 2007 turned the telephone into a device that browses the internet, takes photographs and pays for goods, and voice calls now make up only a small part of its use.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0017-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A patent and a famous first sentence" },
+            { "key": "ii", "label": "A dispute over who came first" },
+            { "key": "iii", "label": "Wires, exchanges and the first networks" },
+            { "key": "iv", "label": "Changing habits in everyday life" },
+            { "key": "v", "label": "Crossing oceans by cable" },
+            { "key": "vi", "label": "Freedom from the wire" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0017-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the patent and the first spoken words." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the dispute with Elisha Gray." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes exchanges and early networks." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the first transatlantic cable." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes mobile phones." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0017-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q019", "statement": "Bell was granted a patent for the telephone in 1876.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A gives 7 March 1876." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q020", "statement": "Elisha Gray submitted his document a year after Bell.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says Gray submitted his document on the same day." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q021", "statement": "The first commercial telephone exchange opened in New Haven.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q022", "statement": "Bell became the wealthiest man in America.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention Bell's wealth." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0017-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0017-q023", "prompt": "Bell's first words were heard by his assistant, Thomas ______.", "accept": ["Watson"], "evidence": { "explanation": "Paragraph A names Thomas Watson." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q024", "prompt": "By 1900, the United States had more than a ______ telephones.", "accept": ["million"], "evidence": { "explanation": "Paragraph C gives more than a million." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q025", "prompt": "The first transatlantic telephone cable began operating in ______.", "accept": ["1956"], "evidence": { "explanation": "Paragraph E gives 1956." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q026", "prompt": "The first handheld mobile call was made in ______.", "accept": ["1973"], "evidence": { "explanation": "Paragraph F gives 1973." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0017-p3",
+    "title": "The Hidden Costs of Fast Fashion",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. \"Fast fashion\" is the term used for clothing that is designed, manufactured and sold quickly and cheaply, in order to follow the latest trends. Instead of two or four seasonal collections, some retailers now introduce new styles every week. Global clothing production roughly doubled between 2000 and 2014, and shoppers are buying more items than ever before while keeping each one for a shorter time.\n\nB. The environmental costs are considerable. Growing cotton needs large amounts of water, and making a single cotton T-shirt is commonly estimated to require about 2,700 litres. Dyeing and finishing fabric can pollute rivers with chemicals, and synthetic fabrics such as polyester are made from oil and shed microscopic fibres when washed. Estimates of the industry's share of global carbon emissions vary, with figures between 2 and 10 per cent often quoted, partly because the supply chain is so complicated to measure.\n\nC. The human costs are also high. Low prices depend on low labour costs, and many garments are made in countries where wages are low and safety standards are poorly enforced. In April 2013, the Rana Plaza building in Bangladesh, which housed several garment factories, collapsed, killing more than 1,100 workers. The disaster led to agreements to improve building safety, but campaigners say that conditions in many factories remain poor.\n\nD. Why do consumers keep buying? Retailers encourage frequent purchases through constant novelty and low prices, and social media has made it easy to see, and to want, what others are wearing. Psychologists suggest that the pleasure of buying something new is short-lived, which leads shoppers to look for the next purchase. Surveys show that many people are uncomfortable about the waste this creates, but concern does not always change behaviour.\n\nE. Some companies have responded. A number of brands now offer garments made from recycled fibres, collect used clothes for recycling or launch lines described as sustainable. Critics point out that recycling clothing on a large scale remains technically difficult, since many fabrics are blends that cannot easily be separated, and that a brand which sells more clothes overall does little for the environment by adding a \"green\" range. Meanwhile, second-hand shops and rental services are growing quickly, especially among younger shoppers.\n\nF. Governments are also beginning to act. Under \"extended producer responsibility\" schemes, which are being introduced in several countries, clothing companies must pay for the collection and recycling of the products they sell. France has banned the destruction of unsold clothing and other non-food goods, requiring companies to donate or recycle them instead. Supporters of such measures argue that they will encourage companies to design clothes that last longer and are easier to recycle.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0017-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Cheap clothes made and sold at speed" },
+            { "key": "ii", "label": "Heavy demands on water and energy" },
+            { "key": "iii", "label": "The human cost of low prices" },
+            { "key": "iv", "label": "Why shoppers keep buying" },
+            { "key": "v", "label": "Attempts to reform the industry" },
+            { "key": "vi", "label": "Laws that target waste" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0017-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines fast fashion." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B covers water use, pollution and emissions." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D explains consumer buying behaviour." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes company responses and their limits." } },
+            { "kind": "matching", "id": "generated-reading-academic-0017-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes producer-responsibility schemes and France's ban." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0017-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q032", "statement": "Global clothing production roughly doubled between 2000 and 2014.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q033", "statement": "Shoppers now keep each item of clothing for longer than in the past.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says they keep each one for a shorter time." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q034", "statement": "Experts agree on the exact share of global carbon emissions produced by the fashion industry.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says estimates vary between 2 and 10 per cent." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q035", "statement": "Second-hand and rental services are growing quickly.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0017-q036", "statement": "Fast fashion brands spend more on advertising than on production.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no information about advertising spending." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0017-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0017-q037", "prompt": "Making a single cotton T-shirt is commonly estimated to require about ______ litres of water.", "accept": ["2,700", "2700"], "evidence": { "explanation": "Paragraph B gives about 2,700 litres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q038", "prompt": "The 2013 Rana Plaza collapse killed more than ______ workers.", "accept": ["1,100", "1100"], "evidence": { "explanation": "Paragraph C gives more than 1,100." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q039", "prompt": "Producer responsibility schemes require companies to pay for collection and ______.", "accept": ["recycling"], "evidence": { "explanation": "Paragraph F says collection and recycling." } },
+            { "kind": "completion", "id": "generated-reading-academic-0017-q040", "prompt": "France has banned the ______ of unsold clothing.", "accept": ["destruction"], "evidence": { "explanation": "Paragraph F names the ban on destruction." } }
+          ]
+        }
+      ]
+    }
   }
 ];
