@@ -2794,5 +2794,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0226",
+    "title": "Part 1: Family and relatives",
+    "part": "part1",
+    "topic": "Family and relatives",
+    "tags": ["speaking", "part-1", "family-and-relatives"],
+    "data": {
+      "questions": [
+        "Do you come from a large family?",
+        "Who are you closest to in your family?",
+        "How often do you see your relatives?",
+        "Do you enjoy family gatherings?",
+        "Do you think family is more important than friends?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0227",
+    "title": "Part 1: Recycling and waste",
+    "part": "part1",
+    "topic": "Recycling and waste",
+    "tags": ["speaking", "part-1", "recycling-and-waste"],
+    "data": {
+      "questions": [
+        "Do you recycle things at home?",
+        "Which items do you recycle most often?",
+        "Is recycling common in the area where you live?",
+        "Did your family recycle when you were a child?",
+        "Do you try to reduce the amount of waste you produce?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0228",
+    "title": "Part 1: The internet and online life",
+    "part": "part1",
+    "topic": "Internet and online life",
+    "tags": ["speaking", "part-1", "internet-and-online-life"],
+    "data": {
+      "questions": [
+        "How often do you use the internet?",
+        "What do you mainly use the internet for?",
+        "Do you think you spend too much time online?",
+        "Did you use the internet much when you were a child?",
+        "Is internet access reliable where you live?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0229",
+    "title": "Part 1: Handwriting and communication",
+    "part": "part1",
+    "topic": "Handwriting and communication",
+    "tags": ["speaking", "part-1", "handwriting-and-communication"],
+    "data": {
+      "questions": [
+        "Do you often write things by hand?",
+        "Do you prefer typing or handwriting?",
+        "Do you ever write letters or cards to people?",
+        "What is your handwriting like?",
+        "Do you think handwriting will disappear in the future?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0230",
+    "title": "Part 1: Famous people and role models",
+    "part": "part1",
+    "topic": "Famous people and role models",
+    "tags": ["speaking", "part-1", "famous-people-and-role-models"],
+    "data": {
+      "questions": [
+        "Is there a famous person you admire?",
+        "Who was your role model when you were younger?",
+        "Do you follow any celebrities online?",
+        "Would you like to be famous yourself?",
+        "Do people in your country generally respect celebrities?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0226",
+    "title": "Part 2: Describe a family member you admire",
+    "part": "part2",
+    "topic": "Family and relatives",
+    "tags": ["speaking", "part-2", "family-and-relatives"],
+    "data": {
+      "questions": ["Describe a family member you admire"],
+      "cueCardPoints": [
+        "who this person is",
+        "how they are related to you",
+        "what they are like",
+        "and explain why you admire them"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0227",
+    "title": "Part 2: Describe something you have reused or repaired",
+    "part": "part2",
+    "topic": "Recycling and waste",
+    "tags": ["speaking", "part-2", "recycling-and-waste"],
+    "data": {
+      "questions": ["Describe something you have reused or repaired instead of throwing away"],
+      "cueCardPoints": [
+        "what the item was",
+        "how you used it before",
+        "how you reused or repaired it",
+        "and explain why you decided not to throw it away"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0228",
+    "title": "Part 2: Describe a website or app you use often",
+    "part": "part2",
+    "topic": "Internet and online life",
+    "tags": ["speaking", "part-2", "internet-and-online-life"],
+    "data": {
+      "questions": ["Describe a website or app that you use often"],
+      "cueCardPoints": [
+        "what it is",
+        "how often you use it",
+        "what you use it for",
+        "and explain why you like it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0229",
+    "title": "Part 2: Describe a letter, card or message that meant a lot to you",
+    "part": "part2",
+    "topic": "Handwriting and communication",
+    "tags": ["speaking", "part-2", "handwriting-and-communication"],
+    "data": {
+      "questions": ["Describe a letter, card or message that meant a lot to you"],
+      "cueCardPoints": [
+        "who it was from",
+        "when you received it",
+        "what it said",
+        "and explain why it meant so much to you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0230",
+    "title": "Part 2: Describe a person outside your family whom you admire",
+    "part": "part2",
+    "topic": "Famous people and role models",
+    "tags": ["speaking", "part-2", "famous-people-and-role-models"],
+    "data": {
+      "questions": ["Describe a person outside your family whom you admire"],
+      "cueCardPoints": [
+        "who this person is",
+        "how you know about them",
+        "what they do",
+        "and explain why you admire them"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0226",
+    "title": "Part 3: Families in a changing society",
+    "part": "part3",
+    "topic": "Family and relatives",
+    "tags": ["speaking", "part-3", "family-and-relatives"],
+    "data": {
+      "questions": [
+        "How have family structures changed in your country over the past few decades?",
+        "Should grown-up children be responsible for looking after their elderly parents?",
+        "Do extended families still play an important role in modern society?",
+        "Is family influence on a person stronger than the influence of friends?",
+        "How has technology affected communication between family members?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0227",
+    "title": "Part 3: Waste and responsibility",
+    "part": "part3",
+    "topic": "Recycling and waste",
+    "tags": ["speaking", "part-3", "recycling-and-waste"],
+    "data": {
+      "questions": [
+        "Why has waste become such a serious problem in modern societies?",
+        "Should people be fined if they do not recycle?",
+        "How much responsibility should companies take for the packaging they use?",
+        "Can the actions of individuals really make a difference to the problem of waste?",
+        "How do you think waste will be managed in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0228",
+    "title": "Part 3: The internet and society",
+    "part": "part3",
+    "topic": "Internet and online life",
+    "tags": ["speaking", "part-3", "internet-and-online-life"],
+    "data": {
+      "questions": [
+        "How has the internet changed the way people learn new things?",
+        "What dangers do young people face when they go online?",
+        "Should governments regulate what is published on the internet?",
+        "Do you think most people will one day work entirely online?",
+        "Does the internet bring people closer together or make them more isolated?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0229",
+    "title": "Part 3: Writing, messaging and relationships",
+    "part": "part3",
+    "topic": "Handwriting and communication",
+    "tags": ["speaking", "part-3", "handwriting-and-communication"],
+    "data": {
+      "questions": [
+        "Why do some people still prefer to write by hand?",
+        "Should schools continue to teach handwriting?",
+        "How has instant messaging changed the way people keep in touch?",
+        "Are emails and messages less personal than letters?",
+        "Do you think voice will eventually replace typing?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0230",
+    "title": "Part 3: Fame, influence and role models",
+    "part": "part3",
+    "topic": "Famous people and role models",
+    "tags": ["speaking", "part-3", "famous-people-and-role-models"],
+    "data": {
+      "questions": [
+        "Why do so many young people copy the behaviour of celebrities?",
+        "Should famous people be expected to act as role models?",
+        "Do you think fame changes the people who achieve it?",
+        "Are social media influencers a good or bad influence on society?",
+        "How have people's role models changed over time?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
