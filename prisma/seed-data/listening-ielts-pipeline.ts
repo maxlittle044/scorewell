@@ -4400,5 +4400,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0012-s1",
+    "title": "Gym Membership Enquiry – Listening Section 1",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "form-completion"],
+    "data": {
+      "audioLabel": "Gym Membership Enquiry – Listening Section 1",
+      "transcript": "Agent: Good afternoon, Fitzroy Fitness Centre. How can I help?\nCaller: Hi, I'd like to join the gym. Could you tell me about your memberships?\nAgent: Of course. We have a standard membership and a premium membership. The standard one gives you the gym and the pool, and premium adds the sauna and unlimited guest passes.\nCaller: The standard one sounds fine for me.\nAgent: Great. That's £29 a month, plus a one-off joining fee of £15.\nCaller: Okay. What are your opening hours?\nAgent: On weekdays we open at six in the morning and close at ten at night.\nCaller: Do I need to do an induction?\nAgent: Yes, all new members have a free induction session. The next one is on Thursday.\nCaller: Thursday works. And are there lockers?\nAgent: Yes, they take a two-pound coin as a deposit, which you get back when you empty the locker.\nCaller: Are classes included?\nAgent: Yoga classes are free for all members. Other classes, like spinning, cost extra.\nCaller: Good to know. Can I start on the first of June?\nAgent: Certainly. Could I take your surname?\nCaller: It's Okonkwo. That's O-K-O-N-K-W-O.\nAgent: Thank you. You're all set for the first of June.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0012-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0012-q001", "prompt": "Surname: ______.", "accept": ["Okonkwo"], "evidence": { "explanation": "The caller spells the surname O-K-O-N-K-W-O." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q002", "prompt": "Type of membership: ______.", "accept": ["standard"], "evidence": { "explanation": "The caller chooses the standard membership." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q003", "prompt": "Monthly fee: £______.", "accept": ["29"], "evidence": { "explanation": "The agent gives £29 a month." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q004", "prompt": "Joining fee: £______.", "accept": ["15"], "evidence": { "explanation": "The agent gives a one-off joining fee of £15." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q005", "prompt": "Weekday opening time: ______ in the morning.", "accept": ["six", "6", "6am"], "evidence": { "explanation": "The agent says weekdays open at six in the morning." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q006", "prompt": "Weekday closing time: ______ at night.", "accept": ["ten", "10", "10pm"], "evidence": { "explanation": "The agent says the gym closes at ten at night." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q007", "prompt": "Induction session day: ______.", "accept": ["Thursday"], "evidence": { "explanation": "The agent says the next induction is on Thursday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q008", "prompt": "Locker deposit: £______.", "accept": ["2"], "evidence": { "explanation": "Lockers take a two-pound coin as a deposit." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q009", "prompt": "Free classes for members: ______.", "accept": ["yoga"], "evidence": { "explanation": "Yoga classes are free for all members." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q010", "prompt": "Membership start date: ______ of June.", "accept": ["first", "1st", "1"], "evidence": { "explanation": "The caller asks to start on the first of June." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0012-s2",
+    "title": "A Tour of the New Community Library – Listening Section 2",
+    "topic": "Community",
+    "tags": ["academic", "community", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "A Tour of the New Community Library – Listening Section 2",
+      "transcript": "Good morning, everyone, and welcome to the new Northside Community Library. Let me show you around.\n\nThe library opened in September last year and has three floors. The children's section and the café are on the ground floor, so parents can enjoy a coffee while their children choose books.\n\nOn the first floor you'll find forty public computers, all with free internet access, and free wifi is available throughout the building. If you'd like a quiet place to work, the study zone is on the second floor, where talking is not allowed.\n\nMembers can borrow up to ten items at a time for three weeks. There are no late fees on children's books, because we want families to feel relaxed about borrowing.\n\nEvery Saturday at half past ten, we hold a storytime session for young children in the ground-floor reading corner.\n\nFinally, community groups can book our meeting rooms free of charge, for up to three hours at a time. Individuals and businesses are asked to pay a small hire fee.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0012-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0012-q011", "prompt": "The library opened in ______ last year.", "accept": ["September"], "evidence": { "explanation": "The speaker says it opened in September last year." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q012", "prompt": "The library has ______ floors.", "accept": ["three", "3"], "evidence": { "explanation": "The speaker says the library has three floors." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q013", "prompt": "There are ______ public computers on the first floor.", "accept": ["forty", "40"], "evidence": { "explanation": "The speaker mentions forty public computers." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q014", "prompt": "Members can borrow up to ______ items at a time.", "accept": ["ten", "10"], "evidence": { "explanation": "The speaker says up to ten items." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q015", "prompt": "Saturday storytime begins at ______.", "accept": ["half past ten", "10:30", "10.30"], "evidence": { "explanation": "The speaker says storytime is at half past ten." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q016", "prompt": "Meeting rooms can be booked for up to ______ hours at a time.", "accept": ["three", "3"], "evidence": { "explanation": "The speaker says up to three hours at a time." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0012-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q017", "question": "Where is the café?", "options": ["Ground floor", "First floor", "Second floor", "Basement"], "correctIndex": 0, "evidence": { "explanation": "The speaker says the café is on the ground floor." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q018", "question": "Where is the quiet study zone?", "options": ["Ground floor", "First floor", "Second floor", "Basement"], "correctIndex": 2, "evidence": { "explanation": "The speaker says the study zone is on the second floor." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q019", "question": "What is free for children?", "options": ["Membership cards", "Late fees on children's books", "Printing", "Café drinks"], "correctIndex": 1, "evidence": { "explanation": "The speaker says there are no late fees on children's books." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q020", "question": "Who can book the meeting rooms free of charge?", "options": ["Any visitor", "Community groups", "Schools only", "Library staff"], "correctIndex": 1, "evidence": { "explanation": "The speaker says community groups can book the rooms free." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0012-s3",
+    "title": "Planning a Coastal Field Trip – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Coastal Field Trip – Listening Section 3",
+      "transcript": "Sam: Nora, have you got the details for the field trip? I lost the email.\nNora: Yes. We're going to the coastal nature reserve, and the trip is on the 14th of May.\nSam: Right. What are we actually studying?\nNora: Rock pool species. We have to record what lives in each pool and compare them at different heights on the shore.\nSam: Sounds good. What time do we leave?\nNora: The minibus departs from the department at half past seven in the morning, so don't be late.\nSam: How long is the drive?\nNora: About two hours, so we'll arrive around half past nine.\nSam: And what should I wear?\nNora: Waterproof boots, definitely. The rocks are slippery and the pools are cold. Sandals won't do at all.\nSam: Okay. Who's bringing what? I can bring my camera.\nNora: Perfect. I'll bring the sample bottles, because I already have a set from last term.\nSam: And the first-aid kit?\nNora: The university provides that, along with the minibus, so we don't need to worry about either of them.\nSam: Great. See you on the 14th.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0012-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q021", "question": "Where is the field trip?", "options": ["A national park", "A coastal nature reserve", "A city aquarium", "A river valley"], "correctIndex": 1, "evidence": { "explanation": "Nora says they are going to the coastal nature reserve." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q022", "question": "When is the trip?", "options": ["12 May", "14 May", "18 May", "21 May"], "correctIndex": 1, "evidence": { "explanation": "Nora says the trip is on the 14th of May." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q023", "question": "What will the students study?", "options": ["Bird migration", "Rock pool species", "Sand dune plants", "Water pollution"], "correctIndex": 1, "evidence": { "explanation": "Nora says they are studying rock pool species." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q024", "question": "What time does the minibus leave?", "options": ["6:30am", "7:00am", "7:30am", "8:00am"], "correctIndex": 2, "evidence": { "explanation": "Nora says it departs at half past seven." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q025", "question": "What should the students wear?", "options": ["Sandals", "Waterproof boots", "Wetsuits", "Formal clothes"], "correctIndex": 1, "evidence": { "explanation": "Nora recommends waterproof boots." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0012-q026", "question": "How long is the drive?", "options": ["One hour", "Ninety minutes", "About two hours", "Three hours"], "correctIndex": 2, "evidence": { "explanation": "Nora says the drive is about two hours." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0012-s3-g2",
+          "instructions": "Who will provide each item? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Sam" },
+            { "key": "B", "label": "Nora" },
+            { "key": "C", "label": "The university" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0012-q027", "prompt": "The minibus", "answer": "C", "evidence": { "explanation": "The university provides the minibus." } },
+            { "kind": "matching", "id": "generated-listening-academic-0012-q028", "prompt": "The sample bottles", "answer": "B", "evidence": { "explanation": "Nora will bring the sample bottles." } },
+            { "kind": "matching", "id": "generated-listening-academic-0012-q029", "prompt": "The camera", "answer": "A", "evidence": { "explanation": "Sam will bring his camera." } },
+            { "kind": "matching", "id": "generated-listening-academic-0012-q030", "prompt": "The first-aid kit", "answer": "C", "evidence": { "explanation": "The university provides the first-aid kit." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0012-s4",
+    "title": "The Science of Volcanoes – Listening Section 4",
+    "topic": "Science",
+    "tags": ["academic", "science", "note-completion"],
+    "data": {
+      "audioLabel": "The Science of Volcanoes – Listening Section 4",
+      "transcript": "Today's lecture looks at how volcanoes work and how scientists try to predict their eruptions.\n\nThere are about 1,500 potentially active volcanoes on land, and a large share of them lie around the edge of the Pacific Ocean, in a zone known as the Ring of Fire, which contains about 75 per cent of the world's active volcanoes.\n\nMolten rock beneath the surface is called magma; once it reaches the surface it is called lava. Some of history's best-known eruptions have had dramatic effects. When Vesuvius erupted in AD 79, it buried the Roman town of Pompeii under ash. In 1883, the eruption of Krakatoa was so violent that it was heard about 4,800 kilometres away. And in 1815, the eruption of Tambora threw so much material into the atmosphere that the following year, 1816, became known as the year without a summer.\n\nMore recently, in 2010, the ash cloud from the Icelandic volcano Eyjafjallajökull grounded flights across Europe for several days.\n\nPredicting eruptions remains difficult, but monitoring has improved. Seismometers detect the small earthquakes that often come before an eruption as magma moves upwards. Gas sensors measure rising levels of sulphur dioxide escaping from the volcano. And satellites can detect the swelling of the ground as magma builds up beneath it. Combining these methods has allowed authorities to order evacuations in time to save many lives.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0012-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0012-q031", "prompt": "There are about ______ potentially active volcanoes on land.", "accept": ["1,500", "1500"], "evidence": { "explanation": "The lecturer says about 1,500." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q032", "prompt": "The Ring of Fire contains about ______ per cent of the world's active volcanoes.", "accept": ["75"], "evidence": { "explanation": "The lecturer says about 75 per cent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q033", "prompt": "Molten rock beneath the surface is called ______.", "accept": ["magma"], "evidence": { "explanation": "The lecturer says molten rock beneath the surface is magma." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q034", "prompt": "Vesuvius buried the Roman town of ______ in AD 79.", "accept": ["Pompeii"], "evidence": { "explanation": "The lecturer names Pompeii." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q035", "prompt": "The 1883 Krakatoa eruption was heard about ______ kilometres away.", "accept": ["4,800", "4800"], "evidence": { "explanation": "The lecturer says about 4,800 kilometres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q036", "prompt": "After the 1815 Tambora eruption, 1816 became known as the year without a ______.", "accept": ["summer"], "evidence": { "explanation": "The lecturer says the year without a summer." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q037", "prompt": "The 2010 Icelandic ash cloud grounded ______ across Europe.", "accept": ["flights"], "evidence": { "explanation": "The lecturer says it grounded flights across Europe." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q038", "prompt": "Seismometers detect small ______ that often come before an eruption.", "accept": ["earthquakes"], "evidence": { "explanation": "The lecturer says seismometers detect small earthquakes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q039", "prompt": "Gas sensors measure rising levels of sulphur ______.", "accept": ["dioxide"], "evidence": { "explanation": "The lecturer names sulphur dioxide." } },
+            { "kind": "completion", "id": "generated-listening-academic-0012-q040", "prompt": "Satellites can detect the ______ of the ground as magma builds up.", "accept": ["swelling"], "evidence": { "explanation": "The lecturer says satellites detect the swelling of the ground." } }
+          ]
+        }
+      ]
+    }
   }
 ];
