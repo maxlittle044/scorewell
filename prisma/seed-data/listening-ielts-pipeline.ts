@@ -5324,5 +5324,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0019-s1",
+    "title": "Airport Taxi Booking – Listening Section 1",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "form-completion"],
+    "data": {
+      "audioLabel": "Airport Taxi Booking – Listening Section 1",
+      "transcript": "Dispatcher: Good afternoon, Metro Cabs. How can I help?\nCaller: Hello, I'd like to book a taxi to the airport, please.\nDispatcher: Certainly. What date do you need it?\nCaller: The third of May. I have an early flight, so I need to be picked up at quarter past five in the morning.\nDispatcher: And where from?\nCaller: Fourteen Maple Avenue.\nDispatcher: And which terminal?\nCaller: Terminal two, please.\nDispatcher: How many passengers will there be?\nCaller: Three of us, and we have four bags.\nDispatcher: That's fine, a standard car will hold that. The fare to the airport is £38.\nCaller: Could you also provide a child seat? One of us is five years old.\nDispatcher: Yes, that's no problem, and there's no extra charge.\nCaller: Great. Could I pay by card in the taxi?\nDispatcher: Yes, all our cars take cards. Could I have your surname?\nCaller: It's Ferreira, that's F-E-R-R-E-I-R-A.\nDispatcher: And a contact number?\nCaller: 07700 900612.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0019-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0019-q001", "prompt": "Surname: ______.", "accept": ["Ferreira"], "evidence": { "explanation": "The caller spells F-E-R-R-E-I-R-A." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q002", "prompt": "Pick-up address: 14 ______ Avenue.", "accept": ["Maple"], "evidence": { "explanation": "The address is Fourteen Maple Avenue." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q003", "prompt": "Date: the ______ of May.", "accept": ["third", "3rd", "3"], "evidence": { "explanation": "The date is the third of May." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q004", "prompt": "Pick-up time: quarter past ______ in the morning.", "accept": ["five", "5"], "evidence": { "explanation": "The pick-up is at quarter past five." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q005", "prompt": "Destination: Terminal ______.", "accept": ["two", "2"], "evidence": { "explanation": "The caller asks for Terminal two." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q006", "prompt": "Number of passengers: ______.", "accept": ["three", "3"], "evidence": { "explanation": "There will be three passengers." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q007", "prompt": "Number of bags: ______.", "accept": ["four", "4"], "evidence": { "explanation": "The caller has four bags." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q008", "prompt": "Fare: £______.", "accept": ["38"], "evidence": { "explanation": "The fare is £38." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q009", "prompt": "Extra requested: a ______ seat.", "accept": ["child"], "evidence": { "explanation": "The caller asks for a child seat." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q010", "prompt": "Contact number: ______.", "accept": ["07700 900612"], "evidence": { "explanation": "The caller gives 07700 900612." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0019-s2",
+    "title": "Music Festival Briefing – Listening Section 2",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Music Festival Briefing – Listening Section 2",
+      "transcript": "Good morning, everyone, and welcome to this year's Riverside Music Festival. Here is what you need to know.\n\nThe festival runs for three days, from the twelfth to the fourteenth of July. The gates open at ten o'clock each morning, and the music finishes at eleven at night. A weekend ticket costs £75, and camping is an extra £20.\n\nThere are three stages: the Main Stage, the Acoustic Tent and the Dance Barn. Free shuttle buses run from Central Station every twenty minutes.\n\nFor safety, please note that glass bottles are not allowed on the site. There are free water refill stations beside each stage, so bring a plastic bottle. The first aid tent is next to the Main Stage, and it's staffed at all times.\n\nIf a child gets separated from their family, they should be taken to the information tent by the main gate, where staff will look after them.\n\nFinally, please respect our neighbours, and keep noise in the campsite to a minimum after midnight.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0019-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0019-q011", "prompt": "The festival runs for ______ days.", "accept": ["three", "3"], "evidence": { "explanation": "The speaker says three days." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q012", "prompt": "The gates open at ______ each morning.", "accept": ["ten", "10", "10am"], "evidence": { "explanation": "The gates open at ten o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q013", "prompt": "The music finishes at ______ at night.", "accept": ["eleven", "11", "11pm"], "evidence": { "explanation": "The music finishes at eleven at night." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q014", "prompt": "A weekend ticket costs £______.", "accept": ["75"], "evidence": { "explanation": "A weekend ticket costs £75." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q015", "prompt": "Camping costs an extra £______.", "accept": ["20"], "evidence": { "explanation": "Camping is an extra £20." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q016", "prompt": "Shuttle buses run from ______ Station.", "accept": ["Central"], "evidence": { "explanation": "Buses run from Central Station." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0019-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q017", "question": "What is not allowed on the site?", "options": ["Plastic bottles", "Glass bottles", "Umbrellas", "Cameras"], "correctIndex": 1, "evidence": { "explanation": "Glass bottles are not allowed." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q018", "question": "Where are the free water refill stations?", "options": ["Beside each stage", "At the main gate", "In the campsite only", "At the shuttle stop"], "correctIndex": 0, "evidence": { "explanation": "Refill stations are beside each stage." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q019", "question": "Where is the first aid tent?", "options": ["By the main gate", "Next to the Main Stage", "In the Dance Barn", "In the campsite"], "correctIndex": 1, "evidence": { "explanation": "The first aid tent is next to the Main Stage." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q020", "question": "Where should a lost child be taken?", "options": ["To the first aid tent", "To the information tent", "To the shuttle bus", "To the Acoustic Tent"], "correctIndex": 1, "evidence": { "explanation": "A separated child should be taken to the information tent." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0019-s3",
+    "title": "Feedback on a Group Presentation – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Feedback on a Group Presentation – Listening Section 3",
+      "transcript": "Tutor: Thank you for coming, Leo and Amy. I've marked your group presentation, and overall you got 68, which is a good mark.\nAmy: That's better than we expected.\nTutor: The introduction was your strongest section, very clear. The presentation lasted twelve minutes, which was ideal.\nLeo: Was there anything we should improve?\nTutor: Leo, you spoke rather quickly at the start. It's natural when you're nervous, but try to slow down.\nLeo: I'll work on that.\nTutor: Amy, your eye contact with the audience was excellent, and you kept the audience's attention well.\nAmy: Thank you.\nTutor: You both had too much text on your slides, though. It's better to use short phrases and images, and to explain the detail in your own words.\nAmy: Yes, we'll reduce the text.\nTutor: And you both answered the questions at the end confidently, which was impressive.\nLeo: Any advice for the next presentation?\nTutor: Practise with a timer, and record yourselves if you can. The next presentation is in two weeks.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0019-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q021", "question": "What mark did the group receive?", "options": ["58", "62", "68", "78"], "correctIndex": 2, "evidence": { "explanation": "The tutor says they got 68." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q022", "question": "Which was the strongest section?", "options": ["The introduction", "The conclusion", "The questions", "The slides"], "correctIndex": 0, "evidence": { "explanation": "The tutor says the introduction was strongest." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q023", "question": "How long did the presentation last?", "options": ["Ten minutes", "Twelve minutes", "Fifteen minutes", "Twenty minutes"], "correctIndex": 1, "evidence": { "explanation": "The tutor says twelve minutes." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q024", "question": "What did both students need to improve?", "options": ["Their timing", "The amount of text on slides", "Their eye contact", "Their answers to questions"], "correctIndex": 1, "evidence": { "explanation": "Both had too much text on their slides." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q025", "question": "What does the tutor suggest they use when practising?", "options": ["A timer", "A microphone", "A script", "A larger screen"], "correctIndex": 0, "evidence": { "explanation": "The tutor says to practise with a timer." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0019-q026", "question": "When is the next presentation?", "options": ["In one week", "In two weeks", "In three weeks", "Next month"], "correctIndex": 1, "evidence": { "explanation": "The tutor says it is in two weeks." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0019-s3-g2",
+          "instructions": "Whom does each comment apply to? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Leo" },
+            { "key": "B", "label": "Amy" },
+            { "key": "C", "label": "Both students" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0019-q027", "prompt": "Spoke too quickly at the start", "answer": "A", "evidence": { "explanation": "The tutor says Leo spoke rather quickly at the start." } },
+            { "kind": "matching", "id": "generated-listening-academic-0019-q028", "prompt": "Had excellent eye contact", "answer": "B", "evidence": { "explanation": "The tutor praises Amy's eye contact." } },
+            { "kind": "matching", "id": "generated-listening-academic-0019-q029", "prompt": "Put too much text on slides", "answer": "C", "evidence": { "explanation": "The tutor says they both had too much text." } },
+            { "kind": "matching", "id": "generated-listening-academic-0019-q030", "prompt": "Answered the questions confidently", "answer": "C", "evidence": { "explanation": "The tutor says they both answered confidently." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0019-s4",
+    "title": "The Science of Earthquakes – Listening Section 4",
+    "topic": "Science",
+    "tags": ["academic", "science", "note-completion"],
+    "data": {
+      "audioLabel": "The Science of Earthquakes – Listening Section 4",
+      "transcript": "Today's lecture explains why earthquakes happen and how scientists measure them.\n\nThe Earth's crust is divided into large pieces called tectonic plates, which move slowly against each other. Most earthquakes occur along faults, which are cracks in the crust where plates meet. Stress builds up over years, and when the rock finally slips, energy is released as seismic waves.\n\nThe point underground where the rock first slips is called the focus, and the point on the surface directly above it is the epicentre. Earthquakes are recorded by instruments called seismometers.\n\nIn 1935, the American scientist Charles Richter devised a scale to compare the size of earthquakes. Scientists now use a related measure, but the principle is the same: each whole-number increase represents about thirty-two times more energy released.\n\nSome earthquakes have been enormous. In 2011, an earthquake of magnitude nine occurred off the coast of Japan, and it caused a huge tsunami.\n\nAlthough earthquakes cannot be predicted, their effects can be reduced. Buildings in earthquake zones are designed with flexible foundations and strong frames, and early warning systems can give people several seconds' notice before the strongest shaking arrives.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0019-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0019-q031", "prompt": "The Earth's crust is divided into ______ plates.", "accept": ["tectonic"], "evidence": { "explanation": "The lecturer says tectonic plates." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q032", "prompt": "Most earthquakes occur along ______.", "accept": ["faults"], "evidence": { "explanation": "The lecturer says most occur along faults." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q033", "prompt": "The point underground where the rock first slips is called the ______.", "accept": ["focus"], "evidence": { "explanation": "The lecturer names the focus." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q034", "prompt": "The point on the surface directly above it is the ______.", "accept": ["epicentre", "epicenter"], "evidence": { "explanation": "The lecturer names the epicentre." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q035", "prompt": "Earthquakes are recorded by instruments called ______.", "accept": ["seismometers"], "evidence": { "explanation": "The lecturer names seismometers." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q036", "prompt": "Charles Richter devised his scale in ______.", "accept": ["1935"], "evidence": { "explanation": "The lecturer gives 1935." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q037", "prompt": "Each whole-number increase represents about ______ times more energy.", "accept": ["thirty-two", "32"], "evidence": { "explanation": "The lecturer says about thirty-two times." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q038", "prompt": "The 2011 earthquake off Japan had a magnitude of ______.", "accept": ["nine", "9"], "evidence": { "explanation": "The lecturer says magnitude nine." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q039", "prompt": "The 2011 earthquake caused a huge ______.", "accept": ["tsunami"], "evidence": { "explanation": "The lecturer says it caused a huge tsunami." } },
+            { "kind": "completion", "id": "generated-listening-academic-0019-q040", "prompt": "Buildings in earthquake zones are designed with ______ foundations.", "accept": ["flexible"], "evidence": { "explanation": "The lecturer says flexible foundations." } }
+          ]
+        }
+      ]
+    }
   }
 ];
