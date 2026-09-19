@@ -2539,5 +2539,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0221",
+    "title": "Part 1: Homes and housing",
+    "part": "part1",
+    "topic": "Homes and housing",
+    "tags": ["speaking", "part-1", "homes-and-housing"],
+    "data": {
+      "questions": [
+        "Do you live in a house or a flat?",
+        "What is your favourite room in your home?",
+        "How long have you lived in your current home?",
+        "Is there anything you would like to change about your home?",
+        "Do you prefer living alone or with other people?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0222",
+    "title": "Part 1: Volunteering and charity",
+    "part": "part1",
+    "topic": "Volunteering and charity",
+    "tags": ["speaking", "part-1", "volunteering-and-charity"],
+    "data": {
+      "questions": [
+        "Have you ever done any voluntary work?",
+        "Do people in your country often volunteer their time?",
+        "Would you like to do some volunteering in the future?",
+        "Do you ever give money to charities?",
+        "What kinds of charities are most popular where you live?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0223",
+    "title": "Part 1: Restaurants and cafés",
+    "part": "part1",
+    "topic": "Restaurants and cafés",
+    "tags": ["speaking", "part-1", "restaurants-and-cafes"],
+    "data": {
+      "questions": [
+        "How often do you eat out?",
+        "What kinds of restaurants do you like most?",
+        "Do you prefer going to cafés or to restaurants?",
+        "Have you ever had a bad experience in a restaurant?",
+        "Do you prefer eating out with friends or with family?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0224",
+    "title": "Part 1: Jobs and careers",
+    "part": "part1",
+    "topic": "Jobs and careers",
+    "tags": ["speaking", "part-1", "jobs-and-careers"],
+    "data": {
+      "questions": [
+        "Do you work or are you a student?",
+        "Why did you choose that job or field of study?",
+        "What was your first job?",
+        "Would you like to change your career in the future?",
+        "What is most important to you in a job?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0225",
+    "title": "Part 1: Advertising",
+    "part": "part1",
+    "topic": "Advertising",
+    "tags": ["speaking", "part-1", "advertising"],
+    "data": {
+      "questions": [
+        "Do you often notice advertisements?",
+        "Where do you see most advertisements?",
+        "Has an advertisement ever persuaded you to buy something?",
+        "Do you like the advertisements you see on social media?",
+        "Do you skip advertisements when you can?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0221",
+    "title": "Part 2: Describe a home you would like to live in",
+    "part": "part2",
+    "topic": "Homes and housing",
+    "tags": ["speaking", "part-2", "homes-and-housing"],
+    "data": {
+      "questions": ["Describe a home you would like to live in"],
+      "cueCardPoints": [
+        "where it would be",
+        "what it would look like",
+        "who you would live there with",
+        "and explain why you would like to live there"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0222",
+    "title": "Part 2: Describe a time when you helped someone",
+    "part": "part2",
+    "topic": "Volunteering and charity",
+    "tags": ["speaking", "part-2", "volunteering-and-charity"],
+    "data": {
+      "questions": ["Describe a time when you helped someone"],
+      "cueCardPoints": [
+        "who you helped",
+        "why they needed help",
+        "what you did",
+        "and explain how you felt afterwards"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0223",
+    "title": "Part 2: Describe a restaurant or café you enjoyed",
+    "part": "part2",
+    "topic": "Restaurants and cafés",
+    "tags": ["speaking", "part-2", "restaurants-and-cafes"],
+    "data": {
+      "questions": ["Describe a restaurant or café you enjoyed"],
+      "cueCardPoints": [
+        "where it is",
+        "who you went with",
+        "what you ate or drank there",
+        "and explain why you enjoyed it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0224",
+    "title": "Part 2: Describe a job you would like to do in the future",
+    "part": "part2",
+    "topic": "Jobs and careers",
+    "tags": ["speaking", "part-2", "jobs-and-careers"],
+    "data": {
+      "questions": ["Describe a job you would like to do in the future"],
+      "cueCardPoints": [
+        "what the job is",
+        "what skills or qualifications you would need",
+        "how you could prepare for it",
+        "and explain why you would like to do it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0225",
+    "title": "Part 2: Describe an advertisement you remember",
+    "part": "part2",
+    "topic": "Advertising",
+    "tags": ["speaking", "part-2", "advertising"],
+    "data": {
+      "questions": ["Describe an advertisement you remember"],
+      "cueCardPoints": [
+        "where you saw it",
+        "what it showed or said",
+        "what it was advertising",
+        "and explain why you remember it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0221",
+    "title": "Part 3: Housing and society",
+    "part": "part3",
+    "topic": "Homes and housing",
+    "tags": ["speaking", "part-3", "homes-and-housing"],
+    "data": {
+      "questions": [
+        "Why is housing so expensive in many big cities?",
+        "Should governments do more to build affordable homes?",
+        "How have homes in your country changed over the past fifty years?",
+        "Is it better to rent a home or to buy one?",
+        "How do you think homes will change in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0222",
+    "title": "Part 3: Giving time and money",
+    "part": "part3",
+    "topic": "Volunteering and charity",
+    "tags": ["speaking", "part-3", "volunteering-and-charity"],
+    "data": {
+      "questions": [
+        "Why do people choose to volunteer?",
+        "Should schools require students to do voluntary work?",
+        "Is giving time more valuable than giving money?",
+        "Should governments or charities take the main responsibility for helping people in need?",
+        "How has technology changed the way people give to charity?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0223",
+    "title": "Part 3: Eating out and modern life",
+    "part": "part3",
+    "topic": "Restaurants and cafés",
+    "tags": ["speaking", "part-3", "restaurants-and-cafes"],
+    "data": {
+      "questions": [
+        "Why are people eating out more often than in the past?",
+        "What effect does fast food have on people's health?",
+        "How have food delivery apps changed the way people eat?",
+        "Should restaurants be required to show the calories in their meals?",
+        "Do you think traditional restaurants will survive in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0224",
+    "title": "Part 3: The changing world of work",
+    "part": "part3",
+    "topic": "Jobs and careers",
+    "tags": ["speaking", "part-3", "jobs-and-careers"],
+    "data": {
+      "questions": [
+        "Why do people change careers more often than they used to?",
+        "Is salary the most important factor when choosing a job?",
+        "How might automation affect the jobs people do in the future?",
+        "Should schools provide more advice about careers?",
+        "How important is it to have a good balance between work and private life?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0225",
+    "title": "Part 3: The influence of advertising",
+    "part": "part3",
+    "topic": "Advertising",
+    "tags": ["speaking", "part-3", "advertising"],
+    "data": {
+      "questions": [
+        "In what ways does advertising influence the way people think and behave?",
+        "Should advertisements aimed at children be banned?",
+        "Do you think advertisements are usually honest?",
+        "Why do companies use famous people to promote their products?",
+        "How do you think advertising will change in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
