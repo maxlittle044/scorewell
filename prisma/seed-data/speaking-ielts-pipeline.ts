@@ -3049,5 +3049,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0231",
+    "title": "Part 1: Healthy eating",
+    "part": "part1",
+    "topic": "Healthy eating",
+    "tags": ["speaking", "part-1", "healthy-eating"],
+    "data": {
+      "questions": [
+        "Do you try to eat healthily?",
+        "What do you usually have for breakfast?",
+        "Do you eat more fruit and vegetables than you used to?",
+        "Do you like fast food?",
+        "Do you think people in your country generally eat healthily?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0232",
+    "title": "Part 1: Mobile phones",
+    "part": "part1",
+    "topic": "Mobile phones",
+    "tags": ["speaking", "part-1", "mobile-phones"],
+    "data": {
+      "questions": [
+        "How often do you use your mobile phone?",
+        "What do you mainly use your phone for?",
+        "Do you remember your first mobile phone?",
+        "Are there times when you switch your phone off?",
+        "Do you think people use their phones too much?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0233",
+    "title": "Part 1: Dreams and ambitions",
+    "part": "part1",
+    "topic": "Dreams and ambitions",
+    "tags": ["speaking", "part-1", "dreams-and-ambitions"],
+    "data": {
+      "questions": [
+        "What did you want to be when you were a child?",
+        "Do you have any ambitions at the moment?",
+        "Do you think it is important to have goals in life?",
+        "Have you achieved something you are proud of?",
+        "What would you do if you had much more free time?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0234",
+    "title": "Part 1: Tourism and holidays",
+    "part": "part1",
+    "topic": "Tourism and holidays",
+    "tags": ["speaking", "part-1", "tourism-and-holidays"],
+    "data": {
+      "questions": [
+        "Do you like going on holiday?",
+        "Where did you go on your last holiday?",
+        "Do you prefer beach holidays or city breaks?",
+        "Do you like travelling with other people?",
+        "Is tourism important in your country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0235",
+    "title": "Part 1: Teamwork and group work",
+    "part": "part1",
+    "topic": "Teamwork and group work",
+    "tags": ["speaking", "part-1", "teamwork-and-group-work"],
+    "data": {
+      "questions": [
+        "Do you enjoy working in a team?",
+        "Have you ever done a group project?",
+        "What role do you usually take in a group?",
+        "Do you prefer working alone or with others?",
+        "What qualities make someone a good teammate?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0231",
+    "title": "Part 2: Describe a healthy meal you enjoy",
+    "part": "part2",
+    "topic": "Healthy eating",
+    "tags": ["speaking", "part-2", "healthy-eating"],
+    "data": {
+      "questions": ["Describe a healthy meal that you enjoy"],
+      "cueCardPoints": [
+        "what the meal is",
+        "who prepares it",
+        "what ingredients it contains",
+        "and explain why you think it is both healthy and enjoyable"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0232",
+    "title": "Part 2: Describe a time when your phone was very useful",
+    "part": "part2",
+    "topic": "Mobile phones",
+    "tags": ["speaking", "part-2", "mobile-phones"],
+    "data": {
+      "questions": ["Describe a time when your mobile phone was very useful"],
+      "cueCardPoints": [
+        "when it happened",
+        "what the situation was",
+        "how your phone helped you",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0233",
+    "title": "Part 2: Describe an ambition you would like to achieve",
+    "part": "part2",
+    "topic": "Dreams and ambitions",
+    "tags": ["speaking", "part-2", "dreams-and-ambitions"],
+    "data": {
+      "questions": ["Describe an ambition that you would like to achieve"],
+      "cueCardPoints": [
+        "what the ambition is",
+        "why you want to achieve it",
+        "what you would need to do to achieve it",
+        "and explain how you would feel if you succeeded"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0234",
+    "title": "Part 2: Describe a holiday you enjoyed",
+    "part": "part2",
+    "topic": "Tourism and holidays",
+    "tags": ["speaking", "part-2", "tourism-and-holidays"],
+    "data": {
+      "questions": ["Describe a holiday that you enjoyed"],
+      "cueCardPoints": [
+        "where you went",
+        "who you went with",
+        "what you did there",
+        "and explain why you enjoyed it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0235",
+    "title": "Part 2: Describe a time when you worked successfully in a team",
+    "part": "part2",
+    "topic": "Teamwork and group work",
+    "tags": ["speaking", "part-2", "teamwork-and-group-work"],
+    "data": {
+      "questions": ["Describe a time when you worked successfully in a team"],
+      "cueCardPoints": [
+        "what the task was",
+        "who was in the team",
+        "what your role was",
+        "and explain why the team was successful"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0231",
+    "title": "Part 3: Food, health and society",
+    "part": "part3",
+    "topic": "Healthy eating",
+    "tags": ["speaking", "part-3", "healthy-eating"],
+    "data": {
+      "questions": [
+        "Why do so many people find it difficult to eat healthily?",
+        "Should governments place higher taxes on unhealthy food?",
+        "What role should schools play in teaching children about nutrition?",
+        "Are diets a good way of improving health?",
+        "How has food advertising affected people's eating habits?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0232",
+    "title": "Part 3: Phones and modern life",
+    "part": "part3",
+    "topic": "Mobile phones",
+    "tags": ["speaking", "part-3", "mobile-phones"],
+    "data": {
+      "questions": [
+        "How have mobile phones changed the way people communicate?",
+        "Should mobile phones be banned in classrooms?",
+        "What are the disadvantages of depending too much on a phone?",
+        "Do you think phones will eventually replace computers?",
+        "How do mobile phones affect people's privacy?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0233",
+    "title": "Part 3: Ambition and success",
+    "part": "part3",
+    "topic": "Dreams and ambitions",
+    "tags": ["speaking", "part-3", "dreams-and-ambitions"],
+    "data": {
+      "questions": [
+        "Why do some people achieve their goals while others do not?",
+        "Should children be encouraged to have big dreams?",
+        "How important is luck compared with hard work in achieving success?",
+        "How do people's ambitions change as they grow older?",
+        "Is success mainly measured by money?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0234",
+    "title": "Part 3: Tourism and its effects",
+    "part": "part3",
+    "topic": "Tourism and holidays",
+    "tags": ["speaking", "part-3", "tourism-and-holidays"],
+    "data": {
+      "questions": [
+        "How does tourism affect the people who live in popular destinations?",
+        "Is it better to travel independently or with a tour group?",
+        "Should the number of visitors to famous sites be limited?",
+        "How has cheap travel changed the way people take holidays?",
+        "Do you think people will travel less in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0235",
+    "title": "Part 3: Teams at school and at work",
+    "part": "part3",
+    "topic": "Teamwork and group work",
+    "tags": ["speaking", "part-3", "teamwork-and-group-work"],
+    "data": {
+      "questions": [
+        "Why do employers place so much value on teamwork?",
+        "Are team sports better for children than individual sports?",
+        "How can conflicts within a team be resolved effectively?",
+        "Does modern technology make teamwork easier or more difficult?",
+        "Should schools give students more group work?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
