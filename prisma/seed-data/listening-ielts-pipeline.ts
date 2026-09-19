@@ -4268,5 +4268,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0011-s1",
+    "title": "Cooking Class Booking – Listening Section 1",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "form-completion"],
+    "data": {
+      "audioLabel": "Cooking Class Booking – Listening Section 1",
+      "transcript": "Agent: Good morning, Harvest Kitchen Cooking School. How can I help?\nCaller: Hello, I'd like to book a place on one of your evening classes.\nAgent: Certainly. We have a pasta-making workshop and a bread-baking class this month. Which one interests you?\nCaller: The pasta-making one, please.\nAgent: That runs on the 12th, starting at half past six in the evening.\nCaller: How long does it last?\nAgent: It lasts three hours, so you'd finish at half past nine.\nCaller: And what does it cost?\nAgent: It's £48 per person, and that includes all the ingredients.\nCaller: Is there a limit on numbers?\nAgent: Yes, we keep groups small, with a maximum of eight people.\nCaller: Do I need to bring anything?\nAgent: Just an apron. We provide all the equipment, but we don't supply aprons.\nCaller: I'm a vegetarian. Will that be a problem?\nAgent: Not at all. The main sauce is tomato and basil, so that suits you perfectly. I'll make a note.\nCaller: Great. Could you take my name? It's Priya Nair, that's N-A-I-R.\nAgent: Thank you. And a contact number?\nCaller: 07700 900461.\nAgent: Lovely, you're all booked in.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0011-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0011-q001", "prompt": "Type of class: ______-making workshop.", "accept": ["pasta"], "evidence": { "explanation": "The caller chooses the pasta-making workshop." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q002", "prompt": "Date of class: the ______.", "accept": ["12th", "12"], "evidence": { "explanation": "The agent says it runs on the 12th." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q003", "prompt": "Start time: ______ in the evening.", "accept": ["half past six", "6:30", "6.30", "6:30pm"], "evidence": { "explanation": "The agent says it starts at half past six in the evening." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q004", "prompt": "Length of class: ______ hours.", "accept": ["three", "3"], "evidence": { "explanation": "The agent says it lasts three hours." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q005", "prompt": "Cost per person: £______.", "accept": ["48"], "evidence": { "explanation": "The agent gives the price as £48 per person." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q006", "prompt": "Maximum group size: ______ people.", "accept": ["eight", "8"], "evidence": { "explanation": "The agent says groups have a maximum of eight people." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q007", "prompt": "Participants must bring an ______.", "accept": ["apron"], "evidence": { "explanation": "The agent says to bring just an apron." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q008", "prompt": "Caller's dietary requirement: ______.", "accept": ["vegetarian"], "evidence": { "explanation": "The caller says they are a vegetarian." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q009", "prompt": "Caller's surname: ______.", "accept": ["Nair"], "evidence": { "explanation": "The caller spells the surname N-A-I-R." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q010", "prompt": "Contact number: ______.", "accept": ["07700 900461"], "evidence": { "explanation": "The caller gives the number 07700 900461." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0011-s2",
+    "title": "City Bike-Share Scheme Introduction – Listening Section 2",
+    "topic": "Transport",
+    "tags": ["academic", "transport", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "City Bike-Share Scheme Introduction – Listening Section 2",
+      "transcript": "Welcome, everyone, to the launch of the city's new bike-share scheme. I'd like to give you a quick overview of how it works.\n\nThe scheme opens on the first of April, with 600 bikes available from 60 docking stations spread across the city. The stations are concentrated near the railway station, the university and the hospital, where we expect the heaviest use.\n\nRegistration is done through our mobile app, and you'll need a bank card to sign up. The first thirty minutes of every ride are free. After that, we charge one pound for each additional thirty minutes. If you expect to ride regularly, annual membership costs £35 and removes the per-ride charge for the first thirty minutes altogether, so it pays for itself quickly.\n\nAll bikes come with built-in lights and a basket at the front. We don't provide helmets, but we strongly recommend that you wear one.\n\nWhen you finish your ride, you can return the bike to any docking station. If the station you arrive at is full, don't worry: the app will show you the nearest station with free spaces, and you'll be given extra free time to get there.\n\nFinally, our maintenance vans check every station every day, so if you find a faulty bike, simply report it through the app and dock it at the nearest station.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0011-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0011-q011", "prompt": "The scheme opens on the first of ______.", "accept": ["April"], "evidence": { "explanation": "The speaker says the scheme opens on the first of April." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q012", "prompt": "The scheme has ______ bikes in total.", "accept": ["600"], "evidence": { "explanation": "The speaker says 600 bikes are available." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q013", "prompt": "The first ______ minutes of every ride are free.", "accept": ["thirty", "30"], "evidence": { "explanation": "The speaker says the first thirty minutes are free." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q014", "prompt": "After that, each additional ______ minutes costs one pound.", "accept": ["thirty", "30"], "evidence": { "explanation": "The speaker says one pound is charged for each additional thirty minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q015", "prompt": "Users register through a mobile ______.", "accept": ["app"], "evidence": { "explanation": "The speaker says registration is done through the mobile app." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q016", "prompt": "Helmets are not provided but are strongly ______.", "accept": ["recommended"], "evidence": { "explanation": "The speaker says helmets are not provided but strongly recommended." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0011-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q017", "question": "How many docking stations are there?", "options": ["40", "60", "80", "100"], "correctIndex": 1, "evidence": { "explanation": "The speaker mentions 60 docking stations." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q018", "question": "How much does annual membership cost?", "options": ["£25", "£30", "£35", "£45"], "correctIndex": 2, "evidence": { "explanation": "The speaker says annual membership costs £35." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q019", "question": "Where are the docking stations concentrated?", "options": ["Near parks and beaches", "Near the railway station, university and hospital", "Only in the shopping district", "Along the river"], "correctIndex": 1, "evidence": { "explanation": "The speaker says stations are concentrated near the railway station, university and hospital." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q020", "question": "What should a rider do if a docking station is full?", "options": ["End the ride and pay a fine", "Use the app to find the nearest station with free spaces", "Leave the bike locked outside", "Call the maintenance van"], "correctIndex": 1, "evidence": { "explanation": "The speaker says the app shows the nearest station with free spaces." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0011-s3",
+    "title": "Planning a Group Presentation on Urban Noise – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Group Presentation on Urban Noise – Listening Section 3",
+      "transcript": "Leo: Okay, Hana, so our presentation is on noise pollution in cities. The tutor said we have fifteen minutes in total.\nHana: Right. I think we should start with a short introduction, about two minutes.\nLeo: Agreed. Then some background on the health effects of noise. Three minutes should be enough for that.\nHana: Yes. And then our survey results, which is the most important part, so let's give that five minutes.\nLeo: And the conclusion?\nHana: Another two minutes. That's twelve altogether, so we'll have three minutes left for questions.\nLeo: Perfect. Now, about the survey. How many people did we end up with?\nHana: We got a hundred and twenty responses in the end.\nLeo: That's a good number. Where did we mainly hand them out?\nHana: Mostly at the bus station, because so many different people pass through.\nLeo: Good idea. What really surprised me was the result about sources of noise. I expected construction to be the biggest complaint.\nHana: Me too, but most people said they were more bothered by traffic than by construction.\nLeo: Right, so we should make sure that comes through clearly. Should we put it in a table?\nHana: I think a bar chart would be much easier for the audience to follow. I'll make that tonight.\nLeo: Great, and I'll prepare the slides for the health background.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0011-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q021", "question": "How long is the presentation in total?", "options": ["Ten minutes", "Twelve minutes", "Fifteen minutes", "Twenty minutes"], "correctIndex": 2, "evidence": { "explanation": "Leo says the tutor gave them fifteen minutes in total." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q022", "question": "What is the topic of the presentation?", "options": ["Air pollution in cities", "Noise pollution in cities", "Public transport", "Light pollution"], "correctIndex": 1, "evidence": { "explanation": "Leo says the topic is noise pollution in cities." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q023", "question": "How many survey responses did they receive?", "options": ["80", "100", "120", "150"], "correctIndex": 2, "evidence": { "explanation": "Hana says they got a hundred and twenty responses." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q024", "question": "Where were most surveys handed out?", "options": ["At the library", "At the bus station", "In a shopping centre", "Online only"], "correctIndex": 1, "evidence": { "explanation": "Hana says they were mostly handed out at the bus station." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q025", "question": "What surprised Leo about the results?", "options": ["Most people were bothered more by construction than traffic", "Most people were bothered more by traffic than by construction", "Few people noticed noise at all", "Older people complained most"], "correctIndex": 1, "evidence": { "explanation": "Hana confirms most people were more bothered by traffic than construction, which was not what Leo expected." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0011-q026", "question": "How will Hana present the survey results?", "options": ["In a table", "In a bar chart", "With photographs only", "Without any slides"], "correctIndex": 1, "evidence": { "explanation": "Hana says a bar chart would be easier to follow and that she will make it." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0011-s3-g2",
+          "instructions": "How much time is allowed for each part of the presentation? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Two minutes" },
+            { "key": "B", "label": "Three minutes" },
+            { "key": "C", "label": "Five minutes" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0011-q027", "prompt": "Introduction", "answer": "A", "evidence": { "explanation": "Hana suggests about two minutes for the introduction." } },
+            { "kind": "matching", "id": "generated-listening-academic-0011-q028", "prompt": "Background on health effects", "answer": "B", "evidence": { "explanation": "Leo says three minutes should be enough for the background." } },
+            { "kind": "matching", "id": "generated-listening-academic-0011-q029", "prompt": "Survey results", "answer": "C", "evidence": { "explanation": "Hana says the survey results get five minutes." } },
+            { "kind": "matching", "id": "generated-listening-academic-0011-q030", "prompt": "Conclusion", "answer": "A", "evidence": { "explanation": "Hana says the conclusion gets another two minutes." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0011-s4",
+    "title": "The Story of Chocolate – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion"],
+    "data": {
+      "audioLabel": "The Story of Chocolate – Listening Section 4",
+      "transcript": "Today I'd like to trace how chocolate travelled from a bitter ceremonial drink to one of the world's most popular foods.\n\nThe cacao tree is native to the Amazon basin, and the earliest evidence of people using it dates back about 5,000 years. Later, in Central America, the Maya and the Aztecs prepared it as a bitter, frothy drink, and the Aztecs valued cacao beans so highly that they used them as currency.\n\nSpanish explorers brought chocolate to Europe in the sixteenth century. It was the addition of sugar that transformed it from an acquired taste into a fashionable luxury, and drinking chocolate became popular in the courts of Europe.\n\nThe next major change came in 1828, when the Dutch chemist Coenraad van Houten invented the cocoa press. It separated the fat, known as cocoa butter, from the roasted beans and left a powder that mixed more easily with liquid. In 1847, the Bristol firm of J. S. Fry and Sons used cocoa butter to make what is generally regarded as the first solid eating chocolate bar.\n\nMilk chocolate followed in 1875 in Switzerland, when Daniel Peter combined chocolate with condensed milk supplied by his neighbour, Henri Nestlé.\n\nToday, West Africa produces about two thirds of the world's cocoa, and the crop supports an estimated five to six million small-scale farmers, many of whom earn very little from it.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0011-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0011-q031", "prompt": "The cacao tree is native to the ______ basin.", "accept": ["Amazon"], "evidence": { "explanation": "The lecturer says the cacao tree is native to the Amazon basin." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q032", "prompt": "The earliest evidence of use dates back about ______ years.", "accept": ["5,000", "5000", "five thousand"], "evidence": { "explanation": "The lecturer says about 5,000 years." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q033", "prompt": "The Aztecs used cacao beans as ______.", "accept": ["currency", "money"], "evidence": { "explanation": "The lecturer says the Aztecs used beans as currency." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q034", "prompt": "Chocolate reached Europe in the ______ century.", "accept": ["sixteenth", "16th"], "evidence": { "explanation": "The lecturer says Spanish explorers brought it in the sixteenth century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q035", "prompt": "The addition of ______ made chocolate a fashionable luxury.", "accept": ["sugar"], "evidence": { "explanation": "The lecturer says the addition of sugar transformed it." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q036", "prompt": "In 1828, van Houten invented the cocoa ______.", "accept": ["press"], "evidence": { "explanation": "The lecturer says he invented the cocoa press." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q037", "prompt": "The Bristol firm of J. S. ______ and Sons made the first solid chocolate bar in 1847.", "accept": ["Fry"], "evidence": { "explanation": "The lecturer names J. S. Fry and Sons." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q038", "prompt": "Milk chocolate was created in ______ in 1875.", "accept": ["Switzerland"], "evidence": { "explanation": "The lecturer says milk chocolate followed in 1875 in Switzerland." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q039", "prompt": "Daniel Peter used condensed milk supplied by Henri ______.", "accept": ["Nestlé", "Nestle"], "evidence": { "explanation": "The lecturer names Henri Nestlé." } },
+            { "kind": "completion", "id": "generated-listening-academic-0011-q040", "prompt": "West Africa produces about two ______ of the world's cocoa.", "accept": ["thirds"], "evidence": { "explanation": "The lecturer says about two thirds." } }
+          ]
+        }
+      ]
+    }
   }
 ];
