@@ -1499,4 +1499,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 20,
     },
   },
+
+  // ---- More Task 2 essays (sports salaries, history, consumerism, data privacy, nuclear
+  // power, screen time, foreign aid, student housing, arts in schools, older workers) ----
+  {
+    slug: "task2-sports-stars-salaries",
+    title: "Task 2: The salaries of professional sports stars",
+    taskType: "task2",
+    topic: "Sport",
+    tags: ["writing", "task-2", "sport", "society", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Top professional sports players are paid very high salaries, while workers such as nurses and teachers earn much less. Some people think this is unfair. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-importance-of-history",
+    title: "Task 2: Is studying history important?",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that studying history at school is a waste of time because it concerns events that are long past, while others think it is essential. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-consumerism-overbuying",
+    title: "Task 2: Buying more than we need",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "consumerism", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "People today buy far more clothes, gadgets and household goods than they need, and throw many of them away quickly. What problems does this cause, and what can be done to reduce it?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-online-privacy-data",
+    title: "Task 2: Sharing personal data online",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "privacy", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Many websites and apps collect personal information about their users in order to offer personalised services. Discuss the advantages and disadvantages of this practice.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-nuclear-power-energy",
+    title: "Task 2: Nuclear power as a future energy source",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "energy", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that nuclear power is the best way to meet future energy needs while reducing carbon emissions, while others think the risks are too great. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-children-screen-time",
+    title: "Task 2: Children and screen time",
+    taskType: "task2",
+    topic: "Family",
+    tags: ["writing", "task-2", "family", "technology", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Children today spend a large part of their free time looking at screens. What problems can this cause, and what can parents and schools do to address them?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-international-aid-poor-countries",
+    title: "Task 2: Aid to poorer countries",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "global-issues", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that wealthy countries should give large amounts of financial aid to poorer countries, while others believe this is not an effective way to reduce poverty. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-students-living-away-from-home",
+    title: "Task 2: Should university students live away from home?",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "family", "discussion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people think that university students should live away from their family home in order to become independent, while others believe it is better for them to stay at home. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-arts-versus-science-in-schools",
+    title: "Task 2: The arts and science in schools",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that schools should give more time to science and technology subjects than to arts subjects such as music and drama. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-employing-older-workers",
+    title: "Task 2: Employing older workers",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "ageing-population", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "In many countries, people are working until an older age than in the past. Discuss the advantages and disadvantages for employers and employees of an older workforce.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
