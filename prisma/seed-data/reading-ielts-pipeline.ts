@@ -9010,5 +9010,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0017-p1",
+    "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSUNRISE YOGA STUDIO\nClass Timetable and Membership\n\nClasses run from Monday to Saturday: morning at 7:00am, lunchtime at 12:15pm and evening at 6:30pm. Each class lasts 60 minutes. A single drop-in class costs £12, a ten-class card costs £90 and is valid for four months, and unlimited monthly membership costs £70. New students may attend their first class free of charge.\n\nMats are provided free, but towels can be hired for £1. Please arrive five minutes early; latecomers cannot be admitted after the class has started for more than five minutes. Booked classes must be cancelled at least three hours in advance. A children's class for ages 6 to 11 is held on Saturdays at 10:00am and costs £6. Changing rooms and showers are available.\n\nTEXT 2\n\nMILLBROOK PRIMARY SCHOOL\nInformation for Parents\n\nThe autumn term begins on 4 September and ends on 20 December, with half term from 23 to 27 October. The school day runs from 8:50am to 3:15pm, and the gates open at 8:30am. The after-school club runs until 5:45pm and costs £8 per session.\n\nIf your child is absent, please telephone the school office before 9:00am. Holidays taken in term time are not authorised except in exceptional circumstances. School lunches cost £2.60 per day, or children may bring a packed lunch. Lunches are free for children in Reception to Year 2.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0017-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q001", "statement": "New students can attend their first class free of charge.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q002", "statement": "Towels are provided free at the studio.", "answer": "FALSE", "evidence": { "explanation": "Towels can be hired for £1." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q003", "statement": "Students who arrive more than five minutes late are not admitted.", "answer": "TRUE", "evidence": { "explanation": "Latecomers cannot be admitted after five minutes." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q004", "statement": "The studio sells yoga clothing.", "answer": "NOT GIVEN", "evidence": { "explanation": "Clothing sales are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q005", "statement": "Parents must telephone the school before 9:00am if a child is absent.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q006", "statement": "Holidays during term time are always authorised.", "answer": "FALSE", "evidence": { "explanation": "They are authorised only in exceptional circumstances." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0017-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0017-q007", "prompt": "A ten-class card is valid for ______ months.", "accept": ["four", "4"], "evidence": { "explanation": "The card is valid for four months." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q008", "prompt": "Booked classes must be cancelled at least ______ hours in advance.", "accept": ["three", "3"], "evidence": { "explanation": "Cancellation is required three hours in advance." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q009", "prompt": "The school gates open at ______.", "accept": ["8:30am", "8.30am"], "evidence": { "explanation": "The gates open at 8:30am." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q010", "prompt": "The after-school club runs until ______.", "accept": ["5:45pm", "5.45pm"], "evidence": { "explanation": "The club runs until 5:45pm." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0017-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0017-q011", "question": "How much is unlimited monthly membership?", "options": ["£60", "£65", "£70", "£90"], "correctIndex": 2, "evidence": { "explanation": "Monthly membership is £70." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0017-q012", "question": "When is half term?", "options": ["16 to 20 October", "23 to 27 October", "30 October to 3 November", "6 to 10 November"], "correctIndex": 1, "evidence": { "explanation": "Half term is 23 to 27 October." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0017-q013", "question": "Which children receive free school lunches?", "options": ["Reception to Year 2", "All pupils", "Year 6 only", "None"], "correctIndex": 0, "evidence": { "explanation": "Lunches are free for Reception to Year 2." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0017-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Recruitment and Referrals",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "TRIDENT LOGISTICS\nStaff Handbook — Section 11: Recruitment and Employee Referrals\n\nAll vacancies are advertised internally for seven days before they are advertised externally, and internal applicants are interviewed first. Interview panels consist of three people, and all candidates receive feedback within five working days. New employees complete a six-month probation period.\n\nEmployees who recommend a candidate who is then hired receive a referral bonus of £500. Half is paid when the new employee starts, and the remaining half after six months' service. HR staff and the manager of the vacancy cannot claim the bonus, and it does not apply to candidates who applied to the company in the previous six months.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0017-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q014", "statement": "Vacancies are advertised internally before they are advertised externally.", "answer": "TRUE", "evidence": { "explanation": "Vacancies are advertised internally for seven days first." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q015", "statement": "The manager of a vacancy can claim the referral bonus.", "answer": "FALSE", "evidence": { "explanation": "The manager of the vacancy cannot claim it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q016", "statement": "The referral bonus is paid in a single payment when the new employee starts.", "answer": "FALSE", "evidence": { "explanation": "It is paid in two halves." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q017", "statement": "Interview panels consist of three people.", "answer": "TRUE", "evidence": { "explanation": "Panels consist of three people." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q018", "statement": "Referred candidates are guaranteed an interview.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook does not mention guaranteed interviews." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0017-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0017-q019", "prompt": "Vacancies are advertised internally for ______ days first.", "accept": ["seven", "7"], "evidence": { "explanation": "The period is seven days." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q020", "prompt": "The total referral bonus is ______.", "accept": ["£500", "500 pounds"], "evidence": { "explanation": "The bonus is £500." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q021", "prompt": "The second half of the bonus is paid after ______ months' service.", "accept": ["six", "6"], "evidence": { "explanation": "The second half is paid after six months." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q022", "prompt": "Candidates receive feedback within ______ working days.", "accept": ["five", "5"], "evidence": { "explanation": "Feedback is given within five working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q023", "prompt": "New employees complete a probation period of ______ months.", "accept": ["six", "6"], "evidence": { "explanation": "Probation lasts six months." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0017-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0017-q024", "question": "Who cannot claim the referral bonus?", "options": ["Part-time staff", "HR staff", "Staff on probation", "Staff in other cities"], "correctIndex": 1, "evidence": { "explanation": "HR staff cannot claim the bonus." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0017-q025", "question": "How many people are on an interview panel?", "options": ["Two", "Three", "Four", "Five"], "correctIndex": 1, "evidence": { "explanation": "Panels consist of three people." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0017-q026", "question": "When is the first half of the bonus paid?", "options": ["At the interview", "When the new employee starts", "After six months", "At the end of probation"], "correctIndex": 1, "evidence": { "explanation": "Half is paid when the new employee starts." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0017-p3",
+    "title": "The Story of the Sandwich",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The sandwich is one of the world's most convenient meals: a filling held between slices of bread, ready to be eaten in one hand without cutlery or plates. It is eaten on building sites and in boardrooms, on picnic rugs and in aeroplanes, and few foods are so easy to adapt to local tastes.\n\nB. The sandwich takes its name from John Montagu, the fourth Earl of Sandwich, an eighteenth-century English nobleman. According to a story first published in 1762, the Earl was so absorbed in a game of cards that he refused to leave the table to eat, and asked for a piece of meat to be brought between two slices of bread, so that he could eat without dirtying the cards. Others at the table began to order \"the same as Sandwich\", and the name stuck. Historians note that the Earl also had a busy career in government and the navy, and that the gambling story may be exaggerated.\n\nC. The idea was not new. Bread has been used as a plate or wrapper for food since ancient times: the Jewish sage Hillel is said to have eaten lamb between matzo and bitter herbs, and medieval Europeans ate meals on thick slices of bread called trenchers. The Earl of Sandwich did not invent putting food between bread, but his name made it fashionable.\n\nD. The sandwich became a staple of everyday life in the nineteenth century, when factory workers and travellers needed a cheap, portable meal. The invention of the bread-slicing machine by Otto Rohwedder in the United States, and the first sale of sliced bread in 1928, made sandwiches quicker still to make, and they became a standard item in lunch boxes.\n\nE. Different countries have developed their own versions. The Spanish bocadillo uses a crusty roll with ham or omelette, the Vietnamese bánh mì combines a French-style baguette with pickled vegetables, herbs and grilled meat, and the American submarine sandwich is a long roll filled with meats, cheese and salad. Each reflects local ingredients and history, from colonial influences to immigration.\n\nF. Today, sandwiches are a multi-billion-pound industry, with chains and supermarkets selling them ready-made. Their convenience has been questioned by health campaigners, who point out that some contain large amounts of salt, fat and sugar, and shops have responded by offering wholegrain breads and salads. Whatever the changes, the basic idea remains as simple as it was on the night of the card game.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0017-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A meal in one hand" },
+            { "key": "ii", "label": "A famous name and a card game" },
+            { "key": "iii", "label": "Fillings before the Earl" },
+            { "key": "iv", "label": "Bread, factories and the lunch box" },
+            { "key": "v", "label": "One idea, many countries" },
+            { "key": "vi", "label": "Convenience and the health debate" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0017-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the sandwich as a convenient hand-held meal." } },
+            { "kind": "matching", "id": "generated-reading-general-0017-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B tells the card-game story behind the name." } },
+            { "kind": "matching", "id": "generated-reading-general-0017-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes workers, sliced bread and lunch boxes." } },
+            { "kind": "matching", "id": "generated-reading-general-0017-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes regional variations." } },
+            { "kind": "matching", "id": "generated-reading-general-0017-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers the industry and health concerns." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0017-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q032", "statement": "The sandwich is named after an English nobleman.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says it is named after the fourth Earl of Sandwich." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q033", "statement": "The Earl of Sandwich invented the idea of putting food between bread.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the idea was not new." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q034", "statement": "Sliced bread was first sold in 1928.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D gives 1928." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q035", "statement": "The bánh mì is a traditional Italian sandwich.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E describes it as Vietnamese." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0017-q036", "statement": "Sandwiches are the most popular lunch in every country.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare their popularity across countries." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0017-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0017-q037", "prompt": "According to the story, the Earl asked for meat between two slices of ______.", "accept": ["bread"], "evidence": { "explanation": "Paragraph B says two slices of bread." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q038", "prompt": "The Earl was said to be absorbed in a game of ______.", "accept": ["cards"], "evidence": { "explanation": "Paragraph B says a game of cards." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q039", "prompt": "Otto Rohwedder invented a bread-slicing ______.", "accept": ["machine"], "evidence": { "explanation": "Paragraph D names the bread-slicing machine." } },
+            { "kind": "completion", "id": "generated-reading-general-0017-q040", "prompt": "The bánh mì combines fillings with a ______-style baguette.", "accept": ["French"], "evidence": { "explanation": "Paragraph E says a French-style baguette." } }
+          ]
+        }
+      ]
+    }
   }
 ];
