@@ -7505,5 +7505,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0012-p1",
+    "title": "General Training Reading — Section 1: Airport and Computer Course Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nCOUNTY AIRPORT\nParking and Baggage Information\n\nShort-stay parking: the first 30 minutes are free, then £4 per hour, for a maximum stay of four hours. Long-stay parking costs £12 per day, and booking online earns a 20% discount. A free shuttle bus runs to the terminal every 15 minutes, 24 hours a day.\n\nThe drop-off zone allows 10 minutes free of charge; after that, a fine of £8 is charged. Passengers who need assistance because of a disability should book it at least 48 hours before travel.\n\nHand luggage must not weigh more than 7 kg. Baggage trolleys are available for a refundable £1 coin. Lost baggage should be reported at the desk in the arrivals hall.\n\nTEXT 2\n\nWESTGATE ADULT LEARNING\nComputer Courses\n\nWe are offering three courses this term: Basic Computing, Spreadsheets and Photo Editing. Each course runs for six weeks, on one evening a week from 6:00pm to 8:00pm, starting on 3 February.\n\nThe fee is £60 per course, or £30 for students and people receiving benefits. Classes are limited to ten students, and laptops are provided. Enrol online. Fees are refunded only if you cancel at least seven days before the start of the course. A certificate is given to everyone who completes a course.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0012-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q001", "statement": "The first 30 minutes in the short-stay car park are free.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q002", "statement": "Booking long-stay parking online gives a discount.", "answer": "TRUE", "evidence": { "explanation": "Online booking earns a 20% discount." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q003", "statement": "The shuttle bus does not run at night.", "answer": "FALSE", "evidence": { "explanation": "It runs 24 hours a day." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q004", "statement": "Baggage trolleys can be used without any deposit.", "answer": "FALSE", "evidence": { "explanation": "A refundable £1 coin is required." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q005", "statement": "Baggage insurance can be bought at the airport desk.", "answer": "NOT GIVEN", "evidence": { "explanation": "Insurance is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q006", "statement": "Laptops are provided for students on the computer courses.", "answer": "TRUE", "evidence": { "explanation": "Text 2 says laptops are provided." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0012-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0012-q007", "prompt": "Short-stay parking is limited to a maximum of ______ hours.", "accept": ["four", "4"], "evidence": { "explanation": "The maximum stay is four hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q008", "prompt": "Assistance for passengers with a disability must be booked ______ hours in advance.", "accept": ["48", "forty-eight"], "evidence": { "explanation": "It must be booked at least 48 hours before travel." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q009", "prompt": "Each computer course lasts ______ weeks.", "accept": ["six", "6"], "evidence": { "explanation": "Each course runs for six weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q010", "prompt": "Classes are limited to ______ students.", "accept": ["ten", "10"], "evidence": { "explanation": "Classes are limited to ten students." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0012-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0012-q011", "question": "How much does long-stay parking cost per day?", "options": ["£8", "£10", "£12", "£15"], "correctIndex": 2, "evidence": { "explanation": "Long-stay parking costs £12 per day." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0012-q012", "question": "What is the maximum weight for hand luggage?", "options": ["5 kg", "7 kg", "10 kg", "15 kg"], "correctIndex": 1, "evidence": { "explanation": "Hand luggage must not weigh more than 7 kg." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0012-q013", "question": "What is the concession fee for a computer course?", "options": ["£20", "£30", "£40", "£45"], "correctIndex": 1, "evidence": { "explanation": "The concession fee is £30." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0012-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Appraisals and Training",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "ASHFORD ENGINEERING\nStaff Handbook — Section 10: Appraisals and Training\n\nFormal appraisals take place once a year, in April. Each appraisal is a 45-minute meeting with the employee's line manager, and the employee must complete a self-assessment form one week before the meeting. An informal review is held in October.\n\nAt the appraisal, between three and five objectives are agreed for the year ahead. Performance is rated on a scale of 1 to 5, and only employees rated 4 or 5 are considered for a pay review. An employee who disagrees with their rating may appeal to the HR department within 10 working days.\n\nEach employee has a training budget of £500 per year. Requests must be related to the employee's job and approved by their line manager. Unused budget cannot be carried over to the following year.\n\nNew employees have a probation review after three months.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0012-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q014", "statement": "Formal appraisals take place twice a year.", "answer": "FALSE", "evidence": { "explanation": "Formal appraisals take place once a year." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q015", "statement": "Employees complete a self-assessment before the appraisal meeting.", "answer": "TRUE", "evidence": { "explanation": "The form must be completed one week before." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q016", "statement": "An employee rated 3 is considered for a pay review.", "answer": "FALSE", "evidence": { "explanation": "Only those rated 4 or 5 are considered." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q017", "statement": "Unused training budget can be carried over to the next year.", "answer": "FALSE", "evidence": { "explanation": "Unused budget cannot be carried over." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q018", "statement": "Managers receive training in how to give feedback.", "answer": "NOT GIVEN", "evidence": { "explanation": "Manager training is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0012-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0012-q019", "prompt": "Appraisal meetings last ______ minutes.", "accept": ["45", "forty-five"], "evidence": { "explanation": "Each appraisal is a 45-minute meeting." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q020", "prompt": "The self-assessment form is completed ______ before the meeting.", "accept": ["one week", "a week", "1 week"], "evidence": { "explanation": "It is completed one week before." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q021", "prompt": "Each employee has a training budget of ______ per year.", "accept": ["£500", "500 pounds"], "evidence": { "explanation": "The budget is £500 per year." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q022", "prompt": "Appeals must be made to HR within ______ working days.", "accept": ["10", "ten"], "evidence": { "explanation": "Appeals must be made within 10 working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q023", "prompt": "New employees have a probation review after ______ months.", "accept": ["three", "3"], "evidence": { "explanation": "The probation review is after three months." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0012-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0012-q024", "question": "In which month are formal appraisals held?", "options": ["January", "April", "July", "October"], "correctIndex": 1, "evidence": { "explanation": "Formal appraisals take place in April." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0012-q025", "question": "How many objectives are agreed at each appraisal?", "options": ["Two to three", "Three to five", "Five to eight", "Ten"], "correctIndex": 1, "evidence": { "explanation": "Between three and five objectives are agreed." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0012-q026", "question": "Who approves training requests?", "options": ["The HR department", "The line manager", "The director", "The training provider"], "correctIndex": 1, "evidence": { "explanation": "Requests must be approved by the line manager." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0012-p3",
+    "title": "The Discovery of Penicillin",
+    "sourceTestSet": "General Training",
+    "topic": "Science",
+    "tags": ["general-training", "science", "history", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Before the twentieth century, a small cut or a case of pneumonia could kill. Doctors could do little to treat infections caused by bacteria, and even minor wounds sometimes led to blood poisoning. The discovery of penicillin, the first widely used antibiotic, changed that, and it is often regarded as one of the most important medical advances in history.\n\nB. The story begins in 1928 at St Mary's Hospital in London, where the Scottish bacteriologist Alexander Fleming returned from a holiday to find that a dish of bacteria he had left on his bench had been contaminated by a mould. Around the mould, the bacteria had been destroyed. Fleming identified the mould as a species of Penicillium and named the substance it produced penicillin. He published his findings, but he found the substance difficult to extract and unstable, and he did not develop it into a drug.\n\nC. It was left to a team at Oxford University, led by the pathologist Howard Florey and the biochemist Ernst Chain, to take the next step. In the late 1930s they succeeded in purifying small amounts of penicillin and in 1940 they showed that it protected mice infected with deadly bacteria. Their results convinced them that it could work in humans.\n\nD. In 1941, a police officer with a severe infection became the first patient to be treated. He improved dramatically, but the team's supply of penicillin ran out, since it took huge quantities of mould to produce even a small dose, and the man died. The experience underlined how much more penicillin would be needed.\n\nE. With Britain at war, the Oxford team persuaded American companies to help. Researchers in the United States found a more productive strain of mould growing on a melon and developed methods of growing it in huge tanks. By 1944, enough penicillin was available to treat all the Allied troops who needed it, saving many thousands of lives after the D-Day landings.\n\nF. In 1945, Fleming, Florey and Chain shared the Nobel Prize in Physiology or Medicine. In his acceptance speech, Fleming warned that the careless use of penicillin could lead bacteria to become resistant to it. His warning proved correct: today, antibiotic-resistant infections are a serious threat, and doctors are urged to prescribe antibiotics only when they are needed.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0012-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A medicine that changed the odds of survival" },
+            { "key": "ii", "label": "A chance observation in a messy laboratory" },
+            { "key": "iii", "label": "Turning a curiosity into a drug" },
+            { "key": "iv", "label": "The first patient and a shortage" },
+            { "key": "v", "label": "War drives large-scale production" },
+            { "key": "vi", "label": "A warning that still matters" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0012-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains why the discovery mattered." } },
+            { "kind": "matching", "id": "generated-reading-general-0012-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Fleming's chance observation." } },
+            { "kind": "matching", "id": "generated-reading-general-0012-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the Oxford team turning it into a drug." } },
+            { "kind": "matching", "id": "generated-reading-general-0012-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes wartime mass production." } },
+            { "kind": "matching", "id": "generated-reading-general-0012-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F reports Fleming's warning about resistance." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0012-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q032", "statement": "Fleming noticed the effect of the mould while working at a London hospital.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B places him at St Mary's Hospital in London." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q033", "statement": "Fleming himself developed penicillin into a usable drug.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says he did not develop it into a drug." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q034", "statement": "The Oxford team tested penicillin on mice before using it on people.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C says it protected infected mice." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q035", "statement": "The first patient treated with penicillin made a full recovery.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the man died when the supply ran out." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0012-q036", "statement": "Penicillin was cheap to produce in the early years.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage mentions huge quantities of mould but gives no information about cost." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0012-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0012-q037", "prompt": "Fleming noticed the effect of the mould in ______.", "accept": ["1928"], "evidence": { "explanation": "Paragraph B gives 1928." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q038", "prompt": "Fleming identified the mould as a species of ______.", "accept": ["Penicillium"], "evidence": { "explanation": "Paragraph B names Penicillium." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q039", "prompt": "Fleming, Florey and Chain shared the Nobel Prize in ______.", "accept": ["1945"], "evidence": { "explanation": "Paragraph F gives 1945." } },
+            { "kind": "completion", "id": "generated-reading-general-0012-q040", "prompt": "Fleming warned that bacteria could become ______ to penicillin.", "accept": ["resistant"], "evidence": { "explanation": "Paragraph F says bacteria could become resistant." } }
+          ]
+        }
+      ]
+    }
   }
 ];
