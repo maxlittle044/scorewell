@@ -6141,5 +6141,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0013-p1",
+    "title": "Why the Tides Rise and Fall",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Anyone who has spent time on a coast knows that the sea does not stay still. Twice a day, in most places, the water climbs the shore and then retreats, exposing mud, rocks and sand that were hidden a few hours earlier. This daily rhythm has shaped fishing, travel and coastal settlement for as long as people have lived beside the sea, and its cause, the gravitational pull of the Moon, was understood in outline long before the mechanism was explained in detail.\n\nB. The Moon's gravity pulls on the Earth, and the oceans, being fluid, respond most visibly, drawing water into a bulge on the side of the planet facing the Moon. A second bulge forms on the opposite side, because there the Moon's pull is weaker than at the Earth's centre, and the ocean is in effect left behind. As the Earth rotates, most coastlines pass through both bulges each day, so they experience two high tides. The Moon itself moves along its orbit in the same direction as the Earth's spin, which is why the interval between successive high tides is not 12 hours but about 12 hours and 25 minutes.\n\nC. The Sun also exerts a pull, roughly half as strong as the Moon's effect on the tides, and the two combine in a predictable cycle. At new moon and full moon, when the Sun, Moon and Earth are lined up, their effects add together and produce unusually high and low tides known as spring tides, a name that has nothing to do with the season. At the quarter phases, when the Moon and Sun pull at right angles to each other, the tidal range is smallest, giving neap tides.\n\nD. The height of the tide varies enormously from place to place, because it depends on the shape of the coastline and the sea floor as much as on the sky. In the Mediterranean, an almost enclosed sea, the tidal range is only a few tens of centimetres. In the Bay of Fundy in eastern Canada, however, a long funnel-shaped bay concentrates the incoming water, and the range can reach about 16 metres, among the largest in the world.\n\nE. People have long organised their lives around the tide. Mariners consult tide tables to know when harbours can be entered; fishermen and shellfish gatherers work the shore at low water; and the animals and plants of the intertidal zone have evolved to survive being alternately submerged and exposed, clinging to rocks or burrowing into sand as the water withdraws.\n\nF. Because tides are so regular, they are an attractive source of electricity. The world's first large tidal power station, on the Rance estuary in France, opened in 1966 and has a capacity of 240 megawatts. Its turbines are driven by water flowing in and out through a barrage across the estuary. Tidal schemes produce power at predictable times, unlike wind or solar, but they can be costly to build and may alter the estuarine habitats that lie behind the barrage, which has slowed the spread of similar projects.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0013-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A daily rhythm with an astronomical cause" },
+            { "key": "ii", "label": "How the Moon's pull creates two bulges" },
+            { "key": "iii", "label": "Alignments that strengthen or weaken the tides" },
+            { "key": "iv", "label": "Why coastlines experience such different ranges" },
+            { "key": "v", "label": "Harnessing a predictable source of power" },
+            { "key": "vi", "label": "Living by the tide: navigation and shore life" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0013-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the daily rhythm and its lunar cause." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains the two bulges." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes spring and neap tides." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D explains how coastline shape changes the tidal range." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F describes tidal power." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0013-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q006", "statement": "Most coastlines experience two high tides a day.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says most coastlines pass through both bulges each day." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q007", "statement": "The interval between successive high tides is exactly 12 hours.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B gives about 12 hours and 25 minutes." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q008", "statement": "Spring tides occur only during the spring season.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the name has nothing to do with the season." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q009", "statement": "Tidal power stations cost less to build than wind farms.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says tidal schemes can be costly but does not compare them with wind farms." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0013-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0013-q010", "prompt": "Successive high tides are about 12 hours and ______ minutes apart.", "accept": ["25", "twenty-five"], "evidence": { "explanation": "Paragraph B gives 12 hours and 25 minutes." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q011", "prompt": "Spring tides happen at new moon and ______ moon.", "accept": ["full"], "evidence": { "explanation": "Paragraph C names new moon and full moon." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q012", "prompt": "The tidal range in the Bay of Fundy can reach about ______ metres.", "accept": ["16", "sixteen"], "evidence": { "explanation": "Paragraph D gives about 16 metres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q013", "prompt": "The Rance tidal power station opened in ______.", "accept": ["1966"], "evidence": { "explanation": "Paragraph F gives 1966." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0013-p2",
+    "title": "The Ancient Games and Their Modern Revival",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "sport", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. According to tradition, the first Olympic Games were held in 776 BC at Olympia, a sanctuary in the western Peloponnese in Greece. Whatever the truth of that date, which was fixed by later writers, the festival was held every four years for well over a thousand years, and the interval between Games, called an Olympiad, became a way of reckoning time across the Greek world.\n\nB. The Games were, above all, a religious festival in honour of Zeus, and the athletes competed in front of his great temple and statue. The programme began with a single running race the length of the stadium, and gradually expanded to include longer races, wrestling, boxing, the pentathlon and chariot racing. Competitors were free Greek men, and they trained for months beforehand, swearing an oath to compete fairly.\n\nC. Because the athletes and spectators had to travel long distances, often through territories at war, the Greeks proclaimed a sacred truce before each festival, and heralds carried the news across the Greek world. The truce did not stop wars altogether, but it protected people on their way to Olympia. Victors won no money at the Games themselves; their prize was a wreath of olive leaves, though on returning home they might receive honours, free meals and other rewards from their city.\n\nD. Women's role was limited. Married women were reportedly barred from watching the Games, and no woman competed. A separate festival for women, the Heraia, was held at Olympia in honour of the goddess Hera, with foot races for young unmarried women.\n\nE. The Games continued after Rome conquered Greece, but their religious significance faded as Christianity spread through the empire. They were finally abolished around AD 393 by the Roman emperor Theodosius, who banned pagan festivals, and the site was later damaged by earthquakes and buried by river silt.\n\nF. The modern Games are largely the work of the French educator Pierre de Coubertin, who campaigned for an international sporting festival and helped to found the International Olympic Committee in 1894. The first modern Games were held in Athens in 1896, with fewer than 300 athletes from about 14 nations, all of them men. Women competed for the first time in 1900 in Paris, and the first Winter Games were held in Chamonix in 1924. Today the Games attract thousands of athletes from more than 200 countries and regions.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0013-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Traditional beginnings at Olympia" },
+            { "key": "ii", "label": "A festival of sport for the gods" },
+            { "key": "iii", "label": "Peace for the sake of the Games" },
+            { "key": "iv", "label": "The place of women in ancient competition" },
+            { "key": "v", "label": "The end of the ancient tradition" },
+            { "key": "vi", "label": "A modern revival and its growth" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0013-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the traditional origin of the Games." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the religious festival and its events." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the sacred truce." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the abolition of the Games." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the modern revival." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0013-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q019", "statement": "The ancient Games were held every four years.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q020", "statement": "Married women were permitted to watch the ancient Games.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says they were reportedly barred from watching." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q021", "statement": "Chariot racing was the most popular ancient event with spectators.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage lists chariot racing but says nothing about its popularity." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q022", "statement": "Women competed at the 1896 Athens Games.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says the 1896 competitors were all men." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0013-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0013-q023", "prompt": "The traditional date for the first Games is ______ BC.", "accept": ["776"], "evidence": { "explanation": "Paragraph A gives 776 BC." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q024", "prompt": "Victors at the Games were awarded a wreath of ______ leaves.", "accept": ["olive"], "evidence": { "explanation": "Paragraph C names olive leaves." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q025", "prompt": "The ancient Games were abolished around AD ______.", "accept": ["393"], "evidence": { "explanation": "Paragraph E gives AD 393." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q026", "prompt": "The first modern Games were held in ______ in 1896.", "accept": ["Athens"], "evidence": { "explanation": "Paragraph F names Athens." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0013-p3",
+    "title": "Microplastics: The Problem Too Small to See",
+    "sourceTestSet": "Academic",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Plastic does not vanish when it breaks. It fragments into ever smaller pieces, and those smaller than five millimetres are known as microplastics. Scientists distinguish between primary microplastics, which are manufactured at small sizes, such as the microbeads once added to face scrubs, and secondary microplastics, which form when larger items such as bottles and fishing nets break down into smaller pieces under the influence of sunlight, waves and friction.\n\nB. There are many sources. Synthetic clothing sheds tiny fibres each time it is washed, and studies suggest that a single load of laundry can release many thousands of them into the wastewater. Car tyres, which are made partly from synthetic rubber, wear down as they roll and shed particles onto road surfaces, from where rain washes them into drains and rivers. Paints, packaging and industrial pellets add further to the total.\n\nC. As a result, microplastics have been found almost everywhere researchers have looked, from the floor of deep ocean trenches and remote Arctic snow to farmland soil, table salt, bottled water and the air inside homes. They are small enough to be eaten by plankton and shellfish, and so enter food webs at their base.\n\nD. Whether they harm human health remains uncertain. Particles have been detected in human blood and organs in small studies, and laboratory experiments suggest they may cause inflammation in cells, but it is not yet clear how much people absorb, whether the amounts matter, or how any effects compare with those of chemical additives found in plastics. Most researchers describe the evidence as incomplete rather than reassuring or alarming.\n\nE. Governments have so far focused mainly on one source that is easy to regulate: microbeads in cosmetics. The United States banned them in rinse-off products in 2015 and the United Kingdom followed in 2018. Wastewater treatment plants remove most of the microplastics that reach them, but the particles then tend to concentrate in sludge, which is sometimes spread on fields as fertiliser, so the problem is moved rather than solved.\n\nF. Individuals can help by washing synthetic clothes less often and at lower temperatures and by fitting washing machines with filters that catch fibres. Many researchers argue, however, that such choices, though worthwhile, cannot stop the problem on their own, since most plastic enters the environment through waste systems and product design. Lasting progress, they suggest, will depend on using less plastic in the first place and on designing products that shed less.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0013-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Defining particles too small to see clearly" },
+            { "key": "ii", "label": "Where the fragments come from" },
+            { "key": "iii", "label": "From deep oceans to drinking water" },
+            { "key": "iv", "label": "Uncertain risks to human health" },
+            { "key": "v", "label": "Laws aimed at a single source" },
+            { "key": "vi", "label": "Why personal choices are not enough" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0013-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines microplastics." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B lists sources such as clothing and tyres." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D says health effects remain uncertain." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes bans focused on microbeads." } },
+            { "kind": "matching", "id": "generated-reading-academic-0013-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F says individual actions cannot solve the problem alone." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0013-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q032", "statement": "Microplastics are plastic fragments smaller than five millimetres.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A gives this definition." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q033", "statement": "All microplastics are deliberately manufactured at a small size.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says secondary microplastics form when larger items break down." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q034", "statement": "Washing synthetic clothing releases fibres into wastewater.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q035", "statement": "Scientists have proven that microplastics cause serious disease in humans.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says whether they harm health remains uncertain." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0013-q036", "statement": "Microbead bans have reduced microplastic pollution in rivers.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage reports the bans but gives no data on their effect." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0013-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0013-q037", "prompt": "Secondary microplastics form when larger items ______ into smaller pieces.", "accept": ["break down"], "evidence": { "explanation": "Paragraph A says larger items break down into smaller pieces." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q038", "prompt": "Washing machine ______ can catch some fibres.", "accept": ["filters"], "evidence": { "explanation": "Paragraph F mentions filters that catch fibres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q039", "prompt": "The United States banned microbeads in rinse-off products in ______.", "accept": ["2015"], "evidence": { "explanation": "Paragraph E gives 2015." } },
+            { "kind": "completion", "id": "generated-reading-academic-0013-q040", "prompt": "Microplastics removed by wastewater treatment tend to concentrate in ______.", "accept": ["sludge"], "evidence": { "explanation": "Paragraph E says the particles concentrate in sludge." } }
+          ]
+        }
+      ]
+    }
   }
 ];
