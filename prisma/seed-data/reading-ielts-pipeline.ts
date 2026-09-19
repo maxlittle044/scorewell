@@ -6301,5 +6301,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0008-p1",
+    "title": "General Training Reading — Section 1: Railway and Evening College Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nCENTRAL RAILWAY\nSeason Tickets, Refunds and Delays\n\nSeason tickets are available for one week (£42), one month (£150) or one year (£1,500). A season ticket is valid on any service between the two stations named on it. Off-peak tickets are not valid on weekday services departing before 9:30am.\n\nUnused tickets can be refunded, less an administration fee of £10. Season tickets are refunded for each full unused week.\n\nIf your train arrives more than 30 minutes late, you can claim 50% of the single fare. If it arrives more than 60 minutes late, you can claim the full fare. All claims must be made online within 28 days.\n\nA Railcard costs £30 a year and gives one third off most fares. Bicycles travel free of charge, but must be reserved in advance on long-distance services.\n\nTEXT 2\n\nHILLVIEW ADULT EVENING COLLEGE\nAutumn Courses\n\nThis term we are offering Photography, Beginners' Bookkeeping and Conversational French. Each course runs for eight weeks, with classes from 7:00pm to 9:00pm, and starts in the second week of September.\n\nThe fee is £96 per course. People over 60 and those who are unemployed pay half price.\n\nEnrol online, or in person at reception between 10:00am and 4:00pm, Monday to Friday. A course will run only if at least eight students enrol; if a course is cancelled, all fees are refunded in full.\n\nStudents must bring their own equipment. Photography students need a digital camera. Free parking is available in the college car park after 6:00pm.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0008-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q001", "statement": "Off-peak tickets can be used on weekday trains leaving before 9:30am.", "answer": "FALSE", "evidence": { "explanation": "Off-peak tickets are not valid before 9:30am on weekdays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q002", "statement": "The full single fare can be claimed back if a train is more than 60 minutes late.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q003", "statement": "A season ticket can be transferred to another person.", "answer": "NOT GIVEN", "evidence": { "explanation": "The text does not mention transferring tickets." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q004", "statement": "Bicycles are carried at half the adult fare.", "answer": "FALSE", "evidence": { "explanation": "Bicycles travel free of charge." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q005", "statement": "Every course offered at Hillview lasts eight weeks.", "answer": "TRUE", "evidence": { "explanation": "Each course runs for eight weeks." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q006", "statement": "Photography students may borrow a camera from the college.", "answer": "FALSE", "evidence": { "explanation": "Students must bring their own equipment, including a digital camera." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0008-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0008-q007", "prompt": "Delay claims must be made within ______ days.", "accept": ["28", "twenty-eight"], "evidence": { "explanation": "Claims must be made online within 28 days." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q008", "prompt": "Refunds on unused tickets carry an administration fee of ______.", "accept": ["£10", "10 pounds"], "evidence": { "explanation": "The fee is £10." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q009", "prompt": "Hillview classes run from 7:00pm to ______.", "accept": ["9:00pm", "9pm", "9.00pm"], "evidence": { "explanation": "Classes run from 7:00pm to 9:00pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q010", "prompt": "At least ______ students must enrol for a course to run.", "accept": ["eight", "8"], "evidence": { "explanation": "A course runs only if at least eight students enrol." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0008-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0008-q011", "question": "How much does a weekly season ticket cost?", "options": ["£32", "£42", "£52", "£150"], "correctIndex": 1, "evidence": { "explanation": "A weekly season ticket costs £42." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0008-q012", "question": "What discount do people over 60 receive on course fees?", "options": ["10%", "25%", "50%", "75%"], "correctIndex": 2, "evidence": { "explanation": "People over 60 pay half price." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0008-q013", "question": "When is parking free at the college?", "options": ["All day", "After 6:00pm", "Only at weekends", "Never"], "correctIndex": 1, "evidence": { "explanation": "Free parking is available after 6:00pm." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0008-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Data Protection and Confidentiality",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "ORCHARD ESTATE AGENTS\nStaff Handbook — Section 8: Client Data and Confidentiality\n\nStaff must not discuss client details outside work or in public places. Client files must be locked away whenever they are left unattended, and desks must be cleared at the end of each day.\n\nDocuments that are no longer needed must be shredded and must never be placed in the general recycling bins.\n\nPersonal data about clients may be shared with third parties only with the client's written consent. The only exception is a legal request from the police or a court.\n\nEmails containing client data must be sent from company accounts only; personal email accounts must never be used for this purpose.\n\nAny data breach, such as a lost laptop or an email sent to the wrong person, must be reported to the Data Protection Officer within 24 hours.\n\nAll staff must complete an online data protection course every January. The course takes about 45 minutes. Serious breaches of this policy may lead to disciplinary action.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0008-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q014", "statement": "Staff may discuss client details in public places as long as they do not use names.", "answer": "FALSE", "evidence": { "explanation": "Staff must not discuss client details in public places." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q015", "statement": "Client files must be locked away when left unattended.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q016", "statement": "Unneeded documents may be put in the general recycling bins.", "answer": "FALSE", "evidence": { "explanation": "They must be shredded and never placed in the general recycling." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q017", "statement": "Staff may use personal email to send client data if the matter is urgent.", "answer": "FALSE", "evidence": { "explanation": "Personal email accounts must never be used." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q018", "statement": "The company has never experienced a data breach.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook does not mention the company's breach history." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0008-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0008-q019", "prompt": "Data breaches must be reported to the Data Protection Officer within ______ hours.", "accept": ["24", "twenty-four"], "evidence": { "explanation": "The deadline is 24 hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q020", "prompt": "Documents that are no longer needed must be ______.", "accept": ["shredded"], "evidence": { "explanation": "They must be shredded." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q021", "prompt": "Client data may be shared with third parties only with written ______.", "accept": ["consent"], "evidence": { "explanation": "Sharing requires the client's written consent." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q022", "prompt": "The data protection course must be completed every ______.", "accept": ["January"], "evidence": { "explanation": "Staff complete the course every January." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q023", "prompt": "The data protection course takes about ______ minutes.", "accept": ["45", "forty-five"], "evidence": { "explanation": "The course takes about 45 minutes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0008-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0008-q024", "question": "When may client data be shared without the client's consent?", "options": ["Never", "When the police or a court make a legal request", "When a colleague asks for it", "When the client is on holiday"], "correctIndex": 1, "evidence": { "explanation": "The only exception is a legal request from the police or a court." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0008-q025", "question": "Which of the following is given as an example of a data breach?", "options": ["A lost laptop", "A late train", "A cancelled meeting", "A new email address"], "correctIndex": 0, "evidence": { "explanation": "A lost laptop is given as an example." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0008-q026", "question": "What may follow a serious breach of the policy?", "options": ["A free training day", "Disciplinary action", "A pay rise", "Nothing"], "correctIndex": 1, "evidence": { "explanation": "Serious breaches may lead to disciplinary action." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0008-p3",
+    "title": "The Story of the Humble Potato",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The potato was first domesticated in the high Andes of South America, near Lake Titicaca, roughly 8,000 years ago. By the time the Inca empire reached its height, farmers were growing hundreds of varieties suited to different altitudes and soils. They also developed a way of preserving the crop: potatoes were left out on the frozen ground at night and trampled by foot in the day to squeeze out moisture, producing a lightweight, freeze-dried product called chuño that could be stored for years.\n\nB. Spanish ships carried the potato to Europe in the late sixteenth century, but it was slow to win acceptance. Many people distrusted a food that grew underground and was not mentioned in the Bible, and some blamed it for causing disease. Governments sometimes had to use persuasion or force. In the 1750s, for example, Frederick II of Prussia ordered farmers to plant potatoes as protection against famine, and ensured that the order was obeyed by threatening penalties.\n\nC. In time the potato's advantages became clear. It produced more calories per hectare than grain, grew on poor soil and in cool, damp climates, and could be stored through the winter. It was also harder for armies to destroy, since it grew underground, whereas an invading force could trample or burn a wheat field. Historians have argued that the crop contributed significantly to population growth in Europe from the eighteenth century onwards.\n\nD. Dependence had its dangers. In Ireland, a large part of the rural population relied on potatoes for most of their food, and the crop was grown from a very small number of related varieties. When a fungus-like disease known as blight arrived in 1845, it spread rapidly through the fields. Blight struck much of Europe, but it was in Ireland that the effects were worst, and over the following years around a million people died, and a similar number emigrated.\n\nE. In the Andes today, farmers still grow thousands of native varieties, in a spectrum of shapes and colours, while most of the world's potato fields are planted with a handful of commercial types. Scientists value the wild diversity as a resource for breeding plants resistant to disease and drought. The International Potato Center, founded in Lima, Peru, in 1971, maintains a gene bank that holds thousands of varieties for this purpose.\n\nF. Today the potato is grown in well over 150 countries and is the world's fourth most important food crop, after rice, wheat and maize. Climate change poses new challenges, since higher temperatures can reduce yields, and breeders are working to develop varieties that tolerate heat and drought.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0008-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Cultivation begins high in the Andes" },
+            { "key": "ii", "label": "From suspicion to acceptance in Europe" },
+            { "key": "iii", "label": "Why the crop suited growing populations" },
+            { "key": "iv", "label": "Guarding a crop's genetic wealth" },
+            { "key": "v", "label": "A global staple facing new challenges" },
+            { "key": "vi", "label": "The danger of depending on a single crop" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0008-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes early cultivation in the Andes." } },
+            { "kind": "matching", "id": "generated-reading-general-0008-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes European distrust and gradual acceptance." } },
+            { "kind": "matching", "id": "generated-reading-general-0008-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "vi", "evidence": { "explanation": "Paragraph D describes the Irish blight and dependence on one crop." } },
+            { "kind": "matching", "id": "generated-reading-general-0008-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes preserving diversity in a gene bank." } },
+            { "kind": "matching", "id": "generated-reading-general-0008-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F describes the potato as a global staple facing climate challenges." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0008-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q032", "statement": "Andean farmers preserved potatoes by freezing and drying them.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A describes the freeze-drying method." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q033", "statement": "European farmers welcomed the potato enthusiastically as soon as it arrived.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it was slow to win acceptance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q034", "statement": "The potato blight of the 1840s affected only Ireland.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says blight struck much of Europe." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q035", "statement": "Much of Ireland's rural population depended on potatoes for most of their food.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0008-q036", "statement": "Potato consumption is rising fastest in Africa.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no information about regional consumption trends." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0008-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0008-q037", "prompt": "Freeze-dried potatoes made in the Andes are called ______.", "accept": ["chuño", "chuno"], "evidence": { "explanation": "Paragraph A names the product chuño." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q038", "prompt": "Frederick II of Prussia ordered farmers to plant potatoes in the ______.", "accept": ["1750s"], "evidence": { "explanation": "Paragraph B gives the 1750s." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q039", "prompt": "The potato is the world's ______ most important food crop.", "accept": ["fourth", "4th"], "evidence": { "explanation": "Paragraph F says fourth, after rice, wheat and maize." } },
+            { "kind": "completion", "id": "generated-reading-general-0008-q040", "prompt": "The International Potato Center is based in ______.", "accept": ["Lima"], "evidence": { "explanation": "Paragraph E says it was founded in Lima, Peru." } }
+          ]
+        }
+      ]
+    }
   }
 ];
