@@ -5539,5 +5539,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0011-p1",
+    "title": "Coral Reefs Under Pressure",
+    "sourceTestSet": "Academic",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Coral reefs occupy less than one per cent of the ocean floor, yet they are commonly estimated to support around a quarter of all marine species, from tiny shrimps to large predatory fish. The reef itself is built by colonies of small animals called polyps, each of which secretes a hard skeleton of limestone; over thousands of years, the accumulated skeletons form the vast structures visible from space in places such as northern Australia.\n\nB. The secret of the reef's productivity lies in a partnership. Inside the tissues of each polyp live microscopic algae that photosynthesise, passing sugars to their host; in some corals these algae can supply up to 90 per cent of the animal's energy needs. In return, the polyp provides the algae with shelter and with waste compounds they can use as nutrients. The algae are also responsible for the rich colours of healthy coral, which is why the loss of them is so visible.\n\nC. The partnership is sensitive to temperature. If the water stays as little as one to two degrees Celsius above the usual summer maximum for several weeks, the stressed polyps expel their algae and the coral turns white, a process known as bleaching. A bleached coral is not immediately dead, but it is starving; if the water cools quickly enough, algae can return and the coral may recover, whereas prolonged heat frequently leads to death.\n\nD. Mass bleaching was rarely reported before the 1980s, but severe events have since become more frequent. One widely cited analysis of reefs around the world found that the average gap between severe bleaching events shortened from roughly a quarter of a century in the early 1980s to about six years by 2016. Such short intervals leave too little time for damaged reefs to regrow, since slow-growing corals may need a decade or more to recover from a single event.\n\nE. Warming is not the only threat. As the oceans absorb carbon dioxide from the atmosphere they become more acidic, and this ocean acidification makes it harder for corals to build their skeletons. Run-off from farmland can smother reefs with sediment and feed the growth of seaweed, while overfishing of the grazing fish that keep seaweed in check allows it to overwhelm young coral.\n\nF. Conservation efforts take several forms. Marine protected areas restrict fishing and coastal development, and some projects grow coral fragments in underwater nurseries before attaching them to damaged reefs. Researchers are also studying naturally heat-tolerant corals in the hope of identifying strains that might survive warmer seas. Most scientists stress, however, that such measures can only buy time: without sharp cuts in greenhouse gas emissions, local protection alone is unlikely to save reefs on a global scale.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0011-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A small habitat with an outsized role" },
+            { "key": "ii", "label": "A partnership that powers the reef" },
+            { "key": "iii", "label": "How heat turns coral white" },
+            { "key": "iv", "label": "Severe bleaching events become more frequent" },
+            { "key": "v", "label": "Other pressures beyond warming" },
+            { "key": "vi", "label": "Protection and restoration, and their limits" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0011-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes reefs covering little area but supporting a quarter of marine species." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the polyp-algae partnership." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C explains how small temperature rises cause bleaching." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D shows the gap between severe bleaching events shrinking." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers conservation measures and why they only buy time." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0011-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q006", "statement": "Coral reefs cover more than ten per cent of the ocean floor.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says reefs occupy less than one per cent." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q007", "statement": "The rich colours of healthy coral come from the algae living inside it.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says the algae are responsible for the colours of healthy coral." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q008", "statement": "A bleached coral is always dead.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says a bleached coral is not immediately dead and may recover if water cools." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q009", "statement": "Coral nursery projects have fully restored damaged reefs in every region where they have been tried.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage mentions nurseries but reports no results of their success." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0011-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0011-q010", "prompt": "Reefs are commonly estimated to support around a ______ of all marine species.", "accept": ["quarter"], "evidence": { "explanation": "Paragraph A gives this estimate." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q011", "prompt": "In some corals, algae can supply up to ______ of the animal's energy needs.", "accept": ["90 per cent", "90%"], "evidence": { "explanation": "Paragraph B gives up to 90 per cent." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q012", "prompt": "Bleaching can follow a rise of as little as ______ degrees Celsius above the usual summer maximum.", "accept": ["one to two", "1 to 2", "1-2"], "evidence": { "explanation": "Paragraph C gives one to two degrees Celsius." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q013", "prompt": "Ocean ______ makes it harder for corals to build their skeletons.", "accept": ["acidification"], "evidence": { "explanation": "Paragraph E names ocean acidification." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0011-p2",
+    "title": "Roman Roads and the Logistics of Empire",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. By the second century AD, the Roman Empire was linked by a network of roads on a scale not seen before and not matched in Europe for well over a thousand years. The paved highways alone are usually estimated at roughly 80,000 kilometres, and they were supplemented by many thousands more kilometres of gravel and dirt tracks. The system grew up over several centuries, extended province by province as the empire expanded.\n\nB. The first purpose of the roads was military. Legions needed to march quickly to trouble spots, and supplies had to follow them. The state also built an official messenger service, in which riders and carriages passed along relay stations where fresh horses could be obtained. In urgent cases, a rider changing horses at these stations could cover well over a hundred kilometres in a single day, a speed of communication that would not be exceeded in Europe until the nineteenth century.\n\nC. The best roads were carefully engineered. Surveyors used an instrument called a groma to lay out straight lines across the landscape, and builders dug a trench that they filled with layers of stone, gravel and sand before topping it with fitted paving stones. The surface was raised slightly in the middle so that rainwater ran off into ditches on either side. This attention to drainage, more than the paving itself, is often credited with the survival of some stretches to the present day.\n\nD. Travellers were guided by stone markers set roughly every Roman mile, about one and a half kilometres. Many recorded the distance to the nearest town and the name of the emperor who had built or repaired the road. Written itineraries listed the stopping places along major routes, and a medieval copy of a Roman road map survives that shows the network in a stylised form.\n\nE. Although the roads are often imagined as trade routes, bulk goods such as grain, wine and building stone were generally cheaper to transport by water, and merchants used rivers and the Mediterranean wherever they could. The roads nevertheless carried people, information, tax collectors and lighter, high-value goods, and towns grew up at junctions and river crossings where travellers needed food and lodging.\n\nF. When imperial authority weakened in the west, maintenance declined, yet the roads did not vanish. Many remained in use for centuries, and some of their routes still lie beneath modern highways. Others were gradually dismantled as later communities took their paving stones for new buildings, leaving only faint lines across fields that archaeologists can now trace from the air.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0011-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An immense network built up over centuries" },
+            { "key": "ii", "label": "Speed for the army and for messages of state" },
+            { "key": "iii", "label": "Layers and drainage: how the roads were built" },
+            { "key": "iv", "label": "Distance markers and route guides for travellers" },
+            { "key": "v", "label": "Not for bulk trade, but for people, information and towns" },
+            { "key": "vi", "label": "What became of the roads after the empire weakened" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0011-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the size and gradual growth of the network." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B covers military movement and the fast messenger service." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes construction layers and drainage." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E explains that bulk goods went by water while roads carried people, information and towns grew beside them." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the fate of the roads after imperial authority weakened." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0011-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q019", "statement": "The roads were built first of all to serve military needs.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states the first purpose of the roads was military." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q020", "statement": "Roman road surfaces were made perfectly flat so that water would not run off.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the surface was raised in the middle so water ran off into ditches." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q021", "statement": "Bulk goods were generally cheaper to move by water than by road.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q022", "statement": "All Roman roads were dismantled soon after the western empire weakened.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says many remained in use for centuries and some lie beneath modern highways." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0011-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0011-q023", "prompt": "The paved highways are usually estimated at roughly ______ kilometres.", "accept": ["80,000", "80000"], "evidence": { "explanation": "Paragraph A gives roughly 80,000 kilometres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q024", "prompt": "Riders obtained fresh horses at ______ stations.", "accept": ["relay"], "evidence": { "explanation": "Paragraph B mentions relay stations." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q025", "prompt": "Surveyors used an instrument called a ______ to lay out straight lines.", "accept": ["groma"], "evidence": { "explanation": "Paragraph C names the groma." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q026", "prompt": "Stone markers were set roughly every Roman ______.", "accept": ["mile"], "evidence": { "explanation": "Paragraph D says markers stood roughly every Roman mile." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0011-p3",
+    "title": "The Psychology of Habit",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "psychology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Much of what people do each day is done without much conscious thought. In one often-cited diary study, participants recorded what they were doing and thinking at random moments over several days, and researchers concluded that about 43 per cent of their behaviours were performed habitually, usually in the same place and while thinking about something else. Habits, in other words, are not a minor feature of behaviour but a central one.\n\nB. Psychologists commonly describe a habit as a loop with three parts: a cue that triggers the behaviour, a routine that follows, and a reward that makes the pattern worth repeating. Brain-imaging research suggests that as a routine becomes automatic, activity associated with deliberate decision-making declines, freeing mental effort for other tasks. This efficiency is what makes habits useful, and also what makes them hard to notice and change.\n\nC. Popular advice often claims that it takes 21 days to form a new habit. There is little evidence for this figure. In a study led by researchers at University College London, volunteers chose a simple daily behaviour, such as drinking a glass of water after breakfast, and reported each day how automatic it felt. On average, it took 66 days for the behaviour to become automatic, but the range was enormous, from 18 days for some participants to 254 days for others, and missing a single day did not seem to prevent a habit from forming.\n\nD. Habits are closely tied to context. Because the cues that trigger them are usually features of a familiar setting, such as a particular room or time of day, people who move to a new environment are more likely to change long-standing habits, since the old cues are simply no longer there. Researchers have found that people who transfer to a new university, for example, report more change in their routines than those who stay put, and some health specialists therefore treat major life changes as windows of opportunity for adopting better habits.\n\nE. A technique that has been studied extensively is the implementation intention, an if-then plan that links a specific situation to a specific action, such as deciding in advance that if it is seven o'clock, then a run will begin. By deciding in advance, the person hands the decision to the situation itself instead of relying on motivation in the moment. Analyses that combine the results of many experiments have found that such plans markedly improve follow-through on goals.\n\nF. Yet habits are not easily overridden by good intentions alone. Breaking an unwanted habit is generally harder than forming a new one, because the old cue-routine link remains in memory and can reassert itself when the cue reappears, even after months of success. Some psychologists criticise popular books on the subject for oversimplifying the science. Most agree, however, on a practical conclusion: rather than relying on willpower, people are usually better off changing their surroundings so that the cues for unwanted behaviour are removed.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0011-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "How much of daily life runs on autopilot" },
+            { "key": "ii", "label": "The cue, the routine and the reward" },
+            { "key": "iii", "label": "A popular myth about how quickly habits form" },
+            { "key": "iv", "label": "Why a change of scene helps" },
+            { "key": "v", "label": "Deciding in advance what to do and when" },
+            { "key": "vi", "label": "Why good intentions are not enough" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0011-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A reports how large a share of behaviour is habitual." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the three-part habit loop." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D explains why a new environment makes habit change easier." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes if-then plans made in advance." } },
+            { "kind": "matching", "id": "generated-reading-academic-0011-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F explains why willpower alone rarely overrides habits." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0011-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q032", "statement": "A diary study found that about 43 per cent of daily behaviours were performed habitually.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A gives this figure." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q033", "statement": "Brain activity linked to deliberate decision-making increases once a routine has become automatic.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says such activity declines." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q034", "statement": "In the University College London study, every volunteer took 66 days to form their habit.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says 66 days was an average, with a range from 18 to 254 days." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q035", "statement": "People who move to a new environment are more likely to change long-standing habits.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0011-q036", "statement": "If-then plans have been shown to work better for men than for women.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage makes no comparison between men and women." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0011-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0011-q037", "prompt": "Popular advice claims that a new habit forms in ______ days.", "accept": ["21", "twenty-one"], "evidence": { "explanation": "Paragraph C cites the popular 21-day claim." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q038", "prompt": "In the study, behaviours took an average of ______ days to become automatic.", "accept": ["66", "sixty-six"], "evidence": { "explanation": "Paragraph C gives an average of 66 days." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q039", "prompt": "If-then plans are known as implementation ______.", "accept": ["intentions"], "evidence": { "explanation": "Paragraph E names the technique the implementation intention." } },
+            { "kind": "completion", "id": "generated-reading-academic-0011-q040", "prompt": "Rather than relying on willpower, people can change their ______ to remove old cues.", "accept": ["surroundings", "environment"], "evidence": { "explanation": "Paragraph F recommends changing surroundings so cues are removed." } }
+          ]
+        }
+      ]
+    }
   }
 ];
