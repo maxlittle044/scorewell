@@ -6743,5 +6743,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0015-p1",
+    "title": "How Glaciers Shape the Land",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Glaciers are large, long-lasting bodies of ice that form where more snow falls in winter than melts in summer. Over years, the snow is compressed into dense ice. Together, glaciers and ice sheets cover roughly ten per cent of the Earth's land area and hold most of its fresh water, although the great majority of that ice lies in Antarctica and Greenland.\n\nB. Glaciers are often described as rivers of ice, and the comparison is apt. Once a mass of ice is thick enough, its own weight causes it to deform and slide slowly downhill, at speeds that range from a few centimetres a day in a mountain glacier to several metres a day in the fastest outlet glaciers. Cracks called crevasses open where the ice flows over uneven ground, making travel across glaciers dangerous.\n\nC. As it moves, ice reshapes the landscape. Rock frozen into the base of a glacier is torn from the bedrock in a process called plucking, and the debris then grinds the rock beneath it like sandpaper, a process called abrasion. Together they carve steep-sided, flat-floored U-shaped valleys, quite unlike the V-shaped valleys cut by rivers, as well as bowl-shaped hollows called cirques. Where a glacier melts, it drops the rock it has carried in ridges called moraines, and lakes often fill hollows scoured out by the ice.\n\nD. The ice has not always covered the same areas. Over the last two million years, the climate has swung repeatedly between cold periods, when ice sheets expanded, and warmer periods, when they retreated. At the last glacial maximum, about 20,000 years ago, ice sheets covered much of Canada and northern Europe, and sea level was more than a hundred metres lower than today, exposing land that is now under the sea.\n\nE. Today the pattern is one of retreat. Measurements from glaciers on nearly every continent show that most are losing more ice each year than they gain, and some small glaciers at low altitudes have disappeared altogether. The rate of loss has increased in recent decades, and scientists attribute the trend mainly to rising temperatures.\n\nF. The consequences are far-reaching. Meltwater from mountain glaciers feeds rivers on which hundreds of millions of people depend for drinking water, farming and hydropower; when the glaciers shrink, flows may at first increase and later decline. Meanwhile, ice melting from Greenland and Antarctica adds to sea-level rise, which threatens low-lying coasts and islands.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0015-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A frozen store covering a tenth of the land" },
+            { "key": "ii", "label": "Rivers of slowly flowing ice" },
+            { "key": "iii", "label": "Sculpting valleys and lakes" },
+            { "key": "iv", "label": "Cycles of advance and retreat over millennia" },
+            { "key": "v", "label": "A worldwide pattern of shrinking" },
+            { "key": "vi", "label": "Consequences for water supplies and coasts" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0015-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes how much of the land glaciers cover." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B compares glaciers to slowly flowing rivers." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes valleys, cirques and lakes formed by ice." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes retreat on nearly every continent." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers water supplies and sea-level rise." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0015-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q006", "statement": "Glacier ice moves downhill because of its own weight.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says its own weight causes it to deform and slide." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q007", "statement": "Glaciers erode rock only by melting.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C describes plucking and abrasion." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q008", "statement": "Valleys carved by glaciers usually have a V-shaped cross-section.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says glaciers carve U-shaped valleys, unlike V-shaped river valleys." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q009", "statement": "Mountain glaciers in Asia are retreating faster than those in Europe.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare regions." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0015-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0015-q010", "prompt": "Glaciers and ice sheets cover roughly ______ per cent of the Earth's land area.", "accept": ["ten", "10"], "evidence": { "explanation": "Paragraph A gives roughly ten per cent." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q011", "prompt": "The last glacial maximum was about ______ years ago.", "accept": ["20,000", "20000"], "evidence": { "explanation": "Paragraph D gives about 20,000 years ago." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q012", "prompt": "Rock dropped by a melting glacier forms ridges called ______.", "accept": ["moraines"], "evidence": { "explanation": "Paragraph C names moraines." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q013", "prompt": "Meltwater from mountain glaciers feeds rivers on which hundreds of ______ of people depend.", "accept": ["millions"], "evidence": { "explanation": "Paragraph F says hundreds of millions of people." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0015-p2",
+    "title": "The Journey of Tea",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "culture", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. According to Chinese legend, tea was discovered in 2737 BC by the emperor Shennong, when leaves from a wild tree blew into his pot of boiling water. Whatever the truth of the story, tea plants are native to the region where south-west China meets South-East Asia, and early writings describe tea being used as a medicinal drink, often boiled with other herbs, long before it became an everyday beverage.\n\nB. Tea became a drink for the whole society during the Tang dynasty (AD 618–907), when improved transport and rising prosperity made it available in towns across the empire. Around AD 760, the writer Lu Yu compiled The Classic of Tea, a book that described how to grow, prepare and serve tea, and that gave the drink a cultural status similar to that of wine in Europe.\n\nC. Buddhist monks carried tea to Japan, where it was grown in monastery gardens from about the ninth century. Over the following centuries, the Japanese developed their own tea customs, culminating in the tea ceremony, a highly ritualised event that reflects ideas of harmony and respect.\n\nD. Tea reached Europe in the early seventeenth century, when Dutch traders began to import small quantities from China. At first it was a luxury for the wealthy, sold in apothecaries as a health drink.\n\nE. In Britain, the fashion for tea spread from the court after the marriage of Charles II to Catherine of Braganza in 1662, and demand grew steadily. Governments recognised a source of revenue and taxed tea heavily. In the American colonies, resentment at taxes imposed by the British government came to a head in 1773, when protesters threw a cargo of tea into Boston harbour in an event now known as the Boston Tea Party.\n\nF. Britain's reliance on Chinese tea troubled its merchants, who wished to break China's monopoly. From the 1830s, plantations were established in Assam, in north-east India, and later in Ceylon, using both local plants and Chinese varieties. By the end of the nineteenth century, India had become the leading source of tea for the British market. Today tea is the most widely consumed drink in the world after water.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0015-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Legend and early use as a medicine" },
+            { "key": "ii", "label": "A drink for the whole of society" },
+            { "key": "iii", "label": "Carried across the sea to Japan" },
+            { "key": "iv", "label": "Arrival in Europe on Dutch ships" },
+            { "key": "v", "label": "Taxes that provoked protest" },
+            { "key": "vi", "label": "Breaking a monopoly with new plantations" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0015-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the legend and medicinal use." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes tea becoming a drink for the whole society." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes monks carrying tea to Japan." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes taxes and the Boston Tea Party." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes new plantations breaking China's monopoly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0015-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q019", "statement": "Tea was used as a medicinal drink in China long before it became an everyday beverage.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q020", "statement": "Lu Yu compiled The Classic of Tea in the ninth century.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B places it around AD 760, in the eighth century." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q021", "statement": "The Boston Tea Party took place in 1773.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1773." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q022", "statement": "Tea was first drunk in Britain in coffee houses.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says the fashion spread from the court but does not mention coffee houses." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0015-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0015-q023", "prompt": "According to legend, the emperor ______ discovered tea.", "accept": ["Shennong"], "evidence": { "explanation": "Paragraph A names Shennong." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q024", "prompt": "The Classic of Tea was compiled around AD ______.", "accept": ["760"], "evidence": { "explanation": "Paragraph B gives around AD 760." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q025", "prompt": "Dutch traders began importing tea to Europe in the early ______ century.", "accept": ["seventeenth", "17th"], "evidence": { "explanation": "Paragraph D says the early seventeenth century." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q026", "prompt": "From the 1830s, tea plantations were established in ______.", "accept": ["Assam"], "evidence": { "explanation": "Paragraph F names Assam." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0015-p3",
+    "title": "The Return of the Electric Car",
+    "sourceTestSet": "Academic",
+    "topic": "Technology",
+    "tags": ["academic", "technology", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Electric cars are often described as a new invention, but they are older than the petrol car. Small electric vehicles were built in the 1830s, and by the end of the nineteenth century electric taxis were operating in several cities. They were quiet, clean and easy to start, and they were popular with city drivers who made short trips.\n\nB. Their success was short-lived. Electric cars could travel only short distances before their heavy batteries needed recharging, and few homes outside cities had electricity. Petrol cars, by contrast, could be refuelled in minutes, and in 1908 the introduction of the Model T and the assembly line made them far cheaper to buy. By the 1920s, electric cars had almost disappeared from the roads.\n\nC. Interest revived in the late twentieth century, prompted by concern about air pollution and oil supplies. In 1997, a Japanese manufacturer began selling the first mass-produced hybrid car, which combined a petrol engine with an electric motor and a small battery. Hybrids proved that the public was willing to buy vehicles with electric drive, and they encouraged manufacturers to invest in fully electric models.\n\nD. The turning point was the falling cost of batteries. Lithium-ion batteries, developed for laptops and phones, became steadily cheaper and more powerful, and the price per unit of energy stored fell by roughly 90 per cent between 2010 and 2020. As a result, electric cars can now travel several hundred kilometres on one charge, and in many markets their running costs are lower than those of petrol cars.\n\nE. Obstacles remain. Charging points are still scarce in many places, and they are especially hard to provide for people who live in apartments without private parking. The mining of lithium and cobalt, which are used in batteries, raises concerns about water use and working conditions, and a large increase in demand could put pressure on electricity grids. Recycling batteries at scale is technically possible, but the industry is still developing.\n\nF. Even so, studies in most countries suggest that, after accounting for the energy used to make the battery, an electric car produces lower emissions over its lifetime than a petrol car, and the advantage grows as electricity is generated from more renewable sources. Governments have set dates for ending the sale of new petrol cars, but the pace of change will depend on the availability of charging, the price of vehicles and the cleanliness of the power supply.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0015-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Electric cars before the petrol age" },
+            { "key": "ii", "label": "How cheap petrol cars took over" },
+            { "key": "iii", "label": "Hybrids reopen the door" },
+            { "key": "iv", "label": "The falling cost of batteries" },
+            { "key": "v", "label": "Obstacles that remain" },
+            { "key": "vi", "label": "A cleaner future depends on power and policy" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0015-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes early electric vehicles." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the Model T and the decline of electric cars." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes falling battery costs." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E lists charging, mining and grid obstacles." } },
+            { "kind": "matching", "id": "generated-reading-academic-0015-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F says the benefit depends on electricity supply and policy." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0015-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q032", "statement": "Electric cars existed before petrol cars were mass produced.", "answer": "TRUE", "evidence": { "explanation": "Paragraphs A and B place electric cars in the 1830s and the Model T in 1908." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q033", "statement": "The introduction of the Model T made petrol cars more expensive than electric cars.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it made petrol cars far cheaper to buy." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q034", "statement": "The price of batteries has risen since 2010.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says prices fell by roughly 90 per cent." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q035", "statement": "Battery recycling is already profitable in every country.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says only that the industry is still developing." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0015-q036", "statement": "Studies suggest an electric car produces lower lifetime emissions than a petrol car in most countries.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0015-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0015-q037", "prompt": "The first mass-produced hybrid car went on sale in ______.", "accept": ["1997"], "evidence": { "explanation": "Paragraph C gives 1997." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q038", "prompt": "Battery prices fell by roughly ______ per cent between 2010 and 2020.", "accept": ["90", "ninety"], "evidence": { "explanation": "Paragraph D gives roughly 90 per cent." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q039", "prompt": "The mining of lithium and ______ raises concerns about water use and working conditions.", "accept": ["cobalt"], "evidence": { "explanation": "Paragraph E names cobalt." } },
+            { "kind": "completion", "id": "generated-reading-academic-0015-q040", "prompt": "Charging points are especially hard to provide for people who live in ______.", "accept": ["apartments", "flats"], "evidence": { "explanation": "Paragraph E mentions apartments without private parking." } }
+          ]
+        }
+      ]
+    }
   }
 ];
