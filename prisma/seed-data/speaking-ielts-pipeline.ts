@@ -2029,5 +2029,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0211",
+    "title": "Part 1: Housework and chores",
+    "part": "part1",
+    "topic": "Housework and chores",
+    "tags": ["speaking", "part-1", "housework-and-chores"],
+    "data": {
+      "questions": [
+        "What household chores do you do regularly?",
+        "Which chore do you enjoy least?",
+        "Did you help with housework when you were a child?",
+        "Do you prefer to do chores in the morning or in the evening?",
+        "Do people in your country share housework equally?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0212",
+    "title": "Part 1: Time management",
+    "part": "part1",
+    "topic": "Time management",
+    "tags": ["speaking", "part-1", "time-management"],
+    "data": {
+      "questions": [
+        "Do you usually plan your day in advance?",
+        "Are you generally a punctual person?",
+        "What do you do when you have too many things to do?",
+        "Do you use any tools or apps to organise your time?",
+        "Have you ever been late for something important?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0213",
+    "title": "Part 1: Museums and history",
+    "part": "part1",
+    "topic": "Museums and history",
+    "tags": ["speaking", "part-1", "museums-and-history"],
+    "data": {
+      "questions": [
+        "Do you enjoy visiting museums?",
+        "What was the last museum or historical site you visited?",
+        "Did you learn about history in an interesting way at school?",
+        "Are there any famous historical places near where you live?",
+        "Would you prefer to visit a museum alone or with other people?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0214",
+    "title": "Part 1: Money and saving",
+    "part": "part1",
+    "topic": "Money and saving",
+    "tags": ["speaking", "part-1", "money-and-saving"],
+    "data": {
+      "questions": [
+        "Do you find it easy to save money?",
+        "What do you usually spend most of your money on?",
+        "Did you receive pocket money when you were a child?",
+        "Do you prefer paying by cash or by card?",
+        "Is there anything you are currently saving up to buy?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0215",
+    "title": "Part 1: School and teachers",
+    "part": "part1",
+    "topic": "School and teachers",
+    "tags": ["speaking", "part-1", "school-and-teachers"],
+    "data": {
+      "questions": [
+        "What was your favourite subject at school?",
+        "Was there a teacher you particularly liked?",
+        "Did you enjoy going to school when you were young?",
+        "What did you find most difficult about school?",
+        "Would you like to go back to school for any reason?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0211",
+    "title": "Part 2: Describe a household task you do regularly",
+    "part": "part2",
+    "topic": "Housework and chores",
+    "tags": ["speaking", "part-2", "housework-and-chores"],
+    "data": {
+      "questions": ["Describe a household task you do regularly"],
+      "cueCardPoints": [
+        "what the task is",
+        "how often you do it",
+        "whether anyone helps you with it",
+        "and explain how you feel about doing it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0212",
+    "title": "Part 2: Describe a time when you managed your time well",
+    "part": "part2",
+    "topic": "Time management",
+    "tags": ["speaking", "part-2", "time-management"],
+    "data": {
+      "questions": ["Describe a time when you managed your time well"],
+      "cueCardPoints": [
+        "what you had to do",
+        "how much time you had",
+        "how you organised your time",
+        "and explain why you think it went well"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0213",
+    "title": "Part 2: Describe a historical place you have visited",
+    "part": "part2",
+    "topic": "Museums and history",
+    "tags": ["speaking", "part-2", "museums-and-history"],
+    "data": {
+      "questions": ["Describe a historical place you have visited"],
+      "cueCardPoints": [
+        "where the place is",
+        "when you went there and who with",
+        "what you saw or did there",
+        "and explain what you learned from the visit"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0214",
+    "title": "Part 2: Describe something you saved up to buy",
+    "part": "part2",
+    "topic": "Money and saving",
+    "tags": ["speaking", "part-2", "money-and-saving"],
+    "data": {
+      "questions": ["Describe something you saved up to buy"],
+      "cueCardPoints": [
+        "what you wanted to buy",
+        "how long it took you to save for it",
+        "how you felt when you finally bought it",
+        "and explain whether it was worth the wait"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0215",
+    "title": "Part 2: Describe a teacher who influenced you",
+    "part": "part2",
+    "topic": "School and teachers",
+    "tags": ["speaking", "part-2", "school-and-teachers"],
+    "data": {
+      "questions": ["Describe a teacher who influenced you"],
+      "cueCardPoints": [
+        "who the teacher was",
+        "what subject they taught",
+        "what they did that was special",
+        "and explain how they influenced you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0211",
+    "title": "Part 3: Family roles and domestic work",
+    "part": "part3",
+    "topic": "Housework and chores",
+    "tags": ["speaking", "part-3", "housework-and-chores"],
+    "data": {
+      "questions": [
+        "How have attitudes to sharing housework changed over the past few generations?",
+        "Do you think children should be paid for helping with household chores?",
+        "Will household robots and appliances eventually remove the need for most housework?",
+        "Should housework be taught as a school subject?",
+        "How does the way a family shares chores affect relationships within it?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0212",
+    "title": "Part 3: Productivity and the modern workday",
+    "part": "part3",
+    "topic": "Time management",
+    "tags": ["speaking", "part-3", "time-management"],
+    "data": {
+      "questions": [
+        "Why do some people find it much harder to manage their time than others?",
+        "Should schools teach students how to organise their time?",
+        "Do you think modern technology helps people use their time better or makes them more distracted?",
+        "Are people today busier than in the past, or do they simply feel busier?",
+        "How important is punctuality in different cultures?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0213",
+    "title": "Part 3: Preserving the past",
+    "part": "part3",
+    "topic": "Museums and history",
+    "tags": ["speaking", "part-3", "museums-and-history"],
+    "data": {
+      "questions": [
+        "Why is it important for a society to preserve its historical sites?",
+        "Should governments pay for museums, or should visitors cover the cost?",
+        "How can technology make history more engaging for young people?",
+        "Do you think old buildings should ever be demolished to make way for new development?",
+        "Is it better to learn about history from museums or from books and documentaries?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0214",
+    "title": "Part 3: Attitudes to money and spending",
+    "part": "part3",
+    "topic": "Money and saving",
+    "tags": ["speaking", "part-3", "money-and-saving"],
+    "data": {
+      "questions": [
+        "Why do some people save carefully while others spend freely?",
+        "Should schools teach children how to manage money?",
+        "How has the growth of online shopping changed the way people spend?",
+        "Do you think people rely too much on credit and borrowing nowadays?",
+        "Does having more money always make people happier?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0215",
+    "title": "Part 3: Education and the role of teachers",
+    "part": "part3",
+    "topic": "School and teachers",
+    "tags": ["speaking", "part-3", "school-and-teachers"],
+    "data": {
+      "questions": [
+        "What qualities make someone a good teacher?",
+        "Do you think teachers are respected enough in your country?",
+        "Will technology eventually replace teachers in the classroom?",
+        "Should students have a say in how they are taught?",
+        "How important is it for children to enjoy school?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
