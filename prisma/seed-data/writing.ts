@@ -902,4 +902,139 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (walking, household spending, museums, water use,
+  // broadband) ----
+  {
+    slug: "task1-daily-steps-line-graph",
+    title: "Task 1: Average daily steps walked by adults (Line graph)",
+    taskType: "task1-academic",
+    topic: "Health",
+    tags: ["writing", "task-1-academic", "health", "line-graph"],
+    kind: "test",
+    data: {
+      prompt:
+        "The line graph below shows the average number of steps walked per day by adults in three countries between 2005 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "line",
+        unit: "steps per day",
+        xLabels: ["2005", "2010", "2015", "2020", "2025"],
+        series: [
+          { label: "Switzerland", values: [9200, 9000, 8700, 8900, 9300] },
+          { label: "Japan", values: [7100, 7300, 6900, 6400, 6800] },
+          { label: "United States", values: [5200, 5000, 4900, 4700, 5100] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-household-spending-table",
+    title: "Task 1: Household spending by category (Table)",
+    taskType: "task1-academic",
+    topic: "Economy",
+    tags: ["writing", "task-1-academic", "economy", "table"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The table below shows how the average household in three countries divided its spending between four categories in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "table",
+        columns: ["Category", "Canada (%)", "Poland (%)", "Egypt (%)"],
+        rows: [
+          { label: "Housing", values: [29, 22, 18] },
+          { label: "Food", values: [12, 24, 38] },
+          { label: "Transport", values: [16, 11, 7] },
+          { label: "Leisure and culture", values: [10, 8, 4] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-museum-visitors-bar-chart",
+    title: "Task 1: Visitors to five museums (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Culture",
+    tags: ["writing", "task-1-academic", "culture", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of visitors to five museums in a European city in 2019 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "thousand visitors",
+        categories: ["History", "Science", "Art", "Maritime", "Toy"],
+        series: [
+          { label: "2019", values: [620, 480, 710, 150, 90] },
+          { label: "2023", values: [540, 520, 590, 190, 140] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-household-water-use-pie-chart",
+    title: "Task 1: Household water use (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Environment",
+    tags: ["writing", "task-1-academic", "environment", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows how water is used in a typical household in one country. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "%",
+        slices: [
+          { label: "Toilet flushing", value: 27 },
+          { label: "Showers and baths", value: 25 },
+          { label: "Laundry", value: 16 },
+          { label: "Taps and cooking", value: 15 },
+          { label: "Dishwashing", value: 8 },
+          { label: "Garden and other", value: 9 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-broadband-access-line-graph",
+    title: "Task 1: Households with broadband internet (Line graph)",
+    taskType: "task1-academic",
+    topic: "Technology",
+    tags: ["writing", "task-1-academic", "technology", "line-graph"],
+    kind: "test",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of households with broadband internet access in four countries between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "line",
+        unit: "% of households",
+        xLabels: ["2000", "2005", "2010", "2015", "2020"],
+        series: [
+          { label: "South Korea", values: [12, 70, 93, 98, 99] },
+          { label: "Germany", values: [2, 26, 65, 85, 93] },
+          { label: "Mexico", values: [1, 4, 17, 46, 71] },
+          { label: "India", values: [0, 1, 3, 12, 34] },
+        ],
+      },
+    },
+  },
 ];
