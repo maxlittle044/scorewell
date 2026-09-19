@@ -8408,5 +8408,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0015-p1",
+    "title": "General Training Reading — Section 1: Canoe Hire and Community Theatre Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nLAKELAND CANOE HIRE\nPrices and Safety Rules\n\nWe are open daily from 9:00am to 5:00pm, from April to September. A single kayak costs £12 for two hours, and a double canoe costs £18 for two hours. Extra hours cost £5 each. No experience is needed.\n\nLife jackets are provided free of charge and must be worn at all times. Children under 12 must be accompanied by an adult. A deposit of £20 is taken by card and refunded when the boat is returned. All boats must be back by 4:30pm. Swimming from the boats is not allowed, and hire may be suspended in strong winds. Groups of ten or more receive a 10% discount if they book a week in advance.\n\nTEXT 2\n\nSILVERTON COMMUNITY THEATRE\nTickets and Bookings\n\nThe box office is open Tuesday to Saturday, 11:00am to 6:00pm. Tickets cost £14 for adults, £11 for concessions and £9 for under-16s. Booking online adds a fee of £1.50 per ticket; there is no fee for booking in person.\n\nEvening performances start at 7:30pm, and there is a Saturday matinee at 2:30pm. Doors open 45 minutes before each performance. Latecomers are admitted only at the interval, which lasts 20 minutes. Tickets can be exchanged up to 48 hours before the performance for a fee of £2, but cannot be refunded. The bar is open before the show and during the interval. Free parking is available behind the theatre.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0015-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q001", "statement": "Life jackets must be paid for separately.", "answer": "FALSE", "evidence": { "explanation": "Life jackets are provided free of charge." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q002", "statement": "Children under 12 may hire a boat only if an adult accompanies them.", "answer": "TRUE", "evidence": { "explanation": "Children under 12 must be accompanied by an adult." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q003", "statement": "The canoe hire business is open all year round.", "answer": "FALSE", "evidence": { "explanation": "It is open from April to September." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q004", "statement": "Groups of ten or more receive a discount if they book in advance.", "answer": "TRUE", "evidence": { "explanation": "They receive 10% off if they book a week in advance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q005", "statement": "Theatre tickets can be refunded if a customer changes their mind.", "answer": "FALSE", "evidence": { "explanation": "Tickets cannot be refunded." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q006", "statement": "The theatre has a café serving hot meals.", "answer": "NOT GIVEN", "evidence": { "explanation": "Only a bar is mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0015-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0015-q007", "prompt": "A double canoe costs ______ for two hours.", "accept": ["£18", "18 pounds"], "evidence": { "explanation": "A double canoe costs £18 for two hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q008", "prompt": "All boats must be returned by ______.", "accept": ["4:30pm", "4.30pm"], "evidence": { "explanation": "Boats must be back by 4:30pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q009", "prompt": "Latecomers are admitted only at the ______.", "accept": ["interval"], "evidence": { "explanation": "Latecomers are admitted only at the interval." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q010", "prompt": "Tickets can be exchanged up to ______ hours before the performance.", "accept": ["48", "forty-eight"], "evidence": { "explanation": "Exchanges are allowed up to 48 hours before." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0015-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0015-q011", "question": "How much is the deposit for hiring a boat?", "options": ["£10", "£15", "£20", "£25"], "correctIndex": 2, "evidence": { "explanation": "The deposit is £20." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0015-q012", "question": "How much is a ticket for an under-16?", "options": ["£7", "£9", "£11", "£14"], "correctIndex": 1, "evidence": { "explanation": "Under-16s pay £9." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0015-q013", "question": "What time does the Saturday matinee start?", "options": ["12:30pm", "1:30pm", "2:30pm", "3:30pm"], "correctIndex": 2, "evidence": { "explanation": "The matinee is at 2:30pm." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0015-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Environmental Policy",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "ORCHID PACKAGING\nStaff Handbook — Section 14: Environmental Policy\n\nSeparate bins are provided for paper, plastics, glass and general waste, and are emptied by the cleaners at 6:00pm. Documents are printed on both sides by default, and employees are asked to avoid printing emails. The last person to leave each area must check that lights and equipment are switched off.\n\nEmployees are encouraged to cycle to work. A secure cycle shelter is provided, and the cycle-to-work scheme allows staff to buy a bicycle tax-free through their salary, up to £1,000.\n\nFor business travel, the train is preferred for journeys under 400 km, and any flight must be approved by a director.\n\nUnder the suggestion scheme, staff who propose ideas for reducing waste receive a £50 voucher if the idea is adopted. An annual environment report is published each March.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0015-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q014", "statement": "Documents are printed on both sides by default.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q015", "statement": "Employees empty the recycling bins themselves.", "answer": "FALSE", "evidence": { "explanation": "The bins are emptied by the cleaners." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q016", "statement": "Business flights must be approved by a director.", "answer": "TRUE", "evidence": { "explanation": "Any flight must be approved by a director." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q017", "statement": "The company gives every employee a free bicycle.", "answer": "FALSE", "evidence": { "explanation": "The scheme allows staff to buy a bicycle tax-free through their salary." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q018", "statement": "The company has halved its waste since last year.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook gives no waste figures." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0015-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0015-q019", "prompt": "The last person to leave must check that ______ and equipment are switched off.", "accept": ["lights"], "evidence": { "explanation": "The handbook says lights and equipment." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q020", "prompt": "The train is preferred for journeys under ______ km.", "accept": ["400", "four hundred"], "evidence": { "explanation": "The limit is 400 km." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q021", "prompt": "The cycle-to-work scheme allows a tax-free purchase of up to ______.", "accept": ["£1,000", "£1000", "1,000 pounds"], "evidence": { "explanation": "The limit is £1,000." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q022", "prompt": "Staff whose ideas are adopted receive a ______ voucher.", "accept": ["£50", "50 pounds"], "evidence": { "explanation": "The voucher is £50." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q023", "prompt": "An annual environment report is published each ______.", "accept": ["March"], "evidence": { "explanation": "It is published each March." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0015-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0015-q024", "question": "What are employees asked to avoid printing?", "options": ["Reports", "Contracts", "Emails", "Invoices"], "correctIndex": 2, "evidence": { "explanation": "Employees are asked to avoid printing emails." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0015-q025", "question": "Where can cyclists leave their bicycles at work?", "options": ["In the office", "In a secure cycle shelter", "In the car park", "At reception"], "correctIndex": 1, "evidence": { "explanation": "A secure cycle shelter is provided." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0015-q026", "question": "Which types of bin are provided?", "options": ["Paper only", "Paper, plastics, glass and general waste", "Glass and plastics only", "General waste only"], "correctIndex": 1, "evidence": { "explanation": "Separate bins are provided for paper, plastics, glass and general waste." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0015-p3",
+    "title": "The Story of the Pencil",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The pencil is so ordinary that it is easy to forget it was ever invented. Yet this simple tool, a thin stick of graphite in a wooden case, has helped to write books, sketch buildings and calculate the orbits of planets, and it is still made in billions every year. Its history is full of accidents, wartime shortages and clever improvisation.\n\nB. In 1564, a violent storm in Borrowdale, in the north of England, uprooted a tree and exposed a huge deposit of a black mineral that was unlike anything local people had seen. It was very pure graphite, and shepherds soon found that it could be used to mark sheep. Because it seemed to be a form of lead, people called it \"black lead\" or \"plumbago\", a mistake that gave the pencil's core its enduring name of \"lead\", although it contains no lead at all.\n\nC. Graphite is soft and leaves marks on the hands, so early users wrapped it in string or sheepskin. Later, craftsmen began to cut it into sticks and fit them into hollowed-out wooden holders, and by the seventeenth century, the wooden casing was becoming common. The English deposit was so valuable that it was guarded by armed men, and exports were controlled.\n\nD. When war between France and Britain cut off French supplies of English graphite in the 1790s, the French government asked the inventor Nicolas-Jacques Conté to find a substitute. In 1795, he found that powdered graphite could be mixed with clay, shaped into rods and baked in a kiln. The more clay he added, the harder the pencil, so he could control the hardness precisely. His process, with variations, is still used today.\n\nE. Other improvements followed. In 1858, Hymen Lipman of the United States received a patent for attaching a rubber eraser to the end of a pencil. Manufacturers also introduced a system of grades, marked with letters: H for hard, indicating a pale mark, and B for black, indicating a soft, dark one, with HB in between. Artists and draughtsmen chose their grades carefully.\n\nF. Despite computers, tablets and pens, the pencil has not disappeared. Children still learn to write with it, examinations are marked in it, and artists value its range of tones. Most pencils today are made from wood from managed forests, and some are made from recycled newspapers or plastic, reflecting a new concern for the environment.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0015-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A tool so ordinary it is overlooked" },
+            { "key": "ii", "label": "A strange black mineral" },
+            { "key": "iii", "label": "Wrapping graphite in wood" },
+            { "key": "iv", "label": "A wartime shortage prompts an invention" },
+            { "key": "v", "label": "Erasers and hardness grades" },
+            { "key": "vi", "label": "Still in demand in the digital age" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0015-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the pencil as an overlooked everyday tool." } },
+            { "kind": "matching", "id": "generated-reading-general-0015-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the discovery of graphite." } },
+            { "kind": "matching", "id": "generated-reading-general-0015-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the wartime shortage and Conté's invention." } },
+            { "kind": "matching", "id": "generated-reading-general-0015-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E covers the eraser and the H and B grades." } },
+            { "kind": "matching", "id": "generated-reading-general-0015-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the pencil's continued use today." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0015-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q032", "statement": "A large deposit of graphite was exposed in Borrowdale in 1564.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q033", "statement": "Pencils contain lead.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the core contains no lead at all." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q034", "statement": "Conté developed his method because French supplies of English graphite were cut off.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q035", "statement": "Hymen Lipman invented the pencil.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says he patented attaching an eraser to a pencil." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0015-q036", "statement": "Pencils are cheaper to produce than pens.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare costs." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0015-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0015-q037", "prompt": "A large deposit of graphite was found in ______ in the north of England.", "accept": ["Borrowdale"], "evidence": { "explanation": "Paragraph B names Borrowdale." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q038", "prompt": "Conté mixed powdered graphite with ______.", "accept": ["clay"], "evidence": { "explanation": "Paragraph D says clay." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q039", "prompt": "The pencil eraser was patented in ______.", "accept": ["1858"], "evidence": { "explanation": "Paragraph E gives 1858." } },
+            { "kind": "completion", "id": "generated-reading-general-0015-q040", "prompt": "Pencil hardness is marked with letters such as H and ______.", "accept": ["B"], "evidence": { "explanation": "Paragraph E names H and B." } }
+          ]
+        }
+      ]
+    }
   }
 ];
