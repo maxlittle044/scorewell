@@ -4796,5 +4796,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0015-s1",
+    "title": "Art Course Enrolment – Listening Section 1",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "form-completion"],
+    "data": {
+      "audioLabel": "Art Course Enrolment – Listening Section 1",
+      "transcript": "Clerk: Good afternoon, Riverside Arts Centre. How can I help?\nCaller: Hello, I'd like to enrol on the evening watercolour painting course.\nClerk: Certainly. That course starts on the ninth of January and runs on Tuesday evenings.\nCaller: What time is it?\nClerk: It runs from half past six until half past eight.\nCaller: And how long does the course last?\nClerk: Ten weeks altogether.\nCaller: What's the fee?\nClerk: The course fee is £120, and there is a separate materials fee of £15 for paper and paints.\nCaller: Where does it take place?\nClerk: In room five on the first floor. Classes are limited to twelve people, so it's best to enrol soon.\nCaller: Could I book now, please?\nClerk: Of course. Can I take your surname?\nCaller: It's Fairweather, that's F-A-I-R-W-E-A-T-H-E-R.\nClerk: Thank you. And a contact number?\nCaller: 07700 900217.\nClerk: Lovely, you're enrolled.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0015-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0015-q001", "prompt": "Surname: ______.", "accept": ["Fairweather"], "evidence": { "explanation": "The caller spells F-A-I-R-W-E-A-T-H-E-R." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q002", "prompt": "Course: ______ painting.", "accept": ["watercolour", "watercolor"], "evidence": { "explanation": "The caller enrols on the watercolour painting course." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q003", "prompt": "Start date: the ______ of January.", "accept": ["ninth", "9th", "9"], "evidence": { "explanation": "The course starts on the ninth of January." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q004", "prompt": "Day of class: ______.", "accept": ["Tuesday"], "evidence": { "explanation": "The course runs on Tuesday evenings." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q005", "prompt": "Start time: half past ______.", "accept": ["six", "6"], "evidence": { "explanation": "The class begins at half past six." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q006", "prompt": "Length of course: ______ weeks.", "accept": ["ten", "10"], "evidence": { "explanation": "The course lasts ten weeks." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q007", "prompt": "Course fee: £______.", "accept": ["120"], "evidence": { "explanation": "The course fee is £120." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q008", "prompt": "Materials fee: £______.", "accept": ["15"], "evidence": { "explanation": "The materials fee is £15." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q009", "prompt": "Room number: ______.", "accept": ["five", "5"], "evidence": { "explanation": "The class is in room five." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q010", "prompt": "Contact number: ______.", "accept": ["07700 900217"], "evidence": { "explanation": "The caller gives 07700 900217." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0015-s2",
+    "title": "Introducing the City Farm – Listening Section 2",
+    "topic": "Community",
+    "tags": ["academic", "community", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Introducing the City Farm – Listening Section 2",
+      "transcript": "Welcome to Hillside City Farm. I'm going to tell you a little about the farm before you explore.\n\nThe farm opened in 1985 and covers three hectares, right in the middle of the city. It is open Wednesday to Sunday, and entry is free, although we welcome donations.\n\nVisitors can feed the goats, using the special food sold at the farm shop, but please don't feed the other animals. Our beehives are on the roof of the main barn, and you can watch the bees through a glass panel. The farm shop also sells eggs from our hens, and the café next door is famous for its cakes, all made using farm eggs.\n\nSchool groups are very welcome, but visits must be booked at least two weeks in advance.\n\nThe farm is run largely by volunteers and depends on donations. If you'd like to support us, the most popular way is to adopt an animal: for a small monthly amount, you receive a certificate and regular news about your chosen animal.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0015-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0015-q011", "prompt": "The farm opened in ______.", "accept": ["1985"], "evidence": { "explanation": "The speaker says it opened in 1985." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q012", "prompt": "The farm covers ______ hectares.", "accept": ["three", "3"], "evidence": { "explanation": "The speaker says three hectares." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q013", "prompt": "The farm is open Wednesday to ______.", "accept": ["Sunday"], "evidence": { "explanation": "The speaker says Wednesday to Sunday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q014", "prompt": "Entry to the farm is ______.", "accept": ["free"], "evidence": { "explanation": "The speaker says entry is free." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q015", "prompt": "The farm shop also sells ______ from the hens.", "accept": ["eggs"], "evidence": { "explanation": "The speaker says the shop sells eggs from the hens." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q016", "prompt": "School visits must be booked at least ______ weeks in advance.", "accept": ["two", "2"], "evidence": { "explanation": "The speaker says at least two weeks in advance." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0015-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q017", "question": "Which animals may visitors feed?", "options": ["Goats", "Pigs", "Horses", "Bees"], "correctIndex": 0, "evidence": { "explanation": "Visitors may feed the goats only." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q018", "question": "Where are the beehives?", "options": ["Near the entrance", "Behind the café", "On the roof of the main barn", "Beside the pond"], "correctIndex": 2, "evidence": { "explanation": "The beehives are on the roof of the main barn." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q019", "question": "What is the café famous for?", "options": ["Cakes made with farm eggs", "Hot meals", "Ice cream", "Fresh coffee beans"], "correctIndex": 0, "evidence": { "explanation": "The café is famous for its cakes made using farm eggs." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q020", "question": "What is the most popular way to support the farm?", "options": ["Adopting an animal", "Buying a season ticket", "Sponsoring a bench", "Paying an entry fee"], "correctIndex": 0, "evidence": { "explanation": "The speaker says adopting an animal is the most popular way." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0015-s3",
+    "title": "Planning a Literature Essay – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Literature Essay – Listening Section 3",
+      "transcript": "Nadia: Ben, have you started your literature essay yet?\nBen: I've made a plan. The title is about the role of the narrator in the novel.\nNadia: Mine's the same, actually. How long does it have to be?\nBen: Three thousand words, and the deadline is the twelfth of March.\nNadia: I'm struggling, to be honest. There's far too much material to read, and I don't know where to begin.\nBen: I'd suggest focusing on just three chapters. That's what our tutor recommended, and it makes the argument much clearer.\nNadia: That's a good idea. Shall we work on it together?\nBen: Sure. Why don't we meet on Thursday in the library?\nNadia: Perfect. Let's divide the work. I'll write the introduction.\nBen: And I'll collect the quotations from the text, since I've already highlighted most of them.\nNadia: Great. What about the reference list?\nBen: I'll do that too, I don't mind.\nNadia: Then we should both draft the conclusion, and we'll proofread each other's essays at the end.\nBen: Agreed.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0015-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q021", "question": "What is the topic of the essay?", "options": ["The role of the narrator", "The setting of the novel", "The author's life", "The novel's ending"], "correctIndex": 0, "evidence": { "explanation": "Ben says the title is about the role of the narrator." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q022", "question": "How long must the essay be?", "options": ["2,000 words", "2,500 words", "3,000 words", "4,000 words"], "correctIndex": 2, "evidence": { "explanation": "Ben says three thousand words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q023", "question": "When is the deadline?", "options": ["2 March", "12 March", "22 March", "12 April"], "correctIndex": 1, "evidence": { "explanation": "Ben says the twelfth of March." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q024", "question": "What is Nadia's problem?", "options": ["She has too much material to read", "She missed the lectures", "She lost her notes", "She dislikes the novel"], "correctIndex": 0, "evidence": { "explanation": "Nadia says there is far too much material to read." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q025", "question": "What does Ben suggest?", "options": ["Focusing on three chapters", "Reading a summary", "Changing the title", "Asking for an extension"], "correctIndex": 0, "evidence": { "explanation": "Ben suggests focusing on just three chapters." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0015-q026", "question": "Where and when will they meet?", "options": ["In the library on Thursday", "In a café on Thursday", "In the library on Friday", "Online on Monday"], "correctIndex": 0, "evidence": { "explanation": "They agree to meet on Thursday in the library." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0015-s3-g2",
+          "instructions": "Who will do each task? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Nadia" },
+            { "key": "B", "label": "Ben" },
+            { "key": "C", "label": "Both students" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0015-q027", "prompt": "Writing the introduction", "answer": "A", "evidence": { "explanation": "Nadia says she will write the introduction." } },
+            { "kind": "matching", "id": "generated-listening-academic-0015-q028", "prompt": "Collecting quotations", "answer": "B", "evidence": { "explanation": "Ben says he will collect the quotations." } },
+            { "kind": "matching", "id": "generated-listening-academic-0015-q029", "prompt": "Preparing the reference list", "answer": "B", "evidence": { "explanation": "Ben says he will do the reference list." } },
+            { "kind": "matching", "id": "generated-listening-academic-0015-q030", "prompt": "Drafting the conclusion", "answer": "C", "evidence": { "explanation": "Nadia says they should both draft the conclusion." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0015-s4",
+    "title": "The History of Refrigeration – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Refrigeration – Listening Section 4",
+      "transcript": "Today's lecture is about how people learned to keep things cold.\n\nThe ancient Persians built ice houses called yakhchals around 400 BC. These thick-walled structures stored ice through the summer, which was collected from mountains or made in shallow pools on cold nights.\n\nIn the nineteenth century, natural ice became a big business. An American merchant named Frederic Tudor began shipping ice from Boston to the Caribbean in 1806, insulating it with sawdust, and he later reached as far as India.\n\nThe first true artificial refrigeration was demonstrated by the Scottish scientist William Cullen in 1755, though he found no practical use for it. In 1834, Jacob Perkins patented the first vapour-compression machine, the principle that most refrigerators still use today.\n\nThe first household refrigerators appeared in 1913, and they became widely affordable in the following decades. Early machines used toxic gases as coolants, and later replacements called CFCs turned out to damage the ozone layer. An international agreement, the Montreal Protocol, was signed in 1987 to phase them out.\n\nToday, refrigeration prevents huge amounts of food waste and is essential for storing vaccines and medicines.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0015-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0015-q031", "prompt": "Ancient Persians built ice houses called ______.", "accept": ["yakhchals"], "evidence": { "explanation": "The lecturer names yakhchals." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q032", "prompt": "The Persian ice houses date from around ______ BC.", "accept": ["400"], "evidence": { "explanation": "The lecturer says around 400 BC." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q033", "prompt": "Frederic Tudor shipped ice from ______ to the Caribbean.", "accept": ["Boston"], "evidence": { "explanation": "The lecturer says he shipped ice from Boston." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q034", "prompt": "Tudor insulated the ice with ______.", "accept": ["sawdust"], "evidence": { "explanation": "The lecturer says he used sawdust." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q035", "prompt": "William Cullen demonstrated artificial refrigeration in ______.", "accept": ["1755"], "evidence": { "explanation": "The lecturer gives 1755." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q036", "prompt": "Jacob Perkins patented the first vapour-______ machine.", "accept": ["compression"], "evidence": { "explanation": "The lecturer says vapour-compression." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q037", "prompt": "The first household refrigerators appeared in ______.", "accept": ["1913"], "evidence": { "explanation": "The lecturer gives 1913." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q038", "prompt": "CFCs were found to damage the ______ layer.", "accept": ["ozone"], "evidence": { "explanation": "The lecturer says CFCs damage the ozone layer." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q039", "prompt": "The Montreal Protocol was signed in ______.", "accept": ["1987"], "evidence": { "explanation": "The lecturer gives 1987." } },
+            { "kind": "completion", "id": "generated-listening-academic-0015-q040", "prompt": "Refrigeration prevents huge amounts of food ______.", "accept": ["waste"], "evidence": { "explanation": "The lecturer says it prevents huge amounts of food waste." } }
+          ]
+        }
+      ]
+    }
   }
 ];
