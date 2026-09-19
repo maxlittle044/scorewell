@@ -1283,4 +1283,220 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (rent, ageing, working hours, a teenager's day,
+  // island tourism) ----
+  {
+    slug: "task1-city-rents-bar-chart",
+    title: "Task 1: Average monthly rent in five cities (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Housing",
+    tags: ["writing", "task-1-academic", "housing", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average monthly rent for a one-bedroom flat in five cities in 2015 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "euros per month",
+        categories: ["Lisbon", "Madrid", "Berlin", "Warsaw", "Athens"],
+        series: [
+          { label: "2015", values: [520, 690, 610, 430, 340] },
+          { label: "2025", values: [1150, 1120, 1080, 850, 640] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-population-aged-65-line-graph",
+    title: "Task 1: Share of the population aged 65 and over (Line graph)",
+    taskType: "task1-academic",
+    topic: "Society",
+    tags: ["writing", "task-1-academic", "society", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of the population aged 65 and over in three countries between 1980 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "% of population",
+        xLabels: ["1980", "1990", "2000", "2010", "2020"],
+        series: [
+          { label: "Japan", values: [9, 12, 17, 23, 29] },
+          { label: "Italy", values: [13, 15, 18, 20, 23] },
+          { label: "Mexico", values: [4, 4, 5, 6, 8] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-annual-working-hours-table",
+    title: "Task 1: Average annual working hours (Table)",
+    taskType: "task1-academic",
+    topic: "Work",
+    tags: ["writing", "task-1-academic", "work", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the average number of hours worked per employee per year in four countries in 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["Country", "2000 (hours)", "2020 (hours)"],
+        rows: [
+          { label: "South Korea", values: [2500, 1900] },
+          { label: "Mexico", values: [2250, 2130] },
+          { label: "United Kingdom", values: [1700, 1520] },
+          { label: "Germany", values: [1470, 1330] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-teenager-weekday-pie-chart",
+    title: "Task 1: How a typical teenager spends a weekday (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Society",
+    tags: ["writing", "task-1-academic", "society", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows how a typical teenager in one country spends the 24 hours of a school day. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "hours",
+        slices: [
+          { label: "Sleep", value: 8 },
+          { label: "School", value: 7 },
+          { label: "Leisure and screens", value: 4 },
+          { label: "Meals and travel", value: 3 },
+          { label: "Homework", value: 2 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-island-tourists-bar-chart",
+    title: "Task 1: Visitors to three islands by season (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Tourism",
+    tags: ["writing", "task-1-academic", "tourism", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of tourists who visited three islands in each season of 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "thousand visitors",
+        categories: ["Spring", "Summer", "Autumn", "Winter"],
+        series: [
+          { label: "Island A", values: [120, 310, 140, 60] },
+          { label: "Island B", values: [90, 180, 160, 130] },
+          { label: "Island C", values: [40, 95, 45, 20] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (newspaper, restaurant complaint, work event, pet
+  // permission, recommendation) ----
+  {
+    slug: "letter-newspaper-park-closure",
+    title: "Letter to a newspaper about a proposed park closure",
+    taskType: "task1-general",
+    topic: "Community",
+    tags: ["writing", "task-1-general", "letters", "formal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You have read that the council plans to close a local park to build offices. Write a letter to the editor of a local newspaper. In your letter: explain why you are writing, describe how the park is used by local people, and say what you think the council should do instead.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. A formal, persuasive tone is appropriate.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-restaurant-poor-service",
+    title: "Letter of complaint about poor service at a restaurant",
+    taskType: "task1-general",
+    topic: "Consumer",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "test",
+    data: {
+      prompt:
+        "You recently had a meal at a restaurant for a special occasion, but the service was very poor. Write a letter to the restaurant manager. In your letter: describe what went wrong, explain how it affected your evening, and say what you would like the manager to do.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. State the facts calmly and keep the tone firm but polite.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-missing-work-event",
+    title: "Letter explaining that you cannot attend a work event",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Your manager has invited you to a company dinner next month, but you will be away on that date. Write a letter to your manager. In your letter: thank them for the invitation, explain why you cannot attend, and suggest another way to meet the team.",
+      instructions:
+        "A semi-formal, courteous tone suits a manager you know well. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-landlord-permission-pet",
+    title: "Letter asking a landlord for permission to keep a pet",
+    taskType: "task1-general",
+    topic: "Housing",
+    tags: ["writing", "task-1-general", "letters", "semi-formal"],
+    kind: "test",
+    data: {
+      prompt:
+        "You would like to keep a small pet in the flat you rent. Write a letter to your landlord. In your letter: describe the pet you would like to keep, explain how you will make sure it does not cause problems, and offer to pay an extra deposit if necessary.",
+      instructions:
+        "A semi-formal, respectful tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-recommending-holiday-destination",
+    title: "Letter to a friend recommending a holiday destination",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "test",
+    data: {
+      prompt:
+        "A friend is planning a holiday and has asked for your advice. Write a letter to your friend. In your letter: recommend a place you have visited, describe what there is to see and do there, and give some practical advice about when to go.",
+      instructions:
+        "Keep this informal and enthusiastic, as you would when writing to a good friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
