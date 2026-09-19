@@ -1037,4 +1037,250 @@ export const WRITING_ITEMS: WritingSeed[] = [
       },
     },
   },
+
+  // ---- More Task 1 General letters (lost property, enquiry, building work, new city,
+  // thank-you) ----
+  {
+    slug: "letter-hotel-lost-property",
+    title: "Letter to a hotel about an item left behind",
+    taskType: "task1-general",
+    topic: "Travel",
+    tags: ["writing", "task-1-general", "letters", "formal"],
+    kind: "test",
+    data: {
+      prompt:
+        "You stayed at a hotel last week and think you left a jacket in your room. Write a letter to the hotel manager. In your letter: describe the jacket and where you think you left it, explain why it is important to you, and ask what should be done to get it back.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. Keep the tone formal and polite, and include enough detail for the hotel to identify the item.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-enquiry-holiday-cottage",
+    title: "Letter enquiring about a holiday cottage",
+    taskType: "task1-general",
+    topic: "Travel",
+    tags: ["writing", "task-1-general", "letters", "formal", "enquiry"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You saw an advertisement for a holiday cottage in the countryside. Write a letter to the owner. In your letter: say when you would like to stay and how many people will be with you, ask about the facilities and the price, and ask how to get there without a car.",
+      instructions:
+        "Begin your letter 'Dear Sir or Madam,'. A formal, clear enquiry with specific questions works best.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-neighbour-building-work",
+    title: "Letter to a neighbour about building work",
+    taskType: "task1-general",
+    topic: "Housing",
+    tags: ["writing", "task-1-general", "letters", "semi-formal"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are planning some building work on your house next month. Write a letter to your neighbour. In your letter: explain what work you are planning and when it will happen, apologise for any noise or disruption, and say how you will try to reduce the inconvenience.",
+      instructions:
+        "A semi-formal, considerate tone suits a neighbour you know a little. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-describing-new-city",
+    title: "Letter to a friend about moving to a new city",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You have recently moved to a new city. Write a letter to a friend. In your letter: describe what the city is like, say how you are settling in, and invite your friend to visit.",
+      instructions:
+        "Keep this informal and lively, as you would when writing to a close friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-thanking-host-after-stay",
+    title: "Letter thanking a friend who let you stay",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal"],
+    kind: "test",
+    data: {
+      prompt:
+        "A friend let you stay in their home for a week while you looked for a new flat. Write a letter to thank them. In your letter: thank them for their help, describe what you enjoyed most about the stay, and say how you hope to repay their kindness.",
+      instructions:
+        "This is an informal, warm letter. Be specific about what you appreciated rather than only saying thank you.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+
+  // ---- More Task 2 essays (pocket money, reality TV, brain drain, libraries, compulsory
+  // volunteering, tourism, junk food advertising, traffic, GM crops, city versus country) ----
+  {
+    slug: "task2-pocket-money-children",
+    title: "Task 2: Should children be given pocket money?",
+    taskType: "task2",
+    topic: "Family",
+    tags: ["writing", "task-2", "family", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some parents give their children regular pocket money, while others believe children should not receive money unless they earn it by helping at home. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-reality-tv-influence",
+    title: "Task 2: The influence of reality television",
+    taskType: "task2",
+    topic: "Media",
+    tags: ["writing", "task-2", "media", "discussion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Reality television programmes have become very popular around the world. Some people think they are harmless entertainment, while others believe they have a negative effect on society. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-brain-drain",
+    title: "Task 2: Skilled workers leaving their home countries",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "work", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many highly skilled people, such as doctors and engineers, leave their home countries to work abroad for higher pay. What problems does this cause for the countries they leave, and what can be done to encourage them to stay?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-public-libraries-future",
+    title: "Task 2: Do public libraries still have a future?",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "technology", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Because so much information is now available online, some people think that public libraries are no longer necessary and that the money spent on them should be used elsewhere. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-compulsory-community-service",
+    title: "Task 2: Community service for school students",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "society", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that all secondary school students should be required to do unpaid community service, such as helping in hospitals or cleaning public spaces. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-tourism-local-culture",
+    title: "Task 2: The effects of tourism on local communities",
+    taskType: "task2",
+    topic: "Tourism",
+    tags: ["writing", "task-2", "tourism", "culture", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "In many places, tourism is the main source of income for local people. Discuss the advantages and disadvantages of this for the local community.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-junk-food-advertising-ban",
+    title: "Task 2: Banning advertising of unhealthy food",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "advertising", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Rising levels of obesity have led some people to call for a complete ban on advertising for unhealthy food and drink. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-traffic-congestion-solutions",
+    title: "Task 2: Traffic congestion in big cities",
+    taskType: "task2",
+    topic: "Transport",
+    tags: ["writing", "task-2", "transport", "urban-planning", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Traffic congestion is a growing problem in many large cities. What are the main causes of this problem, and what measures could be taken to reduce it?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-genetically-modified-crops",
+    title: "Task 2: Genetically modified crops",
+    taskType: "task2",
+    topic: "Science",
+    tags: ["writing", "task-2", "science", "food", "discussion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that genetically modified crops are the best way to feed a growing world population, while others think they carry unacceptable risks. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-city-versus-countryside-living",
+    title: "Task 2: Living in the city or the countryside",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "lifestyle", "discussion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people prefer to live in a big city, while others would rather live in the countryside. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
