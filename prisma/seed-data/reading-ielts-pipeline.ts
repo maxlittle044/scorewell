@@ -6602,5 +6602,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0009-p1",
+    "title": "General Training Reading — Section 1: Bus Fares and Community Garden Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nCLEARWAY BUS COMPANY\nFares and Passes\n\nAll adult single fares within the city cost £2.40, regardless of distance. A day ticket costs £6 and a weekly pass costs £22. Children under 5 travel free, and children aged 5 to 16 pay half fare. Students with a valid card receive 20% off weekly passes.\n\nIf you pay in cash on board, please have the exact fare ready, as drivers cannot give change. Contactless cards are also accepted.\n\nBuses run from 5:30am until midnight. Night buses run on Fridays and Saturdays only, and depart hourly.\n\nItems left on buses are kept at our depot for 21 days and can be collected free of charge between 9:00am and 5:00pm, Monday to Friday. Each bus has one space for a wheelchair, which has priority over pushchairs. Complaints must be made within 14 days of the journey.\n\nTEXT 2\n\nBRIDGEWATER COMMUNITY GARDEN\nVolunteer Information\n\nVolunteers are welcome on Tuesdays and Thursdays from 10:00am to 1:00pm, and on Saturdays from 9:00am to 12:00 noon. No experience is needed. Tools and gloves are provided, but please wear sturdy shoes.\n\nNew volunteers attend a 30-minute induction and sign in at the green hut. Volunteers under 16 must be accompanied by an adult.\n\nTypical tasks include weeding, planting, composting and building raised beds. Volunteers may take home a share of the produce, and any surplus is sold at our Saturday market, with the profits used to buy seeds. Tea is provided free of charge to volunteers in the café hut.\n\nPlease register by email. Groups of more than six people must book two weeks in advance.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0009-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q001", "statement": "The adult single fare depends on the distance travelled.", "answer": "FALSE", "evidence": { "explanation": "All adult single fares cost £2.40 regardless of distance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q002", "statement": "Bus drivers can give change to passengers paying in cash.", "answer": "FALSE", "evidence": { "explanation": "Drivers cannot give change." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q003", "statement": "Night buses run every night of the week.", "answer": "FALSE", "evidence": { "explanation": "Night buses run on Fridays and Saturdays only." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q004", "statement": "Lost property can be collected free of charge.", "answer": "TRUE", "evidence": { "explanation": "Items can be collected free of charge from the depot." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q005", "statement": "Volunteers at the community garden need previous gardening experience.", "answer": "FALSE", "evidence": { "explanation": "No experience is needed." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q006", "statement": "The community garden has a greenhouse.", "answer": "NOT GIVEN", "evidence": { "explanation": "A greenhouse is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0009-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0009-q007", "prompt": "A day ticket costs ______.", "accept": ["£6", "6 pounds"], "evidence": { "explanation": "A day ticket costs £6." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q008", "prompt": "Children aged 5 to 16 pay ______ fare.", "accept": ["half"], "evidence": { "explanation": "Children aged 5 to 16 pay half fare." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q009", "prompt": "The volunteer induction lasts ______ minutes.", "accept": ["30", "thirty"], "evidence": { "explanation": "The induction lasts 30 minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q010", "prompt": "Groups of more than six must book ______ in advance.", "accept": ["two weeks", "2 weeks"], "evidence": { "explanation": "Larger groups must book two weeks in advance." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0009-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0009-q011", "question": "How much does a weekly pass cost?", "options": ["£18", "£20", "£22", "£24"], "correctIndex": 2, "evidence": { "explanation": "A weekly pass costs £22." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0009-q012", "question": "How long is lost property kept at the depot?", "options": ["7 days", "14 days", "21 days", "28 days"], "correctIndex": 2, "evidence": { "explanation": "Items are kept for 21 days." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0009-q013", "question": "What are the profits from the Saturday market used for?", "options": ["Buying tools", "Buying seeds", "Paying staff", "Repairing the hut"], "correctIndex": 1, "evidence": { "explanation": "The profits are used to buy seeds." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0009-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Manual Handling and Accident Reporting",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "RIVERSIDE WAREHOUSING\nStaff Handbook — Section 6: Manual Handling and Accident Reporting\n\nWhen lifting, employees must bend their knees and keep their back straight. Any load over 20 kg must be lifted by two people or moved using a trolley.\n\nAll accidents, however minor, must be recorded in the accident book, which is kept in the first-aid room, during the same shift in which they occur. Serious injuries must also be reported to a manager immediately.\n\nFirst aiders can be identified by green cross badges, and a list of names is posted beside every notice board. First aiders repeat their training every three years.\n\nSafety boots must be worn on the warehouse floor at all times. The company provides the first pair free of charge and replaces boots that are damaged at work.\n\nSpills must be reported and cordoned off immediately, and must never be left unattended. Only licensed staff may drive forklift trucks, and pedestrians must use the marked walkways. Fire exits must never be blocked by pallets.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0009-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q014", "statement": "An employee may lift a 25 kg load on their own.", "answer": "FALSE", "evidence": { "explanation": "Loads over 20 kg need two people or a trolley." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q015", "statement": "Minor accidents do not need to be recorded.", "answer": "FALSE", "evidence": { "explanation": "All accidents, however minor, must be recorded." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q016", "statement": "First aiders repeat their training every three years.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q017", "statement": "Employees must pay for their first pair of safety boots.", "answer": "FALSE", "evidence": { "explanation": "The first pair is provided free of charge." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q018", "statement": "Forklift drivers receive extra pay.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook says nothing about pay." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0009-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0009-q019", "prompt": "Loads over ______ kg must be lifted by two people or moved with a trolley.", "accept": ["20", "twenty"], "evidence": { "explanation": "The limit is 20 kg." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q020", "prompt": "First aiders wear ______ cross badges.", "accept": ["green"], "evidence": { "explanation": "First aiders wear green cross badges." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q021", "prompt": "Accidents must be recorded during the same ______.", "accept": ["shift"], "evidence": { "explanation": "Accidents are recorded during the same shift." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q022", "prompt": "Spills must be reported and ______ off immediately.", "accept": ["cordoned"], "evidence": { "explanation": "Spills must be cordoned off." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q023", "prompt": "Fire exits must never be blocked by ______.", "accept": ["pallets"], "evidence": { "explanation": "Fire exits must never be blocked by pallets." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0009-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0009-q024", "question": "Where is the accident book kept?", "options": ["At reception", "In the first-aid room", "In the manager's office", "In the canteen"], "correctIndex": 1, "evidence": { "explanation": "It is kept in the first-aid room." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0009-q025", "question": "Who may drive forklift trucks?", "options": ["Any employee", "Licensed staff only", "Visitors", "Supervisors only"], "correctIndex": 1, "evidence": { "explanation": "Only licensed staff may drive forklifts." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0009-q026", "question": "Where must pedestrians walk?", "options": ["Anywhere in the warehouse", "In marked walkways", "Beside forklifts", "Along the loading bay"], "correctIndex": 1, "evidence": { "explanation": "Pedestrians must use marked walkways." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0009-p3",
+    "title": "The Story of the Zip Fastener",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few inventions are as small, or as easy to overlook, as the zip fastener. Before it appeared, clothes were closed with buttons, hooks, laces and pins, all of which were slow to fasten and easy to lose. Yet the zip took several decades of trial and error to reach the form we know, and its inventors often struggled to persuade anyone that it was worth buying.\n\nB. The American inventor Elias Howe, better known for improving the sewing machine, patented an \"automatic, continuous clothing closure\" in 1851, but he never marketed it, and the idea was forgotten. In 1893, another American, Whitcomb Judson, patented and exhibited a \"clasp locker\" at the Chicago World's Fair. It used hooks and eyes, was fastened with a guide, and tended to jam or burst open. Only a small number were sold, mostly to a postal service for mailbags.\n\nC. The breakthrough came from Gideon Sundback, a Swedish-born engineer working for a company that made Judson's device. In 1913 he introduced a fastener with two rows of interlocking metal teeth, each cupped to grip its neighbour, and a slider that drew them together and locked them. It was far more reliable than its predecessors, and it could be produced on a machine that Sundback also designed, which made mass production possible.\n\nD. The first large orders came from the military, which used the fasteners in flying suits and equipment during the First World War. In 1923, the B.F. Goodrich company ordered a large number for its rubber boots, and its president is said to have coined the word \"zipper\" after the sound the device made when it was opened and closed. The name stuck, although the manufacturers themselves preferred more formal terms for many years.\n\nE. Clothing makers were slower to adopt the fastener, since many customers thought it undignified or feared that it would fail at an embarrassing moment. Advertisements in the 1920s and 1930s stressed that children could dress themselves with it, and fashion designers began to use it in dresses and trousers, praising its smooth, hidden line. By the end of the 1930s it had become standard on men's trousers.\n\nF. Today, zips are made in enormous numbers, with teeth of metal or plastic or a continuous plastic coil, and they are found in clothes, bags, tents and even spacecraft equipment. A Japanese company founded in 1934 is one of the world's largest producers. For a device that most people never think about, it remains one of the most widely used fasteners ever invented.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0009-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A humble device that took decades to perfect" },
+            { "key": "ii", "label": "Early attempts that never took off" },
+            { "key": "iii", "label": "A new design that solved the problem" },
+            { "key": "iv", "label": "How a boot manufacturer named it" },
+            { "key": "v", "label": "Winning over clothing makers" },
+            { "key": "vi", "label": "An everyday object made in huge numbers" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0009-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the zip and its long development." } },
+            { "kind": "matching", "id": "generated-reading-general-0009-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Howe's and Judson's unsuccessful early versions." } },
+            { "kind": "matching", "id": "generated-reading-general-0009-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Sundback's reliable interlocking-teeth design." } },
+            { "kind": "matching", "id": "generated-reading-general-0009-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes how clothing makers were gradually won over." } },
+            { "kind": "matching", "id": "generated-reading-general-0009-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the zip's mass production and wide use." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0009-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q032", "statement": "Elias Howe successfully sold his clothing closure to the public.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says he never marketed it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q033", "statement": "Whitcomb Judson exhibited his clasp locker at a world's fair.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says he exhibited it at the Chicago World's Fair." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q034", "statement": "Sundback's fastener was patented in 1893.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says Sundback introduced his design in 1913." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q035", "statement": "Sundback later left to work for a rival company.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say what Sundback did later." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0009-q036", "statement": "Advertisements stressed that children could dress themselves with zips.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0009-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0009-q037", "prompt": "Elias Howe patented his closure in ______.", "accept": ["1851"], "evidence": { "explanation": "Paragraph B gives 1851." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q038", "prompt": "The clasp locker was exhibited in Chicago in ______.", "accept": ["1893"], "evidence": { "explanation": "Paragraph B gives 1893." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q039", "prompt": "Sundback introduced his improved fastener in ______.", "accept": ["1913"], "evidence": { "explanation": "Paragraph C gives 1913." } },
+            { "kind": "completion", "id": "generated-reading-general-0009-q040", "prompt": "In 1923, Goodrich ordered a large number of fasteners for its ______.", "accept": ["rubber boots", "boots"], "evidence": { "explanation": "Paragraph D says the order was for its rubber boots." } }
+          ]
+        }
+      ]
+    }
   }
 ];
