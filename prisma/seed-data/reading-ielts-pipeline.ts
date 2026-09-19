@@ -6903,5 +6903,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0010-p1",
+    "title": "General Training Reading — Section 1: Hostel and Waste Collection Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nLAKESIDE HOSTEL\nBooking Information and House Rules\n\nDormitory beds (six to a room) cost £18 per night, and private rooms cost £45 per night. Breakfast is available for an extra £5. Reception is open from 7:00am to 11:00pm; guests arriving after 11:00pm must arrange a key code in advance.\n\nQuiet hours are from 10:30pm to 7:00am. The kitchen is open from 6:00am to 10:00pm, and guests must wash their own dishes. Lockers are free, but guests must bring their own padlock or buy one at reception for £4.\n\nCheck-out is by 10:30am. Luggage can be stored free of charge on the day of check-out. Cancellations must be made at least 48 hours before arrival. Free wifi is available in the common room.\n\nTEXT 2\n\nTOWN HALL\nRecycling and Bulky Waste Collection\n\nHousehold recycling (paper, card, plastic bottles and cans) is collected from the green bin every second Wednesday. Glass should be taken to the bottle banks. Garden waste is collected from the brown bin every two weeks between March and November, and food waste is collected every week.\n\nBulky items such as sofas and fridges are collected by appointment. The first three items each year are free, and further items cost £15 each. Please book online at least five working days in advance and place items at the kerb by 7:00am on the day of collection.\n\nElectrical items can be taken to the civic amenity site and recycled free of charge.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0010-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q001", "statement": "A private room costs more than twice as much as a dormitory bed.", "answer": "TRUE", "evidence": { "explanation": "£45 is more than twice £18." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q002", "statement": "Guests arriving after 11:00pm must arrange a key code in advance.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q003", "statement": "The hostel provides a free padlock for every locker.", "answer": "FALSE", "evidence": { "explanation": "Guests must bring their own padlock or buy one for £4." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q004", "statement": "The hostel has a garden for guests.", "answer": "NOT GIVEN", "evidence": { "explanation": "A garden is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q005", "statement": "Household recycling is collected every week.", "answer": "FALSE", "evidence": { "explanation": "It is collected every second Wednesday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q006", "statement": "Garden waste is collected throughout the year.", "answer": "FALSE", "evidence": { "explanation": "It is collected only between March and November." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0010-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0010-q007", "prompt": "Quiet hours at the hostel begin at ______.", "accept": ["10:30pm", "10.30pm"], "evidence": { "explanation": "Quiet hours are from 10:30pm to 7:00am." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q008", "prompt": "Guests must check out by ______.", "accept": ["10:30am", "10.30am"], "evidence": { "explanation": "Check-out is by 10:30am." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q009", "prompt": "Bulky waste must be booked at least ______ working days in advance.", "accept": ["five", "5"], "evidence": { "explanation": "Text 2 says at least five working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q010", "prompt": "Bulky items must be placed at the kerb by ______.", "accept": ["7:00am", "7am", "7.00am"], "evidence": { "explanation": "Items must be at the kerb by 7:00am." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0010-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0010-q011", "question": "How much extra does breakfast cost at the hostel?", "options": ["£3", "£4", "£5", "£6"], "correctIndex": 2, "evidence": { "explanation": "Breakfast is an extra £5." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0010-q012", "question": "How many bulky items are collected free each year?", "options": ["One", "Two", "Three", "Five"], "correctIndex": 2, "evidence": { "explanation": "The first three items each year are free." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0010-q013", "question": "Where should electrical items be taken?", "options": ["To the bottle banks", "To the civic amenity site", "To the brown bin", "To the town hall"], "correctIndex": 1, "evidence": { "explanation": "Electrical items can be taken to the civic amenity site." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0010-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Working Hours and Overtime",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "CARDINAL PRINTING\nStaff Handbook — Section 3: Working Hours and Overtime\n\nThe standard working week is 37.5 hours, Monday to Friday, with a 60-minute unpaid lunch break.\n\nUnder the flexitime scheme, employees may start work at any time between 8:00am and 10:00am, provided they are present during core hours (10:00am to 4:00pm) and complete their total weekly hours.\n\nOvertime must be approved in advance by a line manager. It is paid at time and a half, or the employee may take time off in lieu, which must be used within three months. Work on Sundays and public holidays is paid at double time.\n\nEmployees may not work more than 48 hours a week on average unless they have signed an opt-out agreement. Anyone working more than six hours must take a 20-minute break, and there must be at least 11 hours' rest between working days.\n\nTimesheets must be submitted through the online system by 12 noon on Friday each week. Late timesheets are paid the following month.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0010-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q014", "statement": "The standard working week is 40 hours.", "answer": "FALSE", "evidence": { "explanation": "It is 37.5 hours." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q015", "statement": "Employees may start work at any time between 8:00am and 10:00am.", "answer": "TRUE", "evidence": { "explanation": "The flexitime scheme allows this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q016", "statement": "Urgent overtime can be worked without prior approval.", "answer": "FALSE", "evidence": { "explanation": "Overtime must be approved in advance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q017", "statement": "Time off in lieu must be used within three months.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q018", "statement": "The company provides free lunches for staff.", "answer": "NOT GIVEN", "evidence": { "explanation": "Lunches are not mentioned other than the unpaid break." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0010-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0010-q019", "prompt": "The unpaid lunch break lasts ______ minutes.", "accept": ["60", "sixty"], "evidence": { "explanation": "The lunch break is 60 minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q020", "prompt": "Core hours run from 10:00am to ______.", "accept": ["4:00pm", "4pm", "4.00pm"], "evidence": { "explanation": "Core hours are 10:00am to 4:00pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q021", "prompt": "Overtime is paid at ______.", "accept": ["time and a half"], "evidence": { "explanation": "Overtime is paid at time and a half." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q022", "prompt": "Timesheets must be submitted by ______ on Friday.", "accept": ["12 noon", "noon", "12:00"], "evidence": { "explanation": "The deadline is 12 noon on Friday." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q023", "prompt": "There must be at least ______ hours' rest between working days.", "accept": ["11", "eleven"], "evidence": { "explanation": "The handbook requires 11 hours' rest." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0010-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0010-q024", "question": "When is double time paid?", "options": ["On Saturdays", "On Sundays and public holidays", "On weekday evenings", "At night only"], "correctIndex": 1, "evidence": { "explanation": "Work on Sundays and public holidays is paid at double time." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0010-q025", "question": "What happens to a late timesheet?", "options": ["It is ignored", "It is paid the following month", "It is paid at double rate", "It is rejected"], "correctIndex": 1, "evidence": { "explanation": "Late timesheets are paid the following month." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0010-q026", "question": "After how many hours of work must a break be taken?", "options": ["Four", "Five", "Six", "Eight"], "correctIndex": 2, "evidence": { "explanation": "Anyone working more than six hours must take a break." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0010-p3",
+    "title": "The Rise of the Podcast",
+    "sourceTestSet": "General Training",
+    "topic": "Technology",
+    "tags": ["general-training", "technology", "media", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. In little more than two decades, the podcast has grown from an experiment by technology enthusiasts into a mainstream form of entertainment and information. A podcast is a series of audio programmes, usually released in episodes, that listeners can download or stream whenever they choose. Unlike a radio broadcast, it does not depend on a schedule or on a transmitter, and almost anyone with a microphone can publish one.\n\nB. The word \"podcasting\" was first used in 2004, in a newspaper article that combined the name of a portable music player with the word \"broadcasting\". The technology behind it was already in place: a system known as RSS allowed a programme to be delivered automatically to anyone who had subscribed, so that new episodes appeared on the listener's device without their needing to search for them. Early podcasts were made mainly by amateurs and enthusiasts, and their audiences were small.\n\nC. The turning point came in 2005, when a leading technology company added podcast support to its widely used music software, making it easy for millions of people to find and subscribe to programmes. A second boost came in 2014, when a serialised true-crime investigation attracted tens of millions of downloads and showed that a podcast could reach a mass audience and generate as much public discussion as a television drama.\n\nD. Listeners often say that the appeal lies in convenience and intimacy. Episodes can be played on a commute, at the gym or while cooking, times when it is difficult to read or watch a screen. Because most podcasts are presented by one or two people talking in a relaxed way, many listeners feel a personal connection with the hosts that they do not feel with the anonymous voices of traditional broadcasting.\n\nE. Making a podcast costs little; the basic equipment is a microphone and a computer, and hosting services are cheap. Turning it into a living is harder. Most podcasts earn money from advertising, with sponsors paying to have a short message read by the host, and a growing number offer paid subscriptions that unlock extra episodes or remove advertisements. A few rely on donations from listeners.\n\nF. Success has brought new challenges. With millions of programmes available, listeners can struggle to find new ones, and small creators find it hard to be noticed. Measuring audiences accurately is still difficult, which makes advertisers cautious. Producers are now experimenting with video versions of podcasts and with automatic transcription and translation, which could open their work to new audiences.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0010-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A new kind of audio for the internet age" },
+            { "key": "ii", "label": "A name and a technology take shape" },
+            { "key": "iii", "label": "From niche hobby to mass audience" },
+            { "key": "iv", "label": "What listeners value about the medium" },
+            { "key": "v", "label": "Finding a way to pay for the content" },
+            { "key": "vi", "label": "A crowded field and future changes" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0010-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines the podcast as a new kind of audio." } },
+            { "kind": "matching", "id": "generated-reading-general-0010-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the coining of the word and the RSS technology." } },
+            { "kind": "matching", "id": "generated-reading-general-0010-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the growth to a mass audience." } },
+            { "kind": "matching", "id": "generated-reading-general-0010-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes advertising, subscriptions and donations." } },
+            { "kind": "matching", "id": "generated-reading-general-0010-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes crowding, measurement problems and future experiments." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0010-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q032", "statement": "The word podcasting combines the name of a music player with the word broadcasting.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q033", "statement": "Early podcasts were mostly made by professional broadcasters.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they were made mainly by amateurs and enthusiasts." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q034", "statement": "A serialised true-crime podcast attracted tens of millions of downloads in 2014.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q035", "statement": "Most podcasts earn their income mainly from paid subscriptions.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says most earn money from advertising." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0010-q036", "statement": "Video podcasts are more popular than audio podcasts in every country.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage only says producers are experimenting with video." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0010-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0010-q037", "prompt": "The word podcasting was first used in ______.", "accept": ["2004"], "evidence": { "explanation": "Paragraph B gives 2004." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q038", "prompt": "A leading technology company added podcast support to its music software in ______.", "accept": ["2005"], "evidence": { "explanation": "Paragraph C gives 2005." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q039", "prompt": "The basic equipment for a podcast is a microphone and a ______.", "accept": ["computer"], "evidence": { "explanation": "Paragraph E names a microphone and a computer." } },
+            { "kind": "completion", "id": "generated-reading-general-0010-q040", "prompt": "Most podcasts earn money from ______.", "accept": ["advertising"], "evidence": { "explanation": "Paragraph E says most earn money from advertising." } }
+          ]
+        }
+      ]
+    }
   }
 ];
