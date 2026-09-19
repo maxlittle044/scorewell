@@ -6000,5 +6000,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0007-p1",
+    "title": "General Training Reading — Section 1: Holiday Park and City Marathon Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSEAVIEW HOLIDAY PARK\nCaravan Hire Information\n\nOur caravans sleep up to six people. In peak season (July and August), caravans are let by the week only, from Saturday to Saturday. Outside peak season, short breaks of three or four nights are also available.\n\nThe weekly rate is £480 in peak season and £320 at other times. A damage deposit of £100 is payable when you book and is refunded within seven days of your departure, provided no damage is found.\n\nCheck-in is from 3:00pm and check-out is by 10:00am. Late check-out can be arranged at a charge of £10 per hour.\n\nDogs are allowed in selected caravans only, with a maximum of two per caravan and a fee of £20 per stay. Dogs must be kept on leads throughout the park.\n\nBed linen is not provided but can be hired for £8 per bed. Please bring your own towels. Free wifi is available in reception and the café only.\n\nTEXT 2\n\nCITY MARATHON\nInformation for Runners\n\nThe race takes place on Sunday 6 October and starts at 8:30am at Riverside Park. Runners must collect their race number from the Race Expo on Friday or Saturday between 10:00am and 6:00pm. Race numbers cannot be posted.\n\nThe entry fee is £45 if you enter before 1 August and £60 after that date. Entry fees cannot be refunded, but a runner who cannot take part may defer their place to next year for a fee of £10, up to 14 days before the race.\n\nThe course closes after six hours. Water stations are provided every 5 kilometres, and energy gels are available at the 20 and 30 kilometre points.\n\nA baggage drop is available at the start. Clear plastic bags are provided in your race pack, and bags must be handed in by 8:00am.\n\nAll finishers receive a medal, and official finishing photographs can be downloaded free of charge.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0007-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q001", "statement": "A caravan can be rented for three nights during July and August.", "answer": "FALSE", "evidence": { "explanation": "In peak season caravans are let by the week only." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q002", "statement": "The damage deposit is refundable.", "answer": "TRUE", "evidence": { "explanation": "It is refunded within seven days if no damage is found." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q003", "statement": "Dogs may stay in any caravan on the park.", "answer": "FALSE", "evidence": { "explanation": "Dogs are allowed in selected caravans only." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q004", "statement": "The holiday park has a heated swimming pool.", "answer": "NOT GIVEN", "evidence": { "explanation": "The notice does not mention a swimming pool." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q005", "statement": "Race numbers can be posted to runners' homes.", "answer": "FALSE", "evidence": { "explanation": "Race numbers cannot be posted." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q006", "statement": "Official marathon finishing photographs can be downloaded free of charge.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0007-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0007-q007", "prompt": "In peak season, caravans are let from Saturday to ______.", "accept": ["Saturday"], "evidence": { "explanation": "Text 1 says peak lets run from Saturday to Saturday." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q008", "prompt": "Caravan check-out is by ______.", "accept": ["10:00am", "10am", "10.00am"], "evidence": { "explanation": "Text 1 gives 10:00am." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q009", "prompt": "The marathon starts at ______ at Riverside Park.", "accept": ["8:30am", "8.30am"], "evidence": { "explanation": "Text 2 gives 8:30am." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q010", "prompt": "The marathon course closes after ______ hours.", "accept": ["six", "6"], "evidence": { "explanation": "Text 2 says the course closes after six hours." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0007-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0007-q011", "question": "How much does it cost to hire bed linen for one bed?", "options": ["£5", "£8", "£10", "£12"], "correctIndex": 1, "evidence": { "explanation": "Text 1 gives £8 per bed." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0007-q012", "question": "What is the marathon entry fee before 1 August?", "options": ["£45", "£55", "£60", "£65"], "correctIndex": 0, "evidence": { "explanation": "Text 2 gives £45 before 1 August." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0007-q013", "question": "Where are energy gels available?", "options": ["Every 5 kilometres", "At the 20 and 30 kilometre points", "Only at the finish", "At the start"], "correctIndex": 1, "evidence": { "explanation": "Energy gels are available at the 20 and 30 kilometre points." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0007-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Uniform and Dress Code",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "BRIGHTWATER HOTELS\nStaff Handbook — Section 2: Uniform and Dress Code\n\nAll front-of-house staff must wear the company uniform, which is issued free of charge on their first day. Replacement items cost £12 each unless the original has worn out through normal use. Employees are responsible for cleaning their own uniforms, which must be clean and pressed at the start of every shift.\n\nName badges must be worn at all times on the left side of the uniform. A lost badge should be reported to a supervisor, and a replacement costs £5.\n\nFootwear must be black, closed-toe and flat; trainers are not permitted. Jewellery is limited to a wedding band, a watch and one pair of small earrings. Visible facial piercings, other than in the ears, are not allowed for front-of-house staff.\n\nLong hair must be tied back, fingernails should be short and clean, and staff should avoid strong perfume or aftershave.\n\nKitchen staff wear separate protective clothing, including hats, which is provided by the hotel and must not be worn outside the building.\n\nStaff working at formal events may be asked to wear formal dress instead of the standard uniform. The company covers the dry-cleaning cost of formal dress worn at events.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0007-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q014", "statement": "New staff must pay for their first uniform.", "answer": "FALSE", "evidence": { "explanation": "The first uniform is issued free of charge." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q015", "statement": "Black trainers are permitted for front-of-house staff.", "answer": "FALSE", "evidence": { "explanation": "Trainers are not permitted." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q016", "statement": "Name badges must be worn on the left side of the uniform.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q017", "statement": "Front-of-house staff may wear any type of earrings.", "answer": "FALSE", "evidence": { "explanation": "Only one pair of small earrings is allowed." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q018", "statement": "The hotel provides every employee with a personal locker.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook does not mention lockers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0007-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0007-q019", "prompt": "Replacement uniform items cost ______ each unless worn out through normal use.", "accept": ["£12", "12 pounds"], "evidence": { "explanation": "Replacement items cost £12." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q020", "prompt": "A replacement name badge costs ______.", "accept": ["£5", "5 pounds"], "evidence": { "explanation": "A replacement badge costs £5." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q021", "prompt": "Footwear must be black, closed-toe and ______.", "accept": ["flat"], "evidence": { "explanation": "Footwear must be flat." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q022", "prompt": "Long hair must be ______ back.", "accept": ["tied"], "evidence": { "explanation": "Long hair must be tied back." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q023", "prompt": "Kitchen staff wear separate ______ clothing.", "accept": ["protective"], "evidence": { "explanation": "Kitchen staff wear separate protective clothing." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0007-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0007-q024", "question": "Who is responsible for cleaning uniforms?", "options": ["The hotel", "The employee", "A contractor", "The supervisor"], "correctIndex": 1, "evidence": { "explanation": "Employees are responsible for cleaning their own uniforms." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0007-q025", "question": "Which jewellery is permitted for front-of-house staff?", "options": ["Any rings and bracelets", "A wedding band, a watch and one pair of small earrings", "Only a watch", "No jewellery at all"], "correctIndex": 1, "evidence": { "explanation": "Jewellery is limited to a wedding band, a watch and one pair of small earrings." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0007-q026", "question": "Who pays for dry-cleaning formal dress worn at events?", "options": ["The employee", "The company", "The guest", "Nobody"], "correctIndex": 1, "evidence": { "explanation": "The company covers the dry-cleaning cost." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0007-p3",
+    "title": "The Return of the Osprey",
+    "sourceTestSet": "General Training",
+    "topic": "Nature",
+    "tags": ["general-training", "nature", "wildlife", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The osprey is a large, fish-eating bird of prey, brown above and white below, with a wingspan of up to about 170 centimetres. Once it nested widely across Britain, but persecution by gamekeepers and egg collectors, together with the drainage of wetlands, drove it to the edge of extinction, and the last native pair is generally thought to have bred in 1916. For almost forty years afterwards, ospreys were seen only as passing migrants.\n\nB. In 1954, a pair unexpectedly built a nest in a Scots pine at Loch Garten in the Scottish Highlands. Conservationists knew that egg thieves would soon hear of it, so volunteers mounted a round-the-clock guard, camping nearby and watching from a hide. The nest failed that year, but the pair returned, and the protection effort drew thousands of visitors, who were allowed to watch the birds from a viewing hide, making the osprey one of Britain's best-known conservation stories.\n\nC. The osprey is superbly adapted to its diet. It hovers above the water, then plunges feet-first, often submerging completely, to seize a fish in its talons. Its outer toe is reversible, so that it can grip its prey with two toes forward and two back, and rough, spiny pads on the soles of its feet help hold a slippery catch. Its oily plumage sheds water quickly, and the bird rises from the surface with a powerful beat of its wings, carrying the fish head-first to reduce drag in flight.\n\nD. Ospreys are long-distance migrants. British birds spend the winter in West Africa, a journey of around 5,000 kilometres, and young birds make their first trip alone, without parents to guide them, weeks after the adults have left. Satellite tags fitted to a few individuals have revealed the routes they follow and the hazards they encounter, including storms over the Sahara and fishing nets at river mouths.\n\nE. From the Scottish population, the birds slowly spread, helped by artificial nest platforms erected on poles and trees near lakes. In 1996, conservationists began a project at Rutland Water in central England, moving young ospreys from Scottish nests and raising them in enclosures until they were ready to fly. Some of these birds later returned to nest in the area, and the project established a breeding population in England after a long absence.\n\nF. Numbers of breeding pairs in Britain now exceed three hundred, but the recovery is fragile. The bird depends on clean rivers and lakes with healthy fish stocks, and it can be harmed by disturbance near nests, by tangled fishing line and by hazards on its migration route. Conservationists note that the osprey's story shows how much a determined community can achieve, but also how much needs to be done to make gains permanent.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0007-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A bird lost from Britain" },
+            { "key": "ii", "label": "A carefully guarded homecoming" },
+            { "key": "iii", "label": "Built for catching fish" },
+            { "key": "iv", "label": "A long journey undertaken alone" },
+            { "key": "v", "label": "Helping the species spread south" },
+            { "key": "vi", "label": "Continuing threats and lessons learned" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0007-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the osprey's disappearance from Britain." } },
+            { "kind": "matching", "id": "generated-reading-general-0007-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the guarded return at Loch Garten." } },
+            { "kind": "matching", "id": "generated-reading-general-0007-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the osprey's adaptations for fishing." } },
+            { "kind": "matching", "id": "generated-reading-general-0007-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes nest platforms and the Rutland Water project." } },
+            { "kind": "matching", "id": "generated-reading-general-0007-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers the fragile recovery and remaining threats." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0007-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q032", "statement": "Ospreys had stopped breeding in Britain by the early twentieth century.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says the last native pair bred in 1916." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q033", "statement": "The pair that returned in 1954 nested in England.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B places the nest at Loch Garten in the Scottish Highlands." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q034", "statement": "Ospreys catch fish by plunging into the water feet-first.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q035", "statement": "Ospreys can dive to depths of several metres.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says they often submerge completely but gives no depth." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0007-q036", "statement": "The Rutland Water project began in the 1970s.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says the project began in 1996." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0007-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0007-q037", "prompt": "The last native pair is generally thought to have bred in ______.", "accept": ["1916"], "evidence": { "explanation": "Paragraph A gives 1916." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q038", "prompt": "Volunteers guarded the 1954 nest against egg ______.", "accept": ["thieves"], "evidence": { "explanation": "Paragraph B mentions egg thieves." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q039", "prompt": "The osprey's outer toe is ______, letting it grip prey with two toes forward and two back.", "accept": ["reversible"], "evidence": { "explanation": "Paragraph C says the outer toe is reversible." } },
+            { "kind": "completion", "id": "generated-reading-general-0007-q040", "prompt": "The Rutland Water project began in ______.", "accept": ["1996"], "evidence": { "explanation": "Paragraph E gives 1996." } }
+          ]
+        }
+      ]
+    }
   }
 ];
