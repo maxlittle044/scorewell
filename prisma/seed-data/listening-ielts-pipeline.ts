@@ -5456,5 +5456,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0020-s1",
+    "title": "Photography Club Membership – Listening Section 1",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "form-completion"],
+    "data": {
+      "audioLabel": "Photography Club Membership – Listening Section 1",
+      "transcript": "Secretary: Good evening, Lensview Photography Club. How can I help?\nCaller: Hello, I'd like to join the club. I'm a student.\nSecretary: Wonderful. We have a student membership, which is £18 for the year.\nCaller: That's very reasonable. When do you meet?\nSecretary: We meet every Thursday evening at half past seven.\nCaller: And where?\nSecretary: In Room Four at the Arts Centre.\nCaller: Do you have any facilities I can use?\nSecretary: Yes, we have a darkroom, which members can book for £5 a session.\nCaller: Great. Are there any trips planned?\nSecretary: Our first field trip of the year is to the coast, on the first Saturday of next month.\nCaller: And do you run competitions?\nSecretary: Yes, the next competition theme is reflections, and the closing date is the fifteenth.\nCaller: Lovely. Could I give you my details? My surname is Kowalski, that's K-O-W-A-L-S-K-I.\nSecretary: Thank you. And a phone number?\nCaller: 07700 900745.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0020-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0020-q001", "prompt": "Surname: ______.", "accept": ["Kowalski"], "evidence": { "explanation": "The caller spells K-O-W-A-L-S-K-I." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q002", "prompt": "Type of membership: ______.", "accept": ["student"], "evidence": { "explanation": "The caller is joining as a student." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q003", "prompt": "Annual fee: £______.", "accept": ["18"], "evidence": { "explanation": "The fee is £18 for the year." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q004", "prompt": "Meeting day: ______.", "accept": ["Thursday"], "evidence": { "explanation": "The club meets on Thursday evenings." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q005", "prompt": "Meeting time: half past ______.", "accept": ["seven", "7"], "evidence": { "explanation": "Meetings start at half past seven." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q006", "prompt": "Venue: Room ______ at the Arts Centre.", "accept": ["four", "4"], "evidence": { "explanation": "The venue is Room Four." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q007", "prompt": "Darkroom booking: £______ a session.", "accept": ["5", "five"], "evidence": { "explanation": "The darkroom costs £5 a session." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q008", "prompt": "First field trip destination: the ______.", "accept": ["coast"], "evidence": { "explanation": "The first field trip is to the coast." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q009", "prompt": "Next competition theme: ______.", "accept": ["reflections"], "evidence": { "explanation": "The next theme is reflections." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q010", "prompt": "Contact number: ______.", "accept": ["07700 900745"], "evidence": { "explanation": "The caller gives 07700 900745." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0020-s2",
+    "title": "Nature Reserve Visitor Guide – Listening Section 2",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Nature Reserve Visitor Guide – Listening Section 2",
+      "transcript": "Welcome to Heathfield Nature Reserve. Let me give you a few useful details before you start exploring.\n\nThe reserve opened in 1996 and covers two hundred hectares of woodland, heath and wetland. There are three walking trails, each marked with a colour. The longest is the red trail, at eight kilometres, and the green trail is suitable for wheelchairs and pushchairs.\n\nThe visitor centre is beside the main car park, and it's open until five o'clock every day. Guided walks take place on Sunday mornings, and no booking is needed.\n\nThe best time to see birds is early in the morning, when the reserve is quietest, and there is a bird hide at the edge of the lake. Please keep dogs on leads at all times, because ground-nesting birds are easily disturbed.\n\nFinally, please don't pick flowers or remove anything from the reserve, and take your litter home with you. Enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0020-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0020-q011", "prompt": "The reserve opened in ______.", "accept": ["1996"], "evidence": { "explanation": "The speaker says it opened in 1996." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q012", "prompt": "The reserve covers ______ hectares.", "accept": ["two hundred", "200"], "evidence": { "explanation": "The speaker says two hundred hectares." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q013", "prompt": "The longest trail is ______ kilometres.", "accept": ["eight", "8"], "evidence": { "explanation": "The red trail is eight kilometres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q014", "prompt": "The ______ trail is suitable for wheelchairs.", "accept": ["green"], "evidence": { "explanation": "The green trail is suitable for wheelchairs." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q015", "prompt": "The visitor centre is open until ______.", "accept": ["five", "5", "5pm"], "evidence": { "explanation": "It is open until five o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q016", "prompt": "Guided walks take place on ______ mornings.", "accept": ["Sunday"], "evidence": { "explanation": "Guided walks are on Sunday mornings." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0020-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q017", "question": "Where is the visitor centre?", "options": ["Beside the main car park", "At the lake", "In the woodland", "At the end of the red trail"], "correctIndex": 0, "evidence": { "explanation": "The visitor centre is beside the main car park." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q018", "question": "When is the best time to see birds?", "options": ["Early in the morning", "At midday", "In the late afternoon", "After dark"], "correctIndex": 0, "evidence": { "explanation": "The best time is early in the morning." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q019", "question": "What are visitors asked not to do?", "options": ["Take photographs", "Pick flowers", "Use the bird hide", "Bring children"], "correctIndex": 1, "evidence": { "explanation": "Visitors are asked not to pick flowers." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q020", "question": "What must be done with dogs?", "options": ["They must stay in the car", "They must be kept on leads", "They must wear muzzles", "They are not allowed"], "correctIndex": 1, "evidence": { "explanation": "Dogs must be kept on leads." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0020-s3",
+    "title": "Planning a Research Project – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Research Project – Listening Section 3",
+      "transcript": "Dr Chen: Ravi, let's go through your research proposal. What is your topic?\nRavi: I'd like to study social media use among teenagers.\nDr Chen: Good. And how many participants are you planning to recruit?\nRavi: Sixty students, all between sixteen and eighteen years old.\nDr Chen: And your method?\nRavi: A questionnaire, followed by interviews with ten of the participants.\nDr Chen: That sounds sensible. Now, you have six weeks in total. In weeks one and two, you'll do your literature review.\nRavi: Right.\nDr Chen: In weeks three and four, you need to submit your ethics application, since research with under-eighteens needs approval, and you should also run a small pilot study to test your questionnaire.\nRavi: And the main data collection?\nDr Chen: That will be in weeks five and six.\nRavi: How often will we meet?\nDr Chen: Every Friday. And remember the final report has a limit of four thousand words.\nRavi: Understood. Thank you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0020-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q021", "question": "What is the topic of Ravi's project?", "options": ["Social media use among teenagers", "Sleep patterns of students", "Online learning", "Video games and violence"], "correctIndex": 0, "evidence": { "explanation": "Ravi says he will study social media use among teenagers." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q022", "question": "How many participants does Ravi plan to recruit?", "options": ["Thirty", "Forty", "Sixty", "One hundred"], "correctIndex": 2, "evidence": { "explanation": "Ravi says sixty students." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q023", "question": "What is the age range of the participants?", "options": ["Fourteen to sixteen", "Sixteen to eighteen", "Eighteen to twenty", "Twenty to twenty-two"], "correctIndex": 1, "evidence": { "explanation": "Ravi says between sixteen and eighteen." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q024", "question": "How many participants will be interviewed?", "options": ["Five", "Ten", "Twenty", "Sixty"], "correctIndex": 1, "evidence": { "explanation": "Ravi says interviews with ten participants." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q025", "question": "How often will Ravi meet Dr Chen?", "options": ["Every Monday", "Every Wednesday", "Every Friday", "Once a month"], "correctIndex": 2, "evidence": { "explanation": "Dr Chen says every Friday." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0020-q026", "question": "What is the word limit for the final report?", "options": ["2,000 words", "3,000 words", "4,000 words", "5,000 words"], "correctIndex": 2, "evidence": { "explanation": "Dr Chen says four thousand words." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0020-s3-g2",
+          "instructions": "When will each stage take place? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Weeks 1 and 2" },
+            { "key": "B", "label": "Weeks 3 and 4" },
+            { "key": "C", "label": "Weeks 5 and 6" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0020-q027", "prompt": "Literature review", "answer": "A", "evidence": { "explanation": "Dr Chen says weeks one and two." } },
+            { "kind": "matching", "id": "generated-listening-academic-0020-q028", "prompt": "Ethics application", "answer": "B", "evidence": { "explanation": "The ethics application is due in weeks three and four." } },
+            { "kind": "matching", "id": "generated-listening-academic-0020-q029", "prompt": "Pilot study", "answer": "B", "evidence": { "explanation": "The pilot study is also in weeks three and four." } },
+            { "kind": "matching", "id": "generated-listening-academic-0020-q030", "prompt": "Main data collection", "answer": "C", "evidence": { "explanation": "Data collection is in weeks five and six." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0020-s4",
+    "title": "The Physics of Musical Instruments – Listening Section 4",
+    "topic": "Science",
+    "tags": ["academic", "science", "music", "note-completion"],
+    "data": {
+      "audioLabel": "The Physics of Musical Instruments – Listening Section 4",
+      "transcript": "Today's lecture looks at the science behind musical instruments.\n\nAll musical sounds are produced by vibrations. The pitch of a note, how high or low it sounds, depends on the frequency of the vibration, which is measured in hertz. The standard reference note, concert A, has a frequency of 440 hertz.\n\nIn stringed instruments, such as the violin or guitar, shorter, thinner and tighter strings vibrate faster and produce higher notes, while longer, thicker strings produce lower notes. But a string alone makes very little sound. The body of the violin acts as a resonator, amplifying the vibrations and giving the instrument its tone.\n\nIn wind instruments, sound is produced by vibrating air inside a tube. Players change the pitch by altering the length of the air column, for example by opening and closing holes. In brass instruments, such as the trumpet, the player makes their lips vibrate against the mouthpiece.\n\nViolins made by Antonio Stradivari in Cremona, Italy, mostly date from the early eighteenth century and are famous for their sound. Yet in several blind listening tests, professional players and audiences have often been unable to tell them from good modern violins, which suggests that reputation may play a part in how we judge sound.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0020-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0020-q031", "prompt": "All musical sounds are produced by ______.", "accept": ["vibrations"], "evidence": { "explanation": "The lecturer says all musical sounds are produced by vibrations." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q032", "prompt": "The pitch of a note depends on the ______ of the vibration.", "accept": ["frequency"], "evidence": { "explanation": "The lecturer says pitch depends on frequency." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q033", "prompt": "Frequency is measured in ______.", "accept": ["hertz"], "evidence": { "explanation": "The lecturer says frequency is measured in hertz." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q034", "prompt": "Concert A has a frequency of ______ hertz.", "accept": ["440"], "evidence": { "explanation": "The lecturer gives 440 hertz." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q035", "prompt": "Longer, thicker strings produce ______ notes.", "accept": ["lower"], "evidence": { "explanation": "The lecturer says they produce lower notes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q036", "prompt": "The body of a violin acts as a ______.", "accept": ["resonator"], "evidence": { "explanation": "The lecturer says the body acts as a resonator." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q037", "prompt": "In wind instruments, players change pitch by altering the length of the ______.", "accept": ["air column"], "evidence": { "explanation": "The lecturer says players alter the length of the air column." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q038", "prompt": "In brass instruments, the player makes their ______ vibrate.", "accept": ["lips"], "evidence": { "explanation": "The lecturer says the player makes their lips vibrate." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q039", "prompt": "Stradivari's violins mostly date from the early ______ century.", "accept": ["eighteenth", "18th"], "evidence": { "explanation": "The lecturer says the early eighteenth century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0020-q040", "prompt": "In several ______ listening tests, players could not tell Stradivari violins from modern ones.", "accept": ["blind"], "evidence": { "explanation": "The lecturer refers to blind listening tests." } }
+          ]
+        }
+      ]
+    }
   }
 ];
