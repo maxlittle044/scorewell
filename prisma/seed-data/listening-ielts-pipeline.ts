@@ -4532,5 +4532,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0013-s1",
+    "title": "Storage Unit Enquiry – Listening Section 1",
+    "topic": "Everyday life",
+    "tags": ["academic", "everyday-life", "form-completion"],
+    "data": {
+      "audioLabel": "Storage Unit Enquiry – Listening Section 1",
+      "transcript": "Agent: Good morning, SafeStore. How can I help you?\nCaller: Hello, I need to rent a storage unit for some furniture while I move house.\nAgent: Certainly. How much space do you need?\nCaller: I think about six square metres would be enough.\nAgent: We have a six square metre unit available at £64 a month.\nCaller: That's fine. Is there a minimum rental period?\nAgent: Yes, the minimum is three months.\nCaller: And when can I get into the unit?\nAgent: You can access it any time between seven in the morning and nine at night, every day.\nCaller: Is my furniture insured?\nAgent: Insurance is optional. It costs £4 a month, and I'd recommend it.\nCaller: I'll take it. Is there a deposit?\nAgent: Yes, a refundable deposit of £50.\nCaller: When can I start?\nAgent: We can have it ready on the third of March.\nCaller: Do you help with moving things in?\nAgent: We lend a free trolley to all customers, but we don't provide staff to lift items.\nCaller: That's fine. My surname is Dalgleish, that's D-A-L-G-L-E-I-S-H.\nAgent: Thank you. And a contact number?\nCaller: 07700 900318.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0013-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0013-q001", "prompt": "Surname: ______.", "accept": ["Dalgleish"], "evidence": { "explanation": "The caller spells D-A-L-G-L-E-I-S-H." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q002", "prompt": "Unit size: ______ square metres.", "accept": ["six", "6"], "evidence": { "explanation": "The agent offers a six square metre unit." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q003", "prompt": "Monthly price: £______.", "accept": ["64"], "evidence": { "explanation": "The agent gives £64 a month." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q004", "prompt": "Minimum rental period: ______ months.", "accept": ["three", "3"], "evidence": { "explanation": "The agent says the minimum is three months." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q005", "prompt": "Daily access opens at ______ in the morning.", "accept": ["seven", "7", "7am"], "evidence": { "explanation": "Access is from seven in the morning." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q006", "prompt": "Daily access closes at ______ at night.", "accept": ["nine", "9", "9pm"], "evidence": { "explanation": "Access ends at nine at night." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q007", "prompt": "Insurance cost: £______ a month.", "accept": ["4"], "evidence": { "explanation": "Insurance costs £4 a month." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q008", "prompt": "Refundable deposit: £______.", "accept": ["50"], "evidence": { "explanation": "The deposit is £50." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q009", "prompt": "Free equipment lent to customers: a ______.", "accept": ["trolley"], "evidence": { "explanation": "The agent says a free trolley is lent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q010", "prompt": "Contact number: ______.", "accept": ["07700 900318"], "evidence": { "explanation": "The caller gives 07700 900318." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0013-s2",
+    "title": "Island Wildlife Boat Trip Briefing – Listening Section 2",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Island Wildlife Boat Trip Briefing – Listening Section 2",
+      "transcript": "Good morning, everyone, and welcome aboard. Before we set off, here is some useful information.\n\nThe boat leaves Harbour Quay at half past nine and the trip lasts two hours. We carry a maximum of twenty-four passengers, so everyone should have a good view.\n\nWe'll be visiting the island cliffs, where seals rest on the rocks and puffins nest. Puffins arrive in April and stay until July, so this is a good time of year to see them. The best chance of spotting dolphins is near the headland, so keep watching as we pass it.\n\nFor safety, lifejackets are stored under the seats. Please stay seated while the boat is moving, and that includes photographers, who should wait until we stop before standing up to take pictures. Smoking is not permitted anywhere on the boat.\n\nHot drinks are sold on board. It can be very bright on the water, so please bring sun cream, and a warm jacket, because it is cooler at sea than on land.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0013-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0013-q011", "prompt": "The boat leaves Harbour Quay at ______.", "accept": ["half past nine", "9:30", "9.30"], "evidence": { "explanation": "The speaker says half past nine." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q012", "prompt": "The trip lasts ______ hours.", "accept": ["two", "2"], "evidence": { "explanation": "The speaker says two hours." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q013", "prompt": "The boat carries a maximum of ______ passengers.", "accept": ["twenty-four", "24"], "evidence": { "explanation": "The speaker says twenty-four." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q014", "prompt": "Puffins stay from April until ______.", "accept": ["July"], "evidence": { "explanation": "Puffins stay until July." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q015", "prompt": "______ drinks are sold on board.", "accept": ["Hot"], "evidence": { "explanation": "The speaker says hot drinks are sold." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q016", "prompt": "Passengers are asked to bring ______.", "accept": ["sun cream", "suncream"], "evidence": { "explanation": "The speaker asks passengers to bring sun cream." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0013-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q017", "question": "Where are the lifejackets stored?", "options": ["Under the seats", "In the cabin", "At the front of the boat", "In the harbour office"], "correctIndex": 0, "evidence": { "explanation": "Lifejackets are stored under the seats." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q018", "question": "Where is the best chance of seeing dolphins?", "options": ["Near the harbour", "Near the headland", "Beside the puffin cliffs", "Far out at sea"], "correctIndex": 1, "evidence": { "explanation": "The speaker says dolphins are best spotted near the headland." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q019", "question": "What should photographers do while the boat is moving?", "options": ["Stand at the rail", "Stay seated", "Use the upper deck", "Go into the cabin"], "correctIndex": 1, "evidence": { "explanation": "Photographers should wait until the boat stops before standing." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q020", "question": "What is not permitted on the boat?", "options": ["Eating", "Smoking", "Talking", "Taking photographs"], "correctIndex": 1, "evidence": { "explanation": "Smoking is not permitted anywhere on the boat." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0013-s3",
+    "title": "Planning a Psychology Experiment – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Psychology Experiment – Listening Section 3",
+      "transcript": "Aisha: Tom, have you started thinking about the methods for our psychology assignment?\nTom: Yes. Our topic is the effect of sleep on memory, and I think an experiment is the best approach.\nAisha: Agreed. How many participants do we need?\nTom: The tutor suggested forty, twenty in each group.\nAisha: Where shall we find them?\nTom: I think first-year students, since they get course credit for taking part.\nAisha: Good. What will the memory task be?\nTom: A word-list test. Participants learn thirty words and try to recall them the next morning.\nAisha: And how do we treat the two groups?\nTom: I first thought one group could stay awake all night, but that's too extreme. Instead, one group has a normal night and the other sleeps for only four hours.\nAisha: That's fairer. What's the deadline?\nTom: The report is due on the 20th of November.\nAisha: Okay, what's the plan? I've already finished the literature review.\nTom: Great. This week we need to submit the ethics form and start recruiting participants.\nAisha: And the data analysis?\nTom: That can wait until next week, when we have the results.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0013-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q021", "question": "What is the topic of the assignment?", "options": ["Sleep and memory", "Diet and exercise", "Stress and exams", "Music and mood"], "correctIndex": 0, "evidence": { "explanation": "Tom says the topic is the effect of sleep on memory." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q022", "question": "How many participants does the tutor suggest?", "options": ["20", "30", "40", "60"], "correctIndex": 2, "evidence": { "explanation": "The tutor suggested forty." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q023", "question": "Where will participants be found?", "options": ["Among first-year students", "Among final-year students", "In local schools", "Online"], "correctIndex": 0, "evidence": { "explanation": "Tom suggests first-year students." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q024", "question": "How many words will participants learn?", "options": ["Twenty", "Thirty", "Forty", "Fifty"], "correctIndex": 1, "evidence": { "explanation": "Participants learn thirty words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q025", "question": "What will the second group do?", "options": ["Stay awake all night", "Sleep for only four hours", "Sleep for ten hours", "Take a short nap"], "correctIndex": 1, "evidence": { "explanation": "Tom says the other group sleeps for only four hours." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0013-q026", "question": "When is the report due?", "options": ["10 November", "20 November", "10 December", "20 December"], "correctIndex": 1, "evidence": { "explanation": "The report is due on the 20th of November." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0013-s3-g2",
+          "instructions": "When will each task be done? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Already finished" },
+            { "key": "B", "label": "To be done this week" },
+            { "key": "C", "label": "To be done next week" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0013-q027", "prompt": "The literature review", "answer": "A", "evidence": { "explanation": "Aisha says she has already finished it." } },
+            { "kind": "matching", "id": "generated-listening-academic-0013-q028", "prompt": "The ethics form", "answer": "B", "evidence": { "explanation": "Tom says they need to submit it this week." } },
+            { "kind": "matching", "id": "generated-listening-academic-0013-q029", "prompt": "Recruiting participants", "answer": "B", "evidence": { "explanation": "Tom says they will start recruiting this week." } },
+            { "kind": "matching", "id": "generated-listening-academic-0013-q030", "prompt": "The data analysis", "answer": "C", "evidence": { "explanation": "Tom says the analysis can wait until next week." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0013-s4",
+    "title": "The Development of Writing – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion"],
+    "data": {
+      "audioLabel": "The Development of Writing – Listening Section 4",
+      "transcript": "Today's lecture looks at how writing developed, and how it spread across the world.\n\nThe earliest known writing emerged in Mesopotamia around 3200 BC. Scribes pressed a reed into soft clay tablets to make wedge-shaped marks, and this script is known as cuneiform. Egyptian hieroglyphs appeared at about the same time, though scholars still debate which came first.\n\nWriting arose independently in China, where the earliest surviving characters are found on oracle bones from about 1200 BC. These were animal bones and shells used to record questions put to the gods.\n\nThe next major step was the alphabet. The Phoenician alphabet, which developed around 1050 BC, had characters for consonants only. The Greeks adapted it around 800 BC and added symbols for vowels, making writing far easier to learn. The Romans, in turn, adapted the Greek system, and the Latin alphabet they created is used by many languages today.\n\nMaterials changed too. Paper was invented in China around AD 105, and it reached Europe through the Islamic world in the twelfth century, eventually replacing parchment as the standard writing surface.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0013-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0013-q031", "prompt": "The earliest known writing emerged in ______ around 3200 BC.", "accept": ["Mesopotamia"], "evidence": { "explanation": "The lecturer names Mesopotamia." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q032", "prompt": "Scribes pressed a reed into soft clay ______.", "accept": ["tablets"], "evidence": { "explanation": "The lecturer says clay tablets." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q033", "prompt": "The wedge-shaped script is known as ______.", "accept": ["cuneiform"], "evidence": { "explanation": "The lecturer names cuneiform." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q034", "prompt": "Egyptian ______ appeared at about the same time.", "accept": ["hieroglyphs"], "evidence": { "explanation": "The lecturer names hieroglyphs." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q035", "prompt": "The earliest Chinese characters are found on ______ bones.", "accept": ["oracle"], "evidence": { "explanation": "The lecturer says oracle bones." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q036", "prompt": "The Phoenician alphabet had characters for ______ only.", "accept": ["consonants"], "evidence": { "explanation": "The lecturer says consonants only." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q037", "prompt": "The Greeks added symbols for ______ around 800 BC.", "accept": ["vowels"], "evidence": { "explanation": "The lecturer says the Greeks added vowels." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q038", "prompt": "The ______ alphabet is used by many languages today.", "accept": ["Latin"], "evidence": { "explanation": "The lecturer names the Latin alphabet." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q039", "prompt": "Paper was invented in ______ around AD 105.", "accept": ["China"], "evidence": { "explanation": "The lecturer says paper was invented in China." } },
+            { "kind": "completion", "id": "generated-listening-academic-0013-q040", "prompt": "Paper reached Europe through the ______ world.", "accept": ["Islamic", "Arab"], "evidence": { "explanation": "The lecturer says it reached Europe through the Islamic world." } }
+          ]
+        }
+      ]
+    }
   }
 ];
