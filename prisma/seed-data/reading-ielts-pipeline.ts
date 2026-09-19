@@ -8850,5 +8850,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0022-p1",
+    "title": "The Hidden World of Ants",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Ants are found on every continent except Antarctica, and more than 12,000 species have been described, with many more probably awaiting discovery. Together, ants are estimated to weigh about as much as all wild birds and mammals combined, and in many habitats they are the most important small predators and scavengers.\n\nB. Most ants live in colonies, in which individuals have different roles. A colony usually has one or more queens, which lay eggs, and thousands of workers, which are wingless females that forage for food, care for the young, defend the nest and build. Males are winged and short-lived, and exist only to mate with new queens. This division of labour makes the colony work like a single organism, and biologists sometimes call it a superorganism.\n\nC. Ants coordinate their work without any central leader, mainly by chemical signals called pheromones. A foraging ant that finds food lays a trail of pheromone on its way back to the nest, and other ants follow the trail and reinforce it. Shorter routes are travelled more quickly and so receive more pheromone, which means that the colony naturally settles on efficient paths, a principle that has inspired computer scientists designing routing systems.\n\nD. Some ants have developed farming. Leafcutter ants in the tropics of the Americas cut fragments of leaves and carry them to their nests, where they do not eat them but use them to grow a fungus, which is their food. The relationship is ancient, dating back tens of millions of years, and the ants tend the fungus carefully, protecting it from disease with antibiotics produced by bacteria on their bodies.\n\nE. Some species form supercolonies of extraordinary size. Argentine ants, which have spread across the world, have formed a supercolony along the Mediterranean coast of Europe stretching for about 6,000 kilometres, in which ants from distant nests recognise one another and do not fight. Such supercolonies can damage local ecosystems by displacing native ant species.\n\nF. Ants influence ecosystems in many ways. By digging tunnels they aerate the soil and mix nutrients, and by carrying seeds to their nests, some species disperse plants that would otherwise stay close to their parents. Invasive species such as the red imported fire ant, however, show how disruptive ants can be when they arrive in new habitats: they attack wildlife, damage crops and cause thousands of painful stings each year to people.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0022-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A group with an enormous number of species" },
+            { "key": "ii", "label": "Queens, workers and a division of labour" },
+            { "key": "iii", "label": "Chemical trails that guide the colony" },
+            { "key": "iv", "label": "Gardeners that grow their own food" },
+            { "key": "v", "label": "Colonies that span continents" },
+            { "key": "vi", "label": "Small animals with large effects on ecosystems" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0022-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the number of ant species." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes queens, workers and males." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes pheromone trails." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes supercolonies." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes ants' ecological roles and impacts." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0022-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q006", "statement": "Worker ants are wingless females.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q007", "statement": "Ants coordinate their work mainly by sound.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says mainly by chemical signals." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q008", "statement": "Leafcutter ants eat the leaves they carry to their nests.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says they use the leaves to grow a fungus." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q009", "statement": "Ants can survive underwater for a week.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention survival underwater." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0022-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0022-q010", "prompt": "More than ______ species of ant have been described.", "accept": ["12,000", "12000"], "evidence": { "explanation": "Paragraph A gives more than 12,000." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q011", "prompt": "Foraging ants lay trails of chemical signals called ______.", "accept": ["pheromones", "pheromone"], "evidence": { "explanation": "Paragraph C names pheromones." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q012", "prompt": "One Argentine ant supercolony stretches for about ______ kilometres.", "accept": ["6,000", "6000"], "evidence": { "explanation": "Paragraph E gives about 6,000 kilometres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q013", "prompt": "By carrying ______ to their nests, some ants disperse plants.", "accept": ["seeds"], "evidence": { "explanation": "Paragraph F says they carry seeds." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0022-p2",
+    "title": "The Story of Photography",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The principle behind photography is very old. Ancient thinkers noticed that light passing through a small hole into a dark room projects an inverted image of the outside scene on the opposite wall, and by the sixteenth century, artists were using such a \"camera obscura\", Latin for \"dark chamber\", to trace scenes. What nobody could do was make the image permanent.\n\nB. The French inventor Nicéphore Niépce solved the problem in the 1820s. He coated a pewter plate with a light-sensitive form of bitumen and exposed it in a camera pointed out of his window. After an exposure that lasted many hours, the bitumen hardened where light had struck it, and the unhardened parts could be washed away. The result, called View from the Window at Le Gras, is the oldest surviving photograph.\n\nC. After Niépce's death, his partner Louis Daguerre developed a faster process using silver-coated copper plates, and in 1839 the French government announced it as a gift to the world. Daguerreotypes were sharp and detailed, but each was a unique object that could not be copied. In England, William Henry Fox Talbot developed a rival method, in which a paper negative could be used to make any number of positive prints, and it was this principle that shaped photography for the next century and a half.\n\nD. Photography remained a specialist skill until 1888, when George Eastman introduced the Kodak camera, which came loaded with a roll of film for 100 exposures. Its slogan was, \"You press the button, we do the rest\": customers returned the whole camera to the factory for developing and reloading. Cheap, simple cameras allowed millions of amateurs to photograph family and travel for the first time.\n\nE. Colour took much longer. The Lumière brothers introduced the Autochrome process in 1907, using tiny grains of dyed potato starch, but it was slow and expensive. Kodachrome film, launched in 1935, was the first successful colour film for amateurs, and colour gradually became standard in the following decades.\n\nF. The next revolution was digital. In 1975, Steven Sasson, an engineer at Kodak, built the first prototype digital camera, which weighed about four kilograms and took 23 seconds to record a black-and-white image of very low resolution. Commercial digital cameras appeared in the 1990s, and the arrival of camera phones has since made photography almost universal. Today, people take trillions of photographs each year, most of which are never printed.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0022-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An old optical trick" },
+            { "key": "ii", "label": "The first surviving photograph" },
+            { "key": "iii", "label": "Two rival processes" },
+            { "key": "iv", "label": "Photography for everyone" },
+            { "key": "v", "label": "Adding colour" },
+            { "key": "vi", "label": "The digital revolution" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0022-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the camera obscura." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Niépce's oldest surviving photograph." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C contrasts Daguerre and Talbot." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the development of colour photography." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes digital cameras." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0022-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q019", "statement": "The first surviving photograph required an exposure of many hours.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says the exposure lasted many hours." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q020", "statement": "Daguerre's process produced negatives from which many prints could be made.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says each daguerreotype was unique and could not be copied." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q021", "statement": "Kodachrome film was launched in 1935.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1935." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q022", "statement": "Kodak was the first company to sell digital cameras to the public.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says only that commercial cameras appeared in the 1990s." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0022-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0022-q023", "prompt": "Niépce made his first surviving photograph in the ______.", "accept": ["1820s"], "evidence": { "explanation": "Paragraph B says the 1820s." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q024", "prompt": "Daguerre's process was announced in ______.", "accept": ["1839"], "evidence": { "explanation": "Paragraph C gives 1839." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q025", "prompt": "The Autochrome process was introduced by the ______ brothers.", "accept": ["Lumière", "Lumiere"], "evidence": { "explanation": "Paragraph E names the Lumière brothers." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q026", "prompt": "The first digital camera prototype was built by Steven ______.", "accept": ["Sasson"], "evidence": { "explanation": "Paragraph F names Steven Sasson." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0022-p3",
+    "title": "The Rise of Esports",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Esports, or electronic sports, means organised competitions in which professional players or teams compete at video games, usually in front of live and online audiences. Once regarded as a niche hobby, they have grown into a global industry with audiences numbering in the hundreds of millions, and the biggest tournaments now fill stadiums.\n\nB. South Korea was among the first countries to develop professional esports. In the late 1990s, the spread of high-speed internet and the popularity of strategy games led to the opening of thousands of \"PC bangs\", internet cafés where people could play cheaply, and to the creation of television channels showing matches. Leading players became national celebrities, and professional teams with salaried players and coaches were established.\n\nC. Money has followed the audience. Prize pools for the largest tournaments have reached tens of millions of dollars, funded by sponsorship, advertising, and the sale of items and tickets, and top players can earn substantial incomes from salaries and streaming. Most players, however, earn far less, and many compete for small prizes or none at all.\n\nD. The life of a professional player is demanding. Players may practise for ten hours a day, and because reaction speed declines with age, many reach their peak in their mid-twenties and retire from top-level competition by their early thirties. Some become coaches, commentators or streamers after they stop playing. Universities in several countries now offer scholarships to talented gamers, and some employ esports coaches.\n\nE. Whether esports are a true sport is fiercely debated. Supporters point to the skill, training and teamwork required, while critics argue that sport requires physical exertion. The International Olympic Committee has held discussions and events about esports but has not added them to the Olympic programme, and the question remains unresolved.\n\nF. The industry faces other challenges. Health experts are concerned about the effects of long hours of sitting, poor sleep and eye strain, and some events have been affected by gambling and cheating scandals. Women make up a large share of players but a small share of professionals, and organisers are under pressure to make competitions more inclusive. Even so, most observers expect the industry to keep growing.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0022-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "From hobby to global industry" },
+            { "key": "ii", "label": "A pioneering country" },
+            { "key": "iii", "label": "Prize money and sponsorship" },
+            { "key": "iv", "label": "Short careers and heavy training" },
+            { "key": "v", "label": "Sport or not?" },
+            { "key": "vi", "label": "Health, fairness and the future" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0022-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the growth of esports." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes South Korea's early role." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes practice hours and short careers." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E discusses whether esports count as sport." } },
+            { "kind": "matching", "id": "generated-reading-academic-0022-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers health, cheating, inclusion and growth." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0022-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q032", "statement": "Esports are organised competitions between players of video games.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A defines esports this way." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q033", "statement": "South Korea was among the first countries to develop professional esports.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q034", "statement": "Most professional players compete at the top level until they are over forty.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says many retire from top-level competition by their early thirties." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q035", "statement": "The International Olympic Committee has added esports to the Olympic programme.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says it has not added them." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0022-q036", "statement": "Esports players earn more than professional footballers.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare earnings with footballers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0022-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0022-q037", "prompt": "Many professional players reach their peak in their mid-______.", "accept": ["twenties"], "evidence": { "explanation": "Paragraph D says mid-twenties." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q038", "prompt": "In South Korea, people played cheaply in internet cafés known as ______ bangs.", "accept": ["PC"], "evidence": { "explanation": "Paragraph B names PC bangs." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q039", "prompt": "Universities in several countries now offer ______ to talented gamers.", "accept": ["scholarships"], "evidence": { "explanation": "Paragraph D says scholarships." } },
+            { "kind": "completion", "id": "generated-reading-academic-0022-q040", "prompt": "Health experts are concerned about long hours of ______.", "accept": ["sitting"], "evidence": { "explanation": "Paragraph F mentions long hours of sitting." } }
+          ]
+        }
+      ]
+    }
   }
 ];
