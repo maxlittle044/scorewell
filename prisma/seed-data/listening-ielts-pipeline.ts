@@ -5192,5 +5192,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0018-s1",
+    "title": "Restaurant Reservation – Listening Section 1",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "form-completion"],
+    "data": {
+      "audioLabel": "Restaurant Reservation – Listening Section 1",
+      "transcript": "Host: Good evening, Riverside Restaurant. How can I help?\nCaller: Hello, I'd like to book a table for a special occasion.\nHost: Of course. What day would you like?\nCaller: Saturday the fourteenth, please, at half past seven.\nHost: And how many people will there be?\nCaller: Eight of us. It's my parents' wedding anniversary.\nHost: How lovely. Do any of your guests have dietary requirements?\nCaller: One of them needs gluten-free food.\nHost: That's no problem. Would you like a particular table?\nCaller: If possible, one by the window, so we can see the river.\nHost: I'll note that. For groups of eight or more, we take a deposit of £40.\nCaller: That's fine. Could I pay by card?\nHost: Yes, of course. Could I take a surname for the booking?\nCaller: It's Whitfield, that's W-H-I-T-F-I-E-L-D.\nHost: And a contact number?\nCaller: 07700 900459.\nHost: Thank you, Mr Whitfield. We look forward to seeing you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0018-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0018-q001", "prompt": "Surname: ______.", "accept": ["Whitfield"], "evidence": { "explanation": "The caller spells W-H-I-T-F-I-E-L-D." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q002", "prompt": "Day: ______.", "accept": ["Saturday"], "evidence": { "explanation": "The caller wants Saturday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q003", "prompt": "Date: the ______.", "accept": ["fourteenth", "14th", "14"], "evidence": { "explanation": "The date is the fourteenth." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q004", "prompt": "Time: half past ______.", "accept": ["seven", "7"], "evidence": { "explanation": "The booking is for half past seven." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q005", "prompt": "Number of guests: ______.", "accept": ["eight", "8"], "evidence": { "explanation": "The caller says eight." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q006", "prompt": "Occasion: wedding ______.", "accept": ["anniversary"], "evidence": { "explanation": "It is a wedding anniversary." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q007", "prompt": "Dietary requirement: ______ food.", "accept": ["gluten-free", "gluten free"], "evidence": { "explanation": "One guest needs gluten-free food." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q008", "prompt": "Table position: by the ______.", "accept": ["window"], "evidence": { "explanation": "The caller asks for a table by the window." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q009", "prompt": "Deposit: £______.", "accept": ["40"], "evidence": { "explanation": "The deposit is £40." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q010", "prompt": "Contact number: ______.", "accept": ["07700 900459"], "evidence": { "explanation": "The caller gives 07700 900459." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0018-s2",
+    "title": "Children's Swimming Programme – Listening Section 2",
+    "topic": "Leisure",
+    "tags": ["academic", "leisure", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Children's Swimming Programme – Listening Section 2",
+      "transcript": "Welcome to the Lakeside Leisure Centre swimming programme. I'll explain how the lessons work.\n\nChildren can join lessons from the age of four. Each lesson lasts thirty minutes, and classes are limited to a maximum of six children, so that every child gets plenty of attention. The spring term starts on the sixth of January and lasts ten weeks. The fee is £54 for the whole term.\n\nTo register, please go to the reception desk, where staff will assess your child's level. Everyone with long hair must wear a swimming cap, and you can buy one at reception. Goggles are optional.\n\nThe changing rooms have lockers, which take a one-pound coin that you get back when you empty the locker. Please note that parents must stay on the poolside during lessons for children under six.\n\nAdult lessons are also available on Thursday evenings at eight o'clock. They take place in the small pool, which is warmer and shallower than the main pool.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0018-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0018-q011", "prompt": "Children can join lessons from the age of ______.", "accept": ["four", "4"], "evidence": { "explanation": "The speaker says from the age of four." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q012", "prompt": "Each lesson lasts ______ minutes.", "accept": ["thirty", "30"], "evidence": { "explanation": "The speaker says thirty minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q013", "prompt": "Classes are limited to a maximum of ______ children.", "accept": ["six", "6"], "evidence": { "explanation": "The speaker says a maximum of six." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q014", "prompt": "The spring term starts on the ______ of January.", "accept": ["sixth", "6th", "6"], "evidence": { "explanation": "The term starts on the sixth of January." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q015", "prompt": "The term lasts ______ weeks.", "accept": ["ten", "10"], "evidence": { "explanation": "The speaker says ten weeks." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q016", "prompt": "The fee for the term is £______.", "accept": ["54"], "evidence": { "explanation": "The fee is £54." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0018-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q017", "question": "Where should parents register their child?", "options": ["At the reception desk", "In the changing rooms", "At the poolside", "Online only"], "correctIndex": 0, "evidence": { "explanation": "The speaker says to go to the reception desk." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q018", "question": "Who must wear a swimming cap?", "options": ["Everyone", "Only adults", "Everyone with long hair", "Nobody"], "correctIndex": 2, "evidence": { "explanation": "Everyone with long hair must wear a cap." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q019", "question": "What is needed to use a locker?", "options": ["A key from reception", "A one-pound coin", "A membership card", "A padlock"], "correctIndex": 1, "evidence": { "explanation": "Lockers take a one-pound coin." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q020", "question": "Where do adult lessons take place?", "options": ["In the main pool", "In the small pool", "In the sports hall", "Outdoors"], "correctIndex": 1, "evidence": { "explanation": "Adult lessons take place in the small pool." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0018-s3",
+    "title": "Discussing a Student Sleep Survey – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Discussing a Student Sleep Survey – Listening Section 3",
+      "transcript": "Sara: Jack, shall we go through the results of our survey on student sleep?\nJack: Yes. We had two hundred responses in the end, which is better than I expected.\nSara: And we collected them all through an online questionnaire, which made the analysis much quicker.\nJack: True. The average sleep came out at six and a half hours a night.\nSara: That's lower than the recommended amount for adults.\nJack: What surprised me most, though, was that students slept about two hours longer at weekends.\nSara: That does suggest they're catching up on lost sleep during the week.\nJack: Right. Now, the report. It's due in two weeks, and the tutor gave us word limits for each section.\nSara: The introduction should be five hundred words.\nJack: And the methods section can be a thousand.\nSara: The results section is the longest, fifteen hundred words.\nJack: And the discussion is a thousand words too.\nSara: Good. Shall we start writing the introduction tomorrow?\nJack: Yes, let's do that.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0018-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q021", "question": "What is the topic of the survey?", "options": ["Student sleep habits", "Student diet", "Student stress", "Student exercise"], "correctIndex": 0, "evidence": { "explanation": "Jack and Sara discuss a survey on student sleep." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q022", "question": "How many responses did they receive?", "options": ["100", "150", "200", "250"], "correctIndex": 2, "evidence": { "explanation": "Jack says two hundred responses." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q023", "question": "How were the responses collected?", "options": ["By an online questionnaire", "By face-to-face interviews", "By telephone", "By post"], "correctIndex": 0, "evidence": { "explanation": "Sara says they collected them through an online questionnaire." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q024", "question": "What was the average amount of sleep per night?", "options": ["Five hours", "Six and a half hours", "Seven and a half hours", "Eight hours"], "correctIndex": 1, "evidence": { "explanation": "Jack says six and a half hours." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q025", "question": "What surprised Jack most?", "options": ["Students slept about two hours longer at weekends", "Students slept less at weekends", "Few students replied", "Most students napped in the day"], "correctIndex": 0, "evidence": { "explanation": "Jack says students slept about two hours longer at weekends." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0018-q026", "question": "When is the report due?", "options": ["In one week", "In two weeks", "In three weeks", "In a month"], "correctIndex": 1, "evidence": { "explanation": "Jack says it is due in two weeks." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0018-s3-g2",
+          "instructions": "What is the word limit for each section of the report? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "500 words" },
+            { "key": "B", "label": "1,000 words" },
+            { "key": "C", "label": "1,500 words" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0018-q027", "prompt": "Introduction", "answer": "A", "evidence": { "explanation": "Sara says the introduction should be five hundred words." } },
+            { "kind": "matching", "id": "generated-listening-academic-0018-q028", "prompt": "Methods", "answer": "B", "evidence": { "explanation": "Jack says the methods section can be a thousand words." } },
+            { "kind": "matching", "id": "generated-listening-academic-0018-q029", "prompt": "Results", "answer": "C", "evidence": { "explanation": "Sara says the results section is fifteen hundred words." } },
+            { "kind": "matching", "id": "generated-listening-academic-0018-q030", "prompt": "Discussion", "answer": "B", "evidence": { "explanation": "Jack says the discussion is a thousand words too." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0018-s4",
+    "title": "The History of Public Libraries – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Public Libraries – Listening Section 4",
+      "transcript": "Today's lecture looks at the history of libraries and how they became open to everyone.\n\nThe Library of Alexandria, founded in the third century BC, is the most famous library of the ancient world, though it was reserved for scholars. Older still was the library of King Ashurbanipal in Nineveh, which held thousands of clay tablets.\n\nIn the Middle Ages, most libraries were found in monasteries, where monks copied manuscripts by hand. Books were rare and precious, and were sometimes chained to desks to prevent theft. The invention of the printing press in the fifteenth century made books far cheaper, and libraries grew as a result.\n\nThe idea of a library open to all came much later. In Britain, the Public Libraries Act of 1850 allowed local councils to use taxes to establish free libraries. In the United States, the industrialist Andrew Carnegie, who made his fortune in steel, funded the building of more than 2,500 libraries around the world.\n\nToday, libraries are changing again. Many now lend electronic books as well as printed ones, and they also provide free internet access, which is especially important for people without a computer at home.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0018-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0018-q031", "prompt": "The Library of Alexandria was founded in the ______ century BC.", "accept": ["third", "3rd"], "evidence": { "explanation": "The lecturer says the third century BC." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q032", "prompt": "King Ashurbanipal's library in ______ held thousands of clay tablets.", "accept": ["Nineveh"], "evidence": { "explanation": "The lecturer names Nineveh." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q033", "prompt": "In the Middle Ages, most libraries were found in ______.", "accept": ["monasteries"], "evidence": { "explanation": "The lecturer says most were in monasteries." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q034", "prompt": "Monks copied manuscripts by ______.", "accept": ["hand"], "evidence": { "explanation": "The lecturer says by hand." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q035", "prompt": "Books were sometimes ______ to desks to prevent theft.", "accept": ["chained"], "evidence": { "explanation": "The lecturer says books were sometimes chained to desks." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q036", "prompt": "The Public Libraries Act was passed in Britain in ______.", "accept": ["1850"], "evidence": { "explanation": "The lecturer gives 1850." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q037", "prompt": "Andrew ______ funded more than 2,500 libraries.", "accept": ["Carnegie"], "evidence": { "explanation": "The lecturer names Andrew Carnegie." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q038", "prompt": "Carnegie made his fortune in ______.", "accept": ["steel"], "evidence": { "explanation": "The lecturer says he made his fortune in steel." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q039", "prompt": "Many libraries now lend ______ books.", "accept": ["electronic", "e-books"], "evidence": { "explanation": "The lecturer says libraries lend electronic books." } },
+            { "kind": "completion", "id": "generated-listening-academic-0018-q040", "prompt": "Libraries also provide free ______ access.", "accept": ["internet"], "evidence": { "explanation": "The lecturer says they provide free internet access." } }
+          ]
+        }
+      ]
+    }
   }
 ];
