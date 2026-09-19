@@ -8709,5 +8709,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0016-p1",
+    "title": "General Training Reading — Section 1: Zoo and Flower Show Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nGREENFIELD ZOO\nVisitor Information\n\nThe zoo is open daily from 9:30am to 5:00pm, with last entry at 4:00pm. Adult tickets cost £18, children aged 3 to 15 pay £11, and children under 3 enter free. A family ticket (two adults and two children) costs £52. An annual pass for one adult costs £60.\n\nKeeper talks and feeding demonstrations take place at 11:30am and 2:30pm. The car park costs £5. There are picnic areas throughout the grounds, but glass bottles are not permitted. Only assistance dogs may enter the zoo. Wheelchairs can be borrowed free of charge from the entrance.\n\nTEXT 2\n\nHARTWELL FLOWER SHOW\nEntry and Competition Rules\n\nThe show takes place on Saturday 14 August, from 10:00am to 4:00pm. Entry costs £4 for adults; children go free. Competitions are held for flowers, vegetables and baking.\n\nCompetitors must register in advance by 7 August, at a fee of £1 per class; registration on the day is not possible. Entries must be delivered between 7:00am and 9:00am on show day. Judging begins at 10:30am and results are announced at 3:00pm, when trophies are presented, including the Best in Show cup. Plant stalls and refreshments are available in the marquee.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0016-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q001", "statement": "Children under three can enter the zoo free of charge.", "answer": "TRUE", "evidence": { "explanation": "Children under 3 enter free." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q002", "statement": "Visitors may bring glass bottles into the zoo.", "answer": "FALSE", "evidence": { "explanation": "Glass bottles are not permitted." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q003", "statement": "Visitors may bring any type of dog into the zoo.", "answer": "FALSE", "evidence": { "explanation": "Only assistance dogs may enter." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q004", "statement": "The zoo has a gift shop.", "answer": "NOT GIVEN", "evidence": { "explanation": "A gift shop is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q005", "statement": "Children can enter the flower show without paying.", "answer": "TRUE", "evidence": { "explanation": "Children go free." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q006", "statement": "Competitors can register on the day of the show.", "answer": "FALSE", "evidence": { "explanation": "Registration on the day is not possible." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0016-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0016-q007", "prompt": "Keeper talks take place at 11:30am and ______.", "accept": ["2:30pm", "2.30pm"], "evidence": { "explanation": "Text 1 gives 2:30pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q008", "prompt": "The zoo car park costs ______.", "accept": ["£5", "5 pounds"], "evidence": { "explanation": "The car park costs £5." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q009", "prompt": "Competitors must register by ______.", "accept": ["7 August"], "evidence": { "explanation": "Registration closes on 7 August." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q010", "prompt": "Results are announced at ______.", "accept": ["3:00pm", "3pm", "3.00pm"], "evidence": { "explanation": "Results are announced at 3:00pm." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0016-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0016-q011", "question": "How much does a family ticket cost?", "options": ["£45", "£48", "£52", "£58"], "correctIndex": 2, "evidence": { "explanation": "A family ticket costs £52." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0016-q012", "question": "What is the last entry time at the zoo?", "options": ["3:00pm", "3:30pm", "4:00pm", "5:00pm"], "correctIndex": 2, "evidence": { "explanation": "Last entry is at 4:00pm." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0016-q013", "question": "How much is the entry fee per competition class?", "options": ["50p", "£1", "£2", "£4"], "correctIndex": 1, "evidence": { "explanation": "The fee is £1 per class." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0016-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Lone Working and Personal Safety",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "CLEARWATER HOME CARE\nStaff Handbook — Section 9: Lone Working and Personal Safety\n\nStaff who visit clients alone must carry a company mobile phone. They must check in with the office at the start and end of every visit, and the office keeps a schedule of all visit addresses.\n\nIf a situation feels unsafe, staff may leave immediately and report the matter afterwards; no disciplinary action will be taken. If a client becomes aggressive, staff should withdraw from the situation rather than argue.\n\nPersonal alarms are issued free of charge and should be tested monthly. Staff must wear their identification badge and show it at the door. Staff must never give clients their home addresses.\n\nAny incident must be reported within 24 hours using the incident form. Staff repeat conflict management training every two years.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0016-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q014", "statement": "Staff must check in with the office at the start and end of each visit.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q015", "statement": "Staff may be disciplined for leaving a visit that feels unsafe.", "answer": "FALSE", "evidence": { "explanation": "No disciplinary action will be taken." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q016", "statement": "Personal alarms are provided free of charge.", "answer": "TRUE", "evidence": { "explanation": "Alarms are issued free of charge." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q017", "statement": "Staff should give clients their home addresses in an emergency.", "answer": "FALSE", "evidence": { "explanation": "Staff must never give clients their home addresses." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q018", "statement": "Staff receive an extra allowance for lone working.", "answer": "NOT GIVEN", "evidence": { "explanation": "Allowances are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0016-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0016-q019", "prompt": "Staff who visit clients alone must carry a company ______.", "accept": ["mobile phone", "phone", "mobile"], "evidence": { "explanation": "Staff must carry a company mobile phone." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q020", "prompt": "Personal alarms should be tested ______.", "accept": ["monthly"], "evidence": { "explanation": "Alarms should be tested monthly." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q021", "prompt": "Identification badges must be shown at the ______.", "accept": ["door"], "evidence": { "explanation": "Badges must be shown at the door." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q022", "prompt": "Incidents must be reported within ______ hours.", "accept": ["24", "twenty-four"], "evidence": { "explanation": "Reports are due within 24 hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q023", "prompt": "Conflict management training is repeated every ______ years.", "accept": ["two", "2"], "evidence": { "explanation": "Training is repeated every two years." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0016-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0016-q024", "question": "What should staff do if a client becomes aggressive?", "options": ["Argue back", "Withdraw from the situation", "Call their family", "Ignore it"], "correctIndex": 1, "evidence": { "explanation": "Staff should withdraw rather than argue." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0016-q025", "question": "Who keeps a schedule of visit addresses?", "options": ["The client", "The office", "The police", "The union"], "correctIndex": 1, "evidence": { "explanation": "The office keeps the schedule." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0016-q026", "question": "How must incidents be reported?", "options": ["By text message", "Using the incident form", "Verbally only", "Through social media"], "correctIndex": 1, "evidence": { "explanation": "Incidents are reported using the incident form." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0016-p3",
+    "title": "The Invention of the Light Bulb",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For most of human history, the hours of darkness were lit by fire: candles, oil lamps and, from the nineteenth century, gas. These sources were dim, smoky and dangerous, and they made evenings expensive. The arrival of electric lighting changed working hours, city streets and the way people lived, and it began, unglamorously, with a piece of glowing wire.\n\nB. Several inventors had come close before the light bulb. Early in the nineteenth century, the British chemist Humphry Davy showed that an electric current could create a dazzling arc of light between two carbon rods, but arc lamps were too bright and too short-lived for homes. In the 1870s, the English physicist Joseph Swan developed a bulb in which a carbon filament glowed inside a glass bulb from which air had been removed, and he demonstrated it in 1878 and 1879.\n\nC. At about the same time, Thomas Edison and his team in New Jersey were testing thousands of materials to find a filament that would last. Their breakthrough was a carbonised cotton thread, and later a carbonised bamboo fibre, which burned for hundreds of hours. Patent disputes between Swan and Edison were resolved when they formed a joint company in Britain.\n\nD. Edison understood that a bulb was useless without a system to power it. In 1882, his company opened the Pearl Street power station in New York, which supplied electricity to about 85 customers, and he developed generators, cables and meters to go with it. Within a few years, cities on both sides of the Atlantic were building their own systems.\n\nE. Bulbs continued to improve. In the early twentieth century, filaments made from tungsten, a metal with a very high melting point, replaced carbon, giving a brighter light and a much longer life. In the 1930s, fluorescent lamps, which pass electricity through gas to produce ultraviolet light that a coating turns into visible light, offered a far more efficient alternative for offices and factories.\n\nF. The most recent revolution has been the light-emitting diode, or LED. LED lamps use roughly 80 per cent less electricity than old-fashioned incandescent bulbs and last many times longer. Many countries have phased out the sale of traditional bulbs, and the switch to LEDs is regarded as one of the easiest ways to cut energy use.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0016-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Life after dark before electricity" },
+            { "key": "ii", "label": "Inventors who came close" },
+            { "key": "iii", "label": "The search for a long-lasting filament" },
+            { "key": "iv", "label": "Building a power system to match" },
+            { "key": "v", "label": "Better filaments and new kinds of lamp" },
+            { "key": "vi", "label": "An efficient light for a new century" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0016-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes lighting before electricity." } },
+            { "kind": "matching", "id": "generated-reading-general-0016-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Davy and Swan." } },
+            { "kind": "matching", "id": "generated-reading-general-0016-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the power station and system." } },
+            { "kind": "matching", "id": "generated-reading-general-0016-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes tungsten filaments and fluorescent lamps." } },
+            { "kind": "matching", "id": "generated-reading-general-0016-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes LED lamps." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0016-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q032", "statement": "Candles, oil lamps and gas were the main sources of light before electricity.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q033", "statement": "Joseph Swan was an American inventor.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B calls him an English physicist." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q034", "statement": "Edison's company opened its first power station in London.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the Pearl Street station was in New York." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q035", "statement": "Tungsten filaments lasted much longer than carbon filaments.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E says tungsten gave a much longer life." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0016-q036", "statement": "Fluorescent lamps were invented by Edison.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say who invented them." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0016-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0016-q037", "prompt": "Humphry Davy created an electric ______ of light between two carbon rods.", "accept": ["arc"], "evidence": { "explanation": "Paragraph B says an arc of light." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q038", "prompt": "Edison's Pearl Street power station opened in ______ in 1882.", "accept": ["New York"], "evidence": { "explanation": "Paragraph D names New York." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q039", "prompt": "Tungsten filaments replaced carbon in the early ______ century.", "accept": ["twentieth", "20th"], "evidence": { "explanation": "Paragraph E says the early twentieth century." } },
+            { "kind": "completion", "id": "generated-reading-general-0016-q040", "prompt": "LED lamps use roughly ______ per cent less electricity than old bulbs.", "accept": ["80", "eighty"], "evidence": { "explanation": "Paragraph F gives roughly 80 per cent." } }
+          ]
+        }
+      ]
+    }
   }
 ];
