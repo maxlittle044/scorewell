@@ -7044,5 +7044,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0016-p1",
+    "title": "Bats and the Science of Echolocation",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "nature", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Bats are the only mammals capable of true, sustained flight, and they are among the most successful of all mammal groups. There are roughly 1,400 species, which together make up about a fifth of all mammal species, and they are found on every continent except Antarctica. They range from tiny bumblebee bats, weighing less than a coin, to flying foxes with wingspans of well over a metre.\n\nB. Most bats that eat insects find their way in the dark by echolocation. A bat produces a rapid series of calls, usually at frequencies above 20 kilohertz, beyond the range of human hearing, and listens for the echoes that bounce back from objects around it. By analysing the delay, pitch and strength of the echoes, its brain builds a detailed picture of the surroundings, including the size, position and even the texture of prey. Some species can detect objects as fine as a human hair.\n\nC. When hunting, a bat increases the rate of its calls as it closes in on an insect, in what is known as the feeding buzz, and it may adjust the shape of its wing in mid-air to change course sharply. A small insect-eating bat can catch hundreds of insects in a single hour. Not all bats depend on sound in this way: many fruit-eating bats have large eyes and a good sense of smell, and use them to locate ripe fruit.\n\nD. Their prey have not stood still. Over millions of years, some moths have evolved ears that can detect bat calls, allowing them to dive or fly in loops to escape. Others produce ultrasonic clicks of their own, which may confuse a bat's echolocation or warn it that the moth tastes unpleasant. The result is a long-running evolutionary contest between hunter and hunted.\n\nE. Bats matter to people as well as to ecosystems. By eating vast quantities of insects, many of them crop pests, they reduce the need for chemical pesticides, and in tropical regions, fruit-eating and nectar-feeding bats pollinate plants and disperse seeds, helping forests to regenerate. Some economists have estimated the value of bats' pest control to agriculture at billions of dollars a year.\n\nF. Yet many species are in decline. Bats breed slowly, usually producing only one pup a year, so populations recover slowly from losses. They are threatened by the loss of roosting sites and feeding habitat, by collisions with wind turbines, and, in North America, by a fungal infection called white-nose syndrome, which has killed millions of hibernating bats since it was first detected in 2006.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0016-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A varied group of flying mammals" },
+            { "key": "ii", "label": "Building a picture from echoes" },
+            { "key": "iii", "label": "Hunting techniques at speed" },
+            { "key": "iv", "label": "Insects fight back" },
+            { "key": "v", "label": "Benefits to people and ecosystems" },
+            { "key": "vi", "label": "Dangers facing bat populations" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0016-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the variety of bat species." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains how echoes build a picture." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q003", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes moths' defences." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E covers pest control, pollination and seed dispersal." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F lists threats to bats." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0016-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q006", "statement": "Bats are the only mammals capable of true, sustained flight.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q007", "statement": "All bats use echolocation to find their food.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says many fruit-eating bats rely on sight and smell." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q008", "statement": "Some moths have ears that can detect bat calls.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q009", "statement": "Bats live longer than other mammals of a similar size.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says nothing about bat lifespans." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0016-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0016-q010", "prompt": "There are roughly ______ species of bat.", "accept": ["1,400", "1400"], "evidence": { "explanation": "Paragraph A gives roughly 1,400." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q011", "prompt": "Bat calls are usually above ______ kilohertz.", "accept": ["20", "twenty"], "evidence": { "explanation": "Paragraph B gives above 20 kilohertz." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q012", "prompt": "Fruit-eating and nectar-feeding bats pollinate plants and disperse ______.", "accept": ["seeds"], "evidence": { "explanation": "Paragraph E says they disperse seeds." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q013", "prompt": "A fungal infection called white-nose ______ has killed millions of bats in North America.", "accept": ["syndrome"], "evidence": { "explanation": "Paragraph F names white-nose syndrome." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0016-p2",
+    "title": "The Story of Paper Money",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "economics", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Coins have a long history, but they have practical limits: they are heavy, and large payments require carrying and guarding bags of metal. As trade expanded, merchants looked for lighter ways of settling debts, and many societies developed promissory notes, written promises to pay that could be exchanged for coin on demand.\n\nB. China was the first to move from such private notes to paper money issued by the state. Merchants in Sichuan began using paper receipts of deposit in the tenth century, and around AD 1024 the Song dynasty government took over the practice, issuing notes called jiaozi. The notes were backed by reserves and were valid for a limited period, and they made possible large-scale trade across the empire.\n\nC. In the thirteenth century, the Venetian traveller Marco Polo described with astonishment how the Mongol rulers of China used mulberry-bark paper marked with the emperor's seal as money, and even forced their subjects to accept it. Later, dynasties that printed notes to pay for wars found that they lost value, and by the fifteenth century, paper currency in China had largely collapsed, a warning that Europeans would later have to relearn.\n\nD. Europe followed much later. The first banknotes there were issued in Sweden in 1661 by the bank of Stockholm, after copper coins, the main currency, became so heavy that a large payment could require a cart. The bank soon issued more notes than it could redeem, and it collapsed a few years later, though the idea spread to England, where the Bank of England began issuing notes in 1694.\n\nE. The danger of printing too much money is that its value falls, a process known as inflation. In eighteenth-century France, the financier John Law persuaded the government to issue large quantities of paper currency, and the resulting speculation ended in a crash in 1720. In the American War of Independence, the notes issued by the colonies became so worthless that the phrase \"not worth a continental\" passed into everyday speech.\n\nF. Today, banknotes are designed to be hard to forge, with watermarks, holograms, raised print and threads embedded in the paper. Australia introduced the first polymer banknotes in 1988, and they are made of plastic film that lasts several times longer than paper. Yet the use of cash is declining in many countries as cards and mobile payments spread, and some central banks are studying digital currencies.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0016-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Heavy coins create a need for an alternative" },
+            { "key": "ii", "label": "Merchants' receipts become state money in China" },
+            { "key": "iii", "label": "A foreign visitor's astonishment and a later collapse" },
+            { "key": "iv", "label": "Sweden issues Europe's first banknotes" },
+            { "key": "v", "label": "The temptation to print too much" },
+            { "key": "vi", "label": "Security, plastic and a cashless future" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0016-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains the limits of coins." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes receipts becoming state-issued notes." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Marco Polo's astonishment and the later collapse." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes inflation from overprinting." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers security features, polymer and digital currencies." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0016-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q019", "statement": "The earliest state-issued paper money appeared in China.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says China was the first." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q020", "statement": "Marco Polo dismissed Chinese paper money as worthless.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says he described it with astonishment." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q021", "statement": "The Bank of England issued the first banknotes in Europe.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says Sweden issued the first, in 1661." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q022", "statement": "John Law was born in Scotland.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say where he was born." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0016-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0016-q023", "prompt": "The notes issued in China around AD 1024 were called ______.", "accept": ["jiaozi"], "evidence": { "explanation": "Paragraph B names jiaozi." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q024", "prompt": "The first European banknotes were issued in Sweden in ______.", "accept": ["1661"], "evidence": { "explanation": "Paragraph D gives 1661." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q025", "prompt": "The danger of printing too much money is a fall in its value, known as ______.", "accept": ["inflation"], "evidence": { "explanation": "Paragraph E names inflation." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q026", "prompt": "Australia introduced the first ______ banknotes in 1988.", "accept": ["polymer"], "evidence": { "explanation": "Paragraph F names polymer banknotes." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0016-p3",
+    "title": "Learning Through Play",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "education", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Play is the natural way in which young children explore the world. It includes building with blocks, pretending to be a shopkeeper, chasing a ball or arranging stones in patterns, and it ranges from solitary games to elaborate collaborations. Educators and psychologists have long argued that play is not the opposite of learning but one of its main engines, since children practise language, number and social skills while they are enjoying themselves.\n\nB. The idea has a long history. In 1837, the German educator Friedrich Froebel opened the first kindergarten, a word meaning \"children's garden\", in which young children learned through songs, games and handling simple materials rather than through lessons and memorisation. His ideas spread to many countries, and the Italian doctor Maria Montessori and others later developed their own methods based on children's self-directed activity.\n\nC. Modern research has added detail. Studies of preschool children suggest that pretend play helps them to develop self-control, since they must follow the rules of the imaginary situation they have created, and that games with other children improve their ability to cooperate and to understand others' feelings. Researchers caution, however, that it is hard to run experiments that separate the effects of play from those of other influences on a child's development.\n\nD. Finland is often cited as a country that puts play at the heart of early education. Children there do not begin formal schooling until they are seven, and kindergarten programmes emphasise games, outdoor activity and social development rather than reading and writing. Finnish pupils have performed well in international tests, although researchers warn that many other factors, including teacher training and social equality, also help to explain the results.\n\nE. Not everyone is convinced. Some parents worry that a play-based approach will leave children unprepared for the demands of later exams, and in many countries there is pressure to teach reading and arithmetic earlier and earlier. Critics also point out that unstructured play may benefit children unequally: those from homes where adults join in and talk about what they are doing may gain more than those left to play alone.\n\nF. Many educators now favour a middle way known as guided play. In this approach, an adult prepares an environment with carefully chosen materials, and children explore and make choices within it, while the adult asks questions and offers suggestions without taking control. Studies suggest that guided play can be at least as effective as direct teaching for helping young children to learn early mathematics and vocabulary, while keeping the enjoyment that draws them to play in the first place.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0016-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "What counts as play, and why it matters" },
+            { "key": "ii", "label": "An early advocate of learning through activity" },
+            { "key": "iii", "label": "Evidence from studies of young children" },
+            { "key": "iv", "label": "A country that starts school late" },
+            { "key": "v", "label": "Concerns about falling behind" },
+            { "key": "vi", "label": "A middle way between freedom and instruction" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0016-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes what play includes and why it matters." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Froebel and later educators." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Finland's late start to formal schooling." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes parents' concerns about exams and inequality." } },
+            { "kind": "matching", "id": "generated-reading-academic-0016-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes guided play as a middle way." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0016-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q032", "statement": "Friedrich Froebel opened the first kindergarten in Germany.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q033", "statement": "Children in Finland begin formal schooling at the age of five.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says they start at seven." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q034", "statement": "Researchers agree that play-based learning is always better than teacher-led instruction.", "answer": "FALSE", "evidence": { "explanation": "The passage reports cautions, criticisms and evidence that guided play is only at least as effective." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q035", "statement": "Guided play combines adult preparation with children's own choices.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0016-q036", "statement": "Parents in Finland are opposed to homework.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says nothing about homework." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0016-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0016-q037", "prompt": "Froebel opened the first kindergarten in ______.", "accept": ["1837"], "evidence": { "explanation": "Paragraph B gives 1837." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q038", "prompt": "Children in Finland begin formal schooling at the age of ______.", "accept": ["seven", "7"], "evidence": { "explanation": "Paragraph D says seven." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q039", "prompt": "Some parents worry that play will leave children unprepared for later ______.", "accept": ["exams"], "evidence": { "explanation": "Paragraph E mentions the demands of later exams." } },
+            { "kind": "completion", "id": "generated-reading-academic-0016-q040", "prompt": "In guided play, an adult prepares an ______ with carefully chosen materials.", "accept": ["environment"], "evidence": { "explanation": "Paragraph F says an adult prepares an environment." } }
+          ]
+        }
+      ]
+    }
   }
 ];
