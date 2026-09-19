@@ -5060,5 +5060,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0017-s1",
+    "title": "Community Hall Hire – Listening Section 1",
+    "topic": "Everyday life",
+    "tags": ["academic", "everyday-life", "form-completion"],
+    "data": {
+      "audioLabel": "Community Hall Hire – Listening Section 1",
+      "transcript": "Clerk: Good morning, Millbrook Community Hall. How can I help?\nCaller: Hello, I'd like to hire a room for a birthday party.\nClerk: Certainly. What date are you thinking of?\nCaller: The twenty-first of June, from two o'clock until six in the afternoon.\nClerk: And how many guests will there be?\nCaller: About sixty.\nClerk: In that case, I'd suggest the Oak Room, which holds up to eighty people.\nCaller: That sounds ideal. What does it cost?\nClerk: The hall fee is £70 for a four-hour session. We also ask for a refundable deposit of £100.\nCaller: Is a kitchen available?\nClerk: Yes, use of the kitchen is an extra £15, and there's a projector you can use free of charge.\nCaller: Great. Do I need to do anything at the end?\nClerk: The room must be cleaned and tidied before you leave.\nCaller: That's fine. Could I book it, please? My surname is Pemberton, that's P-E-M-B-E-R-T-O-N.\nClerk: Thank you. And a contact number?\nCaller: 07700 900386.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0017-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0017-q001", "prompt": "Surname: ______.", "accept": ["Pemberton"], "evidence": { "explanation": "The caller spells P-E-M-B-E-R-T-O-N." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q002", "prompt": "Type of event: ______ party.", "accept": ["birthday"], "evidence": { "explanation": "The caller wants a room for a birthday party." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q003", "prompt": "Date: the ______ of June.", "accept": ["twenty-first", "21st", "21"], "evidence": { "explanation": "The date is the twenty-first of June." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q004", "prompt": "Start time: ______ o'clock.", "accept": ["two", "2"], "evidence": { "explanation": "The party starts at two o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q005", "prompt": "Finish time: ______ o'clock.", "accept": ["six", "6"], "evidence": { "explanation": "The party ends at six." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q006", "prompt": "Number of guests: about ______.", "accept": ["sixty", "60"], "evidence": { "explanation": "The caller says about sixty." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q007", "prompt": "Room: the ______ Room.", "accept": ["Oak"], "evidence": { "explanation": "The clerk suggests the Oak Room." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q008", "prompt": "Hall fee: £______.", "accept": ["70"], "evidence": { "explanation": "The hall fee is £70." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q009", "prompt": "Refundable deposit: £______.", "accept": ["100"], "evidence": { "explanation": "The deposit is £100." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q010", "prompt": "Contact number: ______.", "accept": ["07700 900386"], "evidence": { "explanation": "The caller gives 07700 900386." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0017-s2",
+    "title": "University Library Orientation – Listening Section 2",
+    "topic": "Education",
+    "tags": ["academic", "education", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "University Library Orientation – Listening Section 2",
+      "transcript": "Welcome, new students, to the university library. I'd like to explain how it works.\n\nYou can borrow up to fifteen books at a time, for four weeks, and you can renew them online up to three times. During exam periods, the library is open twenty-four hours a day.\n\nThe library has four floors. The help desk is on the ground floor, where staff can answer questions about finding books and using databases. The fourth floor is a silent study area, where no talking is allowed. Group study rooms can be booked for up to two hours at a time.\n\nPrinting and photocopying cost five pence per page, and you can pay using your student card.\n\nFinally, we run workshops on referencing every Wednesday at one o'clock in the seminar room, and I'd strongly recommend attending one early in your course.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0017-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0017-q011", "prompt": "Students can borrow up to ______ books at a time.", "accept": ["fifteen", "15"], "evidence": { "explanation": "The speaker says fifteen books." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q012", "prompt": "The loan period is ______ weeks.", "accept": ["four", "4"], "evidence": { "explanation": "The speaker says four weeks." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q013", "prompt": "Books can be renewed online up to ______ times.", "accept": ["three", "3"], "evidence": { "explanation": "The speaker says up to three times." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q014", "prompt": "The library is open 24 hours during ______ periods.", "accept": ["exam"], "evidence": { "explanation": "The speaker says during exam periods." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q015", "prompt": "Group study rooms can be booked for up to ______ hours.", "accept": ["two", "2"], "evidence": { "explanation": "The speaker says up to two hours." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q016", "prompt": "Printing costs ______ per page.", "accept": ["five pence", "5p", "5 pence"], "evidence": { "explanation": "The speaker says five pence per page." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0017-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q017", "question": "Which floor is the silent study area?", "options": ["Ground floor", "Second floor", "Third floor", "Fourth floor"], "correctIndex": 3, "evidence": { "explanation": "The fourth floor is the silent study area." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q018", "question": "Where is the help desk?", "options": ["Ground floor", "First floor", "Second floor", "Fourth floor"], "correctIndex": 0, "evidence": { "explanation": "The help desk is on the ground floor." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q019", "question": "What are the weekly workshops about?", "options": ["Referencing", "Exam technique", "Using databases", "Time management"], "correctIndex": 0, "evidence": { "explanation": "The workshops are on referencing." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q020", "question": "When are the workshops held?", "options": ["Monday at ten", "Wednesday at one", "Thursday at four", "Friday at two"], "correctIndex": 1, "evidence": { "explanation": "Workshops are every Wednesday at one o'clock." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0017-s3",
+    "title": "Planning a Soil Experiment – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Soil Experiment – Listening Section 3",
+      "transcript": "Omar: Hannah, have you thought about how we'll do the soil project?\nHannah: Yes. I think we should collect samples from three sites: the park, the farm and the roadside.\nOmar: Good idea. And what are we going to measure?\nHannah: The acidity of the soil, which is its pH, and how much moisture it holds.\nOmar: How many samples should we take from each site?\nHannah: Five, so we can calculate an average.\nOmar: When shall we collect them?\nHannah: Saturday morning would be best, because the weather forecast is dry.\nOmar: Okay. And how long will the lab analysis take?\nHannah: About two days, so we'll have the results by Tuesday.\nOmar: And the presentation at the end?\nHannah: We agreed to make a poster.\nOmar: Right. Now, equipment. The lab technician will provide the pH meter.\nHannah: I'll bring the sample bags, since I already have plenty.\nOmar: I'll bring the gloves, and the technician will also lend us a GPS device to record the locations.\nHannah: Perfect.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0017-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q021", "question": "How many sites will they collect samples from?", "options": ["Two", "Three", "Four", "Five"], "correctIndex": 1, "evidence": { "explanation": "Hannah suggests three sites." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q022", "question": "What will they measure?", "options": ["Soil temperature", "Acidity and moisture", "Nutrient levels", "Insect numbers"], "correctIndex": 1, "evidence": { "explanation": "They will measure pH and moisture." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q023", "question": "How many samples will they take from each site?", "options": ["Three", "Four", "Five", "Ten"], "correctIndex": 2, "evidence": { "explanation": "Hannah says five." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q024", "question": "When will they collect the samples?", "options": ["Friday afternoon", "Saturday morning", "Sunday morning", "Monday morning"], "correctIndex": 1, "evidence": { "explanation": "Hannah says Saturday morning." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q025", "question": "How long will the lab analysis take?", "options": ["One day", "About two days", "A week", "Two weeks"], "correctIndex": 1, "evidence": { "explanation": "Hannah says about two days." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0017-q026", "question": "How will they present their results?", "options": ["As a poster", "As a written report", "As a video", "As a website"], "correctIndex": 0, "evidence": { "explanation": "They agreed to make a poster." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0017-s3-g2",
+          "instructions": "Who will provide each item? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Omar" },
+            { "key": "B", "label": "Hannah" },
+            { "key": "C", "label": "The lab technician" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0017-q027", "prompt": "The pH meter", "answer": "C", "evidence": { "explanation": "The lab technician will provide the pH meter." } },
+            { "kind": "matching", "id": "generated-listening-academic-0017-q028", "prompt": "The sample bags", "answer": "B", "evidence": { "explanation": "Hannah will bring the sample bags." } },
+            { "kind": "matching", "id": "generated-listening-academic-0017-q029", "prompt": "The gloves", "answer": "A", "evidence": { "explanation": "Omar will bring the gloves." } },
+            { "kind": "matching", "id": "generated-listening-academic-0017-q030", "prompt": "The GPS device", "answer": "C", "evidence": { "explanation": "The technician will lend a GPS device." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0017-s4",
+    "title": "The History of Glass – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Glass – Listening Section 4",
+      "transcript": "Today's lecture is about glass, a material so common that we rarely stop to think about where it came from.\n\nGlass occurs naturally. Obsidian, a natural glass formed when volcanic lava cools quickly, was used by early people to make sharp tools. The earliest manufactured glass dates from about 3500 BC, in the ancient Near East, where it was used mainly for beads and small objects.\n\nA major breakthrough came around 50 BC with the invention of glassblowing, which is generally credited to craftsmen in the Roman Empire. Blowing made it possible to produce hollow vessels quickly and cheaply.\n\nIn the Middle Ages, Venice became famous for its glass. In 1291, the city's glassmakers were ordered to move to the island of Murano, partly to reduce the risk of fire in the city, and partly to protect the secrets of their craft.\n\nThe modern glass industry was transformed in the 1950s by the British engineer Alastair Pilkington, who invented the float glass process, in which molten glass is floated on a bath of molten tin to produce a perfectly flat sheet. The process was announced in 1959, and today about ninety per cent of the world's flat glass is made this way.\n\nGlass has another advantage: it can be recycled endlessly without losing quality.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0017-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0017-q031", "prompt": "Natural glass formed by cooling lava is called ______.", "accept": ["obsidian"], "evidence": { "explanation": "The lecturer names obsidian." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q032", "prompt": "The earliest manufactured glass dates from about ______ BC.", "accept": ["3500", "3,500"], "evidence": { "explanation": "The lecturer says about 3500 BC." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q033", "prompt": "Glassblowing is credited to craftsmen in the ______ Empire.", "accept": ["Roman"], "evidence": { "explanation": "The lecturer credits the Roman Empire." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q034", "prompt": "Venetian glassmakers were moved to the island of ______.", "accept": ["Murano"], "evidence": { "explanation": "The lecturer names Murano." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q035", "prompt": "The move to Murano took place in ______.", "accept": ["1291"], "evidence": { "explanation": "The lecturer gives 1291." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q036", "prompt": "One reason for the move was to reduce the risk of ______.", "accept": ["fire"], "evidence": { "explanation": "The lecturer mentions the risk of fire." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q037", "prompt": "The float glass process was invented by Alastair ______.", "accept": ["Pilkington"], "evidence": { "explanation": "The lecturer names Alastair Pilkington." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q038", "prompt": "The float glass process was announced in ______.", "accept": ["1959"], "evidence": { "explanation": "The lecturer gives 1959." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q039", "prompt": "About ______ per cent of flat glass is made by the float process.", "accept": ["ninety", "90"], "evidence": { "explanation": "The lecturer says about ninety per cent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0017-q040", "prompt": "Glass can be recycled ______ without losing quality.", "accept": ["endlessly", "indefinitely"], "evidence": { "explanation": "The lecturer says it can be recycled endlessly." } }
+          ]
+        }
+      ]
+    }
   }
 ];
