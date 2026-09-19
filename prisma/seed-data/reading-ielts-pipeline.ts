@@ -7947,5 +7947,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0019-p1",
+    "title": "The Science and Story of Flight",
+    "sourceTestSet": "Academic",
+    "topic": "Technology",
+    "tags": ["academic", "technology", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Humans have dreamed of flying for thousands of years, as myths such as that of Icarus, and the sketches of flying machines drawn by Leonardo da Vinci in the fifteenth century, show. But it was only in the twentieth century that the dream became reality, and within a few decades flying went from an extraordinary adventure to an ordinary way of travelling.\n\nB. An aircraft stays in the air because its wings generate lift. A wing is shaped, and tilted slightly upwards, so that the air flowing over it is deflected downwards and the pressure above the wing is lower than the pressure below. The difference in pressure pushes the wing upwards. Engines provide thrust to move the aircraft forwards, and the lift increases with speed, which is why aircraft must accelerate along a runway before take-off.\n\nC. On 17 December 1903, at Kitty Hawk in North Carolina, Orville Wright made the first powered, controlled flight in a heavier-than-air machine, the Flyer, built by him and his brother Wilbur. The flight lasted only twelve seconds and covered about 37 metres. The brothers had succeeded where others failed because they had worked out how to control an aircraft in flight, building a wind tunnel and testing hundreds of wing shapes.\n\nD. The next revolution was the jet engine, developed independently in Britain and Germany in the 1930s. Jet engines were more powerful and reliable than piston engines, and they allowed aircraft to fly higher and faster. The first commercial jet airliner entered service in 1952, and although early designs suffered from structural failures, the jet age made long-distance travel affordable for millions of people.\n\nE. Flying has a cost, however. Aviation is responsible for roughly two to three per cent of global carbon dioxide emissions, and its effect on the climate is probably greater than this figure suggests, because aircraft also produce vapour trails and other emissions at high altitude. Aircraft have become much more fuel-efficient over the decades, but rising numbers of passengers have offset much of the benefit.\n\nF. Engineers are exploring several ways of reducing the impact. Sustainable aviation fuels made from waste oils or plants can already be blended with kerosene. Electric aircraft are attractive because they produce no emissions in flight, but batteries are heavy, which limits their range, and they are likely to be used first for short journeys. Hydrogen-powered aircraft are also being studied, although storing the fuel safely presents challenges.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0019-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A dream older than the aeroplane" },
+            { "key": "ii", "label": "How wings generate lift" },
+            { "key": "iii", "label": "Twelve seconds that changed transport" },
+            { "key": "iv", "label": "The jet age and mass travel" },
+            { "key": "v", "label": "Counting the environmental cost" },
+            { "key": "vi", "label": "Looking to cleaner aircraft" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0019-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the long-held dream of flying." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains lift." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the twelve-second first flight." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E covers emissions." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers fuels and electric and hydrogen aircraft." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0019-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q006", "statement": "The pressure above a wing is lower than the pressure below it.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q007", "statement": "The Wright brothers' first powered flight lasted several minutes.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says it lasted only twelve seconds." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q008", "statement": "Aviation produces roughly two to three per cent of global carbon dioxide emissions.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives this figure." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q009", "statement": "Electric aircraft will replace jet aircraft by 2040.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no timescale for replacement." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0019-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0019-q010", "prompt": "The first powered flight covered about ______ metres.", "accept": ["37", "thirty-seven"], "evidence": { "explanation": "Paragraph C gives about 37 metres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q011", "prompt": "The Wright brothers' aircraft first flew in ______.", "accept": ["1903"], "evidence": { "explanation": "Paragraph C gives 17 December 1903." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q012", "prompt": "The first commercial jet airliner entered service in ______.", "accept": ["1952"], "evidence": { "explanation": "Paragraph D gives 1952." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q013", "prompt": "Heavy batteries limit the range of ______ aircraft.", "accept": ["electric"], "evidence": { "explanation": "Paragraph F says batteries are heavy, limiting range." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0019-p2",
+    "title": "The Rise of the Department Store",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "economics", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Before the nineteenth century, most shopping was done in markets or in small specialised shops, such as the baker, the draper and the hatter. Customers usually bargained over the price, and shopkeepers often showed goods only after a customer had entered and shown serious interest. Entering a shop without intending to buy could be regarded as rude.\n\nB. The department store changed this. In 1852, Aristide Boucicaut took control of a small shop in Paris called the Bon Marché and turned it into the world's first modern department store. He introduced fixed prices, marked clearly on each item, so that no bargaining was needed; he allowed customers to enter and browse freely, without any obligation to buy; and he promised to refund goods that customers were not satisfied with. Sales and catalogues attracted customers from far outside the city.\n\nC. The idea spread quickly. Macy's opened in New York in 1858, and other stores followed in Britain, Germany and elsewhere; Harrods, which had begun as a small grocery, expanded into a department store, and in 1909 Harry Gordon Selfridge opened his famous store in London's Oxford Street, promoting shopping as a pleasure. Their size allowed them to buy in bulk and to sell at lower prices than small shops, and many small traders were driven out of business.\n\nD. For many women of the growing middle class, the department store was one of the first respectable public places they could visit without a chaperone. Stores provided tea rooms, reading rooms and cloakrooms, and employed large numbers of young women as sales assistants. Some historians argue that they helped to change ideas about women's place in society.\n\nE. Technology added to the spectacle. Electric lighting, plate-glass windows and elaborate window displays drew crowds off the street, and lifts and, later, escalators carried them through floors filled with goods. Stores held exhibitions, concerts and fashion shows, and at Christmas, their displays became a tradition in their own right.\n\nF. From the 1970s, department stores began to struggle. Out-of-town shopping centres offered free parking and cheaper prices, and specialist chains took away business in individual product ranges. More recently, online shopping has taken more customers, and many well-known stores have closed. Those that survive have tried to reinvent themselves, by offering experiences such as restaurants and beauty treatments as well as goods.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0019-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Bargaining and small specialised shops" },
+            { "key": "ii", "label": "A Paris shop changes the rules" },
+            { "key": "iii", "label": "The idea crosses the Atlantic and the Channel" },
+            { "key": "iv", "label": "A new public place for women" },
+            { "key": "v", "label": "Lifts, lights and spectacle" },
+            { "key": "vi", "label": "Competition from malls and the internet" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0019-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes markets, small shops and bargaining." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the Bon Marché's new practices." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the spread to New York, Britain and Germany." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes lighting, displays, lifts and escalators." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes competition from out-of-town centres and online shopping." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0019-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q019", "statement": "In traditional shops, customers usually bargained over the price.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q020", "statement": "The Bon Marché charged customers a fee to enter the shop.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says customers could browse freely." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q021", "statement": "Selfridge opened his store in London in 1909.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1909 and Oxford Street." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q022", "statement": "Department stores made higher profits than small shops.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare profits." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0019-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0019-q023", "prompt": "Aristide Boucicaut took control of the Bon Marché in ______.", "accept": ["1852"], "evidence": { "explanation": "Paragraph B gives 1852." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q024", "prompt": "The Bon Marché introduced ______ prices, marked clearly on each item.", "accept": ["fixed"], "evidence": { "explanation": "Paragraph B says fixed prices." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q025", "prompt": "Electric ______ and plate-glass windows drew crowds off the street.", "accept": ["lighting"], "evidence": { "explanation": "Paragraph E names electric lighting." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q026", "prompt": "Department stores began to struggle from the ______.", "accept": ["1970s"], "evidence": { "explanation": "Paragraph F says from the 1970s." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0019-p3",
+    "title": "Wildlife in the City",
+    "sourceTestSet": "Academic",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "society", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For most of history, cities were seen as the opposite of nature: places where wildlife had been pushed out to make room for people. But since 2018 more than half of the world's people have lived in cities, and as urban areas expand, ecologists, planners and citizens have started to rethink the divide. Increasingly, cities are seen not as wildlife deserts but as habitats in their own right.\n\nB. Some species have adapted with remarkable success. Red foxes now live in many British towns, where they eat food scraps and shelter under garden sheds; peregrine falcons, which naturally nest on cliffs, have been found breeding on skyscrapers and church towers, where they hunt pigeons; and in some Indian cities, leopards live on the fringes of large parks. Urban areas can also be warmer than the countryside, which suits some insects.\n\nC. Cities can also be designed to help wildlife. Green roofs, planted with grass and flowers, provide food for insects and nesting sites for birds. Wildlife corridors, such as strips of trees along railway lines, allow animals to move between parks. Ponds and wildflower meadows in place of mown lawns can increase the number of pollinating insects.\n\nD. Contact with nature has benefits for people as well. Studies have found that people who live near green space tend to report better mental wellbeing and lower stress, and children who play in natural surroundings may be more active and creative. Some researchers caution that these findings show an association rather than proof, since wealthier people are more likely to live near parks.\n\nE. There are also conflicts. Foxes and gulls raid bins, pigeons foul buildings, and larger animals such as wild boar or coyotes can alarm residents. Artificial light confuses migrating birds, which may collide with buildings, and cats kill large numbers of small mammals and birds. Not all residents welcome the presence of wild animals, and managing these tensions can be difficult.\n\nF. Planners are increasingly designing with wildlife in mind. Some cities require new developments to include green roofs or bird boxes, others have established protected reserves within their limits, and a few have adopted plans to reduce light pollution during migration seasons. Supporters argue that such measures are inexpensive compared with their benefits for both people and biodiversity.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0019-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Rethinking the divide between city and nature" },
+            { "key": "ii", "label": "Animals that have adapted to urban life" },
+            { "key": "iii", "label": "Green roofs and wildlife corridors" },
+            { "key": "iv", "label": "What contact with nature does for people" },
+            { "key": "v", "label": "Conflicts between people and animals" },
+            { "key": "vi", "label": "Planning cities with wildlife in mind" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0019-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes rethinking the city-nature divide." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes foxes, falcons and leopards in cities." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes benefits for wellbeing." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes conflicts." } },
+            { "kind": "matching", "id": "generated-reading-academic-0019-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes planning measures." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0019-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q032", "statement": "More than half of the world's people now live in cities.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q033", "statement": "Peregrine falcons have been found nesting on tall buildings.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q034", "statement": "All residents welcome wild animals in their cities.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says not all residents welcome them." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q035", "statement": "People who live near green space tend to report better mental wellbeing.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0019-q036", "statement": "Wildlife corridors are cheaper to build than motorways.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare corridors with motorways." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0019-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0019-q037", "prompt": "Since 2018, more than ______ per cent of the world's people have lived in cities.", "accept": ["half", "50"], "evidence": { "explanation": "Paragraph A says more than half." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q038", "prompt": "Red foxes now live in many ______ towns.", "accept": ["British"], "evidence": { "explanation": "Paragraph B says many British towns." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q039", "prompt": "Green ______ provide food for insects and nesting sites for birds.", "accept": ["roofs"], "evidence": { "explanation": "Paragraph C names green roofs." } },
+            { "kind": "completion", "id": "generated-reading-academic-0019-q040", "prompt": "Artificial light confuses migrating ______.", "accept": ["birds"], "evidence": { "explanation": "Paragraph E says it confuses migrating birds." } }
+          ]
+        }
+      ]
+    }
   }
 ];
