@@ -5699,5 +5699,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0006-p1",
+    "title": "General Training Reading — Section 1: Garden Centre and Health Clinic Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nGREENWAY GARDEN CENTRE\nOpening Hours, Delivery and Returns\n\nWe are open from 8:30am to 6:00pm, Monday to Saturday, and from 10:00am to 4:00pm on Sundays.\n\nDelivery is free for orders over £75 within 15 kilometres of the centre; for smaller orders, a flat charge of £9 applies. Large trees and shrubs are delivered by van on Tuesdays and Fridays only.\n\nPlants that die within 30 days of purchase can be replaced free of charge on presentation of your receipt, provided they have been watered according to the care label. This does not apply to seasonal bedding plants. Tools and equipment may be returned within 14 days for a full refund if they are unused and in their original packaging.\n\nOur loyalty card earns one point for every £1 you spend, and 200 points can be exchanged for a £5 voucher.\n\nTEXT 2\n\nWESTBURY HEALTH CLINIC\nAppointments and Opening Hours\n\nThe clinic is open from 8:00am to 6:30pm, Monday to Friday. On Saturday mornings, from 9:00am until noon, only urgent appointments are available.\n\nRoutine appointments can be booked online or by phone up to four weeks in advance. Same-day urgent appointments are released at 8:00am each morning and can be booked by phone only.\n\nNew patients should arrive ten minutes early for their first visit to complete a registration form, and should bring photo ID.\n\nPlease cancel appointments at least 24 hours in advance. Patients who miss three appointments without notice in a twelve-month period may receive a written warning.\n\nRepeat prescriptions take 48 hours to prepare and can be ordered online or through your pharmacy, but not by phone. Blood tests do not require an appointment on Tuesdays and Thursdays between 8:00am and 10:00am.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0006-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q001", "statement": "The garden centre is open on every day of the week.", "answer": "TRUE", "evidence": { "explanation": "It is open Monday to Saturday and on Sundays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q002", "statement": "Delivery is free on every order within 15 kilometres of the garden centre.", "answer": "FALSE", "evidence": { "explanation": "Free delivery applies only to orders over £75." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q003", "statement": "Seasonal bedding plants that die can be replaced free of charge.", "answer": "FALSE", "evidence": { "explanation": "The free replacement offer does not apply to seasonal bedding plants." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q004", "statement": "Loyalty card points expire after twelve months.", "answer": "NOT GIVEN", "evidence": { "explanation": "The text does not say whether points expire." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q005", "statement": "Same-day urgent appointments can be booked online.", "answer": "FALSE", "evidence": { "explanation": "They can be booked by phone only." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q006", "statement": "Patients can have blood tests on some mornings without an appointment.", "answer": "TRUE", "evidence": { "explanation": "No appointment is needed on Tuesdays and Thursdays from 8:00am to 10:00am." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0006-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0006-q007", "prompt": "Tools can be returned within ______ days of purchase.", "accept": ["14", "fourteen"], "evidence": { "explanation": "Text 1 allows returns within 14 days." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q008", "prompt": "Plants that die within ______ days of purchase can be replaced free.", "accept": ["30", "thirty"], "evidence": { "explanation": "Text 1 gives a 30-day replacement period." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q009", "prompt": "Same-day urgent appointments are released at ______ each morning.", "accept": ["8:00am", "8am", "8.00am"], "evidence": { "explanation": "Text 2 says they are released at 8:00am." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q010", "prompt": "New patients should arrive ______ minutes early for their first visit.", "accept": ["ten", "10"], "evidence": { "explanation": "Text 2 asks new patients to arrive ten minutes early." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0006-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0006-q011", "question": "How many loyalty points can be exchanged for a £5 voucher?", "options": ["100", "200", "250", "500"], "correctIndex": 1, "evidence": { "explanation": "200 points can be exchanged for a £5 voucher." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0006-q012", "question": "How far in advance can routine appointments be booked?", "options": ["One week", "Two weeks", "Four weeks", "Eight weeks"], "correctIndex": 2, "evidence": { "explanation": "Routine appointments can be booked up to four weeks ahead." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0006-q013", "question": "How long do repeat prescriptions take to prepare?", "options": ["24 hours", "48 hours", "Three days", "One week"], "correctIndex": 1, "evidence": { "explanation": "Repeat prescriptions take 48 hours to prepare." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0006-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Sickness and Absence Reporting",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "HALLOWAY ENGINEERING\nStaff Handbook — Section 5: Sickness and Absence Reporting\n\nEmployees who are unable to work because of illness must telephone their line manager before 9:00am on the first day of absence. Emails and text messages are not acceptable for first-day notification.\n\nFor absences of up to seven calendar days, employees complete a self-certification form on their return. From the eighth day of absence, a medical certificate from a doctor is required.\n\nStatutory sick pay is payable after the first three days of absence. In addition, the company will pay full salary for the first five days of sickness in any twelve-month period.\n\nOn the first day back, every employee will have a return-to-work meeting with their line manager, which usually lasts about 15 minutes. Employees who are absent on more than three occasions in a six-month period will be invited to meet the HR department to discuss whether further support is needed.\n\nAn employee who becomes ill while on annual leave and can provide a medical certificate may have those days reclassified as sick leave.\n\nAll absence records are treated as confidential and are kept by the HR department.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0006-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q014", "statement": "An employee may report first-day sickness to their manager by text message.", "answer": "FALSE", "evidence": { "explanation": "Emails and text messages are not acceptable for first-day notification." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q015", "statement": "A doctor's certificate is required for an absence of five days.", "answer": "FALSE", "evidence": { "explanation": "A certificate is only required from the eighth day of absence." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q016", "statement": "The company pays full salary for the first five days of sickness in any twelve-month period.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q017", "statement": "The return-to-work meeting takes place on the employee's first day back.", "answer": "TRUE", "evidence": { "explanation": "On the first day back, every employee has a return-to-work meeting." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q018", "statement": "The company will pay for employees' private medical treatment.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook says nothing about private medical treatment." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0006-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0006-q019", "prompt": "Employees must phone their line manager before ______ on the first day of absence.", "accept": ["9:00am", "9am", "9.00am"], "evidence": { "explanation": "The handbook sets a 9:00am deadline." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q020", "prompt": "A medical certificate is required from the ______ day of absence.", "accept": ["eighth", "8th"], "evidence": { "explanation": "A certificate is required from the eighth day." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q021", "prompt": "Statutory sick pay is payable after the first ______ days of absence.", "accept": ["three", "3"], "evidence": { "explanation": "It is payable after the first three days." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q022", "prompt": "The return-to-work meeting usually lasts about ______ minutes.", "accept": ["15", "fifteen"], "evidence": { "explanation": "The handbook says it usually lasts about 15 minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q023", "prompt": "Employees absent on more than three occasions in ______ months are invited to meet HR.", "accept": ["six", "6"], "evidence": { "explanation": "The trigger is more than three occasions in a six-month period." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0006-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0006-q024", "question": "How must first-day absence be reported?", "options": ["By email to HR", "By telephone to the line manager", "By text message", "Through the HR portal"], "correctIndex": 1, "evidence": { "explanation": "Employees must telephone their line manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0006-q025", "question": "What may happen if an employee falls ill during annual leave?", "options": ["Nothing changes", "The days may be reclassified as sick leave if a certificate is provided", "Leave is extended automatically", "Pay is reduced"], "correctIndex": 1, "evidence": { "explanation": "With a medical certificate, days may be reclassified as sick leave." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0006-q026", "question": "Who keeps the absence records?", "options": ["The line manager", "The HR department", "Reception", "The employee"], "correctIndex": 1, "evidence": { "explanation": "Records are kept confidentially by the HR department." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0006-p3",
+    "title": "Lighthouses: Guardians of the Coast",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Since the first sailors ventured out of sight of land, coastlines have been dangerous places, and communities have long tried to warn ships away from rocks and shoals. The most famous early solution was the Pharos, a tall tower raised on an island at the entrance to the harbour of Alexandria around 280 BC. Later writers described it as more than 100 metres high, with a fire burning at the top, and it was counted among the Seven Wonders of the ancient world. It stood for many centuries before earthquakes brought it down.\n\nB. For most of the following two thousand years, lights were modest: open fires of wood or coal in iron baskets on towers, smoky, costly to feed and easily blown out. Building on exposed rocks was harder still. The Eddystone reef, about 20 kilometres off Plymouth in south-west England, lay across the route of ships entering the English Channel, and the first towers built on it were destroyed by storms. In 1759, the engineer John Smeaton completed a new tower whose shape was modelled on the trunk of an oak tree, wide at the base and tapering upwards. He cut granite blocks so that they locked together with interlocking dovetails, and used a mortar that would set underwater. The tower stood for well over a century.\n\nC. A further advance came in 1822, when the French physicist Augustin-Jean Fresnel introduced a new kind of lens. Earlier lights had used mirrors that wasted much of the flame's output. Fresnel built his lens from concentric rings of glass prisms that gathered the light and bent it into a single powerful beam. A Fresnel lens was much lighter and thinner than a conventional lens of comparable power, and it allowed a light to be seen from far greater distances while burning less fuel.\n\nD. For those who tended the lights, the work was demanding and often lonely. Keepers trimmed wicks, polished the lens, wound the clockwork mechanism that turned it, and kept a written log of the weather and passing ships. On offshore stations, keepers could be cut off for weeks by rough seas, and supplies and relief crews arrived by boat only when conditions allowed. Their families sometimes lived beside the tower, and some keepers became known for rescuing shipwrecked sailors.\n\nE. In the twentieth century, electricity and automatic control transformed the work. Electric bulbs replaced oil lamps, sensors switched lights on at dusk, and remote monitoring allowed a fault to be reported to a distant office. In many countries, keepers had been withdrawn from almost all lighthouses by the end of the century, since a tower that could look after itself was far cheaper to run.\n\nF. Satellite navigation might have been expected to make lighthouses obsolete, but many continue to operate as a back-up if electronic systems fail and as a visual aid for small boats. Others have found new uses: some have been converted into museums or holiday accommodation, and preservation societies raise money to keep historic towers in good repair, reflecting the affection that coastal communities have for them.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0006-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An ancient solution to a deadly problem" },
+            { "key": "ii", "label": "Building a tower to withstand the sea" },
+            { "key": "iii", "label": "A lens that made light travel further" },
+            { "key": "iv", "label": "The lonely working lives of the keepers" },
+            { "key": "v", "label": "Machines take over the lamp room" },
+            { "key": "vi", "label": "New roles in the satellite age" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0006-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the Pharos as an ancient answer to coastal danger." } },
+            { "kind": "matching", "id": "generated-reading-general-0006-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Smeaton's design for the Eddystone tower." } },
+            { "kind": "matching", "id": "generated-reading-general-0006-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C explains how Fresnel's lens sent light much further." } },
+            { "kind": "matching", "id": "generated-reading-general-0006-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes automation replacing keepers." } },
+            { "kind": "matching", "id": "generated-reading-general-0006-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes back-up and heritage roles today." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0006-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q032", "statement": "The Pharos of Alexandria was built around 280 BC.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A gives this date." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q033", "statement": "The first towers built on the Eddystone reef survived until Smeaton began his work.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the first towers were destroyed by storms." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q034", "statement": "Smeaton's tower was built mainly of timber.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says he used granite blocks." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q035", "statement": "Fresnel received an official award for his lens.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention any award." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0006-q036", "statement": "Some lighthouses have been converted into museums or holiday accommodation.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0006-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0006-q037", "prompt": "The Eddystone reef lies about ______ kilometres off Plymouth.", "accept": ["20", "twenty"], "evidence": { "explanation": "Paragraph B gives about 20 kilometres." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q038", "prompt": "Smeaton joined the granite blocks with interlocking ______.", "accept": ["dovetails", "dovetail joints"], "evidence": { "explanation": "Paragraph B says the blocks locked together with interlocking dovetails." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q039", "prompt": "Fresnel introduced his new lens in ______.", "accept": ["1822"], "evidence": { "explanation": "Paragraph C gives the year 1822." } },
+            { "kind": "completion", "id": "generated-reading-general-0006-q040", "prompt": "Keepers wound the ______ mechanism that turned the lens.", "accept": ["clockwork"], "evidence": { "explanation": "Paragraph D mentions the clockwork mechanism." } }
+          ]
+        }
+      ]
+    }
   }
 ];
