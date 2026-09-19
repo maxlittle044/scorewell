@@ -6442,5 +6442,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0014-p1",
+    "title": "Spider Silk: Nature's Engineering Material",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Spiders are among nature's most accomplished engineers. A single species can spin up to seven different types of silk, each made in its own gland and suited to its own task: sticky silk for catching prey, tough silk for wrapping it, and soft silk for protecting eggs. The silk that a spider hangs from and uses for the frame of its web is called dragline silk, and it is the type that has attracted most scientific interest.\n\nB. What makes dragline silk remarkable is the combination of strength and stretch. Weight for weight, some spider silks are stronger than steel, and they can stretch by a third or more before breaking, which makes them tougher than the synthetic fibres used in bulletproof vests. The silk is also produced at room temperature from a water-based liquid, without the harsh chemicals and high temperatures needed to make most industrial fibres.\n\nC. It might seem that the simplest way to obtain large amounts of silk would be to farm spiders, as silkworms have been farmed for thousands of years. Attempts have been made, but they have not succeeded. Most spiders are territorial and, when kept together, attack one another, so they cannot be housed at high density. Each also produces only a tiny amount of silk, so vast numbers would be needed.\n\nD. Researchers have therefore turned to genetic engineering. By identifying the genes that code for silk proteins and inserting them into other organisms, scientists have persuaded bacteria, yeast and even silkworms to manufacture spider-silk proteins. The proteins are then extracted and spun into fibres. A few laboratories have gone further and inserted the genes into goats, whose milk contains the protein.\n\nE. Potential uses are wide-ranging. In medicine, silk-based fibres are being tested for stitching wounds and as scaffolds on which damaged tissue can regrow, since the body tolerates silk well and can break it down gradually. Other proposed applications include lightweight protective clothing, durable ropes and even coatings for electronic devices.\n\nF. Turning a laboratory success into a commercial product has proved difficult. The artificial fibres produced so far are generally weaker than natural dragline silk, partly because it is hard to reproduce the way a spider spins its liquid protein into thread. Production costs remain high and quantities small, and companies that have promised to bring silk-based textiles to market have often been forced to scale back their plans.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0014-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A versatile material made in many forms" },
+            { "key": "ii", "label": "Strength and stretch combined" },
+            { "key": "iii", "label": "Why spiders cannot simply be farmed" },
+            { "key": "iv", "label": "Borrowing spider genes for other producers" },
+            { "key": "v", "label": "Uses in medicine and protection" },
+            { "key": "vi", "label": "Hurdles between laboratory and factory" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0014-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the different types of silk a spider makes." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes strength and stretch." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q003", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes inserting silk genes into other organisms." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes medical and protective uses." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the difficulty of commercial production." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0014-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q006", "statement": "A single species of spider can make several different types of silk.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says up to seven types." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q007", "statement": "Spider silk is stronger than steel in every respect.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says only that some silks are stronger weight for weight." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q008", "statement": "Spiders can easily be farmed in large numbers.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says attempts have not succeeded." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q009", "statement": "Artificial spider-silk fibres are cheaper to make than nylon.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says costs are high but does not compare them with nylon." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0014-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0014-q010", "prompt": "A single spider species can spin up to ______ different types of silk.", "accept": ["seven", "7"], "evidence": { "explanation": "Paragraph A gives seven." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q011", "prompt": "The silk a spider hangs from is called ______ silk.", "accept": ["dragline"], "evidence": { "explanation": "Paragraph A names dragline silk." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q012", "prompt": "Silk proteins have been produced by bacteria, yeast and ______.", "accept": ["silkworms"], "evidence": { "explanation": "Paragraph D names silkworms." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q013", "prompt": "Spiders kept together tend to attack ______.", "accept": ["one another", "each other"], "evidence": { "explanation": "Paragraph C says they attack one another." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0014-p2",
+    "title": "The Long History of the Postal Service",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "society", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Rulers have always needed to send orders and receive news. The Persian empire maintained a Royal Road of about 2,700 kilometres from Sardis to Susa, with relay stations at which mounted messengers passed on their dispatches, and the Greek historian Herodotus admired their speed. Rome later created the cursus publicus, a state courier service that used relays of horses and carriages along the empire's paved roads. Both systems were reserved for officials; ordinary people had to rely on travellers or friends.\n\nB. In medieval and early modern Europe, private messengers, merchants' couriers and, later, royal posts carried letters for those who could pay. Charges depended on the distance travelled and the number of sheets, and, in most systems, the recipient rather than the sender paid on delivery. This was expensive, and it encouraged evasion: people agreed on marks or codes on the outside of a letter so that recipients could read a message without accepting and paying for it.\n\nC. In 1837 the English teacher and reformer Rowland Hill argued that the real cost of carrying a letter was tiny compared with the cost of collecting payment from recipients. He proposed a low, uniform rate for letters of a given weight, wherever they were going, paid in advance by the sender. His scheme became law, and in May 1840 the Penny Black, the world's first adhesive postage stamp, went on sale.\n\nD. The effect was dramatic. The number of letters carried in Britain roughly doubled in the first year, from about 76 million to about 169 million, and continued to grow rapidly. Other countries followed the British example, and within a few decades the prepaid stamp had become standard around the world.\n\nE. Sending mail between countries remained a tangle of separate agreements, each with its own rates. In 1874, delegates from 22 countries meeting in Bern founded what became the Universal Postal Union, establishing the principle that member countries would treat one another's mail as a single territory for the purposes of delivery. The Union, which is now a United Nations agency, has almost every country as a member.\n\nF. In recent decades, the picture has changed again. The volume of letters has fallen in many countries as email and messaging have replaced written correspondence, while the rise of online shopping has increased the number of parcels. Postal services have had to adapt, reducing letter deliveries, expanding parcel handling and, in some places, offering banking or government services from their branches.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0014-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Relays and roads for rulers' messages" },
+            { "key": "ii", "label": "A costly system paid for by the recipient" },
+            { "key": "iii", "label": "A reformer's simple idea" },
+            { "key": "iv", "label": "Letters soar after the reform" },
+            { "key": "v", "label": "Agreeing rules across borders" },
+            { "key": "vi", "label": "From letters to parcels" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0014-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes Persian and Roman relay systems." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains that recipients paid and costs were high." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Rowland Hill's uniform prepaid rate." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the founding of the Universal Postal Union." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the shift from letters to parcels." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0014-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q019", "statement": "In most early postal systems, the recipient rather than the sender paid on delivery.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q020", "statement": "The Penny Black was the world's first adhesive postage stamp.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q021", "statement": "The Universal Postal Union was founded in London.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says it was founded in Bern." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q022", "statement": "Postal workers in Bern first proposed standard weights for letters.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says nothing about who proposed standard weights." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0014-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0014-q023", "prompt": "The Persian ______ Road ran from Sardis to Susa.", "accept": ["Royal"], "evidence": { "explanation": "Paragraph A names the Royal Road." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q024", "prompt": "The Roman state courier service was called the cursus ______.", "accept": ["publicus"], "evidence": { "explanation": "Paragraph A names the cursus publicus." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q025", "prompt": "The Penny Black went on sale in ______.", "accept": ["1840"], "evidence": { "explanation": "Paragraph C gives May 1840." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q026", "prompt": "The Universal Postal Union was founded in ______ in 1874.", "accept": ["Bern"], "evidence": { "explanation": "Paragraph E names Bern." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0014-p3",
+    "title": "The Changing Face of Volunteering",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Volunteering, giving time without pay to benefit others, takes many forms, from coaching a children's football team to helping in a hospital or clearing a river bank. Definitions differ between countries and organisations, which makes international comparisons difficult, but in some surveys roughly one in five adults reports volunteering regularly, and many more help informally, for example by looking after a neighbour.\n\nB. Volunteers often say that they gain as much as they give. Several large studies have found that people who volunteer report higher life satisfaction and better mental health than those who do not, and some have linked regular volunteering with lower rates of depression among older adults. Researchers are cautious, however, about interpreting these findings. It may be that people who are already healthy and well connected are more likely to volunteer in the first place, so it is not yet clear how far volunteering causes the benefits.\n\nC. The value to communities is considerable. Economists who try to put a price on volunteer hours, by estimating what it would cost to pay for the same work, come up with very large figures, often equivalent to a sizeable share of a country's output. Such estimates leave out the less easily counted benefits, such as the friendships formed and the sense of belonging that strong voluntary groups can foster.\n\nD. The way people volunteer is also changing. Many organisations report that fewer people are willing to commit to a regular weekly role, and more prefer short, one-off tasks such as a weekend litter pick. Technology has made possible online, or virtual, volunteering, in which people translate documents, moderate forums or teach skills from home, and some employers now give staff paid time to volunteer for local charities.\n\nE. Volunteering is not without critics. Some trade unions worry that charities and public services may use unpaid helpers to replace paid staff, particularly when budgets are cut. Others point out that those who have the most time and money to give are often the least in need themselves, so volunteering may fail to reach or benefit the most disadvantaged people, who face practical barriers to taking part.\n\nF. Organisations that want to widen participation have found several ways to lower those barriers. Flexible, short-term roles help people with irregular work patterns; covering volunteers' travel and other expenses removes a cost that can put off people on low incomes; and clear training and support make newcomers feel welcome. Many charities also stress that a role should be meaningful, since volunteers who feel their time is wasted rarely stay.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0014-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A widespread activity with many definitions" },
+            { "key": "ii", "label": "Links between giving time and feeling well" },
+            { "key": "iii", "label": "Estimating the value to society" },
+            { "key": "iv", "label": "New patterns of short-term and online help" },
+            { "key": "v", "label": "Concerns about fairness and job replacement" },
+            { "key": "vi", "label": "Removing the obstacles to taking part" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0014-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the variety of forms and definitions." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B discusses links with wellbeing." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes short-term and online volunteering." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E covers concerns about replacing paid staff and unequal access." } },
+            { "kind": "matching", "id": "generated-reading-academic-0014-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F lists ways to lower barriers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0014-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q032", "statement": "Volunteering is defined in the same way in every country.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says definitions differ between countries." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q033", "statement": "Researchers are certain that volunteering makes people happier.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it is not yet clear how far volunteering causes the benefits." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q034", "statement": "Some employers give staff paid time to volunteer.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q035", "statement": "Most volunteers now prefer long-term weekly commitments.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says fewer people are willing to commit to a regular weekly role." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0014-q036", "statement": "Volunteers in rural areas are more likely to be retired than those in cities.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare rural and urban volunteers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0014-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0014-q037", "prompt": "In some surveys, roughly one in ______ adults volunteers regularly.", "accept": ["five", "5"], "evidence": { "explanation": "Paragraph A gives one in five." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q038", "prompt": "Online volunteering is also called ______ volunteering.", "accept": ["virtual"], "evidence": { "explanation": "Paragraph D says online, or virtual, volunteering." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q039", "prompt": "Some trade unions worry that unpaid helpers may replace ______ staff.", "accept": ["paid"], "evidence": { "explanation": "Paragraph E states this." } },
+            { "kind": "completion", "id": "generated-reading-academic-0014-q040", "prompt": "Covering volunteers' travel and other ______ removes a cost that can put people off.", "accept": ["expenses"], "evidence": { "explanation": "Paragraph F mentions covering expenses." } }
+          ]
+        }
+      ]
+    }
   }
 ];
