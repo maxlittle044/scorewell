@@ -2284,5 +2284,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0216",
+    "title": "Part 1: Health and sleep",
+    "part": "part1",
+    "topic": "Health and sleep",
+    "tags": ["speaking", "part-1", "health-and-sleep"],
+    "data": {
+      "questions": [
+        "Do you usually get enough sleep?",
+        "What time do you normally go to bed?",
+        "Do you do anything to relax before you go to sleep?",
+        "Do you ever take naps during the day?",
+        "Do you think you have a healthy lifestyle?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0217",
+    "title": "Part 1: Public transport",
+    "part": "part1",
+    "topic": "Public transport",
+    "tags": ["speaking", "part-1", "public-transport"],
+    "data": {
+      "questions": [
+        "How do you usually get around your town or city?",
+        "Do you use public transport often?",
+        "What do you like or dislike about the buses or trains in your area?",
+        "Have you ever been late because of a transport problem?",
+        "Would you like to have your own car?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0218",
+    "title": "Part 1: Weekends and free time",
+    "part": "part1",
+    "topic": "Weekends and free time",
+    "tags": ["speaking", "part-1", "weekends-and-free-time"],
+    "data": {
+      "questions": [
+        "What do you usually do at weekends?",
+        "Do you prefer to relax or to be active in your free time?",
+        "Do you spend your free time alone or with other people?",
+        "Has the way you spend your free time changed since you were younger?",
+        "Do you think you have enough free time?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0219",
+    "title": "Part 1: Gifts and giving",
+    "part": "part1",
+    "topic": "Gifts and giving",
+    "tags": ["speaking", "part-1", "gifts-and-giving"],
+    "data": {
+      "questions": [
+        "Do you enjoy giving gifts to other people?",
+        "What is the best gift you have ever received?",
+        "Do you prefer to buy gifts or to make them?",
+        "On what occasions do people in your country give gifts?",
+        "Do you find it difficult to choose gifts for other people?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0220",
+    "title": "Part 1: Films and television",
+    "part": "part1",
+    "topic": "Films and television",
+    "tags": ["speaking", "part-1", "films-and-television"],
+    "data": {
+      "questions": [
+        "What kinds of films or television programmes do you like?",
+        "How often do you go to the cinema?",
+        "Do you prefer watching films at home or in a cinema?",
+        "Did you watch a lot of television when you were a child?",
+        "Do you like discussing films or programmes with your friends?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0216",
+    "title": "Part 2: Describe something you do to stay healthy",
+    "part": "part2",
+    "topic": "Health and sleep",
+    "tags": ["speaking", "part-2", "health-and-sleep"],
+    "data": {
+      "questions": ["Describe something you do to stay healthy"],
+      "cueCardPoints": [
+        "what you do",
+        "how often you do it",
+        "how you started doing it",
+        "and explain how it helps you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0217",
+    "title": "Part 2: Describe a journey by public transport that you remember",
+    "part": "part2",
+    "topic": "Public transport",
+    "tags": ["speaking", "part-2", "public-transport"],
+    "data": {
+      "questions": ["Describe a journey by public transport that you remember"],
+      "cueCardPoints": [
+        "where you went",
+        "how long the journey took",
+        "what happened during the journey",
+        "and explain why you remember it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0218",
+    "title": "Part 2: Describe a hobby you enjoy",
+    "part": "part2",
+    "topic": "Weekends and free time",
+    "tags": ["speaking", "part-2", "weekends-and-free-time"],
+    "data": {
+      "questions": ["Describe a hobby you enjoy"],
+      "cueCardPoints": [
+        "what the hobby is",
+        "how you started it",
+        "how much time you spend on it",
+        "and explain why you enjoy it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0219",
+    "title": "Part 2: Describe a gift you gave to someone",
+    "part": "part2",
+    "topic": "Gifts and giving",
+    "tags": ["speaking", "part-2", "gifts-and-giving"],
+    "data": {
+      "questions": ["Describe a gift you gave to someone"],
+      "cueCardPoints": [
+        "what the gift was",
+        "who you gave it to",
+        "why you chose it",
+        "and explain how the person reacted"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0220",
+    "title": "Part 2: Describe a film or television programme you enjoyed",
+    "part": "part2",
+    "topic": "Films and television",
+    "tags": ["speaking", "part-2", "films-and-television"],
+    "data": {
+      "questions": ["Describe a film or television programme you enjoyed"],
+      "cueCardPoints": [
+        "what it was",
+        "when and where you watched it",
+        "what it was about",
+        "and explain why you enjoyed it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0216",
+    "title": "Part 3: Health, sleep and lifestyle",
+    "part": "part3",
+    "topic": "Health and sleep",
+    "tags": ["speaking", "part-3", "health-and-sleep"],
+    "data": {
+      "questions": [
+        "Why do so many people today not get enough sleep?",
+        "Should employers allow flexible working hours to help staff get more rest?",
+        "How can governments encourage people to adopt healthier lifestyles?",
+        "Is staying healthy mainly a matter of personal responsibility?",
+        "How might technology change the way healthcare is delivered in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0217",
+    "title": "Part 3: Transport and the modern city",
+    "part": "part3",
+    "topic": "Public transport",
+    "tags": ["speaking", "part-3", "public-transport"],
+    "data": {
+      "questions": [
+        "Why do some people prefer private cars to public transport?",
+        "Should public transport be free for everyone?",
+        "How can cities encourage more people to use buses and trains?",
+        "What problems do big cities face because of traffic?",
+        "How do you think transport will change over the next fifty years?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0218",
+    "title": "Part 3: Leisure and work-life balance",
+    "part": "part3",
+    "topic": "Weekends and free time",
+    "tags": ["speaking", "part-3", "weekends-and-free-time"],
+    "data": {
+      "questions": [
+        "Why do people need hobbies and leisure activities?",
+        "Do people today have more or less free time than in the past?",
+        "Should employers be responsible for helping staff achieve a good work-life balance?",
+        "How has technology changed the way people spend their free time?",
+        "Are team activities better for people than solo hobbies?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0219",
+    "title": "Part 3: The meaning of gift-giving",
+    "part": "part3",
+    "topic": "Gifts and giving",
+    "tags": ["speaking", "part-3", "gifts-and-giving"],
+    "data": {
+      "questions": [
+        "Why do people exchange gifts on special occasions?",
+        "Do you think expensive gifts are more meaningful than cheap ones?",
+        "How has online shopping changed the way people choose and give gifts?",
+        "Should companies give gifts to their clients or customers?",
+        "Is it better to give someone an experience than a physical object?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0220",
+    "title": "Part 3: Films, television and society",
+    "part": "part3",
+    "topic": "Films and television",
+    "tags": ["speaking", "part-3", "films-and-television"],
+    "data": {
+      "questions": [
+        "Why are films from other countries popular around the world?",
+        "Does watching television have a positive or a negative effect on children?",
+        "How have streaming services changed the way people watch films and programmes?",
+        "Should governments fund their own national film industries?",
+        "Do you think films can influence the way people behave?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
