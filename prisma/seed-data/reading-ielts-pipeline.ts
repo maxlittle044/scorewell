@@ -8107,5 +8107,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0014-p1",
+    "title": "General Training Reading — Section 1: Riding School and Mobile Library Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nPINEWOOD RIDING SCHOOL\nLessons and Rules\n\nGroup lessons last one hour and are limited to six riders. Beginner lessons are on Saturdays at 9:00am, Improver lessons on Saturdays at 11:00am, and Adult lessons on Wednesdays at 6:00pm. A single lesson costs £28, or £100 for a block of four. Private lessons cost £45.\n\nAll riders must wear an approved hard hat, boots with a heel and long trousers. Hard hats can be hired for £3. Riders under the age of eight cannot be accepted, and the maximum rider weight is 90 kg. Lessons must be booked at least 48 hours in advance, and cancellations must be made 24 hours before the lesson, or the fee is lost. Tea is served in the café after lessons.\n\nTEXT 2\n\nHARTLEY MOBILE LIBRARY\nTimetable and Rules\n\nThe library van visits the following villages: Monday, Ashby Green, 10:00am to 12:00 noon; Tuesday, Low Fenn, 2:00pm to 4:00pm; Wednesday, Stoke Row, 10:00am to 12:00 noon; Thursday, Ashby Green, 2:00pm to 4:00pm; Friday, Marsh End, 10:00am to 12:00 noon.\n\nMembership is free. Members can borrow ten items at a time for three weeks, including audio books and large-print books, and can reserve titles from the main library. There are no late fees for members under 16. A home delivery service is available for people who cannot leave their homes, and the van has a wheelchair ramp.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0014-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q001", "statement": "Children under the age of eight cannot take riding lessons.", "answer": "TRUE", "evidence": { "explanation": "Riders under eight cannot be accepted." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q002", "statement": "Riders must buy a hard hat before their first lesson.", "answer": "FALSE", "evidence": { "explanation": "Hard hats can be hired for £3." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q003", "statement": "Group lessons are limited to six riders.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q004", "statement": "Riding lessons are cancelled in wet weather.", "answer": "NOT GIVEN", "evidence": { "explanation": "Weather is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q005", "statement": "The mobile library visits Ashby Green twice a week.", "answer": "TRUE", "evidence": { "explanation": "It visits on Monday and Thursday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q006", "statement": "Members under 16 are charged for late returns.", "answer": "FALSE", "evidence": { "explanation": "There are no late fees for members under 16." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0014-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0014-q007", "prompt": "Lessons must be booked at least ______ hours in advance.", "accept": ["48", "forty-eight"], "evidence": { "explanation": "Lessons must be booked 48 hours ahead." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q008", "prompt": "Hard hats can be hired for ______.", "accept": ["£3", "3 pounds"], "evidence": { "explanation": "Hire costs £3." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q009", "prompt": "Membership of the mobile library is ______.", "accept": ["free"], "evidence": { "explanation": "Membership is free." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q010", "prompt": "Members can borrow ______ items at a time.", "accept": ["ten", "10"], "evidence": { "explanation": "Members can borrow ten items." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0014-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0014-q011", "question": "How much does a block of four lessons cost?", "options": ["£90", "£100", "£112", "£120"], "correctIndex": 1, "evidence": { "explanation": "A block of four costs £100." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0014-q012", "question": "When does the Adult lesson take place?", "options": ["Saturday at 9:00am", "Saturday at 11:00am", "Wednesday at 6:00pm", "Friday at 6:00pm"], "correctIndex": 2, "evidence": { "explanation": "Adult lessons are on Wednesdays at 6:00pm." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0014-q013", "question": "On which day does the mobile library visit Marsh End?", "options": ["Monday", "Wednesday", "Thursday", "Friday"], "correctIndex": 3, "evidence": { "explanation": "Marsh End is visited on Friday." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0014-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Discounts and Benefits",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "FAIRWAY SUPERMARKETS\nStaff Handbook — Section 12: Discounts and Benefits\n\nStaff receive a 15% discount on groceries once they have completed their probation period, rising to 20% after two years' service. The discount may be used by the employee and one other member of their household. It does not apply to alcohol, tobacco or gift cards. Discount cards are issued by the HR department, and misuse may lead to disciplinary action.\n\nEmployees are automatically enrolled in the company pension scheme after three months. The company contributes 5% of salary if the employee contributes 3%.\n\nAn optional healthcare cash plan is available for £5 a month. Employees are entitled to a free eye test every two years, and a 24-hour confidential employee assistance helpline is available to all staff.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0014-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q014", "statement": "The 15% discount applies from an employee's first day of work.", "answer": "FALSE", "evidence": { "explanation": "It applies once the probation period is completed." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q015", "statement": "One other member of an employee's household may use the discount.", "answer": "TRUE", "evidence": { "explanation": "The discount may be used by the employee and one other household member." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q016", "statement": "Staff can use the discount to buy tobacco.", "answer": "FALSE", "evidence": { "explanation": "The discount does not apply to tobacco." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q017", "statement": "The company pays 5% of salary into the pension if the employee pays 3%.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q018", "statement": "Staff receive a free dental check-up every year.", "answer": "NOT GIVEN", "evidence": { "explanation": "Dental check-ups are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0014-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0014-q019", "prompt": "After two years' service, the discount rises to ______.", "accept": ["20%", "20 per cent"], "evidence": { "explanation": "The discount rises to 20%." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q020", "prompt": "Employees are automatically enrolled in the pension after ______ months.", "accept": ["three", "3"], "evidence": { "explanation": "Enrolment is after three months." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q021", "prompt": "The optional healthcare cash plan costs ______ a month.", "accept": ["£5", "5 pounds"], "evidence": { "explanation": "The plan costs £5 a month." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q022", "prompt": "Employees may have a free eye test every ______ years.", "accept": ["two", "2"], "evidence": { "explanation": "The entitlement is every two years." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q023", "prompt": "The employee assistance helpline is available ______ hours a day.", "accept": ["24", "twenty-four"], "evidence": { "explanation": "The helpline is 24-hour." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0014-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0014-q024", "question": "Who issues the discount cards?", "options": ["The store manager", "The HR department", "The cashier", "The union"], "correctIndex": 1, "evidence": { "explanation": "Cards are issued by the HR department." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0014-q025", "question": "What may happen if the discount is misused?", "options": ["Nothing", "Disciplinary action", "A fine of £10", "A pay rise"], "correctIndex": 1, "evidence": { "explanation": "Misuse may lead to disciplinary action." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0014-q026", "question": "Which of the following is excluded from the discount?", "options": ["Fruit and vegetables", "Bread", "Alcohol", "Dairy products"], "correctIndex": 2, "evidence": { "explanation": "The discount does not apply to alcohol." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0014-p3",
+    "title": "The Long Story of Chess",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "games", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Chess is one of the oldest games still played today, and it is also one of the most widespread. Its rules have changed over the centuries, but its central idea, a battle between two armies on a board of sixty-four squares, has remained the same. It has inspired books, films and endless debate about whether it is a game, an art or a science.\n\nB. Historians generally agree that chess developed in northern India around the sixth century AD, in a game called chaturanga, whose pieces represented the four divisions of an Indian army: infantry, cavalry, elephants and chariots. The game passed to Persia, where it was called shatranj and where the term \"checkmate\", from the Persian for \"the king is helpless\", is thought to have originated. After the Arab conquest of Persia, the game spread across the Islamic world.\n\nC. Chess reached Europe by about the tenth century, through Spain and Italy, and it quickly became popular among the nobility. In the early versions, the piece that is now the queen could move only one square diagonally, and the bishop only two. Around the end of the fifteenth century, the rules changed dramatically, giving the queen and bishop their present long-range moves, and speeding up the game. The new version became known in Italy as \"mad queen chess\".\n\nD. Organised competition developed in the nineteenth century, with the first international tournament held in London in 1851. The first official World Chess Championship match was played in 1886, and was won by Wilhelm Steinitz, who is regarded as the first world champion. Since then, the title has been held by a series of players from many countries, and some of their matches were closely followed by the public, especially during the Cold War.\n\nE. Chess has also been a testing ground for artificial intelligence. In 1997, an IBM computer called Deep Blue defeated the reigning world champion, Garry Kasparov, in a six-game match, a result that caused worldwide debate about the future of machines. Today, chess programs running on ordinary computers are far stronger than any human, and players use them to study and to analyse their games.\n\nF. Rather than killing interest in chess, computers may have helped it. Online platforms allow people to play against opponents from anywhere in the world, and the number of players rose sharply during the pandemic. Many schools include chess in their programmes, because teachers believe it builds concentration and patience, although research on whether these skills transfer to other subjects is mixed.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0014-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A game with a very long past" },
+            { "key": "ii", "label": "From Indian battlefield game to Persian pastime" },
+            { "key": "iii", "label": "Europeans make the queen powerful" },
+            { "key": "iv", "label": "Rivalry and the first world title" },
+            { "key": "v", "label": "Machines challenge champions" },
+            { "key": "vi", "label": "A new boom online and in classrooms" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0014-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces chess as one of the oldest games." } },
+            { "kind": "matching", "id": "generated-reading-general-0014-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the game's Indian and Persian origins." } },
+            { "kind": "matching", "id": "generated-reading-general-0014-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the rule change in Europe that empowered the queen." } },
+            { "kind": "matching", "id": "generated-reading-general-0014-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes computers challenging human champions." } },
+            { "kind": "matching", "id": "generated-reading-general-0014-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes online play and school chess." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0014-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q032", "statement": "Chess developed from a game that originated in India.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says it developed in northern India from chaturanga." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q033", "statement": "The queen has always been the most powerful piece on the board.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the queen could once move only one square diagonally." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q034", "statement": "The first official World Chess Championship match was played in 1886.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D gives 1886." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q035", "statement": "Garry Kasparov beat the computer Deep Blue in their 1997 match.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says Deep Blue defeated Kasparov." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0014-q036", "statement": "Chess is played by more people than football.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare chess with football." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0014-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0014-q037", "prompt": "Chess developed in northern India around the ______ century AD.", "accept": ["sixth", "6th"], "evidence": { "explanation": "Paragraph B says the sixth century." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q038", "prompt": "In Persia the game was called ______.", "accept": ["shatranj"], "evidence": { "explanation": "Paragraph B names shatranj." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q039", "prompt": "The first official world champion was Wilhelm ______.", "accept": ["Steinitz"], "evidence": { "explanation": "Paragraph D names Steinitz." } },
+            { "kind": "completion", "id": "generated-reading-general-0014-q040", "prompt": "In 1997 a computer called Deep ______ defeated the world champion.", "accept": ["Blue"], "evidence": { "explanation": "Paragraph E names Deep Blue." } }
+          ]
+        }
+      ]
+    }
   }
 ];
