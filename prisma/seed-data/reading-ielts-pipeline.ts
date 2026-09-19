@@ -5840,5 +5840,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0012-p1",
+    "title": "How Bridges Carry Their Loads",
+    "sourceTestSet": "Academic",
+    "topic": "Technology",
+    "tags": ["academic", "technology", "engineering", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Every bridge, however grand, has to solve the same problem: carrying weight across a gap and passing that weight safely into the ground. Engineers describe the forces involved in two basic ways. Compression squeezes a material, while tension pulls it apart. Stone and concrete resist compression well but crack easily under tension, whereas steel cable is extremely strong when pulled. Most bridge designs are, at heart, ways of arranging materials so that each is loaded in the way it handles best.\n\nB. The arch is the oldest solution. Roman builders shaped stone blocks so that the load of the roadway pressed them together, turning the weight into compression that flowed down the curve into the abutments at each end. In 1779, the first major bridge built of cast iron was completed over the River Severn in Shropshire, and its graceful arch demonstrated that a new material could be used with a traditional form.\n\nC. Longer gaps called for a different approach. In a suspension bridge, the deck hangs from vertical hangers attached to two main cables that are draped over tall towers and anchored firmly at both ends; the cables are in tension throughout. San Francisco's Golden Gate Bridge, which opened in 1937, has a main span of about 1,280 metres. The Akashi Kaikyō Bridge in Japan, completed in 1998, has a main span of 1,991 metres, among the longest in the world.\n\nD. Suspension bridges are light and flexible, and this has sometimes proved a weakness. The Tacoma Narrows Bridge in the United States opened in July 1940 and collapsed four months later. The wind on the day of its failure was only moderate, but it set the deck twisting in a self-reinforcing motion known as aerodynamic flutter. The disaster led engineers to test models of major bridges in wind tunnels before construction, a practice that has been standard ever since.\n\nE. For medium spans, many engineers prefer the cable-stayed design, in which cables run straight from the towers to the deck, without the need for massive anchorages at each end. This can make such bridges cheaper to build than suspension bridges of similar length. The Millau Viaduct in southern France, opened in 2004, carries a motorway across a deep valley on cable-stayed spans supported by slender piers.\n\nF. Today, attention is turning from building bridges to keeping them safe. Sensors embedded in decks and cables measure vibration, strain and corrosion continuously and can alert engineers to problems long before they become visible. New materials, including high-strength concrete and fibre-reinforced composites, promise longer lives and lower maintenance costs for structures that are expected to last a century or more.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0012-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Two basic forces that every bridge must manage" },
+            { "key": "ii", "label": "Hanging a deck from cables" },
+            { "key": "iii", "label": "A collapse that changed design practice" },
+            { "key": "iv", "label": "A cheaper alternative for medium spans" },
+            { "key": "v", "label": "Sensors and new materials extend the life of bridges" },
+            { "key": "vi", "label": "Stone and iron arches" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0012-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains compression and tension." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q002", "prompt": "Which heading best summarises paragraph C?", "answer": "ii", "evidence": { "explanation": "Paragraph C describes decks hanging from cables." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q003", "prompt": "Which heading best summarises paragraph D?", "answer": "iii", "evidence": { "explanation": "Paragraph D describes the Tacoma Narrows collapse and the wind-tunnel testing it prompted." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes cable-stayed bridges as cheaper for medium spans." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F covers sensors and new materials." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0012-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q006", "statement": "In a Roman arch bridge, the weight of the roadway is turned into compression in the stone.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says the load pressed the blocks together, turning the weight into compression." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q007", "statement": "The cast-iron bridge over the River Severn was completed in the nineteenth century.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B gives the year 1779." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q008", "statement": "The Tacoma Narrows Bridge collapsed in exceptionally violent winds.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the wind was only moderate." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q009", "statement": "Engineers now build more cable-stayed bridges than suspension bridges.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no comparison of how many of each type are built." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0012-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0012-q010", "prompt": "The cables of a suspension bridge are in ______ throughout.", "accept": ["tension"], "evidence": { "explanation": "Paragraph C says the cables are in tension throughout." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q011", "prompt": "The Golden Gate Bridge opened in ______.", "accept": ["1937"], "evidence": { "explanation": "Paragraph C gives 1937." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q012", "prompt": "The main span of the Akashi Kaikyō Bridge is ______ metres.", "accept": ["1,991", "1991"], "evidence": { "explanation": "Paragraph C gives 1,991 metres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q013", "prompt": "The Millau Viaduct opened in ______.", "accept": ["2004"], "evidence": { "explanation": "Paragraph E gives 2004." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0012-p2",
+    "title": "The Fading Voices: Endangered Languages",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "culture", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. There are commonly estimated to be about 7,000 languages in the world, but they are very unequally shared. A group of roughly two dozen languages, including Mandarin, Spanish, English and Hindi, is spoken by more than half of the world's population, while thousands of others have only a few thousand speakers each, and some have fewer than a hundred.\n\nB. Small languages seldom disappear because anyone bans them. More often, economic and social pressures push speakers towards a dominant language: jobs, schooling and media are all conducted in it, and parents come to believe that their children will do better if they learn it first. Once children stop learning the older language at home, the chain of transmission is broken, and the language is effectively doomed when its last fluent speaker dies. It is commonly claimed that one language falls silent roughly every two weeks.\n\nC. What is lost goes beyond words. Languages carry detailed knowledge of local plants, animals and weather, as well as songs, stories and histories that were never written down. They can also structure thought in unexpected ways. Speakers of Guugu Yimithirr, an Aboriginal language of northern Australia, do not say that a cup is to someone's left or right; instead, they use compass directions, so a speaker might ask a companion to move a cup to the north-west, and children learn to keep track of the compass from an early age.\n\nD. Linguists race to document such languages while there are still fluent speakers, making recordings, compiling dictionaries and writing grammars. The work is slow, and there are far too few specialists: for many endangered languages, only a short word list has ever been published. Digital archives now allow recordings to be stored and shared with speakers' communities.\n\nE. There are encouraging examples of revival. Hebrew, which had been used for centuries mainly in religious settings, was revived as an everyday language in the late nineteenth and twentieth centuries and is now spoken by millions. In New Zealand, \"language nests\", pre-schools in which young children are immersed in Māori by fluent elders, were first established in 1982 and have been credited with helping to arrest the decline of the language. Wales has seen a smaller but steady rise in the number of Welsh speakers, aided by the teaching of Welsh in schools.\n\nF. Technology can help, from smartphone keyboards for unwritten languages to apps that teach vocabulary. Yet many linguists caution that outside enthusiasm is not enough. Whether a language survives depends chiefly on whether its speakers wish to use it and pass it on, which is a matter of community choice and confidence rather than of software.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0012-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A few languages dominate while thousands are small" },
+            { "key": "ii", "label": "How pressure leads families to abandon a language" },
+            { "key": "iii", "label": "Knowledge that disappears with a language" },
+            { "key": "iv", "label": "Success stories in bringing languages back" },
+            { "key": "v", "label": "Technology and the importance of community choice" },
+            { "key": "vi", "label": "Recording languages before they fall silent" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0012-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A contrasts a few dominant languages with thousands of small ones." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains how social and economic pressure breaks the chain of transmission." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes knowledge and ways of thinking carried by languages." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E gives examples of revival." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F discusses technology and the role of community choice." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0012-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q019", "statement": "A small number of languages are spoken by more than half of the world's population.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says roughly two dozen languages are spoken by more than half of the population." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q020", "statement": "Speakers of Guugu Yimithirr describe positions using left and right.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they use compass directions instead." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q021", "statement": "Language revival programmes cost governments large sums of money.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not discuss the cost of revival programmes." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q022", "statement": "The number of Welsh speakers has risen steadily.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E describes a smaller but steady rise in Welsh speakers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0012-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0012-q023", "prompt": "It is commonly estimated that there are about ______ languages in the world.", "accept": ["7,000", "7000"], "evidence": { "explanation": "Paragraph A gives about 7,000." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q024", "prompt": "It is commonly claimed that one language falls silent roughly every ______.", "accept": ["two weeks"], "evidence": { "explanation": "Paragraph B gives roughly every two weeks." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q025", "prompt": "Guugu Yimithirr speakers use ______ directions instead of left and right.", "accept": ["compass"], "evidence": { "explanation": "Paragraph C says they use compass directions." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q026", "prompt": "Māori language nests were first established in New Zealand in ______.", "accept": ["1982"], "evidence": { "explanation": "Paragraph E gives 1982." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0012-p3",
+    "title": "Losing the Dark: The Problem of Light Pollution",
+    "sourceTestSet": "Academic",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For most of history, the night sky was the brightest thing in the darkness. The arrival of gas lighting in the streets of European cities in the early nineteenth century began to change that, and electric lamps accelerated the process. Light pollution is the name given to the unwanted by-product of this progress: artificial light that spills upwards and outwards, brightening the sky and intruding where it is not needed.\n\nB. The scale is now global. A widely publicised atlas of artificial night sky brightness, compiled from satellite data and thousands of ground measurements, concluded that more than 80 per cent of the world's people live under light-polluted skies, and that the proportion in the United States and Europe is far higher. About a third of humanity can no longer see the Milky Way. Satellite records also suggest that the total area lit at night has grown by roughly two per cent a year.\n\nC. Wildlife is often affected first. Hatchling sea turtles find the sea by moving towards the brightest horizon, and can be led inland by hotel and street lighting. Migrating birds are attracted to lit towers and may circle them until exhausted, and many insects gather round lamps and are eaten or die of exhaustion, disturbing the food chains that depend on them.\n\nD. Humans are not immune. Exposure to light in the evening, especially the blue-rich light produced by many screens and modern lamps, suppresses the body's production of melatonin, a hormone that helps regulate sleep. Researchers have linked bright light at night to disrupted sleep, and some studies point to wider health effects, although the evidence for these is still being assembled.\n\nE. It might be expected that the switch to light-emitting diodes, or LEDs, would help, since they use far less electricity than older lamps. In practice, the effect has been mixed. Many early LED streetlights emitted a harsh, blue-rich white light that scatters more in the atmosphere, and because the lamps are so cheap to run, cities and businesses have tended to install more of them. Economists call this the rebound effect: efficiency lowers the cost of a service and so encourages people to use more of it.\n\nF. Fortunately, solutions are well understood. Shielded fixtures direct light downwards where it is needed rather than into the sky; warmer-coloured lamps, dimming after midnight and motion sensors cut waste further. Some regions have set up dark-sky reserves, where lighting is strictly controlled, and several cities have adopted lighting plans that limit brightness and colour. Advocates argue that such measures usually save money as well as darkness.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0012-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Defining an unwanted by-product of city lighting" },
+            { "key": "ii", "label": "Figures showing how far the glow has spread" },
+            { "key": "iii", "label": "Harm to animals that navigate by natural light" },
+            { "key": "iv", "label": "Possible effects on human sleep" },
+            { "key": "v", "label": "Why cheaper, efficient lighting has not solved the problem" },
+            { "key": "vi", "label": "Practical measures to bring back the dark" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0012-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines light pollution and its origins." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B gives figures on how widely light pollution has spread." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D covers melatonin suppression and sleep." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E explains the rebound effect of cheap LED lighting." } },
+            { "kind": "matching", "id": "generated-reading-academic-0012-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F lists practical measures such as shielding and dimming." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0012-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q032", "statement": "Street lighting was already in use in European cities before the twentieth century.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says gas lighting arrived in the early nineteenth century." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q033", "statement": "More than half of the world's people live under light-polluted skies.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says more than 80 per cent do." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q034", "statement": "All LED streetlights produce a warm-coloured light.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says many early LED streetlights emitted a harsh, blue-rich white light." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q035", "statement": "Exposure to blue-rich light in the evening increases the body's production of melatonin.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says such light suppresses melatonin production." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0012-q036", "statement": "Dark-sky reserves have completely ended harm to wildlife within their boundaries.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not report the effect of reserves on wildlife." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0012-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0012-q037", "prompt": "The total area lit at night has grown by roughly ______ per cent a year.", "accept": ["two", "2"], "evidence": { "explanation": "Paragraph B gives roughly two per cent a year." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q038", "prompt": "More than ______ per cent of the world's people live under light-polluted skies.", "accept": ["80", "eighty"], "evidence": { "explanation": "Paragraph B gives more than 80 per cent." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q039", "prompt": "Economists call the tendency to use more of a cheaper service the ______ effect.", "accept": ["rebound"], "evidence": { "explanation": "Paragraph E names the rebound effect." } },
+            { "kind": "completion", "id": "generated-reading-academic-0012-q040", "prompt": "______ fixtures direct light downwards where it is needed.", "accept": ["shielded"], "evidence": { "explanation": "Paragraph F says shielded fixtures direct light downwards." } }
+          ]
+        }
+      ]
+    }
   }
 ];
