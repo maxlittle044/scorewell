@@ -8549,5 +8549,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0021-p1",
+    "title": "How the Hawaiian Islands Were Made",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "geology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The Hawaiian islands lie in the middle of the Pacific Ocean, more than 3,000 kilometres from the nearest continent, and yet they are the tips of one of the largest mountain chains on Earth. The chain stretches for thousands of kilometres across the sea floor, with the youngest islands at the south-east end and the oldest, worn down to small atolls and underwater peaks, at the north-west.\n\nB. The explanation lies in a hotspot, a plume of unusually hot rock rising from deep within the Earth. The hotspot itself stays roughly in one place, while the Pacific plate, on which the islands rest, drifts north-west at about the speed that fingernails grow. As the plate moves, each volcano is carried away from its source of magma and becomes extinct, and a new one forms above the hotspot, leaving a line of islands of increasing age.\n\nC. The Hawaiian volcanoes are shield volcanoes, built up from thousands of layers of fluid basalt lava that flows a long way before it cools. This gives them broad, gently sloping profiles, like a warrior's shield laid on the ground, unlike the steep cones of volcanoes such as Vesuvius. Mauna Loa, on the largest island, is the biggest active volcano on Earth by volume, and Kilauea is one of the most active.\n\nD. Measured from its base on the ocean floor, Mauna Kea rises more than 10,000 metres, taller than Mount Everest, though only about 4,200 metres of it stands above sea level. The weight of such huge volcanoes presses down on the ocean crust, so that the islands slowly sink under their own weight as well as being worn away by waves and rain.\n\nE. Because they are so isolated, the islands have been colonised by very few species, and those that arrived, as seeds carried by wind and birds or as spores, evolved into new forms. Roughly 90 per cent of native flowering plants and land birds are found nowhere else. The honeycreepers, a group of small birds, diversified from a single ancestor into dozens of species with beaks adapted to different foods.\n\nF. This uniqueness is fragile. Introduced rats, mosquitoes carrying avian malaria and invasive plants have driven many native species to extinction, and conservationists work hard to protect those that remain. Meanwhile, geological change continues: south-east of the largest island, a new volcano called Loihi is growing on the sea floor, and it may one day emerge as the next island in the chain, after tens of thousands of years.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0021-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A chain of islands in mid-ocean" },
+            { "key": "ii", "label": "A fixed source of magma beneath a moving plate" },
+            { "key": "iii", "label": "Gentle slopes built from runny lava" },
+            { "key": "iv", "label": "A mountain taller than Everest" },
+            { "key": "v", "label": "Isolated homes for unique species" },
+            { "key": "vi", "label": "Threats to life and a new island in the making" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0021-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the island chain." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains the hotspot and moving plate." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes shield volcanoes." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the unique species that evolved in isolation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes extinctions and the growth of Loihi." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0021-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q006", "statement": "The oldest islands in the chain are at its north-west end.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says the oldest islands are at the north-west." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q007", "statement": "Shield volcanoes have very steep slopes.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they have broad, gently sloping profiles." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q008", "statement": "Most native Hawaiian flowering plants and land birds are found nowhere else.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E says roughly 90 per cent are found nowhere else." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q009", "statement": "Hawaii receives more tourists than any other island group.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention tourism." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0021-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0021-q010", "prompt": "The islands formed as the Pacific plate drifted over a ______.", "accept": ["hotspot"], "evidence": { "explanation": "Paragraph B names the hotspot." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q011", "prompt": "The biggest active volcano on Earth by volume is Mauna ______.", "accept": ["Loa"], "evidence": { "explanation": "Paragraph C names Mauna Loa." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q012", "prompt": "Roughly ______ per cent of native flowering plants and land birds are found nowhere else.", "accept": ["90", "ninety"], "evidence": { "explanation": "Paragraph E gives roughly 90 per cent." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q013", "prompt": "A new volcano called ______ is growing on the sea floor.", "accept": ["Loihi"], "evidence": { "explanation": "Paragraph F names Loihi." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0021-p2",
+    "title": "The Making of the Marathon",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "sport", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The marathon takes its name from a legend. According to the story, after the Athenians defeated a Persian army at the Battle of Marathon in 490 BC, a messenger ran to Athens, about 40 kilometres away, to announce the victory, and collapsed and died after delivering the news. Modern historians doubt the details: the earliest writer to describe the battle, Herodotus, says only that a runner named Pheidippides ran to Sparta, a far longer distance, to ask for help before the battle.\n\nB. When the first modern Olympic Games were planned for Athens in 1896, a French organiser, Michel Bréal, suggested a long-distance race to commemorate the legend. The first Olympic marathon was run over about 40 kilometres from the village of Marathon to the stadium in Athens, and it was won by a Greek water carrier, Spyridon Louis, to the delight of the home crowd.\n\nC. The precise distance varied in the early years. At the 1908 Games in London, the course was set at 26 miles 385 yards, or 42.195 kilometres, so that the race could begin at Windsor Castle and end in front of the royal box in the stadium. This length was adopted as the official marathon distance in 1921, and it has been used ever since.\n\nD. Women were long excluded from the event. Officials argued that such a distance was too dangerous for women, and it was not until 1984 that a women's marathon was held at the Olympic Games. Before this, a few women had taken part unofficially, including Kathrine Switzer, who in 1967 entered the Boston Marathon under her initials and was physically challenged by an official when he realised that she was a woman.\n\nE. Once a race for elite athletes, the marathon has become a mass event. The Boston Marathon, first run in 1897, is the oldest annual marathon, and cities such as New York, London and Tokyo now organise races with tens of thousands of participants, many of whom run for charity. Many finishers take four hours or more to complete the course.\n\nF. At the top level, times have fallen steadily. The men's world record has fallen from about 2 hours 55 minutes in 1908 to below two hours and one minute today, helped by better training, nutrition and running shoes with springy soles. Scientists study running economy, the amount of oxygen used at a given speed, to understand why East African runners have been so successful, and they point to a combination of genetics, altitude training and culture.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0021-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A legend that may be partly invented" },
+            { "key": "ii", "label": "A race created for the first modern Games" },
+            { "key": "iii", "label": "Why the distance is 42.195 kilometres" },
+            { "key": "iv", "label": "Women fight for a place on the start line" },
+            { "key": "v", "label": "From elite event to mass participation" },
+            { "key": "vi", "label": "Records and running science" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0021-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the legend and historians' doubts." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the first Olympic marathon." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C explains the origin of the distance." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes mass-participation races." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F covers record times and running science." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0021-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q019", "statement": "The first Olympic marathon was held in 1896.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q020", "statement": "The marathon distance was fixed at 42.195 kilometres in 1896.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the distance was adopted officially in 1921." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q021", "statement": "The Boston Marathon was first run in 1897.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1897." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q022", "statement": "More women than men now run marathons.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not give participation by sex." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0021-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0021-q023", "prompt": "According to the legend, a messenger ran from Marathon to ______.", "accept": ["Athens"], "evidence": { "explanation": "Paragraph A names Athens." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q024", "prompt": "The 1908 race in London began at ______ Castle.", "accept": ["Windsor"], "evidence": { "explanation": "Paragraph C names Windsor Castle." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q025", "prompt": "The marathon distance became official in ______.", "accept": ["1921"], "evidence": { "explanation": "Paragraph C gives 1921." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q026", "prompt": "A women's marathon was first held at the Olympic Games in ______.", "accept": ["1984"], "evidence": { "explanation": "Paragraph D gives 1984." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0021-p3",
+    "title": "The Attention Economy",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. In 1971, the economist Herbert Simon observed that a wealth of information creates a poverty of attention, because information consumes the attention of its recipients. His words have become more relevant with every advance in technology. Today, people have access to more information than they could read in a thousand lifetimes, and the scarce resource is no longer information but the human capacity to notice it.\n\nB. This scarcity has given rise to what is sometimes called the attention economy. Many online services, such as search engines, social networks and video platforms, are free to use because they earn money from advertising. The more time users spend on a platform, the more advertisements they see, and so companies have strong financial reasons to design their products to hold attention for as long as possible.\n\nC. Designers use a range of techniques to do this. Endless scrolling removes the natural stopping points that once ended a session, autoplay starts the next video before the viewer decides, and notifications are timed to draw people back. Some former employees of technology companies have said publicly that such features borrow ideas from the psychology of gambling. Companies respond that these features simply make their products more convenient.\n\nD. What all this does to our ability to concentrate is disputed. Surveys report that people check their phones dozens of times a day, and many say they find it harder to focus than in the past. However, claims that human attention spans have shrunk to less than that of a goldfish have been shown to have no scientific basis, and researchers point out that people can still concentrate for hours on activities they enjoy. The problem may be less a loss of ability than a lack of protection from constant interruption.\n\nE. Interruption itself has costs. Although many people believe they are good at multitasking, experiments show that switching between tasks slows people down and increases errors, because the brain needs time to refocus each time, a delay known as the switching cost. Even brief distractions, such as glancing at a message, can disrupt complex thinking for some minutes.\n\nF. Responses are emerging at several levels. Individuals can turn off non-essential notifications, keep phones out of the bedroom and set limits on app use. Some schools have banned phones from classrooms, and some countries are considering restrictions. In the European Union, new laws introduced in 2022 require large online platforms to be more transparent about how their recommendation systems work, and campaigners are pressing for design standards that protect users.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0021-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A scarce resource in an age of abundant information" },
+            { "key": "ii", "label": "How free services make their money" },
+            { "key": "iii", "label": "Design features that keep users scrolling" },
+            { "key": "iv", "label": "Is our concentration really shrinking?" },
+            { "key": "v", "label": "The limits of doing several things at once" },
+            { "key": "vi", "label": "Steps taken by individuals and regulators" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0021-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A says attention is now the scarce resource." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains advertising-funded services." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D discusses whether attention spans have really shrunk." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the costs of multitasking." } },
+            { "kind": "matching", "id": "generated-reading-academic-0021-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes individual steps and new laws." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0021-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q032", "statement": "Many online services are free because advertisers pay for users' attention.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q033", "statement": "Researchers have conclusively shown that smartphones have shortened human attention spans.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the effect is disputed and the goldfish claim has no scientific basis." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q034", "statement": "Most people perform well when they switch quickly between tasks.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says switching slows people down and increases errors." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q035", "statement": "The European Union has introduced rules affecting large online platforms.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F describes new laws introduced in 2022." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0021-q036", "statement": "Children are more affected by constant interruption than adults.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare children and adults." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0021-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0021-q037", "prompt": "Herbert Simon observed that information consumes the ______ of its recipients.", "accept": ["attention"], "evidence": { "explanation": "Paragraph A gives attention." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q038", "prompt": "Many free online services earn money from ______.", "accept": ["advertising"], "evidence": { "explanation": "Paragraph B says advertising." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q039", "prompt": "The delay caused by switching between tasks is known as the ______ cost.", "accept": ["switching"], "evidence": { "explanation": "Paragraph E names the switching cost." } },
+            { "kind": "completion", "id": "generated-reading-academic-0021-q040", "prompt": "Individuals can limit distraction by turning off non-essential ______.", "accept": ["notifications"], "evidence": { "explanation": "Paragraph F recommends turning off non-essential notifications." } }
+          ]
+        }
+      ]
+    }
   }
 ];
