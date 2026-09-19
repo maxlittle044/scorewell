@@ -5398,5 +5398,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0005-p1",
+    "title": "General Training Reading — Section 1: Ferry Service and Language Class Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nHARBOURSIDE FERRY SERVICE\nTimetable and Fares\n\nFerries cross between Northpoint and Isle Cove every day of the year. The first departure from Northpoint is at 7:15am and the last is at 9:45pm. The crossing takes 25 minutes. From May to September, ferries depart every 45 minutes; during the rest of the year, the service runs hourly.\n\nA single adult fare is £6.50. Children aged 5 to 15 pay £3.25, and children under 5 travel free. An adult return ticket costs £11.70, which is a saving of 10% on two single fares. Bicycles are carried free of charge. Cars must be booked in advance and cost £24 each way.\n\nTickets may be bought at the kiosk in the Northpoint terminal, which accepts cash and cards, or on board, where card payment only is accepted.\n\nServices may be suspended when winds exceed force 8. Passengers who register a mobile number when booking will be notified by text message.\n\nTEXT 2\n\nEASTGATE COMMUNITY LANGUAGE CLASSES\nSpring Term\n\nClasses are offered in Spanish, Mandarin and Italian, held on Monday, Wednesday and Thursday evenings respectively, from 6:30pm to 8:00pm at Eastgate Library. The term lasts ten weeks and begins on 10 February.\n\nThe fee is £85 for the term, or £55 for students and over-65s. The course book, priced at £14, is not included, although it can be borrowed from the library free of charge for the whole term against a refundable £10 deposit.\n\nBeginners' groups are limited to 12 learners. Enrolment closes one week before the term begins, or earlier if a group is full.\n\nFees for missed classes cannot be refunded, but learners may attend a make-up session held on the first Saturday of each month. Learners who attend at least eight of the ten classes receive a certificate of attendance.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0005-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q001", "statement": "A child aged four can travel on the ferry without paying a fare.", "answer": "TRUE", "evidence": { "explanation": "Children under 5 travel free." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q002", "statement": "Passengers with bicycles pay half the adult fare.", "answer": "FALSE", "evidence": { "explanation": "Bicycles are carried free of charge." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q003", "statement": "Cars can be booked on the ferry on the day of travel at the terminal.", "answer": "FALSE", "evidence": { "explanation": "Cars must be booked in advance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q004", "statement": "The ferry crossing is usually smoother in summer than in winter.", "answer": "NOT GIVEN", "evidence": { "explanation": "The text says nothing about how smooth the crossing is in any season." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q005", "statement": "The Mandarin class is held on Wednesday evenings.", "answer": "TRUE", "evidence": { "explanation": "Spanish, Mandarin and Italian meet on Monday, Wednesday and Thursday respectively." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q006", "statement": "Fees for missed language classes can be refunded.", "answer": "FALSE", "evidence": { "explanation": "Fees for missed classes cannot be refunded." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0005-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0005-q007", "prompt": "The ferry crossing takes ______ minutes.", "accept": ["25", "twenty-five"], "evidence": { "explanation": "Text 1 states the crossing takes 25 minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q008", "prompt": "Outside May to September, the ferry service runs ______.", "accept": ["hourly", "every hour"], "evidence": { "explanation": "During the rest of the year the service runs hourly." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q009", "prompt": "The language term lasts ______ weeks.", "accept": ["ten", "10"], "evidence": { "explanation": "Text 2 states the term lasts ten weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q010", "prompt": "Learners must attend at least ______ classes to receive a certificate.", "accept": ["eight", "8"], "evidence": { "explanation": "Text 2 requires attendance at eight of the ten classes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0005-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0005-q011", "question": "How much does an adult return ticket cost?", "options": ["£11.70", "£12.50", "£13.00", "£6.50"], "correctIndex": 0, "evidence": { "explanation": "Text 1 gives the adult return fare as £11.70." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0005-q012", "question": "What is the concession fee for the language term?", "options": ["£45", "£55", "£65", "£85"], "correctIndex": 1, "evidence": { "explanation": "Students and over-65s pay £55." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0005-q013", "question": "When are make-up sessions held?", "options": ["Every Monday", "The first Saturday of each month", "The last Friday of each month", "During the final week of term"], "correctIndex": 1, "evidence": { "explanation": "Make-up sessions are held on the first Saturday of each month." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0005-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Fire Safety and Evacuation",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "TIDEMARK LOGISTICS\nStaff Handbook — Section 3: Fire Safety and Evacuation\n\nOn hearing the fire alarm, all employees must stop work immediately and leave the building by the nearest safe exit. Lifts must not be used under any circumstances; staff should use the stairwells.\n\nEach floor has two designated fire wardens, identifiable by high-visibility yellow vests, who check that offices, meeting rooms and toilets are clear before leaving. Wardens receive refresher training every twelve months.\n\nThe assembly point is the car park at the rear of the building, beside the recycling area. Staff must not return to the building until a warden or fire officer confirms that it is safe.\n\nVisitors must be signed in at reception, and the receptionist is responsible for bringing the visitor register to the assembly point so that all visitors can be accounted for.\n\nFire alarm tests take place every Wednesday at 10:30am and last about one minute. No evacuation is required during a test unless the alarm continues for more than two minutes.\n\nFire extinguishers should only be used by staff who have completed the relevant training, and only if the fire is small and the escape route is clear. In all other cases, staff should leave the building immediately.\n\nEmployees who need assistance to evacuate, for example because of a mobility impairment, should agree a personal evacuation plan with their manager and the HR department within the first two weeks of employment.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0005-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q014", "statement": "Employees may use the lift to evacuate if the stairwells are crowded.", "answer": "FALSE", "evidence": { "explanation": "Lifts must not be used under any circumstances." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q015", "statement": "Fire wardens receive refresher training every year.", "answer": "TRUE", "evidence": { "explanation": "Wardens receive refresher training every twelve months." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q016", "statement": "The assembly point is at the front of the building.", "answer": "FALSE", "evidence": { "explanation": "The assembly point is the car park at the rear of the building." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q017", "statement": "Fire alarm tests are held every Friday.", "answer": "FALSE", "evidence": { "explanation": "Tests take place every Wednesday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q018", "statement": "All staff receive training in the use of fire extinguishers.", "answer": "NOT GIVEN", "evidence": { "explanation": "The handbook only says extinguishers should be used by trained staff; it does not say all staff are trained." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0005-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0005-q019", "prompt": "Fire wardens wear high-visibility ______ vests.", "accept": ["yellow"], "evidence": { "explanation": "Wardens wear high-visibility yellow vests." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q020", "prompt": "The assembly point is the ______ at the rear of the building.", "accept": ["car park"], "evidence": { "explanation": "The assembly point is the car park at the rear." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q021", "prompt": "The ______ is responsible for bringing the visitor register to the assembly point.", "accept": ["receptionist"], "evidence": { "explanation": "The receptionist brings the visitor register." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q022", "prompt": "Fire alarm tests take place at ______ on Wednesdays.", "accept": ["10:30am", "10.30am", "10:30"], "evidence": { "explanation": "Tests take place every Wednesday at 10:30am." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q023", "prompt": "Personal evacuation plans should be agreed within the first ______ weeks of employment.", "accept": ["two", "2"], "evidence": { "explanation": "The handbook requires this within the first two weeks." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0005-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0005-q024", "question": "When may staff return to the building?", "options": ["When the alarm stops", "When a warden or fire officer confirms it is safe", "After ten minutes", "When their own manager says so"], "correctIndex": 1, "evidence": { "explanation": "Staff must not return until a warden or fire officer confirms it is safe." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0005-q025", "question": "Who should use fire extinguishers?", "options": ["Any employee nearby", "Only trained staff", "Only visitors", "Only the receptionist"], "correctIndex": 1, "evidence": { "explanation": "Extinguishers should only be used by staff who have completed the relevant training." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0005-q026", "question": "How long does a routine alarm test last?", "options": ["About 30 seconds", "About one minute", "About five minutes", "About ten minutes"], "correctIndex": 1, "evidence": { "explanation": "Tests last about one minute." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0005-p3",
+    "title": "The Long Road to the Modern Bicycle",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few machines are as familiar, or as easy to take for granted, as the bicycle. Yet the form now seen on roads worldwide, with two wheels of equal size, a chain-driven rear wheel and air-filled tyres, took around seventy years and a string of awkward experiments to arrive at. Along the way, the bicycle passed through several designs that would strike a modern rider as impractical, or even alarming.\n\nB. The story is usually traced to 1817, when the German inventor Karl von Drais unveiled a wooden two-wheeled \"running machine\". It had no pedals: the rider sat astride the frame and pushed along the ground with their feet, steering with a handlebar attached to the front wheel. It is often suggested that a shortage of horses, following a run of poor harvests that killed or forced the sale of many animals, encouraged interest in alternatives. The machine was briefly fashionable among wealthy young men, but the craze faded within a few years, and some towns banned riders from pavements after complaints from pedestrians.\n\nC. The next major step came in the 1860s, when cranks and pedals were fitted directly to the front wheel of a similar frame, most famously in workshops in Paris. These pedalled machines had rigid iron-rimmed wheels and no suspension, and riders soon nicknamed them \"boneshakers\" for the punishing effect of cobbled streets. In the following decade, makers enlarged the front wheel further because each turn of the pedals then carried the rider a greater distance. The resulting high-wheelers were exhilarating but hazardous: sitting so high above the ground, riders could be thrown forward over the handlebars by a stone or a sudden stop, and the design appealed mainly to young, athletic and affluent men.\n\nD. Two developments in the 1880s finally made cycling accessible to a wider public. In 1885, the English engineer John Kemp Starley introduced the \"safety bicycle\", in which a chain transmitted power from the pedals to the rear wheel, allowing both wheels to be of similar, modest size and placing the rider low and close to the ground. Three years later, the Scottish veterinary surgeon John Boyd Dunlop developed the pneumatic tyre, initially to give his young son a more comfortable ride on a tricycle. The air-filled tyre absorbed the shocks that had made earlier machines so punishing, and in combination with the safety design it created a bicycle that most people could ride comfortably and with confidence.\n\nE. The result was a boom in the 1890s whose effects reached well beyond sport. Bicycles gave many women a new degree of independence, since a woman could now travel unaccompanied and at her own pace; the practical demands of riding also encouraged a shift towards more sensible clothing. Cycling clubs sprang up in towns and cities, and their members campaigned for smoother road surfaces at a time when most roads outside towns were poorly maintained. Historians note the irony that these campaigns paved the way, quite literally, for the motorists who would later displace cyclists.\n\nF. Through the middle of the twentieth century, cars pushed bicycles to the margins of transport policy in many wealthy countries. In recent decades, however, that has begun to change. Concerns about congestion, air quality and public health have led a number of cities to build protected cycle lanes, introduce bicycle-hire schemes and reallocate road space away from cars. The arrival of electric-assist bicycles has extended cycling to longer commutes and steeper terrain, suggesting that a machine invented two centuries ago still has a place in the transport systems of the future.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0005-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A familiar machine with a surprisingly slow development" },
+            { "key": "ii", "label": "An early machine born of a shortage" },
+            { "key": "iii", "label": "Changes that finally made cycling comfortable and safe" },
+            { "key": "iv", "label": "Social change on two wheels" },
+            { "key": "v", "label": "The return of the bicycle to city planning" },
+            { "key": "vi", "label": "Uncomfortable rides on iron-rimmed wheels" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0005-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the bicycle and the long, awkward road to its modern form." } },
+            { "kind": "matching", "id": "generated-reading-general-0005-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Drais's machine and the horse shortage that may have prompted it." } },
+            { "kind": "matching", "id": "generated-reading-general-0005-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iii", "evidence": { "explanation": "Paragraph D covers the safety bicycle and pneumatic tyre that made riding comfortable and safe." } },
+            { "kind": "matching", "id": "generated-reading-general-0005-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes women's independence, clothing change and road campaigns." } },
+            { "kind": "matching", "id": "generated-reading-general-0005-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "v", "evidence": { "explanation": "Paragraph F describes cycle lanes, hire schemes and reallocated road space." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0005-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q032", "statement": "Karl von Drais's first machine had no pedals.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states it had no pedals and was pushed along with the feet." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q033", "statement": "Drais's machine stayed popular with all social classes for many decades.", "answer": "FALSE", "evidence": { "explanation": "It was briefly fashionable among wealthy young men and the craze faded within a few years." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q034", "statement": "High-wheelers were considered safer than earlier machines.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C calls them hazardous, with riders thrown over the handlebars." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q035", "statement": "The safety bicycle was cheaper to buy than a high-wheeler.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare the prices of the two designs." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0005-q036", "statement": "Cyclists' campaigns for better roads later benefited motorists.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E says these campaigns paved the way for the motorists who later displaced cyclists." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0005-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0005-q037", "prompt": "Karl von Drais unveiled his running machine in ______.", "accept": ["1817"], "evidence": { "explanation": "Paragraph B gives the year 1817." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q038", "prompt": "Early pedalled bicycles with iron-rimmed wheels were nicknamed ______.", "accept": ["boneshakers"], "evidence": { "explanation": "Paragraph C says riders nicknamed them boneshakers." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q039", "prompt": "In the safety bicycle, a ______ transmitted power to the rear wheel.", "accept": ["chain"], "evidence": { "explanation": "Paragraph D says a chain transmitted power to the rear wheel." } },
+            { "kind": "completion", "id": "generated-reading-general-0005-q040", "prompt": "The pneumatic tyre was developed by John Boyd ______ in 1888.", "accept": ["Dunlop"], "evidence": { "explanation": "Paragraph D names John Boyd Dunlop, three years after 1885." } }
+          ]
+        }
+      ]
+    }
   }
 ];
