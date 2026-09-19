@@ -8248,5 +8248,165 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-academic-0020-p1",
+    "title": "How Memory Works",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "psychology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Memory is not a single system but several. Psychologists distinguish short-term memory, which holds a small amount of information for a few seconds, from long-term memory, which can store information for years. Within long-term memory, they separate memory for facts and events from memory for skills such as riding a bicycle. In 1956, the psychologist George Miller suggested that short-term memory can hold about seven items at once, a figure that later research has qualified but not overturned.\n\nB. The pioneer of experimental memory research was the German psychologist Hermann Ebbinghaus, who spent years testing himself on lists of meaningless syllables so that prior knowledge would not affect the results. In 1885 he published the forgetting curve, which shows that most of what we learn is forgotten rapidly at first, and then more slowly. His work showed that review at increasing intervals slows forgetting.\n\nC. Much of what is known about the brain's role in memory comes from a single patient. In 1953, a man known as H.M. had parts of his brain, including the hippocampus, removed to treat severe epilepsy. Afterwards he could remember his childhood but was unable to form new memories of events, yet he could learn new physical skills without knowing that he had practised them. His case showed that different kinds of memory depend on different brain structures.\n\nD. Sleep plays an important part in memory. During sleep, the brain replays patterns of activity recorded during the day, and this seems to strengthen the connections that support new memories, a process called consolidation. Studies show that people who sleep after learning perform better on later tests than people who stay awake for the same period, and that a short nap can also help.\n\nE. Remembering is not like playing back a recording. Each time a memory is recalled, it is partly rebuilt from stored fragments and may be altered by what has happened since. The psychologist Elizabeth Loftus has shown in a long series of experiments that the wording of a question can change eyewitness memories: witnesses who were asked how fast cars were going when they \"smashed\" into each other gave higher speeds than those asked about cars that \"hit\" each other.\n\nF. Research suggests some practical strategies for learners. Spacing study sessions over days is more effective than cramming, and testing oneself, known as retrieval practice, produces better recall than rereading notes. Explaining material in one's own words and linking it to what one already knows also help. Many students, however, continue to prefer rereading, because it feels easier.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0020-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Different systems for different kinds of remembering" },
+            { "key": "ii", "label": "How quickly new information fades" },
+            { "key": "iii", "label": "A famous patient who changed the field" },
+            { "key": "iv", "label": "Consolidation during sleep" },
+            { "key": "v", "label": "Memories that are rebuilt, not replayed" },
+            { "key": "vi", "label": "Study methods that work" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0020-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A distinguishes several memory systems." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the forgetting curve." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q003", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes consolidation during sleep." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E explains that memories are reconstructed." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F lists effective study strategies." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0020-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q006", "statement": "Short-term memory can hold an unlimited number of items.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says it holds about seven items." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q007", "statement": "Ebbinghaus published his forgetting curve in 1885.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B gives 1885." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q008", "statement": "Sleep after learning helps to strengthen new memories.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D describes consolidation during sleep." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q009", "statement": "Eating breakfast improves memory.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention food." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0020-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0020-q010", "prompt": "Miller suggested that short-term memory holds about ______ items.", "accept": ["seven", "7"], "evidence": { "explanation": "Paragraph A says about seven items." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q011", "prompt": "Ebbinghaus tested himself on lists of meaningless ______.", "accept": ["syllables"], "evidence": { "explanation": "Paragraph B names meaningless syllables." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q012", "prompt": "Testing oneself is known as ______ practice.", "accept": ["retrieval"], "evidence": { "explanation": "Paragraph F names retrieval practice." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q013", "prompt": "Loftus showed that the wording of a question can change ______ memories.", "accept": ["eyewitness"], "evidence": { "explanation": "Paragraph E mentions eyewitness memories." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0020-p2",
+    "title": "The Story of the Suez Canal",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "engineering", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The idea of a waterway linking the Mediterranean and the Red Sea is very old. Ancient Egyptian rulers dug a canal connecting the Nile to the Red Sea, and later rulers repeated the effort, but none of these routes was a direct sea passage. By the nineteenth century, growing steamship traffic between Europe and Asia made a direct link an obvious goal, since ships had to sail around Africa.\n\nB. The French diplomat Ferdinand de Lesseps obtained permission from the Egyptian ruler in 1854 and formed a company to build the canal. Construction began in 1859 and took ten years. At first, thousands of Egyptian labourers were forced to dig by hand, in harsh conditions; later, mechanical dredgers did most of the work. The canal is about 163 kilometres long and passes through desert and shallow lakes.\n\nC. The canal opened in November 1869 in a lavish ceremony attended by European royalty. It shortened the journey from London to India by about a third, and it transformed trade between Europe and Asia, making steamships more competitive than sailing ships, which found the winds in the Red Sea difficult.\n\nD. Britain, which had at first opposed the canal, became its most important user. In 1875, the British prime minister, Benjamin Disraeli, bought the Egyptian ruler's shares in the canal company, giving Britain a large stake, and after 1882, British forces occupied Egypt and guarded the canal for decades.\n\nE. In 1956, the Egyptian president Gamal Abdel Nasser nationalised the canal company, and Britain, France and Israel responded by invading. The invasion was condemned internationally and the forces withdrew, a turning point that showed the decline of British and French power. The canal was later closed for eight years after the 1967 war, with ships trapped in its lakes until 1975.\n\nF. Today, roughly twelve per cent of world trade passes through the canal, and it has been widened and deepened several times. Its importance was demonstrated in 2021, when a giant container ship ran aground and blocked the waterway for about six days, delaying hundreds of ships and disrupting supply chains around the world.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0020-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An old dream of linking two seas" },
+            { "key": "ii", "label": "A decade of digging" },
+            { "key": "iii", "label": "An opening ceremony and a shorter route" },
+            { "key": "iv", "label": "Britain takes a stake" },
+            { "key": "v", "label": "Nationalisation and crisis" },
+            { "key": "vi", "label": "A vital route that can be blocked" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0020-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the age-old idea of a link." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes ten years of construction." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the opening and the shorter journey." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes nationalisation and the resulting crisis." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the canal's importance and the 2021 blockage." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0020-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q019", "statement": "The canal was completed in the 1860s.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C says it opened in November 1869." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q020", "statement": "The canal is about 1,000 kilometres long.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says about 163 kilometres." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q021", "statement": "Britain bought the Egyptian ruler's shares in the canal company in 1875.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q022", "statement": "The canal has generated more revenue for Egypt than any other industry.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not discuss revenue." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0020-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0020-q023", "prompt": "The canal opened in ______.", "accept": ["1869"], "evidence": { "explanation": "Paragraph C gives November 1869." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q024", "prompt": "The canal is about ______ kilometres long.", "accept": ["163"], "evidence": { "explanation": "Paragraph B gives about 163 kilometres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q025", "prompt": "In 1956 the Egyptian president ______ nationalised the canal company.", "accept": ["Nasser", "Gamal Abdel Nasser"], "evidence": { "explanation": "Paragraph E names Nasser." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q026", "prompt": "In 2021 a container ship blocked the canal for about ______ days.", "accept": ["six", "6"], "evidence": { "explanation": "Paragraph F says about six days." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0020-p3",
+    "title": "Why We Laugh",
+    "sourceTestSet": "Academic",
+    "topic": "Society",
+    "tags": ["academic", "society", "psychology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Laughter is found in every human culture, and babies start to laugh at around four months of age, long before they can speak. Unlike many other behaviours, it is largely involuntary: people rarely decide to laugh, and it is difficult to fake convincingly. This has led scientists to think that laughter is an ancient signal that evolved before language.\n\nB. Humans are not the only animals that laugh. Chimpanzees and other apes make breathy panting sounds when they play or are tickled, and the neuroscientist Jaak Panksepp discovered that young rats emit high-pitched chirps when they are tickled, and seek out more tickling. These findings suggest that laughter began as a signal of play, telling others that rough-and-tumble is not a real fight.\n\nC. In humans, laughter is above all a social behaviour. The psychologist Robert Provine, who recorded people's conversations, found that people are far more likely to laugh when they are with others than when they are alone, and that most laughter follows ordinary remarks rather than jokes. Laughter is also contagious: hearing others laugh makes people more likely to join in, which helps to bond groups.\n\nD. Philosophers and psychologists have long argued about what makes something funny. The superiority theory, favoured by ancient thinkers, suggests that we laugh at others' misfortunes because it makes us feel better than they are. The relief theory holds that laughter releases nervous tension. The most popular modern explanation, the incongruity theory, says that we laugh when something violates our expectations in a harmless way, as in a joke's punchline. No single theory explains all humour.\n\nE. Laughing seems to be good for us. It temporarily lowers levels of stress hormones, increases heart rate and may raise tolerance for pain. Some popular claims go further and suggest that laughter can cure illness, but scientists say that the evidence for long-term health benefits is limited, and that people who laugh a lot may simply be those who have healthier social lives.\n\nF. What people find funny varies between cultures. Wordplay depends on a particular language, and jokes that rely on familiar customs or celebrities may make no sense to outsiders. Some kinds of humour, such as slapstick, travel well, which is why silent comedy films were popular across the world. Businesses that operate internationally are wise to be cautious about using humour in advertising, since it can cause offence as easily as pleasure.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0020-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A universal human behaviour" },
+            { "key": "ii", "label": "Evidence from other animals" },
+            { "key": "iii", "label": "Laughter as social glue" },
+            { "key": "iv", "label": "Competing explanations of what is funny" },
+            { "key": "v", "label": "Effects on stress and health" },
+            { "key": "vi", "label": "Jokes that do not travel" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0020-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A says laughter is found in every culture." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes laughter in apes and rats." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes competing theories." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E discusses stress and health effects." } },
+            { "kind": "matching", "id": "generated-reading-academic-0020-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes cultural differences in humour." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0020-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q032", "statement": "Babies begin to laugh before they can speak.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says babies laugh at around four months." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q033", "statement": "Humans are the only animals known to laugh.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B describes laughter in apes and rats." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q034", "statement": "The incongruity theory says we laugh when something violates our expectations in a harmless way.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q035", "statement": "Laughter has been proven to cure serious illness.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says the evidence for long-term benefits is limited." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0020-q036", "statement": "Men laugh more often than women.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare men and women." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0020-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0020-q037", "prompt": "Babies start to laugh at around ______ months of age.", "accept": ["four", "4"], "evidence": { "explanation": "Paragraph A gives around four months." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q038", "prompt": "Young rats emit high-pitched chirps when they are ______.", "accept": ["tickled"], "evidence": { "explanation": "Paragraph B says when they are tickled." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q039", "prompt": "The ______ theory says that we laugh to feel better than others.", "accept": ["superiority"], "evidence": { "explanation": "Paragraph D names the superiority theory." } },
+            { "kind": "completion", "id": "generated-reading-academic-0020-q040", "prompt": "Jokes that rely on familiar customs may make no sense to ______.", "accept": ["outsiders"], "evidence": { "explanation": "Paragraph F says such jokes may make no sense to outsiders." } }
+          ]
+        }
+      ]
+    }
   }
 ];
