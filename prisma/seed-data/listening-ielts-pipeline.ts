@@ -5720,5 +5720,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0022-s1",
+    "title": "Holiday Apartment Enquiry – Listening Section 1",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "form-completion"],
+    "data": {
+      "audioLabel": "Holiday Apartment Enquiry – Listening Section 1",
+      "transcript": "Agent: Good morning, Seaview Holiday Lettings. How can I help?\nCaller: Hello, I'd like to rent an apartment for a week in August.\nAgent: Certainly. Which dates were you thinking of?\nCaller: Arriving on the fifth of August, staying for a week.\nAgent: We have a two-bedroom apartment free on those dates. It's near the harbour.\nCaller: That sounds ideal. How much is it?\nAgent: It's £520 for the week, and we ask for a refundable deposit of £100.\nCaller: Is bed linen included?\nAgent: Yes, bed linen and towels are included in the price.\nCaller: And what time can we check in?\nAgent: Check-in is from four o'clock in the afternoon.\nCaller: Are pets allowed?\nAgent: I'm afraid not, but children are very welcome.\nCaller: That's fine. Could I book it now? My surname is Bergstrom, that's B-E-R-G-S-T-R-O-M.\nAgent: Thank you. And a contact number?\nCaller: 07700 900539.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0022-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0022-q001", "prompt": "Surname: ______.", "accept": ["Bergstrom"], "evidence": { "explanation": "The caller spells B-E-R-G-S-T-R-O-M." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q002", "prompt": "Arrival date: the ______ of August.", "accept": ["fifth", "5th", "5"], "evidence": { "explanation": "The caller arrives on the fifth of August." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q003", "prompt": "Length of stay: one ______.", "accept": ["week"], "evidence": { "explanation": "The caller is staying for a week." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q004", "prompt": "Number of bedrooms: ______.", "accept": ["two", "2"], "evidence": { "explanation": "The apartment has two bedrooms." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q005", "prompt": "Location: near the ______.", "accept": ["harbour", "harbor"], "evidence": { "explanation": "The apartment is near the harbour." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q006", "prompt": "Price for the week: £______.", "accept": ["520"], "evidence": { "explanation": "The price is £520." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q007", "prompt": "Refundable deposit: £______.", "accept": ["100"], "evidence": { "explanation": "The deposit is £100." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q008", "prompt": "Included in the price: bed ______ and towels.", "accept": ["linen"], "evidence": { "explanation": "Bed linen and towels are included." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q009", "prompt": "Check-in time: from ______ o'clock.", "accept": ["four", "4"], "evidence": { "explanation": "Check-in is from four o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q010", "prompt": "Contact number: ______.", "accept": ["07700 900539"], "evidence": { "explanation": "The caller gives 07700 900539." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0022-s2",
+    "title": "Roman Fort Exhibition Introduction – Listening Section 2",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Roman Fort Exhibition Introduction – Listening Section 2",
+      "transcript": "Welcome to the Roman Fort exhibition. I'll tell you what you'll see and how to make the most of your visit.\n\nThe fort was built in the year 122 AD and housed about five hundred soldiers. It was excavated in the 1980s, and many of the objects on display were found during that work.\n\nThe museum is open from Tuesday to Sunday. Entry costs £6 for adults, and children get in free at weekends. If you're visiting with children, there's a workshop every Saturday at eleven o'clock, where they can try on replica armour.\n\nAudio guides are available in three languages. The museum café is next to the shop, and it serves hot drinks and light lunches.\n\nOne request: please don't touch the original objects, which are displayed in glass cases, although you may handle the replicas in the activity area. Thank you, and enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0022-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0022-q011", "prompt": "The fort was built in AD ______.", "accept": ["122"], "evidence": { "explanation": "The speaker says 122 AD." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q012", "prompt": "The fort housed about ______ soldiers.", "accept": ["five hundred", "500"], "evidence": { "explanation": "The speaker says about five hundred." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q013", "prompt": "The fort was excavated in the ______.", "accept": ["1980s", "nineteen eighties"], "evidence": { "explanation": "The speaker says the 1980s." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q014", "prompt": "Adult entry costs £______.", "accept": ["6", "six"], "evidence": { "explanation": "The speaker says £6." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q015", "prompt": "The museum is open from ______ to Sunday.", "accept": ["Tuesday"], "evidence": { "explanation": "The museum is open Tuesday to Sunday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q016", "prompt": "The Saturday workshop starts at ______ o'clock.", "accept": ["eleven", "11"], "evidence": { "explanation": "The workshop is at eleven o'clock." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0022-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q017", "question": "What can children try on at the workshop?", "options": ["Replica armour", "Roman clothes", "Original helmets", "Costumes from films"], "correctIndex": 0, "evidence": { "explanation": "Children can try on replica armour." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q018", "question": "In how many languages are audio guides available?", "options": ["Two", "Three", "Four", "Five"], "correctIndex": 1, "evidence": { "explanation": "Audio guides are in three languages." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q019", "question": "Where is the museum café?", "options": ["Next to the shop", "Beside the fort", "Upstairs", "In the car park"], "correctIndex": 0, "evidence": { "explanation": "The café is next to the shop." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q020", "question": "What are visitors asked not to do?", "options": ["Take photographs", "Touch the original objects", "Bring children", "Use the audio guides"], "correctIndex": 1, "evidence": { "explanation": "Visitors are asked not to touch the original objects." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0022-s3",
+    "title": "Choosing a Research Method – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Choosing a Research Method – Listening Section 3",
+      "transcript": "Dr Singh: Emma, let's talk about your research proposal. What's your topic?\nEmma: I'd like to study how commuters choose their means of transport.\nDr Singh: Interesting. How many people do you plan to include?\nEmma: I'm aiming for a hundred commuters.\nDr Singh: And how will you collect the data?\nEmma: I was thinking of a questionnaire. It's cheaper, and it produces numbers I can analyse statistically.\nDr Singh: That's true. But you need to be careful about response rates. People often ignore questionnaires.\nEmma: Yes, that worries me. What would you suggest?\nDr Singh: Offer a small incentive, such as a chance to win a voucher. Also consider interviews. They give much more detailed personal opinions, though they take more time.\nEmma: Perhaps I could use both methods: a questionnaire for everyone, and interviews with a few people.\nDr Singh: That would be a good design. Remember, either method involving people needs ethical approval.\nEmma: And when do I need to submit the proposal?\nDr Singh: By Friday.\nEmma: Right, I'll get started.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0022-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q021", "question": "What is the topic of Emma's research?", "options": ["How commuters choose transport", "How students spend money", "How people use libraries", "How workers use computers"], "correctIndex": 0, "evidence": { "explanation": "Emma says she will study how commuters choose their means of transport." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q022", "question": "How many participants does Emma plan to include?", "options": ["50", "100", "150", "200"], "correctIndex": 1, "evidence": { "explanation": "Emma says a hundred commuters." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q023", "question": "What is Dr Singh's concern about questionnaires?", "options": ["They are expensive", "Response rates can be low", "They take too long to write", "They are unreliable"], "correctIndex": 1, "evidence": { "explanation": "Dr Singh warns about response rates." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q024", "question": "What does Dr Singh suggest to improve responses?", "options": ["Offer a small incentive", "Send more reminders", "Make the questionnaire shorter", "Use only interviews"], "correctIndex": 0, "evidence": { "explanation": "Dr Singh suggests a small incentive such as a voucher." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q025", "question": "What does Emma decide to do?", "options": ["Use only a questionnaire", "Use only interviews", "Use both methods", "Change her topic"], "correctIndex": 2, "evidence": { "explanation": "Emma suggests using both methods and Dr Singh agrees." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0022-q026", "question": "When must the proposal be submitted?", "options": ["Monday", "Wednesday", "Friday", "Next month"], "correctIndex": 2, "evidence": { "explanation": "Dr Singh says by Friday." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0022-s3-g2",
+          "instructions": "Which method does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Questionnaires" },
+            { "key": "B", "label": "Interviews" },
+            { "key": "C", "label": "Both methods" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0022-q027", "prompt": "Cheaper to carry out", "answer": "A", "evidence": { "explanation": "Emma says the questionnaire is cheaper." } },
+            { "kind": "matching", "id": "generated-listening-academic-0022-q028", "prompt": "Produces numbers that can be analysed statistically", "answer": "A", "evidence": { "explanation": "Emma says the questionnaire produces numbers to analyse statistically." } },
+            { "kind": "matching", "id": "generated-listening-academic-0022-q029", "prompt": "Gives detailed personal opinions", "answer": "B", "evidence": { "explanation": "Dr Singh says interviews give detailed personal opinions." } },
+            { "kind": "matching", "id": "generated-listening-academic-0022-q030", "prompt": "Needs ethical approval", "answer": "C", "evidence": { "explanation": "Dr Singh says either method involving people needs ethical approval." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0022-s4",
+    "title": "The History of Maps – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "geography", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Maps – Listening Section 4",
+      "transcript": "Today's lecture looks at how maps have developed over time.\n\nThe earliest known maps were made on clay tablets in ancient Babylon, and they show land boundaries and towns. In the second century AD, the Greek scholar Ptolemy wrote his Geography, which explained how to plot places using coordinates, and it influenced mapmakers for over a thousand years.\n\nIn the Middle Ages, many European maps, known as mappae mundi, were designed to express religious ideas rather than to help travellers, and they often placed Jerusalem at the centre of the world.\n\nA major advance came in 1569, when the Flemish geographer Gerardus Mercator published his projection. It preserves angles, so a straight line on the map is a line of constant compass direction, which made it invaluable for navigation. But it distorts size the further you go from the equator, so that Greenland appears as large as Africa, although Africa is about fourteen times bigger.\n\nToday, most maps are digital. One notable project, OpenStreetMap, started in 2004, and it is built by volunteers around the world who add roads, buildings and paths.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0022-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0022-q031", "prompt": "The earliest known maps were made on clay ______.", "accept": ["tablets"], "evidence": { "explanation": "The lecturer says clay tablets." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q032", "prompt": "The earliest maps were made in ancient ______.", "accept": ["Babylon"], "evidence": { "explanation": "The lecturer names ancient Babylon." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q033", "prompt": "Ptolemy wrote his Geography in the second ______ AD.", "accept": ["century"], "evidence": { "explanation": "The lecturer says the second century AD." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q034", "prompt": "Medieval maps often placed ______ at the centre of the world.", "accept": ["Jerusalem"], "evidence": { "explanation": "The lecturer says Jerusalem." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q035", "prompt": "Mercator published his projection in ______.", "accept": ["1569"], "evidence": { "explanation": "The lecturer gives 1569." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q036", "prompt": "The Mercator projection preserves ______.", "accept": ["angles"], "evidence": { "explanation": "The lecturer says it preserves angles." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q037", "prompt": "It distorts ______ away from the equator.", "accept": ["size"], "evidence": { "explanation": "The lecturer says it distorts size." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q038", "prompt": "On a Mercator map, Greenland appears as large as ______.", "accept": ["Africa"], "evidence": { "explanation": "The lecturer says Greenland appears as large as Africa." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q039", "prompt": "OpenStreetMap started in ______.", "accept": ["2004"], "evidence": { "explanation": "The lecturer gives 2004." } },
+            { "kind": "completion", "id": "generated-listening-academic-0022-q040", "prompt": "OpenStreetMap is built by ______ around the world.", "accept": ["volunteers"], "evidence": { "explanation": "The lecturer says it is built by volunteers." } }
+          ]
+        }
+      ]
+    }
   }
 ];
