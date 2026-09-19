@@ -4664,5 +4664,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0014-s1",
+    "title": "Dental Appointment Booking – Listening Section 1",
+    "topic": "Health",
+    "tags": ["academic", "health", "form-completion"],
+    "data": {
+      "audioLabel": "Dental Appointment Booking – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Kingsway Dental Practice.\nCaller: Hello, I'd like to book a check-up, please. I'm a new patient.\nReceptionist: Of course. We have an appointment on Wednesday at quarter to four in the afternoon.\nCaller: Wednesday is fine.\nReceptionist: That would be with Dr Osei. The fee for a check-up is £35.\nCaller: That's fine.\nReceptionist: As a new patient, could you arrive fifteen minutes early to fill in a registration form?\nCaller: Certainly. Do I need to bring anything?\nReceptionist: Yes, please bring your insurance card if you have one.\nCaller: Where exactly is the practice?\nReceptionist: We're at twelve Elm Road, right next to the library.\nCaller: Great. Could you take my details? My surname is Brannigan, that's B-R-A-N-N-I-G-A-N.\nReceptionist: Thank you. And a contact number?\nCaller: 07700 900552.\nReceptionist: Lovely. We'll see you on Wednesday.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0014-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0014-q001", "prompt": "Surname: ______.", "accept": ["Brannigan"], "evidence": { "explanation": "The caller spells B-R-A-N-N-I-G-A-N." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q002", "prompt": "Type of appointment: ______.", "accept": ["check-up", "checkup"], "evidence": { "explanation": "The caller asks for a check-up." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q003", "prompt": "Day of appointment: ______.", "accept": ["Wednesday"], "evidence": { "explanation": "The appointment is on Wednesday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q004", "prompt": "Time: quarter to ______ in the afternoon.", "accept": ["four", "4"], "evidence": { "explanation": "The receptionist says quarter to four." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q005", "prompt": "Dentist: Dr ______.", "accept": ["Osei"], "evidence": { "explanation": "The appointment is with Dr Osei." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q006", "prompt": "Fee: £______.", "accept": ["35"], "evidence": { "explanation": "The check-up fee is £35." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q007", "prompt": "New patients should arrive ______ minutes early.", "accept": ["fifteen", "15"], "evidence": { "explanation": "The receptionist asks for fifteen minutes early." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q008", "prompt": "Bring your ______ card.", "accept": ["insurance"], "evidence": { "explanation": "The receptionist asks for the insurance card." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q009", "prompt": "Address: 12 ______ Road.", "accept": ["Elm"], "evidence": { "explanation": "The practice is at twelve Elm Road." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q010", "prompt": "Contact number: ______.", "accept": ["07700 900552"], "evidence": { "explanation": "The caller gives 07700 900552." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0014-s2",
+    "title": "Museum Exhibition Guide – Listening Section 2",
+    "topic": "Culture",
+    "tags": ["academic", "culture", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Museum Exhibition Guide – Listening Section 2",
+      "transcript": "Welcome to the museum, everyone. I'd like to tell you about our latest exhibition, Future Cities.\n\nThe exhibition opened in June and is on the second floor. It is open daily from ten in the morning until five in the afternoon. There is an interactive zone where children can build their own city from magnetic blocks.\n\nAudio guides are available in five languages and can be collected at the information desk. If you prefer a live guide, tours run at noon and at two o'clock, and each tour lasts forty-five minutes.\n\nA few practical points. Photography is welcome, but please do not use flash, as it can damage some of the delicate exhibits. There is a cloakroom near the entrance, which costs one pound per item. Finally, the gift shop is near the exit, so you can browse on your way out.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0014-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0014-q011", "prompt": "The exhibition is called Future ______.", "accept": ["Cities"], "evidence": { "explanation": "The speaker names the exhibition Future Cities." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q012", "prompt": "The exhibition opened in ______.", "accept": ["June"], "evidence": { "explanation": "The speaker says it opened in June." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q013", "prompt": "It is on the ______ floor.", "accept": ["second", "2nd"], "evidence": { "explanation": "The speaker says the second floor." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q014", "prompt": "It is open daily from 10am until ______.", "accept": ["five", "5", "5pm"], "evidence": { "explanation": "The speaker says until five in the afternoon." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q015", "prompt": "Audio guides are available in ______ languages.", "accept": ["five", "5"], "evidence": { "explanation": "The speaker says five languages." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q016", "prompt": "The cloakroom costs £______ per item.", "accept": ["1", "one"], "evidence": { "explanation": "The speaker says one pound per item." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0014-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q017", "question": "When do the guided tours run?", "options": ["10am and 4pm", "Noon and 2pm", "11am and 3pm", "Every hour"], "correctIndex": 1, "evidence": { "explanation": "Tours run at noon and two o'clock." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q018", "question": "How long does each tour last?", "options": ["30 minutes", "45 minutes", "60 minutes", "90 minutes"], "correctIndex": 1, "evidence": { "explanation": "Each tour lasts forty-five minutes." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q019", "question": "What is not allowed in the exhibition?", "options": ["Photography with flash", "Talking", "Taking notes", "Bringing children"], "correctIndex": 0, "evidence": { "explanation": "The speaker asks visitors not to use flash." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q020", "question": "Where is the gift shop?", "options": ["Next to the entrance", "Near the exit", "On the second floor", "Outside the building"], "correctIndex": 1, "evidence": { "explanation": "The speaker says the gift shop is near the exit." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0014-s3",
+    "title": "Choosing Optional Modules – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Choosing Optional Modules – Listening Section 3",
+      "transcript": "Dr Reyes: Come in, Kim. You wanted to talk about your optional modules?\nKim: Yes. I'm in the second year of my biology degree, and I have to choose two optional modules.\nDr Reyes: Which ones interest you?\nKim: Marine Biology, definitely. I grew up near the coast, so I've always been fascinated by the sea.\nDr Reyes: That runs in semester one. What else?\nKim: I'm thinking about Ecology Fieldwork, but I know that's in semester two.\nDr Reyes: Correct. And there's Statistics, which runs across both semesters. It's very useful for any research career.\nKim: How is Statistics assessed?\nDr Reyes: Through a combination of coursework and an exam at the end of the year.\nKim: Okay. And Science Communication?\nDr Reyes: That's a semester one module, and it's assessed entirely by a presentation.\nKim: Sounds interesting. When do I have to decide?\nDr Reyes: The deadline is the thirtieth of September. My advice is to talk to students who took the modules last year before you choose.\nKim: That's a good idea. Thank you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0014-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q021", "question": "What is Kim's degree subject?", "options": ["Biology", "Chemistry", "Geography", "Psychology"], "correctIndex": 0, "evidence": { "explanation": "Kim says she is doing a biology degree." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q022", "question": "Why is Kim interested in Marine Biology?", "options": ["Her friends chose it", "She grew up near the coast", "It is the easiest module", "It has no exam"], "correctIndex": 1, "evidence": { "explanation": "Kim says she grew up near the coast." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q023", "question": "How is Statistics assessed?", "options": ["By an exam only", "By coursework only", "By coursework and an exam", "By a presentation"], "correctIndex": 2, "evidence": { "explanation": "Dr Reyes says it is a combination of coursework and an exam." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q024", "question": "How many optional modules must Kim choose?", "options": ["One", "Two", "Three", "Four"], "correctIndex": 1, "evidence": { "explanation": "Kim says she has to choose two." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q025", "question": "What is the deadline for choosing?", "options": ["15 September", "30 September", "15 October", "30 October"], "correctIndex": 1, "evidence": { "explanation": "Dr Reyes says the thirtieth of September." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0014-q026", "question": "What does Dr Reyes advise Kim to do?", "options": ["Choose the easiest modules", "Talk to students who took the modules last year", "Ask the head of department", "Wait until next year"], "correctIndex": 1, "evidence": { "explanation": "Dr Reyes advises talking to students who took the modules last year." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0014-s3-g2",
+          "instructions": "When does each module run? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Semester one" },
+            { "key": "B", "label": "Semester two" },
+            { "key": "C", "label": "Both semesters" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0014-q027", "prompt": "Marine Biology", "answer": "A", "evidence": { "explanation": "Dr Reyes says it runs in semester one." } },
+            { "kind": "matching", "id": "generated-listening-academic-0014-q028", "prompt": "Ecology Fieldwork", "answer": "B", "evidence": { "explanation": "Kim says, and Dr Reyes confirms, it is in semester two." } },
+            { "kind": "matching", "id": "generated-listening-academic-0014-q029", "prompt": "Statistics", "answer": "C", "evidence": { "explanation": "Dr Reyes says it runs across both semesters." } },
+            { "kind": "matching", "id": "generated-listening-academic-0014-q030", "prompt": "Science Communication", "answer": "A", "evidence": { "explanation": "Dr Reyes says it is a semester one module." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0014-s4",
+    "title": "How Honeybees Communicate – Listening Section 4",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion"],
+    "data": {
+      "audioLabel": "How Honeybees Communicate – Listening Section 4",
+      "transcript": "Today I'd like to talk about one of the most remarkable examples of animal communication: the dance of the honeybee.\n\nThe behaviour was decoded by the Austrian scientist Karl von Frisch, who shared the Nobel Prize in 1973 for this work. He observed that when a forager bee returns to the hive after finding a good source of nectar, she performs a dance on the vertical surface of the honeycomb to tell the others where to go.\n\nWhen the food is far away, the bee performs what is known as the waggle dance. She runs in a straight line while waggling her body, then circles back and repeats the pattern. The angle of the straight run, measured against the vertical, shows the direction of the food relative to the sun. The length of the waggle shows the distance: roughly one second of waggling corresponds to about one kilometre.\n\nWhen the food is very close to the hive, within about fifty metres, the bee performs a simpler round dance instead, which tells the others that food is nearby without giving a precise direction.\n\nDances are also used when the colony has to move house. In summer, a colony may contain around 50,000 bees. When it outgrows its home, scout bees search for a new nest site and report their findings by dancing. The colony reaches a decision when enough scouts are dancing for the same site. This threshold is known as a quorum, and it allows the group to make a good choice without any single bee being in charge.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0014-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0014-q031", "prompt": "The dance was decoded by Karl von ______.", "accept": ["Frisch"], "evidence": { "explanation": "The lecturer names Karl von Frisch." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q032", "prompt": "He shared the Nobel Prize in ______.", "accept": ["1973"], "evidence": { "explanation": "The lecturer gives 1973." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q033", "prompt": "The dance takes place on the ______ surface of the honeycomb.", "accept": ["vertical"], "evidence": { "explanation": "The lecturer says the vertical surface." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q034", "prompt": "The angle of the run shows direction relative to the ______.", "accept": ["sun"], "evidence": { "explanation": "The lecturer says relative to the sun." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q035", "prompt": "The length of the waggle shows the ______.", "accept": ["distance"], "evidence": { "explanation": "The lecturer says the length of the waggle shows distance." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q036", "prompt": "One second of waggling corresponds to about one ______.", "accept": ["kilometre", "kilometer"], "evidence": { "explanation": "The lecturer says about one kilometre." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q037", "prompt": "A ______ dance is used when food is within about fifty metres.", "accept": ["round"], "evidence": { "explanation": "The lecturer names the round dance." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q038", "prompt": "A summer colony may contain around ______ bees.", "accept": ["50,000", "50000"], "evidence": { "explanation": "The lecturer says around 50,000." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q039", "prompt": "Scout bees search for a new ______ site.", "accept": ["nest"], "evidence": { "explanation": "The lecturer says scouts search for a new nest site." } },
+            { "kind": "completion", "id": "generated-listening-academic-0014-q040", "prompt": "The threshold at which the colony decides is known as a ______.", "accept": ["quorum"], "evidence": { "explanation": "The lecturer names the quorum." } }
+          ]
+        }
+      ]
+    }
   }
 ];
