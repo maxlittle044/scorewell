@@ -7204,5 +7204,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0011-p1",
+    "title": "General Training Reading — Section 1: Nursery and Sports Club Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSUNNYBANK DAY NURSERY\nFees and Policies\n\nThe nursery is open from 7:30am to 6:00pm, Monday to Friday. It is closed on public holidays and for one week between Christmas and New Year.\n\nThe fee is £62 for a full day and £38 for a half day (morning or afternoon). A 10% discount is given for a second child from the same family. Fees are paid monthly in advance by direct debit on the first of the month, and one month's notice is required if a child is leaving.\n\nChildren must be collected by 6:00pm; a late fee of £10 is charged for every 15 minutes. A child who has had a fever or sickness must stay at home for 48 hours after their last symptoms. Parents should provide nappies and spare clothes. Meals and snacks are included, and the nursery is nut-free.\n\nNew children are welcome to make two short settling-in visits, free of charge, before they start.\n\nTEXT 2\n\nELMFIELD SPORTS CLUB\nCourt Booking Information\n\nThe club has four tennis courts and two squash courts, open from 7:00am to 10:00pm. Members may book up to seven days in advance online; non-members may book up to 48 hours in advance, at reception between 9:00am and 5:00pm.\n\nTennis courts cost £8 per hour for members and £14 for non-members. Floodlights cost an extra £3 per hour after dark. Please cancel at least 24 hours in advance to avoid a charge. Rackets can be hired for £3; balls are free.\n\nJunior coaching takes place on Saturdays from 10:00am to 12:00 noon, and an adult beginners' class runs on Wednesdays at 7:00pm, with a maximum of eight people. Non-marking shoes must be worn on court.\n\nMembership costs £240 a year or £25 a month.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0011-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q001", "statement": "The nursery is open on public holidays.", "answer": "FALSE", "evidence": { "explanation": "The nursery is closed on public holidays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q002", "statement": "Families receive a discount when a second child attends the nursery.", "answer": "TRUE", "evidence": { "explanation": "A 10% discount is given for a second child." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q003", "statement": "The nursery provides nappies for the children.", "answer": "FALSE", "evidence": { "explanation": "Parents should provide nappies." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q004", "statement": "The nursery offers transport to and from children's homes.", "answer": "NOT GIVEN", "evidence": { "explanation": "Transport is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q005", "statement": "Non-members can book a court seven days in advance.", "answer": "FALSE", "evidence": { "explanation": "Non-members may book up to 48 hours in advance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q006", "statement": "Tennis balls can be used without charge.", "answer": "TRUE", "evidence": { "explanation": "Balls are free." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0011-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0011-q007", "prompt": "A child who has been sick must stay at home for ______ hours after their last symptoms.", "accept": ["48", "forty-eight"], "evidence": { "explanation": "Text 1 says 48 hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q008", "prompt": "Nursery fees are paid monthly by ______.", "accept": ["direct debit"], "evidence": { "explanation": "Fees are paid by direct debit." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q009", "prompt": "Floodlights cost an extra £3 per hour after ______.", "accept": ["dark"], "evidence": { "explanation": "Floodlights are charged after dark." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q010", "prompt": "Non-marking ______ must be worn on court.", "accept": ["shoes"], "evidence": { "explanation": "Non-marking shoes must be worn." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0011-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0011-q011", "question": "How much is a half day at the nursery?", "options": ["£31", "£38", "£45", "£62"], "correctIndex": 1, "evidence": { "explanation": "A half day costs £38." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0011-q012", "question": "How much does a tennis court cost per hour for non-members?", "options": ["£8", "£11", "£14", "£17"], "correctIndex": 2, "evidence": { "explanation": "Non-members pay £14." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0011-q013", "question": "When does the adult beginners' class take place?", "options": ["Saturday morning", "Wednesday at 7:00pm", "Friday evening", "Sunday afternoon"], "correctIndex": 1, "evidence": { "explanation": "The adult beginners' class runs on Wednesdays at 7:00pm." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0011-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Use of Company Vehicles",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "GREENLINE DELIVERIES\nStaff Handbook — Section 7: Use of Company Vehicles\n\nOnly employees with a valid driving licence may drive company vehicles, and licences are checked annually.\n\nEvery vehicle must be inspected each morning using the checklist in the cab. Faults must be reported immediately, and a vehicle must not be driven if its brakes or lights are defective.\n\nDrivers must not smoke or eat while driving. Mobile phones must not be used while driving; calls may be taken only when the vehicle is parked.\n\nThe company fuel card may be used for fuel only, and receipts must be kept. Personal use of company vehicles is not permitted. Drivers must not drive for more than nine hours in a day. Fines for speeding or parking are the responsibility of the driver.\n\nIn the event of an accident, the driver must stop, make the situation safe and call the emergency services if necessary, then report the accident to a supervisor within one hour.\n\nAt the end of each day, vehicles must be parked at the depot, locked, and the keys returned to the key cabinet.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0011-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q014", "statement": "Driving licences are checked once a year.", "answer": "TRUE", "evidence": { "explanation": "Licences are checked annually." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q015", "statement": "A vehicle with defective lights may be driven if the journey is short.", "answer": "FALSE", "evidence": { "explanation": "A vehicle must not be driven if its brakes or lights are defective." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q016", "statement": "Drivers must not use mobile phones while driving.", "answer": "TRUE", "evidence": { "explanation": "Phones must not be used while driving." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q017", "statement": "The company pays parking fines incurred by drivers.", "answer": "FALSE", "evidence": { "explanation": "Fines are the responsibility of the driver." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q018", "statement": "Drivers receive a bonus for fuel-efficient driving.", "answer": "NOT GIVEN", "evidence": { "explanation": "Bonuses are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0011-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0011-q019", "prompt": "Every vehicle must be inspected each ______ using a checklist.", "accept": ["morning"], "evidence": { "explanation": "Vehicles are inspected each morning." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q020", "prompt": "The company fuel card may be used for ______ only.", "accept": ["fuel"], "evidence": { "explanation": "The card is for fuel only." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q021", "prompt": "Accidents must be reported to a supervisor within ______ hour.", "accept": ["one", "1"], "evidence": { "explanation": "The report must be made within one hour." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q022", "prompt": "Vehicles must be parked at the ______ at the end of each day.", "accept": ["depot"], "evidence": { "explanation": "Vehicles are parked at the depot." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q023", "prompt": "Drivers must not drive for more than ______ hours in a day.", "accept": ["nine", "9"], "evidence": { "explanation": "The limit is nine hours." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0011-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0011-q024", "question": "Where should keys be returned at the end of the day?", "options": ["To the supervisor's desk", "To the key cabinet", "To reception", "They may be left in the vehicle"], "correctIndex": 1, "evidence": { "explanation": "Keys must be returned to the key cabinet." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0011-q025", "question": "What must a driver do first after an accident?", "options": ["Call their family", "Stop and make the situation safe", "Take photographs", "Drive back to the depot"], "correctIndex": 1, "evidence": { "explanation": "The driver must stop and make the situation safe." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0011-q026", "question": "Who is responsible for paying speeding fines?", "options": ["The company", "The driver", "The supervisor", "The insurer"], "correctIndex": 1, "evidence": { "explanation": "Fines are the responsibility of the driver." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0011-p3",
+    "title": "The Story of the Eiffel Tower",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "architecture", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few structures are as instantly recognisable as the Eiffel Tower. Rising above the rooftops of Paris, its lattice of wrought iron has appeared on postcards, in films and on souvenirs for well over a century, and it has become a symbol not only of the city but of France itself. Yet the tower was not built to be beautiful, and for many years its future was uncertain.\n\nB. The tower was commissioned as the entrance to the 1889 World's Fair, held in Paris to mark the hundredth anniversary of the French Revolution. A competition was held for designs, and the winning proposal came from the engineering company of Gustave Eiffel, based on an early concept by two of his engineers, Maurice Koechlin and Émile Nouguier. Eiffel had already built bridges and viaducts, and his firm had experience of using wrought iron to create light, strong structures that resisted the wind.\n\nC. Construction took just over two years and was completed in 1889. The tower is made of 18,038 iron parts joined by around 2.5 million rivets, and it was assembled from prefabricated pieces that were made in a factory outside the city and lifted into place, which kept the work fast and precise. At 312 metres, it was the tallest man-made structure in the world until 1930, when it was overtaken by a skyscraper in New York.\n\nD. Not everyone was pleased. Before the tower was finished, a group of artists and writers published a protest in a newspaper, calling it a \"useless and monstrous\" object that would disfigure the skyline of Paris. Eiffel replied that the tower would have its own beauty, and that its shape was determined by the need to resist the wind. Over time, opinion changed, and Parisians came to appreciate the tower.\n\nE. The tower had been given a permit to stand for only twenty years, after which it was due to be dismantled. It was saved partly because Eiffel encouraged scientific uses for it, including experiments in meteorology and aerodynamics, and above all because it proved to be an excellent tower for radio transmission. Wireless antennas fitted at the top made it valuable to the military, and by the time the permit expired, the tower had become too useful to remove.\n\nF. Today, the tower attracts about seven million visitors a year. Keeping it in good condition is a constant task: it is repainted about every seven years, using tonnes of paint, to protect the iron from rust. The metal expands in hot weather, and the top of the tower can rise by around 15 centimetres in summer, then contract in winter, a reminder that even a structure of iron responds to the seasons.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0011-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An instantly recognisable landmark" },
+            { "key": "ii", "label": "A monument for a world's fair" },
+            { "key": "iii", "label": "Facts and figures of the building work" },
+            { "key": "iv", "label": "Artists protest against the iron tower" },
+            { "key": "v", "label": "A temporary structure finds a lasting use" },
+            { "key": "vi", "label": "Caring for an ageing icon" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0011-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the tower as a recognisable symbol." } },
+            { "kind": "matching", "id": "generated-reading-general-0011-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains that it was commissioned for the 1889 World's Fair." } },
+            { "kind": "matching", "id": "generated-reading-general-0011-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the artists' protest." } },
+            { "kind": "matching", "id": "generated-reading-general-0011-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E explains how a temporary tower was saved by its radio use." } },
+            { "kind": "matching", "id": "generated-reading-general-0011-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes repainting and seasonal movement." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0011-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q032", "statement": "The Eiffel Tower was built for a world's fair held in Paris.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says it was the entrance to the 1889 World's Fair." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q033", "statement": "Gustave Eiffel personally created the first design concept.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the concept came from two of his engineers." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q034", "statement": "The tower was originally intended to stand permanently.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says it had a permit for only twenty years." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q035", "statement": "The tower is repainted about every seven years.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0011-q036", "statement": "The tower has been closed to visitors during wartime.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention closures." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0011-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0011-q037", "prompt": "The tower was completed in ______.", "accept": ["1889"], "evidence": { "explanation": "Paragraph C gives 1889." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q038", "prompt": "The tower contains around ______ million rivets.", "accept": ["2.5"], "evidence": { "explanation": "Paragraph C gives around 2.5 million rivets." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q039", "prompt": "Until 1930, it was the tallest ______ structure in the world.", "accept": ["man-made"], "evidence": { "explanation": "Paragraph C says the tallest man-made structure." } },
+            { "kind": "completion", "id": "generated-reading-general-0011-q040", "prompt": "In summer the top of the tower can rise by around ______ centimetres.", "accept": ["15", "fifteen"], "evidence": { "explanation": "Paragraph F gives around 15 centimetres." } }
+          ]
+        }
+      ]
+    }
   }
 ];
