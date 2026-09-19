@@ -5588,5 +5588,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0021-s1",
+    "title": "Language Exchange Sign-Up – Listening Section 1",
+    "topic": "Education",
+    "tags": ["academic", "education", "form-completion"],
+    "data": {
+      "audioLabel": "Language Exchange Sign-Up – Listening Section 1",
+      "transcript": "Organiser: Good evening, Talk Together language exchange. How can I help?\nCaller: Hello, I'd like to sign up for the Spanish group, please.\nOrganiser: Of course. Could I take your surname?\nCaller: It's Nakamura, that's N-A-K-A-M-U-R-A.\nOrganiser: Thank you. And what's your first language?\nCaller: Japanese.\nOrganiser: Great. And what level is your Spanish?\nCaller: Intermediate, I think. I can hold a simple conversation.\nOrganiser: That's perfect. The intermediate group meets on Mondays at half past six.\nCaller: Where do you meet?\nOrganiser: At Café Lumina, on the corner of Bridge Street.\nCaller: How much does it cost?\nOrganiser: It's free to join. You only pay for your own coffee.\nCaller: And how many people are in the group?\nOrganiser: We keep it small, with a maximum of eight.\nCaller: When is the first meeting?\nOrganiser: Monday the ninth of September.\nCaller: Great. My number is 07700 900288.\nOrganiser: Thank you. See you on the ninth.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0021-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0021-q001", "prompt": "Surname: ______.", "accept": ["Nakamura"], "evidence": { "explanation": "The caller spells N-A-K-A-M-U-R-A." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q002", "prompt": "First language: ______.", "accept": ["Japanese"], "evidence": { "explanation": "The caller's first language is Japanese." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q003", "prompt": "Language to practise: ______.", "accept": ["Spanish"], "evidence": { "explanation": "The caller wants the Spanish group." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q004", "prompt": "Level: ______.", "accept": ["intermediate"], "evidence": { "explanation": "The caller's level is intermediate." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q005", "prompt": "Meeting day: ______.", "accept": ["Monday"], "evidence": { "explanation": "The group meets on Mondays." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q006", "prompt": "Meeting time: half past ______.", "accept": ["six", "6"], "evidence": { "explanation": "The group meets at half past six." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q007", "prompt": "Venue: Café ______.", "accept": ["Lumina"], "evidence": { "explanation": "The venue is Café Lumina." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q008", "prompt": "Fee: ______ to join.", "accept": ["free"], "evidence": { "explanation": "It is free to join." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q009", "prompt": "Maximum group size: ______.", "accept": ["eight", "8"], "evidence": { "explanation": "The maximum is eight." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q010", "prompt": "Contact number: ______.", "accept": ["07700 900288"], "evidence": { "explanation": "The caller gives 07700 900288." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0021-s2",
+    "title": "Historic House Tour Introduction – Listening Section 2",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Historic House Tour Introduction – Listening Section 2",
+      "transcript": "Welcome to Ashworth Hall. Before your tour begins, here is some background and a few practical points.\n\nThe house was built in 1720 and was owned by the Ashworth family for two hundred years. It was opened to the public in 1952, and it now has forty rooms, of which about half are open to visitors.\n\nGuided tours start every hour on the hour, and the last tour begins at four o'clock. If you prefer to explore on your own, an audio guide is available for £3.\n\nThe café is in the old kitchen, which has its original stone floor and a huge fireplace. Photography is welcome in the gardens, but not inside the house, because flash can damage the paintings and textiles.\n\nLarge bags and umbrellas should be left in the cloakroom near the entrance. The rose garden is at its best in June, and it's well worth a visit if you're here then. Enjoy your tour.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0021-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0021-q011", "prompt": "The house was built in ______.", "accept": ["1720"], "evidence": { "explanation": "The speaker says 1720." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q012", "prompt": "It was owned by the ______ family for two hundred years.", "accept": ["Ashworth"], "evidence": { "explanation": "The speaker names the Ashworth family." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q013", "prompt": "It was opened to the public in ______.", "accept": ["1952"], "evidence": { "explanation": "The speaker gives 1952." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q014", "prompt": "Guided tours start every ______ on the hour.", "accept": ["hour"], "evidence": { "explanation": "Tours start every hour on the hour." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q015", "prompt": "The last tour begins at ______.", "accept": ["four", "4", "4pm"], "evidence": { "explanation": "The last tour begins at four o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q016", "prompt": "An audio guide costs £______.", "accept": ["3", "three"], "evidence": { "explanation": "The audio guide costs £3." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0021-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q017", "question": "Where is the café?", "options": ["In the old kitchen", "In the garden", "In the cloakroom", "In the entrance hall"], "correctIndex": 0, "evidence": { "explanation": "The café is in the old kitchen." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q018", "question": "Where is photography allowed?", "options": ["Everywhere", "In the gardens only", "In the café only", "Nowhere"], "correctIndex": 1, "evidence": { "explanation": "Photography is welcome in the gardens but not inside." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q019", "question": "Where should large bags be left?", "options": ["In the café", "In the cloakroom near the entrance", "At the audio guide desk", "In the car park"], "correctIndex": 1, "evidence": { "explanation": "Large bags go in the cloakroom near the entrance." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q020", "question": "When is the rose garden at its best?", "options": ["April", "June", "August", "October"], "correctIndex": 1, "evidence": { "explanation": "The rose garden is at its best in June." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0021-s3",
+    "title": "Writing a Chemistry Lab Report – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Writing a Chemistry Lab Report – Listening Section 3",
+      "transcript": "Sofia: Mark, shall we plan our lab report on the reaction experiment?\nMark: Yes. We were measuring how temperature affects the rate of the reaction.\nSofia: And we tested five different temperatures.\nMark: That's right. And the results were clear: the reaction went faster at higher temperatures.\nSofia: Except for one measurement, at forty degrees, which looked wrong.\nMark: Yes, that one was much slower than expected. Do you think we made a mistake?\nSofia: Possibly. I think we should repeat that measurement rather than ignore it.\nMark: Agreed. I'll ask the technician if we can use the lab on Thursday.\nSofia: Good. Now, how long does the report have to be?\nMark: Two thousand words.\nSofia: Right. Let's divide the sections. I'll write the introduction.\nMark: I'll do the method, since I wrote down the procedure carefully.\nSofia: And we'll both do the results, since we need to draw the graphs together.\nMark: And I think you should do the conclusion, as you understand the theory better.\nSofia: Fine.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0021-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q021", "question": "What did the experiment investigate?", "options": ["How temperature affects reaction rate", "How concentration affects colour", "How pressure affects volume", "How light affects growth"], "correctIndex": 0, "evidence": { "explanation": "Mark says they measured how temperature affects the rate of the reaction." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q022", "question": "How many temperatures did they test?", "options": ["Three", "Four", "Five", "Six"], "correctIndex": 2, "evidence": { "explanation": "Sofia says they tested five temperatures." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q023", "question": "What was the main result?", "options": ["The reaction was faster at higher temperatures", "The reaction was slower at higher temperatures", "Temperature made no difference", "The reaction stopped"], "correctIndex": 0, "evidence": { "explanation": "Mark says the reaction went faster at higher temperatures." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q024", "question": "What was the problem with one measurement?", "options": ["It was lost", "It looked wrong", "It was too fast", "It was written down twice"], "correctIndex": 1, "evidence": { "explanation": "Sofia says one measurement looked wrong." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q025", "question": "What do they decide to do about it?", "options": ["Ignore it", "Repeat it", "Remove it from the report", "Ask their tutor to decide"], "correctIndex": 1, "evidence": { "explanation": "They agree to repeat the measurement." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0021-q026", "question": "How long does the report have to be?", "options": ["1,000 words", "1,500 words", "2,000 words", "3,000 words"], "correctIndex": 2, "evidence": { "explanation": "Mark says two thousand words." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0021-s3-g2",
+          "instructions": "Who will write each section? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Sofia" },
+            { "key": "B", "label": "Mark" },
+            { "key": "C", "label": "Both students" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0021-q027", "prompt": "Introduction", "answer": "A", "evidence": { "explanation": "Sofia says she will write the introduction." } },
+            { "kind": "matching", "id": "generated-listening-academic-0021-q028", "prompt": "Method", "answer": "B", "evidence": { "explanation": "Mark says he will do the method." } },
+            { "kind": "matching", "id": "generated-listening-academic-0021-q029", "prompt": "Results", "answer": "C", "evidence": { "explanation": "Sofia says they will both do the results." } },
+            { "kind": "matching", "id": "generated-listening-academic-0021-q030", "prompt": "Conclusion", "answer": "A", "evidence": { "explanation": "Mark suggests Sofia should do the conclusion, and she agrees." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0021-s4",
+    "title": "Storing Renewable Energy – Listening Section 4",
+    "topic": "Environment",
+    "tags": ["academic", "environment", "technology", "note-completion"],
+    "data": {
+      "audioLabel": "Storing Renewable Energy – Listening Section 4",
+      "transcript": "Today's lecture is about one of the biggest challenges for renewable energy: storage.\n\nWind and solar power are intermittent, meaning that they produce electricity only when the wind blows or the sun shines. Storage systems solve this problem by storing surplus electricity when demand is low and releasing it when demand is high.\n\nThe oldest and largest form of storage is pumped hydro. When there is spare electricity, water is pumped uphill to a reservoir, and when power is needed, it flows back down through turbines. Pumped hydro accounts for over ninety per cent of the world's grid storage capacity.\n\nBatteries are the fastest-growing option. The cost of lithium-ion batteries has fallen by about ninety per cent since 2010, and they are well suited to short-term storage, covering a few hours. Households with solar panels can also install a battery to store electricity for use in the evening.\n\nFor longer periods, engineers are looking at hydrogen, which can be produced by splitting water using electricity, a process called electrolysis. Hydrogen could store energy for months, which would help to cover seasonal differences in supply.\n\nResearchers are also developing sodium-ion batteries, which use cheap and abundant materials, and might reduce reliance on scarce metals such as cobalt.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0021-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0021-q031", "prompt": "Wind and solar power are described as ______.", "accept": ["intermittent"], "evidence": { "explanation": "The lecturer says they are intermittent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q032", "prompt": "Surplus electricity is stored when ______ is low.", "accept": ["demand"], "evidence": { "explanation": "Storage takes place when demand is low." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q033", "prompt": "In pumped hydro, water is pumped uphill to a ______.", "accept": ["reservoir"], "evidence": { "explanation": "Water is pumped uphill to a reservoir." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q034", "prompt": "Pumped hydro accounts for over ______ per cent of grid storage capacity.", "accept": ["ninety", "90"], "evidence": { "explanation": "The lecturer says over ninety per cent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q035", "prompt": "Lithium-ion battery costs have fallen by about ______ per cent since 2010.", "accept": ["ninety", "90"], "evidence": { "explanation": "The lecturer says about ninety per cent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q036", "prompt": "Batteries are well suited to ______ storage.", "accept": ["short-term", "short term"], "evidence": { "explanation": "The lecturer says they are suited to short-term storage." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q037", "prompt": "Households with ______ panels can install a battery.", "accept": ["solar"], "evidence": { "explanation": "The lecturer refers to households with solar panels." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q038", "prompt": "Hydrogen can be produced by splitting water using a process called ______.", "accept": ["electrolysis"], "evidence": { "explanation": "The lecturer names electrolysis." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q039", "prompt": "Hydrogen could store energy for ______.", "accept": ["months"], "evidence": { "explanation": "The lecturer says for months." } },
+            { "kind": "completion", "id": "generated-listening-academic-0021-q040", "prompt": "______ batteries use cheap and abundant materials.", "accept": ["sodium-ion", "sodium ion"], "evidence": { "explanation": "The lecturer names sodium-ion batteries." } }
+          ]
+        }
+      ]
+    }
   }
 ];
