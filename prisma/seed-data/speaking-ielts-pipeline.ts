@@ -5344,5 +5344,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0276",
+    "title": "Part 1: Weddings and marriage",
+    "part": "part1",
+    "topic": "Weddings and marriage",
+    "tags": ["speaking", "part-1", "weddings-and-marriage"],
+    "data": {
+      "questions": [
+        "Have you ever been to a wedding?",
+        "How are weddings usually celebrated in your country?",
+        "Do you think people should marry young?",
+        "Do you enjoy attending family celebrations?",
+        "Would you like to have a big wedding yourself one day?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0277",
+    "title": "Part 1: Parenting and raising children",
+    "part": "part1",
+    "topic": "Parenting and raising children",
+    "tags": ["speaking", "part-1", "parenting-and-raising-children"],
+    "data": {
+      "questions": [
+        "Would you like to have children in the future?",
+        "Do you spend time with young children?",
+        "What do you think is the hardest part of being a parent?",
+        "Did your parents teach you any important lessons?",
+        "Do you think parents today are stricter or more relaxed than in the past?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0278",
+    "title": "Part 1: Fairy tales and stories",
+    "part": "part1",
+    "topic": "Fairy tales and stories",
+    "tags": ["speaking", "part-1", "fairy-tales-and-stories"],
+    "data": {
+      "questions": [
+        "Did you enjoy stories when you were a child?",
+        "Who used to tell you stories?",
+        "Do you still enjoy reading or listening to stories?",
+        "Do you remember any fairy tales from your country?",
+        "Do you think children today still enjoy traditional stories?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0279",
+    "title": "Part 1: Podcasts and radio",
+    "part": "part1",
+    "topic": "Podcasts and radio",
+    "tags": ["speaking", "part-1", "podcasts-and-radio"],
+    "data": {
+      "questions": [
+        "Do you listen to the radio?",
+        "Have you ever listened to a podcast?",
+        "What kinds of programmes do you like to listen to?",
+        "When do you usually listen to audio programmes?",
+        "Do you prefer listening to something or watching it?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0280",
+    "title": "Part 1: Staying at home and going out",
+    "part": "part1",
+    "topic": "Staying at home and going out",
+    "tags": ["speaking", "part-1", "staying-at-home-and-going-out"],
+    "data": {
+      "questions": [
+        "Do you prefer staying at home or going out?",
+        "What do you usually do at home in your free time?",
+        "How often do you go out with friends?",
+        "Do you like going out in the evening?",
+        "Has the way you spend your free time changed in recent years?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0276",
+    "title": "Part 2: Describe a wedding that you attended",
+    "part": "part2",
+    "topic": "Weddings and marriage",
+    "tags": ["speaking", "part-2", "weddings-and-marriage"],
+    "data": {
+      "questions": ["Describe a wedding that you attended"],
+      "cueCardPoints": [
+        "whose wedding it was",
+        "where and when it took place",
+        "what happened during the celebration",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0277",
+    "title": "Part 2: Describe a person who is good at looking after children",
+    "part": "part2",
+    "topic": "Parenting and raising children",
+    "tags": ["speaking", "part-2", "parenting-and-raising-children"],
+    "data": {
+      "questions": ["Describe a person who is good at looking after children"],
+      "cueCardPoints": [
+        "who the person is",
+        "how you know them",
+        "what they do with children",
+        "and explain why they are good at it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0278",
+    "title": "Part 2: Describe a story that you enjoyed as a child",
+    "part": "part2",
+    "topic": "Fairy tales and stories",
+    "tags": ["speaking", "part-2", "fairy-tales-and-stories"],
+    "data": {
+      "questions": ["Describe a story that you enjoyed as a child"],
+      "cueCardPoints": [
+        "what the story was",
+        "who told it to you or where you read it",
+        "what happened in the story",
+        "and explain why you enjoyed it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0279",
+    "title": "Part 2: Describe a podcast or radio programme that you like",
+    "part": "part2",
+    "topic": "Podcasts and radio",
+    "tags": ["speaking", "part-2", "podcasts-and-radio"],
+    "data": {
+      "questions": ["Describe a podcast or radio programme that you like"],
+      "cueCardPoints": [
+        "what it is",
+        "how you found out about it",
+        "what it is about",
+        "and explain why you enjoy it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0280",
+    "title": "Part 2: Describe a place you like to go to in the evening",
+    "part": "part2",
+    "topic": "Staying at home and going out",
+    "tags": ["speaking", "part-2", "staying-at-home-and-going-out"],
+    "data": {
+      "questions": ["Describe a place you like to go to in the evening"],
+      "cueCardPoints": [
+        "where it is",
+        "who you usually go with",
+        "what you do there",
+        "and explain why you like going there"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0276",
+    "title": "Part 3: Marriage and modern society",
+    "part": "part3",
+    "topic": "Weddings and marriage",
+    "tags": ["speaking", "part-3", "weddings-and-marriage"],
+    "data": {
+      "questions": [
+        "Why do weddings often cost so much money?",
+        "Has the average age of marriage changed in your country?",
+        "Do you think marriage is as important now as it used to be?",
+        "How do wedding traditions differ from one culture to another?",
+        "Should couples live together before they marry?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0277",
+    "title": "Part 3: Family, children and responsibility",
+    "part": "part3",
+    "topic": "Parenting and raising children",
+    "tags": ["speaking", "part-3", "parenting-and-raising-children"],
+    "data": {
+      "questions": [
+        "What is the best way to teach children good behaviour?",
+        "How has technology changed the way parents bring up their children?",
+        "Should parents or schools be more responsible for a child's education?",
+        "Why do some parents find it hard to balance work and family?",
+        "How important are grandparents in raising children?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0278",
+    "title": "Part 3: Stories, culture and imagination",
+    "part": "part3",
+    "topic": "Fairy tales and stories",
+    "tags": ["speaking", "part-3", "fairy-tales-and-stories"],
+    "data": {
+      "questions": [
+        "Why do stories matter in every culture?",
+        "What can children learn from fairy tales?",
+        "Are stories in books better for children than stories on screens?",
+        "How have storytelling traditions changed over time?",
+        "Do you think traditional stories will survive in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0279",
+    "title": "Part 3: Audio media and society",
+    "part": "part3",
+    "topic": "Podcasts and radio",
+    "tags": ["speaking", "part-3", "podcasts-and-radio"],
+    "data": {
+      "questions": [
+        "Why have podcasts become so popular in recent years?",
+        "Is radio still important in the age of the internet?",
+        "What are the advantages of learning through listening?",
+        "Should podcasts be regulated like television and radio?",
+        "How might audio media change in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0280",
+    "title": "Part 3: Leisure, home and community",
+    "part": "part3",
+    "topic": "Staying at home and going out",
+    "tags": ["speaking", "part-3", "staying-at-home-and-going-out"],
+    "data": {
+      "questions": [
+        "Why do some people prefer staying at home to going out?",
+        "How has technology changed the way people spend their evenings?",
+        "Are public places for leisure important for a community?",
+        "Do young people and older people spend their free time differently?",
+        "Should governments provide more free leisure facilities?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
