@@ -592,6 +592,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "Task 1 is full of counts and amounts, so 'the number of' versus 'the amount of' and 'fewer' versus 'less' are checked in almost every answer, and errors are easy to spot. In Task 2, 'few' and 'a few' change the tone of a sentence, and the choice between 'many' and 'a lot of' contributes to the formal register that examiners expect.",
+    practiceSlug: "quantifiers-and-amounts-practice",
     tags: ["grammar", "nouns", "task1"],
   },
 ];

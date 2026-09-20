@@ -1045,6 +1045,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "quantifiers-and-amounts-practice",
+    title: "Quantifiers: number, amount, fewer, less",
+    topic: "Grammar",
+    tags: ["grammar", "nouns", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "The ___ students in the city has risen steadily since 2010.",
+          options: ["amount of","number of","much","quantity of"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Students” are countable, so the phrase is “the number of students”. The verb is singular, “has risen”, because the subject is “the number”.",
+          },
+          distractorNotes: {
+            "0": "“Amount of” goes with uncountable nouns such as water or pollution, not with people.",
+            "2": "“Much” is a quantifier and cannot replace the whole phrase “the ... of”.",
+            "3": "“Quantity of” is possible in some contexts, but it is unusual with people and is not the standard Task 1 phrasing.",
+          },
+        },
+        {
+          id: "q2",
+          question: "There are ___ cars on the road than ten years ago.",
+          options: ["less","fewer","few","little"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "Cars can be counted, so the comparative is “fewer”. Use “less” only for uncountable nouns, such as “less traffic”.",
+          },
+          distractorNotes: {
+            "0": "“Less” with a countable plural noun is one of the most common errors in Task 1.",
+            "2": "“Few” is not a comparative, so it cannot be followed by “than”.",
+            "3": "“Little” is used with uncountable nouns, and it is not a comparative either.",
+          },
+        },
+        {
+          id: "q3",
+          question: "Only ___ people came to the lecture, so the room felt empty.",
+          options: ["a few","few","a little","little"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The sentence describes a disappointing turnout, so the negative “few” fits. “A few” would suggest a reasonable number.",
+          },
+          distractorNotes: {
+            "0": "“A few” is positive, and it does not match the empty room.",
+            "2": "“A little” is used with uncountable nouns, and people are countable.",
+            "3": "“Little” is used with uncountable nouns, so it cannot be used with “people”.",
+          },
+        },
+        {
+          id: "q4",
+          question: "___ people came to the talk, so the organisers were pleased.",
+          options: ["Few","A few","Little","A little"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The organisers were pleased, so the number is seen as a good thing. That needs the positive “a few”.",
+          },
+          distractorNotes: {
+            "0": "“Few” is negative, and it clashes with “pleased”.",
+            "2": "“Little” is used with uncountable nouns, and it is also negative.",
+            "3": "“A little” is positive, but it is used only with uncountable nouns.",
+          },
+        },
+        {
+          id: "q5",
+          question: "A number of students ___ studying abroad this year.",
+          options: ["is","are","does","has"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“A number of” means “several”, so the plural verb “are” follows. Compare “the number of students is rising”, where “number” is the subject.",
+          },
+          distractorNotes: {
+            "0": "A singular verb would be right after “the number of”, but “a number of” means “several”.",
+            "2": "“Does” is not the right auxiliary here, and it does not fit with the participle “studying”.",
+            "3": "“Has studying” is not grammatical, and “has” is singular.",
+          },
+        },
+        {
+          id: "q6",
+          question: "The ___ of pollution in the river has fallen sharply.",
+          options: ["number","amount","many","few"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Pollution” is uncountable, so the phrase is “the amount of pollution”.",
+          },
+          distractorNotes: {
+            "0": "“Number of” is used with countable nouns, but pollution cannot be counted.",
+            "2": "“Many” is a quantifier, not a noun, so it cannot follow “the”.",
+            "3": "“Few” is a quantifier and cannot fill this noun position after “the”.",
+          },
+        },
+        {
+          id: "q7",
+          question: "There isn't ___ time left before the deadline.",
+          options: ["many","much","few","a number of"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Time” is uncountable, and “much” is the natural quantifier in negatives and questions: “there isn't much time”.",
+          },
+          distractorNotes: {
+            "0": "“Many” is used with countable plural nouns, and time is uncountable here.",
+            "2": "“Few” is used with countable plural nouns, not with “time”.",
+            "3": "“A number of” is used with countable plural nouns, so it does not fit “time”.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */
