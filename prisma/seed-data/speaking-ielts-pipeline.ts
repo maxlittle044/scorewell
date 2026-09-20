@@ -4579,5 +4579,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0261",
+    "title": "Part 1: Cars and driving",
+    "part": "part1",
+    "topic": "Cars and driving",
+    "tags": ["speaking", "part-1", "cars-and-driving"],
+    "data": {
+      "questions": [
+        "Do you know how to drive?",
+        "Do many people in your family own a car?",
+        "Do you prefer to travel by car or by public transport?",
+        "Would you like to own a car in the future?",
+        "Do you think driving is stressful?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0262",
+    "title": "Part 1: Air travel and airports",
+    "part": "part1",
+    "topic": "Air travel and airports",
+    "tags": ["speaking", "part-1", "air-travel-and-airports"],
+    "data": {
+      "questions": [
+        "Have you ever travelled by plane?",
+        "Do you enjoy flying?",
+        "What do you usually do while you wait at an airport?",
+        "Do you prefer to travel by plane or by train?",
+        "Would you like to work at an airport?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0263",
+    "title": "Part 1: Mountains and hiking",
+    "part": "part1",
+    "topic": "Mountains and hiking",
+    "tags": ["speaking", "part-1", "mountains-and-hiking"],
+    "data": {
+      "questions": [
+        "Are there mountains near where you live?",
+        "Do you like hiking or walking in the countryside?",
+        "Have you ever climbed a mountain?",
+        "What would you take with you on a long walk?",
+        "Do you prefer to walk alone or in a group?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0264",
+    "title": "Part 1: Doctors and hospitals",
+    "part": "part1",
+    "topic": "Doctors and hospitals",
+    "tags": ["speaking", "part-1", "doctors-and-hospitals"],
+    "data": {
+      "questions": [
+        "Do you visit the doctor regularly?",
+        "Have you ever been to a hospital?",
+        "What do you do when you feel unwell?",
+        "Would you like to work in medicine?",
+        "Is it easy to see a doctor in your country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0265",
+    "title": "Part 1: Toys and games",
+    "part": "part1",
+    "topic": "Toys and games",
+    "tags": ["speaking", "part-1", "toys-and-games"],
+    "data": {
+      "questions": [
+        "What toys did you play with as a child?",
+        "Did you have a favourite game when you were young?",
+        "Do you still play any board games or card games?",
+        "Do you think children today play differently from children in the past?",
+        "What kind of toy would you buy for a child?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0261",
+    "title": "Part 2: Describe a car journey that you remember",
+    "part": "part2",
+    "topic": "Cars and driving",
+    "tags": ["speaking", "part-2", "cars-and-driving"],
+    "data": {
+      "questions": ["Describe a car journey that you remember"],
+      "cueCardPoints": [
+        "where you were going",
+        "who you were with",
+        "what happened during the journey",
+        "and explain why you remember it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0262",
+    "title": "Part 2: Describe a time when you travelled by plane",
+    "part": "part2",
+    "topic": "Air travel and airports",
+    "tags": ["speaking", "part-2", "air-travel-and-airports"],
+    "data": {
+      "questions": ["Describe a time when you travelled by plane"],
+      "cueCardPoints": [
+        "where you were going",
+        "who you were with",
+        "what the journey was like",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0263",
+    "title": "Part 2: Describe a walk or hike that you enjoyed",
+    "part": "part2",
+    "topic": "Mountains and hiking",
+    "tags": ["speaking", "part-2", "mountains-and-hiking"],
+    "data": {
+      "questions": ["Describe a walk or hike that you enjoyed"],
+      "cueCardPoints": [
+        "where you went",
+        "who you went with",
+        "what you saw along the way",
+        "and explain why you enjoyed it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0264",
+    "title": "Part 2: Describe a time when you visited a doctor or hospital",
+    "part": "part2",
+    "topic": "Doctors and hospitals",
+    "tags": ["speaking", "part-2", "doctors-and-hospitals"],
+    "data": {
+      "questions": ["Describe a time when you visited a doctor or hospital"],
+      "cueCardPoints": [
+        "when it was",
+        "why you went",
+        "what happened there",
+        "and explain how you felt about the experience"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0265",
+    "title": "Part 2: Describe a toy or game that you loved as a child",
+    "part": "part2",
+    "topic": "Toys and games",
+    "tags": ["speaking", "part-2", "toys-and-games"],
+    "data": {
+      "questions": ["Describe a toy or game that you loved as a child"],
+      "cueCardPoints": [
+        "what it was",
+        "how you played with it",
+        "who you played with",
+        "and explain why you loved it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0261",
+    "title": "Part 3: Cars and the environment",
+    "part": "part3",
+    "topic": "Cars and driving",
+    "tags": ["speaking", "part-3", "cars-and-driving"],
+    "data": {
+      "questions": [
+        "Why do so many people prefer to travel by car?",
+        "What problems do cars cause in cities?",
+        "Should governments discourage people from owning cars?",
+        "How might cars change in the next twenty years?",
+        "Do you think electric cars will replace petrol cars?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0262",
+    "title": "Part 3: Flying and its effects",
+    "part": "part3",
+    "topic": "Air travel and airports",
+    "tags": ["speaking", "part-3", "air-travel-and-airports"],
+    "data": {
+      "questions": [
+        "Why has air travel become so popular?",
+        "What are the environmental effects of flying?",
+        "Should there be a tax on air travel?",
+        "How have airports changed in recent years?",
+        "Do you think people will fly less in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0263",
+    "title": "Part 3: Nature, adventure and tourism",
+    "part": "part3",
+    "topic": "Mountains and hiking",
+    "tags": ["speaking", "part-3", "mountains-and-hiking"],
+    "data": {
+      "questions": [
+        "Why do some people enjoy challenging outdoor activities?",
+        "Is it a good idea to allow many tourists into mountain areas?",
+        "How can people be encouraged to spend more time outdoors?",
+        "What dangers should walkers and climbers be aware of?",
+        "Do you think outdoor activities are good for children?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0264",
+    "title": "Part 3: Healthcare and society",
+    "part": "part3",
+    "topic": "Doctors and hospitals",
+    "tags": ["speaking", "part-3", "doctors-and-hospitals"],
+    "data": {
+      "questions": [
+        "Why is good healthcare important for a country?",
+        "Should healthcare be free for everyone?",
+        "How has technology changed the way doctors work?",
+        "Why do some people avoid going to the doctor?",
+        "What could be done to reduce pressure on hospitals?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0265",
+    "title": "Part 3: Play and childhood",
+    "part": "part3",
+    "topic": "Toys and games",
+    "tags": ["speaking", "part-3", "toys-and-games"],
+    "data": {
+      "questions": [
+        "Why is play important for children?",
+        "Are traditional toys better than electronic ones?",
+        "Should parents limit the number of toys they buy?",
+        "How do games help children to learn?",
+        "Do adults need to play as well?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
