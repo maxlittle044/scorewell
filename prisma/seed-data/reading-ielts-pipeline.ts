@@ -10292,6 +10292,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0031-p1",
+    "title": "The Story of Radio",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. It is difficult to imagine a time when messages could not travel faster than a horse or a ship. Yet until the late nineteenth century, that was the reality, apart from the telegraph, which needed wires. The discovery of radio waves opened the way to wireless communication, and within a few decades, voices and music could be carried through the air to millions of listeners.\n\nB. The scientific foundation was laid by the German physicist Heinrich Hertz, who proved in 1887 that electromagnetic waves could travel through space. It was a young Italian inventor, Guglielmo Marconi, who saw the practical possibilities. In 1895, he sent a wireless signal over a distance of about two kilometres near his family's home in Italy, and he then moved to England, where he improved his equipment and formed a company.\n\nC. Marconi's most famous experiment took place on 12 December 1901, when he claimed to have received the letter \"S\", sent in Morse code from Cornwall, in Newfoundland, more than 3,000 kilometres across the Atlantic. Some scientists doubted whether he had really heard the signal, but the result encouraged others, and in 1909, he shared the Nobel Prize in Physics.\n\nD. Wireless soon proved its value at sea. When the liner Titanic struck an iceberg in April 1912, its operators sent distress calls that were picked up by the ship Carpathia, which rescued about 700 survivors. The disaster led to laws requiring ships to carry radio equipment and to have someone listening at all times.\n\nE. Broadcasting to a general audience began after the First World War. In 1920, station KDKA in Pittsburgh broadcast the results of a presidential election, and it is often regarded as the first commercial radio station. The British Broadcasting Company was formed in 1922, and it became a public corporation in 1927. Within a few years, millions of families were gathering around their radios to hear news, drama, sport and music.\n\nF. Radio became an important tool of politics. President Franklin Roosevelt spoke directly to Americans in his \"fireside chats\" during the 1930s, and in the Second World War, radio carried the speeches of leaders and the news of battles. The transistor, invented in 1947, made radios small and cheap enough to carry, and the first portable transistor radio appeared in 1954. Today, radio survives alongside television and the internet, and it still reaches billions of people, especially in places without reliable internet access.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0031-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Life before wireless" },
+            { "key": "ii", "label": "A scientist and an inventor" },
+            { "key": "iii", "label": "A disputed signal across the ocean" },
+            { "key": "iv", "label": "Lessons from a shipwreck" },
+            { "key": "v", "label": "Programmes for the public" },
+            { "key": "vi", "label": "A tool of leaders and a small device" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0031-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the world before wireless communication." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Hertz and Marconi." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the transatlantic experiment." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the Titanic and its effects on regulation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes politics, the transistor and radio today." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0031-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q006", "statement": "Heinrich Hertz proved in 1887 that electromagnetic waves could travel through space.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q007", "statement": "Marconi first sent a wireless signal across the Atlantic in 1895.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says 1895 was a signal over about two kilometres; the Atlantic experiment was in 1901." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q008", "statement": "Some scientists doubted Marconi's claim about the signal received in Newfoundland.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q009", "statement": "KDKA is often regarded as the first commercial radio station.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0031-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0031-q010", "prompt": "Marconi sent his 1895 signal over a distance of about ______ kilometres.", "accept": ["two","2"], "evidence": { "explanation": "Paragraph B says about two kilometres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q011", "prompt": "The signal sent across the Atlantic was the letter ______.", "accept": ["S"], "evidence": { "explanation": "Paragraph C says the letter S." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q012", "prompt": "The ship ______ rescued about 700 survivors of the Titanic.", "accept": ["Carpathia"], "evidence": { "explanation": "Paragraph D names Carpathia." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q013", "prompt": "Roosevelt's radio talks were called ______ chats.", "accept": ["fireside"], "evidence": { "explanation": "Paragraph F says fireside chats." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0031-p2",
+    "title": "The Moon and Its Influence",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "astronomy", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The Moon has been a constant companion of humans since the beginning of history. It has shaped calendars, inspired myths and poems, and guided sailors, and it is the only place beyond the Earth that human beings have visited. It orbits the Earth at an average distance of about 384,000 kilometres, and it is about a quarter of the Earth's width.\n\nB. Most scientists believe that the Moon was formed about 4.5 billion years ago, soon after the Earth itself. According to the giant impact theory, a body about the size of Mars crashed into the young Earth, and the debris thrown into orbit gradually joined together to form the Moon. Rocks brought back by astronauts support this idea, since they resemble the Earth's outer layers.\n\nC. The Moon has no atmosphere and no liquid water on its surface, and its gravity is only about one-sixth of the Earth's. Because there is no air to hold heat, temperatures range from around 120 degrees Celsius in the sunlight to about minus 170 degrees at night. The surface is covered by craters, made by impacts from space over billions of years, and by dark plains of ancient lava.\n\nD. One side of the Moon always faces the Earth, because the time it takes to spin once is the same as the time it takes to orbit the Earth, a situation known as tidal locking. The far side was not seen until 1959, when a Soviet space probe photographed it. The Moon appears to change shape over the month, going through phases, since we see different amounts of its sunlit half as it circles the Earth.\n\nE. The Moon's gravity causes the tides in the oceans. As the Earth rotates, the water is pulled slightly towards the Moon, producing two high tides and two low tides each day in most places. The same pull is slowly changing the Moon's orbit: it is moving away from the Earth by about 3.8 centimetres a year, and the Earth's rotation is gradually slowing.\n\nF. On 20 July 1969, the American astronaut Neil Armstrong became the first person to walk on the Moon, followed by Buzz Aldrin, during the Apollo 11 mission. Twelve people in total walked on the surface between 1969 and 1972. After a gap of more than fifty years, space agencies are planning to return, and scientists are interested in the ice found in craters near the poles, which could provide water for future visitors.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0031-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A close and ancient companion" },
+            { "key": "ii", "label": "A violent birth" },
+            { "key": "iii", "label": "A hostile surface" },
+            { "key": "iv", "label": "A hidden face and changing shape" },
+            { "key": "v", "label": "The pull on the seas" },
+            { "key": "vi", "label": "Footsteps and future plans" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0031-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the Moon and its distance." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the giant impact theory." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the surface and conditions." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes tidal locking and phases." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the Apollo landings and future plans." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0031-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q019", "statement": "The Moon is about the same size as the Earth.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says it is about a quarter of the Earth's width." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q020", "statement": "The Moon's gravity is about one-sixth of the Earth's.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q021", "statement": "Both sides of the Moon are always visible from the Earth.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says one side always faces the Earth." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q022", "statement": "The Moon is moving closer to the Earth each year.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says it is moving away." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q023", "statement": "Twelve people walked on the Moon between 1969 and 1972.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0031-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0031-q024", "prompt": "The Moon orbits the Earth at an average distance of about ______ kilometres.", "accept": ["384,000","384000"], "evidence": { "explanation": "Paragraph A gives about 384,000 kilometres." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q025", "prompt": "The giant impact theory says a body the size of ______ hit the young Earth.", "accept": ["Mars"], "evidence": { "explanation": "Paragraph B says the size of Mars." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q026", "prompt": "The far side of the Moon was first photographed in ______.", "accept": ["1959"], "evidence": { "explanation": "Paragraph D gives 1959." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q027", "prompt": "The Moon is moving away from the Earth by about ______ centimetres a year.", "accept": ["3.8"], "evidence": { "explanation": "Paragraph E gives 3.8." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0031-p3",
+    "title": "The Life of Frogs",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Frogs and toads belong to a group of animals called amphibians, which spend part of their lives in water and part on land. There are about 7,000 species, and they live on every continent except Antarctica, from rainforests to deserts. The smallest are less than a centimetre long, while the goliath frog of West Africa can grow to more than 30 centimetres and weigh over three kilograms.\n\nB. The life cycle of most frogs has several stages. The female lays eggs, often in a pond, and these hatch into tadpoles, which breathe through gills and feed on plants. Over several weeks or months, the tadpole grows legs, loses its tail and develops lungs, a process known as metamorphosis. It then leaves the water as a young frog. A few species lay eggs on land, and some carry their young on their backs.\n\nC. The skin of a frog is very unusual. It is thin and moist, and it allows the animal to absorb water and to take in oxygen, so that frogs can breathe through their skin as well as their lungs. Many frogs never drink but soak up water through the skin instead. However, this also means that harmful substances in water and air can pass easily into the body, which is why frogs are often affected quickly by pollution.\n\nD. Frogs have a range of defences. Many are well camouflaged, resembling leaves, bark or mud. Others advertise that they are dangerous: the poison dart frogs of Central and South America have brilliant colours and skin that contains powerful toxins, and the local peoples once used their poison on the tips of blowpipe darts. Frogs are also famous for their long, sticky tongues, which can catch an insect in a fraction of a second.\n\nE. Frogs play a useful role in nature. They eat vast numbers of insects, including mosquitoes, and they are themselves food for snakes, birds and fish. Because they are so sensitive to changes in their environment, scientists use them as indicators of ecosystem health, and a decline in frogs often warns of wider problems.\n\nF. Sadly, amphibians are the most threatened group of vertebrates in the world, with about 40 per cent of species at risk. Habitat destruction, pollution and climate change all play a part, but the most serious threat is a disease caused by a fungus, chytridiomycosis, which has spread across the world and has been linked to the decline or extinction of hundreds of species. Conservationists are breeding endangered frogs in captivity, and looking for ways to protect them from the fungus.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0031-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A varied group" },
+            { "key": "ii", "label": "Egg, tadpole and adult" },
+            { "key": "iii", "label": "A skin that breathes" },
+            { "key": "iv", "label": "Camouflage, colour and speed" },
+            { "key": "v", "label": "Useful creatures and early warnings" },
+            { "key": "vi", "label": "A group in danger" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0031-q028", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the group and size range of frogs." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q029", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the life cycle." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q030", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes frog skin." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q031", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes defences." } },
+            { "kind": "matching", "id": "generated-reading-academic-0031-q032", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the threats to frogs." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0031-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q033", "statement": "Frogs live on every continent except Antarctica.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q034", "statement": "Tadpoles breathe with lungs.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says tadpoles breathe through gills." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q035", "statement": "Frogs can absorb water through their skin.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0031-q036", "statement": "Poison dart frogs live in Africa.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says Central and South America." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0031-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0031-q037", "prompt": "There are about ______ species of frog and toad.", "accept": ["7,000","7000"], "evidence": { "explanation": "Paragraph A says about 7,000." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q038", "prompt": "The change from tadpole to frog is called ______.", "accept": ["metamorphosis"], "evidence": { "explanation": "Paragraph B names metamorphosis." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q039", "prompt": "Scientists use frogs as ______ of ecosystem health.", "accept": ["indicators"], "evidence": { "explanation": "Paragraph E says indicators." } },
+            { "kind": "completion", "id": "generated-reading-academic-0031-q040", "prompt": "Chytridiomycosis is caused by a ______.", "accept": ["fungus"], "evidence": { "explanation": "Paragraph F says a fungus." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
