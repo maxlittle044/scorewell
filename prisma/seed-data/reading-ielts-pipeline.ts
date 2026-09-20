@@ -9913,5 +9913,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0020-p1",
+    "title": "General Training Reading — Section 1: Dental Surgery and Laundrette Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nELM STREET DENTAL SURGERY\nInformation for Patients\n\nThe surgery is open from 8:30am to 5:30pm on Monday to Friday, and from 9:00am to 1:00pm on the first Saturday of each month. New patients are welcome, and should arrive fifteen minutes before their first appointment to complete a medical history form.\n\nA check-up costs £25 and a scale and polish costs £40. Please give at least 24 hours' notice if you need to cancel an appointment; otherwise a fee of £15 will be charged. Children under 16 are seen free of charge. In an emergency outside opening hours, call 07700 900518 and leave a message; a dentist will call you back within an hour.\n\nTEXT 2\n\nBUBBLES LAUNDRETTE\nSelf-Service and Wash-and-Fold\n\nThe laundrette is open every day from 7:00am to 10:00pm. Self-service machines take £1 and £2 coins only, and there is a change machine by the door. A small wash costs £3.50, a large wash costs £6, and a tumble dryer costs £1 for ten minutes.\n\nOur wash-and-fold service is available on weekdays: leave your laundry before 10:00am and collect it after 5:00pm the same day. The charge is £1.80 per kilo. Please do not leave clothes in the machines after the cycle has finished, as other customers may remove them. We are not responsible for items left behind for more than 14 days.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0020-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q001", "statement": "The dental surgery is open every Saturday.", "answer": "FALSE", "evidence": { "explanation": "It is open only on the first Saturday of each month." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q002", "statement": "Children under 16 are seen free of charge.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q003", "statement": "Patients who cancel with less than 24 hours' notice must pay a fee.", "answer": "TRUE", "evidence": { "explanation": "A fee of £15 is charged." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q004", "statement": "The surgery offers teeth whitening.", "answer": "NOT GIVEN", "evidence": { "explanation": "Whitening is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q005", "statement": "Self-service machines at the laundrette accept banknotes.", "answer": "FALSE", "evidence": { "explanation": "They take £1 and £2 coins only." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q006", "statement": "The laundrette's wash-and-fold service is available at weekends.", "answer": "FALSE", "evidence": { "explanation": "It is available on weekdays." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0020-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0020-q007", "prompt": "New patients should arrive ______ minutes before their first appointment.", "accept": ["fifteen","15"], "evidence": { "explanation": "New patients arrive fifteen minutes early." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q008", "prompt": "A scale and polish costs ______.", "accept": ["£40","40 pounds"], "evidence": { "explanation": "A scale and polish costs £40." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q009", "prompt": "A dentist will call back within ______ hour in an emergency.", "accept": ["an","one","1"], "evidence": { "explanation": "A dentist will call back within an hour." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q010", "prompt": "Laundry left for more than ______ days is not the laundrette's responsibility.", "accept": ["14","fourteen"], "evidence": { "explanation": "The laundrette is not responsible after 14 days." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0020-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0020-q011", "question": "How much does a check-up cost?", "options": ["£15","£25","£40","It is free"], "correctIndex": 1, "evidence": { "explanation": "A check-up costs £25." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0020-q012", "question": "How much does a large wash cost at the laundrette?", "options": ["£3.50","£4","£6","£10"], "correctIndex": 2, "evidence": { "explanation": "A large wash costs £6." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0020-q013", "question": "What is the charge for the wash-and-fold service?", "options": ["£1 per kilo","£1.80 per kilo","£3.50 per kilo","£6 per load"], "correctIndex": 1, "evidence": { "explanation": "The charge is £1.80 per kilo." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0020-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Social Media and Internet Use",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "DALTON & WEBB SOLICITORS\nStaff Handbook — Section 12: Social Media and Internet Use\n\nStaff may use the internet for personal reasons during their lunch break and before or after working hours, provided that this does not interfere with their work. Personal use is not permitted at other times, and the company may check which websites have been visited on its computers.\n\nStaff must not post confidential information about clients or the company on social media, and should not describe themselves as speaking on behalf of the company unless they have been authorised to do so by the Communications Director. Comments that are offensive or that could damage the company's reputation may lead to disciplinary action. Staff who see something concerning about the company online should report it to their line manager at once, and must not reply to it themselves. Company laptops must be locked when left unattended, and passwords must be changed every 90 days.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0020-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q014", "statement": "Staff may use the internet for personal reasons during their lunch break.", "answer": "TRUE", "evidence": { "explanation": "The handbook allows this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q015", "statement": "The company can check which websites staff have visited on its computers.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q016", "statement": "Staff may reply online to negative comments about the company.", "answer": "FALSE", "evidence": { "explanation": "Staff must not reply themselves; they should report it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q017", "statement": "Staff must change their passwords every 30 days.", "answer": "FALSE", "evidence": { "explanation": "Passwords must be changed every 90 days." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q018", "statement": "Staff may use company laptops at home at weekends.", "answer": "NOT GIVEN", "evidence": { "explanation": "Home and weekend use is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0020-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0020-q019", "prompt": "Personal internet use is allowed at lunch and before or after ______ hours.", "accept": ["working"], "evidence": { "explanation": "The handbook says before or after working hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q020", "prompt": "Staff must not post ______ information about clients.", "accept": ["confidential"], "evidence": { "explanation": "The handbook says confidential information." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q021", "prompt": "Only the Communications ______ can authorise staff to speak for the company.", "accept": ["Director"], "evidence": { "explanation": "The Communications Director authorises this." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q022", "prompt": "Offensive comments may lead to ______ action.", "accept": ["disciplinary"], "evidence": { "explanation": "The handbook says disciplinary action." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q023", "prompt": "Company laptops must be ______ when left unattended.", "accept": ["locked"], "evidence": { "explanation": "The handbook says laptops must be locked." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0020-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0020-q024", "question": "Who should staff tell if they see something concerning about the company online?", "options": ["Their line manager","A client","The Communications Director's assistant","A colleague"], "correctIndex": 0, "evidence": { "explanation": "They should report it to their line manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0020-q025", "question": "How often must passwords be changed?", "options": ["Every 30 days","Every 60 days","Every 90 days","Every year"], "correctIndex": 2, "evidence": { "explanation": "Passwords must be changed every 90 days." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0020-q026", "question": "When is personal internet use not permitted?", "options": ["During lunch","Before work","During working time","After work"], "correctIndex": 2, "evidence": { "explanation": "Personal use is not permitted during working hours other than lunch." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0020-p3",
+    "title": "The Story of Spectacles",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "everyday-objects", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Spectacles are worn by billions of people around the world, and for most of them, they are a simple, cheap way of seeing clearly. It is easy to forget that, for most of history, people whose eyesight was poor had no way of correcting it, and that some, such as scribes and craftworkers, lost their ability to work in middle age.\n\nB. The idea of using glass to help vision is old. By the eleventh century, scholars in the Arab world had studied how curved glass bends light, and reading stones, thick lenses that were placed on a page to magnify the words, were used by monks in Europe. These were held in the hand, and they helped only with reading.\n\nC. The first wearable spectacles seem to have appeared in northern Italy in the late thirteenth century, and the glassmakers of Venice and Pisa are usually credited with them. The earliest kind had two convex lenses, which magnified close objects, and were joined by a frame that rested on the nose. They were useful for older people, whose eyes find it hard to focus on nearby objects.\n\nD. Concave lenses, which help people who cannot see distant objects clearly, came later, in the fifteenth century. The invention of the printing press in the 1450s brought a great rise in the number of books, and so of people who wanted to read, and the demand for spectacles increased. Many spectacles were sold by travelling pedlars from trays, and buyers simply tried different lenses until they found ones that suited them.\n\nE. Early spectacles were awkward, because they had to be held in place with the hand or pinched onto the nose. In 1727, the English optician Edward Scarlett introduced arms that rested on the ears, the basic design still used today. Later in the eighteenth century, the American statesman Benjamin Franklin is said to have devised bifocal lenses, which have two parts, one for distant vision and one for reading, so that he no longer had to change between two pairs.\n\nF. In the twentieth century, lenses were made from lighter plastic, and contact lenses and laser surgery gave people other options. Even so, the World Health Organization estimates that more than a billion people who need spectacles cannot get them, and this affects their ability to learn and work. Projects that supply low-cost glasses have shown that a pair of spectacles can change a person's life.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0020-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An everyday aid we forget" },
+            { "key": "ii", "label": "Magnifying stones before spectacles" },
+            { "key": "iii", "label": "The first wearable pairs" },
+            { "key": "iv", "label": "New lenses and a growing market" },
+            { "key": "v", "label": "Arms for the ears and a famous design" },
+            { "key": "vi", "label": "Modern options and unmet need" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0020-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces spectacles as an everyday aid." } },
+            { "kind": "matching", "id": "generated-reading-general-0020-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes reading stones." } },
+            { "kind": "matching", "id": "generated-reading-general-0020-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the first wearable spectacles in Italy." } },
+            { "kind": "matching", "id": "generated-reading-general-0020-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes concave lenses and the growing demand." } },
+            { "kind": "matching", "id": "generated-reading-general-0020-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes modern options and people who lack spectacles." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0020-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q032", "statement": "Reading stones were worn on the nose.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they were held in the hand." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q033", "statement": "The first wearable spectacles appeared in northern Italy.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q034", "statement": "Concave lenses were invented before convex lenses.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says concave lenses came later than the first, convex, spectacles." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q035", "statement": "Edward Scarlett introduced arms that rested on the ears in 1727.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1727." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0020-q036", "statement": "Benjamin Franklin was a professional optician.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not describe his profession beyond statesman." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0020-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0020-q037", "prompt": "By the eleventh century, scholars in the ______ world had studied how curved glass bends light.", "accept": ["Arab"], "evidence": { "explanation": "Paragraph B says the Arab world." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q038", "prompt": "The earliest wearable spectacles had two ______ lenses.", "accept": ["convex"], "evidence": { "explanation": "Paragraph C says convex." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q039", "prompt": "Spectacles were often sold by travelling ______.", "accept": ["pedlars"], "evidence": { "explanation": "Paragraph D says pedlars." } },
+            { "kind": "completion", "id": "generated-reading-general-0020-q040", "prompt": "Bifocal lenses have ______ parts.", "accept": ["two"], "evidence": { "explanation": "Paragraph E says two parts." } }
+          ]
+        }
+      ]
+    }
   }
 ];
