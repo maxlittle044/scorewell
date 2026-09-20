@@ -7143,5 +7143,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0032-s4",
+    "title": "The Story of Silk – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "trade", "note-completion"],
+    "data": {
+      "audioLabel": "The Story of Silk – Listening Section 4",
+      "transcript": "Today's lecture looks at the history of silk, one of the most valuable materials in the ancient world.\n\nSilk is made by the silkworm, which is the caterpillar of a moth. The silkworm feeds on the leaves of the mulberry tree, and when it is ready to change into a moth, it spins a cocoon around itself from a single thread that can be up to a thousand metres long. To make silk cloth, the cocoons are softened in hot water and the thread is carefully unwound.\n\nAccording to Chinese tradition, silk was discovered about 2700 BC by the Empress Leizu, who found that a cocoon had dropped into her tea and began to unravel. Whatever the truth, the Chinese kept the method secret for thousands of years, and revealing it was punishable by death.\n\nSilk became the most important luxury trade item, and it gave its name to the Silk Road, the network of routes that linked China with the Mediterranean, more than six thousand kilometres away. The name was invented much later, by the German geographer Ferdinand von Richthofen, in 1877. Merchants rarely travelled the whole route; goods were passed from trader to trader, and each added to the price.\n\nThe secret finally escaped in the sixth century AD, when, according to one account, two monks smuggled silkworm eggs to the Byzantine emperor Justinian hidden inside hollow walking sticks. Silk production then spread to Italy and later to France, where the city of Lyon became a centre of the industry.\n\nIn the twentieth century, artificial fibres such as nylon replaced silk in many uses, but silk remains a symbol of luxury. Today, China produces about eighty per cent of the world's silk, and India is the second largest producer.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0032-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0032-q031", "prompt": "The silkworm feeds on the leaves of the ______ tree.", "accept": ["mulberry"], "evidence": { "explanation": "The lecturer says the mulberry tree." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q032", "prompt": "The silkworm spins a ______ around itself.", "accept": ["cocoon"], "evidence": { "explanation": "The lecturer says a cocoon." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q033", "prompt": "A single thread can be up to a ______ metres long.", "accept": ["thousand","1,000","1000"], "evidence": { "explanation": "The lecturer says up to a thousand metres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q034", "prompt": "According to tradition, silk was discovered by the Empress ______.", "accept": ["Leizu"], "evidence": { "explanation": "The lecturer names Empress Leizu." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q035", "prompt": "Revealing the secret of silk was punishable by ______.", "accept": ["death"], "evidence": { "explanation": "The lecturer says punishable by death." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q036", "prompt": "The Silk Road linked China with the ______.", "accept": ["Mediterranean"], "evidence": { "explanation": "The lecturer says the Mediterranean." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q037", "prompt": "The name Silk Road was invented by Ferdinand von ______.", "accept": ["Richthofen"], "evidence": { "explanation": "The lecturer names Richthofen." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q038", "prompt": "Silkworm eggs were smuggled to the emperor ______.", "accept": ["Justinian"], "evidence": { "explanation": "The lecturer names Justinian." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q039", "prompt": "The French city of ______ became a centre of the silk industry.", "accept": ["Lyon"], "evidence": { "explanation": "The lecturer says Lyon." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q040", "prompt": "China produces about ______ per cent of the world's silk.", "accept": ["eighty","80"], "evidence": { "explanation": "The lecturer says about eighty per cent." } }
+          ]
+        }
+      ]
+    }
   }
 ];
