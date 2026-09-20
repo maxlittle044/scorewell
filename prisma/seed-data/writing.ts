@@ -2419,4 +2419,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 20,
     },
   },
+
+  // ---- More Task 2 essays (wealth gap, gap years, CCTV, stay-at-home parents, small shops,
+  // second-hand goods, competition, charity, festivals, moving for work) ----
+  {
+    slug: "task2-gap-between-rich-and-poor",
+    title: "Task 2: The gap between rich and poor",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "economy", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "In many countries, the gap between the richest and the poorest people is growing. What problems does this cause, and what measures could governments take to reduce the gap?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-taking-a-gap-year",
+    title: "Task 2: Taking a year out before university",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "young-people", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some young people take a year out to travel or work before starting university. What are the advantages and disadvantages of taking a gap year?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-cctv-and-public-safety",
+    title: "Task 2: Cameras in public places",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "privacy", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that installing security cameras in streets and public buildings is the best way to reduce crime, while others believe it invades people's privacy. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-parent-staying-at-home",
+    title: "Task 2: A parent staying at home with children",
+    taskType: "task2",
+    topic: "Family",
+    tags: ["writing", "task-2", "family", "work", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that it is better for children if one parent stays at home to look after them, rather than both parents working. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-small-shops-versus-supermarkets",
+    title: "Task 2: Small shops and large supermarkets",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "economy", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "In many towns, small local shops are closing because people prefer to shop at large supermarkets. What problems does this cause, and what can be done to support small shops?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-buying-second-hand-goods",
+    title: "Task 2: Buying second-hand goods",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "consumerism", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "More and more people are choosing to buy second-hand clothes, furniture and electronics instead of new ones. Do the advantages of this trend outweigh the disadvantages?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-competition-in-schools",
+    title: "Task 2: Competition among students",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "children", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that competition between students in school helps them to achieve more, while others believe that cooperation is more effective. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-charity-versus-government",
+    title: "Task 2: Who should help the needy?",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "welfare", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that the government should be responsible for helping the poor, while others think that individuals and charities should do more. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-commercialisation-of-festivals",
+    title: "Task 2: The commercial side of festivals",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "consumerism", "two-part"],
+    kind: "test",
+    data: {
+      prompt:
+        "Traditional festivals and holidays have become increasingly commercial, with a focus on shopping and spending. Why has this happened, and is it a positive or negative development?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-leaving-hometown-for-work",
+    title: "Task 2: Moving away from home for a job",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "family", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Many young people move to another city or country to find a job, leaving their families and hometowns behind. What are the advantages and disadvantages of this trend?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
