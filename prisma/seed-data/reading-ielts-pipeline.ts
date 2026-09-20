@@ -9012,6 +9012,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0023-p1",
+    "title": "The Science of Sleep",
+    "sourceTestSet": "Academic",
+    "topic": "Health",
+    "tags": ["academic", "health", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. People spend roughly a third of their lives asleep, yet for most of history sleep was regarded as a passive state in which the body and brain simply switched off. Research since the twentieth century has shown the opposite: the sleeping brain is highly active, and sleep is essential to health in ways that scientists are still uncovering.\n\nB. Sleep is not a single state. During the night, the brain moves through cycles that last about 90 minutes, each including periods of light sleep, deep sleep and rapid eye movement, or REM, sleep. Deep sleep dominates the first half of the night, while REM sleep, during which most vivid dreaming occurs, becomes longer towards morning.\n\nC. One of the main functions of sleep appears to be learning. Experiments show that people who sleep after studying new material remember more of it than people who stay awake for the same period. Researchers believe that during sleep the brain replays the day's experiences and strengthens important connections, while weakening unimportant ones.\n\nD. Sleep also cleans the brain. In 2012, scientists reported that a network of channels, later named the glymphatic system, flushes waste products out of brain tissue and that it works far more efficiently during sleep than during waking hours. Some of the waste it removes is linked to diseases such as Alzheimer's, which has led researchers to ask whether poor sleep over many years raises the risk.\n\nE. Most adults need between seven and nine hours of sleep a night, although individuals differ. Teenagers need more, but their body clocks shift during adolescence so that they naturally feel sleepy later in the evening, which makes early school start times a problem. Many studies have found that schools that start later see better attendance and alertness among students.\n\nF. Lack of sleep has serious consequences. Tired people react more slowly, make more mistakes and find it harder to control their emotions, and drowsy driving causes many road accidents. Over the long term, chronic sleep loss has been linked to obesity, heart disease and a weakened immune system. Experts recommend regular sleep times, a dark, quiet bedroom and limiting the use of screens before bed.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0023-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A subject once misunderstood" },
+            { "key": "ii", "label": "The pattern of a night's sleep" },
+            { "key": "iii", "label": "Sleep and the strengthening of memory" },
+            { "key": "iv", "label": "The brain's overnight waste disposal" },
+            { "key": "v", "label": "The needs of different age groups" },
+            { "key": "vi", "label": "The price of too little sleep" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0023-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains that sleep was once seen as passive but is in fact active." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the 90-minute cycles and sleep stages." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the role of sleep in learning and memory." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the glymphatic system clearing waste." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the consequences of sleep loss." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0023-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q006", "statement": "People spend roughly a third of their lives asleep.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q007", "statement": "Deep sleep becomes longer towards the morning.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says deep sleep dominates the first half of the night, while REM sleep lengthens towards morning." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q008", "statement": "The glymphatic system works better during sleep than when awake.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D says it works far more efficiently during sleep." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q009", "statement": "Adults who sleep more than nine hours live longer.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not discuss very long sleep." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0023-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0023-q010", "prompt": "Each sleep cycle lasts about ______ minutes.", "accept": ["90","ninety"], "evidence": { "explanation": "Paragraph B gives about 90 minutes." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q011", "prompt": "Most vivid dreaming occurs during ______ sleep.", "accept": ["REM"], "evidence": { "explanation": "Paragraph B says REM sleep." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q012", "prompt": "The glymphatic system was reported by scientists in ______.", "accept": ["2012"], "evidence": { "explanation": "Paragraph D gives 2012." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q013", "prompt": "Most adults need between seven and ______ hours of sleep a night.", "accept": ["nine","9"], "evidence": { "explanation": "Paragraph E gives seven to nine hours." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0023-p2",
+    "title": "The Story of the Compass",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For most of history, sailors far from land had only the sun and stars to guide them, and both disappear behind clouds. The magnetic compass, which points to the north whatever the weather, changed this, and it is one of the most important navigational tools ever devised.\n\nB. The first compasses were made in China. Early Chinese observers noticed that lodestone, a naturally magnetic form of iron ore, tends to align itself north to south. During the Han dynasty, lodestone spoons that rotated on a polished plate were probably used in divination and in choosing the best position for buildings, rather than for travel.\n\nC. The use of the compass for navigation is first described in Chinese writings of the eleventh century. In 1088, the scholar Shen Kuo described a needle that had been magnetised by rubbing it on a lodestone, and noted that it pointed slightly east of true south. Sailors soon floated such needles in bowls of water to find their direction.\n\nD. Knowledge of the compass reached Europe by the late twelfth century, possibly through Arab traders, although historians disagree about whether Europeans invented it separately. Within a hundred years, European mariners were mounting the needle on a pivot above a card marked with directions. This \"dry\" compass was more practical on a moving ship, and it helped to make the long ocean voyages of the fifteenth century possible.\n\nE. A compass points to magnetic north, which is not the same as true north, the direction of the geographic North Pole. The difference, known as declination, varies from place to place and changes slowly over time, so navigators need to correct for it. The Earth behaves like a giant magnet because of movements of molten iron in its outer core.\n\nF. Modern navigation has moved beyond the simple needle. In the early twentieth century, gyrocompasses were developed for ships. They use a spinning wheel, and they point to true north, so they are not affected by the magnetism of a ship's steel hull. Today, satellite systems give position with great accuracy, but compasses remain a standard back-up because they need no electricity and cannot be jammed.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0023-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Navigating without landmarks" },
+            { "key": "ii", "label": "A discovery made in China" },
+            { "key": "iii", "label": "Direction-finding at sea" },
+            { "key": "iv", "label": "Arrival in Europe" },
+            { "key": "v", "label": "Two kinds of north" },
+            { "key": "vi", "label": "Technology beyond the needle" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0023-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the problem of navigating with only the sun and stars." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the Chinese discovery of lodestone's properties." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q016", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the arrival of the compass in Europe." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q017", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E contrasts magnetic north and true north." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes gyrocompasses and satellite systems." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0023-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q019", "statement": "The earliest Chinese lodestone spoons were probably used for navigation.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they were probably used in divination and building, not travel." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q020", "statement": "Shen Kuo noticed that a magnetised needle did not point exactly to true south.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C says it pointed slightly east of true south." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q021", "statement": "The compass was certainly invented separately in Europe.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says historians disagree about whether Europeans invented it separately." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q022", "statement": "Gyrocompasses are affected by the steel of a ship's hull.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says they are not affected." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0023-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0023-q023", "prompt": "The scholar Shen Kuo described a magnetised needle in ______.", "accept": ["1088"], "evidence": { "explanation": "Paragraph C gives 1088." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q024", "prompt": "Naturally magnetic iron ore is called ______.", "accept": ["lodestone"], "evidence": { "explanation": "Paragraph B names lodestone." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q025", "prompt": "The difference between magnetic north and true north is known as ______.", "accept": ["declination"], "evidence": { "explanation": "Paragraph E names declination." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q026", "prompt": "Compasses remain a standard back-up because they cannot be ______.", "accept": ["jammed"], "evidence": { "explanation": "Paragraph F says they cannot be jammed." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0023-p3",
+    "title": "The Life of Elephants",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Elephants are the largest land animals alive today. Three species survive: the African savannah elephant, the African forest elephant and the Asian elephant. A large male African savannah elephant can weigh about six tonnes, and an elephant may eat well over a hundred kilograms of vegetation in a day.\n\nB. The elephant's trunk is one of the most versatile organs in the animal kingdom. It is a fusion of the nose and upper lip, contains tens of thousands of muscles and no bones, and is used for breathing, smelling, drinking, lifting food and greeting other elephants. It is strong enough to lift a tree trunk, yet sensitive enough to pick up a single coin.\n\nC. Elephants live in family herds led by the oldest female, the matriarch, whose experience helps the group to find food and water, particularly in droughts. Herds consist of related females and their young, while adult males usually leave in their teens and live alone or in small groups. Females carry their young for about 22 months, the longest pregnancy of any land mammal.\n\nD. Elephants communicate in remarkable ways. As well as trumpeting, they produce very low-frequency sounds, called infrasound, which humans cannot hear but which can travel for several kilometres, allowing herds to keep in touch over long distances. They also appear to recognise individual members of their herd and to show interest in the bodies of dead elephants.\n\nE. Elephants shape their environment so strongly that they are called a keystone species. By pushing over trees and digging for water, they create clearings and waterholes used by many other animals, and the seeds that pass through their bodies are spread over wide areas. In some forests, plant species that rely on elephants to disperse their seeds could decline if the animals disappeared.\n\nF. Sadly, elephants are under threat. Their numbers fell sharply in the twentieth century, mainly because of poaching for ivory and the loss of habitat to farming and settlement. An international ban on the ivory trade came into force in 1989, and some populations have recovered since then, but illegal killing continues, and conflict between elephants and farmers, whose crops the animals raid, remains a major problem.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0023-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The biggest animals on land" },
+            { "key": "ii", "label": "An organ with many uses" },
+            { "key": "iii", "label": "Leadership and family life" },
+            { "key": "iv", "label": "Talking across long distances" },
+            { "key": "v", "label": "Engineers of the landscape" },
+            { "key": "vi", "label": "Dangers and conservation" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0023-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the size and species of elephants." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the trunk." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes matriarchs and family herds." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes how elephants shape their environment." } },
+            { "kind": "matching", "id": "generated-reading-academic-0023-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes threats and conservation." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0023-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q032", "statement": "The trunk of an elephant contains no bones.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says it contains no bones." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q033", "statement": "Adult male elephants usually stay in the family herd for life.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says males usually leave in their teens." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q034", "statement": "Humans can hear the infrasound produced by elephants.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says humans cannot hear it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q035", "statement": "Elephants live longer than any other land mammal.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no information about lifespan." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0023-q036", "statement": "The international ivory ban ended all illegal killing of elephants.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says illegal killing continues." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0023-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0023-q037", "prompt": "Elephant herds are led by the oldest female, known as the ______.", "accept": ["matriarch"], "evidence": { "explanation": "Paragraph C names the matriarch." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q038", "prompt": "Females carry their young for about ______ months.", "accept": ["22"], "evidence": { "explanation": "Paragraph C gives 22 months." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q039", "prompt": "Elephants are called a ______ species because they shape their environment.", "accept": ["keystone"], "evidence": { "explanation": "Paragraph E says keystone species." } },
+            { "kind": "completion", "id": "generated-reading-academic-0023-q040", "prompt": "The ivory trade ban came into force in ______.", "accept": ["1989"], "evidence": { "explanation": "Paragraph F gives 1989." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
