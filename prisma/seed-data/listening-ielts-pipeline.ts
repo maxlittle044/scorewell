@@ -7236,5 +7236,44 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0033-s3",
+    "title": "Analysing Questionnaire Data – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Analysing Questionnaire Data – Listening Section 3",
+      "transcript": "Dr Nakamura: Lucas, your questionnaires are collected. How many did you send out?\nLucas: A hundred and twenty, to first-year students, about how they use the library.\nDr Nakamura: And how many came back?\nLucas: Seventy-two, so a response rate of sixty per cent.\nDr Nakamura: That's a good rate for a student survey. What's the first step now?\nLucas: I'm entering the answers into a spreadsheet.\nDr Nakamura: Good. Then you need to clean the data. Check for missing answers and for anything that looks like a mistake, such as someone who says they visit the library thirty times a day.\nLucas: I found six forms with missing answers. Should I remove them?\nDr Nakamura: Only if key questions are blank. Otherwise, keep them and note how many answers you have for each question.\nLucas: Understood. After that, I'll make charts.\nDr Nakamura: For this kind of data, a bar chart is clearer than a pie chart, because you have several categories. Label the axes and give each chart a title.\nLucas: And then I write up the results?\nDr Nakamura: Yes, but don't just describe the charts. Interpret them: say what the pattern suggests, and be careful not to claim more than the data can show.\nLucas: When is the report due?\nDr Nakamura: Friday the twenty-first, at noon. Send me a draft of the charts by next Tuesday.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0033-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q021", "question": "How many questionnaires did Lucas send out?", "options": ["Sixty","Seventy-two","A hundred and twenty","Two hundred"], "correctIndex": 2, "evidence": { "explanation": "Lucas sent out a hundred and twenty." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q022", "question": "What was the response rate?", "options": ["Forty per cent","Fifty per cent","Sixty per cent","Seventy per cent"], "correctIndex": 2, "evidence": { "explanation": "Seventy-two came back, a response rate of sixty per cent." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q023", "question": "How many forms had missing answers?", "options": ["Two","Four","Six","Twelve"], "correctIndex": 2, "evidence": { "explanation": "Lucas found six forms with missing answers." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q024", "question": "When should forms with missing answers be removed?", "options": ["Always","Only if key questions are blank","Never","Only if they are longer than others"], "correctIndex": 1, "evidence": { "explanation": "Dr Nakamura says to remove them only if key questions are blank." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q025", "question": "Why does Dr Nakamura recommend a bar chart?", "options": ["It is easier to draw","There are several categories","It uses less space","It is more colourful"], "correctIndex": 1, "evidence": { "explanation": "A bar chart is clearer when there are several categories." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q026", "question": "By when must Lucas send a draft of the charts?", "options": ["Monday","Tuesday","Thursday","Friday"], "correctIndex": 1, "evidence": { "explanation": "The draft of the charts is due next Tuesday." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0033-s3-g2",
+          "instructions": "Which stage of the analysis does each comment describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Cleaning the data" },
+            { "key": "B", "label": "Making charts" },
+            { "key": "C", "label": "Interpreting results" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0033-q027", "prompt": "Look for missing answers and obvious mistakes", "answer": "A", "evidence": { "explanation": "Dr Nakamura says to check for missing answers and mistakes when cleaning the data." } },
+            { "kind": "matching", "id": "generated-listening-academic-0033-q028", "prompt": "Label the axes and give each one a title", "answer": "B", "evidence": { "explanation": "Dr Nakamura advises labelling axes and giving each chart a title." } },
+            { "kind": "matching", "id": "generated-listening-academic-0033-q029", "prompt": "Do not claim more than the data can show", "answer": "C", "evidence": { "explanation": "Dr Nakamura warns against claiming more than the data can show when interpreting." } },
+            { "kind": "matching", "id": "generated-listening-academic-0033-q030", "prompt": "Say what the pattern suggests instead of just describing it", "answer": "C", "evidence": { "explanation": "Dr Nakamura says to interpret, not just describe." } }
+          ]
+        }
+      ]
+    }
   }
 ];
