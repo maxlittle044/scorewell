@@ -7069,5 +7069,40 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0032-s2",
+    "title": "Castle Visitor Information – Listening Section 2",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Castle Visitor Information – Listening Section 2",
+      "transcript": "Good morning, everyone, and welcome to Aldermoor Castle. Before you begin your visit, here is some information about the castle and how to make the most of your day.\n\nThe castle was begun in 1086 and stands on a hill above the river. It was rebuilt in stone in the twelfth century, and it was besieged twice, in 1216 and in 1645. The castle has been open to the public since 1952, and it is now cared for by a charity.\n\nThe castle is open from ten in the morning until five in the afternoon, from March to October. Tickets cost £12 for adults, and children under sixteen enter free when accompanied by an adult. Audio guides are available at the ticket office, and a guided tour, led by a costumed guide, starts at half past eleven and at two o'clock.\n\nThe main tower has two hundred and twenty steps, and the climb takes about ten minutes. From the top, you can see the whole valley. The great hall, which has a painted ceiling, is used for concerts in the summer. In the courtyard, you can watch a display of medieval crafts, such as blacksmithing, every afternoon.\n\nThe tea room is beside the gatehouse, and the shop is next to the exit. Please note that dogs are welcome in the grounds but not inside the buildings. Please wear sensible shoes, as the paths are uneven. Enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0032-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0032-q011", "prompt": "The castle was begun in ______.", "accept": ["1086"], "evidence": { "explanation": "The speaker says 1086." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q012", "prompt": "The castle was besieged in 1216 and in ______.", "accept": ["1645"], "evidence": { "explanation": "The speaker says 1645." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q013", "prompt": "The castle has been open to the public since ______.", "accept": ["1952"], "evidence": { "explanation": "The speaker says 1952." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q014", "prompt": "Adult tickets cost £______.", "accept": ["12","twelve"], "evidence": { "explanation": "The speaker says £12." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q015", "prompt": "The main tower has ______ steps.", "accept": ["two hundred and twenty","220"], "evidence": { "explanation": "The speaker says two hundred and twenty steps." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q016", "prompt": "The great hall has a painted ______.", "accept": ["ceiling"], "evidence": { "explanation": "The speaker says a painted ceiling." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0032-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q017", "question": "Who cares for the castle today?", "options": ["A charity","The government","A private family","The local council"], "correctIndex": 0, "evidence": { "explanation": "The castle is now cared for by a charity." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q018", "question": "When does the first guided tour start?", "options": ["Ten o'clock","Half past eleven","Two o'clock","Four o'clock"], "correctIndex": 1, "evidence": { "explanation": "The first tour starts at half past eleven." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q019", "question": "What can visitors watch in the courtyard?", "options": ["A display of medieval crafts","A concert","A play","A sword fight"], "correctIndex": 0, "evidence": { "explanation": "They can watch a display of medieval crafts." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q020", "question": "Where can dogs go?", "options": ["In the grounds only","Inside the buildings only","Anywhere in the castle","In the tea room only"], "correctIndex": 0, "evidence": { "explanation": "Dogs are welcome in the grounds but not inside the buildings." } }
+          ]
+        }
+      ]
+    }
   }
 ];
