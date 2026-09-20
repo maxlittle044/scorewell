@@ -11904,5 +11904,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0027-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Parental Leave",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "ASHFORD HEALTHCARE\nStaff Handbook — Section 10: Parental Leave\n\nAll employees who have completed twelve months' service are entitled to parental leave when they have a new baby or adopt a child. Mothers may take up to 39 weeks of leave, of which the first six weeks are paid at 90% of normal salary and the remainder at a fixed weekly rate. Fathers and partners are entitled to two weeks of leave paid at the full rate, which must be taken within eight weeks of the birth or adoption.\n\nEmployees must inform their line manager of their intention to take leave at least fifteen weeks before the expected due date, and must provide a medical certificate. During leave, employees continue to build up annual holiday, and their job, or a similar one, is guaranteed for their return. Staff may keep in touch with the workplace on up to ten \"keeping in touch\" days without ending their leave. Employees who wish to return to work part time should discuss this with their manager before they go on leave. The company also offers a workplace nursery, with a 20% discount on fees for staff.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0027-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q014", "statement": "Employees are entitled to parental leave after twelve months' service.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q015", "statement": "Fathers and partners are entitled to four weeks of paid leave.", "answer": "FALSE", "evidence": { "explanation": "They are entitled to two weeks." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q016", "statement": "Employees continue to build up annual holiday during leave.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q017", "statement": "Staff may not contact the workplace at all while on leave.", "answer": "FALSE", "evidence": { "explanation": "They may use up to ten keeping in touch days." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q018", "statement": "The company provides free childcare for all staff.", "answer": "NOT GIVEN", "evidence": { "explanation": "The nursery offers a 20% discount, and free childcare is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0027-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0027-q019", "prompt": "Mothers may take up to ______ weeks of leave.", "accept": ["39","thirty-nine"], "evidence": { "explanation": "Mothers may take up to 39 weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q020", "prompt": "The first six weeks are paid at ______ of normal salary.", "accept": ["90%","ninety per cent","90 per cent"], "evidence": { "explanation": "The first six weeks are paid at 90%." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q021", "prompt": "Leave for fathers must be taken within ______ weeks of the birth or adoption.", "accept": ["eight","8"], "evidence": { "explanation": "It must be taken within eight weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q022", "prompt": "Employees must provide a medical ______.", "accept": ["certificate"], "evidence": { "explanation": "A medical certificate is required." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q023", "prompt": "Staff receive a ______ discount on nursery fees.", "accept": ["20%","twenty per cent","20 per cent"], "evidence": { "explanation": "The discount is 20%." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0027-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0027-q024", "question": "How much notice must employees give before the expected due date?", "options": ["Five weeks","Ten weeks","Fifteen weeks","Twenty weeks"], "correctIndex": 2, "evidence": { "explanation": "At least fifteen weeks' notice is required." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0027-q025", "question": "What is guaranteed on return from leave?", "options": ["A promotion","Their job or a similar one","A pay rise","A bonus"], "correctIndex": 1, "evidence": { "explanation": "Their job or a similar one is guaranteed." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0027-q026", "question": "Who should employees speak to about returning part time?", "options": ["Their manager","The nursery","The Payroll Office","A colleague"], "correctIndex": 0, "evidence": { "explanation": "They should discuss this with their manager before going on leave." } }
+          ]
+        }
+      ]
+    }
   }
 ];
