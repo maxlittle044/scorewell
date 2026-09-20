@@ -700,6 +700,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "future-forms-practice",
+    title: "Future forms: will, going to and more",
+    topic: "Grammar",
+    tags: ["grammar", "tenses", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "Look at those black clouds. It ___ rain.",
+          options: ["will","is going to","rains","is raining"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The prediction is based on evidence you can see now, the black clouds, so “going to” is the natural choice.",
+          },
+          distractorNotes: {
+            "0": "“Will” suits predictions based on opinion, not on visible evidence.",
+            "2": "The present simple would describe a habit or a timetable, not a coming event.",
+            "3": "“Is raining” says that it is raining right now, which is not what the clouds suggest.",
+          },
+        },
+        {
+          id: "q2",
+          question: "A: The phone is ringing.  B: I ___ get it.",
+          options: ["am going to","will","get","am getting"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "B is making a decision at the moment of speaking, with no earlier plan. That is the job of “will”, as in “I'll get it.”",
+          },
+          distractorNotes: {
+            "0": "“Going to” is for plans made before the moment of speaking, and B has just decided.",
+            "2": "The present simple cannot express an instant decision.",
+            "3": "The present continuous suggests a fixed arrangement, which does not fit a spontaneous decision.",
+          },
+        },
+        {
+          id: "q3",
+          question: "I ___ my tutor at three tomorrow; we've already arranged it.",
+          options: ["will meet","am meeting","meet","have met"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "A fixed arrangement, with a time and a person, takes the present continuous: “I'm meeting my tutor at three.”",
+          },
+          distractorNotes: {
+            "0": "“Will” is used for decisions and predictions, and it does not show that an arrangement is already fixed.",
+            "2": "The present simple is used for timetables, not for personal arrangements.",
+            "3": "The present perfect looks back from now, and does not refer to a future meeting.",
+          },
+        },
+        {
+          id: "q4",
+          question: "The train ___ at 8:15 tomorrow morning.",
+          options: ["leaves","will leave","left","has left"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "A timetable or schedule takes the present simple, even when the event is in the future: “The train leaves at 8:15.”",
+          },
+          distractorNotes: {
+            "1": "“Will leave” is not wrong in casual speech, but timetables and schedules normally take the present simple.",
+            "2": "“Left” is a past form, but the time marker “tomorrow” is future.",
+            "3": "“Has left” means the train has already gone, which contradicts “tomorrow morning”.",
+          },
+        },
+        {
+          id: "q5",
+          question: "I'll call you as soon as I ___ at the airport.",
+          options: ["will arrive","arrive","am arriving","arrived"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "After time words such as “as soon as”, “when” and “before”, the present simple is used for the future. The “will” belongs in the main clause only.",
+          },
+          distractorNotes: {
+            "0": "A very common error. “Will” cannot be used after a time word such as “as soon as”.",
+            "2": "The present continuous refers to an arrangement, not to the time clause.",
+            "3": "The past simple would place the arrival in the past, but the call has not happened yet.",
+          },
+        },
+        {
+          id: "q6",
+          question: "If the government ___ taxes, people will spend less.",
+          options: ["will raise","raises","raised","is raising"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "In a first conditional, the “if” clause takes the present simple and the result clause takes “will”. So “if the government raises taxes, people will spend less”.",
+          },
+          distractorNotes: {
+            "0": "“Will” is used for the result, not in the “if” clause.",
+            "2": "“Raised” would create a second conditional, which would need “would spend” in the second clause.",
+            "3": "The present continuous suggests something already in progress, and does not fit a general condition.",
+          },
+        },
+        {
+          id: "q7",
+          question: "The population ___ to reach ten million by 2050.",
+          options: ["is projected","will projected","projects","is projecting"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "“Is projected to” is a formal, careful way of reporting a forecast, and it is very useful in a Task 1 answer.",
+          },
+          distractorNotes: {
+            "1": "“Will projected” is not grammatical. “Will be projected” would change the meaning.",
+            "2": "“Projects to reach” makes the population the doer, and it does not match the meaning.",
+            "3": "“Is projecting” would mean the population itself is making the forecast.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */

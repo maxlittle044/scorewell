@@ -463,6 +463,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "Future forms matter in all four parts of the test. In Task 1, graphs with projections need 'is expected to' or 'is projected to', and in Task 2, predictions are safer with 'is likely to' or 'may' than with 'will'. In Speaking Part 1 and Part 3, using 'going to' for plans and 'will' for predictions in the right places shows control, and 'when I will' is a mistake examiners notice.",
+    practiceSlug: "future-forms-practice",
     tags: ["grammar", "tenses", "task1"],
   },
 ];
