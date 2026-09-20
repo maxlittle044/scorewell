@@ -3559,5 +3559,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0241",
+    "title": "Part 1: Buildings and architecture",
+    "part": "part1",
+    "topic": "Buildings and architecture",
+    "tags": ["speaking", "part-1", "buildings-and-architecture"],
+    "data": {
+      "questions": [
+        "What kind of building do you live in?",
+        "Are there any interesting buildings in your hometown?",
+        "Do you prefer modern or traditional buildings?",
+        "Would you like to work in a tall office building?",
+        "Have you ever visited a famous building?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0242",
+    "title": "Part 1: Rivers and lakes",
+    "part": "part1",
+    "topic": "Rivers and lakes",
+    "tags": ["speaking", "part-1", "rivers-and-lakes"],
+    "data": {
+      "questions": [
+        "Is there a river or a lake near where you live?",
+        "Do you like spending time near water?",
+        "Have you ever been on a boat?",
+        "Do you prefer swimming in a pool or in natural water?",
+        "Are rivers important in your country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0243",
+    "title": "Part 1: Memory and forgetting",
+    "part": "part1",
+    "topic": "Memory and forgetting",
+    "tags": ["speaking", "part-1", "memory-and-forgetting"],
+    "data": {
+      "questions": [
+        "Do you have a good memory?",
+        "Do you often forget things?",
+        "What do you do to help yourself remember important things?",
+        "Do you remember much about your first day at school?",
+        "Do you think it is easier to remember things when you are young?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0244",
+    "title": "Part 1: Stars and space",
+    "part": "part1",
+    "topic": "Stars and space",
+    "tags": ["speaking", "part-1", "stars-and-space"],
+    "data": {
+      "questions": [
+        "Do you ever look at the stars?",
+        "Can you see many stars where you live?",
+        "Did you learn about space at school?",
+        "Would you like to travel into space one day?",
+        "Do you think people are interested in space?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0245",
+    "title": "Part 1: Handicrafts and making things",
+    "part": "part1",
+    "topic": "Handicrafts and making things",
+    "tags": ["speaking", "part-1", "handicrafts-and-making-things"],
+    "data": {
+      "questions": [
+        "Do you enjoy making things with your hands?",
+        "Did you make things at school when you were younger?",
+        "Do you know anyone who is good at crafts?",
+        "Would you prefer to buy something handmade or factory-made?",
+        "Would you like to learn a new craft?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0241",
+    "title": "Part 2: Describe a building that you find interesting",
+    "part": "part2",
+    "topic": "Buildings and architecture",
+    "tags": ["speaking", "part-2", "buildings-and-architecture"],
+    "data": {
+      "questions": ["Describe a building that you find interesting"],
+      "cueCardPoints": [
+        "where it is",
+        "what it looks like",
+        "what it is used for",
+        "and explain why you find it interesting"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0242",
+    "title": "Part 2: Describe a place with water that you have visited",
+    "part": "part2",
+    "topic": "Rivers and lakes",
+    "tags": ["speaking", "part-2", "rivers-and-lakes"],
+    "data": {
+      "questions": ["Describe a place with water that you have visited"],
+      "cueCardPoints": [
+        "where it was",
+        "when you went there",
+        "what you did there",
+        "and explain how you felt about the place"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0243",
+    "title": "Part 2: Describe something you learned by heart",
+    "part": "part2",
+    "topic": "Memory and forgetting",
+    "tags": ["speaking", "part-2", "memory-and-forgetting"],
+    "data": {
+      "questions": ["Describe something you learned by heart"],
+      "cueCardPoints": [
+        "what it was",
+        "when you learned it",
+        "how you learned it",
+        "and explain why you remember it well"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0244",
+    "title": "Part 2: Describe something you have seen in the sky that you remember",
+    "part": "part2",
+    "topic": "Stars and space",
+    "tags": ["speaking", "part-2", "stars-and-space"],
+    "data": {
+      "questions": ["Describe something you have seen in the sky that you remember"],
+      "cueCardPoints": [
+        "what you saw",
+        "where and when you saw it",
+        "who you were with",
+        "and explain why you remember it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0245",
+    "title": "Part 2: Describe something you made yourself",
+    "part": "part2",
+    "topic": "Handicrafts and making things",
+    "tags": ["speaking", "part-2", "handicrafts-and-making-things"],
+    "data": {
+      "questions": ["Describe something you made yourself"],
+      "cueCardPoints": [
+        "what it was",
+        "how you made it",
+        "how long it took",
+        "and explain how you felt about the result"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0241",
+    "title": "Part 3: Architecture and cities",
+    "part": "part3",
+    "topic": "Buildings and architecture",
+    "tags": ["speaking", "part-3", "buildings-and-architecture"],
+    "data": {
+      "questions": [
+        "Why do some cities keep their old buildings while others replace them?",
+        "How important is the design of a building?",
+        "Should new buildings always match the style of the area around them?",
+        "What are the advantages and disadvantages of very tall buildings?",
+        "How might buildings change in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0242",
+    "title": "Part 3: Water and the environment",
+    "part": "part3",
+    "topic": "Rivers and lakes",
+    "tags": ["speaking", "part-3", "rivers-and-lakes"],
+    "data": {
+      "questions": [
+        "Why have so many cities been built beside rivers?",
+        "What problems can pollution cause to rivers and lakes?",
+        "Who should be responsible for keeping water clean?",
+        "How can people be encouraged to use less water?",
+        "Do you think water will become a scarcer resource in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0243",
+    "title": "Part 3: Memory, learning and technology",
+    "part": "part3",
+    "topic": "Memory and forgetting",
+    "tags": ["speaking", "part-3", "memory-and-forgetting"],
+    "data": {
+      "questions": [
+        "Why do people find it easier to remember some things than others?",
+        "Has technology made people's memories worse?",
+        "Is it still important for students to memorise facts?",
+        "How do memories of the past affect the way people think?",
+        "Should older people's memories be recorded for future generations?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0244",
+    "title": "Part 3: Exploring space",
+    "part": "part3",
+    "topic": "Stars and space",
+    "tags": ["speaking", "part-3", "stars-and-space"],
+    "data": {
+      "questions": [
+        "Why are people so fascinated by space?",
+        "Is it worth spending large amounts of money on space exploration?",
+        "What benefits has space research brought to daily life?",
+        "Do you think humans will live on other planets one day?",
+        "Should space be open to private companies as well as governments?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0245",
+    "title": "Part 3: Crafts, skills and modern life",
+    "part": "part3",
+    "topic": "Handicrafts and making things",
+    "tags": ["speaking", "part-3", "handicrafts-and-making-things"],
+    "data": {
+      "questions": [
+        "Why are handmade goods often more expensive than factory-made ones?",
+        "Are traditional crafts disappearing in your country?",
+        "Should schools teach practical skills as well as academic subjects?",
+        "Why do some people find making things relaxing?",
+        "Can the internet help people to learn new practical skills?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
