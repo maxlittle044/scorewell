@@ -930,6 +930,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "dependent-prepositions-practice",
+    title: "Dependent prepositions: depend on, lead to",
+    topic: "Grammar",
+    tags: ["grammar", "prepositions", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "The quality of education depends ___ the government's spending.",
+          options: ["of","on","from","to"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Depend” always takes “on”. There is no other option, so it is best learned as a pair: “depend on”.",
+          },
+          distractorNotes: {
+            "0": "“Depend of” is a common mistake, often influenced by other languages. English uses “on”.",
+            "2": "“Depend from” does not exist in standard English.",
+            "3": "“Depend to” is not used.",
+          },
+        },
+        {
+          id: "q2",
+          question: "Modern cities are similar ___ each other in many ways.",
+          options: ["with","to","from","as"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Similar” is followed by “to”: “similar to each other”. It is a fixed pairing.",
+          },
+          distractorNotes: {
+            "0": "“Similar with” is a frequent error. “Similar” does not take “with”.",
+            "2": "“Different from” takes “from”, but “similar” is its opposite and takes “to”.",
+            "3": "“Similar as” is not used. “The same as” is a different pattern.",
+          },
+        },
+        {
+          id: "q3",
+          question: "Air pollution can lead ___ serious health problems.",
+          options: ["to","for","in","at"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "“Lead to” is the fixed phrase for cause and effect, followed by a noun (or an -ing form): “lead to serious health problems”.",
+          },
+          distractorNotes: {
+            "1": "“Lead for” is not used to link a cause with an effect.",
+            "2": "“Lead in” exists in other contexts (a “lead-in”), but it is not the phrase for cause and effect.",
+            "3": "“Lead at” is not a natural combination.",
+          },
+        },
+        {
+          id: "q4",
+          question: "Many students succeed ___ finding a job after graduation.",
+          options: ["to","in","at","for"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Succeed” takes “in”, and a verb after a preposition takes the -ing form: “succeed in finding”.",
+          },
+          distractorNotes: {
+            "0": "“Succeed to find” is a common error. The correct pattern is “succeed in finding”.",
+            "2": "“Succeed at” is used in some contexts (“succeed at school”), but not before a verb in this pattern.",
+            "3": "“Succeed for” is not used.",
+          },
+        },
+        {
+          id: "q5",
+          question: "The storm resulted ___ severe flooding in the town.",
+          options: ["from","in","of","by"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Result in” introduces the outcome: the storm caused the flooding. So “the storm resulted in flooding”.",
+          },
+          distractorNotes: {
+            "0": "“Result from” introduces the cause, so it would reverse the meaning: “flooding resulted from...”.",
+            "2": "“Result of” is not a verb pattern. “A result of” only works with the noun.",
+            "3": "“Result by” is not used.",
+          },
+        },
+        {
+          id: "q6",
+          question: "The flooding resulted ___ the storm.",
+          options: ["in","from","of","to"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "Here the storm is the cause, so “result from” is correct. Compare the previous question, where “result in” introduced the outcome.",
+          },
+          distractorNotes: {
+            "0": "“Result in” introduces the outcome, but here the storm is the cause.",
+            "2": "“Resulted of” does not work as a verb pattern.",
+            "3": "“Result to” is not used.",
+          },
+        },
+        {
+          id: "q7",
+          question: "The department is responsible ___ managing the budget.",
+          options: ["for","of","to","at"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "“Responsible” takes “for”, and a verb after a preposition takes the -ing form: “responsible for managing”.",
+          },
+          distractorNotes: {
+            "1": "“Responsible of” is a frequent error. English uses “for”.",
+            "2": "“Responsible to” exists, but it means answerable to a person or body, as in “responsible to the board”, not for a task.",
+            "3": "“Responsible at” is not used.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */

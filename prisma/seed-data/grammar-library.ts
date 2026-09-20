@@ -549,6 +549,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "Wrong prepositions are among the most common errors in IELTS writing, and they show up in almost every script. Because the meaning is usually clear, they are a matter of accuracy, not of understanding, which is exactly why they are penalised under Grammatical Range and Accuracy. Learning verbs and their prepositions in pairs is the quickest way to remove them.",
+    practiceSlug: "dependent-prepositions-practice",
     tags: ["grammar", "prepositions", "task2"],
   },
 ];
