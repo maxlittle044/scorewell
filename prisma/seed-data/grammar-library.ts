@@ -509,4 +509,46 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     practiceSlug: "adjectives-and-adverbs-practice",
     tags: ["grammar", "word-forms", "task1"],
   },
+  {
+    slug: "dependent-prepositions",
+    title: "Dependent prepositions",
+    category: "Prepositions",
+    summary: "Depend on, different from, result in: the fixed preposition that goes with a verb, noun or adjective.",
+    explanation: [
+      "Many verbs, nouns and adjectives are followed by one particular preposition, and no other will do. These are called dependent prepositions. There is no rule that predicts them, so they have to be learned as part of the word: 'depend on', 'different from', 'a solution to'.",
+      "Some of the most useful ones for IELTS are: depend on, rely on, focus on, lead to, contribute to, result in (an outcome) and result from (a cause), benefit from, suffer from, consist of, participate in, succeed in, responsible for, similar to, different from, and interested in.",
+      "The preposition can change the meaning entirely. 'Result in' and 'result from' point in opposite directions: 'the storm resulted in flooding' (flooding is the outcome), but 'the flooding resulted from the storm' (the storm is the cause). 'Agree with' takes a person or opinion, while 'agree on' takes a plan or decision.",
+      "After a dependent preposition, a verb takes the -ing form: 'succeed in finding', 'responsible for managing', 'interested in learning'. If you are unsure, check a learner's dictionary, and write down the pair, not the word alone.",
+      "A common trap is to translate the preposition from your own language. English often chooses differently: 'married to', 'afraid of', 'good at', 'worried about', 'depend on'. When a preposition feels natural but a dictionary disagrees, trust the dictionary.",
+    ],
+    examples: [
+      {
+        wrong: "The quality of education depends of the government's spending.",
+        right: "The quality of education depends on the government's spending.",
+        note: "'Depend' always takes 'on'.",
+      },
+      {
+        wrong: "Modern cities are similar with each other in many ways.",
+        right: "Modern cities are similar to each other in many ways.",
+        note: "'Similar' is followed by 'to', not 'with'.",
+      },
+      {
+        wrong: "Air pollution can lead to develop serious health problems.",
+        right: "Air pollution can lead to serious health problems.",
+        note: "'Lead to' takes a noun; a verb would need the -ing form: 'lead to developing'.",
+      },
+      {
+        wrong: "Many students succeed to find a job after graduation.",
+        right: "Many students succeed in finding a job after graduation.",
+        note: "'Succeed in' is followed by the -ing form.",
+      },
+      {
+        right: "Heavy traffic contributes to air pollution, which often results in health problems.",
+        note: "'Contribute to' and 'result in' are two of the most useful cause-and-effect phrases in Task 2.",
+      },
+    ],
+    ieltsNote:
+      "Wrong prepositions are among the most common errors in IELTS writing, and they show up in almost every script. Because the meaning is usually clear, they are a matter of accuracy, not of understanding, which is exactly why they are penalised under Grammatical Range and Accuracy. Learning verbs and their prepositions in pairs is the quickest way to remove them.",
+    tags: ["grammar", "prepositions", "task2"],
+  },
 ];
