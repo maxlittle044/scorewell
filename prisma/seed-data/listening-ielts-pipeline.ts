@@ -5884,34 +5884,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
   },
   {
     "slug": "generated-listening-academic-0023-s2",
-    "title": "Botanic Garden Guided Tour – Listening Section 2",
-    "topic": "Nature",
-    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "title": "Radio Station Tour Introduction – Listening Section 2",
+    "topic": "Media",
+    "tags": ["academic", "media", "note-completion", "multiple-choice"],
     "data": {
-      "audioLabel": "Botanic Garden Guided Tour – Listening Section 2",
-      "transcript": "Welcome to the Botanic Garden. Before we begin the guided tour, here is some useful information.\n\nThe garden was founded in 1846 and covers about forty hectares. It is home to more than eight thousand different kinds of plant, from all over the world.\n\nThe garden is open every day from nine in the morning until six in the evening. Tickets cost £8 for adults, and the guided tour, which lasts ninety minutes, is included in the price. Tours leave from the main gate at half past ten and at two o'clock.\n\nThe highlight for many visitors is the glasshouse, where we grow tropical plants, including a giant water lily. It is kept at a temperature of twenty-eight degrees, so you may want to take off your coat. The rose garden is at its best in June, and the herb garden, which is next to the café, is popular with children because they are allowed to touch and smell the plants.\n\nPlease stay on the paths, and do not pick any flowers. Dogs are not allowed in the glasshouse, but they may walk in the rest of the garden on a lead. Now, if you'd like to follow me.",
+      "audioLabel": "Radio Station Tour Introduction – Listening Section 2",
+      "transcript": "Welcome to Harbour FM. Before we start the tour, let me tell you a little about the station.\n\nHarbour FM began broadcasting in 1998, and it now reaches about two hundred thousand listeners across the region. We have two studios, and the station employs twenty-five full-time staff, together with around sixty volunteers who present programmes in the evenings and at weekends.\n\nThe most popular programme is the breakfast show, which goes out from six to nine in the morning. The news is broadcast at the top of every hour, and the local traffic report follows at ten past.\n\nOn the tour, you will first visit Studio A, where the live programmes are made. Please stay quiet whenever the red light above the door is switched on, because that means we are broadcasting. Then we will go to the music library, which contains more than forty thousand recordings, and finally you will have the chance to try the mixing desk in Studio B.\n\nMobile phones must be switched off during the tour, as they can interfere with the equipment. The tour lasts about forty-five minutes, and afterwards you are welcome to have a drink in the staff canteen.",
       "groups": [
         {
           "id": "generated-listening-academic-0023-s2-g1",
           "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
           "wordLimit": 2,
           "questions": [
-            { "kind": "completion", "id": "generated-listening-academic-0023-q011", "prompt": "The garden was founded in ______.", "accept": ["1846"], "evidence": { "explanation": "The speaker says 1846." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q012", "prompt": "The garden covers about ______ hectares.", "accept": ["forty","40"], "evidence": { "explanation": "The speaker says about forty hectares." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q013", "prompt": "Plants from more than ______ kinds are grown.", "accept": ["eight thousand","8000","8,000"], "evidence": { "explanation": "The speaker says more than eight thousand kinds." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q014", "prompt": "Adult tickets cost £______.", "accept": ["8","eight"], "evidence": { "explanation": "The speaker says £8." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q015", "prompt": "The guided tour lasts ______ minutes.", "accept": ["ninety","90"], "evidence": { "explanation": "The speaker says ninety minutes." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q016", "prompt": "The glasshouse is kept at ______ degrees.", "accept": ["twenty-eight","twenty eight","28"], "evidence": { "explanation": "The speaker says twenty-eight degrees." } }
+            { "kind": "completion", "id": "generated-listening-academic-0023-q011", "prompt": "Harbour FM began broadcasting in ______.", "accept": ["1998"], "evidence": { "explanation": "The speaker says 1998." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q012", "prompt": "The station reaches about ______ listeners.", "accept": ["two hundred thousand","200,000","200000"], "evidence": { "explanation": "The speaker says about two hundred thousand listeners." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q013", "prompt": "The station has ______ studios.", "accept": ["two","2"], "evidence": { "explanation": "The speaker says two studios." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q014", "prompt": "The station employs ______ full-time staff.", "accept": ["twenty-five","twenty five","25"], "evidence": { "explanation": "The speaker says twenty-five full-time staff." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q015", "prompt": "The breakfast show goes out from six to ______ in the morning.", "accept": ["nine","9"], "evidence": { "explanation": "The breakfast show runs from six to nine." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q016", "prompt": "The music library contains more than ______ recordings.", "accept": ["forty thousand","40,000","40000"], "evidence": { "explanation": "The speaker says more than forty thousand recordings." } }
           ]
         },
         {
           "id": "generated-listening-academic-0023-s2-g2",
           "instructions": "Choose the correct answer, A, B, C or D.",
           "questions": [
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q017", "question": "Where do the guided tours start?", "options": ["The main gate","The café","The glasshouse","The rose garden"], "correctIndex": 0, "evidence": { "explanation": "Tours leave from the main gate." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q018", "question": "What can be found in the glasshouse?", "options": ["Herbs","A giant water lily","Roses","A children's playground"], "correctIndex": 1, "evidence": { "explanation": "The glasshouse has a giant water lily." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q019", "question": "Which part of the garden is next to the café?", "options": ["The rose garden","The glasshouse","The herb garden","The main gate"], "correctIndex": 2, "evidence": { "explanation": "The herb garden is next to the café." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q020", "question": "What are visitors asked not to do?", "options": ["Walk on the paths","Take photographs","Bring dogs on a lead","Pick any flowers"], "correctIndex": 3, "evidence": { "explanation": "Visitors are asked not to pick flowers." } }
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q017", "question": "Who presents programmes in the evenings and at weekends?", "options": ["Volunteers","Full-time staff","Visiting guests","Students"], "correctIndex": 0, "evidence": { "explanation": "Around sixty volunteers present programmes in the evenings and at weekends." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q018", "question": "When is the news broadcast?", "options": ["Every half hour","At the top of every hour","Only at breakfast time","Every two hours"], "correctIndex": 1, "evidence": { "explanation": "The news is broadcast at the top of every hour." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q019", "question": "What does the red light above the door mean?", "options": ["The studio is empty","The station is broadcasting","The equipment is broken","The tour has ended"], "correctIndex": 1, "evidence": { "explanation": "The red light means they are broadcasting." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q020", "question": "Where can visitors try the mixing desk?", "options": ["Studio A","The music library","Studio B","The canteen"], "correctIndex": 2, "evidence": { "explanation": "Visitors try the mixing desk in Studio B." } }
           ]
         }
       ]
@@ -5958,28 +5958,28 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
   },
   {
     "slug": "generated-listening-academic-0023-s4",
-    "title": "The Origins of Coffee – Listening Section 4",
-    "topic": "History",
-    "tags": ["academic", "history", "food", "note-completion"],
+    "title": "The History of Bridges – Listening Section 4",
+    "topic": "Engineering",
+    "tags": ["academic", "engineering", "history", "note-completion"],
     "data": {
-      "audioLabel": "The Origins of Coffee – Listening Section 4",
-      "transcript": "Today's lecture looks at the history of coffee, one of the most widely traded products in the world.\n\nAccording to a popular legend, coffee was discovered in Ethiopia by a goatherd named Kaldi, who noticed that his goats became lively after eating the berries of a certain shrub. Historians cannot confirm the story, but coffee plants are native to Ethiopia.\n\nThe first reliable evidence of coffee drinking comes from the fifteenth century, in Sufi monasteries in Yemen, where monks drank it to stay awake during night-time prayers. The Yemeni port of Mocha became the centre of the trade, and gave its name to a type of coffee.\n\nCoffee spread across the Middle East, and coffee houses opened in cities such as Cairo and Istanbul, where they became places for conversation, music and news. It reached Europe in the seventeenth century, and the first coffee house in England opened in Oxford in 1650.\n\nThe Dutch and the French then began growing coffee in their colonies. Today, coffee is grown in more than seventy countries, and Brazil is the largest producer. Most of the world's coffee comes from two species, called Arabica and Robusta. Arabica is considered to have the finer flavour, while Robusta contains more caffeine and is easier to grow.",
+      "audioLabel": "The History of Bridges – Listening Section 4",
+      "transcript": "Today's lecture looks at the development of bridges, one of the oldest forms of engineering.\n\nThe first bridges were simple beams, such as a tree trunk laid across a stream. The Romans were the first to build great arch bridges, using stone and a type of concrete, and many of their bridges have survived for nearly two thousand years, because the arch turns the weight of the bridge into a force pressing outwards and downwards, which stone resists well.\n\nA major change came in 1779, when the Iron Bridge was completed in England. It was the first large bridge made of cast iron, and it showed engineers that new materials could be used for long spans.\n\nThe next development was the suspension bridge, in which the deck hangs from cables. The Brooklyn Bridge in New York, opened in 1883, was the first suspension bridge to use steel wire for its cables, and its main span is about 486 metres long. Suspension bridges can cross much wider gaps than arch bridges.\n\nToday, engineers use computer models and new materials such as high-strength steel and concrete. The Millau Viaduct in France, which opened in 2004, is a cable-stayed bridge, and its tallest tower, at 343 metres, makes it the tallest bridge in the world.",
       "groups": [
         {
           "id": "generated-listening-academic-0023-s4-g1",
           "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
           "wordLimit": 2,
           "questions": [
-            { "kind": "completion", "id": "generated-listening-academic-0023-q031", "prompt": "According to legend, coffee was discovered by a ______ named Kaldi.", "accept": ["goatherd"], "evidence": { "explanation": "The lecturer says a goatherd named Kaldi." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q032", "prompt": "Coffee plants are native to ______.", "accept": ["Ethiopia"], "evidence": { "explanation": "The lecturer says Ethiopia." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q033", "prompt": "The first reliable evidence of coffee drinking comes from the ______ century.", "accept": ["fifteenth","15th"], "evidence": { "explanation": "The lecturer says the fifteenth century." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q034", "prompt": "Monks in Yemen drank coffee to stay awake during night-time ______.", "accept": ["prayers"], "evidence": { "explanation": "The lecturer says night-time prayers." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q035", "prompt": "The port of ______ gave its name to a type of coffee.", "accept": ["Mocha"], "evidence": { "explanation": "The lecturer names Mocha." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q036", "prompt": "Coffee houses opened in Cairo and ______.", "accept": ["Istanbul"], "evidence": { "explanation": "The lecturer names Cairo and Istanbul." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q037", "prompt": "The first coffee house in England opened in ______.", "accept": ["Oxford"], "evidence": { "explanation": "The lecturer says Oxford." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q038", "prompt": "Coffee is now grown in more than ______ countries.", "accept": ["seventy","70"], "evidence": { "explanation": "The lecturer says more than seventy countries." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q039", "prompt": "The largest producer of coffee is ______.", "accept": ["Brazil"], "evidence": { "explanation": "The lecturer says Brazil." } },
-            { "kind": "completion", "id": "generated-listening-academic-0023-q040", "prompt": "Robusta contains more ______ than Arabica.", "accept": ["caffeine"], "evidence": { "explanation": "The lecturer says Robusta contains more caffeine." } }
+            { "kind": "completion", "id": "generated-listening-academic-0023-q031", "prompt": "The first bridges were simple ______.", "accept": ["beams"], "evidence": { "explanation": "The lecturer says the first bridges were simple beams." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q032", "prompt": "The Romans were the first to build great ______ bridges.", "accept": ["arch"], "evidence": { "explanation": "The lecturer says the Romans built great arch bridges." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q033", "prompt": "Roman bridges were built from stone and a type of ______.", "accept": ["concrete"], "evidence": { "explanation": "The lecturer says stone and a type of concrete." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q034", "prompt": "The Iron Bridge was completed in ______.", "accept": ["1779"], "evidence": { "explanation": "The lecturer gives 1779." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q035", "prompt": "The Iron Bridge was the first large bridge made of cast ______.", "accept": ["iron"], "evidence": { "explanation": "The lecturer says cast iron." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q036", "prompt": "In a suspension bridge, the deck hangs from ______.", "accept": ["cables"], "evidence": { "explanation": "The lecturer says the deck hangs from cables." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q037", "prompt": "The Brooklyn Bridge opened in ______.", "accept": ["1883"], "evidence": { "explanation": "The lecturer gives 1883." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q038", "prompt": "The main span of the Brooklyn Bridge is about ______ metres long.", "accept": ["486"], "evidence": { "explanation": "The lecturer says about 486 metres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q039", "prompt": "The Millau Viaduct is in ______.", "accept": ["France"], "evidence": { "explanation": "The lecturer says France." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q040", "prompt": "The tallest tower of the Millau Viaduct is ______ metres high.", "accept": ["343"], "evidence": { "explanation": "The lecturer says 343 metres." } }
           ]
         }
       ]
