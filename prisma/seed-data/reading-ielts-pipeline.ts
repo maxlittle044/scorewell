@@ -11277,5 +11277,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0024-p1",
+    "title": "General Training Reading — Section 1: Hospital and Supermarket Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nST MARY'S HOSPITAL\nInformation for Visitors\n\nVisiting hours on general wards are from 2:00pm to 4:00pm and from 6:30pm to 8:00pm every day. Only two visitors are allowed at each bed at any one time, and children under 12 may visit only with the agreement of the ward sister. Visitors are asked to wash their hands with the gel provided when entering and leaving the ward.\n\nFlowers are not permitted on wards, but they may be left at the hospital shop. Mobile phones may be used in the main entrance and in the café, but not on the wards. Car parking costs £2 per hour, with a maximum daily charge of £10, and is free for blue badge holders. The café is open from 8:00am to 7:00pm.\n\nTEXT 2\n\nFRESHMART SUPERMARKET\nServices and Offers\n\nOur store is open from 7:00am to 10:00pm Monday to Saturday, and from 10:00am to 4:00pm on Sundays. Shoppers over 65 receive a 5% discount every Tuesday morning before 12:00. We also offer a home delivery service for orders over £40; delivery costs £3.50 and slots must be booked the day before.\n\nThe bakery produces fresh bread every morning, and the fish counter is open from 9:00am to 5:00pm. Customers who bring their own bags receive 5p off each bag. Trolleys require a £1 coin, which is returned when the trolley is put back. Pets, except guide dogs, are not permitted in the store.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0024-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q001", "statement": "Visiting hours at the hospital are the same every day.", "answer": "TRUE", "evidence": { "explanation": "Visiting hours are given as every day." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q002", "statement": "Flowers may be taken onto the wards.", "answer": "FALSE", "evidence": { "explanation": "Flowers are not permitted on wards." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q003", "statement": "Mobile phones may be used in the hospital café.", "answer": "TRUE", "evidence": { "explanation": "Text 1 says phones may be used in the main entrance and the café." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q004", "statement": "Hospital parking is free for all visitors on Sundays.", "answer": "NOT GIVEN", "evidence": { "explanation": "Sunday parking is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q005", "statement": "The supermarket is open on Sundays.", "answer": "TRUE", "evidence": { "explanation": "It is open from 10:00am to 4:00pm on Sundays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q006", "statement": "Pets are allowed in the supermarket.", "answer": "FALSE", "evidence": { "explanation": "Pets, except guide dogs, are not permitted." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0024-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0024-q007", "prompt": "Only ______ visitors are allowed at each bed at any one time.", "accept": ["two","2"], "evidence": { "explanation": "Only two visitors are allowed." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q008", "prompt": "The maximum daily parking charge is ______.", "accept": ["£10","10 pounds"], "evidence": { "explanation": "The maximum daily charge is £10." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q009", "prompt": "Home delivery is available for orders over ______.", "accept": ["£40","40 pounds"], "evidence": { "explanation": "Delivery is for orders over £40." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q010", "prompt": "Shoppers over 65 receive a ______ discount on Tuesday mornings.", "accept": ["5%","five per cent","5 per cent"], "evidence": { "explanation": "The discount is 5%." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0024-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0024-q011", "question": "Who must agree before children under 12 may visit?", "options": ["The ward sister","A doctor","The hospital manager","The visitor's parent"], "correctIndex": 0, "evidence": { "explanation": "Children under 12 may visit only with the agreement of the ward sister." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0024-q012", "question": "How much does home delivery cost?", "options": ["Free","£2","£3.50","£4"], "correctIndex": 2, "evidence": { "explanation": "Delivery costs £3.50." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0024-q013", "question": "What is returned when a trolley is put back?", "options": ["A £1 coin","A token","A voucher","A receipt"], "correctIndex": 0, "evidence": { "explanation": "The £1 coin is returned." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0024-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Bonuses and Pay",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "WESTBURY LOGISTICS\nStaff Handbook — Section 5: Pay and Bonuses\n\nStaff are paid on the last working day of each month by bank transfer. Payslips are available online and should be checked carefully; any errors must be reported to the Payroll Office within seven days. Pay reviews take place every April, and increases depend on both company performance and individual results.\n\nAn annual bonus of up to 8% of salary may be awarded to staff who have completed at least six months' service by 31 December. The bonus is decided by the Board in January and paid with the February salary. Staff who are on a disciplinary warning are not eligible. Overtime must be approved in advance by the line manager, and is paid at 1.5 times the normal hourly rate on weekdays and twice the rate on Sundays. Staff who leave the company before the bonus is paid are not entitled to receive it.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0024-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q014", "statement": "Staff are paid by bank transfer.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q015", "statement": "Pay errors must be reported within seven days.", "answer": "TRUE", "evidence": { "explanation": "Errors must be reported to the Payroll Office within seven days." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q016", "statement": "The annual bonus is paid with the December salary.", "answer": "FALSE", "evidence": { "explanation": "It is paid with the February salary." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q017", "statement": "Staff on a disciplinary warning may receive a bonus.", "answer": "FALSE", "evidence": { "explanation": "They are not eligible." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q018", "statement": "Staff receive a pay rise of 3% every year.", "answer": "NOT GIVEN", "evidence": { "explanation": "The size of increases is not stated." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0024-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0024-q019", "prompt": "Pay reviews take place every ______.", "accept": ["April"], "evidence": { "explanation": "Pay reviews take place every April." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q020", "prompt": "The annual bonus may be up to ______ of salary.", "accept": ["8%","eight per cent","8 per cent"], "evidence": { "explanation": "The bonus may be up to 8%." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q021", "prompt": "Staff need at least ______ months' service to receive the bonus.", "accept": ["six","6"], "evidence": { "explanation": "At least six months' service is needed." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q022", "prompt": "The bonus is decided by the ______ in January.", "accept": ["Board"], "evidence": { "explanation": "The Board decides the bonus." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q023", "prompt": "Weekday overtime is paid at ______ times the normal rate.", "accept": ["1.5","one and a half"], "evidence": { "explanation": "Weekday overtime is paid at 1.5 times." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0024-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0024-q024", "question": "When are staff paid?", "options": ["On the first day of the month","On the last working day of the month","Every Friday","In the middle of the month"], "correctIndex": 1, "evidence": { "explanation": "Staff are paid on the last working day of each month." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0024-q025", "question": "Who must approve overtime in advance?", "options": ["The line manager","The Payroll Office","The Board","The HR Director"], "correctIndex": 0, "evidence": { "explanation": "Overtime must be approved by the line manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0024-q026", "question": "What is the rate for overtime on Sundays?", "options": ["The normal rate","1.5 times the normal rate","Twice the normal rate","Three times the normal rate"], "correctIndex": 2, "evidence": { "explanation": "Sunday overtime is paid at twice the rate." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0024-p3",
+    "title": "The History of Jeans",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "clothing", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few items of clothing are as widely worn as jeans. People of all ages, from all countries and all walks of life, wear them, and they are equally at home on farms, in offices and at parties. Yet they began as tough working clothes, and their history tells us a great deal about how fashion can change meaning over time.\n\nB. The word jeans is thought to come from the French name for Genoa, an Italian port where a strong cotton fabric was made and exported, and the word denim probably comes from the French serge de Nîmes, meaning a fabric from the town of Nîmes. Denim was originally a tough material used for sails, tents and work clothes, because it was hard-wearing and cheap.\n\nC. The blue jeans we know today were developed in America in the nineteenth century. Miners and other labourers in California found that their trousers wore out quickly, and a tailor from Nevada named Jacob Davis began adding metal rivets to reinforce the pockets. In 1873, he teamed up with a San Francisco businessman, Levi Strauss, who supplied the fabric, and together they patented the idea.\n\nD. For many decades, jeans were worn mainly by cowboys, farmers and factory workers. Their image began to change in the 1950s, when Hollywood actors such as James Dean wore them in films, and young people adopted them as a symbol of independence. Some schools and cinemas banned jeans because they were associated with rebellion, but this only made them more attractive to young people.\n\nE. By the 1970s, jeans had become mainstream. Designers began to sell expensive designer jeans, and manufacturers offered new cuts, from flared to skinny, as well as new finishes such as stone-washing. Jeans were worn to work in many offices, and the manufacturers grew into huge businesses that sold their products all over the world.\n\nF. The popularity of jeans has a cost for the environment. Growing the cotton and dyeing and finishing a single pair can use thousands of litres of water, and some methods pollute rivers. Some companies now offer jeans made with less water and recycled fibres, and there are schemes for repairing and reselling old pairs. Whatever the fashion, it seems that jeans will remain part of our wardrobes.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0024-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A garment for everyone" },
+            { "key": "ii", "label": "Words from French places" },
+            { "key": "iii", "label": "Rivets and a partnership" },
+            { "key": "iv", "label": "From workwear to rebellion" },
+            { "key": "v", "label": "A mainstream fashion" },
+            { "key": "vi", "label": "The environmental price" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0024-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces jeans as a universal garment." } },
+            { "kind": "matching", "id": "generated-reading-general-0024-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains the origin of the words jeans and denim." } },
+            { "kind": "matching", "id": "generated-reading-general-0024-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the rivets and the partnership of Davis and Strauss." } },
+            { "kind": "matching", "id": "generated-reading-general-0024-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the change from workwear to a symbol of rebellion." } },
+            { "kind": "matching", "id": "generated-reading-general-0024-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the environmental cost." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0024-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q032", "statement": "The word denim probably comes from the French town of Nîmes.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q033", "statement": "Jacob Davis was a businessman from San Francisco.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says Davis was a tailor from Nevada; Strauss was the San Francisco businessman." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q034", "statement": "Levi Strauss and Jacob Davis patented the idea in 1873.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1873." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q035", "statement": "Some schools banned jeans because they were associated with rebellion.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0024-q036", "statement": "Jeans were invented by a fashion designer in the 1970s.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they were developed in the nineteenth century." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0024-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0024-q037", "prompt": "Jeans is thought to come from the French name for ______.", "accept": ["Genoa"], "evidence": { "explanation": "Paragraph B says Genoa." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q038", "prompt": "Jacob Davis added metal ______ to reinforce the pockets.", "accept": ["rivets"], "evidence": { "explanation": "Paragraph C says rivets." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q039", "prompt": "In the 1950s, the actor James ______ wore jeans in films.", "accept": ["Dean"], "evidence": { "explanation": "Paragraph D names James Dean." } },
+            { "kind": "completion", "id": "generated-reading-general-0024-q040", "prompt": "Manufacturers offered new finishes such as ______-washing.", "accept": ["stone"], "evidence": { "explanation": "Paragraph E says stone-washing." } }
+          ]
+        }
+      ]
+    }
   }
 ];
