@@ -458,4 +458,97 @@ export const VOA_VIDEO_LESSONS: VideoLessonSeed[] = [
       },
     },
   },
+  {
+    slug: "idiom-break-the-ice",
+    title: "Idiom: Break the Ice",
+    topic: "Speaking",
+    tags: ["video-lesson", "speaking", "vocabulary", "idioms", "part-2"],
+    data: {
+      lessonMinutes: 5,
+      summary:
+        "What 'break the ice' means, how to use it accurately, and how idioms fit into a Speaking answer.",
+      keyPoints: [
+        "To break the ice is to say or do something that makes people feel more relaxed when they first meet.",
+        "Common patterns: 'break the ice with a joke', 'an icebreaker', 'it helped to break the ice'.",
+        "Idioms suit Part 2 stories about meeting people, first days at school or work, and events.",
+        "Use one or two idioms that you know well; accuracy matters more than the number.",
+        "Do not explain the idiom in the answer, and do not force it into an answer where it does not fit.",
+      ],
+      transcript: [
+        "To break the ice means to say or do something that makes people feel more comfortable when they first meet, or when a situation feels awkward. The image is of a frozen lake: once the ice is broken, movement becomes possible. The idiom is used in everyday conversation and in fairly formal contexts alike, so it is a safe one to own.",
+        "It works in a small number of patterns. As a verb phrase: 'She broke the ice by asking about my trip.' With a means: 'He broke the ice with a joke.' As a noun, an 'icebreaker' is an activity or question designed to do the same job, and it is common in classes and workshops: 'The teacher started with an icebreaker game.'",
+        "In Speaking, this idiom fits naturally into Part 2 cue cards about meeting someone, starting a new course, joining a team or attending an event. A sentence such as 'Nobody spoke at first, but a joke from the host broke the ice' adds colour to a story and shows control of idiomatic language, which the Lexical Resource criterion rewards when it is natural and accurate.",
+        "The key word in that criterion is natural. Examiners notice idioms that are forced in. It is better to use one or two you understand fully than a handful you half remember, because an idiom used in the wrong context is worse than plain, precise language. If you are unsure about the meaning, do not use it.",
+        "A good habit is to attach each idiom to a story of your own. Think of one time you broke the ice, or one time someone did it for you, and rehearse a two-sentence version. When a cue card gives you a similar situation, the idiom arrives with the story behind it, and you sound fluent instead of memorised.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "Tn7a8Cv64B4",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "idiom-piece-of-cake",
+    title: "Idiom: Piece of Cake",
+    topic: "Speaking",
+    tags: ["video-lesson", "speaking", "vocabulary", "idioms", "register"],
+    data: {
+      lessonMinutes: 5,
+      summary:
+        "What 'a piece of cake' means, why it is informal, and how to keep idioms in the right register.",
+      keyPoints: [
+        "A piece of cake is something very easy: 'The test was a piece of cake.'",
+        "It is informal and belongs in speech, not in Task 1 or Task 2 writing.",
+        "Formal alternatives: 'straightforward', 'not at all difficult', 'easy to complete'.",
+        "Idioms are a small part of Lexical Resource; precision matters more.",
+        "Keep register consistent: an idiom in the middle of a formal answer can sound out of place.",
+      ],
+      transcript: [
+        "If something is a piece of cake, it is very easy. 'The interview was a piece of cake' means it presented no difficulty. It is one of the best-known English idioms, and it is used constantly in relaxed conversation, so it is a useful phrase to understand as well as to use.",
+        "The important thing to know about it is its register. 'Piece of cake' is informal. It is fine in a friendly conversation and acceptable in Speaking, where the style is naturally conversational, but it does not belong in a formal essay. In Task 2, 'the exam was a piece of cake' would sound out of place, and a plain word such as 'straightforward' would suit the tone better.",
+        "That contrast is a useful lesson about idioms in general. Every idiom carries a register. 'Piece of cake', 'a walk in the park' and 'a breeze' are informal, while 'not at all demanding' or 'entirely manageable' are neutral to formal. Choosing between them is part of showing that you have control of a wide range of language, and not just a large list of phrases.",
+        "In Speaking Part 1, questions about study or work often invite a quick evaluation: 'Did you find the course difficult?' An answer such as 'Not really, the first year was a piece of cake, but the final year was much harder' is natural, and it uses the idiom to set up a contrast. Adding the reason after the idiom keeps the answer developed.",
+        "Do not chase idioms for their own sake. The public descriptors for Lexical Resource look for a wide range of vocabulary used flexibly and accurately, and idiomatic language is one part of it. One well-chosen idiom in the right register does more for your mark than five borrowed ones.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "G33bjxq7s4Y",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "idiom-call-it-a-day",
+    title: "Idiom: Call It a Day",
+    topic: "Speaking",
+    tags: ["video-lesson", "speaking", "vocabulary", "idioms", "work-and-study"],
+    data: {
+      lessonMinutes: 5,
+      summary:
+        "What 'call it a day' means, how to use it for work and study routines, and related phrases for Part 1.",
+      keyPoints: [
+        "To call it a day is to stop working on something, usually until tomorrow.",
+        "It fits Part 1 topics such as work, study, hobbies and daily routine.",
+        "Related phrases: 'wrap up', 'knock off', 'finish for the day', 'take a break'.",
+        "It can also mean giving up on something, so the context needs to make the meaning clear.",
+        "Pair the idiom with a detail of your own routine so the answer sounds real.",
+      ],
+      transcript: [
+        "To call it a day means to stop what you are doing, usually work or study, for the day. 'We have done enough, let's call it a day' is a typical use. In some contexts it can mean giving up on something for good, so the surrounding sentence should make clear which meaning you intend.",
+        "This idiom belongs to the topics that fill Speaking Part 1: work, study, daily routine and free time. When you are asked 'What time do you usually finish work?', an answer like 'Around six, although if we are busy, we sometimes don't call it a day until eight' answers the question and shows a natural touch of idiom.",
+        "It is useful to know a small family of related phrases, and to notice their register. 'Call it a day' is informal but widely used. 'Wrap up' is neutral: 'Let's wrap up the meeting.' 'Knock off' is more casual and very common in British English: 'We knock off at five.' 'Finish for the day' is plain and always safe.",
+        "As with all idioms, use it where it helps. If you would have to force the idiom into the answer, choose a plainer phrase instead. Fluency comes from speaking without long pauses, and reaching for a phrase you do not control tends to add pauses, not remove them.",
+        "A practical exercise is to write three Part 1 answers about your routine, each with a specific detail: a time, a place, a person. Add 'call it a day' to just one of them. Practise saying them aloud until they sound natural, and you will have a real answer ready, and not a memorised line.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "jLQ9rMNMBZg",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
 ];

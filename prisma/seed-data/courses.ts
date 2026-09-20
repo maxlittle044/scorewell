@@ -123,10 +123,28 @@ export const COURSES: CourseSeed[] = [
           href: "/ielts/speaking/part1-everyday-topics",
         },
         {
+          title: "Idiom: piece of cake",
+          summary:
+            "What the idiom means, why it is informal, and how to keep idioms in the right register. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "idiom-piece-of-cake",
+        },
+        {
+          title: "Idiom: call it a day",
+          summary:
+            "Using an everyday idiom in Part 1 answers about work and study. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "idiom-call-it-a-day",
+        },
+        {
           title: "Part 2: surviving the long turn",
           summary:
             "How to use the preparation minute, and the four mistakes that cost the most marks.",
           href: "/ielts/tips/speaking-part2-mistakes",
+        },
+        {
+          title: "Idiom: break the ice",
+          summary:
+            "Adding one natural idiom to a Part 2 story about meeting someone. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "idiom-break-the-ice",
         },
         {
           title: "Part 2 practice: a cue card end to end",
