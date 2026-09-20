@@ -2203,4 +2203,220 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (sleep by age, recycling rates, salaries,
+  // household spending, electric car sales) ----
+  {
+    slug: "task1-sleep-hours-age-bar-chart",
+    title: "Task 1: Average hours of sleep by age group (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Health",
+    tags: ["writing", "task-1-academic", "health", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average number of hours of sleep per night, on weekdays and at weekends, for five age groups in one country. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "hours per night",
+        categories: ["13–17", "18–29", "30–49", "50–64", "65+"],
+        series: [
+          { label: "Weekdays", values: [7.6, 7.1, 6.8, 6.9, 7.2] },
+          { label: "Weekends", values: [8.9, 8.4, 7.6, 7.5, 7.6] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-household-recycling-rates-line-graph",
+    title: "Task 1: Household waste recycled in three countries (Line graph)",
+    taskType: "task1-academic",
+    topic: "Environment",
+    tags: ["writing", "task-1-academic", "environment", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of household waste that was recycled in three countries between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "% of household waste",
+        xLabels: ["2000", "2005", "2010", "2015", "2020"],
+        series: [
+          { label: "Germany", values: [45, 54, 62, 66, 68] },
+          { label: "United Kingdom", values: [11, 20, 33, 44, 45] },
+          { label: "Turkey", values: [2, 3, 7, 12, 22] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-average-salaries-table",
+    title: "Task 1: Average annual salaries in four occupations (Table)",
+    taskType: "task1-academic",
+    topic: "Work",
+    tags: ["writing", "task-1-academic", "work", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the average annual salary in four occupations in one country in 2010 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["Occupation", "2010 (£)", "2023 (£)"],
+        rows: [
+          { label: "Nurse", values: [26000, 33000] },
+          { label: "Teacher", values: [28000, 36000] },
+          { label: "Software developer", values: [38000, 55000] },
+          { label: "Farmer", values: [22000, 27000] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-household-income-spending-pie-chart",
+    title: "Task 1: How a household spends its monthly income (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Society",
+    tags: ["writing", "task-1-academic", "society", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows how a typical household in one country spends its monthly income. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "% of income",
+        slices: [
+          { label: "Housing", value: 35 },
+          { label: "Food", value: 18 },
+          { label: "Transport", value: 14 },
+          { label: "Leisure", value: 12 },
+          { label: "Savings", value: 11 },
+          { label: "Other", value: 10 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-electric-car-sales-bar-chart",
+    title: "Task 1: Electric car sales in four countries (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Transport",
+    tags: ["writing", "task-1-academic", "transport", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of electric cars sold in four countries in 2019 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "thousand cars sold",
+        categories: ["Norway", "Germany", "France", "Italy"],
+        series: [
+          { label: "2019", values: [60, 110, 70, 20] },
+          { label: "2023", values: [125, 520, 330, 100] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (lost luggage, parking request, volunteering,
+  // retiring teacher, book recommendation) ----
+  {
+    slug: "letter-airline-lost-luggage",
+    title: "Letter to an airline about lost luggage",
+    taskType: "task1-general",
+    topic: "Travel",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "test",
+    data: {
+      prompt:
+        "Your luggage was lost when you travelled on a flight last week. Write a letter to the airline's customer service department. In your letter: describe what happened and what the luggage contained, explain how the loss has affected you, and say what you would like the airline to do.",
+      instructions:
+        "State the facts clearly, and keep the tone firm but polite. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-neighbour-parking-space",
+    title: "Letter asking a neighbour to share a parking space",
+    taskType: "task1-general",
+    topic: "Housing",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "request"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You have a visitor staying with you for a month who needs somewhere to park a car. Write a letter to a neighbour who has an unused parking space. In your letter: introduce yourself and explain the situation, ask whether your visitor may use the space, and offer something in return.",
+      instructions:
+        "A polite, semi-formal tone suits a neighbour you do not know well. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-offering-to-volunteer",
+    title: "Letter offering to volunteer for a charity",
+    taskType: "task1-general",
+    topic: "Community",
+    tags: ["writing", "task-1-general", "letters", "formal", "application"],
+    kind: "test",
+    data: {
+      prompt:
+        "You would like to volunteer for a local charity. Write a letter to the charity's volunteer coordinator. In your letter: explain why you want to volunteer, describe any relevant skills or experience you have, and say when you would be available.",
+      instructions:
+        "A formal, enthusiastic tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-farewell-retiring-teacher",
+    title: "Letter thanking a teacher who is retiring",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "thanks"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "A teacher who taught you for several years is about to retire. Write a letter to your former teacher. In your letter: say what you remember most about their lessons, explain how they influenced you, and wish them well for the future.",
+      instructions:
+        "A warm, respectful tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-friend-recommending-book",
+    title: "Letter to a friend recommending a book",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal", "recommendation"],
+    kind: "test",
+    data: {
+      prompt:
+        "A friend has asked you to recommend a book to read on holiday. Write a letter to your friend. In your letter: describe the book you recommend and what it is about, explain why you enjoyed it, and say who else might enjoy it.",
+      instructions:
+        "Keep this friendly and enthusiastic, as you would when writing to a good friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
