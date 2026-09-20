@@ -355,6 +355,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "modal-verbs-practice",
+    title: "Modal verbs: can, may, must, should",
+    topic: "Grammar",
+    tags: ["grammar", "verbs", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "Governments ___ invest more in public transport.",
+          options: ["must to","must","musts","must be"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "A modal verb is followed by the bare verb: “must invest”. It never takes “to”, never takes -s, and never changes form.",
+          },
+          distractorNotes: {
+            "0": "A very common error. Modals like must, can and should are never followed by “to”.",
+            "2": "Modals have no -s form, even with “governments”. There is no such word as “musts” here.",
+            "3": "“Must be” needs a participle or adjective after it (“must be built”), so it cannot lead straight into “invest”.",
+          },
+        },
+        {
+          id: "q2",
+          question: "This policy ___ reduce crime, but the evidence is not yet clear.",
+          options: ["will","may","does","is going to"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The second half of the sentence admits uncertainty, so the first half needs a modal that expresses possibility. “May” makes a claim the writer can defend; “will” would overstate it.",
+          },
+          distractorNotes: {
+            "0": "“Will” states the result as certain, which the “but” clause then contradicts.",
+            "2": "“Does reduce” asserts a fact, and again clashes with the admitted uncertainty.",
+            "3": "“Is going to” predicts confidently, so it overstates just as “will” does.",
+          },
+        },
+        {
+          id: "q3",
+          question: "Students ___ bring phones into the exam room. It is strictly forbidden.",
+          options: ["don't have to","mustn't","needn't","might not"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Mustn't” means it is forbidden. “Don't have to” and “needn't” mean only that it is not necessary, which is a completely different message.",
+          },
+          distractorNotes: {
+            "0": "This says phones are optional, not banned. It is the classic must / don't have to mix-up.",
+            "2": "“Needn't” also means not necessary, so it reverses the rule.",
+            "3": "“Might not” expresses possibility and says nothing about what is allowed.",
+          },
+        },
+        {
+          id: "q4",
+          question: "You ___ book a table; the restaurant is never full.",
+          options: ["mustn't","don't have to","can't","must"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The restaurant is never full, so booking is unnecessary rather than forbidden. “Don't have to” means not necessary.",
+          },
+          distractorNotes: {
+            "0": "“Mustn't” would mean booking is forbidden, and nothing in the sentence suggests that.",
+            "2": "“Can't” would mean you are unable or not allowed to book.",
+            "3": "“Must” would make booking compulsory, the opposite of the meaning.",
+          },
+        },
+        {
+          id: "q5",
+          question: "When I was five, I ___ swim.",
+          options: ["can","could","must","will"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "For a general ability in the past, “could” is the standard modal. “Can” is present tense and does not fit “when I was five”.",
+          },
+          distractorNotes: {
+            "0": "“Can” refers to the present. The past time marker rules it out.",
+            "2": "“Must” expresses obligation, not ability.",
+            "3": "“Will” looks forward, but the sentence looks back.",
+          },
+        },
+        {
+          id: "q6",
+          question: "Despite the heavy traffic, I ___ arrive on time for the interview.",
+          options: ["could","was able to","can","might"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "This describes one specific achievement on one occasion, which takes “was able to”. “Could” would suggest a general possibility rather than something that actually happened.",
+          },
+          distractorNotes: {
+            "0": "“Could” fits general past ability, but for a single completed success it sounds like a possibility only.",
+            "2": "“Can” is present tense, but the sentence describes a past event.",
+            "3": "“Might” expresses uncertainty, yet the writer clearly did arrive.",
+          },
+        },
+        {
+          id: "q7",
+          question: "If you feel unwell, you ___ see a doctor.",
+          options: ["must","should","will","would"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The sentence gives advice, not an order. “Should” is the modal for recommendations, and it is softer than “must”.",
+          },
+          distractorNotes: {
+            "0": "“Must” sounds like a strict rule or command, which is stronger than the sentence intends.",
+            "2": "“Will” predicts what will happen rather than recommending an action.",
+            "3": "“Would” is used for hypotheticals and does not give advice on its own here.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */

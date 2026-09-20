@@ -334,6 +334,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "In Task 2, the range of modals is a visible part of Grammatical Range and Accuracy, and hedging with may, might and could keeps an argument believable. In Speaking, using 'would', 'could' and 'might' to talk about possibilities and hypotheticals is a common way to show range in Parts 2 and 3.",
+    practiceSlug: "modal-verbs-practice",
     tags: ["grammar", "verbs", "task2"],
   },
 ];
