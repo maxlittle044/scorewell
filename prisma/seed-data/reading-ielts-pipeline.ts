@@ -9492,6 +9492,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0026-p1",
+    "title": "The Story of Cheese",
+    "sourceTestSet": "Academic",
+    "topic": "Food",
+    "tags": ["academic", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Cheese is one of the oldest manufactured foods. Archaeologists have found pottery strainers in Poland, dating from about 7,500 years ago, whose surfaces still carry traces of milk fat, suggesting that early farmers were already separating the solid part of milk from the liquid. Cheese-making probably began by accident, when milk stored in containers made from animal stomachs began to curdle.\n\nB. Cheese had a practical advantage. Most adults in early farming communities could not digest the sugar in fresh milk, called lactose, but much of it drains away with the liquid when cheese is made. Cheese was therefore easier to digest than milk, and, being drier, it also kept for far longer, which allowed communities to store food through the winter.\n\nC. The basic method has changed little over thousands of years. Milk from cows, sheep, goats or buffalo is warmed and then curdled, traditionally with rennet, a substance found in the stomachs of young animals. The solid curds are separated from the liquid whey, pressed into shape and left to age. Differences in the milk, the temperature, the bacteria and the length of ageing produce very different results, from soft, fresh cheeses to hard cheeses that mature for years.\n\nD. The Romans enjoyed cheese greatly and spread cheese-making across their empire, but many of the most famous varieties developed later. In the Middle Ages, monasteries in Europe were important centres of experiment, and monks recorded recipes and improved methods of ageing. Many regions became known for a particular cheese, shaped by local grass, climate and traditions, and some are still protected by law, so that only cheese made in a specific place can carry its name.\n\nE. Cheese-making moved from farms into factories in the nineteenth century. The first cheese factory is usually said to have opened in Switzerland in 1815, and one opened in the United States in 1851. In 1911, two Swiss inventors, Walter Gerber and Fritz Stettler, created processed cheese by melting cheese and mixing it with other ingredients, a product that lasted much longer and could be sold in uniform slices.\n\nF. Today, France alone is often said to produce more than a thousand types of cheese, and cheese is eaten all over the world. Some consumers now prefer cheese made from the milk of animals raised on small farms, while others look for dairy-free alternatives made from nuts or soya. The oldest food technology still has room for new ideas.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0026-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An accidental beginning" },
+            { "key": "ii", "label": "A food that solved two problems" },
+            { "key": "iii", "label": "Ingredients and method" },
+            { "key": "iv", "label": "Monks and regional pride" },
+            { "key": "v", "label": "The move to the factory" },
+            { "key": "vi", "label": "A modern industry with room for change" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0026-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes how cheese-making probably began." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes how cheese was easier to digest and kept longer." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the ingredients and method." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes monasteries and regional cheeses." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q005", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes factory production." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0026-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q006", "statement": "Pottery strainers found in Poland are about 7,500 years old.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A gives about 7,500 years." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q007", "statement": "Most adults in early farming communities could easily digest fresh milk.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says most could not digest lactose." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q008", "statement": "Rennet comes from the stomachs of young animals.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q009", "statement": "The Romans invented processed cheese.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says processed cheese was created in 1911 by two Swiss inventors." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0026-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0026-q010", "prompt": "The sugar in milk is called ______.", "accept": ["lactose"], "evidence": { "explanation": "Paragraph B names lactose." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q011", "prompt": "The liquid part of curdled milk is called ______.", "accept": ["whey"], "evidence": { "explanation": "Paragraph C names whey." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q012", "prompt": "The first cheese factory is usually said to have opened in ______ in 1815.", "accept": ["Switzerland"], "evidence": { "explanation": "Paragraph E says Switzerland." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q013", "prompt": "Processed cheese was created in ______.", "accept": ["1911"], "evidence": { "explanation": "Paragraph E gives 1911." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0026-p2",
+    "title": "Life in the Desert",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. A desert is defined not by heat but by dryness: a region that receives less than about 250 millimetres of rain a year. Deserts cover roughly a third of the Earth's land surface, and they include cold deserts as well as hot ones. The largest desert of all is not the Sahara, but Antarctica, where very little snow falls.\n\nB. The Sahara, in northern Africa, is the largest hot desert, with an area of around nine million square kilometres, almost as large as the United States. Its landscape is not only sand: much of it consists of bare rock, gravel plains and mountains, and sand dunes cover only a fraction of the area.\n\nC. Life in the desert has to cope with extreme conditions. In hot deserts, daytime temperatures can pass 40 degrees Celsius, yet at night the clear, dry air lets heat escape quickly, and the temperature can fall sharply. Rain is rare and unpredictable, and it may come in a sudden downpour that causes flash floods, followed by years of drought.\n\nD. Desert plants have found many ways to survive. Cacti store water in their thick stems and have spines instead of leaves to reduce water loss, while other plants have very long roots that reach deep underground, or shallow roots that spread wide to catch rainfall quickly. Some plants lie dormant as seeds for years and flower within days of a rainstorm.\n\nE. Animals have equally clever strategies. Many are active only at night, avoiding the heat of the day by hiding in burrows. The kangaroo rat of North America rarely, if ever, drinks, getting the water it needs from the seeds it eats. The camel does not store water in its hump, as is often believed; the hump holds fat, but camels can drink over 100 litres in a few minutes and lose a great deal of body water without harm.\n\nF. People have lived in deserts for thousands of years, following the rains and moving between wells and oases. Today, deserts are growing in some regions through desertification, a process caused by drought, overgrazing and the clearing of vegetation, which turns farmland into barren ground. Governments and communities have responded with projects to plant trees and protect soil.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0026-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Defining an area by its rainfall" },
+            { "key": "ii", "label": "The biggest hot desert" },
+            { "key": "iii", "label": "Harsh conditions" },
+            { "key": "iv", "label": "Plants that store and wait" },
+            { "key": "v", "label": "Animals that avoid the heat" },
+            { "key": "vi", "label": "People and spreading dryness" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0026-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines a desert by rainfall." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the Sahara." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes extreme temperatures and rainfall." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes desert plants." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes people and desertification." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0026-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q019", "statement": "A desert is defined by a temperature above 40 degrees Celsius.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says a desert is defined by dryness, not heat." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q020", "statement": "Antarctica is the largest desert of all.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q021", "statement": "Sand dunes cover most of the Sahara.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says dunes cover only a fraction of the area." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q022", "statement": "Camels store water in their humps.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says the hump holds fat." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q023", "statement": "Kangaroo rats are found in more than one country.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says only that they live in North America, and gives no details of their range." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0026-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0026-q024", "prompt": "Deserts receive less than about ______ millimetres of rain a year.", "accept": ["250"], "evidence": { "explanation": "Paragraph A gives 250." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q025", "prompt": "Rain in deserts may come in a sudden downpour that causes flash ______.", "accept": ["floods"], "evidence": { "explanation": "Paragraph C says flash floods." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q026", "prompt": "Cacti have spines instead of ______.", "accept": ["leaves"], "evidence": { "explanation": "Paragraph D says spines instead of leaves." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q027", "prompt": "Camels can drink over ______ litres in a few minutes.", "accept": ["100"], "evidence": { "explanation": "Paragraph E gives 100." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0026-p3",
+    "title": "The Conquest of Everest",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "exploration", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Mount Everest, on the border between Nepal and Tibet, is the highest mountain in the world, at 8,849 metres above sea level according to the most recent survey by Nepal and China. It is known to the Nepalese as Sagarmatha and to the Tibetans as Chomolungma, but the name used in English honours Sir George Everest, a British surveyor-general of India, although he never saw the mountain himself.\n\nB. The mountain was closed to foreigners for many years, and the first serious attempts to climb it took place in the 1920s. In 1924, the British climbers George Mallory and Andrew Irvine disappeared near the summit while making an attempt, and it has never been established whether they reached the top. Mallory's answer when asked why he wanted to climb Everest, \"Because it's there\", became famous.\n\nC. The dangers of climbing Everest are very great. Above about 8,000 metres, known as the death zone, the air contains only about a third of the oxygen found at sea level, and climbers become weak, confused and prone to fatal mistakes. Temperatures can fall below minus 30 degrees Celsius, and avalanches, storms and crevasses in the ice add to the risks.\n\nD. After several failed expeditions, a large British team led by John Hunt set out in 1953, with a support team carrying tonnes of supplies and oxygen equipment. On 29 May, the New Zealander Edmund Hillary and the Sherpa climber Tenzing Norgay reached the summit together. The news was announced in Britain on the day of Queen Elizabeth II's coronation, and it made both men famous around the world.\n\nE. Since then, thousands of people have climbed Everest. Reinhold Messner and Peter Habeler climbed it without bottled oxygen in 1978, and the Japanese climber Junko Tabei became the first woman to reach the summit in 1975. Sherpas, an ethnic group of the Himalayas, have played a vital role in every expedition, fixing ropes, carrying loads and guiding clients, though they also carry much of the risk.\n\nF. Today, Everest faces new problems. Commercial expeditions have led to crowds queuing near the summit in good weather, and the mountain has been littered with discarded tents, oxygen bottles and other rubbish. Nepal and China have introduced rules for permits and clean-up teams, but debate continues over how to keep the world's highest mountain both accessible and protected.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0026-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The height and names of a mountain" },
+            { "key": "ii", "label": "Early attempts and a lost pair" },
+            { "key": "iii", "label": "A hostile environment" },
+            { "key": "iv", "label": "The successful expedition" },
+            { "key": "v", "label": "Later achievements and the Sherpas" },
+            { "key": "vi", "label": "Crowds and clean-up" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0026-q028", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the height and names of the mountain." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q029", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the early attempts, including Mallory and Irvine." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q030", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the dangers of the death zone." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q031", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the 1953 expedition." } },
+            { "kind": "matching", "id": "generated-reading-academic-0026-q032", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes crowding and rubbish." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0026-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q033", "statement": "George Everest saw the mountain that bears his name.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says he never saw it himself." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q034", "statement": "Historians have proved that Mallory and Irvine reached the summit.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it has never been established." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q035", "statement": "The air in the death zone contains about a third of the oxygen at sea level.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0026-q036", "statement": "Hillary and Tenzing reached the summit on 29 May 1953.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D gives the date." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0026-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0026-q037", "prompt": "The Nepalese name for Everest is ______.", "accept": ["Sagarmatha"], "evidence": { "explanation": "Paragraph A names Sagarmatha." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q038", "prompt": "Mallory and Irvine disappeared in ______.", "accept": ["1924"], "evidence": { "explanation": "Paragraph B gives 1924." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q039", "prompt": "The 1953 British team was led by John ______.", "accept": ["Hunt"], "evidence": { "explanation": "Paragraph D names John Hunt." } },
+            { "kind": "completion", "id": "generated-reading-academic-0026-q040", "prompt": "Junko Tabei became the first woman to reach the summit in ______.", "accept": ["1975"], "evidence": { "explanation": "Paragraph E gives 1975." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
