@@ -6644,5 +6644,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0029-s1",
+    "title": "Campsite Reservation – Listening Section 1",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "form-completion"],
+    "data": {
+      "audioLabel": "Campsite Reservation – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Lakeside Campsite. How can I help you?\nCaller: Hello, I'd like to reserve a pitch for a week in July, please.\nReceptionist: Certainly. Which dates would you like?\nCaller: Arriving on the twelfth and leaving on the nineteenth.\nReceptionist: We have a pitch available. Is it for a tent or a caravan?\nCaller: A tent, for two adults and two children.\nReceptionist: A tent pitch costs £18 a night, and children under five are free. There's also a charge of £3 a night for an electric hook-up.\nCaller: We'll take the hook-up, please, as we have a small fridge. Is there a shop on the site?\nReceptionist: Yes, there's a small shop by the entrance, and showers are included in the price.\nCaller: Do you allow dogs?\nReceptionist: Yes, but they must be kept on a lead. Could I have your surname?\nCaller: It's Lindqvist, L-I-N-D-Q-V-I-S-T.\nReceptionist: Thank you, Mrs Lindqvist. We ask for a deposit of £50 to secure the booking.\nCaller: That's fine. My phone number is 07700 900457.\nReceptionist: Thank you. Check-in is after two o'clock.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0029-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0029-q001", "prompt": "Arrival date: the ______ of July.", "accept": ["twelfth","12th","12"], "evidence": { "explanation": "The caller arrives on the twelfth." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q002", "prompt": "Departure date: the ______ of July.", "accept": ["nineteenth","19th","19"], "evidence": { "explanation": "The caller leaves on the nineteenth." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q003", "prompt": "Type of pitch: ______.", "accept": ["tent"], "evidence": { "explanation": "The caller needs a tent pitch." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q004", "prompt": "Number of adults: ______.", "accept": ["two","2"], "evidence": { "explanation": "The party has two adults." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q005", "prompt": "Cost of pitch per night: £______.", "accept": ["18"], "evidence": { "explanation": "A tent pitch costs £18 a night." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q006", "prompt": "Electric hook-up: £______ a night.", "accept": ["3","three"], "evidence": { "explanation": "The hook-up costs £3 a night." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q007", "prompt": "Dogs must be kept on a ______.", "accept": ["lead"], "evidence": { "explanation": "Dogs must be kept on a lead." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q008", "prompt": "Surname: ______.", "accept": ["Lindqvist"], "evidence": { "explanation": "The caller spells L-I-N-D-Q-V-I-S-T." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q009", "prompt": "Deposit: £______.", "accept": ["50","fifty"], "evidence": { "explanation": "The deposit is £50." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q010", "prompt": "Check-in is after ______ o'clock.", "accept": ["two","2"], "evidence": { "explanation": "Check-in is after two o'clock." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0029-s2",
+    "title": "Ferry Crossing Information – Listening Section 2",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Ferry Crossing Information – Listening Section 2",
+      "transcript": "Good morning, passengers, and welcome aboard the Island Princess. This is some information about today's crossing.\n\nOur journey to the island takes about ninety minutes, and we expect to arrive at half past eleven. The sea is calm today, but the captain advises passengers to hold the handrails when walking on deck.\n\nThe ship has three decks. Cars and vans are on the lowest deck, and passengers are not allowed to stay there during the crossing. The main lounge and the cafeteria are on the middle deck, and the cafeteria serves hot meals and drinks until eleven o'clock. The upper deck is open-air, and it is the best place to see the cliffs and, if you are lucky, dolphins, which are often seen in this part of the sea.\n\nIf you have any problems, please ask a member of staff, who wear yellow jackets. There is a first-aid room next to the information desk. Toilets are at both ends of the middle deck.\n\nWhen we arrive, please return to your vehicle only after the announcement. Foot passengers will leave from the middle deck, and a bus service to the town leaves from the port every twenty minutes. Thank you for travelling with us.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0029-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0029-q011", "prompt": "The crossing takes about ______ minutes.", "accept": ["ninety","90"], "evidence": { "explanation": "The speaker says about ninety minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q012", "prompt": "The ferry is expected to arrive at half past ______.", "accept": ["eleven","11"], "evidence": { "explanation": "The speaker says half past eleven." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q013", "prompt": "The ship has ______ decks.", "accept": ["three","3"], "evidence": { "explanation": "The speaker says three decks." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q014", "prompt": "The cafeteria serves hot meals until ______ o'clock.", "accept": ["eleven","11"], "evidence": { "explanation": "The speaker says until eleven o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q015", "prompt": "Staff members wear ______ jackets.", "accept": ["yellow"], "evidence": { "explanation": "The speaker says yellow jackets." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q016", "prompt": "Buses to the town leave every ______ minutes.", "accept": ["twenty","20"], "evidence": { "explanation": "The speaker says every twenty minutes." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0029-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q017", "question": "Where are cars and vans kept?", "options": ["On the lowest deck","On the middle deck","On the upper deck","In the lounge"], "correctIndex": 0, "evidence": { "explanation": "Cars and vans are on the lowest deck." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q018", "question": "Where is the best place to see the cliffs?", "options": ["The cafeteria","The upper deck","The lounge","The car deck"], "correctIndex": 1, "evidence": { "explanation": "The upper deck is open-air and best for the cliffs." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q019", "question": "Where is the first-aid room?", "options": ["Next to the information desk","By the cafeteria","On the upper deck","Beside the toilets"], "correctIndex": 0, "evidence": { "explanation": "It is next to the information desk." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q020", "question": "Where do foot passengers leave the ship from?", "options": ["The upper deck","The middle deck","The lowest deck","The lounge"], "correctIndex": 1, "evidence": { "explanation": "Foot passengers leave from the middle deck." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0029-s3",
+    "title": "Planning a Fundraising Event – Listening Section 3",
+    "topic": "Society",
+    "tags": ["academic", "society", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Fundraising Event – Listening Section 3",
+      "transcript": "Ms Kowalski: Ben, thanks for coming to discuss the fundraising event for the children's hospital.\nBen: Thank you. We've decided to hold a charity concert in the school hall.\nMs Kowalski: Excellent. How many people can the hall hold?\nBen: Two hundred and fifty, so we hope to sell out.\nMs Kowalski: What will the tickets cost?\nBen: We're thinking of £8 for adults and £4 for children.\nMs Kowalski: That seems fair. And how will you advertise the concert?\nBen: On social media, and with posters in local shops.\nMs Kowalski: Good. Don't forget to ask the shops for permission first. What about the performers?\nBen: Four school bands and a choir have agreed to take part.\nMs Kowalski: Wonderful. You'll also need a licence to sell refreshments.\nBen: I didn't know that. Where do I get it?\nMs Kowalski: From the local council. It usually takes about two weeks, so apply soon.\nBen: I'll do it tomorrow. Also, we're going to ask a local bakery to donate cakes.\nMs Kowalski: That's a lovely idea. When will the concert take place?\nBen: On the first Saturday of next month.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0029-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q021", "question": "What kind of event is being planned?", "options": ["A charity concert","A sports day","A book sale","A film night"], "correctIndex": 0, "evidence": { "explanation": "Ben says they will hold a charity concert." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q022", "question": "How many people can the hall hold?", "options": ["150","200","250","300"], "correctIndex": 2, "evidence": { "explanation": "The hall holds two hundred and fifty." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q023", "question": "How much will a children's ticket cost?", "options": ["£2","£4","£8","£10"], "correctIndex": 1, "evidence": { "explanation": "Children's tickets will cost £4." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q024", "question": "How many bands will perform?", "options": ["Two","Three","Four","Five"], "correctIndex": 2, "evidence": { "explanation": "Four school bands will take part." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q025", "question": "How long does the refreshments licence usually take?", "options": ["One day","One week","About two weeks","About two months"], "correctIndex": 2, "evidence": { "explanation": "It usually takes about two weeks." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0029-q026", "question": "When will the concert take place?", "options": ["Next week","The first Saturday of next month","The last day of term","In two months"], "correctIndex": 1, "evidence": { "explanation": "Ben says the first Saturday of next month." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0029-s3-g2",
+          "instructions": "Who is responsible for each arrangement? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "The school" },
+            { "key": "B", "label": "The council" },
+            { "key": "C", "label": "A local bakery" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0029-q027", "prompt": "Provides the hall for the concert", "answer": "A", "evidence": { "explanation": "The concert is in the school hall." } },
+            { "kind": "matching", "id": "generated-listening-academic-0029-q028", "prompt": "Issues the licence for selling refreshments", "answer": "B", "evidence": { "explanation": "Ms Kowalski says the licence comes from the local council." } },
+            { "kind": "matching", "id": "generated-listening-academic-0029-q029", "prompt": "Will be asked to donate cakes", "answer": "C", "evidence": { "explanation": "Ben will ask a local bakery to donate cakes." } },
+            { "kind": "matching", "id": "generated-listening-academic-0029-q030", "prompt": "Takes about two weeks to process an application", "answer": "B", "evidence": { "explanation": "The council licence takes about two weeks." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0029-s4",
+    "title": "How Lightning Forms – Listening Section 4",
+    "topic": "Science",
+    "tags": ["academic", "science", "weather", "note-completion"],
+    "data": {
+      "audioLabel": "How Lightning Forms – Listening Section 4",
+      "transcript": "Today's lecture looks at one of nature's most spectacular displays: lightning.\n\nLightning is a giant electrical spark that occurs inside storm clouds, between clouds, or between a cloud and the ground. Inside a thunderstorm, strong currents of air carry tiny ice crystals upwards, and they collide with heavier pellets of ice called graupel that are falling. These collisions transfer electric charge, so that the top of the cloud becomes positively charged and the bottom becomes negatively charged.\n\nWhen the difference in charge becomes large enough, the air, which normally does not conduct electricity, breaks down, and a channel of charge rushes towards the ground. A stroke of lightning heats the surrounding air to about thirty thousand degrees Celsius, which is several times hotter than the surface of the sun. The air expands explosively, and this creates the shock wave that we hear as thunder.\n\nBecause light travels much faster than sound, we see lightning before we hear thunder. Sound travels about one kilometre in three seconds, so you can estimate how far away a storm is by counting the seconds between the flash and the thunder, and dividing by three.\n\nThere are around one hundred flashes of lightning every second across the world. Benjamin Franklin showed in 1752 that lightning was electrical, and he later invented the lightning rod, which guides the charge safely into the ground.\n\nIf you are caught outdoors in a thunderstorm, you should avoid open fields and tall trees, and shelter in a building or a car with a metal roof.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0029-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0029-q031", "prompt": "Lightning is a giant electrical ______.", "accept": ["spark"], "evidence": { "explanation": "The lecturer says a giant electrical spark." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q032", "prompt": "Ice crystals collide with heavier pellets called ______.", "accept": ["graupel"], "evidence": { "explanation": "The lecturer names graupel." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q033", "prompt": "The top of the storm cloud becomes ______ charged.", "accept": ["positively"], "evidence": { "explanation": "The lecturer says positively charged." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q034", "prompt": "Lightning heats the air to about ______ degrees Celsius.", "accept": ["thirty thousand","30,000","30000"], "evidence": { "explanation": "The lecturer says about thirty thousand degrees." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q035", "prompt": "Thunder is caused by a ______.", "accept": ["shock wave"], "evidence": { "explanation": "The lecturer says the shock wave." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q036", "prompt": "Sound travels about one kilometre in ______ seconds.", "accept": ["three","3"], "evidence": { "explanation": "The lecturer says three seconds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q037", "prompt": "There are around ______ flashes of lightning every second across the world.", "accept": ["one hundred","100"], "evidence": { "explanation": "The lecturer says around one hundred." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q038", "prompt": "Benjamin Franklin showed that lightning was electrical in ______.", "accept": ["1752"], "evidence": { "explanation": "The lecturer gives 1752." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q039", "prompt": "Franklin invented the lightning ______.", "accept": ["rod"], "evidence": { "explanation": "The lecturer says lightning rod." } },
+            { "kind": "completion", "id": "generated-listening-academic-0029-q040", "prompt": "In a thunderstorm, avoid open fields and tall ______.", "accept": ["trees"], "evidence": { "explanation": "The lecturer says tall trees." } }
+          ]
+        }
+      ]
+    }
   }
 ];
