@@ -9812,6 +9812,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0028-p1",
+    "title": "Life on the Arctic Tundra",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The word tundra comes from a Finnish word meaning \"treeless plain\", and it describes the cold, windswept lands that lie north of the tree line around the Arctic Ocean. Tundra covers roughly a tenth of the Earth's land surface, and it stretches across northern Canada, Alaska, Scandinavia and Russia.\n\nB. The climate of the tundra is harsh. Winter temperatures often fall to minus 30 degrees Celsius or lower, while in the short summer they rise to only a few degrees above zero. Precipitation is very low, often less than 250 millimetres a year, which is about the same as in many deserts, but because the cold prevents water from evaporating, the ground can be waterlogged in summer.\n\nC. The most important feature of the tundra is permafrost, a layer of soil that remains frozen all year. In summer, only the top few centimetres thaw, and because water cannot drain through the frozen ground below, it forms shallow pools and marshes. The permafrost also prevents trees from putting down deep roots, which is why few of them grow there.\n\nD. Plants have adapted to these conditions by staying small. Mosses, lichens, grasses and low shrubs grow close to the ground, where they are sheltered from the wind, and many produce flowers within the growing season, which lasts only six to eight weeks. In this time, the plants must take in enough energy to survive the rest of the year.\n\nE. Animals of the tundra have also found ways to cope. Caribou, also known as reindeer, migrate hundreds of kilometres between summer and winter feeding grounds. Arctic foxes grow thick white coats in winter, and lemmings, small rodents, breed so quickly that their numbers can rise and fall sharply every three to four years, affecting animals that feed on them, such as snowy owls. In summer, billions of mosquitoes appear, providing food for the many migrating birds that arrive to breed.\n\nF. Today, the tundra is threatened by climate change, which is warming the Arctic faster than most other regions. As the permafrost thaws, it releases carbon dioxide and methane, both greenhouse gases, and this may speed up warming further. Roads and buildings constructed on the frozen ground are beginning to sink, and the Indigenous peoples who have herded reindeer and hunted in the region for thousands of years are having to adapt to changes in their environment.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0028-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A treeless northern region" },
+            { "key": "ii", "label": "Cold and dry" },
+            { "key": "iii", "label": "Ground that never thaws" },
+            { "key": "iv", "label": "Plants that stay low" },
+            { "key": "v", "label": "Animals and cycles" },
+            { "key": "vi", "label": "Warming and its consequences" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0028-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines the tundra and where it is." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the temperature and precipitation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes permafrost." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes tundra plants." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the effects of climate change." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0028-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q006", "statement": "The word tundra comes from Finnish.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q007", "statement": "The tundra receives much more rainfall than most deserts.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says precipitation is about the same as in many deserts." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q008", "statement": "Trees are unable to put down deep roots because of the permafrost.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q009", "statement": "Polar bears feed on lemmings.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention polar bears." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0028-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0028-q010", "prompt": "Winter temperatures on the tundra often fall to minus ______ degrees Celsius or lower.", "accept": ["30","thirty"], "evidence": { "explanation": "Paragraph B gives minus 30." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q011", "prompt": "The tundra growing season lasts only six to ______ weeks.", "accept": ["eight","8"], "evidence": { "explanation": "Paragraph D says six to eight weeks." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q012", "prompt": "Lemming numbers rise and fall every three to ______ years.", "accept": ["four","4"], "evidence": { "explanation": "Paragraph E says three to four years." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q013", "prompt": "Thawing permafrost releases carbon dioxide and ______.", "accept": ["methane"], "evidence": { "explanation": "Paragraph F says methane." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0028-p2",
+    "title": "The Pyramids of Egypt",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "ancient-world", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The pyramids of Egypt are among the most famous buildings in the world. More than a hundred were built over roughly a thousand years, most of them as tombs for kings, known as pharaohs, and the largest and best known stand at Giza, on the edge of modern Cairo.\n\nB. The first pyramid was the Step Pyramid at Saqqara, built around 2670 BC for the pharaoh Djoser. It was designed by his chief adviser, Imhotep, who is said to have been the first architect to use cut stone on a large scale. It consists of six layers, each smaller than the one below, and it looks like a giant staircase.\n\nC. The Great Pyramid at Giza was built around 2560 BC for the pharaoh Khufu. It originally stood about 147 metres high, and it remained the tallest structure ever built by humans for nearly 4,000 years. It is made of an estimated 2.3 million stone blocks, with an average weight of about two and a half tonnes, and its four sides are aligned almost exactly with the four points of the compass.\n\nD. For a long time, it was believed that the pyramids were built by slaves, but archaeologists have found evidence that suggests otherwise. In the 1990s, the remains of a town for workers were discovered near Giza, with bakeries, breweries and cemeteries. The workers were buried near the pyramids with honour, which suggests that they were respected, and that they were probably paid labourers, supported by farmers who worked on the pyramids during the season when the Nile flooded their fields.\n\nE. How the blocks were moved remains partly a mystery. Most scholars believe that workers dragged them on wooden sledges along ramps, pouring water on the sand in front of the sledges to reduce friction, as shown in a painting found in a tomb. The work is thought to have taken about twenty years, and to have involved thousands of people.\n\nF. In later periods, the pharaohs stopped building pyramids, partly because they were too obvious to tomb robbers, and were buried in hidden tombs in the Valley of the Kings instead. Even so, the pyramids continued to fascinate visitors. The Great Pyramid is the only one of the Seven Wonders of the Ancient World that still stands today, and it attracts millions of visitors each year.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0028-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Monuments for kings" },
+            { "key": "ii", "label": "A staircase to the sky" },
+            { "key": "iii", "label": "The biggest of them all" },
+            { "key": "iv", "label": "Workers, not slaves" },
+            { "key": "v", "label": "Moving the stone" },
+            { "key": "vi", "label": "The end of pyramid building" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0028-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the pyramids as tombs for pharaohs." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the Step Pyramid." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the Great Pyramid." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes who built the pyramids." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the end of pyramid building." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0028-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q019", "statement": "The Step Pyramid was built for the pharaoh Djoser.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q020", "statement": "The Great Pyramid was the tallest structure built by humans for nearly 4,000 years.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q021", "statement": "Archaeologists have proved that the pyramids were built by slaves.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the evidence suggests otherwise." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q022", "statement": "Workers dragged blocks on sledges over sand that had been wetted.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E describes this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0028-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0028-q023", "prompt": "The Step Pyramid was designed by ______.", "accept": ["Imhotep"], "evidence": { "explanation": "Paragraph B names Imhotep." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q024", "prompt": "The Great Pyramid was built around ______ BC.", "accept": ["2560"], "evidence": { "explanation": "Paragraph C gives 2560." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q025", "prompt": "The Great Pyramid is made of about ______ million stone blocks.", "accept": ["2.3"], "evidence": { "explanation": "Paragraph C says 2.3 million." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q026", "prompt": "Later pharaohs were buried in the Valley of the ______.", "accept": ["Kings"], "evidence": { "explanation": "Paragraph F says the Valley of the Kings." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0028-p3",
+    "title": "The Invention of Braille",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "communication", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. For centuries, people who were blind had few ways of reading. Some were taught by having others read aloud to them, and a few schools produced books with raised letters, but the shapes of letters were difficult to distinguish by touch, and reading was slow. Braille, the system of raised dots now used all over the world, solved this problem, and it was the invention of a teenager.\n\nB. Louis Braille was born in 1809 in the French village of Coupvray, where his father worked as a saddler. At the age of three, he injured his eye with a tool in his father's workshop, and the infection that followed spread to both eyes, so that by five, he was completely blind. His parents refused to give up on his education, and he learned a great deal by listening.\n\nC. At ten, Louis won a place at the Royal Institute for Blind Youth in Paris. There, the pupils learned from books with large embossed letters, which were bulky and expensive to produce, and which could be read only slowly. Writing was even harder, because pupils could not write anything that they could read afterwards.\n\nD. In 1821, a French army captain named Charles Barbier visited the school and demonstrated a system he had developed for soldiers to communicate silently and at night, using patterns of raised dots and dashes. It was too complicated, because each sound needed up to twelve dots, and a fingertip could not feel all of them at once. Louis, then twelve, saw the potential, and set out to improve it.\n\nE. By the age of fifteen, Louis had reduced the system to a cell of six dots, arranged in two columns of three. Different combinations of raised dots represent letters, numbers and punctuation marks, and a fingertip can feel a whole cell at a single touch. He published his system in 1829, and later added musical notation, since he was also a gifted musician and organist.\n\nF. Braille's system was slow to be accepted, partly because sighted teachers preferred raised letters, which they could read themselves. He died of tuberculosis in 1852, and only two years later, the French government officially adopted his method. Braille has since been adapted to almost every language, and modern technology, such as refreshable Braille displays, allows readers to use it with computers and phones. World Braille Day is celebrated on 4 January, Louis Braille's birthday.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0028-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A problem that needed solving" },
+            { "key": "ii", "label": "A child's accident" },
+            { "key": "iii", "label": "School and its limits" },
+            { "key": "iv", "label": "A soldier's system" },
+            { "key": "v", "label": "Simplifying to six dots" },
+            { "key": "vi", "label": "Acceptance and legacy" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0028-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the problem of reading without sight." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Louis Braille's accident." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the school and its embossed letters." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Charles Barbier's system." } },
+            { "kind": "matching", "id": "generated-reading-academic-0028-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes acceptance and legacy." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0028-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q032", "statement": "Louis Braille lost his sight in a workshop accident.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q033", "statement": "Braille was born in Paris.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says he was born in Coupvray." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q034", "statement": "Barbier's system used up to twelve dots for each sound.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q035", "statement": "The French government adopted Braille's method before he died.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says it was adopted two years after his death." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0028-q036", "statement": "Braille taught music at the Royal Institute.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says he was a musician but does not say he taught music." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0028-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0028-q037", "prompt": "Louis Braille was born in ______.", "accept": ["1809"], "evidence": { "explanation": "Paragraph B gives 1809." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q038", "prompt": "The Braille system uses a cell of ______ dots.", "accept": ["six","6"], "evidence": { "explanation": "Paragraph E says six dots." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q039", "prompt": "Braille published his system in ______.", "accept": ["1829"], "evidence": { "explanation": "Paragraph E gives 1829." } },
+            { "kind": "completion", "id": "generated-reading-academic-0028-q040", "prompt": "World Braille Day is celebrated on 4 ______.", "accept": ["January"], "evidence": { "explanation": "Paragraph F says 4 January." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
