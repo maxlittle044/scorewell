@@ -1825,4 +1825,219 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (car ownership, newspaper readers, commuting time,
+  // university budget, book formats) ----
+  {
+    slug: "task1-car-ownership-bar-chart",
+    title: "Task 1: Cars per 1,000 people in four countries (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Transport",
+    tags: ["writing", "task-1-academic", "transport", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of cars per 1,000 people in four countries in 1990 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "cars per 1,000 people",
+        categories: ["Poland", "Japan", "Brazil", "India"],
+        series: [
+          { label: "1990", values: [190, 450, 90, 10] },
+          { label: "2020", values: [640, 610, 220, 40] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-daily-newspaper-readers-line-graph",
+    title: "Task 1: Adults who read a newspaper daily (Line graph)",
+    taskType: "task1-academic",
+    topic: "Media",
+    tags: ["writing", "task-1-academic", "media", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of adults who read a printed newspaper every day in three countries between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "% of adults",
+        xLabels: ["2000", "2005", "2010", "2015", "2020"],
+        series: [
+          { label: "Norway", values: [78, 72, 64, 52, 40] },
+          { label: "Spain", values: [40, 38, 33, 25, 18] },
+          { label: "Turkey", values: [30, 33, 34, 28, 20] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-commuting-time-table",
+    title: "Task 1: Average daily commuting time in four cities (Table)",
+    taskType: "task1-academic",
+    topic: "Transport",
+    tags: ["writing", "task-1-academic", "transport", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the average time in minutes that workers in four cities spent travelling to and from work each day, by method of transport, in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["City", "By car (minutes)", "By public transport (minutes)"],
+        rows: [
+          { label: "London", values: [75, 95] },
+          { label: "Tokyo", values: [60, 90] },
+          { label: "Sydney", values: [70, 85] },
+          { label: "Toronto", values: [65, 80] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-university-budget-pie-chart",
+    title: "Task 1: How a university spends its annual budget (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Education",
+    tags: ["writing", "task-1-academic", "education", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows how one university divided its annual budget between five areas of spending. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "% of budget",
+        slices: [
+          { label: "Teaching", value: 40 },
+          { label: "Research", value: 25 },
+          { label: "Buildings and equipment", value: 15 },
+          { label: "Student services", value: 12 },
+          { label: "Administration", value: 8 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-book-sales-formats-bar-chart",
+    title: "Task 1: Book sales by format (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Media",
+    tags: ["writing", "task-1-academic", "media", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of printed books, e-books and audiobooks sold in one country in 2018 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "million copies",
+        categories: ["Printed books", "E-books", "Audiobooks"],
+        series: [
+          { label: "2018", values: [220, 70, 15] },
+          { label: "2023", values: [190, 80, 45] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (course enquiry, apology, guest speaker, workplace
+  // suggestion, advice to a friend) ----
+  {
+    slug: "letter-enquiry-evening-course",
+    title: "Letter enquiring about an evening course",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "formal", "enquiry"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are interested in taking an evening course at a local college. Write a letter to the course secretary. In your letter: explain which course you are interested in and why, ask about the timetable and cost, and ask whether you need any previous experience.",
+      instructions:
+        "A formal, polite tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-apology-missed-meeting",
+    title: "Letter apologising for missing a meeting",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "apology"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You missed an important meeting with a colleague because of an unexpected problem. Write a letter to your colleague. In your letter: apologise for missing the meeting, explain what happened, and suggest a new time to meet.",
+      instructions:
+        "A semi-formal, sincere tone suits a colleague you know. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-inviting-speaker-school",
+    title: "Letter inviting a guest speaker to a school",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "formal", "invitation"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are a member of a school committee, and you would like to invite a local business owner to talk to students about their career. Write a letter to the business owner. In your letter: explain why you are writing, say what you would like them to talk about, and give details of when and where the talk would take place.",
+      instructions:
+        "A formal, courteous tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-suggesting-workplace-change",
+    title: "Letter to a manager suggesting a change at work",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "suggestion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You think that a change in your workplace would make employees more productive. Write a letter to your manager. In your letter: describe the change you suggest, explain how it would help, and say how it could be introduced.",
+      instructions:
+        "A semi-formal, constructive tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-friend-advice-exam-stress",
+    title: "Letter to a friend offering advice about exam stress",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal", "advice"],
+    kind: "test",
+    data: {
+      prompt:
+        "A friend has written to tell you that they are feeling very stressed about their forthcoming exams. Write a letter to your friend. In your letter: say how you feel about their news, suggest ways they could reduce their stress, and offer to help in some way.",
+      instructions:
+        "Keep this warm and supportive, as you would when writing to a close friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
