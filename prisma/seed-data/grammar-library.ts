@@ -380,4 +380,46 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     practiceSlug: "gerunds-and-infinitives-practice",
     tags: ["grammar", "verbs", "task2"],
   },
+  {
+    slug: "reported-speech",
+    title: "Reported speech",
+    category: "Verbs",
+    summary: "Say, tell and ask: how the tense, pronouns and word order change when you report what someone said.",
+    explanation: [
+      "Reported speech tells us what someone said without using their exact words. When the reporting verb is in the past ('she said', 'he told me'), the tense usually moves one step back: present simple becomes past simple, present perfect becomes past perfect, 'will' becomes 'would' and 'can' becomes 'could'. 'I am tired' becomes 'she said she was tired'.",
+      "Pronouns and time words change to fit the new point of view. 'I' becomes 'he' or 'she'; 'today' becomes 'that day', 'tomorrow' becomes 'the next day', 'now' becomes 'then' and 'here' becomes 'there'. Say the sentence from the listener's position, not the speaker's.",
+      "'Say' and 'tell' are used differently. 'Tell' needs a person straight after it: 'he told me that...'. 'Say' does not: 'he said that...' and never 'he said me'. If you want a person after 'say', use 'to': 'he said to me'.",
+      "Questions lose their question word order in reported speech. There is no inversion and no 'do': 'Where do you live?' becomes 'She asked where I lived', not 'She asked where did I live'. Yes/no questions take 'if' or 'whether': 'She asked if I liked the job.'",
+      "You do not need to move the tense back when the reporting verb is in the present ('she says she is tired') or when the statement is still true ('the guide told us that the museum closes at five'). Instructions use 'to': 'He told me to sit down.'",
+    ],
+    examples: [
+      {
+        wrong: "She said me that she was busy.",
+        right: "She told me that she was busy.",
+        note: "'Tell' takes a person directly. 'Say' does not, so 'said me' is wrong.",
+      },
+      {
+        wrong: "He asked me where did I work.",
+        right: "He asked me where I worked.",
+        note: "Reported questions use statement word order, with no 'did' and no inversion.",
+      },
+      {
+        wrong: "The manager said that he will call tomorrow.",
+        right: "The manager said that he would call the next day.",
+        note: "Move 'will' back to 'would', and change 'tomorrow' to 'the next day' for a past report.",
+      },
+      {
+        wrong: "The teacher told to us to open our books.",
+        right: "The teacher told us to open our books.",
+        note: "After 'tell' the person comes directly, with no 'to' before it.",
+      },
+      {
+        right: "The report states that unemployment has fallen, and the minister claimed that the figures were reliable.",
+        note: "Present-tense reporting needs no backshift; a past reporting verb moves 'were' one step back.",
+      },
+    ],
+    ieltsNote:
+      "Reporting is useful in every part of the test. In Speaking Part 2, it lets you retell a conversation ('my teacher told me to...'), and in Task 2 it helps you refer to views without claiming them ('some experts claim that...'). Errors such as 'said me' and 'asked where did I' are very common and are noticed straight away.",
+    tags: ["grammar", "verbs", "speaking"],
+  },
 ];
