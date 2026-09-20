@@ -10612,6 +10612,59 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0033-p1",
+    "title": "The Human Heart",
+    "sourceTestSet": "Academic",
+    "topic": "Health",
+    "tags": ["academic", "health", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The human heart is a muscle about the size of a clenched fist, and it never stops working. At rest, it beats around 70 times a minute, or about 100,000 times a day, pumping roughly five litres of blood every minute through a network of vessels that would stretch for tens of thousands of kilometres if laid end to end. Over a long life, it may beat more than two and a half billion times.\n\nB. Inside, the heart is divided into four chambers. The two upper chambers, the atria, receive blood, and the two lower chambers, the ventricles, pump it out. The right side sends blood that has given up its oxygen to the lungs, and the left side sends the freshly oxygenated blood around the rest of the body. The left ventricle has the thickest wall of all, because it has to push blood the furthest.\n\nC. One-way valves between the chambers keep the blood flowing in the right direction, and it is their closing that produces the familiar \"lub-dub\" sound heard through a stethoscope. The heart's rhythm is controlled by a small group of cells in the right atrium called the sinoatrial node, often described as the natural pacemaker, which produces regular electrical signals that spread through the heart muscle and tell it to contract.\n\nD. The understanding of how blood moves around the body is relatively recent. For centuries, physicians followed the ancient Greek belief that blood was made in the liver and used up by the body. In 1628, the English physician William Harvey published his conclusion that the heart pumps blood in a continuous circle, an idea that was at first strongly resisted but which became the foundation of modern medicine.\n\nE. The twentieth century brought dramatic advances in treatment. The first implanted artificial pacemaker was fitted in 1958, and in 1967, the South African surgeon Christiaan Barnard performed the first successful human heart transplant in Cape Town, although the patient lived for only 18 days. Since then, techniques such as bypass surgery, stents and drugs that control blood pressure have saved millions of lives.\n\nF. Despite these advances, diseases of the heart and blood vessels remain the leading cause of death in the world, responsible for nearly a third of all deaths according to the World Health Organization. Many cases are linked to risk factors that can be changed, including smoking, a poor diet, lack of exercise and high blood pressure. Health experts therefore stress that prevention, through a healthy lifestyle, is as important as treatment.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0033-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A tireless muscle" },
+            { "key": "ii", "label": "Four chambers and two sides" },
+            { "key": "iii", "label": "Valves, sounds and electrical signals" },
+            { "key": "iv", "label": "A theory that overturned an old belief" },
+            { "key": "v", "label": "Advances in the twentieth century" },
+            { "key": "vi", "label": "Disease and prevention" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0033-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the heart as a tireless muscle and gives figures for its work." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the four chambers and the two sides of the heart." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes valves, the heartbeat sound and the pacemaker cells." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes William Harvey and the discovery of circulation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes heart disease and prevention." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0033-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q006", "statement": "The heart beats around 100,000 times a day at rest.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q007", "statement": "The right ventricle has the thickest wall of the four chambers.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the left ventricle has the thickest wall." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q008", "statement": "The sinoatrial node is located in the right atrium.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q009", "statement": "The patient of the first heart transplant lived for many years.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says he lived for only 18 days." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0033-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0033-q010", "prompt": "The two upper chambers of the heart are called the ______.", "accept": ["atria"], "evidence": { "explanation": "Paragraph B names the atria." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q011", "prompt": "The sinoatrial node is often described as the natural ______.", "accept": ["pacemaker"], "evidence": { "explanation": "Paragraph C says pacemaker." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q012", "prompt": "William Harvey published his conclusions about circulation in ______.", "accept": ["1628"], "evidence": { "explanation": "Paragraph D gives 1628." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q013", "prompt": "The first successful human heart transplant was performed in ______.", "accept": ["1967"], "evidence": { "explanation": "Paragraph E gives 1967." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
