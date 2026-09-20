@@ -585,6 +585,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "reported-speech-practice",
+    title: "Reported speech: say, tell, ask",
+    topic: "Grammar",
+    tags: ["grammar", "verbs", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "She ___ me that the meeting had been cancelled.",
+          options: ["said","told","talked","explained"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Tell” takes a person straight after it: “told me that...”. This is the key difference between “tell” and “say”.",
+          },
+          distractorNotes: {
+            "0": "“Said me” is wrong. “Say” cannot be followed directly by a person. You would need “said to me”.",
+            "2": "“Talked me that” is not an English pattern. “Talk” is followed by “to” or “about”.",
+            "3": "“Explained me” is a very common error. “Explain” needs “to me”.",
+          },
+        },
+        {
+          id: "q2",
+          question: "He asked me where ___.",
+          options: ["did I work","I worked","do I work","I do work"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "Reported questions use statement word order, with no inversion and no “do/did”. “Where do you work?” becomes “where I worked” after a past reporting verb.",
+          },
+          distractorNotes: {
+            "0": "This keeps the question word order and the auxiliary “did”, which reported questions do not use.",
+            "2": "This keeps the question form, and the tense has not moved back after “asked”.",
+            "3": "The word order is right, but “I do work” does not move the tense back and adds an unnecessary auxiliary.",
+          },
+        },
+        {
+          id: "q3",
+          question: "The manager said that he ___ call the next day.",
+          options: ["will","would","did","can"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "After a past reporting verb, “will” moves back to “would”. “The next day” also confirms that we are reporting from a later point.",
+          },
+          distractorNotes: {
+            "0": "“Will” would only be right if the manager were reporting in the present, and “the next day” tells us he is not.",
+            "2": "“Did call” expresses a completed past action, not a future plan.",
+            "3": "“Can” would express ability, and it should also move back to “could” after “said”.",
+          },
+        },
+        {
+          id: "q4",
+          question: "She said, “I have finished.” → She said that she ___ finished.",
+          options: ["has","had","have","was"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The present perfect (“have finished”) moves back to the past perfect (“had finished”) after a past reporting verb.",
+          },
+          distractorNotes: {
+            "0": "“Has” keeps the present perfect, which does not shift back in reported speech.",
+            "2": "“Have” is the original speaker's form and would also need a pronoun change, since “I” has become “she”.",
+            "3": "“Was finished” is a passive and changes the meaning.",
+          },
+        },
+        {
+          id: "q5",
+          question: "The teacher told ___ to open our books.",
+          options: ["to us","us","for us","that we"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "After “tell”, the person comes directly: “told us to open”. No preposition is needed.",
+          },
+          distractorNotes: {
+            "0": "“Told to us” is a very common error. “Tell” takes the person without “to”.",
+            "2": "“Told for us” is not possible, because “for” does not link “tell” and its object.",
+            "3": "“Told us that we” would need a full clause, and “to open” follows the infinitive instruction pattern.",
+          },
+        },
+        {
+          id: "q6",
+          question: "She asked me ___ I liked the job.",
+          options: ["that","if","what","do"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "A yes/no question is reported with “if” or “whether”. “Do you like the job?” has no question word, so it needs “if”.",
+          },
+          distractorNotes: {
+            "0": "“That” introduces a statement, not a question.",
+            "2": "“What” asks for information, but the original question could be answered with yes or no.",
+            "3": "“Do” brings back the question form, which reported questions do not use.",
+          },
+        },
+        {
+          id: "q7",
+          question: "They told me they would arrive ___.",
+          options: ["tomorrow","the next day","yesterday","today"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "Because the reporting verb is in the past, “tomorrow” changes to “the next day”. The report is being made from a later point in time.",
+          },
+          distractorNotes: {
+            "0": "“Tomorrow” would fit only if the report was made on the day they spoke.",
+            "2": "“Yesterday” points to the past, which contradicts “would arrive”.",
+            "3": "“Today” does not match the shift in time that reported speech requires.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */

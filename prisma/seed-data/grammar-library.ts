@@ -420,6 +420,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "Reporting is useful in every part of the test. In Speaking Part 2, it lets you retell a conversation ('my teacher told me to...'), and in Task 2 it helps you refer to views without claiming them ('some experts claim that...'). Errors such as 'said me' and 'asked where did I' are very common and are noticed straight away.",
+    practiceSlug: "reported-speech-practice",
     tags: ["grammar", "verbs", "speaking"],
   },
 ];
