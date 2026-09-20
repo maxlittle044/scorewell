@@ -3338,4 +3338,219 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (weekly exercise, internet users, hospital beds,
+  // tourist origins, home ownership) ----
+  {
+    slug: "task1-weekly-exercise-age-gender-bar-chart",
+    title: "Task 1: Weekly exercise by age group and gender (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Health",
+    tags: ["writing", "task-1-academic", "health", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average number of hours per week that men and women in four age groups spent taking exercise in one country. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "hours per week",
+        categories: ["16–24", "25–44", "45–64", "65+"],
+        series: [
+          { label: "Men", values: [5.2, 3.6, 3.1, 2.8] },
+          { label: "Women", values: [4.1, 3.3, 3.4, 2.5] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-internet-users-regions-line-graph",
+    title: "Task 1: Internet users in three regions (Line graph)",
+    taskType: "task1-academic",
+    topic: "Technology",
+    tags: ["writing", "task-1-academic", "technology", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the number of internet users per 100 people in three regions between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "users per 100 people",
+        xLabels: ["2000", "2005", "2010", "2015", "2020"],
+        series: [
+          { label: "Western Europe", values: [30, 55, 74, 84, 91] },
+          { label: "East Asia", values: [8, 26, 45, 62, 78] },
+          { label: "Central Africa", values: [1, 3, 8, 18, 34] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-hospital-beds-table",
+    title: "Task 1: Hospital beds per 1,000 people (Table)",
+    taskType: "task1-academic",
+    topic: "Health",
+    tags: ["writing", "task-1-academic", "health", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the number of hospital beds per 1,000 people in four countries in 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["Country", "2000", "2020"],
+        rows: [
+          { label: "Japan", values: [14.7, 12.6] },
+          { label: "Germany", values: [9.1, 7.8] },
+          { label: "United States", values: [3.6, 2.8] },
+          { label: "Sweden", values: [3.6, 2.1] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-tourist-origins-pie-chart",
+    title: "Task 1: Where a country's tourists come from (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Tourism",
+    tags: ["writing", "task-1-academic", "tourism", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows the regions of origin of the international tourists who visited one country in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "% of visitors",
+        slices: [
+          { label: "Europe", value: 45 },
+          { label: "Asia", value: 25 },
+          { label: "North America", value: 15 },
+          { label: "Africa", value: 8 },
+          { label: "Other", value: 7 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-home-ownership-age-bar-chart",
+    title: "Task 1: Home ownership and renting by age group (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Housing",
+    tags: ["writing", "task-1-academic", "housing", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the percentage of people in four age groups who owned their homes and who rented them in one country in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "% of age group",
+        categories: ["25–34", "35–44", "45–54", "55+"],
+        series: [
+          { label: "Owned", values: [35, 58, 72, 82] },
+          { label: "Rented", values: [65, 42, 28, 18] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (street party, cycle lanes, restaurant tip,
+  // late-rent apology, scholarship thanks) ----
+  {
+    slug: "letter-invitation-street-party",
+    title: "Letter inviting neighbours to a street party",
+    taskType: "task1-general",
+    topic: "Community",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "invitation"],
+    kind: "test",
+    data: {
+      prompt:
+        "You would like to organise a street party for the people who live on your road. Write a letter to your neighbours. In your letter: explain what you are planning and why, give details of the date, time and place, and ask for help with food and decorations.",
+      instructions:
+        "A friendly but polite tone suits neighbours you know only slightly. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-council-cycle-lanes",
+    title: "Letter to the council suggesting new cycle lanes",
+    taskType: "task1-general",
+    topic: "Transport",
+    tags: ["writing", "task-1-general", "letters", "formal", "suggestion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You think your town needs safer routes for cyclists. Write a letter to the local council. In your letter: describe the problem cyclists face, explain how new cycle lanes would benefit the town, and suggest where they should be built.",
+      instructions:
+        "A formal, persuasive tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-recommending-restaurant-colleague",
+    title: "Letter recommending a restaurant to a colleague",
+    taskType: "task1-general",
+    topic: "Food",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "recommendation"],
+    kind: "test",
+    data: {
+      prompt:
+        "A colleague is planning a dinner for a visiting client and has asked you to recommend a restaurant. Write a letter to your colleague. In your letter: name the restaurant and describe it, explain why it would suit the occasion, and give practical advice about booking and cost.",
+      instructions:
+        "A friendly, semi-formal tone suits a colleague. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-apology-late-rent",
+    title: "Letter apologising to a landlord for late rent",
+    taskType: "task1-general",
+    topic: "Housing",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "apology"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You have not been able to pay your rent on time this month. Write a letter to your landlord. In your letter: apologise for the delay, explain what has caused the problem, and say when you will be able to pay.",
+      instructions:
+        "A sincere, polite tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-thanks-scholarship-committee",
+    title: "Letter thanking a scholarship committee",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "formal", "thanks"],
+    kind: "test",
+    data: {
+      prompt:
+        "You have been awarded a scholarship to study at a university. Write a letter to the scholarship committee. In your letter: thank them for the award, explain what it means to you, and describe what you hope to achieve during your studies.",
+      instructions:
+        "A formal, grateful tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
