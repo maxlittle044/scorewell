@@ -12089,5 +12089,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0028-p3",
+    "title": "The Story of Bread",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Bread is one of the most important foods in the world. It is eaten in almost every country, in forms as different as the flat tortilla, the round loaf, the long baguette and the soft steamed bun. For thousands of years, it has provided a large part of the calories of ordinary people, and the phrase \"our daily bread\" reflects its central place in human life.\n\nB. The origins of bread are much older than farming. In 2018, archaeologists working in the Black Desert of northeastern Jordan reported the discovery of charred remains of flatbread about 14,000 years old, made by hunter-gatherers from wild cereals and a plant root. This suggests that people were baking bread thousands of years before they began to grow crops, and some scientists believe that the wish for bread may even have encouraged the start of agriculture.\n\nC. The bread of the ancient Egyptians, made from emmer wheat and barley, was among the earliest to be risen with yeast. It is thought that a mixture of flour and water was accidentally left out and began to ferment, producing gas that made the dough swell. Egyptian bakers baked in clay moulds and in ovens, and the workers who built the pyramids were reportedly paid partly in loaves. The Romans later opened public bakeries and built large mills, and by the first century AD, there were hundreds of bakeries in Rome.\n\nD. In the Middle Ages, the type of bread people ate showed their social rank. Wealthy families ate fine white bread made from sifted flour, while poor people ate coarse brown bread made from rye or barley. In many countries, bakers were strictly controlled by law, and those who cheated by selling loaves that were too small could be severely punished. A pile of stale loaves was sometimes used as a plate, called a trencher, at meals.\n\nE. Industrial methods changed bread in the nineteenth and twentieth centuries. Steel rollers replaced millstones, producing very white flour, and factory bakeries began to bake huge numbers of loaves. In 1961, British scientists developed the Chorleywood process, which uses high-speed mixing to make dough in a fraction of the traditional time, and today it is used to make most of the bread sold in supermarkets in Britain. Critics say that such bread lacks flavour and is less nutritious than traditional loaves.\n\nF. In recent years, many people have rediscovered older methods. Small bakeries now make sourdough, which is risen slowly with a mixture of flour, water and natural yeasts, and bread made from ancient grains such as spelt has become fashionable. At the same time, growing numbers of people avoid wheat because of health concerns, and bakers are experimenting with gluten-free recipes. Whatever the fashion, bread remains one of the world's most loved foods.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0028-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A food found everywhere" },
+            { "key": "ii", "label": "Baking before farming" },
+            { "key": "iii", "label": "Yeast, ovens and public bakeries" },
+            { "key": "iv", "label": "Bread and social rank" },
+            { "key": "v", "label": "Rollers, factories and criticism" },
+            { "key": "vi", "label": "A return to old methods" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0028-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces bread as a universal food." } },
+            { "kind": "matching", "id": "generated-reading-general-0028-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the discovery of ancient flatbread in Jordan." } },
+            { "kind": "matching", "id": "generated-reading-general-0028-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Egyptian yeast bread and Roman bakeries." } },
+            { "kind": "matching", "id": "generated-reading-general-0028-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes bread and social rank in the Middle Ages." } },
+            { "kind": "matching", "id": "generated-reading-general-0028-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the return to traditional methods and new recipes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0028-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q032", "statement": "The earliest known bread was made after people began to farm.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says people were baking bread thousands of years before farming." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q033", "statement": "Egyptian bread was among the earliest to be risen with yeast.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q034", "statement": "In the Middle Ages, wealthy people usually ate coarse brown bread.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the wealthy ate fine white bread." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q035", "statement": "The Chorleywood process was developed in 1961.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1961." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q036", "statement": "Sourdough bread is more expensive than ordinary bread.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention the price of sourdough." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0028-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0028-q037", "prompt": "The ancient flatbread was found in the Black Desert of ______.", "accept": ["Jordan"], "evidence": { "explanation": "Paragraph B says Jordan." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q038", "prompt": "Egyptian bakers baked bread in clay moulds and in ______.", "accept": ["ovens"], "evidence": { "explanation": "Paragraph C says ovens." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q039", "prompt": "A pile of stale loaves used as a plate was called a ______.", "accept": ["trencher"], "evidence": { "explanation": "Paragraph D says trencher." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q040", "prompt": "Steel ______ replaced millstones in the nineteenth century.", "accept": ["rollers"], "evidence": { "explanation": "Paragraph E says steel rollers." } }
+          ]
+        }
+      ]
+    }
   }
 ];
