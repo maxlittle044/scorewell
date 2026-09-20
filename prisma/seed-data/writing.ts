@@ -2961,4 +2961,218 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (screen time, cycling commuters, tourism, waste,
+  // language students) ----
+  {
+    slug: "task1-screen-time-age-bar-chart",
+    title: "Task 1: Daily screen time by age group (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Technology",
+    tags: ["writing", "task-1-academic", "technology", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average number of hours per day that people in five age groups spent looking at screens in 2015 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "hours per day",
+        categories: ["8–12", "13–17", "18–29", "30–49", "50+"],
+        series: [
+          { label: "2015", values: [2.8, 4.1, 5.0, 4.2, 3.0] },
+          { label: "2023", values: [3.6, 6.2, 6.8, 5.5, 4.1] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-cycling-commuters-line-graph",
+    title: "Task 1: Commuters who cycle in three cities (Line graph)",
+    taskType: "task1-academic",
+    topic: "Transport",
+    tags: ["writing", "task-1-academic", "transport", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of commuters who travelled to work by bicycle in three cities between 2005 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "% of commuters",
+        xLabels: ["2005", "2010", "2015", "2020", "2025"],
+        series: [
+          { label: "Copenhagen", values: [36, 37, 41, 43, 45] },
+          { label: "Amsterdam", values: [30, 32, 35, 38, 40] },
+          { label: "London", values: [2, 3, 4, 6, 9] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-tourism-arrivals-spending-table",
+    title: "Task 1: Tourist arrivals and spending in four countries (Table)",
+    taskType: "task1-academic",
+    topic: "Tourism",
+    tags: ["writing", "task-1-academic", "tourism", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the number of international visitors to four countries in one year and the total amount they spent. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["Country", "Visitors (millions)", "Spending (billion dollars)"],
+        rows: [
+          { label: "Spain", values: [83, 92] },
+          { label: "Thailand", values: [40, 60] },
+          { label: "Mexico", values: [45, 30] },
+          { label: "Japan", values: [32, 38] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-city-waste-destinations-pie-chart",
+    title: "Task 1: How a city deals with its waste (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Environment",
+    tags: ["writing", "task-1-academic", "environment", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows what happens to the household waste collected in one city in a single year. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "% of waste",
+        slices: [
+          { label: "Landfill", value: 40 },
+          { label: "Recycled", value: 34 },
+          { label: "Incinerated", value: 20 },
+          { label: "Composted", value: 6 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-foreign-language-students-bar-chart",
+    title: "Task 1: Students studying foreign languages (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Education",
+    tags: ["writing", "task-1-academic", "education", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of students studying five foreign languages in schools in one country in 2010 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "thousand students",
+        categories: ["Spanish", "French", "German", "Chinese", "Japanese"],
+        series: [
+          { label: "2010", values: [310, 420, 250, 40, 30] },
+          { label: "2023", values: [480, 260, 140, 120, 65] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (hotel complaint, notice of moving out, school reunion,
+  // laptop advice, volunteering abroad) ----
+  {
+    slug: "letter-hotel-room-complaint",
+    title: "Letter of complaint about a hotel room",
+    taskType: "task1-general",
+    topic: "Travel",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "test",
+    data: {
+      prompt:
+        "You recently stayed at a hotel, but the room was not as described in the brochure. Write a letter to the hotel manager. In your letter: describe what was wrong with the room, explain how it spoiled your stay, and say what you expect the hotel to do.",
+      instructions:
+        "State the facts clearly, and keep the tone firm but polite. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-notice-of-moving-out",
+    title: "Letter giving notice that you are leaving a rented flat",
+    taskType: "task1-general",
+    topic: "Housing",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "notice"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You have decided to move out of the flat you rent. Write a letter to your landlord. In your letter: give notice that you are leaving and say when, explain why you are moving, and ask about the return of your deposit.",
+      instructions:
+        "A polite, businesslike tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-invitation-school-reunion",
+    title: "Letter inviting an old friend to a school reunion",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal", "invitation"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are organising a reunion for people who went to your school ten years ago. Write a letter to an old friend. In your letter: explain what you are organising, give the date and place, and ask your friend to help you contact other classmates.",
+      instructions:
+        "Keep this warm and friendly, as you would when writing to an old friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-friend-advice-buying-laptop",
+    title: "Letter advising a friend on buying a laptop",
+    taskType: "task1-general",
+    topic: "Technology",
+    tags: ["writing", "task-1-general", "letters", "informal", "advice"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "A friend is planning to buy a new laptop and has asked for your advice. Write a letter to your friend. In your letter: say what features are most important, suggest where to buy it, and recommend how much to spend.",
+      instructions:
+        "Keep this helpful and friendly, as you would when writing to a good friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-request-information-volunteering-abroad",
+    title: "Letter requesting information about volunteering abroad",
+    taskType: "task1-general",
+    topic: "Community",
+    tags: ["writing", "task-1-general", "letters", "formal", "enquiry"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are interested in volunteering abroad for a few months. Write a letter to an organisation that arranges volunteer work. In your letter: explain why you are interested, ask about the type of work available and the length of placements, and ask what training and support are provided.",
+      instructions:
+        "A formal, polite tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
