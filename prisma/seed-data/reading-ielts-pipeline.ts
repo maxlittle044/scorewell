@@ -10452,6 +10452,59 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0032-p1",
+    "title": "The Science of Rainbows",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "weather", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few natural sights are as admired as the rainbow, a great arc of colour that appears when sunshine and rain meet. Throughout history, people have explained it through myth and legend, seeing it as a bridge to the world of the gods or as a sign of good fortune. Science has now shown how it forms, and the explanation, far from spoiling its beauty, adds to it.\n\nB. A rainbow is caused by sunlight passing through drops of water in the air. When a ray of sunlight enters a raindrop, it slows down and bends, a process called refraction. Because the different colours that make up white light bend by slightly different amounts, they begin to separate. The light then reflects off the back of the drop and leaves through the front, bending again as it goes, and this further increases the spread of colours.\n\nC. The result is that each raindrop sends the colours out at slightly different angles. Red light emerges at an angle of about 42 degrees from the direction of the shadow of the observer's head, and violet light at about 40 degrees. Since a great many drops are involved, an observer sees a band of colour, with red on the outer edge and violet on the inner edge. To see a rainbow, the observer must therefore stand with the sun behind them and the rain in front.\n\nD. The idea that white light is a mixture of colours was demonstrated by Isaac Newton in 1666, when he passed a beam of sunlight through a glass prism and showed that it divided into a band of colours, which could be recombined into white light. Newton chose to name seven colours, red, orange, yellow, green, blue, indigo and violet, possibly because he believed that there was a link between colour and the seven notes of the musical scale. In fact, the spectrum changes gradually, and there are no sharp divisions between colours.\n\nE. Sometimes a second, fainter rainbow can be seen outside the main one. It is formed when light is reflected twice inside the raindrops, and its colours appear in reverse order, with red on the inside. Between the two bows, the sky often looks darker. Very rarely, a rainbow may be seen at night, when the moon is bright and full, though the colours are then too faint for the human eye to see clearly.\n\nF. Although a rainbow appears to be a fixed object in the sky, it is not. Every observer sees a slightly different rainbow, created by different raindrops, and it moves as they do. The bow we see is only part of a full circle, the rest of which is hidden by the ground. From an aircraft or a high mountain, however, it is sometimes possible to see a complete circle of colour.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0032-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Legends and an explanation" },
+            { "key": "ii", "label": "Bending and reflecting inside a drop" },
+            { "key": "iii", "label": "Where the colours appear and where to stand" },
+            { "key": "iv", "label": "A prism and a musical idea" },
+            { "key": "v", "label": "A fainter second bow" },
+            { "key": "vi", "label": "A personal and moving sight" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0032-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the legends and the scientific explanation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes refraction and reflection inside a raindrop." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the angles at which colours appear and where the observer should stand." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Newton's prism experiment and the seven colours." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes how each observer sees a different rainbow." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0032-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q006", "statement": "A rainbow is formed by sunlight passing through raindrops.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q007", "statement": "Violet light emerges from raindrops at a larger angle than red light.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says red emerges at about 42 degrees and violet at about 40 degrees." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q008", "statement": "The colours of a second rainbow appear in the same order as the main one.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says the colours appear in reverse order." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q009", "statement": "Every observer sees a slightly different rainbow.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0032-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0032-q010", "prompt": "The bending of light as it enters a raindrop is called ______.", "accept": ["refraction"], "evidence": { "explanation": "Paragraph B names refraction." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q011", "prompt": "Newton demonstrated that white light is a mixture of colours in ______.", "accept": ["1666"], "evidence": { "explanation": "Paragraph D gives 1666." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q012", "prompt": "A second rainbow is formed when light is reflected ______ inside the raindrops.", "accept": ["twice"], "evidence": { "explanation": "Paragraph E says twice." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q013", "prompt": "From an aircraft, it is sometimes possible to see a complete ______ of colour.", "accept": ["circle"], "evidence": { "explanation": "Paragraph F says circle." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
