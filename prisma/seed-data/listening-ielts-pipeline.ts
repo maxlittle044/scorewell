@@ -7201,5 +7201,40 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0033-s2",
+    "title": "Old Town Walking Tour Briefing – Listening Section 2",
+    "topic": "Travel",
+    "tags": ["academic", "travel", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Old Town Walking Tour Briefing – Listening Section 2",
+      "transcript": "Good morning, everyone, and welcome to the Old Town walking tour. Before we set off, let me explain how the next two hours will work.\n\nWe are meeting at the fountain in Market Square, which is where every tour begins. The tour lasts two hours and covers about three kilometres, so it is a gentle walk, but there are cobbled streets and a few steps, and I would advise comfortable shoes. Groups are limited to twenty people, so that everyone can hear.\n\nTickets cost £9 for adults and £6 for students, and children under twelve go free. Tours run every day except Monday, and they go ahead in the rain, so bring an umbrella if the weather looks doubtful.\n\nOn the route, we will see the clock tower, which was built in 1450, the old harbour, where fishing boats once unloaded their catch, and the town's oldest inn. About halfway through, there is a break of fifteen minutes at a café, where you can buy a drink at your own expense.\n\nPlease stay with the group, and be careful when crossing roads, as some of the streets are busy. Photographs are welcome. If you would like to leave the tour early, just let me know. Now, if everyone is ready, we will begin at the clock tower.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0033-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0033-q011", "prompt": "The tour begins at the ______ in Market Square.", "accept": ["fountain"], "evidence": { "explanation": "The speaker says the fountain." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q012", "prompt": "The tour lasts ______ hours.", "accept": ["two","2"], "evidence": { "explanation": "The speaker says two hours." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q013", "prompt": "The walk covers about ______ kilometres.", "accept": ["three","3"], "evidence": { "explanation": "The speaker says about three kilometres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q014", "prompt": "Groups are limited to ______ people.", "accept": ["twenty","20"], "evidence": { "explanation": "The speaker says twenty people." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q015", "prompt": "Student tickets cost £______.", "accept": ["6","six"], "evidence": { "explanation": "The speaker says £6 for students." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q016", "prompt": "The clock tower was built in ______.", "accept": ["1450"], "evidence": { "explanation": "The speaker says 1450." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0033-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q017", "question": "On which day does the tour not run?", "options": ["Sunday","Monday","Friday","Saturday"], "correctIndex": 1, "evidence": { "explanation": "Tours run every day except Monday." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q018", "question": "What happens if it rains?", "options": ["The tour is cancelled","The tour goes ahead","The tour is shortened","The tour is moved indoors"], "correctIndex": 1, "evidence": { "explanation": "The tours go ahead in the rain." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q019", "question": "How long is the break at the café?", "options": ["Five minutes","Ten minutes","Fifteen minutes","Twenty minutes"], "correctIndex": 2, "evidence": { "explanation": "The break is fifteen minutes." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0033-q020", "question": "Who pays for drinks at the café?", "options": ["The tour company","The guide","Each person","The café"], "correctIndex": 2, "evidence": { "explanation": "Visitors buy a drink at their own expense." } }
+          ]
+        }
+      ]
+    }
   }
 ];
