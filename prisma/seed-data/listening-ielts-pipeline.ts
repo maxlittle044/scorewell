@@ -6512,5 +6512,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0028-s1",
+    "title": "Car Insurance Quote Enquiry – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Car Insurance Quote Enquiry – Listening Section 1",
+      "transcript": "Adviser: Good morning, Safeway Insurance. How can I help?\nCaller: Hello, I'd like a quote for car insurance, please.\nAdviser: Certainly. May I take your surname?\nCaller: It's Fairbrother, F-A-I-R-B-R-O-T-H-E-R.\nAdviser: Thank you, Mr Fairbrother. What car do you drive?\nCaller: A Toyota, registered in 2018, with a one point six litre engine.\nAdviser: And roughly how many miles do you drive each year?\nCaller: About eight thousand.\nAdviser: Where do you keep the car at night?\nCaller: In a garage at my home.\nAdviser: That's good, it lowers the price. Do you have a no-claims bonus?\nCaller: Yes, four years.\nAdviser: Excellent. Based on that, the annual price is £420, and the excess, which is the amount you pay if you make a claim, is £200.\nCaller: That sounds reasonable. When would the policy begin?\nAdviser: You can choose the start date.\nCaller: The first of October, please.\nAdviser: Thank you. I'll send you the documents by email.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0028-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0028-q001", "prompt": "Surname: ______.", "accept": ["Fairbrother"], "evidence": { "explanation": "The caller spells F-A-I-R-B-R-O-T-H-E-R." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q002", "prompt": "Make of car: ______.", "accept": ["Toyota"], "evidence": { "explanation": "The car is a Toyota." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q003", "prompt": "Year of registration: ______.", "accept": ["2018"], "evidence": { "explanation": "The car was registered in 2018." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q004", "prompt": "Engine size: ______ litre.", "accept": ["1.6","one point six"], "evidence": { "explanation": "The engine is one point six litre." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q005", "prompt": "Annual mileage: about ______ miles.", "accept": ["8000","8,000","eight thousand"], "evidence": { "explanation": "The caller drives about eight thousand miles." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q006", "prompt": "The car is kept in a ______ at night.", "accept": ["garage"], "evidence": { "explanation": "The car is kept in a garage." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q007", "prompt": "No-claims bonus: ______ years.", "accept": ["four","4"], "evidence": { "explanation": "The caller has four years." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q008", "prompt": "Annual price: £______.", "accept": ["420"], "evidence": { "explanation": "The price is £420." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q009", "prompt": "Excess: £______.", "accept": ["200"], "evidence": { "explanation": "The excess is £200." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q010", "prompt": "Start date: the first of ______.", "accept": ["October"], "evidence": { "explanation": "The caller wants to start on the first of October." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0028-s2",
+    "title": "Lighthouse Visitor Briefing – Listening Section 2",
+    "topic": "History",
+    "tags": ["academic", "history", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Lighthouse Visitor Briefing – Listening Section 2",
+      "transcript": "Good morning, everyone, and welcome to Point Head Lighthouse. Before you climb the tower, let me give you some background and a few safety instructions.\n\nThe lighthouse was built in 1841 to warn ships of dangerous rocks near the coast, and it stands thirty-four metres tall. Its light can be seen from twenty-five miles away, and it flashes once every ten seconds. The lighthouse was operated by keepers until 1987, when it became automatic.\n\nThere are one hundred and twenty-eight steps to the top, and the climb takes about ten minutes. Children under six are not allowed in the tower for safety reasons. The tower is open from April to October, and tickets cost £7 for adults and £4 for children.\n\nAt the bottom, the former keepers' cottages now house a small museum, with photographs and tools from the lighthouse's history. There is a café beside the car park, and boat trips leave from the harbour at noon and at three o'clock on fine days.\n\nPlease hold the handrail on the stairs, and watch your head near the top. Photography is welcome, but please do not lean out of the windows. Now, if you'd like to follow me.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0028-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0028-q011", "prompt": "The lighthouse was built in ______.", "accept": ["1841"], "evidence": { "explanation": "The speaker says 1841." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q012", "prompt": "The lighthouse is ______ metres tall.", "accept": ["thirty-four","thirty four","34"], "evidence": { "explanation": "The speaker says thirty-four metres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q013", "prompt": "The light flashes once every ______ seconds.", "accept": ["ten","10"], "evidence": { "explanation": "The speaker says every ten seconds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q014", "prompt": "The lighthouse became automatic in ______.", "accept": ["1987"], "evidence": { "explanation": "The speaker says 1987." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q015", "prompt": "There are ______ steps to the top.", "accept": ["one hundred and twenty-eight","128"], "evidence": { "explanation": "The speaker says one hundred and twenty-eight steps." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q016", "prompt": "Tickets for children cost £______.", "accept": ["4","four"], "evidence": { "explanation": "The speaker says £4 for children." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0028-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q017", "question": "Who is not allowed in the tower?", "options": ["Children under six","Dogs","Adults over sixty","Groups"], "correctIndex": 0, "evidence": { "explanation": "Children under six are not allowed." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q018", "question": "What can be seen in the former keepers' cottages?", "options": ["A museum","A café","A gift shop","A cinema"], "correctIndex": 0, "evidence": { "explanation": "The cottages house a small museum." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q019", "question": "When do boat trips leave?", "options": ["At noon and three o'clock","At ten and two o'clock","Only in the evening","Every hour"], "correctIndex": 0, "evidence": { "explanation": "Boat trips leave at noon and at three o'clock." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q020", "question": "What are visitors asked not to do?", "options": ["Take photographs","Lean out of the windows","Use the stairs","Visit in a group"], "correctIndex": 1, "evidence": { "explanation": "Visitors are asked not to lean out of the windows." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0028-s3",
+    "title": "Feedback on a Draft Report – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Feedback on a Draft Report – Listening Section 3",
+      "transcript": "Dr Adeyemi: Nina, I've read the draft of your report on public transport use. Overall, it's promising.\nNina: Thank you. What did you think of the introduction?\nDr Adeyemi: It's too long. It's nearly six hundred words, and it should be about three hundred. Cut the background and get to your research question sooner.\nNina: I'll do that. And the analysis section?\nDr Adeyemi: The analysis is where you need most work. You describe the survey results, but you don't explain what they mean. Also, the graph on page seven is difficult to read, because the labels are too small.\nNina: I'll make them bigger.\nDr Adeyemi: The conclusion, on the other hand, is excellent. It's clear, and it links back to your research question.\nNina: That's good to hear. Is the length all right?\nDr Adeyemi: The word limit is three thousand, and you're at thirty-four hundred, so you'll need to cut about four hundred words. Shortening the introduction will help.\nNina: Right. And when's the final deadline?\nDr Adeyemi: A week from today, at noon.\nNina: I'll send you the final version before then.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0028-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q021", "question": "What is the topic of Nina's report?", "options": ["Public transport use","Cycling in cities","Housing costs","Air pollution"], "correctIndex": 0, "evidence": { "explanation": "The report is on public transport use." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q022", "question": "How long should the introduction be?", "options": ["About 200 words","About 300 words","About 600 words","About 1,000 words"], "correctIndex": 1, "evidence": { "explanation": "It should be about three hundred words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q023", "question": "What is the problem with the graph?", "options": ["The labels are too small","It uses the wrong data","It has no title","It is too colourful"], "correctIndex": 0, "evidence": { "explanation": "The labels are too small." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q024", "question": "What is the word limit for the report?", "options": ["Two thousand","Three thousand","Three thousand four hundred","Four thousand"], "correctIndex": 1, "evidence": { "explanation": "The word limit is three thousand." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q025", "question": "How many words does Nina need to cut?", "options": ["About 100","About 200","About 400","About 600"], "correctIndex": 2, "evidence": { "explanation": "She needs to cut about four hundred words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0028-q026", "question": "When is the final deadline?", "options": ["Tomorrow","A week from today at noon","In two weeks","Next month"], "correctIndex": 1, "evidence": { "explanation": "The deadline is a week from today, at noon." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0028-s3-g2",
+          "instructions": "Which section of the report does each comment describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Introduction" },
+            { "key": "B", "label": "Analysis" },
+            { "key": "C", "label": "Conclusion" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0028-q027", "prompt": "Too long and should get to the research question sooner", "answer": "A", "evidence": { "explanation": "Dr Adeyemi says the introduction is too long." } },
+            { "kind": "matching", "id": "generated-listening-academic-0028-q028", "prompt": "Describes results but does not explain what they mean", "answer": "B", "evidence": { "explanation": "Dr Adeyemi says the analysis describes but does not explain." } },
+            { "kind": "matching", "id": "generated-listening-academic-0028-q029", "prompt": "Clear and links back to the research question", "answer": "C", "evidence": { "explanation": "Dr Adeyemi says the conclusion is excellent and links back." } },
+            { "kind": "matching", "id": "generated-listening-academic-0028-q030", "prompt": "Needs the most work", "answer": "B", "evidence": { "explanation": "Dr Adeyemi says the analysis is where most work is needed." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0028-s4",
+    "title": "The History of Money – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "economics", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Money – Listening Section 4",
+      "transcript": "Today's lecture looks at the history of money, and how the things we use to pay for goods have changed over time.\n\nBefore money, people used barter, exchanging one item for another. This works only if each person has something the other wants, so societies gradually began to use commodity money, objects that were widely valued. In parts of Asia and Africa, cowrie shells were used for thousands of years.\n\nThe first coins were made in Lydia, in what is now Turkey, around 600 BC, from a natural mixture of gold and silver called electrum. They carried a stamp that guaranteed their weight and value, which made trade much easier. The idea spread quickly to Greece and beyond.\n\nPaper money was first used in China. Merchants began to issue paper notes as receipts for heavy metal coins, and by the eleventh century, during the Song dynasty, the government was printing paper money. Europe did not have banknotes until much later; the first were issued in Sweden in 1661.\n\nThe twentieth century brought new forms. The first credit card, the Diners Club card, appeared in 1950. Today, more and more payments are digital, made by phone or by card, and in some countries cash is used in only a small proportion of purchases. Some experts predict that cash may disappear, while others worry about the exclusion of people without bank accounts.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0028-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0028-q031", "prompt": "Before money, people used ______.", "accept": ["barter"], "evidence": { "explanation": "The lecturer says barter." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q032", "prompt": "In parts of Asia and Africa, ______ shells were used as money.", "accept": ["cowrie"], "evidence": { "explanation": "The lecturer says cowrie shells." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q033", "prompt": "The first coins were made in ______.", "accept": ["Lydia"], "evidence": { "explanation": "The lecturer says Lydia." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q034", "prompt": "The first coins were made around ______ BC.", "accept": ["600"], "evidence": { "explanation": "The lecturer says around 600 BC." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q035", "prompt": "The first coins were made from a mixture of gold and silver called ______.", "accept": ["electrum"], "evidence": { "explanation": "The lecturer names electrum." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q036", "prompt": "Paper money was first used in ______.", "accept": ["China"], "evidence": { "explanation": "The lecturer says China." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q037", "prompt": "The government printed paper money in the ______ century.", "accept": ["eleventh","11th"], "evidence": { "explanation": "The lecturer says the eleventh century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q038", "prompt": "The first European banknotes were issued in ______ in 1661.", "accept": ["Sweden"], "evidence": { "explanation": "The lecturer says Sweden." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q039", "prompt": "The first credit card was the ______ Club card.", "accept": ["Diners"], "evidence": { "explanation": "The lecturer says the Diners Club card." } },
+            { "kind": "completion", "id": "generated-listening-academic-0028-q040", "prompt": "The first credit card appeared in ______.", "accept": ["1950"], "evidence": { "explanation": "The lecturer gives 1950." } }
+          ]
+        }
+      ]
+    }
   }
 ];
