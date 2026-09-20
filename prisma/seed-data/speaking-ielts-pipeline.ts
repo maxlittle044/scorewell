@@ -4324,5 +4324,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0256",
+    "title": "Part 1: Video games",
+    "part": "part1",
+    "topic": "Video games",
+    "tags": ["speaking", "part-1", "video-games"],
+    "data": {
+      "questions": [
+        "Do you play video games?",
+        "What kinds of games do you enjoy?",
+        "Did you play games when you were a child?",
+        "Do you prefer playing alone or with other people?",
+        "Do you think children spend too much time playing games?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0257",
+    "title": "Part 1: Ageing and older people",
+    "part": "part1",
+    "topic": "Ageing and older people",
+    "tags": ["speaking", "part-1", "ageing-and-older-people"],
+    "data": {
+      "questions": [
+        "Do you spend much time with older people?",
+        "What do you enjoy talking about with older people?",
+        "Do older people in your country live with their families?",
+        "Would you like to live to a very old age?",
+        "What do you think is the best thing about being old?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0258",
+    "title": "Part 1: Noise and quiet places",
+    "part": "part1",
+    "topic": "Noise and quiet places",
+    "tags": ["speaking", "part-1", "noise-and-quiet-places"],
+    "data": {
+      "questions": [
+        "Is the area where you live noisy or quiet?",
+        "Do you like to have background noise when you work?",
+        "Where do you go when you want some quiet?",
+        "Are there any sounds that you find annoying?",
+        "Do you prefer a quiet or a lively place to live?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0259",
+    "title": "Part 1: Skills and talents",
+    "part": "part1",
+    "topic": "Skills and talents",
+    "tags": ["speaking", "part-1", "skills-and-talents"],
+    "data": {
+      "questions": [
+        "What skills are you good at?",
+        "Is there a skill you would like to learn?",
+        "Did anyone teach you a useful skill when you were young?",
+        "Do you think talent or practice is more important?",
+        "Do you think you have any special talents?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0260",
+    "title": "Part 1: Birds and wildlife",
+    "part": "part1",
+    "topic": "Birds and wildlife",
+    "tags": ["speaking", "part-1", "birds-and-wildlife"],
+    "data": {
+      "questions": [
+        "Do you often see wild animals or birds where you live?",
+        "Do you enjoy watching birds or other wildlife?",
+        "Have you ever visited a nature reserve?",
+        "Did you learn about wildlife at school?",
+        "Would you like to work with animals?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0256",
+    "title": "Part 2: Describe a game that you enjoy playing",
+    "part": "part2",
+    "topic": "Video games",
+    "tags": ["speaking", "part-2", "video-games"],
+    "data": {
+      "questions": ["Describe a game that you enjoy playing"],
+      "cueCardPoints": [
+        "what the game is",
+        "how you play it",
+        "who you play it with",
+        "and explain why you enjoy it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0257",
+    "title": "Part 2: Describe an older person you admire",
+    "part": "part2",
+    "topic": "Ageing and older people",
+    "tags": ["speaking", "part-2", "ageing-and-older-people"],
+    "data": {
+      "questions": ["Describe an older person you admire"],
+      "cueCardPoints": [
+        "who the person is",
+        "how you know them",
+        "what they are like",
+        "and explain why you admire them"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0258",
+    "title": "Part 2: Describe a quiet place where you like to go",
+    "part": "part2",
+    "topic": "Noise and quiet places",
+    "tags": ["speaking", "part-2", "noise-and-quiet-places"],
+    "data": {
+      "questions": ["Describe a quiet place where you like to go"],
+      "cueCardPoints": [
+        "where it is",
+        "how often you go there",
+        "what you do there",
+        "and explain why you like the peace and quiet"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0259",
+    "title": "Part 2: Describe a skill that you learned and are proud of",
+    "part": "part2",
+    "topic": "Skills and talents",
+    "tags": ["speaking", "part-2", "skills-and-talents"],
+    "data": {
+      "questions": ["Describe a skill that you learned and are proud of"],
+      "cueCardPoints": [
+        "what the skill is",
+        "how you learned it",
+        "how long it took",
+        "and explain why you are proud of it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0260",
+    "title": "Part 2: Describe an animal or bird that you have seen in the wild",
+    "part": "part2",
+    "topic": "Birds and wildlife",
+    "tags": ["speaking", "part-2", "birds-and-wildlife"],
+    "data": {
+      "questions": ["Describe an animal or bird that you have seen in the wild"],
+      "cueCardPoints": [
+        "what the animal or bird was",
+        "where and when you saw it",
+        "what it was doing",
+        "and explain how you felt when you saw it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0256",
+    "title": "Part 3: Games and society",
+    "part": "part3",
+    "topic": "Video games",
+    "tags": ["speaking", "part-3", "video-games"],
+    "data": {
+      "questions": [
+        "Why are video games so popular with young people?",
+        "Can video games have any educational benefits?",
+        "Should there be limits on how long children can play?",
+        "How has the games industry changed in recent years?",
+        "Do you think professional gaming should be considered a sport?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0257",
+    "title": "Part 3: Ageing societies",
+    "part": "part3",
+    "topic": "Ageing and older people",
+    "tags": ["speaking", "part-3", "ageing-and-older-people"],
+    "data": {
+      "questions": [
+        "Why are populations ageing in many countries?",
+        "What challenges does an ageing population create?",
+        "Should families or governments be responsible for looking after older people?",
+        "How can older people continue to contribute to society?",
+        "Do young people respect older people as much as they used to?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0258",
+    "title": "Part 3: Noise, silence and wellbeing",
+    "part": "part3",
+    "topic": "Noise and quiet places",
+    "tags": ["speaking", "part-3", "noise-and-quiet-places"],
+    "data": {
+      "questions": [
+        "Why do people find some noises more annoying than others?",
+        "What effects can constant noise have on health?",
+        "Should there be laws to limit noise in residential areas?",
+        "Do you think people today have less access to quiet than in the past?",
+        "Why do some people find silence uncomfortable?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0259",
+    "title": "Part 3: Learning and talent",
+    "part": "part3",
+    "topic": "Skills and talents",
+    "tags": ["speaking", "part-3", "skills-and-talents"],
+    "data": {
+      "questions": [
+        "Are some people simply born with more talent than others?",
+        "How can parents help children develop their talents?",
+        "Which practical skills should every adult have?",
+        "Is it more important to be good at one thing or to have many skills?",
+        "How has technology changed the way people learn new skills?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0260",
+    "title": "Part 3: Wildlife and conservation",
+    "part": "part3",
+    "topic": "Birds and wildlife",
+    "tags": ["speaking", "part-3", "birds-and-wildlife"],
+    "data": {
+      "questions": [
+        "Why is it important to protect wild animals and their habitats?",
+        "What are the main threats to wildlife today?",
+        "Should people be allowed to keep wild animals as pets?",
+        "How can ordinary people help to protect wildlife?",
+        "Do you think tourism helps or harms wildlife?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
