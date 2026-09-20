@@ -12001,5 +12001,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0028-p1",
+    "title": "General Training Reading — Section 1: Florist and Taxi Firm Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nPETAL & STEM FLORISTS\nOrders and Delivery\n\nThe shop is open Monday to Saturday from 8:30am to 5:30pm. Bouquets start at £15, and our most popular arrangement, the Garden Mix, costs £28. Orders placed before 12:00 noon can be delivered on the same day within five miles of the shop, for a delivery charge of £5.\n\nFor weddings and other large events, we recommend arranging a consultation at least three months in advance. Customers who join our loyalty scheme receive a stamp for every £10 they spend, and a free bouquet worth £15 when their card is full. Vases can be hired for £2 each, and the deposit is returned when they are brought back undamaged. Fresh flowers are guaranteed to last for at least five days.\n\nTEXT 2\n\nCITY CABS\nFares and Bookings\n\nWe operate 24 hours a day, seven days a week. Journeys can be booked by telephone, on our website or with our mobile app, and for airport transfers we advise booking at least 24 hours in advance. The fixed fare from the city centre to the airport is £35. Waiting time is charged at 50p per minute after the first five minutes.\n\nA night supplement of 20% applies to journeys between 11:00pm and 5:00am. Child seats are provided free of charge if requested when booking. Wheelchair-accessible vehicles are available, but must be reserved at least two hours in advance. Payment can be made by cash or by card, and receipts are issued on request. Drivers cannot accept tips through the app.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0028-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q001", "statement": "The florist is open on Sundays.", "answer": "FALSE", "evidence": { "explanation": "It is open Monday to Saturday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q002", "statement": "Same-day delivery is available for orders placed before noon.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q003", "statement": "Vases can be hired from the florist.", "answer": "TRUE", "evidence": { "explanation": "Vases can be hired for £2 each." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q004", "statement": "The florist offers a wedding cake service.", "answer": "NOT GIVEN", "evidence": { "explanation": "Cakes are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q005", "statement": "City Cabs operates only during the day.", "answer": "FALSE", "evidence": { "explanation": "It operates 24 hours a day." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q006", "statement": "Child seats are provided free if requested when booking.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0028-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0028-q007", "prompt": "The Garden Mix bouquet costs ______.", "accept": ["£28","28 pounds"], "evidence": { "explanation": "The Garden Mix costs £28." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q008", "prompt": "Customers receive a stamp for every ______ they spend.", "accept": ["£10","10 pounds"], "evidence": { "explanation": "A stamp is given for every £10." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q009", "prompt": "Fresh flowers are guaranteed to last at least ______ days.", "accept": ["five","5"], "evidence": { "explanation": "The guarantee is at least five days." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q010", "prompt": "The fixed fare to the airport is ______.", "accept": ["£35","35 pounds"], "evidence": { "explanation": "The fixed fare is £35." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0028-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0028-q011", "question": "How much is the delivery charge for flowers?", "options": ["£3","£5","£8","£15"], "correctIndex": 1, "evidence": { "explanation": "The delivery charge is £5." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0028-q012", "question": "What supplement applies to journeys between 11:00pm and 5:00am?", "options": ["10%","15%","20%","50%"], "correctIndex": 2, "evidence": { "explanation": "A night supplement of 20% applies." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0028-q013", "question": "How far in advance must wheelchair-accessible vehicles be reserved?", "options": ["30 minutes","One hour","Two hours","24 hours"], "correctIndex": 2, "evidence": { "explanation": "They must be reserved at least two hours in advance." } }
+          ]
+        }
+      ]
+    }
   }
 ];
