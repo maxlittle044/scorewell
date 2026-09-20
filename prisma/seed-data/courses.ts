@@ -303,4 +303,66 @@ export const COURSES: CourseSeed[] = [
       ],
     },
   },
+  {
+    slug: "grammar-for-ielts-writing",
+    title: "Grammar for IELTS Writing",
+    topic: "Grammar",
+    tags: ["course", "grammar", "writing"],
+    data: {
+      description:
+        "Six grammar points that cost the most marks in Task 1 and Task 2, each with a lesson and a practice test, finishing with the overview paragraph.",
+      level: "Band 5.5 → 7",
+      gradient: "from-sky-500 to-sky-700",
+      lessons: [
+        {
+          title: "Modal verbs: hedging and obligation",
+          summary:
+            "How may, might, must and should shape a claim, and why 'must' and 'don't have to' are not the same. Ends with a practice test.",
+          href: "/ielts/grammar/modal-verbs",
+        },
+        {
+          title: "Gerunds and infinitives",
+          summary:
+            "Enjoy doing or decide to do? The verb patterns behind 'suggest to introduce' and 'interested to learn', with a practice test.",
+          href: "/ielts/grammar/gerunds-and-infinitives",
+        },
+        {
+          title: "Reported speech",
+          summary:
+            "Say or tell, backshift and reported questions: the patterns behind 'she said me' and 'he asked where did I work'.",
+          href: "/ielts/grammar/reported-speech",
+        },
+        {
+          title: "Future forms",
+          summary:
+            "Will, going to, the present continuous and the present simple, and the language of Task 1 forecasts.",
+          href: "/ielts/grammar/future-forms",
+        },
+        {
+          title: "Adjectives and adverbs",
+          summary:
+            "Sharp or sharply, good or well, and the adverbs of change that Task 1 runs on.",
+          href: "/ielts/grammar/adjectives-and-adverbs",
+        },
+        {
+          title: "Dependent prepositions",
+          summary:
+            "Depend on, lead to, result in: the fixed prepositions that cost marks in almost every Task 2 script.",
+          href: "/ielts/grammar/dependent-prepositions",
+        },
+        {
+          title: "The Task 1 overview",
+          summary:
+            "Put the grammar to work: the one paragraph that turns a list of figures into a Task 1 answer.",
+          href: "/ielts/tips/task-1-overview-paragraph",
+        },
+        {
+          title: "Test what you've learned",
+          summary:
+            "Grammar tests with a full explanation for every answer option, including the wrong ones.",
+          href: "/ielts/grammar-tests",
+        },
+      ],
+    },
+  },
 ];
