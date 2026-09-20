@@ -3814,5 +3814,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0246",
+    "title": "Part 1: Public speaking",
+    "part": "part1",
+    "topic": "Public speaking",
+    "tags": ["speaking", "part-1", "public-speaking"],
+    "data": {
+      "questions": [
+        "Have you ever spoken in front of a large group?",
+        "Do you feel nervous when you speak in public?",
+        "Did you have to give presentations at school?",
+        "Do you think public speaking is an important skill?",
+        "Would you like to improve your public speaking?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0247",
+    "title": "Part 1: Trees and forests",
+    "part": "part1",
+    "topic": "Trees and forests",
+    "tags": ["speaking", "part-1", "trees-and-forests"],
+    "data": {
+      "questions": [
+        "Are there many trees where you live?",
+        "Do you like walking in forests or woods?",
+        "Did you climb trees when you were a child?",
+        "Is there a tree that is special to you or your family?",
+        "Have you ever planted a tree?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0248",
+    "title": "Part 1: Luck and superstitions",
+    "part": "part1",
+    "topic": "Luck and superstitions",
+    "tags": ["speaking", "part-1", "luck-and-superstitions"],
+    "data": {
+      "questions": [
+        "Do you consider yourself a lucky person?",
+        "Do you have a lucky number or a lucky object?",
+        "Are there any superstitions in your country?",
+        "Do you believe that some days are luckier than others?",
+        "Did your family teach you any superstitions when you were young?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0249",
+    "title": "Part 1: Tea and coffee",
+    "part": "part1",
+    "topic": "Tea and coffee",
+    "tags": ["speaking", "part-1", "tea-and-coffee"],
+    "data": {
+      "questions": [
+        "Do you prefer tea or coffee?",
+        "How often do you drink tea or coffee?",
+        "Do you like to drink it at home or in cafés?",
+        "Do people in your country drink a lot of tea or coffee?",
+        "Can you make a good cup of tea or coffee?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0250",
+    "title": "Part 1: Politeness and manners",
+    "part": "part1",
+    "topic": "Politeness and manners",
+    "tags": ["speaking", "part-1", "politeness-and-manners"],
+    "data": {
+      "questions": [
+        "Do you think politeness is important?",
+        "What manners were you taught as a child?",
+        "Are people in your country generally polite?",
+        "Do you think people are less polite than in the past?",
+        "Is it important to be polite when using the internet?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0246",
+    "title": "Part 2: Describe a time when you gave a talk or presentation",
+    "part": "part2",
+    "topic": "Public speaking",
+    "tags": ["speaking", "part-2", "public-speaking"],
+    "data": {
+      "questions": ["Describe a time when you gave a talk or presentation"],
+      "cueCardPoints": [
+        "when and where it took place",
+        "who you spoke to",
+        "what you talked about",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0247",
+    "title": "Part 2: Describe a forest or wooded area that you have visited",
+    "part": "part2",
+    "topic": "Trees and forests",
+    "tags": ["speaking", "part-2", "trees-and-forests"],
+    "data": {
+      "questions": ["Describe a forest or wooded area that you have visited"],
+      "cueCardPoints": [
+        "where it is",
+        "when you went there",
+        "what you saw and did there",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0248",
+    "title": "Part 2: Describe a time when you were lucky",
+    "part": "part2",
+    "topic": "Luck and superstitions",
+    "tags": ["speaking", "part-2", "luck-and-superstitions"],
+    "data": {
+      "questions": ["Describe a time when you were lucky"],
+      "cueCardPoints": [
+        "when it happened",
+        "what the situation was",
+        "why you think you were lucky",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0249",
+    "title": "Part 2: Describe a café or tea house you enjoy going to",
+    "part": "part2",
+    "topic": "Tea and coffee",
+    "tags": ["speaking", "part-2", "tea-and-coffee"],
+    "data": {
+      "questions": ["Describe a café or tea house you enjoy going to"],
+      "cueCardPoints": [
+        "where it is",
+        "what it looks like",
+        "what you usually order there",
+        "and explain why you enjoy going there"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0250",
+    "title": "Part 2: Describe a person you know who has very good manners",
+    "part": "part2",
+    "topic": "Politeness and manners",
+    "tags": ["speaking", "part-2", "politeness-and-manners"],
+    "data": {
+      "questions": ["Describe a person you know who has very good manners"],
+      "cueCardPoints": [
+        "who the person is",
+        "how you know them",
+        "what they do that shows good manners",
+        "and explain how you feel about them"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0246",
+    "title": "Part 3: Speaking skills and communication",
+    "part": "part3",
+    "topic": "Public speaking",
+    "tags": ["speaking", "part-3", "public-speaking"],
+    "data": {
+      "questions": [
+        "Why do many people fear speaking in public?",
+        "Can public speaking be taught, or is it a natural talent?",
+        "How has technology changed the way people give presentations?",
+        "Which professions require good public speaking skills?",
+        "Do you think people are more or less confident speakers than in the past?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0247",
+    "title": "Part 3: Forests and the environment",
+    "part": "part3",
+    "topic": "Trees and forests",
+    "tags": ["speaking", "part-3", "trees-and-forests"],
+    "data": {
+      "questions": [
+        "Why are forests important for the planet?",
+        "What can individuals do to protect trees and forests?",
+        "Should governments ban the cutting down of old forests?",
+        "Why are trees often planted in cities?",
+        "Will forests be better protected in the future than they are now?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0248",
+    "title": "Part 3: Luck, chance and belief",
+    "part": "part3",
+    "topic": "Luck and superstitions",
+    "tags": ["speaking", "part-3", "luck-and-superstitions"],
+    "data": {
+      "questions": [
+        "Why do some people believe in superstitions?",
+        "Do you think success depends more on luck or on hard work?",
+        "Are superstitions becoming less common?",
+        "How do beliefs about luck differ between cultures?",
+        "Is it a good idea for businesses to use lucky symbols or numbers?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0249",
+    "title": "Part 3: Drinks, habits and culture",
+    "part": "part3",
+    "topic": "Tea and coffee",
+    "tags": ["speaking", "part-3", "tea-and-coffee"],
+    "data": {
+      "questions": [
+        "Why is drinking tea or coffee such an important social activity?",
+        "How have coffee shops changed in recent years?",
+        "Are hot drinks good or bad for people's health?",
+        "Why do some people drink large amounts of coffee to stay awake?",
+        "Do you think traditional tea houses will survive in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0250",
+    "title": "Part 3: Manners, respect and society",
+    "part": "part3",
+    "topic": "Politeness and manners",
+    "tags": ["speaking", "part-3", "politeness-and-manners"],
+    "data": {
+      "questions": [
+        "Why are good manners important in society?",
+        "Do manners differ from one culture to another?",
+        "Who should teach children good manners, parents or schools?",
+        "Has technology made people less polite?",
+        "Are formal manners still necessary in the workplace?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
