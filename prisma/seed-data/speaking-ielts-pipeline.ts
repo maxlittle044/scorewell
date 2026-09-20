@@ -4069,5 +4069,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0251",
+    "title": "Part 1: Studying abroad",
+    "part": "part1",
+    "topic": "Studying abroad",
+    "tags": ["speaking", "part-1", "studying-abroad"],
+    "data": {
+      "questions": [
+        "Would you like to study in another country?",
+        "Which country would you choose to study in?",
+        "Do you know anyone who has studied abroad?",
+        "What do you think would be the hardest thing about studying abroad?",
+        "Do you think studying abroad is a good idea for young people?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0252",
+    "title": "Part 1: Comedy and humour",
+    "part": "part1",
+    "topic": "Comedy and humour",
+    "tags": ["speaking", "part-1", "comedy-and-humour"],
+    "data": {
+      "questions": [
+        "Do you like to laugh?",
+        "What kinds of things make you laugh?",
+        "Do you enjoy watching comedies?",
+        "Are you good at making other people laugh?",
+        "Do you think a sense of humour is important?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0253",
+    "title": "Part 1: Trains and railway journeys",
+    "part": "part1",
+    "topic": "Trains and railway journeys",
+    "tags": ["speaking", "part-1", "trains-and-railway-journeys"],
+    "data": {
+      "questions": [
+        "Do you often travel by train?",
+        "Do you like train journeys?",
+        "What do you usually do on a long train journey?",
+        "Are trains popular in your country?",
+        "Would you like to take a long railway journey one day?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0254",
+    "title": "Part 1: Colours",
+    "part": "part1",
+    "topic": "Colours",
+    "tags": ["speaking", "part-1", "colours"],
+    "data": {
+      "questions": [
+        "What is your favourite colour?",
+        "Do you often wear that colour?",
+        "Are there any colours you dislike?",
+        "Do colours affect the way you feel?",
+        "Do colours have special meanings in your country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0255",
+    "title": "Part 1: Asking for and giving advice",
+    "part": "part1",
+    "topic": "Asking for and giving advice",
+    "tags": ["speaking", "part-1", "asking-for-and-giving-advice"],
+    "data": {
+      "questions": [
+        "Do you often ask other people for advice?",
+        "Who do you usually ask for advice?",
+        "Do you like giving advice to other people?",
+        "Have you ever received advice that you did not follow?",
+        "Do you think young people listen to advice from older people?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0251",
+    "title": "Part 2: Describe a country where you would like to study",
+    "part": "part2",
+    "topic": "Studying abroad",
+    "tags": ["speaking", "part-2", "studying-abroad"],
+    "data": {
+      "questions": ["Describe a country where you would like to study"],
+      "cueCardPoints": [
+        "which country it is",
+        "what you know about it",
+        "what you would study there",
+        "and explain why you would like to study there"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0252",
+    "title": "Part 2: Describe a funny experience that you remember",
+    "part": "part2",
+    "topic": "Comedy and humour",
+    "tags": ["speaking", "part-2", "comedy-and-humour"],
+    "data": {
+      "questions": ["Describe a funny experience that you remember"],
+      "cueCardPoints": [
+        "when it happened",
+        "who was there",
+        "what happened",
+        "and explain why it was funny"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0253",
+    "title": "Part 2: Describe a memorable train journey you have made",
+    "part": "part2",
+    "topic": "Trains and railway journeys",
+    "tags": ["speaking", "part-2", "trains-and-railway-journeys"],
+    "data": {
+      "questions": ["Describe a memorable train journey you have made"],
+      "cueCardPoints": [
+        "where you travelled from and to",
+        "who you travelled with",
+        "what you saw and did on the journey",
+        "and explain why it was memorable"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0254",
+    "title": "Part 2: Describe a colourful place that you like",
+    "part": "part2",
+    "topic": "Colours",
+    "tags": ["speaking", "part-2", "colours"],
+    "data": {
+      "questions": ["Describe a colourful place that you like"],
+      "cueCardPoints": [
+        "where it is",
+        "what colours you can see there",
+        "when you go there",
+        "and explain why you like it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0255",
+    "title": "Part 2: Describe a piece of good advice that someone gave you",
+    "part": "part2",
+    "topic": "Asking for and giving advice",
+    "tags": ["speaking", "part-2", "asking-for-and-giving-advice"],
+    "data": {
+      "questions": ["Describe a piece of good advice that someone gave you"],
+      "cueCardPoints": [
+        "who gave you the advice",
+        "what the advice was",
+        "what you did about it",
+        "and explain why it was good advice"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0251",
+    "title": "Part 3: International education",
+    "part": "part3",
+    "topic": "Studying abroad",
+    "tags": ["speaking", "part-3", "studying-abroad"],
+    "data": {
+      "questions": [
+        "Why do so many students choose to study abroad?",
+        "What are the advantages and disadvantages of studying in a foreign country?",
+        "How does studying abroad change a person?",
+        "Should universities do more to help international students settle in?",
+        "Will studying abroad become more or less common in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0252",
+    "title": "Part 3: Humour and society",
+    "part": "part3",
+    "topic": "Comedy and humour",
+    "tags": ["speaking", "part-3", "comedy-and-humour"],
+    "data": {
+      "questions": [
+        "Do people from different cultures find different things funny?",
+        "Why do many people enjoy watching comedy?",
+        "Is humour important in the workplace?",
+        "Can jokes ever be harmful?",
+        "Has the internet changed the way people share humour?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0253",
+    "title": "Part 3: Rail travel and the future",
+    "part": "part3",
+    "topic": "Trains and railway journeys",
+    "tags": ["speaking", "part-3", "trains-and-railway-journeys"],
+    "data": {
+      "questions": [
+        "Why do some people prefer trains to planes or cars?",
+        "Should governments invest more in railways?",
+        "How have trains changed in the past fifty years?",
+        "What are the advantages of high-speed trains?",
+        "Do you think railway travel will become more popular in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0254",
+    "title": "Part 3: Colour and culture",
+    "part": "part3",
+    "topic": "Colours",
+    "tags": ["speaking", "part-3", "colours"],
+    "data": {
+      "questions": [
+        "Why do different cultures give different meanings to colours?",
+        "How do businesses use colour to attract customers?",
+        "Does the colour of a room affect people's mood?",
+        "Should children be allowed to choose the colours in their bedrooms?",
+        "Do you think colour is important in art and design?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0255",
+    "title": "Part 3: Advice, experience and decisions",
+    "part": "part3",
+    "topic": "Asking for and giving advice",
+    "tags": ["speaking", "part-3", "asking-for-and-giving-advice"],
+    "data": {
+      "questions": [
+        "Why do some people find it hard to ask for help?",
+        "Is advice from friends more useful than advice from experts?",
+        "How has the internet changed the way people look for advice?",
+        "Should older people always be respected for their experience?",
+        "What makes someone a good adviser?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
