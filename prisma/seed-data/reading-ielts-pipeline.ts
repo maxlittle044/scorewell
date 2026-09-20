@@ -11763,5 +11763,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0026-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Pensions and Retirement",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "MERIDIAN FOODS\nStaff Handbook — Section 16: Pensions and Retirement\n\nAll employees over the age of 22 who earn more than £10,000 a year are automatically enrolled in the company pension scheme after three months' service. Employees contribute 5% of their salary, and the company adds a further 8%. Staff who do not wish to join may opt out, but they will lose the company's contribution.\n\nThe normal retirement age is 65, although employees may choose to retire at any time from the age of 60 with a reduced pension. Anyone thinking of retiring should inform the HR department at least six months in advance, so that a pension estimate can be prepared. Employees who wish to continue working beyond 65 may do so with the agreement of their line manager, and their pension payments can be delayed to increase the amount they receive. Each year, staff receive a statement showing the value of their pension. Free independent advice on pensions is available through the company's financial adviser, who visits the head office on the first Tuesday of each month.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0026-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q014", "statement": "Employees are automatically enrolled in the pension scheme after three months' service.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q015", "statement": "The company contributes less than the employee.", "answer": "FALSE", "evidence": { "explanation": "The company adds 8%, more than the employee's 5%." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q016", "statement": "Employees may retire at 60 with a full pension.", "answer": "FALSE", "evidence": { "explanation": "Retirement from 60 is with a reduced pension." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q017", "statement": "Employees who work beyond 65 must first obtain the agreement of their line manager.", "answer": "TRUE", "evidence": { "explanation": "Continuing beyond 65 needs the line manager's agreement." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q018", "statement": "The company offers free legal advice on wills.", "answer": "NOT GIVEN", "evidence": { "explanation": "Legal advice on wills is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0026-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0026-q019", "prompt": "Employees over the age of ______ are automatically enrolled.", "accept": ["22","twenty-two"], "evidence": { "explanation": "Employees over 22 are enrolled." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q020", "prompt": "The company adds a further ______ of salary to the pension.", "accept": ["8%","eight per cent","8 per cent"], "evidence": { "explanation": "The company adds 8%." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q021", "prompt": "The normal retirement age is ______.", "accept": ["65","sixty-five"], "evidence": { "explanation": "The normal retirement age is 65." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q022", "prompt": "Anyone thinking of retiring should inform HR at least ______ months in advance.", "accept": ["six","6"], "evidence": { "explanation": "Six months' notice is required." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q023", "prompt": "Each year, staff receive a pension ______.", "accept": ["statement"], "evidence": { "explanation": "Staff receive an annual statement." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0026-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0026-q024", "question": "What happens if employees opt out of the scheme?", "options": ["They lose the company's contribution","They pay a penalty","They must leave the company","They receive a larger salary"], "correctIndex": 0, "evidence": { "explanation": "They will lose the company's contribution." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0026-q025", "question": "What can delaying pension payments do?", "options": ["Increase the amount received","Reduce the amount received","Cancel the pension","Change the retirement age"], "correctIndex": 0, "evidence": { "explanation": "Delaying payments increases the amount received." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0026-q026", "question": "When does the financial adviser visit the head office?", "options": ["Every Monday","The first Tuesday of each month","Twice a year","The last Friday of each month"], "correctIndex": 1, "evidence": { "explanation": "The adviser visits on the first Tuesday of each month." } }
+          ]
+        }
+      ]
+    }
   }
 ];
