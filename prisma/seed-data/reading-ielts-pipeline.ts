@@ -10132,6 +10132,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0030-p1",
+    "title": "The Life of Butterflies",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Butterflies are among the most admired insects in the world. Together with moths, they belong to a group called Lepidoptera, which contains around 160,000 species, and there are about 18,000 species of butterfly alone. They are found on every continent except Antarctica, but most live in the warm tropics.\n\nB. A butterfly's life has four stages. It begins as an egg, which the female usually lays on a plant that the young will later eat. The egg hatches into a caterpillar, or larva, whose main task is to eat, and it grows so quickly that it may shed its skin several times. When it is fully grown, it turns into a pupa, or chrysalis, and hangs motionless from a branch or leaf.\n\nC. The change that takes place inside the chrysalis is one of the wonders of nature. The caterpillar's body largely breaks down into a kind of soup, and the cells reorganise themselves into the body of an adult, with wings, long legs and a coiled tongue for drinking nectar. After one or two weeks, the adult emerges, pumps fluid into its wings to expand them, and after a few hours, it is ready to fly.\n\nD. The wings of butterflies are covered in thousands of tiny scales, arranged like roof tiles. Some of the scales contain pigments, which produce colours such as orange and black, while others have microscopic ridges that reflect light and produce brilliant blue or green. These colours serve many purposes: they may attract mates, warn predators that the butterfly tastes unpleasant, or help it to hide by resembling a dead leaf.\n\nE. Some butterflies undertake extraordinary journeys. Each autumn, millions of monarch butterflies fly up to 4,000 kilometres from Canada and the northern United States to the mountains of Mexico, where they spend the winter in dense clusters on fir trees. The butterflies that return north the following spring are the great-grandchildren of those that left, since several generations are born on the way. Scientists are still studying how the insects find their way to a place they have never seen.\n\nF. Butterflies are also important as pollinators, and as food for birds and other animals. Their numbers have fallen in many places because of the loss of habitats, the use of pesticides and climate change. The monarch is threatened by the disappearance of milkweed, the only plant on which its caterpillars feed, and gardeners and conservation groups now encourage people to plant milkweed and other flowers to support them.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0030-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A large and widespread group" },
+            { "key": "ii", "label": "From egg to chrysalis" },
+            { "key": "iii", "label": "A body rebuilt" },
+            { "key": "iv", "label": "Colour and its uses" },
+            { "key": "v", "label": "A long-distance traveller" },
+            { "key": "vi", "label": "Why butterflies matter and what threatens them" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0030-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the size and distribution of the group." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the stages of life." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes what happens inside the chrysalis." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the wing scales and colours." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the importance and threats." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0030-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q006", "statement": "Most butterflies live in cold regions.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says most live in the warm tropics." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q007", "statement": "A caterpillar may shed its skin several times.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q008", "statement": "The butterflies that fly back north in spring are the same ones that flew south.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says they are the great-grandchildren of those that left." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q009", "statement": "Monarch caterpillars can feed only on milkweed.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0030-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0030-q010", "prompt": "There are about ______ species of butterfly.", "accept": ["18,000","18000"], "evidence": { "explanation": "Paragraph A says about 18,000." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q011", "prompt": "A caterpillar that has finished growing turns into a ______, or chrysalis.", "accept": ["pupa"], "evidence": { "explanation": "Paragraph B says pupa." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q012", "prompt": "Some scales have microscopic ridges that ______ light.", "accept": ["reflect"], "evidence": { "explanation": "Paragraph D says reflect light." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q013", "prompt": "Monarchs spend the winter on ______ trees in Mexico.", "accept": ["fir"], "evidence": { "explanation": "Paragraph E says fir trees." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0030-p2",
+    "title": "The Story of the Piano",
+    "sourceTestSet": "Academic",
+    "topic": "Culture",
+    "tags": ["academic", "culture", "music", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The piano is one of the most popular instruments in the world. It has a range wider than that of any orchestra instrument, it can play melody and harmony at once, and it is used in every kind of music, from classical concertos to jazz and pop. It began, however, with one Italian instrument maker's search for something that the instruments of his day could not do.\n\nB. Before the piano, the main keyboard instrument was the harpsichord, in which the strings are plucked by small quills when a key is pressed. The player of a harpsichord cannot make a note louder or softer by pressing harder, and the sound fades quickly. Around 1700, Bartolomeo Cristofori, who worked for the Medici family in Florence, developed a mechanism in which a key made a hammer strike the string and then fall back, so that the string could continue to vibrate.\n\nC. The new instrument responded to the touch of the player: pressing gently produced a soft sound, and pressing hard produced a loud one. Cristofori called it a gravicembalo col piano e forte, meaning a harpsichord with soft and loud, which was later shortened to pianoforte and then to piano. At first, it attracted little attention, and only a handful were built in his lifetime.\n\nD. In the eighteenth century, makers in Germany and Austria improved the design, and composers such as Mozart and Beethoven began to write for the instrument. Beethoven, in particular, pushed makers to build stronger, louder pianos with a bigger range. In the early nineteenth century, iron frames were introduced, which could bear the great tension of the strings, and made it possible to build pianos with a richer, more powerful sound.\n\nE. During the nineteenth century, the piano became a symbol of respectability. Improvements in manufacturing made it cheaper, and thousands of middle-class families bought an upright piano for their homes. Young people, especially girls, were expected to learn to play, and there was a great demand for sheet music. Public concerts by virtuoso performers such as Franz Liszt attracted huge audiences.\n\nF. A modern grand piano contains around 230 strings and more than 10,000 parts, and it has 88 keys. The piano has faced competition from recorded music and electronic keyboards, which are cheaper and can be played quietly with headphones. Even so, the acoustic piano is still loved for its expressive sound, and many people continue to learn it.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0030-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An instrument for every kind of music" },
+            { "key": "ii", "label": "The limits of the harpsichord and a new mechanism" },
+            { "key": "iii", "label": "A touch-sensitive instrument gets its name" },
+            { "key": "iv", "label": "Composers and stronger frames" },
+            { "key": "v", "label": "A home for the middle class" },
+            { "key": "vi", "label": "Structure and modern rivals" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0030-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the piano's importance." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the harpsichord and Cristofori's mechanism." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes how the instrument got its name." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes composers and iron frames." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q018", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the piano in middle-class homes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0030-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q019", "statement": "The strings of a harpsichord are struck by hammers.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they are plucked by quills." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q020", "statement": "Cristofori worked for the Medici family in Florence.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q021", "statement": "Many pianos were sold during Cristofori's lifetime.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says only a handful were built in his lifetime." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q022", "statement": "Franz Liszt gave concerts that attracted huge audiences.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0030-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0030-q023", "prompt": "The piano was developed around ______.", "accept": ["1700"], "evidence": { "explanation": "Paragraph B says around 1700." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q024", "prompt": "Cristofori called his instrument a gravicembalo col piano e ______.", "accept": ["forte"], "evidence": { "explanation": "Paragraph C says piano e forte." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q025", "prompt": "Early nineteenth-century pianos had ______ frames that could bear the tension of the strings.", "accept": ["iron"], "evidence": { "explanation": "Paragraph D says iron frames." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q026", "prompt": "A modern grand piano has ______ keys.", "accept": ["88","eighty-eight"], "evidence": { "explanation": "Paragraph F says 88 keys." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0030-p3",
+    "title": "How Hurricanes Form",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "weather", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. A hurricane is a huge rotating storm with winds that can exceed 250 kilometres per hour. The same type of storm is called a typhoon in the northwest Pacific and a cyclone in the Indian Ocean and around Australia. Whatever the name, these storms are among the most destructive forces in nature, capable of flattening buildings and flooding whole coastlines.\n\nB. Hurricanes need very particular conditions. They form over tropical oceans where the surface water is warmer than about 26.5 degrees Celsius, because it is the heat and moisture of warm water that provides their energy. As the warm, moist air rises, it leaves an area of low pressure beneath it, and more air rushes in to take its place, and this in turn is warmed and rises.\n\nC. The rotation is caused by the spinning of the Earth, which makes moving air curve, an effect known as the Coriolis effect. It is weak near the equator, which is why hurricanes rarely form within about five degrees of it. In the northern hemisphere, the storms spin anticlockwise, and in the southern hemisphere, clockwise.\n\nD. A mature hurricane has a distinctive structure. At the centre is the eye, an area of calm and often clear weather that can be 30 to 60 kilometres wide. Surrounding the eye is the eyewall, a ring of towering clouds in which the strongest winds and heaviest rain are found. Further out, bands of cloud spiral around the storm, and the whole system may be several hundred kilometres across.\n\nE. Hurricanes are ranked on the Saffir-Simpson scale, which has five categories based on the strength of the wind. A Category 1 storm has winds of at least 119 kilometres per hour, and a Category 5 storm has winds of more than 252 kilometres per hour. However, the most deadly part of a hurricane is often not the wind but the storm surge, a rise in sea level that pushes water far inland; in 2005, Hurricane Katrina's surge flooded much of New Orleans.\n\nF. Once a hurricane moves over land or over cold water, it loses its source of energy and weakens. Forecasters now track storms with satellites, aircraft and computer models, and warnings allow people to evacuate before landfall. Scientists warn that as the oceans grow warmer, the strongest storms may become more intense, and rising sea levels will make surges more dangerous.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0030-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Different names for the same storm" },
+            { "key": "ii", "label": "The ingredients of a storm" },
+            { "key": "iii", "label": "The spin of the Earth" },
+            { "key": "iv", "label": "The layout of a storm" },
+            { "key": "v", "label": "Measuring the danger" },
+            { "key": "vi", "label": "Weakening and warning" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0030-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the storm and its different names." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the conditions needed." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes rotation and the Coriolis effect." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the eye and eyewall." } },
+            { "kind": "matching", "id": "generated-reading-academic-0030-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes weakening and forecasting." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0030-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q032", "statement": "A typhoon is a different type of storm from a hurricane.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says the same type of storm is called a typhoon in the northwest Pacific." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q033", "statement": "Hurricanes form over water warmer than about 26.5 degrees Celsius.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q034", "statement": "Hurricanes in the southern hemisphere spin clockwise.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q035", "statement": "The strongest winds are found in the eye of a hurricane.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says the eye is calm and the strongest winds are in the eyewall." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0030-q036", "statement": "Hurricane Katrina was the strongest hurricane ever recorded.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say how strong Katrina was." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0030-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0030-q037", "prompt": "The spinning of the Earth causes the ______ effect.", "accept": ["Coriolis"], "evidence": { "explanation": "Paragraph C names the Coriolis effect." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q038", "prompt": "The calm centre of a hurricane is called the ______.", "accept": ["eye"], "evidence": { "explanation": "Paragraph D says the eye." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q039", "prompt": "A Category 1 storm has winds of at least ______ kilometres per hour.", "accept": ["119"], "evidence": { "explanation": "Paragraph E gives 119." } },
+            { "kind": "completion", "id": "generated-reading-academic-0030-q040", "prompt": "The rise in sea level that pushes water inland is called a storm ______.", "accept": ["surge"], "evidence": { "explanation": "Paragraph E says storm surge." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
