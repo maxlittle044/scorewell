@@ -2040,4 +2040,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 20,
     },
   },
+
+  // ---- More Task 2 essays (sports events, degrees, uniforms, subject choice, search engines,
+  // living alone, job satisfaction, negative news, parental responsibility, mixed-age housing) ----
+  {
+    slug: "task2-hosting-major-sports-events",
+    title: "Task 2: Hosting major sports events",
+    taskType: "task2",
+    topic: "Sport",
+    tags: ["writing", "task-2", "sport", "economy", "advantages-disadvantages"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many cities compete to host major sports events such as the Olympic Games or the World Cup. What are the advantages and disadvantages of hosting such an event for a city and its residents?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-degree-versus-work-experience",
+    title: "Task 2: A degree or work experience?",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "work", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that a university degree is the best preparation for a successful career, while others think that practical work experience is more valuable. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-wearing-uniforms-at-work",
+    title: "Task 2: Uniforms in the workplace",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "society", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that all employees should wear a uniform at work because it creates a professional image. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-children-choosing-subjects",
+    title: "Task 2: Should children choose what they study?",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "children", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people think that children should be allowed to choose the subjects they study at school, while others believe that the school should decide. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-reliance-on-search-engines",
+    title: "Task 2: Relying on the internet for answers",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "education", "two-part"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many people now turn to the internet whenever they need to find an answer, rather than trying to remember or work things out for themselves. Why is this happening, and is it a positive or negative development?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-people-living-alone",
+    title: "Task 2: The rise in people living alone",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "family", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "In many countries, an increasing number of people choose to live alone. What problems might this cause for individuals and society, and what could be done to reduce them?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-job-satisfaction-versus-salary",
+    title: "Task 2: Job satisfaction or a high salary?",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "society", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that job satisfaction is more important than a high salary when choosing a career, while others disagree. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-negative-news-coverage",
+    title: "Task 2: The focus of the news on bad events",
+    taskType: "task2",
+    topic: "Media",
+    tags: ["writing", "task-2", "media", "society", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "News reports tend to focus on crime, disasters and other bad events rather than on positive stories. Why do you think this is, and what effects might it have on people?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-parents-responsible-for-behaviour",
+    title: "Task 2: Who is responsible for children's behaviour?",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "family", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that parents should be held legally responsible when their children behave badly in public. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-mixed-age-neighbourhoods",
+    title: "Task 2: Living among different age groups",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "community", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some housing developments are designed so that people of different ages live close to one another, instead of separating the young from the old. Do the advantages of this outweigh the disadvantages?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
