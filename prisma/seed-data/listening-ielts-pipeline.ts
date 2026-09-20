@@ -6116,5 +6116,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0025-s1",
+    "title": "Veterinary Clinic Appointment – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Veterinary Clinic Appointment – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Parkside Veterinary Clinic. How can I help?\nCaller: Hello, I'd like to make an appointment for my dog. She's been limping since yesterday.\nReceptionist: I'm sorry to hear that. Could I have your surname, please?\nCaller: It's Whitfield, W-H-I-T-F-I-E-L-D.\nReceptionist: Thank you, Mrs Whitfield. And what's your dog's name?\nCaller: Biscuit. She's a six-year-old labrador.\nReceptionist: Thank you. We have an appointment on Wednesday at eleven o'clock with Dr Hasan.\nCaller: That's fine. How much will it cost?\nReceptionist: The consultation fee is £35, and any tests or treatment are extra.\nCaller: Should I bring anything with me?\nReceptionist: Please bring her vaccination card, if you have it. And it's best to keep her on a lead in the waiting room.\nCaller: Of course. Do you need my address?\nReceptionist: Yes, please.\nCaller: It's twelve Mill Road. And my number is 07700 900863.\nReceptionist: Thank you. We'll see you on Wednesday.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0025-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0025-q001", "prompt": "Surname: ______.", "accept": ["Whitfield"], "evidence": { "explanation": "The caller spells W-H-I-T-F-I-E-L-D." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q002", "prompt": "Name of dog: ______.", "accept": ["Biscuit"], "evidence": { "explanation": "The dog's name is Biscuit." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q003", "prompt": "Type of dog: ______.", "accept": ["labrador"], "evidence": { "explanation": "The dog is a labrador." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q004", "prompt": "Age of dog: ______ years.", "accept": ["six","6"], "evidence": { "explanation": "The dog is six years old." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q005", "prompt": "Problem: she has been ______ since yesterday.", "accept": ["limping"], "evidence": { "explanation": "The caller says she has been limping." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q006", "prompt": "Day of appointment: ______.", "accept": ["Wednesday"], "evidence": { "explanation": "The appointment is on Wednesday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q007", "prompt": "Time of appointment: ______ o'clock.", "accept": ["eleven","11"], "evidence": { "explanation": "The appointment is at eleven o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q008", "prompt": "Consultation fee: £______.", "accept": ["35"], "evidence": { "explanation": "The fee is £35." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q009", "prompt": "Bring the dog's ______ card.", "accept": ["vaccination"], "evidence": { "explanation": "The receptionist asks for her vaccination card." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q010", "prompt": "Address: twelve ______ Road.", "accept": ["Mill"], "evidence": { "explanation": "The address is twelve Mill Road." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0025-s2",
+    "title": "Pottery Workshop Introduction – Listening Section 2",
+    "topic": "Arts",
+    "tags": ["academic", "arts", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Pottery Workshop Introduction – Listening Section 2",
+      "transcript": "Welcome to the Riverside Pottery Studio. I'm going to explain how today's workshop will work.\n\nThe session lasts three hours, and there are eight people in each group. The cost is £45 per person, which includes the clay, the glazes and the firing of your finished pieces.\n\nWe begin with a demonstration of the potter's wheel, and then each of you will make a bowl. Making a bowl on the wheel is harder than it looks, so don't worry if your first attempt collapses. After a break, you will decorate your bowl with a glaze of your choice.\n\nYour pieces will be fired in our kiln, which reaches a temperature of about one thousand degrees. This takes time, so your work will be ready for collection after two weeks. We can also post pieces to you for a small charge.\n\nPlease wear old clothes, because clay is messy, and aprons are provided. If you have long hair, please tie it back. There's a café next door where you can buy drinks during the break. Now, let's get started.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0025-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0025-q011", "prompt": "The workshop lasts ______ hours.", "accept": ["three","3"], "evidence": { "explanation": "The speaker says three hours." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q012", "prompt": "There are ______ people in each group.", "accept": ["eight","8"], "evidence": { "explanation": "The speaker says eight people." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q013", "prompt": "The cost per person is £______.", "accept": ["45","forty-five","forty five"], "evidence": { "explanation": "The speaker says £45." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q014", "prompt": "Each person will make a ______ on the wheel.", "accept": ["bowl"], "evidence": { "explanation": "Each person will make a bowl." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q015", "prompt": "The kiln reaches about ______ degrees.", "accept": ["one thousand","1000","1,000"], "evidence": { "explanation": "The speaker says about one thousand degrees." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q016", "prompt": "Finished pieces are ready after ______ weeks.", "accept": ["two","2"], "evidence": { "explanation": "The speaker says two weeks." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0025-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q017", "question": "What is included in the price?", "options": ["Clay, glazes and firing","Lunch","A pottery wheel to take home","Postage of finished pieces"], "correctIndex": 0, "evidence": { "explanation": "The price includes the clay, the glazes and the firing." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q018", "question": "What happens after the break?", "options": ["A demonstration","Decorating the bowl with glaze","Firing the pieces","Collecting aprons"], "correctIndex": 1, "evidence": { "explanation": "After the break, participants decorate their bowls with glaze." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q019", "question": "What are visitors advised to wear?", "options": ["Old clothes","Gloves","Formal clothes","Sports shoes"], "correctIndex": 0, "evidence": { "explanation": "Visitors are advised to wear old clothes." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q020", "question": "Where can visitors buy drinks?", "options": ["In the studio","At a café next door","From a machine","In the shop"], "correctIndex": 1, "evidence": { "explanation": "There's a café next door." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0025-s3",
+    "title": "Preparing a Research Interview – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Preparing a Research Interview – Listening Section 3",
+      "transcript": "Dr Chen: Amir, how is your interview project going? Remind me of the topic.\nAmir: I'm studying how older people use online banking.\nDr Chen: And how many people do you plan to interview?\nAmir: Twelve. Each interview should last about thirty minutes.\nDr Chen: That's realistic. How will you find participants?\nAmir: I've asked a local community centre, and they've offered to put up a notice.\nDr Chen: Good. Before the interviews, you'll need to send each person an information sheet and a consent form.\nAmir: Yes, I'll do that. I'd also like to record the interviews, if they agree.\nDr Chen: Recording is fine with their permission. During the interview, remember to ask open questions, not ones that can be answered with just yes or no.\nAmir: Right. I've written fifteen questions. Should I test them first?\nDr Chen: Definitely. Try them out on a friend, so that you can see which ones are confusing.\nAmir: And afterwards?\nDr Chen: You'll need to type up each recording word for word. It takes longer than you expect, so allow about three hours for each interview.\nAmir: I'll plan for that. When is the deadline for the interviews?\nDr Chen: The end of next month.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0025-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q021", "question": "What is the topic of Amir's project?", "options": ["How older people use online banking","How young people save money","How banks train staff","How people shop online"], "correctIndex": 0, "evidence": { "explanation": "Amir is studying how older people use online banking." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q022", "question": "How many people does Amir plan to interview?", "options": ["Six","Ten","Twelve","Fifteen"], "correctIndex": 2, "evidence": { "explanation": "Amir plans twelve interviews." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q023", "question": "How long should each interview last?", "options": ["Fifteen minutes","Thirty minutes","Forty-five minutes","One hour"], "correctIndex": 1, "evidence": { "explanation": "Each interview should last about thirty minutes." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q024", "question": "How will Amir find participants?", "options": ["A community centre will put up a notice","He will stop people in the street","He will use social media","His tutor will choose them"], "correctIndex": 0, "evidence": { "explanation": "A local community centre has offered to put up a notice." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q025", "question": "How many questions has Amir written?", "options": ["Ten","Twelve","Fifteen","Twenty"], "correctIndex": 2, "evidence": { "explanation": "Amir has written fifteen questions." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0025-q026", "question": "How long should Amir allow to type up each interview?", "options": ["One hour","Two hours","Three hours","Five hours"], "correctIndex": 2, "evidence": { "explanation": "Dr Chen says to allow about three hours for each interview." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0025-s3-g2",
+          "instructions": "At which stage should each task be done? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Before the interview" },
+            { "key": "B", "label": "During the interview" },
+            { "key": "C", "label": "After the interview" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0025-q027", "prompt": "Send an information sheet and consent form", "answer": "A", "evidence": { "explanation": "Dr Chen says this must be done before the interviews." } },
+            { "kind": "matching", "id": "generated-listening-academic-0025-q028", "prompt": "Ask open questions, not yes/no questions", "answer": "B", "evidence": { "explanation": "Dr Chen says to remember this during the interview." } },
+            { "kind": "matching", "id": "generated-listening-academic-0025-q029", "prompt": "Type up the recording word for word", "answer": "C", "evidence": { "explanation": "Dr Chen says this is needed afterwards." } },
+            { "kind": "matching", "id": "generated-listening-academic-0025-q030", "prompt": "Try the questions out on a friend", "answer": "A", "evidence": { "explanation": "Dr Chen suggests testing the questions first." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0025-s4",
+    "title": "The Story of Paper – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "note-completion"],
+    "data": {
+      "audioLabel": "The Story of Paper – Listening Section 4",
+      "transcript": "Today's lecture looks at the history of paper, and how it changed the way information is shared.\n\nBefore paper, people wrote on clay tablets, on papyrus, which was made from reeds, and on parchment, which was made from animal skin. All of these were expensive or heavy. According to Chinese records, a court official named Cai Lun presented paper to the emperor in about 105 AD. He made it from a mixture of tree bark, old rags and fishing nets, which was pounded into a pulp, spread on a screen and dried.\n\nFor centuries, the method was a closely kept secret. It reached the Islamic world in the eighth century, after a battle near Samarkand in 751, when, according to tradition, Chinese papermakers were captured. Baghdad soon had a thriving paper industry, and paper mills later appeared in Spain and Italy in the twelfth and thirteenth centuries.\n\nThe invention of the printing press by Johannes Gutenberg in about 1450 greatly increased the demand for paper. By the nineteenth century, rags were in short supply, and in the 1840s a German inventor, Friedrich Gottlob Keller, developed a way of making paper from wood pulp, which is still the main material today.\n\nToday, paper is one of the most recycled products in the world, and a tonne of recycled paper saves a large number of trees.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0025-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0025-q031", "prompt": "Papyrus was made from ______.", "accept": ["reeds"], "evidence": { "explanation": "The lecturer says papyrus was made from reeds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q032", "prompt": "Parchment was made from animal ______.", "accept": ["skin"], "evidence": { "explanation": "The lecturer says animal skin." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q033", "prompt": "Cai Lun presented paper to the emperor in about ______ AD.", "accept": ["105"], "evidence": { "explanation": "The lecturer says about 105 AD." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q034", "prompt": "Cai Lun made paper from tree bark, old rags and fishing ______.", "accept": ["nets"], "evidence": { "explanation": "The lecturer says fishing nets." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q035", "prompt": "The papermaking method reached the Islamic world in the ______ century.", "accept": ["eighth","8th"], "evidence": { "explanation": "The lecturer says the eighth century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q036", "prompt": "Chinese papermakers were captured near ______ in 751.", "accept": ["Samarkand"], "evidence": { "explanation": "The lecturer says a battle near Samarkand." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q037", "prompt": "Paper mills later appeared in Spain and ______.", "accept": ["Italy"], "evidence": { "explanation": "The lecturer says Spain and Italy." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q038", "prompt": "Gutenberg invented the printing ______.", "accept": ["press"], "evidence": { "explanation": "The lecturer says printing press." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q039", "prompt": "Keller developed paper made from wood ______.", "accept": ["pulp"], "evidence": { "explanation": "The lecturer says wood pulp." } },
+            { "kind": "completion", "id": "generated-listening-academic-0025-q040", "prompt": "Paper is one of the most ______ products in the world.", "accept": ["recycled"], "evidence": { "explanation": "The lecturer says one of the most recycled products." } }
+          ]
+        }
+      ]
+    }
   }
 ];
