@@ -7172,5 +7172,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0033-s1",
+    "title": "Doctor's Surgery Registration – Listening Section 1",
+    "topic": "Health",
+    "tags": ["academic", "health", "form-completion"],
+    "data": {
+      "audioLabel": "Doctor's Surgery Registration – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Millbrook Surgery. How can I help?\nCaller: Hello, I've just moved to the area, and I'd like to register as a new patient.\nReceptionist: Of course. Could I have your surname, please?\nCaller: It's Fitzgerald, F-I-T-Z-G-E-R-A-L-D.\nReceptionist: Thank you, Mr Fitzgerald. And your date of birth?\nCaller: The seventeenth of November, nineteen ninety.\nReceptionist: And your new address?\nCaller: Number nine, Orchard Close.\nReceptionist: Thank you. Do you have a contact number?\nCaller: Yes, it's 07700 900276.\nReceptionist: Good. Which surgery were you registered with before?\nCaller: The Riverside Practice in Leeds.\nReceptionist: Fine, we'll ask them to send your records. Do you have any allergies we should know about?\nCaller: Yes, I'm allergic to penicillin.\nReceptionist: I'll note that on your file. New patients have a health check with our nurse. We have an appointment on Thursday at ten o'clock.\nCaller: Thursday at ten is fine. Do I need to bring anything?\nReceptionist: Please bring a passport or driving licence as proof of identity. Registration is free.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0033-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0033-q001", "prompt": "Surname: ______.", "accept": ["Fitzgerald"], "evidence": { "explanation": "The caller spells F-I-T-Z-G-E-R-A-L-D." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q002", "prompt": "Date of birth: the seventeenth of ______.", "accept": ["November"], "evidence": { "explanation": "The caller was born on the seventeenth of November." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q003", "prompt": "Address: number nine, ______ Close.", "accept": ["Orchard"], "evidence": { "explanation": "The address is number nine, Orchard Close." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q004", "prompt": "Contact number: ______.", "accept": ["07700 900276"], "evidence": { "explanation": "The caller gives 07700 900276." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q005", "prompt": "Previous surgery: the ______ Practice.", "accept": ["Riverside"], "evidence": { "explanation": "The previous surgery was the Riverside Practice." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q006", "prompt": "Previous town: ______.", "accept": ["Leeds"], "evidence": { "explanation": "The caller was registered in Leeds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q007", "prompt": "Allergic to: ______.", "accept": ["penicillin"], "evidence": { "explanation": "The caller is allergic to penicillin." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q008", "prompt": "Health check appointment day: ______.", "accept": ["Thursday"], "evidence": { "explanation": "The appointment is on Thursday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q009", "prompt": "Appointment time: ______ o'clock.", "accept": ["ten","10"], "evidence": { "explanation": "The appointment is at ten o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q010", "prompt": "Bring a driving licence or ______ as proof of identity.", "accept": ["passport"], "evidence": { "explanation": "The receptionist asks for a passport or driving licence." } }
+          ]
+        }
+      ]
+    }
   }
 ];
