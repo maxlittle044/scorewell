@@ -470,6 +470,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "gerunds-and-infinitives-practice",
+    title: "Gerunds and infinitives: -ing or to?",
+    topic: "Grammar",
+    tags: ["grammar", "verbs", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "I look forward to ___ you next week.",
+          options: ["see","seeing","saw","to see"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "In the phrase “look forward to”, the word “to” is a preposition, not part of an infinitive. A preposition is followed by a noun form, so the gerund “seeing” is correct.",
+          },
+          distractorNotes: {
+            "0": "This treats “to” as an infinitive marker. In this phrase it is a preposition, so the base verb is wrong.",
+            "2": "A past tense verb cannot follow a preposition.",
+            "3": "“To see” would mean “to” is followed by an infinitive, but “look forward” needs “to” plus a gerund.",
+          },
+        },
+        {
+          id: "q2",
+          question: "Many experts suggest ___ a congestion charge in the city centre.",
+          options: ["introduce","to introduce","introducing","introduced"],
+          correctIndex: 2,
+          evidence: {
+            explanation:
+              "“Suggest” is one of the verbs that take the gerund: “suggest introducing”. It is never followed by “to” plus a verb.",
+          },
+          distractorNotes: {
+            "0": "The bare verb is not possible after “suggest” without “that” or a gerund.",
+            "1": "A very common error. “Suggest to do” is wrong, and “suggest doing” is the correct pattern.",
+            "3": "A past participle here would make the sentence a passive with a missing subject.",
+          },
+        },
+        {
+          id: "q3",
+          question: "The government has decided ___ the law.",
+          options: ["changing","to change","change","having changed"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Decide” belongs to the group that takes the infinitive: “decide to change”. Compare “suggest changing” in the previous question.",
+          },
+          distractorNotes: {
+            "0": "“Decide” does not take a gerund, unlike verbs such as “consider” or “suggest”.",
+            "2": "The bare verb needs “to” after “decide”.",
+            "3": "“Having changed” refers to an earlier action, which is not what “decide” expresses.",
+          },
+        },
+        {
+          id: "q4",
+          question: "Many students are interested ___ foreign languages.",
+          options: ["to learn","in learning","for learning","at learn"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Interested” takes the preposition “in”, and a preposition is followed by a gerund: “interested in learning”.",
+          },
+          distractorNotes: {
+            "0": "“Interested to learn” is a common mistake. It changes the pattern of the adjective, which needs “in”.",
+            "2": "“Interested for” is not used to link an adjective to an activity.",
+            "3": "The preposition is wrong, and the base verb after it is also wrong.",
+          },
+        },
+        {
+          id: "q5",
+          question: "After ten years, he finally stopped ___, and his health improved.",
+          options: ["to smoke","smoking","smoke","to smoking"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Stop” plus a gerund means to end the activity. “Stopped smoking” means he gave up smoking, which fits the improved health.",
+          },
+          distractorNotes: {
+            "0": "“Stopped to smoke” means he paused in order to smoke, the opposite of the intended meaning.",
+            "2": "The bare verb cannot follow “stop” in this pattern.",
+            "3": "“To smoking” mixes two patterns and is not grammatical here.",
+          },
+        },
+        {
+          id: "q6",
+          question: "Taxes on fuel were raised ___ traffic.",
+          options: ["to reduce","for reducing","reducing","for reduce"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "A purpose is expressed with “to” plus the base verb: “raised to reduce traffic”. “For” plus a gerund is for describing what something is used for, not for the purpose of an action.",
+          },
+          distractorNotes: {
+            "1": "“For reducing” sounds like a description of use, and is not the natural way to give a purpose.",
+            "2": "A bare gerund cannot introduce a purpose without “to” or “for”.",
+            "3": "“For” must be followed by a noun or gerund, not a base verb.",
+          },
+        },
+        {
+          id: "q7",
+          question: "I have never managed ___ a foreign language fluently.",
+          options: ["to speak","speaking","speak","for speaking"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "“Manage” takes the infinitive: “manage to speak”. It belongs with decide, hope, plan and afford.",
+          },
+          distractorNotes: {
+            "1": "“Manage speaking” is not idiomatic. “Manage” takes the infinitive.",
+            "2": "The bare verb needs “to” after “manage”.",
+            "3": "“For” cannot follow “manage” in this pattern.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */

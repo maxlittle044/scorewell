@@ -377,6 +377,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "Wrong verb patterns, such as 'suggest to do' or 'interested to learn', are among the most frequent errors in Task 2 and in Speaking, and they count against Grammatical Range and Accuracy every time they appear. Learning the verb groups, and always using a gerund after a preposition, removes most of them.",
+    practiceSlug: "gerunds-and-infinitives-practice",
     tags: ["grammar", "verbs", "task2"],
   },
 ];
