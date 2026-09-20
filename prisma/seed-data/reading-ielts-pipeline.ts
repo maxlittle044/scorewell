@@ -9311,5 +9311,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0018-p1",
+    "title": "General Training Reading — Section 1: Dance School and Pharmacy Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nRHYTHM DANCE SCHOOL\nClasses and Fees\n\nClasses are held from Monday to Friday between 5:00pm and 9:00pm, and on Saturday mornings from 9:30am. Beginners' classes in ballroom and salsa run for eight weeks and cost £64 per course. Children's ballet classes for ages 5 to 10 take place on Saturdays at 10:00am and cost £6 per lesson.\n\nStudents should wear comfortable clothes and soft-soled shoes; street shoes are not permitted on the dance floor. Lockers are available for a £1 coin, which is returned. A trial lesson costs £5 and is deducted from the course fee if you enrol. Lessons missed for illness can be made up within four weeks, but no refunds are given.\n\nTEXT 2\n\nGREENFIELD PHARMACY\nOpening Hours and Services\n\nThe pharmacy is open from 9:00am to 6:30pm on weekdays, and from 9:00am to 1:00pm on Saturdays. It is closed on Sundays and public holidays. Prescriptions left before 11:00am are normally ready by 4:00pm on the same day.\n\nFree services include blood pressure checks and advice on stopping smoking. A flu vaccination service is available from 1 October and costs £14; no appointment is necessary. Customers collecting medicines for someone else must bring the collection slip. Prescriptions can be delivered to your home within three miles of the shop, for a charge of £3.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0018-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q001", "statement": "Lessons at the dance school are held on Sundays.", "answer": "FALSE", "evidence": { "explanation": "Classes are held Monday to Friday and Saturday mornings." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q002", "statement": "Students may wear street shoes on the dance floor.", "answer": "FALSE", "evidence": { "explanation": "Street shoes are not permitted." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q003", "statement": "The £5 trial lesson is deducted from the course fee for those who enrol.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q004", "statement": "The dance school offers private lessons at home.", "answer": "NOT GIVEN", "evidence": { "explanation": "Private lessons are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q005", "statement": "The pharmacy is open on Saturday afternoons.", "answer": "FALSE", "evidence": { "explanation": "On Saturdays it closes at 1:00pm." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q006", "statement": "Blood pressure checks at the pharmacy are free.", "answer": "TRUE", "evidence": { "explanation": "Text 2 lists them as a free service." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0018-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0018-q007", "prompt": "Beginners' ballroom and salsa courses run for ______ weeks.", "accept": ["eight","8"], "evidence": { "explanation": "The courses run for eight weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q008", "prompt": "Dance school lockers require a ______ coin, which is returned.", "accept": ["£1","1 pound","one pound"], "evidence": { "explanation": "Lockers need a £1 coin." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q009", "prompt": "Missed lessons can be made up within ______ weeks.", "accept": ["four","4"], "evidence": { "explanation": "Missed lessons can be made up within four weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q010", "prompt": "Prescriptions left before ______ are normally ready by 4:00pm.", "accept": ["11:00am","11.00am"], "evidence": { "explanation": "Prescriptions left before 11:00am are ready by 4:00pm." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0018-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0018-q011", "question": "How much is a children's ballet lesson?", "options": ["£5","£6","£8","£64"], "correctIndex": 1, "evidence": { "explanation": "Children's ballet costs £6 per lesson." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0018-q012", "question": "When does the flu vaccination service start?", "options": ["1 September","1 October","1 November","1 December"], "correctIndex": 1, "evidence": { "explanation": "It is available from 1 October." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0018-q013", "question": "What is the charge for home delivery of prescriptions?", "options": ["Free","£2","£3","£14"], "correctIndex": 2, "evidence": { "explanation": "Delivery costs £3." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0018-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Visitors and Contractors",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "HARROW ENGINEERING\nStaff Handbook — Section 14: Visitors and Contractors\n\nAll visitors must report to reception, where they sign the visitor book and receive a numbered badge, which must be worn at all times and returned when they leave. Visitors may not enter production areas unless accompanied by a member of staff, and must wear safety glasses and a high-visibility jacket in those areas.\n\nStaff who are expecting a visitor should notify reception at least one day in advance, so that a badge can be prepared. Contractors working on site for more than one day must also attend a 20-minute safety briefing on their first morning, and may park only in the visitors' car park. Photography is not permitted anywhere on the site without written permission from the Operations Manager. In the event of a fire alarm, the host is responsible for escorting the visitor to the assembly point.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0018-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q014", "statement": "Visitors must sign the visitor book at reception.", "answer": "TRUE", "evidence": { "explanation": "Visitors sign the visitor book at reception." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q015", "statement": "Visitors may enter production areas on their own.", "answer": "FALSE", "evidence": { "explanation": "They must be accompanied by a member of staff." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q016", "statement": "Photography is allowed in the visitors' car park.", "answer": "FALSE", "evidence": { "explanation": "Photography is not permitted anywhere on the site without written permission." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q017", "statement": "Contractors receive a free lunch on their first day.", "answer": "NOT GIVEN", "evidence": { "explanation": "Meals are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q018", "statement": "The host is responsible for escorting the visitor to the assembly point in a fire alarm.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0018-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0018-q019", "prompt": "Visitors receive a numbered ______ at reception.", "accept": ["badge"], "evidence": { "explanation": "Visitors receive a numbered badge." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q020", "prompt": "Staff should notify reception at least ______ day in advance of a visit.", "accept": ["one","1"], "evidence": { "explanation": "Notice of at least one day is required." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q021", "prompt": "The contractors' safety briefing lasts ______ minutes.", "accept": ["20","twenty"], "evidence": { "explanation": "The briefing is 20 minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q022", "prompt": "Photography needs written permission from the ______ Manager.", "accept": ["Operations"], "evidence": { "explanation": "Permission comes from the Operations Manager." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q023", "prompt": "Contractors may park only in the ______ car park.", "accept": ["visitors'","visitors","visitor's"], "evidence": { "explanation": "Contractors may park only in the visitors' car park." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0018-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0018-q024", "question": "What must visitors wear in production areas?", "options": ["A helmet and gloves","Safety glasses and a high-visibility jacket","A protective apron","Ear defenders only"], "correctIndex": 1, "evidence": { "explanation": "Visitors wear safety glasses and a high-visibility jacket." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0018-q025", "question": "What must visitors do when they leave?", "options": ["Sign a form","Return their badge","Leave a phone number","Report to the Operations Manager"], "correctIndex": 1, "evidence": { "explanation": "The badge must be returned when they leave." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0018-q026", "question": "Who attends a safety briefing?", "options": ["All visitors","Contractors working on site for more than one day","Only new staff","Anyone taking photographs"], "correctIndex": 1, "evidence": { "explanation": "Contractors on site for more than one day attend." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0018-p3",
+    "title": "The Story of Chocolate",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Chocolate is one of the most popular foods in the world, eaten as a treat, given as a gift and used in countless desserts. Yet the chocolate we know today is very different from the drink that was first made from the beans of the cacao tree thousands of years ago in Central and South America.\n\nB. The earliest chocolate was a drink. The peoples of ancient Mesoamerica, including the Maya and later the Aztecs, roasted and ground cacao beans and mixed them with water, spices and sometimes chilli, producing a bitter, frothy drink that was often used in religious ceremonies. Cacao beans were so valuable to the Aztecs that they were used as a form of money.\n\nC. Spanish explorers brought cacao to Europe in the sixteenth century. There, the drink was sweetened with sugar and flavoured with vanilla or cinnamon, and became a fashionable luxury among the rich. Chocolate houses opened in several European cities, and the drink was thought to have medicinal properties.\n\nD. The modern chocolate bar depends on inventions of the nineteenth century. In 1828, the Dutch chemist Coenraad van Houten patented a press that squeezed most of the fat, or cocoa butter, out of the beans, leaving a powder that mixed more easily with water. In 1847, the English firm of Fry mixed the powder with cocoa butter and sugar to make the first solid eating chocolate.\n\nE. Milk chocolate came next. In 1875, the Swiss chocolate maker Daniel Peter combined chocolate with condensed milk, a product developed by his neighbour Henri Nestlé, and created a smoother, sweeter product. Switzerland later became famous for its chocolate, and the industry there developed methods that made chocolate creamier.\n\nF. Today, most of the world's cocoa is grown in West Africa, mainly in Côte d'Ivoire and Ghana, often on small family farms. Many farmers earn very little, and campaigners have drawn attention to child labour and the loss of forests to new plantations. Some chocolate makers now buy beans through schemes that guarantee farmers a minimum price, and shoppers can choose products carrying certification labels.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0018-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A world favourite with ancient roots" },
+            { "key": "ii", "label": "A bitter drink of ancient peoples" },
+            { "key": "iii", "label": "A luxury of the European rich" },
+            { "key": "iv", "label": "Inventions behind the chocolate bar" },
+            { "key": "v", "label": "The arrival of milk chocolate" },
+            { "key": "vi", "label": "Farming and fairness today" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0018-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces chocolate's popularity and origins." } },
+            { "kind": "matching", "id": "generated-reading-general-0018-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the ancient drink." } },
+            { "kind": "matching", "id": "generated-reading-general-0018-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes chocolate in sixteenth-century Europe." } },
+            { "kind": "matching", "id": "generated-reading-general-0018-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the nineteenth-century inventions." } },
+            { "kind": "matching", "id": "generated-reading-general-0018-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes cocoa farming and fairness." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0018-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q032", "statement": "The Aztecs used cacao beans as a form of money.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q033", "statement": "The first chocolate to be made was a solid bar.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the earliest chocolate was a drink." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q034", "statement": "Van Houten patented his press in 1828.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D gives 1828." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q035", "statement": "Daniel Peter and Henri Nestlé were business partners.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says Nestlé was Peter's neighbour, not his partner." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0018-q036", "statement": "Most of the world's chocolate is eaten in Switzerland.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say where most chocolate is eaten." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0018-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0018-q037", "prompt": "The peoples of ancient Mesoamerica sometimes mixed cacao with water, spices and ______.", "accept": ["chilli"], "evidence": { "explanation": "Paragraph B mentions chilli." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q038", "prompt": "Cacao reached Europe in the ______ century.", "accept": ["sixteenth","16th"], "evidence": { "explanation": "Paragraph C says the sixteenth century." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q039", "prompt": "The first solid eating chocolate was made in ______.", "accept": ["1847"], "evidence": { "explanation": "Paragraph D gives 1847." } },
+            { "kind": "completion", "id": "generated-reading-general-0018-q040", "prompt": "Most of the world's cocoa is grown in ______ Africa.", "accept": ["West"], "evidence": { "explanation": "Paragraph F says West Africa." } }
+          ]
+        }
+      ]
+    }
   }
 ];
