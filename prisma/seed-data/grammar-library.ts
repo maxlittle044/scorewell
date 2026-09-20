@@ -506,6 +506,7 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     ],
     ieltsNote:
       "Task 1 depends on adverbs that describe change: sharply, gradually, steadily, slightly, dramatically. Using the adjective by mistake ('rose sharp') is one of the most visible accuracy errors in the whole test. In Task 2 and Speaking, adverbs such as 'highly', 'increasingly' and 'particularly' add range, so long as they are formed and placed correctly.",
+    practiceSlug: "adjectives-and-adverbs-practice",
     tags: ["grammar", "word-forms", "task1"],
   },
 ];

@@ -815,6 +815,121 @@ export const GRAMMAR_TESTS: QuizSeed[] = [
       ],
     },
   },
+  {
+    slug: "adjectives-and-adverbs-practice",
+    title: "Adjectives and adverbs: sharp or sharply?",
+    topic: "Grammar",
+    tags: ["grammar", "word-forms", "multiple-choice"],
+    data: {
+      questions: [
+        {
+          id: "q1",
+          question: "The number of visitors increased ___ between 2010 and 2015.",
+          options: ["sharp","sharply","sharpen","sharpness"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Increased” is a verb, so it needs an adverb to describe how the number changed: “sharply”. This is the pattern Task 1 relies on.",
+          },
+          distractorNotes: {
+            "0": "“Sharp” is an adjective. It can describe a noun (“a sharp rise”), but it cannot describe a verb.",
+            "2": "“Sharpen” is a verb meaning to make sharp, and it does not fit here.",
+            "3": "“Sharpness” is a noun, and it cannot follow the verb “increased” in this way.",
+          },
+        },
+        {
+          id: "q2",
+          question: "She speaks English very ___.",
+          options: ["good","well","goodly","best"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "The adverb of “good” is “well”. “Speaks” is a verb, so it needs the adverb “well”.",
+          },
+          distractorNotes: {
+            "0": "“Good” is an adjective, and it cannot describe how someone speaks.",
+            "2": "“Goodly” is not the adverb of “good” in modern English.",
+            "3": "“Best” is a superlative and does not fit after “very”.",
+          },
+        },
+        {
+          id: "q3",
+          question: "The proposal seems ___.",
+          options: ["reasonably","reasonable","reason","reasoning"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Seem” is a linking verb, so it is followed by an adjective that describes the subject: “seems reasonable”.",
+          },
+          distractorNotes: {
+            "0": "An adverb would describe how the proposal “seems”, as an action, but it is describing the proposal itself.",
+            "2": "“Reason” is a noun and cannot describe the proposal.",
+            "3": "“Reasoning” is a noun or participle and does not fit this pattern.",
+          },
+        },
+        {
+          id: "q4",
+          question: "It is a ___ important issue for young people.",
+          options: ["real","really","reality","realism"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "An adjective (“important”) is modified by an adverb, so “really important” is correct. “Real important” is a common error.",
+          },
+          distractorNotes: {
+            "0": "“Real” is an adjective. It cannot modify another adjective in careful English.",
+            "2": "“Reality” is a noun, and it cannot modify an adjective.",
+            "3": "“Realism” is also a noun, and it does not fit.",
+          },
+        },
+        {
+          id: "q5",
+          question: "He works very ___, so he is always tired.",
+          options: ["hardly","hard","hardness","hardy"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Hard” is both an adjective and an adverb, so “works hard” is correct. “Hardly” is a different word.",
+          },
+          distractorNotes: {
+            "0": "“Hardly” means “almost not”. “He works hardly” would say that he barely works, the opposite of the intended meaning.",
+            "2": "“Hardness” is a noun and does not fit after “works very”.",
+            "3": "“Hardy” is an adjective meaning tough, and it cannot describe how someone works.",
+          },
+        },
+        {
+          id: "q6",
+          question: "I could ___ hear the speaker from the back of the hall.",
+          options: ["hard","hardly","hardest","harshly"],
+          correctIndex: 1,
+          evidence: {
+            explanation:
+              "“Hardly” means “almost not”, so “could hardly hear” means it was very difficult to hear. It is often confused with “hard”.",
+          },
+          distractorNotes: {
+            "0": "“Hard” does not modify “hear” in this way, and it would not give the meaning of difficulty.",
+            "2": "“Hardest” is a superlative and does not fit before “hear”.",
+            "3": "“Harshly” means in a severe way, and it has nothing to do with hearing.",
+          },
+        },
+        {
+          id: "q7",
+          question: "She bought a ___ table at the market.",
+          options: ["beautiful old wooden","wooden old beautiful","old beautiful wooden","wooden beautiful old"],
+          correctIndex: 0,
+          evidence: {
+            explanation:
+              "Adjectives follow a normal order: opinion, size, age, shape, colour, origin, material. So the opinion (beautiful) comes first, then age (old), then material (wooden).",
+          },
+          distractorNotes: {
+            "1": "This puts material first, which reverses the normal order.",
+            "2": "Age comes before opinion here, so the sequence sounds unnatural.",
+            "3": "Material (wooden) comes before opinion and age, which is not the usual order.",
+          },
+        },
+      ],
+    },
+  },
 ];
 
 /** Stored as MINI_EXERCISE with taskType "mini-exercise". */
