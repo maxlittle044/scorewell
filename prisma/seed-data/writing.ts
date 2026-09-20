@@ -1662,4 +1662,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 2 essays (zoos, homework, cooking in schools, celebrities, working abroad,
+  // adult learning, dangerous sports, noise, minority languages, old buildings) ----
+  {
+    slug: "task2-zoos-role-today",
+    title: "Task 2: Are zoos still needed?",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "animals", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that zoos are cruel and should be closed, while others argue that they play an important role in protecting animals. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-homework-for-children",
+    title: "Task 2: Homework for young children",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "children", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people think that primary school children should not be given homework, because they need time to play and rest. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-cooking-skills-in-schools",
+    title: "Task 2: Teaching cooking in schools",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "education", "advantages-disadvantages"],
+    kind: "test",
+    data: {
+      prompt:
+        "In some countries, cooking is taught as a compulsory subject in schools. Do the advantages of this outweigh the disadvantages?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-celebrities-role-models",
+    title: "Task 2: Celebrities as role models",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "media", "two-part"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Many young people look up to famous singers, actors and sports players as role models. Why do young people admire celebrities, and is this a positive or negative development?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-working-abroad-temporarily",
+    title: "Task 2: Working abroad for a few years",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "globalisation", "advantages-disadvantages"],
+    kind: "test",
+    data: {
+      prompt:
+        "More and more people go to work in another country for a few years before returning home. What are the advantages and disadvantages of this trend for the individual?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-lifelong-learning-adults",
+    title: "Task 2: Learning throughout adult life",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "adults", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people say that education is only important for the young, while others believe that adults should keep learning throughout their lives. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-dangerous-sports-ban",
+    title: "Task 2: Should dangerous sports be banned?",
+    taskType: "task2",
+    topic: "Sport",
+    tags: ["writing", "task-2", "sport", "safety", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that dangerous sports such as mountain climbing and motor racing should be banned because they put lives at risk. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-noise-pollution-cities",
+    title: "Task 2: Noise in city life",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "cities", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Noise from traffic, building work and crowds is a growing problem in many cities. What are the causes of this problem, and what measures could be taken to reduce it?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-minority-languages-loss",
+    title: "Task 2: The loss of minority languages",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "language", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many minority languages around the world are disappearing as young people choose to speak more widespread languages. Why is this happening, and what can be done to protect these languages?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-preserving-old-buildings",
+    title: "Task 2: Spending money on old buildings",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "heritage", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that governments should spend public money on preserving old buildings, while others think the money should be used for modern housing and services. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
