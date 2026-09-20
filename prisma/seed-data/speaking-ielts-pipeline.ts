@@ -4834,5 +4834,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0266",
+    "title": "Part 1: Farming and the countryside",
+    "part": "part1",
+    "topic": "Farming and the countryside",
+    "tags": ["speaking", "part-1", "farming-and-the-countryside"],
+    "data": {
+      "questions": [
+        "Have you ever visited a farm?",
+        "Do you like spending time in the countryside?",
+        "Is farming important in your country?",
+        "Would you like to live in the countryside?",
+        "Do you think young people want to work in farming?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0267",
+    "title": "Part 1: Beaches and the sea",
+    "part": "part1",
+    "topic": "Beaches and the sea",
+    "tags": ["speaking", "part-1", "beaches-and-the-sea"],
+    "data": {
+      "questions": [
+        "Do you live near the sea?",
+        "Do you like going to the beach?",
+        "Can you swim?",
+        "What do people usually do at the beach in your country?",
+        "Do you prefer the sea in summer or in winter?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0268",
+    "title": "Part 1: Independence and growing up",
+    "part": "part1",
+    "topic": "Independence and growing up",
+    "tags": ["speaking", "part-1", "independence-and-growing-up"],
+    "data": {
+      "questions": [
+        "At what age do people become independent in your country?",
+        "Do you like making your own decisions?",
+        "Did you have to look after yourself when you were young?",
+        "Do you think young people today are more independent than in the past?",
+        "What is the hardest part of growing up?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0269",
+    "title": "Part 1: Jewellery and accessories",
+    "part": "part1",
+    "topic": "Jewellery and accessories",
+    "tags": ["speaking", "part-1", "jewellery-and-accessories"],
+    "data": {
+      "questions": [
+        "Do you wear any jewellery?",
+        "Is there a piece of jewellery that is special to you?",
+        "Do you like wearing watches or other accessories?",
+        "Do people in your country give jewellery as gifts?",
+        "Have you ever lost something that was important to you?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0270",
+    "title": "Part 1: Family traditions",
+    "part": "part1",
+    "topic": "Family traditions",
+    "tags": ["speaking", "part-1", "family-traditions"],
+    "data": {
+      "questions": [
+        "Does your family have any special traditions?",
+        "How does your family celebrate special occasions?",
+        "Do you like following traditions?",
+        "Have any traditions in your family changed over the years?",
+        "Would you like to pass on your family's traditions to your own children?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0266",
+    "title": "Part 2: Describe a place in the countryside that you have visited",
+    "part": "part2",
+    "topic": "Farming and the countryside",
+    "tags": ["speaking", "part-2", "farming-and-the-countryside"],
+    "data": {
+      "questions": ["Describe a place in the countryside that you have visited"],
+      "cueCardPoints": [
+        "where it is",
+        "when you went there",
+        "what you saw and did there",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0267",
+    "title": "Part 2: Describe a beach or seaside place you have visited",
+    "part": "part2",
+    "topic": "Beaches and the sea",
+    "tags": ["speaking", "part-2", "beaches-and-the-sea"],
+    "data": {
+      "questions": ["Describe a beach or seaside place you have visited"],
+      "cueCardPoints": [
+        "where it was",
+        "who you went with",
+        "what you did there",
+        "and explain why you remember it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0268",
+    "title": "Part 2: Describe a time when you did something on your own for the first time",
+    "part": "part2",
+    "topic": "Independence and growing up",
+    "tags": ["speaking", "part-2", "independence-and-growing-up"],
+    "data": {
+      "questions": ["Describe a time when you did something on your own for the first time"],
+      "cueCardPoints": [
+        "what you did",
+        "when it was",
+        "why you did it alone",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0269",
+    "title": "Part 2: Describe a piece of jewellery or an accessory that you own",
+    "part": "part2",
+    "topic": "Jewellery and accessories",
+    "tags": ["speaking", "part-2", "jewellery-and-accessories"],
+    "data": {
+      "questions": ["Describe a piece of jewellery or an accessory that you own"],
+      "cueCardPoints": [
+        "what it is",
+        "how you got it",
+        "when you wear it",
+        "and explain why it is important to you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0270",
+    "title": "Part 2: Describe a family tradition that is important to you",
+    "part": "part2",
+    "topic": "Family traditions",
+    "tags": ["speaking", "part-2", "family-traditions"],
+    "data": {
+      "questions": ["Describe a family tradition that is important to you"],
+      "cueCardPoints": [
+        "what the tradition is",
+        "when it takes place",
+        "who takes part in it",
+        "and explain why it is important to you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0266",
+    "title": "Part 3: Agriculture and rural life",
+    "part": "part3",
+    "topic": "Farming and the countryside",
+    "tags": ["speaking", "part-3", "farming-and-the-countryside"],
+    "data": {
+      "questions": [
+        "Why are fewer young people choosing to work in farming?",
+        "How has technology changed farming?",
+        "Should governments support farmers with money?",
+        "What are the benefits of buying locally produced food?",
+        "Will there be enough food for everyone in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0267",
+    "title": "Part 3: The sea and the environment",
+    "part": "part3",
+    "topic": "Beaches and the sea",
+    "tags": ["speaking", "part-3", "beaches-and-the-sea"],
+    "data": {
+      "questions": [
+        "Why do so many people like spending holidays by the sea?",
+        "What problems does pollution cause to the oceans?",
+        "Should beaches be protected from too many visitors?",
+        "How important is the sea to the economy of a country?",
+        "What can individuals do to keep beaches clean?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0268",
+    "title": "Part 3: Growing up and responsibility",
+    "part": "part3",
+    "topic": "Independence and growing up",
+    "tags": ["speaking", "part-3", "independence-and-growing-up"],
+    "data": {
+      "questions": [
+        "At what age should young people be allowed to make their own decisions?",
+        "How can parents help children to become independent?",
+        "Why do some young people stay with their parents for longer than in the past?",
+        "What responsibilities should teenagers have?",
+        "Is it better to be independent or to rely on family and friends?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0269",
+    "title": "Part 3: Fashion, value and tradition",
+    "part": "part3",
+    "topic": "Jewellery and accessories",
+    "tags": ["speaking", "part-3", "jewellery-and-accessories"],
+    "data": {
+      "questions": [
+        "Why do people spend a lot of money on jewellery?",
+        "Do men and women wear jewellery for the same reasons?",
+        "How has the fashion for accessories changed over time?",
+        "Is it better to give a gift that is expensive or one that is personal?",
+        "Do you think traditional jewellery will remain popular?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0270",
+    "title": "Part 3: Traditions in a changing world",
+    "part": "part3",
+    "topic": "Family traditions",
+    "tags": ["speaking", "part-3", "family-traditions"],
+    "data": {
+      "questions": [
+        "Why are traditions important to families and communities?",
+        "Are young people less interested in traditions than older people?",
+        "How do traditions change when families move to another country?",
+        "Can modern technology help to preserve traditions?",
+        "Is it a good thing when old traditions disappear?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
