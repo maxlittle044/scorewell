@@ -210,4 +210,97 @@ export const VOA_VIDEO_LESSONS: VideoLessonSeed[] = [
       },
     },
   },
+  {
+    slug: "if-and-whether-in-indirect-questions",
+    title: "If and Whether in Indirect Questions",
+    topic: "Grammar",
+    tags: ["video-lesson", "grammar", "speaking", "writing", "reported-speech"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "How to turn a yes/no question into a clause with if or whether, and when only whether will do.",
+      keyPoints: [
+        "After ask, wonder, know and not sure, a yes/no question becomes an if or whether clause.",
+        "Use statement word order inside the clause: 'I wonder whether she is ready', not 'is she ready'.",
+        "Only whether can follow a preposition or start a clause: 'the question of whether', 'Whether it works is unclear'.",
+        "Whether also works before an infinitive: 'I can't decide whether to apply'.",
+        "In formal letters, 'I would be grateful if you could tell me whether...' is a safe, polite pattern.",
+      ],
+      transcript: [
+        "A direct question such as 'Is the hall available?' becomes an indirect question when you tuck it inside another sentence: 'Could you tell me whether the hall is available?' Two things change. The question word order disappears, and a linking word, if or whether, is added. You have met this pattern in reported speech, where 'She asked, \"Do you like it?\"' becomes 'She asked if I liked it'.",
+        "For most everyday purposes, if and whether are interchangeable after verbs such as ask, wonder, know, find out and be sure. 'I wonder if it will rain' and 'I wonder whether it will rain' mean the same. Whether is slightly more formal, and it is the safer choice in writing.",
+        "There are places where only whether works. After a preposition, use whether: 'We talked about whether to move.' At the start of a clause, use whether: 'Whether the plan succeeds depends on funding.' Before an infinitive, use whether: 'She could not decide whether to accept.' In each of these, replacing whether with if produces a sentence that sounds wrong to a native ear.",
+        "Word order is the mistake to watch. Inside the clause, the order is the same as in a statement, with no inversion and no 'do'. 'I asked if he had finished' is right; 'I asked if had he finished' and 'I asked if did he finish' are not. This is the same rule as for reported questions, and the same rule that stops you writing 'Please tell me where is the office'.",
+        "The pattern earns marks in two places. In a General Training Task 1 letter, indirect questions are the polite way to ask for information: 'I would be grateful if you could tell me whether the course is still available.' In Speaking Part 3, 'I wonder whether' and 'it depends on whether' show that you can handle more complex structures without sounding rehearsed.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "CyjLzIF7_L4",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "introducing-verb-tenses",
+    title: "Introducing Verb Tenses",
+    topic: "Grammar",
+    tags: ["video-lesson", "grammar", "tenses", "writing", "speaking"],
+    data: {
+      lessonMinutes: 7,
+      summary:
+        "A map of the English tense system, and how to choose a tense by asking two questions instead of memorising twelve forms.",
+      keyPoints: [
+        "Ask two questions: when is the action (past, present, future) and what shape is it (simple, continuous, perfect)?",
+        "Simple describes facts, habits and completed events; continuous describes something in progress or temporary.",
+        "Perfect links two times: something earlier that matters now, or continues until now.",
+        "Keep the tense consistent within a paragraph, and change it only when the time really changes.",
+        "In Task 1, match the tense to the date: past for past years, present perfect only for 'up to now', future forms only for projections.",
+      ],
+      transcript: [
+        "English has twelve common verb forms, and many learners try to memorise them all as separate rules. It is easier to see them as a grid. One axis is time: past, present or future. The other is the shape of the action: simple, continuous, perfect, or perfect continuous. Choosing a tense means answering two questions, when did it happen, and how do I want to describe it?",
+        "The simple forms are the workhorses. The present simple states facts and habits ('the population grows slowly'), and the past simple reports completed events ('sales fell in 2015'). The continuous forms describe an action in progress or a temporary situation ('she is studying for the exam', 'I was working when you called').",
+        "The perfect forms connect two times. The present perfect looks back from now: 'unemployment has fallen since 2010' means the change began earlier and still matters. The past perfect looks back from a point in the past: 'by the time I arrived, the meeting had finished'. If you cannot say which two times are being connected, the perfect is probably the wrong choice.",
+        "Consistency is where most marks are lost. A paragraph that starts in the past and slides into the present without a reason reads as careless. Decide the time frame of each paragraph, and change tense only when the time changes, as when you move from what a graph shows to what you conclude from it.",
+        "In IELTS, tense choice is visible everywhere. A Task 1 graph of past years takes the past simple, and 'has risen' is correct only if the period continues to the present. A forecast takes future forms, such as 'is projected to'. In Speaking, matching tense to time helps fluency, because you spend less time stopping to repair sentences half-way through.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "QzEwJHnoJlU",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "population-in-task-1-sentences",
+    title: "Talking About Population in Task 1",
+    topic: "Writing",
+    tags: ["video-lesson", "writing", "task-1", "vocabulary", "agreement"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "How the noun population behaves in a sentence, and the verb agreement and phrasing that Task 1 answers about people depend on.",
+      keyPoints: [
+        "Population is a singular noun: 'the population is growing', 'the population has doubled'.",
+        "Use 'a population of...' to give a size, and 'the population of X' to name the place.",
+        "For a share, use 'the proportion or percentage of the population', not 'the population percentage'.",
+        "For individuals, use people, residents or inhabitants, not 'populations'.",
+        "For more than one place, the plural is fine: 'the populations of the two cities'.",
+      ],
+      transcript: [
+        "In a Task 1 answer about people, the word population appears constantly, and small mistakes with it are easy to spot. The first point is that population is a singular noun, even though it refers to many people. The correct forms are 'the population is growing' and 'the population has doubled', not 'the population are growing'.",
+        "Population usually appears in one of two patterns. To name the place, use 'the population of Japan'. To give the size, use 'a population of 125 million'. The two combine naturally: 'Japan has a population of 125 million'. Notice that 'population' here is the whole group, and not a number by itself.",
+        "When you want to describe a share, be precise. 'The proportion of the population over 65' or 'the percentage of the population living in cities' is clear. Avoid clumsy compounds such as 'the population percentage'. If you are describing individuals rather than the group, choose a different word. 'Residents', 'inhabitants' and 'people' are all possible, but 'populations' is not a plural for people.",
+        "The plural, 'populations', is correct only when you compare groups: 'the populations of the two cities were similar in 1990'. Here, each city has its own population, so the plural is right, and the verb is plural too.",
+        "Population also pairs with a set of useful verbs, such as grow, rise, fall, decline, double and stabilise, and with the adverbs of change you have already practised. 'The population rose steadily to 8 million' uses a singular noun, a past verb and an adverb, and it is exactly the kind of sentence that Task 1 rewards for accuracy.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "uCKr2IZo-7s",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
 ];
