@@ -6248,5 +6248,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0026-s1",
+    "title": "Bank Account Enquiry – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Bank Account Enquiry – Listening Section 1",
+      "transcript": "Adviser: Good morning, Harbour Bank. How can I help you?\nCaller: Hello, I'd like to open a student account.\nAdviser: Certainly. Could I have your surname, please?\nCaller: It's Nakamura, N-A-K-A-M-U-R-A.\nAdviser: Thank you, Mr Nakamura. Our student account has no monthly fee, and you can have an overdraft of up to £500 without paying interest.\nCaller: That sounds good. Is there a minimum amount I need to pay in?\nAdviser: Yes, you need to deposit at least £10 when you open the account.\nCaller: And what documents do I need to bring?\nAdviser: Your passport and a letter from your university confirming that you are a student.\nCaller: Fine. Can I come in this week?\nAdviser: We have an appointment available on Friday at ten o'clock.\nCaller: Friday at ten is perfect.\nAdviser: Your debit card will arrive within five working days after that. May I take your address?\nCaller: It's twenty-two Elm Grove.\nAdviser: And a contact number?\nCaller: 07700 900341.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0026-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0026-q001", "prompt": "Surname: ______.", "accept": ["Nakamura"], "evidence": { "explanation": "The caller spells N-A-K-A-M-U-R-A." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q002", "prompt": "Type of account: ______ account.", "accept": ["student"], "evidence": { "explanation": "The caller wants a student account." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q003", "prompt": "Monthly fee: ______.", "accept": ["no","none","nothing"], "evidence": { "explanation": "The adviser says there is no monthly fee." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q004", "prompt": "Interest-free overdraft: up to £______.", "accept": ["500"], "evidence": { "explanation": "The adviser says up to £500." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q005", "prompt": "Minimum deposit: £______.", "accept": ["10","ten"], "evidence": { "explanation": "The adviser says at least £10." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q006", "prompt": "Document needed: ______.", "accept": ["passport"], "evidence": { "explanation": "The caller must bring a passport." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q007", "prompt": "Appointment day: ______.", "accept": ["Friday"], "evidence": { "explanation": "The appointment is on Friday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q008", "prompt": "Appointment time: ______ o'clock.", "accept": ["ten","10"], "evidence": { "explanation": "The appointment is at ten o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q009", "prompt": "Debit card arrives within ______ working days.", "accept": ["five","5"], "evidence": { "explanation": "The card arrives within five working days." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q010", "prompt": "Address: twenty-two ______ Grove.", "accept": ["Elm"], "evidence": { "explanation": "The address is twenty-two Elm Grove." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0026-s2",
+    "title": "Art Gallery Exhibition Introduction – Listening Section 2",
+    "topic": "Arts",
+    "tags": ["academic", "arts", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Art Gallery Exhibition Introduction – Listening Section 2",
+      "transcript": "Good morning, and welcome to the Northgate Art Gallery. Let me tell you about the new exhibition and how to enjoy your visit.\n\nThe gallery was founded in 1932 and holds a permanent collection of about five thousand works. The special exhibition this season is called Landscapes of the North, and it features one hundred and twenty paintings, made over the past three centuries.\n\nThe gallery is open from ten in the morning until six in the evening, and on Thursdays it stays open until nine. Entry to the permanent collection is free, but the special exhibition costs £12 for adults. Audio guides are available at the desk for £3, and they include commentary from the curators.\n\nThe exhibition is on the second floor, and there is a lift for visitors who need it. You will find the café on the ground floor, next to the shop, and there is a free cloakroom for coats and bags.\n\nPlease do not use flash photography, and please do not touch the paintings, as the oils on our fingers can damage the surface. Thank you, and enjoy the exhibition.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0026-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0026-q011", "prompt": "The gallery was founded in ______.", "accept": ["1932"], "evidence": { "explanation": "The speaker says 1932." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q012", "prompt": "The permanent collection contains about ______ works.", "accept": ["five thousand","5000","5,000"], "evidence": { "explanation": "The speaker says about five thousand works." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q013", "prompt": "The special exhibition includes ______ paintings.", "accept": ["one hundred and twenty","120","a hundred and twenty"], "evidence": { "explanation": "The speaker says one hundred and twenty paintings." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q014", "prompt": "On Thursdays, the gallery stays open until ______.", "accept": ["nine","9"], "evidence": { "explanation": "The speaker says until nine." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q015", "prompt": "Entry to the special exhibition costs £______.", "accept": ["12","twelve"], "evidence": { "explanation": "The speaker says £12." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q016", "prompt": "Audio guides cost £______.", "accept": ["3","three"], "evidence": { "explanation": "The speaker says £3." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0026-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q017", "question": "Which part of the gallery is free to enter?", "options": ["The permanent collection","The special exhibition","The café","The lift"], "correctIndex": 0, "evidence": { "explanation": "Entry to the permanent collection is free." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q018", "question": "On which floor is the exhibition?", "options": ["Ground floor","First floor","Second floor","Third floor"], "correctIndex": 2, "evidence": { "explanation": "The exhibition is on the second floor." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q019", "question": "Where is the café?", "options": ["Next to the shop","On the second floor","Beside the lift","Outside the gallery"], "correctIndex": 0, "evidence": { "explanation": "The café is on the ground floor next to the shop." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q020", "question": "Why should visitors not touch the paintings?", "options": ["They are very old","Oils on fingers can damage the surface","They are wet","It is against the law"], "correctIndex": 1, "evidence": { "explanation": "The oils on our fingers can damage the surface." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0026-s3",
+    "title": "Planning a Marketing Assignment – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Marketing Assignment – Listening Section 3",
+      "transcript": "Dr Reyes: Chloe, tell me about your plans for the marketing assignment.\nChloe: I'm designing a campaign for a new reusable water bottle.\nDr Reyes: Good. Who is your target audience?\nChloe: Students and young workers aged eighteen to twenty-five, because they care about the environment and spend a lot of time online.\nDr Reyes: Sensible. And how will you reach them?\nChloe: Mainly through social media, with short videos.\nDr Reyes: Have you thought about the budget?\nChloe: The assignment sets a limit of five thousand pounds, so I need to keep the costs below that.\nDr Reyes: Right. And how long will the campaign run?\nChloe: I'm planning a launch in April, and then six weeks of activity.\nDr Reyes: That's a reasonable length. What evidence do you have that people want this product?\nChloe: I'm going to survey fifty students about their habits.\nDr Reyes: Good, but make sure the questions are not leading. Now, the report should be two thousand words.\nChloe: And when is it due?\nDr Reyes: A week on Friday.\nChloe: Thank you, Dr Reyes.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0026-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q021", "question": "What product is Chloe's campaign for?", "options": ["A reusable water bottle","A fitness app","A pair of trainers","A sports drink"], "correctIndex": 0, "evidence": { "explanation": "The campaign is for a new reusable water bottle." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q022", "question": "Why has Chloe chosen young people as her target audience?", "options": ["They have the most money","They care about the environment and spend time online","They are her friends","They buy most water bottles"], "correctIndex": 1, "evidence": { "explanation": "Chloe says they care about the environment and spend a lot of time online." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q023", "question": "How will Chloe mainly reach her audience?", "options": ["Newspaper advertisements","Social media videos","Posters","Radio"], "correctIndex": 1, "evidence": { "explanation": "Chloe plans to use social media with short videos." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q024", "question": "How many students will Chloe survey?", "options": ["Twenty","Thirty","Fifty","One hundred"], "correctIndex": 2, "evidence": { "explanation": "Chloe will survey fifty students." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q025", "question": "How long should the report be?", "options": ["One thousand words","Two thousand words","Three thousand words","Five thousand words"], "correctIndex": 1, "evidence": { "explanation": "Dr Reyes says two thousand words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0026-q026", "question": "What advice does Dr Reyes give about the survey?", "options": ["Use a longer questionnaire","Avoid leading questions","Survey only friends","Use only yes/no questions"], "correctIndex": 1, "evidence": { "explanation": "Dr Reyes says to make sure the questions are not leading." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0026-s3-g2",
+          "instructions": "Which part of the plan does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Target audience" },
+            { "key": "B", "label": "Budget" },
+            { "key": "C", "label": "Timeline" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0026-q027", "prompt": "Students and young workers aged 18 to 25", "answer": "A", "evidence": { "explanation": "Chloe names this group." } },
+            { "kind": "matching", "id": "generated-listening-academic-0026-q028", "prompt": "Must not go above five thousand pounds", "answer": "B", "evidence": { "explanation": "The assignment sets a limit of five thousand pounds." } },
+            { "kind": "matching", "id": "generated-listening-academic-0026-q029", "prompt": "Launches in April and lasts six weeks", "answer": "C", "evidence": { "explanation": "Chloe plans a launch in April and six weeks of activity." } },
+            { "kind": "matching", "id": "generated-listening-academic-0026-q030", "prompt": "Care about the environment and spend a lot of time online", "answer": "A", "evidence": { "explanation": "Chloe gives this as the reason for choosing the audience." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0026-s4",
+    "title": "The Origins of the Olympic Games – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "sport", "note-completion"],
+    "data": {
+      "audioLabel": "The Origins of the Olympic Games – Listening Section 4",
+      "transcript": "Today's lecture looks at the origins of the Olympic Games and how they were revived in modern times.\n\nAccording to tradition, the first ancient Olympic Games took place in 776 BC at Olympia, in Greece. They were held every four years in honour of Zeus, the king of the gods, and they were so important that wars were paused so that athletes and spectators could travel safely.\n\nAt first, there was only one event, a running race of about 190 metres called the stadion. Over time, more events were added, including wrestling, chariot racing and the pentathlon. The winners did not receive gold medals, but crowns made from olive leaves, though they were treated as heroes by their home cities. Only free men could take part, and women were not allowed to compete, though they held their own festival in honour of the goddess Hera.\n\nThe ancient Games continued for over a thousand years, until the Roman emperor Theodosius banned pagan festivals in about 393 AD.\n\nThe modern Games were the idea of a French educator, Pierre de Coubertin, who believed that sport could bring nations together. The first modern Olympic Games were held in Athens in 1896, with athletes from fourteen countries. Women first took part in the 1900 Games in Paris, and the first Winter Games were held in Chamonix, in France, in 1924.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0026-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0026-q031", "prompt": "The first ancient Games took place in ______ BC.", "accept": ["776"], "evidence": { "explanation": "The lecturer says 776 BC." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q032", "prompt": "The Games were held at ______ in Greece.", "accept": ["Olympia"], "evidence": { "explanation": "The lecturer says Olympia." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q033", "prompt": "The Games were held in honour of ______.", "accept": ["Zeus"], "evidence": { "explanation": "The lecturer says Zeus." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q034", "prompt": "The first event was a running race called the ______.", "accept": ["stadion"], "evidence": { "explanation": "The lecturer says the stadion." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q035", "prompt": "The stadion was about ______ metres long.", "accept": ["190"], "evidence": { "explanation": "The lecturer says about 190 metres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q036", "prompt": "Winners received crowns made from ______ leaves.", "accept": ["olive"], "evidence": { "explanation": "The lecturer says olive leaves." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q037", "prompt": "The ancient Games were banned by the emperor ______.", "accept": ["Theodosius"], "evidence": { "explanation": "The lecturer names Theodosius." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q038", "prompt": "The modern Games were the idea of Pierre de ______.", "accept": ["Coubertin"], "evidence": { "explanation": "The lecturer names Coubertin." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q039", "prompt": "The first modern Games were held in ______ in 1896.", "accept": ["Athens"], "evidence": { "explanation": "The lecturer says Athens." } },
+            { "kind": "completion", "id": "generated-listening-academic-0026-q040", "prompt": "The first Winter Games were held in ______.", "accept": ["Chamonix"], "evidence": { "explanation": "The lecturer says Chamonix." } }
+          ]
+        }
+      ]
+    }
   }
 ];
