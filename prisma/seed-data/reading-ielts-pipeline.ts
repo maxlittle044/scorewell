@@ -10558,6 +10558,60 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0032-p3",
+    "title": "The Life of Tigers",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "conservation", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The tiger is the largest of all the cats, with adult males reaching lengths of up to three metres and weights of more than 200 kilograms. It is also among the most easily recognised of animals, thanks to its orange coat marked with dark stripes. No two tigers have exactly the same pattern of stripes, and researchers use them to identify individual animals, much as fingerprints are used to identify people.\n\nB. Tigers once ranged across much of Asia, from Turkey to the far east of Russia and from the cold forests of Siberia to the hot swamps of Indonesia. Several subspecies developed, differing in size and colour: the Siberian, or Amur, tiger of the Russian Far East is the largest, while the Sumatran tiger is the smallest. Three subspecies, the Bali, Javan and Caspian tigers, have become extinct within the past hundred years.\n\nC. A tiger is a solitary hunter that stalks its prey and then attacks in a short, powerful rush. Its stripes help to break up its outline in the long grass and in the light and shadow of the forest, so that it can approach unseen. Most hunting is done at night, and the prey includes deer, wild pigs and buffalo. Despite its strength, a tiger succeeds in only about one hunt in ten, and it may need to make a large kill only once every week or so.\n\nD. Unlike most cats, tigers enjoy water, and they often bathe in rivers and pools to cool off in hot weather. They are strong swimmers, and can cross rivers several kilometres wide. Each adult defends a territory, marked with scent and scratches on trees, whose size depends on the amount of prey available: it may cover only 20 square kilometres in rich habitat, but several hundred in poorer areas. Males tolerate the presence of females, but generally avoid other males.\n\nE. A female tiger gives birth to two or three cubs, which are born blind and stay hidden in a den for their first weeks. They remain with their mother for about two years, learning to hunt, and then they set out to find territories of their own. Many cubs do not survive to adulthood, because of disease, starvation or attack by other tigers, and a female may only raise a few litters during her life.\n\nF. In the early twentieth century, there may have been as many as 100,000 wild tigers. By 2010, hunting for skins and body parts, together with the destruction of forests, had reduced the number to about 3,200. In that year, the governments of the countries in which tigers live promised to double the number by 2022. Numbers have since risen in some places, notably India and Nepal, and the most recent estimates suggest that there are more than 5,000 wild tigers. Even so, the animal remains endangered, and protecting it requires not only reserves and guards but also cooperation with the people who live nearby.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0032-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Size and a unique pattern" },
+            { "key": "ii", "label": "A shrinking range and lost subspecies" },
+            { "key": "iii", "label": "Stalking and striking" },
+            { "key": "iv", "label": "Water, territory and neighbours" },
+            { "key": "v", "label": "Raising the young" },
+            { "key": "vi", "label": "A dramatic fall and a partial recovery" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0032-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the size and stripes of the tiger." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the range, subspecies and extinctions." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes hunting." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes swimming and territory." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the decline in numbers and recent recovery." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0032-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q032", "statement": "Every tiger has a slightly different pattern of stripes.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states that no two tigers have the same pattern." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q033", "statement": "The Sumatran tiger is the largest subspecies.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the Siberian tiger is the largest and the Sumatran is the smallest." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q034", "statement": "A tiger succeeds in about one hunt in ten.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q035", "statement": "Tigers dislike water and avoid swimming.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says tigers enjoy water and are strong swimmers." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q036", "statement": "Male tigers help to raise the cubs.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not describe any role for male tigers in raising cubs." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0032-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0032-q037", "prompt": "Three subspecies have become extinct within the past ______ years.", "accept": ["hundred","100"], "evidence": { "explanation": "Paragraph B says the past hundred years." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q038", "prompt": "Tigers mark their territory with scent and ______ on trees.", "accept": ["scratches"], "evidence": { "explanation": "Paragraph D says scratches on trees." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q039", "prompt": "Cubs remain with their mother for about ______ years.", "accept": ["two","2"], "evidence": { "explanation": "Paragraph E says about two years." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q040", "prompt": "By 2010, the number of wild tigers had fallen to about ______.", "accept": ["3,200","3200"], "evidence": { "explanation": "Paragraph F gives about 3,200." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
