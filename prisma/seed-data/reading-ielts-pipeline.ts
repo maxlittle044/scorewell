@@ -10718,6 +10718,60 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0033-p3",
+    "title": "Antarctica: The Frozen Continent",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "geography", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Antarctica is the coldest, driest and windiest continent on Earth. It covers about 14 million square kilometres, an area larger than Europe, and around 98 per cent of it is buried under ice that averages about two kilometres in thickness. The ice sheet holds about 70 per cent of the world's fresh water, and if it melted completely, sea levels would rise by tens of metres.\n\nB. The climate is extreme. The lowest temperature ever recorded on Earth, minus 89.2 degrees Celsius, was measured at the Russian Vostok Station in 1983. The interior is technically a desert, because it receives very little precipitation, and some valleys near the coast have not seen rain for millions of years. Winds flowing down from the high interior can reach hurricane strength.\n\nC. For centuries, the continent remained unseen. Explorers first sighted it in 1820, but reaching the South Pole took another ninety years. On 14 December 1911, the Norwegian explorer Roald Amundsen led his party to the Pole, using dogs and skis, and a month later, a British team led by Robert Falcon Scott arrived to find the Norwegian flag already there. Scott and his companions died on the return journey in 1912.\n\nD. Few land animals can survive in Antarctica, but the surrounding sea is rich in life. Tiny shrimp-like krill feed vast numbers of whales, seals, fish and seabirds, and penguins nest on the coast, where the emperor penguin breeds in the depths of winter. The largest land animal is a wingless midge only a few millimetres long. Plants are limited to mosses, lichens and two flowering species.\n\nE. No one lives in Antarctica permanently. Scientists staying at around seventy research stations bring the population to about 5,000 in summer and fewer than 1,000 in winter. The continent is governed by the Antarctic Treaty, signed in 1959 and in force since 1961, which reserves it for peaceful purposes and scientific research and bans military activity and mining. Countries with rival claims agreed to set them aside.\n\nF. Antarctica is important for science well beyond its own borders. Ice cores drilled from the ice sheet contain trapped air bubbles that record the atmosphere and climate of the past 800,000 years. In 1985, scientists reported a hole in the ozone layer above the continent, which led to an international agreement banning the chemicals responsible. Tourism has grown, with well over 100,000 visitors a year in recent seasons, and managing its impact is a growing concern.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0033-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The extremes of size and ice" },
+            { "key": "ii", "label": "Cold, dry and windy" },
+            { "key": "iii", "label": "A race to the Pole" },
+            { "key": "iv", "label": "Life in the sea and on the shore" },
+            { "key": "v", "label": "A continent set aside for science" },
+            { "key": "vi", "label": "A record of the past and a warning" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0033-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the size and ice of the continent." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the extreme climate." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the race to the South Pole." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the wildlife." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes ice cores, the ozone hole and tourism." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0033-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q032", "statement": "Antarctica is larger than Europe.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says it is an area larger than Europe." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q033", "statement": "The lowest temperature ever recorded on Earth was measured at Vostok Station.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q034", "statement": "Scott's team carried a camera to the Pole.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not mention any camera." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q035", "statement": "Scott's team reached the Pole before the Norwegians.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the Norwegian flag was already there." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q036", "statement": "Antarctic tourism has decreased in recent years.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says tourism has grown." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0033-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0033-q037", "prompt": "The lowest temperature on record was measured in ______.", "accept": ["1983"], "evidence": { "explanation": "Paragraph B gives 1983." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q038", "prompt": "Amundsen reached the South Pole on 14 ______ 1911.", "accept": ["December"], "evidence": { "explanation": "Paragraph C gives 14 December 1911." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q039", "prompt": "The Antarctic Treaty was signed in ______.", "accept": ["1959"], "evidence": { "explanation": "Paragraph E gives 1959." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q040", "prompt": "Ice cores record the atmosphere of the past ______ years.", "accept": ["800,000","800000"], "evidence": { "explanation": "Paragraph F gives 800,000." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
