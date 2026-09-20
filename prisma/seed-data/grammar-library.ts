@@ -300,4 +300,40 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
       "Task 1 is comparison from start to finish. Comparing the wrong things — a figure with a country, one year with a category — is a Task Achievement problem, not just a grammar one.",
     tags: ["grammar", "comparison", "task1"],
   },
+  {
+    slug: "modal-verbs",
+    title: "Modal verbs",
+    category: "Verbs",
+    summary: "Can, may, might, must, should: how to show possibility, obligation and advice without overstating.",
+    explanation: [
+      "Modal verbs sit before the base form of another verb and never change: 'she can swim', not 'she cans swim' or 'she can to swim'. The same goes for may, might, must, should and would. They have no -s, no -ing form and no 'to' after them.",
+      "Use them to show how certain you are. 'Will' states something as a fact, 'may' and 'might' suggest it is possible, and 'could' sits between them. Academic writing depends on this: 'this policy may reduce crime' is a claim you can defend, while 'this policy will reduce crime' is one you probably cannot.",
+      "For obligation, 'must' and 'have to' both mean it is necessary, but they differ in the negative. 'You mustn't park here' means it is forbidden; 'you don't have to park here' means it is not necessary. 'Should' gives advice or a recommendation rather than an order.",
+      "For past ability, use 'could' for a general skill ('I could swim at five') but 'was able to' for a single achievement ('I was able to finish the paper on time'). 'I could finish the paper' sounds like a general possibility, not something that actually happened.",
+    ],
+    examples: [
+      {
+        wrong: "Governments must to invest more in public transport.",
+        right: "Governments must invest more in public transport.",
+        note: "A modal is followed by the bare verb. 'To' is never added.",
+      },
+      {
+        wrong: "Higher taxes will solve the problem of traffic.",
+        right: "Higher taxes may help to reduce traffic.",
+        note: "'May help to reduce' is a claim the writer can support; 'will solve' overstates it.",
+      },
+      {
+        wrong: "Students don't have to use their phones in the exam.",
+        right: "Students mustn't use their phones in the exam.",
+        note: "'Don't have to' means not necessary. Something forbidden needs 'mustn't'.",
+      },
+      {
+        right: "Cars should be banned from the city centre, although some residents might disagree.",
+        note: "'Should' gives the writer's recommendation; 'might' acknowledges a possible opposing view.",
+      },
+    ],
+    ieltsNote:
+      "In Task 2, the range of modals is a visible part of Grammatical Range and Accuracy, and hedging with may, might and could keeps an argument believable. In Speaking, using 'would', 'could' and 'might' to talk about possibilities and hypotheticals is a common way to show range in Parts 2 and 3.",
+    tags: ["grammar", "verbs", "task2"],
+  },
 ];
