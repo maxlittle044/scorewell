@@ -9972,6 +9972,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0029-p1",
+    "title": "The Story of Gold",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "economics", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Gold has fascinated people for thousands of years. It is soft and easy to shape, it does not rust or tarnish, and it has a warm, bright colour that has made it a symbol of wealth and power in almost every culture. Some of the oldest gold objects ever found come from a cemetery at Varna, in Bulgaria, and date from about 4600 BC.\n\nB. Ancient civilisations prized gold above other metals. The Egyptians believed that it was the flesh of the gods and covered the coffins of their pharaohs with it, while the rulers of Lydia, in modern Turkey, made some of the first coins from a natural alloy of gold and silver. Later, many countries linked the value of their money to gold, a system known as the gold standard, which lasted in various forms until the twentieth century.\n\nC. The desire for gold has driven some of the greatest movements of people in history. When James Marshall found gold at Sutter's Mill in California in January 1848, news of the discovery spread quickly, and about 300,000 people arrived in the following years, hoping to become rich. Similar rushes followed in Australia in 1851 and in the Klondike region of Canada in 1896, though few of those who joined them made their fortunes.\n\nD. The largest gold deposits in the world were discovered in 1886 in the Witwatersrand region of South Africa, where the city of Johannesburg grew up around the mines. Mining there transformed the country's economy, but it also depended on the labour of thousands of poorly paid workers, and its social effects were felt for generations.\n\nE. Gold is rare. It is estimated that all the gold ever mined in history, about 200,000 tonnes, would form a cube only about 21 metres on each side. Around half is used for jewellery, and much of the rest is held by banks and investors. A small but important amount is used in electronics, because gold is an excellent conductor of electricity and does not corrode, so it is found in mobile phones and computers.\n\nF. Modern gold mining can do serious damage. Mines use large amounts of water and energy, and in some places, miners use mercury to separate the gold from the rock, which pollutes rivers and harms the health of local people. As a result, jewellers and electronics companies are increasingly turning to recycled gold, which now provides a significant share of annual supply.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0029-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A metal with lasting appeal" },
+            { "key": "ii", "label": "Money, coins and the gods" },
+            { "key": "iii", "label": "People on the move" },
+            { "key": "iv", "label": "A giant deposit" },
+            { "key": "v", "label": "Scarcity and its uses" },
+            { "key": "vi", "label": "The environmental price" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0029-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the appeal of gold and early gold objects." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes ancient uses, coins and the gold standard." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the gold rushes." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the Witwatersrand deposit." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes environmental damage." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0029-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q006", "statement": "Gold does not rust or tarnish.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q007", "statement": "The first coins were made entirely from pure gold.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they were made from a natural alloy of gold and silver." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q008", "statement": "James Marshall found gold at Sutter's Mill in January 1848.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q009", "statement": "Most of the people who joined the gold rushes became rich.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says few made their fortunes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0029-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0029-q010", "prompt": "Some of the oldest gold objects come from a cemetery at ______ in Bulgaria.", "accept": ["Varna"], "evidence": { "explanation": "Paragraph A names Varna." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q011", "prompt": "Around ______ people arrived in California after the discovery of gold.", "accept": ["300,000","300000"], "evidence": { "explanation": "Paragraph C says about 300,000." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q012", "prompt": "Johannesburg grew up around the mines of the ______ region.", "accept": ["Witwatersrand"], "evidence": { "explanation": "Paragraph D names Witwatersrand." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q013", "prompt": "Miners sometimes use ______ to separate gold from rock.", "accept": ["mercury"], "evidence": { "explanation": "Paragraph F says mercury." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0029-p2",
+    "title": "The Return of the Wolves",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "conservation", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Wolves once lived across most of the Northern Hemisphere, but people hunted them relentlessly, fearing for their livestock and their own safety. By the early twentieth century, they had been wiped out across much of Western Europe and the United States, and the last wolves in Yellowstone National Park were killed in the 1920s.\n\nB. Wolves live in packs, which are usually family groups of five to ten animals led by a breeding pair, and each pack defends a territory that may cover several hundred square kilometres. They hunt large animals such as deer and elk, communicate by howling, and are the ancestors of domestic dogs. A single wolf cannot easily bring down a large animal, but a pack working together can.\n\nC. Without wolves, the elk population in Yellowstone grew, and the animals grazed heavily on young trees such as willow and aspen along the rivers. By the 1990s, scientists were concerned that the park's plant life was being damaged, and after long debate, thirty-one wolves from Canada were released in Yellowstone in 1995 and 1996.\n\nD. The effects of the wolves were dramatic. Elk numbers fell, partly because the wolves killed them, and partly because the elk began avoiding open valley areas where they were easy to catch. In some places, willows and aspens began to recover, and it was reported that the beaver, which depends on willow, returned to areas from which it had been absent for decades. Scientists call such chains of effects a trophic cascade.\n\nE. Some scientists warn that the story has been simplified. Other factors, such as drought, hunting by humans and the presence of bears and cougars, also affect the number of elk and the state of the vegetation, and the exact contribution of wolves is still debated. Nevertheless, most agree that the return of a top predator has changed the ecosystem.\n\nF. Wolves are now returning to other parts of the world. In Europe, they have spread naturally into countries such as Germany and the Netherlands, and their numbers have grown across the continent. Their return has been welcomed by conservationists, but farmers, whose sheep and cattle are sometimes attacked, remain concerned, and governments have introduced compensation schemes and encouraged the use of guard dogs and fences.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0029-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A predator driven out" },
+            { "key": "ii", "label": "How wolves live" },
+            { "key": "iii", "label": "An absent predator's effects" },
+            { "key": "iv", "label": "A chain of consequences" },
+            { "key": "v", "label": "A more cautious view" },
+            { "key": "vi", "label": "Living alongside wolves" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0029-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes how wolves were wiped out." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the life of a wolf pack." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the effects of missing wolves and the reintroduction." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the trophic cascade." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes wolves returning and conflicts with farmers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0029-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q019", "statement": "The last wolves in Yellowstone were killed in the 1920s.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q020", "statement": "Wolf packs are usually made up of unrelated animals.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says packs are usually family groups." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q021", "statement": "Thirty-one wolves were released in Yellowstone in 1995 and 1996.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q022", "statement": "All scientists agree that wolves alone changed Yellowstone.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says the exact contribution of wolves is still debated." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0029-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0029-q023", "prompt": "A wolf pack is usually led by a ______ pair.", "accept": ["breeding"], "evidence": { "explanation": "Paragraph B says breeding pair." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q024", "prompt": "Wolves communicate by ______.", "accept": ["howling"], "evidence": { "explanation": "Paragraph B says howling." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q025", "prompt": "The wolves released in Yellowstone came from ______.", "accept": ["Canada"], "evidence": { "explanation": "Paragraph C says Canada." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q026", "prompt": "A chain of effects through an ecosystem is called a ______ cascade.", "accept": ["trophic"], "evidence": { "explanation": "Paragraph D says trophic cascade." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0029-p3",
+    "title": "The Story of Cotton",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "economics", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Cotton is the most widely used natural fibre in the world, and many of us are wearing it now. It comes from the soft fibres that surround the seeds of the cotton plant, and it is spun into thread and woven into cloth for clothing, bedding and towels. Cotton is easy to dye, comfortable in hot weather, and can be washed many times.\n\nB. Cotton was domesticated independently in several parts of the world. Archaeologists have found evidence of cotton cloth in the Indus Valley, in modern Pakistan, from about 5000 BC, and in Peru and Mexico, where other species were cultivated. For centuries, cotton cloth from India was traded across the world and much admired, and in Europe it was a rare luxury.\n\nC. Everything changed in Britain in the eighteenth century. New machines, such as James Hargreaves's spinning jenny of 1764 and Richard Arkwright's water frame of 1769, allowed thread to be spun many times faster than by hand. Cotton mills sprang up in Lancashire, and the industry became the driving force of the Industrial Revolution, employing thousands of workers, including many children.\n\nD. One problem remained. Cotton grown in the southern United States had sticky seeds that had to be removed by hand, which was slow. In 1793, Eli Whitney invented a machine called the cotton gin, which could do this work far more quickly. Instead of reducing the need for labour, however, it made cotton growing far more profitable, and led to a dramatic expansion of plantations and of slavery in the American South.\n\nE. By the mid-nineteenth century, cotton was one of the most valuable commodities in international trade. When the American Civil War interrupted supplies, British mills suffered, and Britain turned to India and Egypt for cotton, which increased production there. The dependence of the economy on one crop made some regions vulnerable to price changes, and its effects on the people involved were often severe.\n\nF. Today, cotton is grown in more than seventy countries, with China, India and the United States among the largest producers. Growing cotton takes a great deal of water, and it is estimated that about 10,000 litres are needed to produce a kilogram. In Central Asia, the diversion of rivers to irrigate cotton fields helped to shrink the Aral Sea. Some farmers are now turning to organic methods, and consumers are being encouraged to buy fewer clothes and to recycle old ones.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0029-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A familiar fibre" },
+            { "key": "ii", "label": "Ancient origins" },
+            { "key": "iii", "label": "The machines that changed industry" },
+            { "key": "iv", "label": "A gin and its terrible consequence" },
+            { "key": "v", "label": "A global trade with a fragile side" },
+            { "key": "vi", "label": "A thirsty crop" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0029-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes cotton as a familiar fibre." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes ancient cotton." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the spinning machines of the Industrial Revolution." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the cotton gin and slavery." } },
+            { "kind": "matching", "id": "generated-reading-academic-0029-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes water use and environmental effects." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0029-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q032", "statement": "Cotton was first grown in only one part of the world.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it was domesticated independently in several regions." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q033", "statement": "Hargreaves's spinning jenny was invented in 1764.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1764." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q034", "statement": "The cotton gin reduced the demand for enslaved labour.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says it led to an expansion of plantations and slavery." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q035", "statement": "Britain turned to India and Egypt when American cotton supplies were interrupted.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0029-q036", "statement": "Organic cotton is more expensive than ordinary cotton.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not discuss price." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0029-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0029-q037", "prompt": "Cotton cloth has been found in the ______ Valley from about 5000 BC.", "accept": ["Indus"], "evidence": { "explanation": "Paragraph B says Indus Valley." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q038", "prompt": "Arkwright's spinning machine was called the water ______.", "accept": ["frame"], "evidence": { "explanation": "Paragraph C says water frame." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q039", "prompt": "Eli Whitney invented the cotton ______ in 1793.", "accept": ["gin"], "evidence": { "explanation": "Paragraph D says cotton gin." } },
+            { "kind": "completion", "id": "generated-reading-academic-0029-q040", "prompt": "The diversion of rivers to irrigate cotton helped to shrink the ______ Sea.", "accept": ["Aral"], "evidence": { "explanation": "Paragraph F says the Aral Sea." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
