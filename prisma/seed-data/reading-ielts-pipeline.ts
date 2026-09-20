@@ -9652,6 +9652,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0027-p1",
+    "title": "The Story of Sugar",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Sugar is so cheap and common today that it is hard to imagine that it was once a rare luxury. Sugarcane, a tall grass, was first cultivated thousands of years ago in New Guinea, and it spread slowly across the islands of Southeast Asia to India, where people discovered how to make sugar from its juice.\n\nB. Indian sugar makers were the first to produce sugar in crystal form, probably in the first few centuries AD, by boiling the juice of the cane until it thickened and crystallised. The process spread to Persia and then to the Arab world, and by the Middle Ages, sugar was being grown and refined around the Mediterranean. Europeans who returned from the Crusades brought back a taste for it, but it remained so costly that it was kept in locked containers and used as a medicine and a spice.\n\nC. The demand for sugar was one of the main reasons for the growth of the Atlantic slave trade. Columbus took sugarcane to the Caribbean in 1493, and European settlers soon established plantations there and in Brazil. Growing and processing cane was very hard work, and the planters relied on enslaved Africans, millions of whom were transported across the Atlantic over the following centuries, many to work on sugar plantations.\n\nD. As production rose, prices fell, and sugar became part of everyday life in Europe. By the eighteenth century, people were putting it in tea and coffee, and it was used in jams, cakes and sweets. Governments taxed it heavily, and sugar became a very important part of the economy of countries such as Britain, France and the Netherlands.\n\nE. In 1747, the German chemist Andreas Marggraf showed that the same sugar could be extracted from beets, which could be grown in cooler climates. His student Franz Achard built the first beet sugar factory in 1801, and the development received a boost when Napoleon's wars cut off supplies of cane sugar to continental Europe. Sugar beet eventually made Europe less dependent on imports.\n\nF. Today, sugar is produced in more than a hundred countries, and Brazil and India are among the largest producers. Many health experts believe that people eat too much of it, and they link a high intake to tooth decay, obesity and diabetes. The World Health Organization recommends that free sugars should make up less than ten per cent of a person's daily energy intake.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0027-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "From luxury to everyday item" },
+            { "key": "ii", "label": "A plant's journey and a new crystal form" },
+            { "key": "iii", "label": "Plantations and human suffering" },
+            { "key": "iv", "label": "A new source in cooler lands" },
+            { "key": "v", "label": "Sweet foods and taxes" },
+            { "key": "vi", "label": "Concerns about health today" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0027-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes sugar as once a luxury and the first cultivation of cane." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the first crystallised sugar and its spread." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes plantations and the slave trade." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q004", "prompt": "Which heading best summarises paragraph E?", "answer": "iv", "evidence": { "explanation": "Paragraph E describes sugar from beets." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes health concerns." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0027-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q006", "statement": "Sugarcane was first cultivated in New Guinea.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q007", "statement": "Sugar was cheap in Europe throughout the Middle Ages.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says it was so costly that it was kept in locked containers." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q008", "statement": "Columbus took sugarcane to the Caribbean in 1493.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1493." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q009", "statement": "Franz Achard built his first factory with government money.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say how it was financed." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0027-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0027-q010", "prompt": "Indian sugar makers boiled cane juice until it ______.", "accept": ["crystallised","crystallized"], "evidence": { "explanation": "Paragraph B says thickened and crystallised." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q011", "prompt": "Andreas Marggraf showed in ______ that sugar could be taken from beets.", "accept": ["1747"], "evidence": { "explanation": "Paragraph E gives 1747." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q012", "prompt": "Achard built the first beet sugar factory in ______.", "accept": ["1801"], "evidence": { "explanation": "Paragraph E gives 1801." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q013", "prompt": "The World Health Organization recommends free sugars make up less than ten per cent of daily ______ intake.", "accept": ["energy"], "evidence": { "explanation": "Paragraph F says daily energy intake." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0027-p2",
+    "title": "The Life of Penguins",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Penguins are seabirds that cannot fly, and about eighteen species are found in the Southern Hemisphere, from the ice of Antarctica to the warm coasts of South America, Africa and Australia. One species, the Galápagos penguin, lives almost on the equator. They spend much of their lives in the sea, coming ashore mainly to breed and to moult.\n\nB. The bodies of penguins are perfectly suited to life in water. Their wings have become stiff flippers, which they use to \"fly\" underwater, and their bones are dense, not hollow like those of flying birds, which helps them to dive. Their smooth, streamlined shape and short, tightly packed feathers reduce drag, and a gland near the tail produces oil that they spread over their feathers to keep them waterproof.\n\nC. The emperor penguin is the largest species, standing about 1.1 metres tall and weighing up to 45 kilograms. It can dive to depths of more than 500 metres and stay under water for over twenty minutes while hunting fish, squid and krill, the small shrimp-like creatures on which many penguins depend. Smaller species, such as the little penguin, may feed close to the shore.\n\nD. Emperor penguins breed in the coldest place on Earth, during the Antarctic winter. After the female lays a single egg, she passes it to the male, who balances it on his feet under a fold of skin for about two months, while she returns to the sea to feed. He does not eat during this time, and the males huddle together in large groups to shelter from winds that can be colder than minus 40 degrees Celsius.\n\nE. On land, penguins are clumsy, but they are well adapted to keep warm. Fat and thick feathers insulate them, and the huddling of emperor penguins is a striking example of cooperation: the birds take turns to stand at the cold outer edge of the group and the warmer centre. In warm climates, penguins face the opposite problem, and species such as the African penguin pant and hold out their flippers to lose heat.\n\nF. Many penguin populations are declining. Climate change is reducing the sea ice on which some species depend, and it may be reducing the supply of krill, while overfishing, oil spills and introduced predators such as cats and rats add to the pressures. Protected areas and limits on fishing have helped some colonies, and scientists use satellite images and even droppings to count penguins from space.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0027-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Where and how penguins live" },
+            { "key": "ii", "label": "Adapted to the water" },
+            { "key": "iii", "label": "Size and diving" },
+            { "key": "iv", "label": "A winter of fasting fathers" },
+            { "key": "v", "label": "Keeping warm and cool" },
+            { "key": "vi", "label": "A troubled future" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0027-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes where penguins live." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes adaptations to water." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the emperor penguin's size and diving." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the breeding season of emperor penguins." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes threats to penguins." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0027-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q019", "statement": "All penguins live in cold climates.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says some live on warm coasts and one near the equator." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q020", "statement": "Penguin bones are hollow.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they are dense, not hollow." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q021", "statement": "Male emperor penguins keep the egg on their feet.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q022", "statement": "Emperor penguins are the most numerous species of penguin.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare numbers of individuals." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q023", "statement": "Penguins are counted using satellite images.", "answer": "TRUE", "evidence": { "explanation": "Paragraph F mentions this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0027-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0027-q024", "prompt": "About ______ species of penguin are found in the Southern Hemisphere.", "accept": ["eighteen","18"], "evidence": { "explanation": "Paragraph A says about eighteen." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q025", "prompt": "A gland near the tail produces ______ that keeps the feathers waterproof.", "accept": ["oil"], "evidence": { "explanation": "Paragraph B says oil." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q026", "prompt": "Emperor penguins can dive to depths of more than ______ metres.", "accept": ["500"], "evidence": { "explanation": "Paragraph C gives 500." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q027", "prompt": "Male emperor penguins balance the egg on their ______.", "accept": ["feet"], "evidence": { "explanation": "Paragraph D says feet." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0027-p3",
+    "title": "The Art of Origami",
+    "sourceTestSet": "Academic",
+    "topic": "Culture",
+    "tags": ["academic", "culture", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Origami, the art of folding paper into shapes without cutting or gluing, is best known as a Japanese tradition. The word comes from the Japanese ori, meaning \"fold\", and kami, meaning \"paper\". A single square sheet can become a crane, a frog or a flower, and the best folders can produce shapes of astonishing complexity from nothing more than a sheet and their fingers.\n\nB. Paper was invented in China, and it reached Japan by about the sixth century, brought by Buddhist monks. At first it was expensive, and folding was used mainly in religious ceremonies and for wrapping gifts. As paper became cheaper, folding became a form of play, and by the seventeenth century, recognisable models such as the crane were being made and written about.\n\nC. The crane holds a special meaning in Japan, where it is said to live for a thousand years. After the Second World War, it became an international symbol of peace, thanks to the story of Sadako Sasaki, a young girl who developed an illness caused by the atomic bomb dropped on Hiroshima. According to a popular story, she began to fold a thousand paper cranes in the hope of recovery, and, although she died in 1955, children around the world continue to fold cranes in her memory.\n\nD. In the twentieth century, the Japanese folder Akira Yoshizawa transformed origami into an art form. He created thousands of original designs, developed a system of symbols to explain folding instructions, and pioneered the technique of dampening paper to give sculptural, rounded shapes. Thanks to books and exhibitions, his methods spread across the world, and the notation he developed is still used by folders today.\n\nE. Mathematicians and scientists have also taken an interest in paper folding. Since the 1980s, scientists have studied the rules that govern folding, and the American physicist Robert Lang used computer programs to design very complex models, such as insects with legs, antennae and wings. The rules that his programs use have turned out to be useful outside art.\n\nF. Origami principles are now used in engineering and medicine. A folding pattern developed by the Japanese astrophysicist Koryo Miura was used in the 1990s to pack the solar panels of a satellite for launch, so that they could unfold once in orbit. Similar ideas are used in car airbags, in tiny medical devices called stents that expand inside blood vessels, and in designs for compact shelters. An art that began with a monk's sheet of paper is now helping to solve problems of space and design.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0027-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A craft with a simple definition" },
+            { "key": "ii", "label": "How paper folding reached Japan" },
+            { "key": "iii", "label": "A bird with a symbolic meaning" },
+            { "key": "iv", "label": "The artist who changed the craft" },
+            { "key": "v", "label": "Science and mathematics join in" },
+            { "key": "vi", "label": "Practical uses of folding" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0027-q028", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A defines origami." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q029", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes how paper and folding reached Japan." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q030", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the meaning of the crane." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q031", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Akira Yoshizawa." } },
+            { "kind": "matching", "id": "generated-reading-academic-0027-q032", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes applications in engineering and medicine." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0027-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q033", "statement": "Origami traditionally involves cutting paper into shapes.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says origami involves folding without cutting or gluing." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q034", "statement": "Paper reached Japan about the sixth century.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q035", "statement": "Sadako Sasaki died in 1955.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1955." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0027-q036", "statement": "Yoshizawa invented the paper crane.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the crane was being made by the seventeenth century, long before Yoshizawa." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0027-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0027-q037", "prompt": "The Japanese word ori means ______.", "accept": ["fold"], "evidence": { "explanation": "Paragraph A says fold." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q038", "prompt": "Paper was brought to Japan by Buddhist ______.", "accept": ["monks"], "evidence": { "explanation": "Paragraph B says Buddhist monks." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q039", "prompt": "Akira Yoshizawa developed a system of ______ to explain folding instructions.", "accept": ["symbols"], "evidence": { "explanation": "Paragraph D says symbols." } },
+            { "kind": "completion", "id": "generated-reading-academic-0027-q040", "prompt": "Robert Lang used computer ______ to design complex models.", "accept": ["programs","programmes"], "evidence": { "explanation": "Paragraph E says computer programs." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
