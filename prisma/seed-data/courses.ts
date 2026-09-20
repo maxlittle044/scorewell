@@ -80,6 +80,12 @@ export const COURSES: CourseSeed[] = [
           href: "/ielts/writing/task2-free-university-education",
         },
         {
+          title: "Making the most of feedback",
+          summary:
+            "Turn corrections into lasting improvement by spotting patterns, logging errors and rewriting. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "using-feedback-on-your-writing",
+        },
+        {
           title: "Review and target your weakest criterion",
           summary:
             "Use your feedback to identify which of the four criteria is holding your band down, and what to do about it.",
@@ -132,6 +138,12 @@ export const COURSES: CourseSeed[] = [
           summary:
             "The argumentative shape that separates band 9 from band 7 — challenge, support, concede, resolve.",
           href: "/ielts/band-9-samples/speaking-part3-lifelong-learning",
+        },
+        {
+          title: "Talking about mental health respectfully",
+          summary:
+            "Careful, current vocabulary for a topic that appears in Part 3 and Task 2. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "talking-about-mental-health-respectfully",
         },
         {
           title: "Get feedback on a recorded answer",
@@ -214,6 +226,12 @@ export const COURSES: CourseSeed[] = [
           summary:
             "Formal, semi-formal and informal letters — choosing correctly is worth more than vocabulary here.",
           href: "/ielts/band-9-samples/letter-colleague-delayed-project",
+        },
+        {
+          title: "Goodbyes and register",
+          summary:
+            "Matching your closing to the way you began, from 'see you' to 'Yours faithfully'. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "goodbyes-and-register",
         },
         {
           title: "Write a formal letter",
@@ -349,6 +367,12 @@ export const COURSES: CourseSeed[] = [
           summary:
             "The twelve forms as a grid of time and shape, and how to keep tense consistent. Watch the VOA clip, then read the written lesson.",
           videoSlug: "introducing-verb-tenses",
+        },
+        {
+          title: "The simple future in use",
+          summary:
+            "How will is formed and used for decisions, promises and predictions. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "simple-future-will-in-use",
         },
         {
           title: "Future forms",

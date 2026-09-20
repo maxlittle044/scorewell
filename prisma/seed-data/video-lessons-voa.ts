@@ -334,4 +334,128 @@ export const VOA_VIDEO_LESSONS: VideoLessonSeed[] = [
       },
     },
   },
+  {
+    slug: "simple-future-will-in-use",
+    title: "The Simple Future: Will in Use",
+    topic: "Grammar",
+    tags: ["video-lesson", "grammar", "tenses", "speaking", "task-2"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "How will is formed and used for decisions, promises and predictions, and where it does not belong.",
+      keyPoints: [
+        "Form: will plus the base verb, with 'll in speech and won't in the negative.",
+        "Use will for decisions made now, promises, offers and predictions based on opinion.",
+        "Will does not follow when, if, before, after or as soon as: use the present simple there.",
+        "In Task 2, predictions are safer with may, might or is likely to than with will.",
+        "In Speaking Part 3, 'I think it will...' followed by a reason is a strong, simple answer.",
+      ],
+      transcript: [
+        "The simple future is formed with will and the base verb: 'it will rain', 'she will call'. In speech, will is usually shortened to 'll, and the negative is won't. Questions invert the subject and will: 'Will you help me?' The form never changes for person, so there is no -s, no 'wills', and no 'to' after it.",
+        "Will has three main jobs. It expresses a decision made at the moment of speaking ('I'll take the blue one'), a promise or offer ('I'll send it tomorrow', 'I'll carry that for you'), and a prediction based on opinion or experience ('prices will rise next year'). That last use is the one candidates meet most often in Speaking Part 3, where you are asked what you think will happen.",
+        "The most common error is using will where English wants the present simple. After time words such as when, before, after, until and as soon as, and in an if clause, the present simple carries the future meaning. 'I will call you when I will arrive' is wrong; 'I will call you when I arrive' is right. The future meaning is already in the main clause.",
+        "In Task 2, be careful with how sure you sound. 'Technology will solve the problem' is a claim you would struggle to defend, while 'technology may help to solve the problem' is one you can. Modals such as may, might and could, or phrases such as is likely to, keep an argument believable. Save plain 'will' for things that follow logically from your point.",
+        "In Speaking Part 3, will gives you a simple, reliable pattern: 'I think it will become more common, because...'. Follow every prediction with a reason, and add a limit with 'although' or 'unless'. That gives you a developed answer using only structures you control.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "4dcpxo55m_s",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "goodbyes-and-register",
+    title: "Goodbyes and Register: Informal to Formal",
+    topic: "Writing",
+    tags: ["video-lesson", "writing", "task-1", "general-training", "register", "speaking"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "How the way you end a conversation or a letter signals register, and matching a closing to the way you began.",
+      keyPoints: [
+        "Register is how formal or casual your language is, and it should stay consistent from opening to closing.",
+        "Informal goodbyes: 'see you', 'take care', 'talk soon'. More formal: 'goodbye', 'have a good day'.",
+        "Formal letters: 'Dear Sir or Madam' ends 'Yours faithfully'; 'Dear Mr Smith' ends 'Yours sincerely'.",
+        "Friendly letters can end 'Best wishes' or 'See you soon', but not 'Yours faithfully'.",
+        "Mixing registers, such as a slangy closing on a complaint letter, costs marks in General Training Task 1.",
+      ],
+      transcript: [
+        "Register is the level of formality in your language. You already use it without thinking: the way you say goodbye to a friend is not the way you say goodbye to a hotel manager. In an exam, the skill is to choose a register deliberately and keep it the same from the first line to the last.",
+        "Spoken goodbyes show the range. Between friends, 'see you later', 'take care' and 'talk soon' are natural. In a more formal setting, 'goodbye', 'have a good day' and 'thank you for your time' are safer. Neither set is better; each suits a different situation, and using the wrong one sounds slightly off.",
+        "In a General Training Task 1 letter, the closing has to match the opening. If you begin 'Dear Sir or Madam', end with 'Yours faithfully'. If you begin with a name, such as 'Dear Mr Smith', end with 'Yours sincerely'. American usage often prefers 'Sincerely', and the exam accepts either, provided you are consistent.",
+        "For a letter to a friend, the closing is warmer: 'Best wishes', 'All the best' or 'See you soon'. Here, 'Yours faithfully' would sound cold and stiff, which is the reverse problem. The rest of the letter needs to match: contractions and friendly phrases are fine, and long, formal sentences are not.",
+        "The mistake examiners see most is mixing registers. A complaint letter that begins formally and then ends 'Cheers!' undermines its own tone, and it may cost marks under Task Achievement, which asks whether the tone suits the situation. Decide the reader, decide the register, and check the opening, the middle and the closing against it.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "No49Qxer8pY",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "talking-about-mental-health-respectfully",
+    title: "Talking About Mental Health Respectfully",
+    topic: "Speaking",
+    tags: ["video-lesson", "speaking", "part-3", "vocabulary", "health"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "Careful, current vocabulary for talking about mental health in Speaking Part 3 and Task 2 without sounding blunt or stigmatising.",
+      keyPoints: [
+        "Mental health topics appear in health, work, education and social-media questions.",
+        "Prefer neutral, respectful wording: 'a person with anxiety', 'a mental health condition'.",
+        "Avoid casual labels such as 'crazy' or 'mad' when discussing illness.",
+        "Useful nouns: stress, anxiety, depression, wellbeing, stigma, support, treatment, counselling.",
+        "Useful verbs: seek help, cope with, talk openly about, raise awareness of.",
+      ],
+      transcript: [
+        "Mental health has moved from a private subject to a regular topic in health, work, education and social-media questions, in both Speaking Part 3 and Task 2. Knowing how to talk about it carefully is a practical exam skill, and it is also simply good communication.",
+        "The first principle is to choose neutral, respectful wording. It is better to say 'a person with anxiety' or 'people living with depression' than to use labels that reduce a person to a condition. Avoid casual, careless words such as 'crazy' or 'mad' when you mean mental illness. In an exam, they are also imprecise, which is a Lexical Resource problem as well as a tone problem.",
+        "There is a useful set of nouns and verbs to own. Nouns: stress, anxiety, depression, wellbeing, stigma, support, treatment, counselling. Verbs and phrases: to seek help, to cope with pressure, to talk openly about, to raise awareness of, to break the stigma around. Collocations are worth learning as chunks, because 'raise awareness of' is more natural than 'make people know about'.",
+        "The grammar tools you already have work well here. Hedging suits a sensitive subject: 'more people seem willing to seek help than in the past'. Cause and effect uses dependent prepositions: 'long working hours can contribute to stress', 'pressure at work can lead to anxiety'. Comparisons frame change over time: 'people are increasingly aware of mental health'.",
+        "A last point on approach. In Part 3, you are asked for opinions on society, not for your own medical history, and you are never obliged to share anything personal. Answer at the level of society and give examples in general terms. That keeps the answer clear, relevant and comfortable, and it lets your language, not the topic, carry the mark.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "h-tAbyandmY",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "using-feedback-on-your-writing",
+    title: "Making the Most of Feedback on Your Writing",
+    topic: "Writing",
+    tags: ["video-lesson", "writing", "task-2", "exam-strategy", "feedback"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "How to turn corrections on a draft into lasting improvement: spot patterns, log errors and rewrite, not just fix.",
+      keyPoints: [
+        "Look for patterns in your errors, not one-off slips: the same mistake three times is a habit.",
+        "Keep a short error log with the mistake, the correction and a rule in your own words.",
+        "Rewrite the paragraph after feedback; correcting single words does not build a new habit.",
+        "Sort feedback by criterion (Task Response, Coherence, Lexis, Grammar) and fix the weakest one first.",
+        "Retest with a fresh essay on a similar question a few days later to check the fix held.",
+      ],
+      transcript: [
+        "Feedback only helps if it changes what you write next time. Many learners read the corrections, nod, and then make the same mistakes in the next essay. The difference between improving and standing still is what you do with the feedback in the ten minutes after you get it.",
+        "Start by looking for patterns. One missing article is a slip, but a missing article in every paragraph is a habit, and habits are what cost marks. Go through the feedback and group errors by type: articles, verb forms, prepositions, word order, linking. The largest group is where your time is best spent.",
+        "Then keep an error log. For each pattern, write the mistake, the corrected version and a rule in your own words. A short log of ten to fifteen entries is more useful than a thick notebook of corrections, because you can reread it in five minutes before you write. The act of writing the rule yourself is what makes it stick.",
+        "Do not just correct; rewrite. If a paragraph was marked for weak development, write the whole paragraph again using the advice. Changing a single word teaches your eye something, but rewriting teaches your hand a new habit. Where possible, rewrite under a time limit, because that is how you will have to write in the exam.",
+        "Finally, tie the feedback to the four criteria: Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. Decide which is weakest, and work on that first. Then write a new essay on a similar question a few days later. If the same errors return, the fix has not yet become automatic, and it needs another round.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "0q6nFVaJ2MY",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
 ];
