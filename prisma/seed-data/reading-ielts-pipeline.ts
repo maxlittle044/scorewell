@@ -12045,5 +12045,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0028-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Smoking, Alcohol and Drugs",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "BRIDGEWATER PRINT\nStaff Handbook — Section 7: Smoking, Alcohol and Drugs\n\nSmoking, including the use of electronic cigarettes, is not permitted anywhere inside company buildings or vehicles. A designated smoking shelter is provided in the car park, and staff may use it during their official breaks only. Smoking near the entrances of buildings is not allowed, since smoke can drift inside. The company offers free support to any employee who wishes to stop smoking, including counselling and a contribution of up to £100 towards treatment.\n\nStaff must not consume alcohol during working hours, including lunch breaks, and must not attend work under the influence of alcohol or illegal drugs. Employees who are taking prescribed medication that may affect their ability to work safely, especially those who operate machinery or drive, must inform their line manager in confidence. Alcohol may be served at company social events only with the written approval of a director, and staff who are driving should not drink. The company will randomly test employees who operate machinery. Breaches of this policy may lead to dismissal. Employees who believe that they have a problem with alcohol or drugs are encouraged to seek help from HR, and will not be penalised for doing so.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0028-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q014", "statement": "Smoking is permitted inside company vehicles.", "answer": "FALSE", "evidence": { "explanation": "It is not permitted in buildings or vehicles." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q015", "statement": "Staff may use the smoking shelter during official breaks.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q016", "statement": "Electronic cigarettes are treated differently from ordinary cigarettes.", "answer": "FALSE", "evidence": { "explanation": "The ban includes electronic cigarettes." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q017", "statement": "Staff who ask HR for help with an alcohol problem will not be penalised.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0028-q018", "statement": "The company provides free gym membership to staff who stop smoking.", "answer": "NOT GIVEN", "evidence": { "explanation": "Gym membership is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0028-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0028-q019", "prompt": "The smoking shelter is located in the ______.", "accept": ["car park"], "evidence": { "explanation": "The shelter is in the car park." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q020", "prompt": "The company contributes up to ______ towards treatment to stop smoking.", "accept": ["£100","100 pounds"], "evidence": { "explanation": "The contribution is up to £100." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q021", "prompt": "Staff must not consume alcohol during ______ hours.", "accept": ["working"], "evidence": { "explanation": "Alcohol is not allowed during working hours." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q022", "prompt": "Alcohol may be served at social events only with the written approval of a ______.", "accept": ["director"], "evidence": { "explanation": "A director must approve it in writing." } },
+            { "kind": "completion", "id": "generated-reading-general-0028-q023", "prompt": "Breaches of the policy may lead to ______.", "accept": ["dismissal"], "evidence": { "explanation": "Breaches may lead to dismissal." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0028-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0028-q024", "question": "Who should employees taking prescribed medication inform?", "options": ["Their line manager","A colleague","The director","The company doctor"], "correctIndex": 0, "evidence": { "explanation": "They must inform their line manager in confidence." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0028-q025", "question": "Which employees will be randomly tested?", "options": ["All managers","Those who operate machinery","New staff","Staff who smoke"], "correctIndex": 1, "evidence": { "explanation": "The company will test employees who operate machinery." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0028-q026", "question": "Why is smoking near building entrances not allowed?", "options": ["Smoke can drift inside","It looks untidy","It is against the law","It blocks the entrance"], "correctIndex": 0, "evidence": { "explanation": "Smoke can drift inside." } }
+          ]
+        }
+      ]
+    }
   }
 ];
