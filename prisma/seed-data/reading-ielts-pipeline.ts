@@ -9332,6 +9332,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0025-p1",
+    "title": "Layers of the Rainforest",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "environment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Tropical rainforests cover only about six per cent of the Earth's land surface, yet they are home to roughly half of all the plant and animal species on land. Many of these species have never been described by scientists, and some may disappear before they can be studied.\n\nB. A rainforest is often described as having layers, each with its own conditions and inhabitants. The tallest trees, known as emergents, rise above the rest of the forest to heights of 60 metres or more. They are exposed to strong sun and wind, and are home to eagles and some of the largest butterflies.\n\nC. Below the emergents lies the canopy, a dense roof of leaves and branches that forms at about 30 to 45 metres above the ground. It absorbs most of the sunlight and rainfall and supports the majority of the forest's animals, including monkeys, sloths and hundreds of species of birds. Some animals spend their entire lives in the canopy without ever touching the ground.\n\nD. Beneath the canopy is the understory, a dim, humid layer of young trees, shrubs and large-leaved plants. The forest floor is darker still, receiving only about two per cent of the sunlight that strikes the top of the forest. Little grows there, but the ground is covered with fallen leaves, which are broken down quickly by fungi and insects, so that nutrients are recycled and taken up again by the trees.\n\nE. The Amazon, in South America, is the largest rainforest in the world, and it stretches across nine countries. Its trees release huge quantities of water vapour into the air, which helps to create the rain that falls across the region. Many people also depend on the forest directly, including Indigenous communities, who have lived there for thousands of years, and a number of modern medicines were originally developed from rainforest plants.\n\nF. Rainforests are under pressure. Large areas have been cleared for cattle ranching, soy farms, palm oil plantations and logging, and scientists warn that if too much is lost, the forest may no longer produce enough rain to sustain itself. Governments, companies and conservation groups have made agreements to slow deforestation, but progress has been uneven.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0025-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Rich in species but small in area" },
+            { "key": "ii", "label": "The tallest and most exposed trees" },
+            { "key": "iii", "label": "The busiest layer" },
+            { "key": "iv", "label": "Life in the shadows" },
+            { "key": "v", "label": "The role of the Amazon" },
+            { "key": "vi", "label": "Threats and responses" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0025-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes how few rainforests there are but how many species they hold." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the emergent layer." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the canopy and its animals." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the dark understory and forest floor." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes deforestation and agreements to slow it." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0025-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q006", "statement": "Rainforests cover about six per cent of the Earth's land surface.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q007", "statement": "Most of the forest's animals live on the forest floor.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the canopy supports the majority of animals." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q008", "statement": "The forest floor receives about two per cent of the sunlight that strikes the top of the forest.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q009", "statement": "Rainforest plants have provided the ingredients for every modern medicine.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says a number of modern medicines were developed from rainforest plants, not all of them." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0025-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0025-q010", "prompt": "The tallest trees, called ______, may reach 60 metres or more.", "accept": ["emergents"], "evidence": { "explanation": "Paragraph B names emergents." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q011", "prompt": "Sloths and monkeys live mainly in the ______.", "accept": ["canopy"], "evidence": { "explanation": "Paragraph C names the canopy." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q012", "prompt": "Fallen leaves are broken down by fungi and ______.", "accept": ["insects"], "evidence": { "explanation": "Paragraph D says fungi and insects." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q013", "prompt": "The Amazon stretches across ______ countries.", "accept": ["nine","9"], "evidence": { "explanation": "Paragraph E says nine countries." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0025-p2",
+    "title": "The Story of Rubber",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Rubber is so much a part of modern life that it is hard to imagine a world without it. It is found in tyres, shoes, hoses, seals and medical gloves. Yet for most of history, it was known only to the peoples of Central and South America, who collected the milky white latex that flows from certain trees, especially Hevea brasiliensis.\n\nB. The ancient peoples of Mesoamerica, including the Olmecs, Maya and Aztecs, made use of this latex for many purposes, including waterproofing cloth and making balls for their ball game. When Europeans first saw the bouncing balls in the sixteenth century, they were astonished, but for a long time the material remained a curiosity.\n\nC. In the eighteenth century, European scientists began to study it. The English chemist Joseph Priestley noted in 1770 that it could rub out pencil marks, and the name rubber came into use. In 1823, the Scottish chemist Charles Macintosh used it to make waterproof coats, but the coats became sticky in hot weather and stiff in the cold.\n\nD. The problem was solved by the American inventor Charles Goodyear. After years of experiments, he accidentally dropped a mixture of rubber and sulphur onto a hot stove in 1839 and found that it became firm and elastic rather than melting. The process, later called vulcanisation, was patented in 1844, and it made rubber strong and stable enough for widespread use.\n\nE. Demand rose sharply after the Scottish inventor John Dunlop developed the pneumatic tyre in 1888, and later, when motor cars were mass-produced. Brazil then had a virtual monopoly on rubber, and harvesting the wild trees brought great wealth to the region, but also brutal treatment of workers. In 1876, an Englishman named Henry Wickham took about 70,000 seeds out of Brazil, and the young trees grown from them were sent to plantations in Southeast Asia, which soon became the main source of rubber.\n\nF. During the Second World War, Allied supplies of natural rubber were cut off, and both sides developed synthetic rubber made from oil. Today, synthetic rubber makes up more than half of all the rubber used, but natural rubber is still needed for products such as aircraft tyres and surgical gloves, and it is grown by millions of small farmers in Asia and Africa.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0025-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A material known only in one region" },
+            { "key": "ii", "label": "Uses of latex before Europeans" },
+            { "key": "iii", "label": "A name and a failed coat" },
+            { "key": "iv", "label": "A chance discovery on a stove" },
+            { "key": "v", "label": "Wealth, workers and stolen seeds" },
+            { "key": "vi", "label": "War and artificial alternatives" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0025-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes rubber as unknown outside the Americas." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes ancient uses of latex." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the naming of rubber and the Macintosh coat." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Goodyear's chance discovery." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q018", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the rubber trade, Brazil and Wickham's seeds." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0025-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q019", "statement": "The Aztecs used latex to make balls for a game.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says the peoples of Mesoamerica made balls for their ball game." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q020", "statement": "Macintosh's waterproof coats worked well in all weather.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they became sticky in heat and stiff in cold." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q021", "statement": "Goodyear's discovery was made by accident.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D says he accidentally dropped the mixture on a stove." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q022", "statement": "Henry Wickham was rewarded by the Brazilian government.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says nothing about any reward." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0025-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0025-q023", "prompt": "Joseph Priestley noted in ______ that rubber could rub out pencil marks.", "accept": ["1770"], "evidence": { "explanation": "Paragraph C gives 1770." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q024", "prompt": "Goodyear mixed rubber with ______.", "accept": ["sulphur"], "evidence": { "explanation": "Paragraph D says sulphur." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q025", "prompt": "The pneumatic tyre was developed by John ______.", "accept": ["Dunlop"], "evidence": { "explanation": "Paragraph E names John Dunlop." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q026", "prompt": "Synthetic rubber is made from ______.", "accept": ["oil"], "evidence": { "explanation": "Paragraph F says oil." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0025-p3",
+    "title": "How Tsunamis Form",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The word tsunami comes from Japanese and means \"harbour wave\", a name given by fishermen who returned from the sea to find their harbours destroyed, although they had felt nothing while out on the water. Tsunamis are not ordinary waves, but series of very long waves that are set off when a large volume of water is suddenly displaced.\n\nB. Most tsunamis are caused by undersea earthquakes, particularly at subduction zones, where one of the Earth's plates slides beneath another. When the plates suddenly slip, the seabed rises or falls by several metres, and the water above it is pushed upwards. Tsunamis can also be triggered by landslides, volcanic eruptions and, very rarely, meteorite impacts.\n\nC. In deep ocean, a tsunami behaves very differently from a storm wave. It may be less than a metre high, so ships at sea do not notice it, but it can travel at up to 800 kilometres per hour, about as fast as a jet aircraft, and the distance between two crests may be more than 100 kilometres. A tsunami can therefore cross an ocean in less than a day.\n\nD. As the wave approaches shallow water near the coast, it slows down, but the energy it carries has to go somewhere, so the water piles up and the wave grows taller, sometimes to more than 30 metres. Sometimes the sea draws back a long way before the first wave arrives, which is a natural warning sign that people should immediately move to higher ground.\n\nE. The most destructive tsunami in recorded history struck in December 2004, after an earthquake off the coast of Sumatra. Waves reached coasts around the Indian Ocean, and more than 200,000 people lost their lives in countries as far apart as Indonesia, Sri Lanka, India and Somalia. Most of the victims had received no warning.\n\nF. After 2004, many countries invested in warning systems. Instruments on the seabed and floating buoys measure changes in pressure that reveal a passing wave, and the information is sent by satellite to warning centres, which can alert coastal communities within minutes. Warnings only save lives if people know what to do, so education and evacuation drills are as important as technology.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0025-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The origin of a name" },
+            { "key": "ii", "label": "Earthquakes and other triggers" },
+            { "key": "iii", "label": "Fast and low in the open sea" },
+            { "key": "iv", "label": "Growing near the shore" },
+            { "key": "v", "label": "A disaster without warning" },
+            { "key": "vi", "label": "Technology and education" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0025-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains the meaning of the word tsunami." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes causes of tsunamis." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes tsunamis in deep water." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes what happens near the coast." } },
+            { "kind": "matching", "id": "generated-reading-academic-0025-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes warning systems and education." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0025-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q032", "statement": "Most tsunamis are caused by undersea earthquakes.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q033", "statement": "Ships in deep water usually notice a tsunami as a very large wave.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says it may be less than a metre high, so ships do not notice it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q034", "statement": "The sea sometimes draws back before a tsunami arrives.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D describes this warning sign." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q035", "statement": "The 2004 tsunami killed more people in Indonesia than in any other country.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not give death tolls by country." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0025-q036", "statement": "Warning systems make evacuation drills unnecessary.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says education and drills are as important as technology." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0025-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0025-q037", "prompt": "The word tsunami means \"______ wave\" in Japanese.", "accept": ["harbour"], "evidence": { "explanation": "Paragraph A says harbour wave." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q038", "prompt": "In deep ocean, a tsunami can travel at up to ______ kilometres per hour.", "accept": ["800"], "evidence": { "explanation": "Paragraph C gives 800." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q039", "prompt": "The most destructive tsunami on record struck in ______ 2004.", "accept": ["December"], "evidence": { "explanation": "Paragraph E says December 2004." } },
+            { "kind": "completion", "id": "generated-reading-academic-0025-q040", "prompt": "Seabed instruments measure changes in ______.", "accept": ["pressure"], "evidence": { "explanation": "Paragraph F says pressure." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
