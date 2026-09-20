@@ -423,4 +423,46 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     practiceSlug: "reported-speech-practice",
     tags: ["grammar", "verbs", "speaking"],
   },
+  {
+    slug: "future-forms",
+    title: "Future forms",
+    category: "Tenses",
+    summary: "Will, going to, the present continuous and the present simple: choosing the right way to talk about the future.",
+    explanation: [
+      "English has no single future tense. The form you choose shows how you think about the future: a decision, a plan, an arrangement, a timetable or a prediction.",
+      "Use 'will' for decisions made at the moment of speaking ('I'll help you with that'), for promises and offers, and for predictions based on opinion rather than evidence ('I think prices will rise'). Use 'going to' for plans made before speaking ('I'm going to study medicine') and for predictions based on evidence you can see now ('Look at those clouds. It's going to rain').",
+      "Use the present continuous for fixed arrangements, especially with a time and a person involved: 'I'm meeting my tutor at three.' Use the present simple for timetables and schedules: 'The exam starts at nine tomorrow.'",
+      "After time words such as when, before, after, as soon as, until and if, use the present simple, not 'will', even though the meaning is future: 'I'll call you when I arrive', not 'when I will arrive'. This is one of the most common future-tense errors.",
+      "Formal writing has its own future language. 'Is expected to', 'is projected to' and 'is likely to' introduce forecasts more carefully than 'will', and they are exactly what you need for a Task 1 graph that ends in the future.",
+    ],
+    examples: [
+      {
+        wrong: "When I will finish my degree, I will look for a job.",
+        right: "When I finish my degree, I will look for a job.",
+        note: "After 'when', use the present simple even for the future.",
+      },
+      {
+        wrong: "I will visit my grandparents next weekend; we already bought the tickets.",
+        right: "I'm visiting my grandparents next weekend; we've already bought the tickets.",
+        note: "A fixed arrangement with tickets already bought takes the present continuous, or 'going to'.",
+      },
+      {
+        wrong: "Look at the sky! It will rain.",
+        right: "Look at the sky! It's going to rain.",
+        note: "A prediction from present evidence takes 'going to'.",
+      },
+      {
+        wrong: "If the government will raise taxes, people will spend less.",
+        right: "If the government raises taxes, people will spend less.",
+        note: "Conditional clauses with 'if' take the present simple, not 'will'.",
+      },
+      {
+        right: "The population is projected to reach ten million by 2050.",
+        note: "'Is projected to' is a formal, careful way to report a forecast in Task 1.",
+      },
+    ],
+    ieltsNote:
+      "Future forms matter in all four parts of the test. In Task 1, graphs with projections need 'is expected to' or 'is projected to', and in Task 2, predictions are safer with 'is likely to' or 'may' than with 'will'. In Speaking Part 1 and Part 3, using 'going to' for plans and 'will' for predictions in the right places shows control, and 'when I will' is a mistake examiners notice.",
+    tags: ["grammar", "tenses", "task1"],
+  },
 ];
