@@ -12371,5 +12371,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0030-p3",
+    "title": "The Story of the Button",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "clothing", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The button is one of the smallest and most overlooked of everyday objects, and yet it has played a big part in the way people dress. It holds our shirts closed and our coats in place, it decorates our clothes, and for centuries it has been a way of showing wealth and taste. The story of the button is also a story of technology and fashion.\n\nB. The earliest known buttons were made about 5,000 years ago in the Indus Valley, in what is now Pakistan, and were carved from shells. They were used as ornaments, not for fastening clothes. For a long time, people fastened their clothes with pins, laces and brooches, and it was not until the thirteenth century, when buttonholes were invented in Germany, that buttons became truly useful.\n\nC. Buttonholes made it possible to make clothes that fitted closely to the body, and they changed fashion across Europe. Long rows of small buttons ran down the sleeves and fronts of garments, and the number and the material of the buttons showed how rich the wearer was. King Francis I of France is said to have ordered a suit decorated with 13,600 gold buttons for a meeting with the English king Henry VIII in 1520.\n\nD. By the eighteenth century, the city of Birmingham in England was the world's centre of button making, and thousands of workers, many of them women and children, made buttons by hand at home. Buttons were made from metal, bone, horn, wood and shell. The most prized were made from mother-of-pearl, the shiny inner layer of oyster shells, and in the late nineteenth century, the demand was so great that some shell beds were nearly exhausted.\n\nE. Buttons were sometimes used to send messages. In the nineteenth century, London street traders, known as costermongers, decorated their clothes with hundreds of small pearl buttons, and some of them were elected as \"Pearly Kings and Queens\" to represent their communities and raise money for charity. Their descendants still wear the costumes today at festivals. Military uniforms, too, used buttons engraved with emblems to show the wearer's regiment.\n\nF. In the twentieth century, buttons were made in vast numbers from plastic, which is cheap and easy to mould into any shape and colour. Today, many buttons are made by machines, and some designers use unusual materials such as coconut shell, recycled glass and wood. Although zips and other fasteners have replaced buttons on many garments, the button has not disappeared, and collectors around the world treasure antique examples.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0030-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A small object with a large role" },
+            { "key": "ii", "label": "Ornaments before fasteners" },
+            { "key": "iii", "label": "Buttonholes and fashion" },
+            { "key": "iv", "label": "A centre of production and a prized material" },
+            { "key": "v", "label": "Messages and costumes" },
+            { "key": "vi", "label": "Plastic and today's buttons" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0030-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the button and its role in dress." } },
+            { "kind": "matching", "id": "generated-reading-general-0030-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes early buttons as ornaments and the invention of buttonholes." } },
+            { "kind": "matching", "id": "generated-reading-general-0030-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes buttonholes changing fashion and the buttons of Francis I." } },
+            { "kind": "matching", "id": "generated-reading-general-0030-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Birmingham's button industry and mother-of-pearl." } },
+            { "kind": "matching", "id": "generated-reading-general-0030-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes plastic buttons and modern materials." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0030-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q032", "statement": "The earliest known buttons were used to fasten clothes.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they were used as ornaments." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q033", "statement": "Buttonholes were invented in Germany in the thirteenth century.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q034", "statement": "Most of the buttons made in Birmingham were sold in America.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not say where Birmingham buttons were sold." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q035", "statement": "Pearly Kings and Queens raised money for charity.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q036", "statement": "Zips have completely replaced buttons on clothes.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says the button has not disappeared." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0030-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0030-q037", "prompt": "The earliest known buttons were carved from ______.", "accept": ["shells","shell"], "evidence": { "explanation": "Paragraph B says shells." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q038", "prompt": "Francis I is said to have ordered a suit with ______ gold buttons.", "accept": ["13,600","13600"], "evidence": { "explanation": "Paragraph C gives 13,600." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q039", "prompt": "Mother-of-pearl is the shiny inner layer of ______ shells.", "accept": ["oyster"], "evidence": { "explanation": "Paragraph D says oyster shells." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q040", "prompt": "London street traders were known as ______.", "accept": ["costermongers"], "evidence": { "explanation": "Paragraph E says costermongers." } }
+          ]
+        }
+      ]
+    }
   }
 ];
