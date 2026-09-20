@@ -12230,5 +12230,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0029-p3",
+    "title": "The Story of the Toothbrush",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "everyday-objects", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Almost everyone owns one, and most of us use it twice a day, yet the toothbrush is an object that few people stop to think about. For thousands of years, people have tried to keep their teeth clean, and the history of the toothbrush shows how a simple idea can take a very long time to become an everyday habit.\n\nB. The earliest tools for cleaning teeth were sticks. Archaeologists have found chew sticks in Egyptian tombs, and similar sticks were used in ancient Babylon around 3500 BC. The user chewed one end until it became soft and frayed, and then rubbed it against the teeth. The miswak, a twig from the Arak tree, has been used for centuries in the Middle East, and it is still used today by millions of people.\n\nC. The first toothbrush with bristles was probably made in China. Records show that in 1498, the Hongzhi Emperor had a brush with a handle made of bone or bamboo, with stiff hairs from the neck of a hog attached to it. The idea reached Europe in the seventeenth century, brought by traders, but many people disliked the harsh feel of the bristles, and preferred to clean their teeth with cloths or with their fingers.\n\nD. The modern toothbrush began in England. According to a popular story, a man named William Addis, who was in prison in 1780, made a brush by boring holes in a small bone and tying bunches of bristles into the holes. When he was released, he began to produce them, and his company is said to have remained in business for over two hundred years. Historians are not sure that the story is true, but Addis certainly produced some of the first mass-produced toothbrushes.\n\nE. The next big change came in 1938, when the American company DuPont introduced toothbrushes with nylon bristles, which were softer, more hygienic and cheaper than animal hair. The first electric toothbrush was developed in Switzerland in the 1950s for patients with limited movement, and a version for the general public appeared in the United States in 1960. Today, some models include timers and sensors that tell the user if they are pressing too hard.\n\nF. Dentists now advise brushing twice a day for two minutes, using a toothpaste containing fluoride, and replacing the brush every three months, or sooner if the bristles are worn. Despite this advice, surveys suggest that many people do not brush for long enough. Whichever type of brush is used, the habit of brushing regularly, along with limiting sugary food and drink, remains the best way of preventing tooth decay.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0029-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A small object with a long story" },
+            { "key": "ii", "label": "Sticks before brushes" },
+            { "key": "iii", "label": "Hog hairs and imperial approval" },
+            { "key": "iv", "label": "A prisoner's invention" },
+            { "key": "v", "label": "Nylon and electricity" },
+            { "key": "vi", "label": "Advice on how to brush" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0029-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the toothbrush and its long history." } },
+            { "kind": "matching", "id": "generated-reading-general-0029-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes chew sticks." } },
+            { "kind": "matching", "id": "generated-reading-general-0029-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the first bristle brush in China." } },
+            { "kind": "matching", "id": "generated-reading-general-0029-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the story of William Addis." } },
+            { "kind": "matching", "id": "generated-reading-general-0029-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes dentists' advice on brushing." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0029-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q032", "statement": "Chew sticks were used in ancient Babylon.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q033", "statement": "The first toothbrush with bristles was made in Europe.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says it was probably made in China." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q034", "statement": "Historians agree that the story of William Addis is true.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says historians are not sure the story is true." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q035", "statement": "Nylon bristles were introduced in 1938.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1938." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q036", "statement": "Electric toothbrushes are more effective than manual toothbrushes.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare their effectiveness." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0029-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0029-q037", "prompt": "The miswak is a twig from the ______ tree.", "accept": ["Arak"], "evidence": { "explanation": "Paragraph B names the Arak tree." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q038", "prompt": "The 1498 brush had a handle made of bone or ______.", "accept": ["bamboo"], "evidence": { "explanation": "Paragraph C says bone or bamboo." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q039", "prompt": "The nylon toothbrush was introduced by the American company ______.", "accept": ["DuPont"], "evidence": { "explanation": "Paragraph E names DuPont." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q040", "prompt": "Dentists advise replacing the brush every ______ months.", "accept": ["three","3"], "evidence": { "explanation": "Paragraph F says every three months." } }
+          ]
+        }
+      ]
+    }
   }
 ];
