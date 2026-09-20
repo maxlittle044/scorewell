@@ -12142,5 +12142,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0029-p1",
+    "title": "General Training Reading — Section 1: Music School and Ice Rink Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nHARMONY MUSIC SCHOOL\nLessons and Facilities\n\nWe offer individual lessons in piano, guitar, violin and singing. A 30-minute lesson costs £22, and a 45-minute lesson costs £30. Lessons are available from Monday to Saturday between 10:00am and 8:00pm. Families with more than one child enrolled receive a 10% discount on the second child's lessons.\n\nInstruments can be hired for £10 a month, with an option to buy after six months at a reduced price. Practice rooms with a piano can be booked for £5 an hour, and students may use them for free on Saturday mornings. Termly concerts are held in the school hall, and all students are encouraged to perform. The school is closed throughout August, and lessons missed because of illness must be rearranged within four weeks.\n\nTEXT 2\n\nNORTHSIDE ICE RINK\nPublic Skating Sessions\n\nPublic sessions run daily from 10:00am to 12:00 noon, 1:00pm to 3:00pm and 4:00pm to 6:00pm. Admission costs £7.50 for adults and £5 for children under 14, and skate hire is an additional £3. Children under 8 must wear a helmet, which can be hired for £1.\n\nBeginners' lessons for children and adults take place on Saturdays at 9:00am and last 45 minutes. Bags and backpacks must be left in the lockers provided, which cost £1, refundable. Food and drink are not allowed on the ice. The ice rink can also be booked for birthday parties, and each party includes an hour of skating and a room for food.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0029-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q001", "statement": "The music school teaches the drums.", "answer": "NOT GIVEN", "evidence": { "explanation": "Drums are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q002", "statement": "The music school is open on Saturdays.", "answer": "TRUE", "evidence": { "explanation": "Lessons are available from Monday to Saturday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q003", "statement": "Students can use the practice rooms free of charge on Saturday mornings.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q004", "statement": "Missed lessons because of illness cannot be rearranged.", "answer": "FALSE", "evidence": { "explanation": "They must be rearranged within four weeks." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q005", "statement": "Children under 8 must wear a helmet on the ice.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q006", "statement": "Food and drink may be taken onto the ice.", "answer": "FALSE", "evidence": { "explanation": "Food and drink are not allowed on the ice." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0029-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0029-q007", "prompt": "A 30-minute lesson at the music school costs ______.", "accept": ["£22","22 pounds"], "evidence": { "explanation": "A 30-minute lesson costs £22." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q008", "prompt": "Instruments can be hired for ______ a month.", "accept": ["£10","10 pounds"], "evidence": { "explanation": "Hire costs £10 a month." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q009", "prompt": "Adult admission to the ice rink costs ______.", "accept": ["£7.50","7.50"], "evidence": { "explanation": "Adult admission is £7.50." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q010", "prompt": "Beginners' lessons take place on ______ at 9:00am.", "accept": ["Saturdays","Saturday"], "evidence": { "explanation": "Lessons are on Saturdays." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0029-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0029-q011", "question": "What discount is offered for a second child at the music school?", "options": ["5%","10%","15%","20%"], "correctIndex": 1, "evidence": { "explanation": "A 10% discount is offered." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0029-q012", "question": "When is the music school closed?", "options": ["Throughout July","Throughout August","At Christmas only","On Sundays and Mondays"], "correctIndex": 1, "evidence": { "explanation": "The school is closed throughout August." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0029-q013", "question": "What is included in a birthday party at the ice rink?", "options": ["A cake","An hour of skating and a room for food","Free helmets","A lesson"], "correctIndex": 1, "evidence": { "explanation": "Each party includes an hour of skating and a room for food." } }
+          ]
+        }
+      ]
+    }
   }
 ];
