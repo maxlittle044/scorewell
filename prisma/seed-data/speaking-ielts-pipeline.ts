@@ -3304,5 +3304,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0236",
+    "title": "Part 1: Parks and gardens",
+    "part": "part1",
+    "topic": "Parks and gardens",
+    "tags": ["speaking", "part-1", "parks-and-gardens"],
+    "data": {
+      "questions": [
+        "Are there many parks or gardens near where you live?",
+        "Do you enjoy spending time outdoors in green spaces?",
+        "Have you ever grown any plants yourself?",
+        "What do people usually do in parks in your country?",
+        "Do you prefer walking in a park or in the countryside?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0237",
+    "title": "Part 1: Cycling and bicycles",
+    "part": "part1",
+    "topic": "Cycling and bicycles",
+    "tags": ["speaking", "part-1", "cycling-and-bicycles"],
+    "data": {
+      "questions": [
+        "Do you know how to ride a bicycle?",
+        "How often do you ride a bicycle?",
+        "Do many people cycle where you live?",
+        "Do you think cycling is a good way to travel to work or school?",
+        "Would you like to own a bicycle in the future?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0238",
+    "title": "Part 1: City life",
+    "part": "part1",
+    "topic": "City life",
+    "tags": ["speaking", "part-1", "city-life"],
+    "data": {
+      "questions": [
+        "Do you live in a big city or a small town?",
+        "What do you like about living in a city?",
+        "Is there anything you dislike about city life?",
+        "Would you prefer to live in a city or in the countryside in the future?",
+        "How has your city changed in recent years?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0239",
+    "title": "Part 1: News and current affairs",
+    "part": "part1",
+    "topic": "News and current affairs",
+    "tags": ["speaking", "part-1", "news-and-current-affairs"],
+    "data": {
+      "questions": [
+        "Do you follow the news?",
+        "Where do you usually get your news from?",
+        "Is there any type of news you are not interested in?",
+        "Do you talk about the news with your family or friends?",
+        "Did you read newspapers when you were younger?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0240",
+    "title": "Part 1: Hobbies and collecting",
+    "part": "part1",
+    "topic": "Hobbies and collecting",
+    "tags": ["speaking", "part-1", "hobbies-and-collecting"],
+    "data": {
+      "questions": [
+        "Do you have any hobbies?",
+        "How did you become interested in your hobby?",
+        "Have you ever collected anything?",
+        "Do you prefer hobbies you do alone or with other people?",
+        "Would you like to try a new hobby in the future?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0236",
+    "title": "Part 2: Describe a park or garden you like to visit",
+    "part": "part2",
+    "topic": "Parks and gardens",
+    "tags": ["speaking", "part-2", "parks-and-gardens"],
+    "data": {
+      "questions": ["Describe a park or garden you like to visit"],
+      "cueCardPoints": [
+        "where it is",
+        "when you first went there",
+        "what you can see and do there",
+        "and explain why you like it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0237",
+    "title": "Part 2: Describe a bicycle journey you have made",
+    "part": "part2",
+    "topic": "Cycling and bicycles",
+    "tags": ["speaking", "part-2", "cycling-and-bicycles"],
+    "data": {
+      "questions": ["Describe a bicycle journey you have made"],
+      "cueCardPoints": [
+        "where you went",
+        "who you went with",
+        "what the journey was like",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0238",
+    "title": "Part 2: Describe a city you would like to visit or live in",
+    "part": "part2",
+    "topic": "City life",
+    "tags": ["speaking", "part-2", "city-life"],
+    "data": {
+      "questions": ["Describe a city you would like to visit or live in"],
+      "cueCardPoints": [
+        "where the city is",
+        "how you know about it",
+        "what you would do there",
+        "and explain why it appeals to you"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0239",
+    "title": "Part 2: Describe a piece of news that you found interesting",
+    "part": "part2",
+    "topic": "News and current affairs",
+    "tags": ["speaking", "part-2", "news-and-current-affairs"],
+    "data": {
+      "questions": ["Describe a piece of news that you found interesting"],
+      "cueCardPoints": [
+        "what the news was",
+        "where you heard or read it",
+        "why it attracted your attention",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0240",
+    "title": "Part 2: Describe a hobby or activity you enjoy in your free time",
+    "part": "part2",
+    "topic": "Hobbies and collecting",
+    "tags": ["speaking", "part-2", "hobbies-and-collecting"],
+    "data": {
+      "questions": ["Describe a hobby or activity you enjoy in your free time"],
+      "cueCardPoints": [
+        "what it is",
+        "how you started it",
+        "how often you do it",
+        "and explain why you enjoy it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0236",
+    "title": "Part 3: Green spaces and city life",
+    "part": "part3",
+    "topic": "Parks and gardens",
+    "tags": ["speaking", "part-3", "parks-and-gardens"],
+    "data": {
+      "questions": [
+        "Why are parks important for people living in cities?",
+        "Should governments spend more money on creating green spaces?",
+        "How do gardens and parks affect people's health?",
+        "Do you think people spend enough time in nature nowadays?",
+        "Who should be responsible for looking after public parks?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0237",
+    "title": "Part 3: Bicycles and transport",
+    "part": "part3",
+    "topic": "Cycling and bicycles",
+    "tags": ["speaking", "part-3", "cycling-and-bicycles"],
+    "data": {
+      "questions": [
+        "Why don't more people cycle to work in big cities?",
+        "What could governments do to encourage cycling?",
+        "Is cycling a good form of exercise for people of all ages?",
+        "How safe is it to cycle in the cities you know?",
+        "Will bicycles become more important in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0238",
+    "title": "Part 3: Cities and their problems",
+    "part": "part3",
+    "topic": "City life",
+    "tags": ["speaking", "part-3", "city-life"],
+    "data": {
+      "questions": [
+        "Why do so many people move to cities?",
+        "What are the biggest problems facing large cities today?",
+        "Should governments try to limit the growth of cities?",
+        "How can cities be made more pleasant places to live?",
+        "Do you think city life will be very different in fifty years?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0239",
+    "title": "Part 3: News, media and society",
+    "part": "part3",
+    "topic": "News and current affairs",
+    "tags": ["speaking", "part-3", "news-and-current-affairs"],
+    "data": {
+      "questions": [
+        "How has the way people get their news changed in recent years?",
+        "Do you think people trust the news less than they used to?",
+        "Should the media be responsible for what they report?",
+        "Why do some people avoid the news altogether?",
+        "How can people tell whether a news story is reliable?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0240",
+    "title": "Part 3: Hobbies and leisure time",
+    "part": "part3",
+    "topic": "Hobbies and collecting",
+    "tags": ["speaking", "part-3", "hobbies-and-collecting"],
+    "data": {
+      "questions": [
+        "Why do some people spend a lot of money on their hobbies?",
+        "Do children today have the same kinds of hobbies as in the past?",
+        "Can a hobby help people to develop useful skills?",
+        "Should schools encourage students to take up hobbies?",
+        "Do people have enough leisure time in modern life?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
