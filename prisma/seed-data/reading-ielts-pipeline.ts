@@ -10976,5 +10976,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0023-p1",
+    "title": "General Training Reading — Section 1: Optician and Gym Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nCLEARVIEW OPTICIANS\nEye Tests and Glasses\n\nWe are open Monday to Saturday from 9:00am to 5:30pm. An eye test takes about 30 minutes and costs £25; it is free for children under 16 and for people over 60. Appointments are recommended, but we also accept walk-ins when we are not busy.\n\nIf you need glasses, you can choose from over 200 frames, with prices starting at £49 including standard lenses. Most glasses are ready within seven days, and we offer a free adjustment service for any pair bought at the shop. Contact lenses can be ordered online or in store, and a two-year guarantee is provided on all frames.\n\nTEXT 2\n\nFITZONE GYM\nMembership and Classes\n\nThe gym is open 24 hours a day for members. Monthly membership costs £32, and there is no contract; you may cancel at any time by giving 14 days' notice. New members receive a free induction session, where a trainer will show you how to use the equipment safely.\n\nGroup classes such as yoga, spinning and circuits take place daily and are included in the membership fee, but places must be booked online at least 24 hours in advance. Towels are not provided, but lockers are free to use for the duration of your visit. Children under 16 are not permitted in the gym at any time.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0023-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q001", "statement": "Eye tests are free for people over 60.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q002", "statement": "The optician is open on Sundays.", "answer": "FALSE", "evidence": { "explanation": "It is open Monday to Saturday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q003", "statement": "Glasses are always ready on the same day.", "answer": "FALSE", "evidence": { "explanation": "Most glasses are ready within seven days." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q004", "statement": "The optician offers home visits.", "answer": "NOT GIVEN", "evidence": { "explanation": "Home visits are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q005", "statement": "Members of the gym can cancel at any time by giving 14 days' notice.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q006", "statement": "Towels are provided free at the gym.", "answer": "FALSE", "evidence": { "explanation": "Towels are not provided." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0023-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0023-q007", "prompt": "An eye test takes about ______ minutes.", "accept": ["30","thirty"], "evidence": { "explanation": "An eye test takes about 30 minutes." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q008", "prompt": "Frames start at ______ including standard lenses.", "accept": ["£49","49 pounds"], "evidence": { "explanation": "Prices start at £49." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q009", "prompt": "A guarantee of ______ years is provided on all frames.", "accept": ["two","2"], "evidence": { "explanation": "A two-year guarantee is provided." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q010", "prompt": "Group classes must be booked online at least ______ hours in advance.", "accept": ["24","twenty-four"], "evidence": { "explanation": "Classes must be booked 24 hours in advance." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0023-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0023-q011", "question": "How much does monthly gym membership cost?", "options": ["£24","£32","£40","£49"], "correctIndex": 1, "evidence": { "explanation": "Monthly membership costs £32." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0023-q012", "question": "What do new gym members receive?", "options": ["A free induction session","A free towel","A free month","A free water bottle"], "correctIndex": 0, "evidence": { "explanation": "New members receive a free induction session." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0023-q013", "question": "Who is not permitted in the gym at any time?", "options": ["Children under 16","People over 60","Non-members over 16","Beginners"], "correctIndex": 0, "evidence": { "explanation": "Children under 16 are not permitted." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0023-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Parking and Canteen",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "EASTGATE MANUFACTURING\nStaff Handbook — Section 8: Parking and the Staff Canteen\n\nStaff parking is available in the car park behind Building B. Permits are issued by the Facilities Office and must be displayed on the windscreen at all times. There are 150 spaces, and permits are allocated on a first-come, first-served basis, with priority given to staff with disabilities and to car-sharers. Cars without a permit will be issued with a warning notice, and repeated offences may result in a fine of £20. The company also provides secure cycle storage near the main gate, and staff who cycle to work may claim a cycle allowance of £10 a month.\n\nThe staff canteen is open from 7:30am to 3:00pm on weekdays. Hot meals are served from 11:30am to 2:00pm, and a main course costs £3.50. Staff should clear their own trays, and food from the canteen may not be taken to the production floor. Any complaints about the canteen should be made to the Facilities Manager.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0023-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q014", "statement": "Parking permits must be displayed on the windscreen.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q015", "statement": "Parking permits are allocated to staff with disabilities before other staff.", "answer": "TRUE", "evidence": { "explanation": "Priority is given to staff with disabilities and car-sharers." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q016", "statement": "Staff who cycle to work receive no allowance.", "answer": "FALSE", "evidence": { "explanation": "They may claim a cycle allowance of £10 a month." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q017", "statement": "The canteen is open at weekends.", "answer": "NOT GIVEN", "evidence": { "explanation": "Only weekday hours are given." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q018", "statement": "Food from the canteen may be taken to the production floor.", "answer": "FALSE", "evidence": { "explanation": "It may not be taken to the production floor." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0023-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0023-q019", "prompt": "There are ______ parking spaces.", "accept": ["150","one hundred and fifty"], "evidence": { "explanation": "There are 150 spaces." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q020", "prompt": "Cars without a permit receive a ______ notice.", "accept": ["warning"], "evidence": { "explanation": "Cars without a permit get a warning notice." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q021", "prompt": "Repeated offences may result in a fine of ______.", "accept": ["£20","20 pounds"], "evidence": { "explanation": "The fine is £20." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q022", "prompt": "A main course in the canteen costs ______.", "accept": ["£3.50","3.50"], "evidence": { "explanation": "A main course costs £3.50." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q023", "prompt": "Complaints about the canteen should be made to the Facilities ______.", "accept": ["Manager"], "evidence": { "explanation": "Complaints go to the Facilities Manager." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0023-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0023-q024", "question": "Who issues parking permits?", "options": ["The Facilities Office","The HR department","Security","The Facilities Manager"], "correctIndex": 0, "evidence": { "explanation": "Permits are issued by the Facilities Office." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0023-q025", "question": "When are hot meals served?", "options": ["7:30am to 11:30am","11:30am to 2:00pm","2:00pm to 3:00pm","All day"], "correctIndex": 1, "evidence": { "explanation": "Hot meals are served from 11:30am to 2:00pm." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0023-q026", "question": "Where is cycle storage located?", "options": ["Behind Building B","Near the main gate","In the canteen","On the production floor"], "correctIndex": 1, "evidence": { "explanation": "Secure cycle storage is near the main gate." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0023-p3",
+    "title": "The Story of the Elevator",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Most of us step into an elevator without a second thought. Yet this simple machine has changed the shape of our cities, making it possible for people to live and work in buildings hundreds of metres tall. Without elevators, there would be no skyscrapers, and the skylines of cities around the world would look very different.\n\nB. Lifting devices are very old. The ancient Roman writer Vitruvius records that the Greek scientist Archimedes built a lifting machine in the third century BC, using ropes and pulleys. In the Colosseum in Rome, platforms operated by teams of workers and animals raised wild animals from underground rooms to the arena. In later centuries, similar lifts were used in mines and castles, but they were powered by people, animals or water.\n\nC. The great problem was safety. Lifts were held up by ropes, and if a rope broke, the platform crashed to the ground. In 1853, the American inventor Elisha Otis solved this by developing a safety brake, a spring-loaded device that clamped the platform to the guide rails if the rope failed. At the New York Crystal Palace exhibition, he stood on a platform, raised it high, and ordered the rope to be cut. The brake held, and people began to trust elevators.\n\nD. The first passenger elevator in a shop opened in 1857, in a department store in New York. Steam power was used at first, and then hydraulic power, which was smoother and quicker. In 1880, the German inventor Werner von Siemens built the first electric elevator, which was faster and more efficient still, and allowed buildings to be taller. Buildings of ten storeys and more began to appear in American cities.\n\nE. By the end of the nineteenth century, the elevator and the steel frame together made the skyscraper possible. Architects could now design offices that rose above the noise and dirt of the streets, and the price of land, which was expensive in city centres, made building upwards attractive. In the twentieth century, elevators became faster, quieter and easier to control, with automatic doors and computers that decide which car should answer a call.\n\nF. Today, elevators carry billions of passengers a year, and they are considered to be among the safest forms of transport. Some of the fastest, in the world's tallest buildings, travel at over 70 kilometres per hour, and can carry passengers to the top of a skyscraper in about a minute. Designers are now working on elevators that move sideways as well as up and down, and on cable-free systems that could allow even taller buildings.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0023-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An everyday machine that shaped cities" },
+            { "key": "ii", "label": "Lifting in the ancient world" },
+            { "key": "iii", "label": "The brake that won trust" },
+            { "key": "iv", "label": "Steam, water and electricity" },
+            { "key": "v", "label": "The elevator and the skyscraper" },
+            { "key": "vi", "label": "Speed and the future" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0023-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the elevator and its effect on cities." } },
+            { "kind": "matching", "id": "generated-reading-general-0023-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes early lifting machines." } },
+            { "kind": "matching", "id": "generated-reading-general-0023-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Otis's safety brake." } },
+            { "kind": "matching", "id": "generated-reading-general-0023-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the sources of power." } },
+            { "kind": "matching", "id": "generated-reading-general-0023-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes modern speeds and future developments." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0023-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q032", "statement": "Archimedes built a lifting machine using ropes and pulleys.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this, according to Vitruvius." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q033", "statement": "Elisha Otis invented the first lift.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says he invented the safety brake, and lifts existed before." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q034", "statement": "Otis demonstrated his brake at the New York Crystal Palace exhibition.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q035", "statement": "The first electric elevator was built by Werner von Siemens in 1880.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0023-q036", "statement": "Elevators are considered a dangerous form of transport.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says they are among the safest." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0023-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0023-q037", "prompt": "In the Colosseum, platforms raised wild ______ from underground rooms.", "accept": ["animals"], "evidence": { "explanation": "Paragraph B says wild animals." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q038", "prompt": "Otis's safety brake clamped the platform to the guide ______ if the rope failed.", "accept": ["rails"], "evidence": { "explanation": "Paragraph C says guide rails." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q039", "prompt": "The first passenger elevator in a shop opened in ______.", "accept": ["1857"], "evidence": { "explanation": "Paragraph D gives 1857." } },
+            { "kind": "completion", "id": "generated-reading-general-0023-q040", "prompt": "Some elevators travel at over ______ kilometres per hour.", "accept": ["70","seventy"], "evidence": { "explanation": "Paragraph F says over 70." } }
+          ]
+        }
+      ]
+    }
   }
 ];
