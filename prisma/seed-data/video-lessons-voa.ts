@@ -303,4 +303,35 @@ export const VOA_VIDEO_LESSONS: VideoLessonSeed[] = [
       },
     },
   },
+  {
+    slug: "you-know-fillers-and-fluency",
+    title: "Fillers, 'You Know' and Fluency",
+    topic: "Speaking",
+    tags: ["video-lesson", "speaking", "fluency", "part-2", "part-3"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "What fillers such as 'you know' do in speech, when they hurt your Fluency score, and what to say instead of freezing.",
+      keyPoints: [
+        "Fillers such as 'um', 'like' and 'you know' buy thinking time, and everyone uses some.",
+        "The problem is frequency and habit: constant fillers or long silences lower Fluency and Coherence.",
+        "Replace a blank pause with a short discourse marker: 'well', 'to be honest', 'let me think'.",
+        "'You know' checks that the listener shares your knowledge; it is a casual habit in formal answers.",
+        "Practise by recording a one-minute answer and counting your fillers.",
+      ],
+      transcript: [
+        "Every speaker uses fillers. Words and sounds such as 'um', 'er', 'like' and 'you know' fill the space while the brain finds the next idea, and native speakers use them all the time. So the first thing to know about fillers is that they are not, by themselves, a mistake.",
+        "The problem for an exam candidate is frequency and habit. The Fluency and Coherence descriptor rewards speech that flows without noticeable effort, and it lowers the band for speakers who hesitate a lot to search for words or who keep repeating themselves. A filler used once or twice in an answer is invisible. A filler after every clause, or a long silence, is heard.",
+        "The useful skill is to replace a blank pause with a short phrase that sounds like part of the answer. 'Well,' 'to be honest,' 'that's a good question,' and 'let me think' all give you two or three seconds and sound natural. In Part 2, a phrase such as 'what I remember most is' both buys time and signals structure.",
+        "'You know' has a specific job. It checks that the listener shares the background knowledge, or softens a statement. In casual conversation, that is fine. In an exam answer, a repeated 'you know' can sound like a habit, and it also asks the examiner to agree, when your job is to explain. Use it rarely, and try to explain the point instead.",
+        "The best way to reduce fillers is to notice them. Record a one-minute answer on a Part 2 topic, listen back, and count. Then answer the same question again, replacing each filler with a pause or a short marker. Most learners find the count drops quickly, and that the pauses sound calmer than they feared.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "d6BoxNA4yes",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
 ];

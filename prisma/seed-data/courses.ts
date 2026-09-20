@@ -55,7 +55,7 @@ export const COURSES: CourseSeed[] = [
           title: "Writing an introduction that states a position",
           summary:
             "Paraphrase the question, state your view in one sentence, and avoid the padding that wastes your word count.",
-          videoSlug: "writing-task-2-strong-thesis",
+          href: "/ielts/tips/task-2-thesis-statement",
         },
         {
           title: "Developing a body paragraph properly",
@@ -103,7 +103,13 @@ export const COURSES: CourseSeed[] = [
           title: "What fluency actually means in IELTS",
           summary:
             "Why hesitation isn't automatically penalised, and what examiners are really listening for.",
-          videoSlug: "how-examiners-score-speaking",
+          href: "/ielts/tips/how-examiners-mark-speaking",
+        },
+        {
+          title: "Fillers, hesitation and fluency",
+          summary:
+            "Why 'you know' and 'um' are not all bad, when they hurt, and what to say instead. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "you-know-fillers-and-fluency",
         },
         {
           title: "Part 1: extending without rambling",
