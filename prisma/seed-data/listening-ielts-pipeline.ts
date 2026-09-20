@@ -5852,5 +5852,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0023-s1",
+    "title": "Furniture Delivery Enquiry – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Furniture Delivery Enquiry – Listening Section 1",
+      "transcript": "Assistant: Good afternoon, Hartley Furniture. How can I help?\nCaller: Hello, I ordered a sofa last week and I'd like to arrange delivery.\nAssistant: Of course. Could I have your surname, please?\nCaller: It's Okafor, that's O-K-A-F-O-R.\nAssistant: Thank you, Mrs Okafor. I can see your order: a three-seater sofa in grey.\nCaller: That's right. What was the total price again?\nAssistant: The sofa is £450, and there's a delivery charge of £25.\nCaller: Fine. When can you bring it?\nAssistant: We have a van in your area on Thursday. The delivery window is between nine and twelve in the morning.\nCaller: Thursday is perfect. Will the delivery men carry it upstairs? I live on the third floor.\nAssistant: Yes, they'll carry it to any floor, and they can take away your old sofa if you like, at no extra cost.\nCaller: That would be very helpful. My address is fourteen Willow Lane.\nAssistant: Fourteen Willow Lane. And a contact number for the driver?\nCaller: 07700 900412.\nAssistant: Thank you. You'll receive a text message the evening before the delivery.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0023-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0023-q001", "prompt": "Surname: ______.", "accept": ["Okafor"], "evidence": { "explanation": "The caller spells O-K-A-F-O-R." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q002", "prompt": "Item ordered: a three-seater ______.", "accept": ["sofa"], "evidence": { "explanation": "The order is a three-seater sofa." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q003", "prompt": "Colour: ______.", "accept": ["grey","gray"], "evidence": { "explanation": "The sofa is grey." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q004", "prompt": "Price of the sofa: £______.", "accept": ["450"], "evidence": { "explanation": "The sofa is £450." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q005", "prompt": "Delivery charge: £______.", "accept": ["25"], "evidence": { "explanation": "The delivery charge is £25." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q006", "prompt": "Delivery day: ______.", "accept": ["Thursday"], "evidence": { "explanation": "Delivery is on Thursday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q007", "prompt": "Delivery window: between nine and ______ in the morning.", "accept": ["twelve","12"], "evidence": { "explanation": "The window is between nine and twelve." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q008", "prompt": "Floor the caller lives on: the ______ floor.", "accept": ["third","3rd","3"], "evidence": { "explanation": "The caller lives on the third floor." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q009", "prompt": "Address: fourteen ______ Lane.", "accept": ["Willow"], "evidence": { "explanation": "The address is fourteen Willow Lane." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q010", "prompt": "Contact number: ______.", "accept": ["07700 900412"], "evidence": { "explanation": "The caller gives 07700 900412." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0023-s2",
+    "title": "Botanic Garden Guided Tour – Listening Section 2",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Botanic Garden Guided Tour – Listening Section 2",
+      "transcript": "Welcome to the Botanic Garden. Before we begin the guided tour, here is some useful information.\n\nThe garden was founded in 1846 and covers about forty hectares. It is home to more than eight thousand different kinds of plant, from all over the world.\n\nThe garden is open every day from nine in the morning until six in the evening. Tickets cost £8 for adults, and the guided tour, which lasts ninety minutes, is included in the price. Tours leave from the main gate at half past ten and at two o'clock.\n\nThe highlight for many visitors is the glasshouse, where we grow tropical plants, including a giant water lily. It is kept at a temperature of twenty-eight degrees, so you may want to take off your coat. The rose garden is at its best in June, and the herb garden, which is next to the café, is popular with children because they are allowed to touch and smell the plants.\n\nPlease stay on the paths, and do not pick any flowers. Dogs are not allowed in the glasshouse, but they may walk in the rest of the garden on a lead. Now, if you'd like to follow me.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0023-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0023-q011", "prompt": "The garden was founded in ______.", "accept": ["1846"], "evidence": { "explanation": "The speaker says 1846." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q012", "prompt": "The garden covers about ______ hectares.", "accept": ["forty","40"], "evidence": { "explanation": "The speaker says about forty hectares." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q013", "prompt": "Plants from more than ______ kinds are grown.", "accept": ["eight thousand","8000","8,000"], "evidence": { "explanation": "The speaker says more than eight thousand kinds." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q014", "prompt": "Adult tickets cost £______.", "accept": ["8","eight"], "evidence": { "explanation": "The speaker says £8." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q015", "prompt": "The guided tour lasts ______ minutes.", "accept": ["ninety","90"], "evidence": { "explanation": "The speaker says ninety minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q016", "prompt": "The glasshouse is kept at ______ degrees.", "accept": ["twenty-eight","twenty eight","28"], "evidence": { "explanation": "The speaker says twenty-eight degrees." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0023-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q017", "question": "Where do the guided tours start?", "options": ["The main gate","The café","The glasshouse","The rose garden"], "correctIndex": 0, "evidence": { "explanation": "Tours leave from the main gate." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q018", "question": "What can be found in the glasshouse?", "options": ["Herbs","A giant water lily","Roses","A children's playground"], "correctIndex": 1, "evidence": { "explanation": "The glasshouse has a giant water lily." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q019", "question": "Which part of the garden is next to the café?", "options": ["The rose garden","The glasshouse","The herb garden","The main gate"], "correctIndex": 2, "evidence": { "explanation": "The herb garden is next to the café." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q020", "question": "What are visitors asked not to do?", "options": ["Walk on the paths","Take photographs","Bring dogs on a lead","Pick any flowers"], "correctIndex": 3, "evidence": { "explanation": "Visitors are asked not to pick flowers." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0023-s3",
+    "title": "Planning a Group Presentation – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Group Presentation – Listening Section 3",
+      "transcript": "Dr Patel: Sam, let's go through your plan for the group presentation. What's the topic?\nSam: Our group has chosen the effects of noise pollution on wildlife.\nDr Patel: A good choice. How long will the presentation be?\nSam: Fifteen minutes, followed by five minutes for questions.\nDr Patel: And how are you dividing the work?\nSam: There are four of us. I'll introduce the topic, two others will present the findings, and Leila will give the conclusion.\nDr Patel: Sensible. What about visual aids?\nSam: We'll use slides for the main points. I'd like to keep the text short, so that people listen rather than read.\nDr Patel: Good. You could also give the audience a handout with the sources, so that they can follow up on their own.\nSam: That's a great idea. We also thought of playing a short recording of traffic noise as a demonstration.\nDr Patel: I like that, but check the room equipment first. The sound system in Room 4 is unreliable.\nSam: We'll test it on Monday. When is the presentation?\nDr Patel: Wednesday of next week. Please send me the slides by Tuesday afternoon.\nSam: We will. Thank you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0023-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q021", "question": "What is the topic of the group's presentation?", "options": ["Noise pollution and wildlife","Traffic in cities","Air quality","Sound in music"], "correctIndex": 0, "evidence": { "explanation": "Sam says the effects of noise pollution on wildlife." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q022", "question": "How long will the presentation itself last?", "options": ["Ten minutes","Fifteen minutes","Twenty minutes","Twenty-five minutes"], "correctIndex": 1, "evidence": { "explanation": "Sam says fifteen minutes, plus five for questions." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q023", "question": "How many students are in the group?", "options": ["Three","Four","Five","Six"], "correctIndex": 1, "evidence": { "explanation": "Sam says there are four of them." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q024", "question": "Who will give the conclusion?", "options": ["Sam","Dr Patel","Leila","Nobody has been chosen"], "correctIndex": 2, "evidence": { "explanation": "Leila will give the conclusion." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q025", "question": "Why does Dr Patel warn the group about Room 4?", "options": ["It is too small","The sound system is unreliable","It is booked on Wednesday","It has no screen"], "correctIndex": 1, "evidence": { "explanation": "Dr Patel says the sound system in Room 4 is unreliable." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q026", "question": "When must the slides be sent to Dr Patel?", "options": ["Monday","Tuesday afternoon","Wednesday morning","Friday"], "correctIndex": 1, "evidence": { "explanation": "Dr Patel asks for the slides by Tuesday afternoon." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0023-s3-g2",
+          "instructions": "Which feature does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Slides" },
+            { "key": "B", "label": "Handout" },
+            { "key": "C", "label": "Recording" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0023-q027", "prompt": "Will contain short text for the main points", "answer": "A", "evidence": { "explanation": "Sam wants to keep the slide text short." } },
+            { "kind": "matching", "id": "generated-listening-academic-0023-q028", "prompt": "Lists sources for further reading", "answer": "B", "evidence": { "explanation": "Dr Patel suggests a handout with the sources." } },
+            { "kind": "matching", "id": "generated-listening-academic-0023-q029", "prompt": "Gives a demonstration of traffic noise", "answer": "C", "evidence": { "explanation": "Sam suggests a short recording of traffic noise." } },
+            { "kind": "matching", "id": "generated-listening-academic-0023-q030", "prompt": "Will be tested on Monday", "answer": "C", "evidence": { "explanation": "The sound system, needed for the recording, will be tested on Monday." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0023-s4",
+    "title": "The Origins of Coffee – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "food", "note-completion"],
+    "data": {
+      "audioLabel": "The Origins of Coffee – Listening Section 4",
+      "transcript": "Today's lecture looks at the history of coffee, one of the most widely traded products in the world.\n\nAccording to a popular legend, coffee was discovered in Ethiopia by a goatherd named Kaldi, who noticed that his goats became lively after eating the berries of a certain shrub. Historians cannot confirm the story, but coffee plants are native to Ethiopia.\n\nThe first reliable evidence of coffee drinking comes from the fifteenth century, in Sufi monasteries in Yemen, where monks drank it to stay awake during night-time prayers. The Yemeni port of Mocha became the centre of the trade, and gave its name to a type of coffee.\n\nCoffee spread across the Middle East, and coffee houses opened in cities such as Cairo and Istanbul, where they became places for conversation, music and news. It reached Europe in the seventeenth century, and the first coffee house in England opened in Oxford in 1650.\n\nThe Dutch and the French then began growing coffee in their colonies. Today, coffee is grown in more than seventy countries, and Brazil is the largest producer. Most of the world's coffee comes from two species, called Arabica and Robusta. Arabica is considered to have the finer flavour, while Robusta contains more caffeine and is easier to grow.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0023-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0023-q031", "prompt": "According to legend, coffee was discovered by a ______ named Kaldi.", "accept": ["goatherd"], "evidence": { "explanation": "The lecturer says a goatherd named Kaldi." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q032", "prompt": "Coffee plants are native to ______.", "accept": ["Ethiopia"], "evidence": { "explanation": "The lecturer says Ethiopia." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q033", "prompt": "The first reliable evidence of coffee drinking comes from the ______ century.", "accept": ["fifteenth","15th"], "evidence": { "explanation": "The lecturer says the fifteenth century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q034", "prompt": "Monks in Yemen drank coffee to stay awake during night-time ______.", "accept": ["prayers"], "evidence": { "explanation": "The lecturer says night-time prayers." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q035", "prompt": "The port of ______ gave its name to a type of coffee.", "accept": ["Mocha"], "evidence": { "explanation": "The lecturer names Mocha." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q036", "prompt": "Coffee houses opened in Cairo and ______.", "accept": ["Istanbul"], "evidence": { "explanation": "The lecturer names Cairo and Istanbul." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q037", "prompt": "The first coffee house in England opened in ______.", "accept": ["Oxford"], "evidence": { "explanation": "The lecturer says Oxford." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q038", "prompt": "Coffee is now grown in more than ______ countries.", "accept": ["seventy","70"], "evidence": { "explanation": "The lecturer says more than seventy countries." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q039", "prompt": "The largest producer of coffee is ______.", "accept": ["Brazil"], "evidence": { "explanation": "The lecturer says Brazil." } },
+            { "kind": "completion", "id": "generated-listening-academic-0023-q040", "prompt": "Robusta contains more ______ than Arabica.", "accept": ["caffeine"], "evidence": { "explanation": "The lecturer says Robusta contains more caffeine." } }
+          ]
+        }
+      ]
+    }
   }
 ];
