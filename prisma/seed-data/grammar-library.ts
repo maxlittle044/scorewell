@@ -552,4 +552,46 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     practiceSlug: "dependent-prepositions-practice",
     tags: ["grammar", "prepositions", "task2"],
   },
+  {
+    slug: "quantifiers-and-amounts",
+    title: "Quantifiers and amounts",
+    category: "Nouns",
+    summary: "Many or much, few or a few, fewer or less, the number of or the amount of: describing quantity accurately.",
+    explanation: [
+      "Quantifiers such as many, much, few, little and some tell us how much or how many. Which one you choose depends on whether the noun is countable or uncountable. Use 'many', 'few' and 'fewer' with countable nouns ('many students', 'fewer cars'), and 'much', 'little' and 'less' with uncountable nouns ('much water', 'less traffic').",
+      "'Few' and 'little' are negative: they mean 'not enough'. 'A few' and 'a little' are positive: they mean 'some, and that is helpful'. 'Few people attended' suggests disappointment, while 'a few people attended' suggests a reasonable turnout.",
+      "'The number of' goes with countable nouns, and 'the amount of' goes with uncountable ones: 'the number of students', 'the amount of pollution'. Watch the verb, too. 'The number of students is rising' takes a singular verb, but 'a number of students are studying abroad' takes a plural verb, because 'a number of' means 'several'.",
+      "In statements, 'a lot of' and 'lots of' are natural in speech, but 'many' and 'much' are usually preferred in formal writing: 'Many people believe...' is more academic than 'A lot of people think...'. 'Much' is mainly used in negatives and questions ('there isn't much time', 'how much water?'). In positive statements, 'a great deal of' or 'a lot of' is usually more natural: 'a great deal of research has been done'.",
+      "For Task 1, precision with quantity words matters. 'Fewer' and 'less' are often confused, and so are 'the majority', 'a minority' and 'the proportion of'. Use 'fewer' for things you can count, 'less' for amounts, and 'the proportion of' or 'the percentage of' when you are giving a share, not a number.",
+    ],
+    examples: [
+      {
+        wrong: "The amount of students in the city has risen steadily.",
+        right: "The number of students in the city has risen steadily.",
+        note: "'Students' are countable, so the phrase is 'the number of'.",
+      },
+      {
+        wrong: "There are less cars on the road than ten years ago.",
+        right: "There are fewer cars on the road than ten years ago.",
+        note: "'Cars' can be counted, so use 'fewer'.",
+      },
+      {
+        wrong: "Few people came to the lecture, so we were very pleased.",
+        right: "A few people came to the lecture, so we were pleased.",
+        note: "'Few' is negative in meaning. A positive result needs 'a few'.",
+      },
+      {
+        wrong: "A number of students is studying abroad.",
+        right: "A number of students are studying abroad.",
+        note: "'A number of' means 'several' and takes a plural verb.",
+      },
+      {
+        right: "The number of visitors fell, and the amount of money they spent fell with it.",
+        note: "One countable and one uncountable noun in a single Task 1 sentence.",
+      },
+    ],
+    ieltsNote:
+      "Task 1 is full of counts and amounts, so 'the number of' versus 'the amount of' and 'fewer' versus 'less' are checked in almost every answer, and errors are easy to spot. In Task 2, 'few' and 'a few' change the tone of a sentence, and the choice between 'many' and 'a lot of' contributes to the formal register that examiners expect.",
+    tags: ["grammar", "nouns", "task1"],
+  },
 ];
