@@ -3175,4 +3175,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 20,
     },
   },
+
+  // ---- More Task 2 essays (money education, young entrepreneurs, school sport, returning artefacts,
+  // vegetarian diets, teamwork, university entrance, self-driving cars, bilingual education, celebrity ads) ----
+  {
+    slug: "task2-financial-education-in-schools",
+    title: "Task 2: Teaching money management at school",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "finance", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that schools should teach students how to manage money, including saving, budgeting and borrowing. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-young-entrepreneurs",
+    title: "Task 2: Starting a business at a young age",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "young-people", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "More young people are choosing to start their own businesses instead of taking a job with an established company. What are the advantages and disadvantages of this trend?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-compulsory-school-sport",
+    title: "Task 2: Compulsory sport in schools",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "health", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that all children should be required to take part in sport at school, while others believe it should be a choice. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-returning-cultural-artefacts",
+    title: "Task 2: Returning artefacts to their country of origin",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "museums", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Many museums hold cultural objects that were taken from other countries in the past. Some people believe these objects should be returned to their countries of origin. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-rise-of-vegetarian-diets",
+    title: "Task 2: The growth of vegetarian diets",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "environment", "two-part"],
+    kind: "test",
+    data: {
+      prompt:
+        "More people are choosing to eat less meat or none at all. Why is this happening, and is it a positive or negative development?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-teamwork-versus-individual-work",
+    title: "Task 2: Teamwork or individual work?",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "society", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people think that employees achieve more when they work in a team, while others believe that individuals perform better on their own. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-university-entrance-exams",
+    title: "Task 2: How universities should select students",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "assessment", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that a single national exam is the fairest way to decide who enters university, while others think that other factors, such as interviews and school records, should also be considered. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-self-driving-cars",
+    title: "Task 2: Cars that drive themselves",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "transport", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Vehicles that drive themselves are being developed and tested in many countries. What are the advantages and disadvantages of self-driving cars?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-bilingual-education",
+    title: "Task 2: Teaching children in two languages",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "language", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "In some countries, children are taught in two languages at school, but this can cause difficulties for some students and teachers. What problems can this cause, and what solutions can you suggest?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-celebrity-endorsements",
+    title: "Task 2: Celebrities in advertising",
+    taskType: "task2",
+    topic: "Media",
+    tags: ["writing", "task-2", "media", "advertising", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Companies often use famous people to advertise their products. Some people think this is an effective way of selling goods, while others believe it has a negative influence on consumers. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
