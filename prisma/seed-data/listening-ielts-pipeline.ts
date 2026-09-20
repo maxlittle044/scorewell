@@ -6380,5 +6380,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0027-s1",
+    "title": "Cinema Club Enquiry – Listening Section 1",
+    "topic": "Entertainment",
+    "tags": ["academic", "entertainment", "form-completion"],
+    "data": {
+      "audioLabel": "Cinema Club Enquiry – Listening Section 1",
+      "transcript": "Assistant: Good afternoon, Regent Cinema. How can I help?\nCaller: Hello, I saw an advertisement for your cinema club, and I'd like some information.\nAssistant: Of course. Members pay a fee of £60 for a year, and then they can buy tickets for £6 instead of the usual £10.\nCaller: That's a good saving. Do members get anything else?\nAssistant: Yes, a free ticket in the month of your birthday, and twenty per cent off popcorn and drinks.\nCaller: Wonderful. I'd like to join. My surname is Iverson, I-V-E-R-S-O-N.\nAssistant: Thank you, Mr Iverson. When would you like your membership to start?\nCaller: On the first of June, please.\nAssistant: Fine. Your card will be sent by post, and it should arrive within seven days.\nCaller: Can I use it at your other cinemas?\nAssistant: Not at the moment. It can only be used here, at the Regent.\nCaller: I see. I'll pay by card.\nAssistant: Certainly. And may I have an email address for confirmation?\nCaller: It's iverson dot mark at mailbox dot com.\nAssistant: Thank you very much.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0027-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0027-q001", "prompt": "Annual membership fee: £______.", "accept": ["60"], "evidence": { "explanation": "The fee is £60 for a year." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q002", "prompt": "Member ticket price: £______.", "accept": ["6","six"], "evidence": { "explanation": "Members pay £6." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q003", "prompt": "Usual ticket price: £______.", "accept": ["10","ten"], "evidence": { "explanation": "The usual price is £10." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q004", "prompt": "Free ticket in the month of your ______.", "accept": ["birthday"], "evidence": { "explanation": "Members get a free ticket in the month of their birthday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q005", "prompt": "Discount on popcorn and drinks: ______ per cent.", "accept": ["twenty","20"], "evidence": { "explanation": "The discount is twenty per cent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q006", "prompt": "Surname: ______.", "accept": ["Iverson"], "evidence": { "explanation": "The caller spells I-V-E-R-S-O-N." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q007", "prompt": "Membership start date: the first of ______.", "accept": ["June"], "evidence": { "explanation": "The caller wants to start on the first of June." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q008", "prompt": "The card will be sent by ______.", "accept": ["post"], "evidence": { "explanation": "The card will be sent by post." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q009", "prompt": "The card should arrive within ______ days.", "accept": ["seven","7"], "evidence": { "explanation": "The card should arrive within seven days." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q010", "prompt": "The card can only be used at the ______.", "accept": ["Regent"], "evidence": { "explanation": "It can only be used at the Regent." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0027-s2",
+    "title": "Zoo Visitor Guide – Listening Section 2",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Zoo Visitor Guide – Listening Section 2",
+      "transcript": "Welcome to Riverbend Zoo. Here is some information to help you enjoy your day.\n\nThe zoo opens at half past nine and closes at five o'clock. Admission costs £16 for adults and £10 for children, and children under three enter free. There is free parking for all visitors, and a map is included with your ticket.\n\nThe zoo has more than three hundred animals. The penguin feeding session is at half past eleven, and the giant tortoises are fed at two o'clock. The children's farm, where young visitors can stroke rabbits and goats, is open until four.\n\nPlease note that the reptile house is closed for renovation until July. The new elephant enclosure, which opened last spring, is the largest in the region, and it is home to a family of five elephants.\n\nThere are two cafés: one near the entrance, and a smaller one beside the lake, which is open only in summer. Please do not feed the animals, as this can make them ill, and please keep to the paths. Thank you, and enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0027-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0027-q011", "prompt": "Adult admission costs £______.", "accept": ["16","sixteen"], "evidence": { "explanation": "The speaker says £16." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q012", "prompt": "Children under ______ enter free.", "accept": ["three","3"], "evidence": { "explanation": "The speaker says under three." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q013", "prompt": "The zoo has more than ______ animals.", "accept": ["three hundred","300"], "evidence": { "explanation": "The speaker says more than three hundred animals." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q014", "prompt": "The penguin feeding session is at half past ______.", "accept": ["eleven","11"], "evidence": { "explanation": "The session is at half past eleven." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q015", "prompt": "The children's farm is open until ______ o'clock.", "accept": ["four","4"], "evidence": { "explanation": "The farm is open until four." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q016", "prompt": "The elephant enclosure is home to a family of ______ elephants.", "accept": ["five","5"], "evidence": { "explanation": "The speaker says five elephants." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0027-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q017", "question": "What is free for all visitors?", "options": ["Parking","Food","Tours","Map hire"], "correctIndex": 0, "evidence": { "explanation": "Parking is free for all visitors." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q018", "question": "What time are the giant tortoises fed?", "options": ["Half past eleven","Two o'clock","Four o'clock","Five o'clock"], "correctIndex": 1, "evidence": { "explanation": "The tortoises are fed at two o'clock." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q019", "question": "Which part of the zoo is closed until July?", "options": ["The elephant enclosure","The reptile house","The children's farm","The lake café"], "correctIndex": 1, "evidence": { "explanation": "The reptile house is closed for renovation until July." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q020", "question": "Why should visitors not feed the animals?", "options": ["It is expensive","It can make them ill","It is against the law","They are not hungry"], "correctIndex": 1, "evidence": { "explanation": "The speaker says feeding can make animals ill." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0027-s3",
+    "title": "Group Project Progress Meeting – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Group Project Progress Meeting – Listening Section 3",
+      "transcript": "Dr Mbeki: Jonas, thanks for coming. How is your group's project on urban gardening going?\nJonas: Generally well, though we're a little behind schedule.\nDr Mbeki: What's causing the delay?\nJonas: Omar was ill last week, so the interviews with the community gardeners are late.\nDr Mbeki: I see. How many interviews are planned?\nJonas: Eight. Omar has done three, and he'll do the rest by Friday.\nDr Mbeki: Good. Who is doing what?\nJonas: Leila is collecting data on the vegetables grown, Omar is doing the interviews, and I'm writing the introduction and the final report.\nDr Mbeki: A sensible division. Are you all contributing equally?\nJonas: Yes, although Leila has done slightly more, because she also made the graphs.\nDr Mbeki: Keep a record of who does what, because I'll ask each of you to write a short reflection.\nJonas: We'll do that. Should we send you a draft?\nDr Mbeki: Yes, please send it by the twentieth. Then we can discuss it at our next meeting.\nJonas: Will that be next month?\nDr Mbeki: Yes, in the first week of next month.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0027-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q021", "question": "What is the topic of the group's project?", "options": ["Urban gardening","Public transport","Recycling","Housing"], "correctIndex": 0, "evidence": { "explanation": "Jonas says the project is on urban gardening." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q022", "question": "Why is the group behind schedule?", "options": ["The library was closed","Omar was ill","Jonas lost some data","The topic was changed"], "correctIndex": 1, "evidence": { "explanation": "Omar was ill last week." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q023", "question": "How many interviews are planned in total?", "options": ["Three","Five","Eight","Twelve"], "correctIndex": 2, "evidence": { "explanation": "Jonas says eight." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q024", "question": "When will Omar finish the interviews?", "options": ["Tomorrow","By Friday","Next week","Next month"], "correctIndex": 1, "evidence": { "explanation": "Omar will do the rest by Friday." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q025", "question": "What will Dr Mbeki ask each student to write?", "options": ["A short reflection","A new proposal","A book review","An email"], "correctIndex": 0, "evidence": { "explanation": "She will ask each student to write a short reflection." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0027-q026", "question": "By when should the draft be sent?", "options": ["The tenth","The fifteenth","The twentieth","The thirtieth"], "correctIndex": 2, "evidence": { "explanation": "Dr Mbeki asks for the draft by the twentieth." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0027-s3-g2",
+          "instructions": "Which student is responsible for each task? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Jonas" },
+            { "key": "B", "label": "Leila" },
+            { "key": "C", "label": "Omar" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0027-q027", "prompt": "Collecting data on the vegetables grown", "answer": "B", "evidence": { "explanation": "Leila is collecting data on the vegetables grown." } },
+            { "kind": "matching", "id": "generated-listening-academic-0027-q028", "prompt": "Interviewing the community gardeners", "answer": "C", "evidence": { "explanation": "Omar is doing the interviews." } },
+            { "kind": "matching", "id": "generated-listening-academic-0027-q029", "prompt": "Writing the final report", "answer": "A", "evidence": { "explanation": "Jonas is writing the introduction and the final report." } },
+            { "kind": "matching", "id": "generated-listening-academic-0027-q030", "prompt": "Making the graphs", "answer": "B", "evidence": { "explanation": "Leila also made the graphs." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0027-s4",
+    "title": "How Whales Communicate – Listening Section 4",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "note-completion"],
+    "data": {
+      "audioLabel": "How Whales Communicate – Listening Section 4",
+      "transcript": "Today's lecture looks at how whales use sound to communicate, and why it is so important to them.\n\nIn the ocean, light does not travel far, but sound travels well, about four times faster in water than in air. Whales have therefore developed a sophisticated use of sound, which they use to find food, to navigate and to keep in touch with one another across long distances.\n\nThere are two main groups. Baleen whales, such as blue and humpback whales, filter tiny animals from the water and communicate mainly with low-pitched sounds. The blue whale's call, which can reach more than 180 decibels, is thought to be the loudest made by any animal, and it can travel for many kilometres.\n\nThe humpback whale is famous for its songs. Only males sing, and their songs, which can last for ten to twenty minutes, are repeated for hours. All the males in one population sing the same song, and it gradually changes over the years, so that a song from one year may be very different from that of several years earlier. Scientists believe the songs may play a part in attracting females.\n\nToothed whales, such as sperm whales and dolphins, use sound differently. They produce rapid clicks and listen for the echoes, which allows them to build a picture of their surroundings, a process called echolocation. Sperm whales also communicate with patterns of clicks called codas, which appear to identify each family group.\n\nHuman activity is a growing problem. Noise from ships and sonar can mask whale calls and cause stress, and some species have been forced to change the pitch or volume of their calls.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0027-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0027-q031", "prompt": "Sound travels about ______ times faster in water than in air.", "accept": ["four","4"], "evidence": { "explanation": "The lecturer says about four times faster." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q032", "prompt": "Blue and humpback whales belong to the group called ______ whales.", "accept": ["baleen"], "evidence": { "explanation": "The lecturer says baleen whales." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q033", "prompt": "The blue whale's call can reach more than ______ decibels.", "accept": ["180"], "evidence": { "explanation": "The lecturer says more than 180 decibels." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q034", "prompt": "Only ______ humpback whales sing.", "accept": ["male","males"], "evidence": { "explanation": "The lecturer says only males sing." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q035", "prompt": "Humpback songs can last for ______ minutes.", "accept": ["ten to twenty","10 to 20","10-20"], "evidence": { "explanation": "The lecturer says ten to twenty minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q036", "prompt": "The songs gradually change over the ______.", "accept": ["years"], "evidence": { "explanation": "The lecturer says they change over the years." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q037", "prompt": "Toothed whales use rapid ______ and listen for the echoes.", "accept": ["clicks"], "evidence": { "explanation": "The lecturer says rapid clicks." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q038", "prompt": "Finding one's way using echoes is called ______.", "accept": ["echolocation"], "evidence": { "explanation": "The lecturer names echolocation." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q039", "prompt": "Sperm whales communicate with patterns of clicks called ______.", "accept": ["codas"], "evidence": { "explanation": "The lecturer names codas." } },
+            { "kind": "completion", "id": "generated-listening-academic-0027-q040", "prompt": "Noise from ships and ______ can mask whale calls.", "accept": ["sonar"], "evidence": { "explanation": "The lecturer says ships and sonar." } }
+          ]
+        }
+      ]
+    }
   }
 ];
