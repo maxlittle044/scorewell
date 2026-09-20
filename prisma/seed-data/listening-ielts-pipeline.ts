@@ -5984,5 +5984,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0024-s1",
+    "title": "Theatre Ticket Booking – Listening Section 1",
+    "topic": "Entertainment",
+    "tags": ["academic", "entertainment", "form-completion"],
+    "data": {
+      "audioLabel": "Theatre Ticket Booking – Listening Section 1",
+      "transcript": "Clerk: Good morning, Riverside Theatre box office. How can I help?\nCaller: Hello, I'd like to book tickets for the musical Starlight, please.\nClerk: Certainly. Which day would you like?\nCaller: This coming Saturday, if there are seats left.\nClerk: Yes, the evening performance is available. It starts at eight o'clock.\nCaller: Good. I'd like four tickets. Can we sit together?\nClerk: I can offer you four seats together in Row F.\nCaller: That sounds fine. How much are they?\nClerk: They're £28 each, and there's a booking fee of £3 for the whole order.\nCaller: That's fine. Could I collect the tickets at the theatre?\nClerk: Yes, you can collect them from the box office up to thirty minutes before the show. May I have your surname?\nCaller: It's Hargreaves, H-A-R-G-R-E-A-V-E-S.\nClerk: Thank you, Mr Hargreaves. And a contact number?\nCaller: 07700 900278.\nClerk: Lovely, that's all booked.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0024-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0024-q001", "prompt": "Name of show: ______.", "accept": ["Starlight"], "evidence": { "explanation": "The caller asks for the musical Starlight." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q002", "prompt": "Day of performance: ______.", "accept": ["Saturday"], "evidence": { "explanation": "The caller wants this coming Saturday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q003", "prompt": "Start time: ______ o'clock.", "accept": ["eight","8"], "evidence": { "explanation": "The performance starts at eight o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q004", "prompt": "Number of tickets: ______.", "accept": ["four","4"], "evidence": { "explanation": "The caller wants four tickets." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q005", "prompt": "Seats are in Row ______.", "accept": ["F"], "evidence": { "explanation": "The seats are in Row F." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q006", "prompt": "Price of each ticket: £______.", "accept": ["28"], "evidence": { "explanation": "Tickets are £28 each." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q007", "prompt": "Booking fee: £______.", "accept": ["3","three"], "evidence": { "explanation": "The booking fee is £3." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q008", "prompt": "Collect the tickets from the ______ office.", "accept": ["box"], "evidence": { "explanation": "Tickets are collected from the box office." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q009", "prompt": "Surname: ______.", "accept": ["Hargreaves"], "evidence": { "explanation": "The caller spells H-A-R-G-R-E-A-V-E-S." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q010", "prompt": "Contact number: ______.", "accept": ["07700 900278"], "evidence": { "explanation": "The caller gives 07700 900278." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0024-s2",
+    "title": "Aquarium Visitor Information – Listening Section 2",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Aquarium Visitor Information – Listening Section 2",
+      "transcript": "Welcome to Coastline Aquarium. Here is some information to help you plan your visit.\n\nThe aquarium opens at half past nine and closes at five o'clock every day. Tickets cost £14 for adults, and there is a family ticket for £40, which admits two adults and two children.\n\nOur largest tank holds two million litres of water and is home to sharks, rays and turtles. You can walk through it in the glass tunnel, which is thirty metres long. Feeding shows take place twice a day, at quarter past eleven and at three o'clock, and they are presented by our divers in the largest tank.\n\nIn the touch pool, children can gently touch starfish and sea urchins, but please wash your hands afterwards. The gift shop is by the exit, and the café, which has a terrace overlooking the harbour, serves hot meals until four o'clock.\n\nPlease do not tap on the glass or use flash photography, as this can frighten the animals. Lockers for bags are available near the entrance for a £1 coin. Enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0024-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0024-q011", "prompt": "The aquarium opens at half past ______.", "accept": ["nine","9"], "evidence": { "explanation": "The speaker says half past nine." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q012", "prompt": "A family ticket costs £______.", "accept": ["40","forty"], "evidence": { "explanation": "The speaker says £40." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q013", "prompt": "The largest tank holds ______ litres of water.", "accept": ["two million","2 million","2,000,000"], "evidence": { "explanation": "The speaker says two million litres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q014", "prompt": "The glass tunnel is ______ metres long.", "accept": ["thirty","30"], "evidence": { "explanation": "The speaker says thirty metres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q015", "prompt": "The second feeding show is at ______ o'clock.", "accept": ["three","3"], "evidence": { "explanation": "The second show is at three o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q016", "prompt": "Bag lockers cost a £1 ______.", "accept": ["coin"], "evidence": { "explanation": "Lockers are available for a £1 coin." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0024-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q017", "question": "Who presents the feeding shows?", "options": ["Divers","Children","Visitors","Shop staff"], "correctIndex": 0, "evidence": { "explanation": "The shows are presented by divers." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q018", "question": "What can children touch in the touch pool?", "options": ["Sharks","Turtles","Starfish and sea urchins","Rays"], "correctIndex": 2, "evidence": { "explanation": "Children can touch starfish and sea urchins." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q019", "question": "Where is the gift shop?", "options": ["By the exit","Near the entrance","On the terrace","Beside the tunnel"], "correctIndex": 0, "evidence": { "explanation": "The gift shop is by the exit." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q020", "question": "What are visitors asked not to do?", "options": ["Use the lockers","Use flash photography","Visit the café","Bring children"], "correctIndex": 1, "evidence": { "explanation": "Visitors are asked not to use flash photography." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0024-s3",
+    "title": "Planning a Science Poster – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Science Poster – Listening Section 3",
+      "transcript": "Dr Okoye: Priya, how is your science poster coming along?\nPriya: Quite well. It's about how plants respond to different colours of light.\nDr Okoye: Excellent. Remind me how many plants you tested.\nPriya: Thirty, in three groups of ten, each under a different coloured light.\nDr Okoye: And what did you find?\nPriya: The plants under blue light grew the shortest, but they had the thickest leaves.\nDr Okoye: Interesting. How are you planning to show that?\nPriya: I'd like a bar chart, because it makes the comparison clear. I'm worried about the amount of text, though.\nDr Okoye: You're right to be. Posters should be read from about two metres away, so keep the text to a minimum, and make the title large enough to catch attention.\nPriya: Should I put the conclusion at the bottom?\nDr Okoye: I'd put it in a box on the right, where people will look after the chart. Also, add a photograph of your experimental setup.\nPriya: Good idea. When's the poster session?\nDr Okoye: Next Thursday at two o'clock in the main hall. You'll need to print the poster by Tuesday.\nPriya: I'll do that.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0024-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q021", "question": "What is the topic of Priya's poster?", "options": ["How plants respond to coloured light","How plants use water","How soil affects growth","How seeds travel"], "correctIndex": 0, "evidence": { "explanation": "Priya studied how plants respond to different colours of light." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q022", "question": "How many plants did Priya test?", "options": ["Ten","Twenty","Thirty","Forty"], "correctIndex": 2, "evidence": { "explanation": "Priya tested thirty plants." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q023", "question": "What did Priya find about plants under blue light?", "options": ["They grew tallest","They grew shortest but had the thickest leaves","They died","They had no leaves"], "correctIndex": 1, "evidence": { "explanation": "Plants under blue light grew shortest but had the thickest leaves." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q024", "question": "Why does Priya want a bar chart?", "options": ["It looks attractive","It makes the comparison clear","It is easy to draw","It needs no explanation"], "correctIndex": 1, "evidence": { "explanation": "She says it makes the comparison clear." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q025", "question": "From what distance should a poster be readable?", "options": ["One metre","Two metres","Five metres","Ten metres"], "correctIndex": 1, "evidence": { "explanation": "Dr Okoye says about two metres." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0024-q026", "question": "When must the poster be printed?", "options": ["Monday","Tuesday","Thursday","Friday"], "correctIndex": 1, "evidence": { "explanation": "Dr Okoye says by Tuesday." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0024-s3-g2",
+          "instructions": "Which part of the poster does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Title" },
+            { "key": "B", "label": "Bar chart" },
+            { "key": "C", "label": "Conclusion" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0024-q027", "prompt": "Should be large enough to catch attention", "answer": "A", "evidence": { "explanation": "Dr Okoye says the title should be large enough to catch attention." } },
+            { "kind": "matching", "id": "generated-listening-academic-0024-q028", "prompt": "Makes the comparison between groups clear", "answer": "B", "evidence": { "explanation": "Priya says the bar chart makes the comparison clear." } },
+            { "kind": "matching", "id": "generated-listening-academic-0024-q029", "prompt": "Should go in a box on the right", "answer": "C", "evidence": { "explanation": "Dr Okoye suggests putting the conclusion in a box on the right." } },
+            { "kind": "matching", "id": "generated-listening-academic-0024-q030", "prompt": "Placed where people will look after the chart", "answer": "C", "evidence": { "explanation": "Dr Okoye says the conclusion box goes on the right, where people look after the chart." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0024-s4",
+    "title": "The History of Telescopes – Listening Section 4",
+    "topic": "Science",
+    "tags": ["academic", "science", "history", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Telescopes – Listening Section 4",
+      "transcript": "Today's lecture looks at how the telescope changed our view of the universe.\n\nThe telescope was invented in the Netherlands. In 1608, a spectacle maker named Hans Lipperhey applied for a patent for a device that made distant objects look closer. Within a year, the Italian scientist Galileo Galilei had built his own version and improved it, and in 1610 he used it to discover four moons orbiting Jupiter, which was strong evidence that not everything circled the Earth.\n\nThese early instruments used lenses, and were called refracting telescopes. Their weakness was that lenses bent different colours of light differently, producing coloured fringes around bright objects. In 1668, Isaac Newton built a reflecting telescope, which used a curved mirror instead of a lens, and avoided this problem. Almost all large research telescopes today use mirrors.\n\nIn the twentieth century, astronomers realised that the atmosphere blurs starlight, so they placed telescopes in space. The Hubble Space Telescope was launched in 1990, and it has a mirror 2.4 metres wide. Its successor, the James Webb Space Telescope, launched in 2021, has a mirror 6.5 metres wide and observes mainly infrared light, which allows it to see very distant galaxies. It orbits about one and a half million kilometres from the Earth.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0024-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0024-q031", "prompt": "The telescope was invented in the ______.", "accept": ["Netherlands"], "evidence": { "explanation": "The lecturer says the Netherlands." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q032", "prompt": "Hans Lipperhey was a ______ maker.", "accept": ["spectacle"], "evidence": { "explanation": "The lecturer says a spectacle maker." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q033", "prompt": "Lipperhey applied for a patent in ______.", "accept": ["1608"], "evidence": { "explanation": "The lecturer gives 1608." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q034", "prompt": "In 1610, Galileo discovered four moons orbiting ______.", "accept": ["Jupiter"], "evidence": { "explanation": "The lecturer says Jupiter." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q035", "prompt": "Early telescopes that used lenses were called ______ telescopes.", "accept": ["refracting"], "evidence": { "explanation": "The lecturer says refracting telescopes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q036", "prompt": "Newton built a reflecting telescope in ______.", "accept": ["1668"], "evidence": { "explanation": "The lecturer gives 1668." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q037", "prompt": "A reflecting telescope uses a curved ______ instead of a lens.", "accept": ["mirror"], "evidence": { "explanation": "The lecturer says a curved mirror." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q038", "prompt": "The Hubble Space Telescope was launched in ______.", "accept": ["1990"], "evidence": { "explanation": "The lecturer gives 1990." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q039", "prompt": "The mirror of the James Webb telescope is ______ metres wide.", "accept": ["6.5","six point five"], "evidence": { "explanation": "The lecturer says 6.5 metres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0024-q040", "prompt": "The James Webb telescope observes mainly ______ light.", "accept": ["infrared"], "evidence": { "explanation": "The lecturer says infrared light." } }
+          ]
+        }
+      ]
+    }
   }
 ];
