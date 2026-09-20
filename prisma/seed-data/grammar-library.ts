@@ -466,4 +466,46 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     practiceSlug: "future-forms-practice",
     tags: ["grammar", "tenses", "task1"],
   },
+  {
+    slug: "adjectives-and-adverbs",
+    title: "Adjectives and adverbs",
+    category: "Word forms",
+    summary: "Good or well, real or really, rose sharply or sharp: choosing the right form, and the adverbs Task 1 runs on.",
+    explanation: [
+      "An adjective describes a noun ('a sharp rise', 'a reliable source'). An adverb describes a verb, an adjective or another adverb ('rose sharply', 'extremely reliable', 'very quickly'). Most adverbs are formed by adding -ly to the adjective: slow to slowly, careful to carefully.",
+      "Some adverbs do not follow the pattern. The adverb of 'good' is 'well', not 'goodly'. 'Fast', 'hard' and 'late' are both adjectives and adverbs. Be careful with 'hardly' and 'lately', which are different words: 'hardly' means 'almost not' ('I could hardly hear'), and 'lately' means 'recently'.",
+      "After linking verbs such as be, seem, look, feel, become and sound, use an adjective, not an adverb, because you are describing the subject, not the action: 'the results seem clear', 'I feel bad'. Compare 'she plays well' where the adverb describes how she plays.",
+      "To modify an adjective, use an adverb: 'a really important decision' or 'a highly effective policy'. Do not use an adjective in this position: 'a real important decision' is a common error. Some adjectives cannot be modified by 'very', such as 'unique', 'perfect' and 'essential'.",
+      "When several adjectives come before a noun, they usually follow a fixed order: opinion, size, age, shape, colour, origin, material, purpose. That is why we say 'a beautiful old wooden table' and not 'a wooden old beautiful table'.",
+    ],
+    examples: [
+      {
+        wrong: "The number of students increased sharp between 2010 and 2015.",
+        right: "The number of students increased sharply between 2010 and 2015.",
+        note: "'Increased' is a verb, so it needs an adverb: 'sharply'.",
+      },
+      {
+        wrong: "She speaks English very good.",
+        right: "She speaks English very well.",
+        note: "The adverb of 'good' is 'well'.",
+      },
+      {
+        wrong: "The proposal seems reasonably.",
+        right: "The proposal seems reasonable.",
+        note: "After a linking verb such as 'seem', use an adjective.",
+      },
+      {
+        wrong: "It is a real important issue for our generation.",
+        right: "It is a really important issue for our generation.",
+        note: "An adjective ('important') is modified by an adverb ('really'), not by another adjective.",
+      },
+      {
+        right: "Sales rose steadily, then fell dramatically after 2018.",
+        note: "Two adverbs of change, each modifying a verb, give a Task 1 sentence precision.",
+      },
+    ],
+    ieltsNote:
+      "Task 1 depends on adverbs that describe change: sharply, gradually, steadily, slightly, dramatically. Using the adjective by mistake ('rose sharp') is one of the most visible accuracy errors in the whole test. In Task 2 and Speaking, adverbs such as 'highly', 'increasingly' and 'particularly' add range, so long as they are formed and placed correctly.",
+    tags: ["grammar", "word-forms", "task1"],
+  },
 ];
