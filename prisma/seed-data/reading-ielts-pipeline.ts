@@ -11807,5 +11807,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0026-p3",
+    "title": "The Story of the Kite",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "everyday-objects", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few objects give as much simple pleasure as a kite tugging at its string in a stiff breeze. Children and adults alike have flown kites for centuries, on beaches and hillsides and in city parks. Behind this gentle hobby, however, lies a long history in which kites have been used for war, for science and even for the invention of the aeroplane.\n\nB. Kites were probably invented in China more than two thousand years ago. According to tradition, the philosopher Mozi and his friend Lu Ban, both of whom lived in the fifth century BC, built kites from bamboo frames covered with silk. Paper, which was cheaper, later replaced silk, and kites became popular with ordinary people. Chinese makers also produced kites in the shapes of birds, fish and dragons, some of which were fitted with whistles that hummed in the wind.\n\nC. Kites soon found practical uses. Armies flew them to send signals across battlefields, and it is said that Chinese generals used them to measure distances and to frighten enemy soldiers. From China, kites travelled along trade routes to Korea, Japan, India and Southeast Asia, where local traditions developed. Travellers such as Marco Polo brought descriptions of kites to Europe in the thirteenth century, though they did not become common there until much later.\n\nD. Kites have also played a part in science. In 1752, the American statesman Benjamin Franklin is said to have flown a kite in a thunderstorm to show that lightning is a form of electricity, although the experiment was dangerous, and others who tried to repeat it were killed. Later, scientists used kites to lift instruments high into the air to measure temperature and wind, and in the early twentieth century, Alexander Graham Bell experimented with huge kites made of small triangular cells, in the hope that they might lift a person.\n\nE. The Wright brothers, Orville and Wilbur, also used kites in their search for a way to fly. In 1899, they built a kite to test a method of steering by twisting the wings, and later they used what they had learned to design gliders and, in 1903, the first successful powered aeroplane. Without the kite, the history of aviation might have been very different.\n\nF. Today, kite flying is a popular sport and festival tradition. Spectacular kite festivals take place in countries such as China, Japan and India, where the skies are filled with thousands of colourful kites, and in some places, people take part in contests in which the aim is to cut the string of an opponent's kite. Modern materials such as nylon and carbon fibre have produced lighter and stronger designs, and engineers are now investigating whether huge kites could help to pull cargo ships and save fuel.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0026-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A simple pleasure with a surprising past" },
+            { "key": "ii", "label": "An ancient Chinese invention" },
+            { "key": "iii", "label": "Signals, soldiers and travelling ideas" },
+            { "key": "iv", "label": "Lightning, instruments and giant designs" },
+            { "key": "v", "label": "A step towards the aeroplane" },
+            { "key": "vi", "label": "Festivals, contests and new materials" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0026-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the kite as a simple pleasure with a longer history." } },
+            { "kind": "matching", "id": "generated-reading-general-0026-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the invention of kites in ancient China." } },
+            { "kind": "matching", "id": "generated-reading-general-0026-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes military uses and the spread of kites." } },
+            { "kind": "matching", "id": "generated-reading-general-0026-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes scientific uses, including Franklin and Bell." } },
+            { "kind": "matching", "id": "generated-reading-general-0026-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes modern festivals, contests and materials." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0026-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q032", "statement": "The first kites were probably made in China.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q033", "statement": "Early Chinese kites were made only from paper.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they were first made with silk, and paper replaced silk later." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q034", "statement": "Marco Polo brought kites to Europe in the thirteenth century.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says travellers such as Marco Polo brought descriptions of kites, not kites themselves." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q035", "statement": "The Wright brothers built a kite in 1899 to test a method of steering.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q036", "statement": "Kite festivals are held only in China.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F names China, Japan and India." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0026-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0026-q037", "prompt": "Early kites were built from ______ frames covered with silk.", "accept": ["bamboo"], "evidence": { "explanation": "Paragraph B says bamboo frames." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q038", "prompt": "Some Chinese kites had ______ that hummed in the wind.", "accept": ["whistles"], "evidence": { "explanation": "Paragraph B says whistles." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q039", "prompt": "Benjamin Franklin flew his kite in a ______.", "accept": ["thunderstorm"], "evidence": { "explanation": "Paragraph D says a thunderstorm." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q040", "prompt": "Engineers are investigating whether kites could pull cargo ______.", "accept": ["ships"], "evidence": { "explanation": "Paragraph F says cargo ships." } }
+          ]
+        }
+      ]
+    }
   }
 ];
