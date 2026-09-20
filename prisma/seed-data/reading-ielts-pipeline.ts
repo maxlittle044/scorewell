@@ -11860,5 +11860,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0027-p1",
+    "title": "General Training Reading — Section 1: Bank and Dry Cleaner Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nHARBOUR BANK\nBranch Information for Customers\n\nThis branch is open Monday to Friday from 9:00am to 5:00pm, and on Saturdays from 9:00am to 1:00pm. Cash machines outside the branch are available 24 hours a day. Customers who wish to open a new account should bring one form of photo identification and one recent proof of address, such as a utility bill.\n\nStudent accounts have no monthly fee and offer an interest-free overdraft of up to £1,000 for the first year. Cheques normally take three working days to clear. A fee of £15 is charged for each international transfer. Safe deposit boxes are available for £40 a year. If you lose your debit card, please call our 24-hour helpline immediately, and we will cancel the card and send a replacement within five working days.\n\nTEXT 2\n\nPRESTO DRY CLEANERS\nPrices and Services\n\nWe are open Monday to Saturday from 8:00am to 6:00pm. Garments handed in before 9:00am can be collected the same day after 5:00pm, for a supplement of 50% of the normal price. A shirt costs £2.50 to clean and press, a suit costs £12, and a duvet costs £18.\n\nOur free collection and delivery service is available for orders over £20 within a radius of three miles. Alterations, such as shortening trousers or replacing zips, are carried out by our tailor and usually take three days. Please check all pockets before handing in your clothes. Items not collected after 30 days may be given to charity, and we cannot accept responsibility for the loss of buttons or decorations.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0027-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q001", "statement": "The bank branch is open on Saturday afternoons.", "answer": "FALSE", "evidence": { "explanation": "It closes at 1:00pm on Saturdays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q002", "statement": "Customers opening a new account must bring photo identification.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q003", "statement": "Student accounts carry a monthly fee.", "answer": "FALSE", "evidence": { "explanation": "Student accounts have no monthly fee." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q004", "statement": "The bank offers mortgages to students.", "answer": "NOT GIVEN", "evidence": { "explanation": "Mortgages are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q005", "statement": "Same-day cleaning is available for garments handed in before 9:00am.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q006", "statement": "The dry cleaner is open on Sundays.", "answer": "FALSE", "evidence": { "explanation": "It is open Monday to Saturday." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0027-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0027-q007", "prompt": "Cheques normally take ______ working days to clear.", "accept": ["three","3"], "evidence": { "explanation": "Cheques take three working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q008", "prompt": "An international transfer costs ______.", "accept": ["£15","15 pounds"], "evidence": { "explanation": "The fee is £15." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q009", "prompt": "A safe deposit box costs ______ a year.", "accept": ["£40","40 pounds"], "evidence": { "explanation": "The cost is £40 a year." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q010", "prompt": "Alterations usually take ______ days.", "accept": ["three","3"], "evidence": { "explanation": "Alterations take three days." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0027-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0027-q011", "question": "What is the interest-free overdraft limit on a student account?", "options": ["£500","£750","£1,000","£1,500"], "correctIndex": 2, "evidence": { "explanation": "The limit is £1,000 for the first year." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0027-q012", "question": "How much does it cost to have a suit cleaned?", "options": ["£2.50","£12","£18","£20"], "correctIndex": 1, "evidence": { "explanation": "A suit costs £12." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0027-q013", "question": "What happens to items not collected after 30 days?", "options": ["They may be given to charity","They are destroyed","They are sold","They are posted to the customer"], "correctIndex": 0, "evidence": { "explanation": "They may be given to charity." } }
+          ]
+        }
+      ]
+    }
   }
 ];
