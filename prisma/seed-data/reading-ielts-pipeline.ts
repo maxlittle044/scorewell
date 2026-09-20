@@ -12327,5 +12327,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0030-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Employee Wellbeing",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "RIVERSIDE LOGISTICS\nStaff Handbook — Section 18: Employee Wellbeing\n\nThe company is committed to supporting the physical and mental health of its employees. All staff have access to a confidential counselling service, which offers up to six free sessions per year with a qualified counsellor, either by telephone or in person. The service can be contacted directly, and the company is not told who has used it.\n\nEmployees who feel that their workload is causing them stress should speak to their line manager, who will discuss possible solutions, such as adjusting deadlines. A wellbeing room, equipped with comfortable chairs and a quiet atmosphere, is open on the second floor from 8:00am to 6:00pm, and may be used for up to 20 minutes at a time. The company also gives every employee an annual health allowance of £150, which can be used towards gym membership, eye tests or sports equipment. Free flu vaccinations are offered each October. Managers receive training every two years on how to recognise signs of stress in their teams. Staff are encouraged to take their full lunch break away from their desks, and to make use of their annual leave.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0030-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q014", "statement": "The counselling service offers six free sessions per year.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q015", "statement": "The company is told who has used the counselling service.", "answer": "FALSE", "evidence": { "explanation": "The company is not told who has used it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q016", "statement": "Employees can use the wellbeing room for as long as they like.", "answer": "FALSE", "evidence": { "explanation": "It may be used for up to 20 minutes at a time." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q017", "statement": "The health allowance can be used towards gym membership.", "answer": "TRUE", "evidence": { "explanation": "The handbook lists gym membership." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q018", "statement": "The company provides free fruit for all employees.", "answer": "NOT GIVEN", "evidence": { "explanation": "Free fruit is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0030-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0030-q019", "prompt": "The counselling service can be used by telephone or in ______.", "accept": ["person"], "evidence": { "explanation": "Sessions are by telephone or in person." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q020", "prompt": "The wellbeing room is located on the ______ floor.", "accept": ["second","2nd"], "evidence": { "explanation": "The room is on the second floor." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q021", "prompt": "Every employee receives an annual health allowance of ______.", "accept": ["£150","150 pounds"], "evidence": { "explanation": "The allowance is £150." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q022", "prompt": "Free flu vaccinations are offered each ______.", "accept": ["October"], "evidence": { "explanation": "Vaccinations are offered each October." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q023", "prompt": "Managers receive training every ______ years.", "accept": ["two","2"], "evidence": { "explanation": "Managers are trained every two years." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0030-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0030-q024", "question": "Who should employees speak to if their workload is causing stress?", "options": ["Their line manager","The counsellor","A colleague","The director"], "correctIndex": 0, "evidence": { "explanation": "They should speak to their line manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0030-q025", "question": "From what time is the wellbeing room open?", "options": ["7:00am","8:00am","9:00am","10:00am"], "correctIndex": 1, "evidence": { "explanation": "It is open from 8:00am." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0030-q026", "question": "What are staff encouraged to do at lunch?", "options": ["Eat at their desks","Take their break away from their desks","Work through it","Attend meetings"], "correctIndex": 1, "evidence": { "explanation": "Staff are encouraged to take their full lunch break away from their desks." } }
+          ]
+        }
+      ]
+    }
   }
 ];
