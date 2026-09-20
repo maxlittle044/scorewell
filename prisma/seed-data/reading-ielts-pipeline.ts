@@ -10515,5 +10515,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0022-p1",
+    "title": "General Training Reading — Section 1: Bookshop and Garage Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nPAGE & PRINT BOOKSHOP\nOpening Hours and Services\n\nThe shop is open Monday to Saturday from 9:00am to 6:00pm, and on Sundays from 11:00am to 4:00pm. Members of our Book Club receive 10% off all purchases and a free bookmark with every order. Membership costs £15 a year.\n\nIf we do not have a book in stock, we can order it for you; most orders arrive within three working days. A gift-wrapping service is available for 50p per book. We also buy second-hand books in good condition; please bring no more than 20 books at a time. Author readings take place on the last Friday of each month at 7:00pm, and tickets, which cost £5 and include a glass of wine, can be bought at the till.\n\nTEXT 2\n\nBRIDGE STREET GARAGE\nMOT Tests and Servicing\n\nWe are open Monday to Friday from 8:00am to 5:30pm, and on Saturdays from 8:00am to 1:00pm. An MOT test costs £45 and takes about one hour; customers can wait in our lounge, where free coffee is available. A full service costs £120 for cars up to 1,600cc and £150 for larger engines.\n\nPlease book at least two days in advance, especially for Saturdays. We offer a free collection and delivery service within five miles of the garage for full services. Payment can be made by cash or card, but we do not accept cheques. Replacement cars are available for a small daily charge.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0022-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q001", "statement": "The bookshop is closed on Sundays.", "answer": "FALSE", "evidence": { "explanation": "It is open on Sundays from 11:00am to 4:00pm." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q002", "statement": "Book Club members receive a discount on all purchases.", "answer": "TRUE", "evidence": { "explanation": "Members receive 10% off." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q003", "statement": "The bookshop will order books that are not in stock.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q004", "statement": "The bookshop sells greeting cards.", "answer": "NOT GIVEN", "evidence": { "explanation": "Cards are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q005", "statement": "The garage is open all day on Saturdays.", "answer": "FALSE", "evidence": { "explanation": "It closes at 1:00pm on Saturdays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q006", "statement": "The garage accepts payment by cheque.", "answer": "FALSE", "evidence": { "explanation": "It does not accept cheques." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0022-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0022-q007", "prompt": "Book Club membership costs ______ a year.", "accept": ["£15","15 pounds"], "evidence": { "explanation": "Membership costs £15 a year." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q008", "prompt": "Gift-wrapping costs ______ per book.", "accept": ["50p"], "evidence": { "explanation": "Gift-wrapping costs 50p per book." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q009", "prompt": "An MOT test takes about ______ hour.", "accept": ["one","1","an"], "evidence": { "explanation": "An MOT test takes about one hour." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q010", "prompt": "The free collection and delivery service covers a distance of ______ miles.", "accept": ["five","5"], "evidence": { "explanation": "The service is within five miles." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0022-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0022-q011", "question": "When do author readings take place?", "options": ["Every Friday","The last Friday of each month","The first Saturday of each month","Every Sunday"], "correctIndex": 1, "evidence": { "explanation": "Readings take place on the last Friday of each month." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0022-q012", "question": "What is included in the price of a reading ticket?", "options": ["A signed book","A glass of wine","A bookmark","A discount voucher"], "correctIndex": 1, "evidence": { "explanation": "The ticket includes a glass of wine." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0022-q013", "question": "How much does a full service cost for a car with a 2,000cc engine?", "options": ["£45","£120","£150","£200"], "correctIndex": 2, "evidence": { "explanation": "Larger engines cost £150." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0022-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Equal Opportunities",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "CARLTON PROPERTY GROUP\nStaff Handbook — Section 4: Equal Opportunities\n\nThe company is committed to treating all employees and job applicants fairly, regardless of age, gender, disability, race, religion or sexual orientation. Selection for jobs and promotions is based only on ability and suitability for the role.\n\nAll job advertisements must state the qualities required in clear terms, and interview panels must include at least one person who has completed the company's equality training, which takes place every two years. Requests for reasonable adjustments, such as special equipment for employees with disabilities, should be made to the HR department, which will respond within ten working days. Staff who believe they have been treated unfairly should first speak to their line manager, or, if they prefer, to a member of HR directly. Complaints will be treated confidentially, and no one will be treated unfavourably for making a complaint in good faith.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0022-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q014", "statement": "Promotions are based only on ability and suitability for the role.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q015", "statement": "Interview panels must include someone who has done equality training.", "answer": "TRUE", "evidence": { "explanation": "At least one member must have completed the training." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q016", "statement": "Equality training takes place every year.", "answer": "FALSE", "evidence": { "explanation": "It takes place every two years." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q017", "statement": "Employees can only make complaints to their line manager.", "answer": "FALSE", "evidence": { "explanation": "They may speak to HR directly if they prefer." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q018", "statement": "The company provides free language classes for employees.", "answer": "NOT GIVEN", "evidence": { "explanation": "Language classes are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0022-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0022-q019", "prompt": "Job advertisements must state the ______ required in clear terms.", "accept": ["qualities"], "evidence": { "explanation": "The handbook says the qualities required." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q020", "prompt": "Equality training takes place every ______ years.", "accept": ["two","2"], "evidence": { "explanation": "Training is every two years." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q021", "prompt": "HR will respond to requests for adjustments within ______ working days.", "accept": ["ten","10"], "evidence": { "explanation": "HR responds within ten working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q022", "prompt": "Complaints will be treated ______.", "accept": ["confidentially"], "evidence": { "explanation": "The handbook says confidentially." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q023", "prompt": "Staff should first speak to their line ______.", "accept": ["manager"], "evidence": { "explanation": "Staff should first speak to their line manager." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0022-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0022-q024", "question": "Which department handles requests for reasonable adjustments?", "options": ["Finance","HR","Operations","Sales"], "correctIndex": 1, "evidence": { "explanation": "Requests are made to the HR department." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0022-q025", "question": "On what basis are people selected for jobs?", "options": ["Ability and suitability for the role","Length of service","Age","Recommendations"], "correctIndex": 0, "evidence": { "explanation": "Selection is based only on ability and suitability." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0022-q026", "question": "What is promised to employees who make a complaint in good faith?", "options": ["A pay rise","They will not be treated unfavourably","A new job","Extra holiday"], "correctIndex": 1, "evidence": { "explanation": "No one will be treated unfavourably for making a complaint in good faith." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0022-p3",
+    "title": "The History of Ice Cream",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Ice cream is enjoyed in almost every country in the world, on hot days and cold ones, in cones, cups and desserts. It is easy to think of it as a modern invention, but frozen desserts have a long history, and their story is one of ingenuity, luxury and, eventually, mass production.\n\nB. The earliest frozen treats were made by people who could store ice. In ancient China, people are said to have packed snow and ice around containers of milk and rice, and in Persia, sweet frozen drinks flavoured with fruit and rosewater were enjoyed by the wealthy. The Romans are reported to have brought snow from the mountains to flavour with honey and fruit. A popular story that Marco Polo brought ice cream from China to Italy is, however, probably a myth.\n\nC. By the seventeenth century, frozen desserts had become fashionable in the royal courts of Italy and France. Cooks discovered that mixing salt with ice made it much colder, so that cream could be frozen more quickly. In 1686, a Sicilian named Francesco Procopio opened a café in Paris, the Café Procope, which sold ice cream to the public and became a fashionable meeting place.\n\nD. Ice cream reached America in the eighteenth century, and it soon became popular with well-off colonists. Several early presidents were fond of it, and Dolley Madison is said to have served it at her husband's inaugural ball in 1813. However, making it was slow and tiring work, because the mixture had to be stirred by hand in a tub of ice and salt.\n\nE. This changed in the nineteenth century. In 1843, Nancy Johnson of Philadelphia patented a hand-cranked freezer that made the job much quicker, and in 1851, Jacob Fussell opened the first large ice cream factory in Baltimore. Better transport and, later, refrigeration allowed ice cream to be made in large quantities and sold cheaply, so that it was no longer a luxury.\n\nF. The ice cream cone became famous at the 1904 World's Fair in St Louis, although several inventors claim to have created it. Today, vanilla remains one of the most popular flavours, but manufacturers also produce many unusual ones, and many shops now sell versions made without dairy products for people who cannot eat milk. Whatever the flavour, ice cream remains a favourite around the world.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0022-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A universal treat with a long past" },
+            { "key": "ii", "label": "Ice, snow and myths" },
+            { "key": "iii", "label": "Fashionable in the courts and cafés" },
+            { "key": "iv", "label": "A colonial luxury" },
+            { "key": "v", "label": "New machines and cheaper ice cream" },
+            { "key": "vi", "label": "The cone and modern flavours" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0022-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces ice cream and its long history." } },
+            { "kind": "matching", "id": "generated-reading-general-0022-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes early frozen treats and the Marco Polo myth." } },
+            { "kind": "matching", "id": "generated-reading-general-0022-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes ice cream in courts and the Café Procope." } },
+            { "kind": "matching", "id": "generated-reading-general-0022-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes ice cream in colonial America." } },
+            { "kind": "matching", "id": "generated-reading-general-0022-q031", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the freezer, factory and refrigeration." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0022-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q032", "statement": "The story that Marco Polo brought ice cream to Italy is probably a myth.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q033", "statement": "Mixing salt with ice makes it colder.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q034", "statement": "Dolley Madison invented ice cream.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says she is said to have served it, not invented it." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q035", "statement": "Jacob Fussell opened the first large ice cream factory in New York.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says Baltimore." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0022-q036", "statement": "The ice cream cone was certainly invented in 1904.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says several inventors claim to have created it." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0022-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0022-q037", "prompt": "In Persia, wealthy people enjoyed frozen drinks flavoured with fruit and ______.", "accept": ["rosewater"], "evidence": { "explanation": "Paragraph B says rosewater." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q038", "prompt": "The Café Procope opened in Paris in ______.", "accept": ["1686"], "evidence": { "explanation": "Paragraph C gives 1686." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q039", "prompt": "Nancy Johnson patented a hand-cranked ______ in 1843.", "accept": ["freezer"], "evidence": { "explanation": "Paragraph E says freezer." } },
+            { "kind": "completion", "id": "generated-reading-general-0022-q040", "prompt": "The ice cream cone became famous at the ______ World's Fair.", "accept": ["1904","St Louis"], "evidence": { "explanation": "Paragraph F says the 1904 World's Fair in St Louis." } }
+          ]
+        }
+      ]
+    }
   }
 ];
