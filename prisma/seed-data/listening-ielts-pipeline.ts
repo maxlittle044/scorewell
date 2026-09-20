@@ -6776,5 +6776,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0030-s1",
+    "title": "Wedding Venue Enquiry – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Wedding Venue Enquiry – Listening Section 1",
+      "transcript": "Manager: Good afternoon, Rosewood Hall. How can I help?\nCaller: Hello, I'm looking for a venue for my wedding reception next summer.\nManager: Congratulations. What date are you considering?\nCaller: Saturday the fourteenth of June.\nManager: That date is currently free. How many guests do you expect?\nCaller: About eighty.\nManager: The hall holds up to one hundred and twenty, so that would be comfortable. Hire of the hall for the day costs £1,800, and that includes tables, chairs and a sound system.\nCaller: Do you provide the food?\nManager: Yes, our catering is £35 per head. We also have parking for forty cars.\nCaller: That sounds ideal. Do you need a deposit?\nManager: Yes, a deposit of twenty-five per cent to confirm the booking. Would you like to see the hall?\nCaller: I would. Could I come on Tuesday at four o'clock?\nManager: Certainly. May I take your surname?\nCaller: It's Pemberton, P-E-M-B-E-R-T-O-N.\nManager: Thank you, Ms Pemberton. We'll see you on Tuesday.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0030-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0030-q001", "prompt": "Date of wedding: Saturday the ______ of June.", "accept": ["fourteenth","14th","14"], "evidence": { "explanation": "The caller wants Saturday the fourteenth of June." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q002", "prompt": "Number of guests: about ______.", "accept": ["eighty","80"], "evidence": { "explanation": "The caller expects about eighty guests." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q003", "prompt": "The hall holds up to ______ people.", "accept": ["one hundred and twenty","120"], "evidence": { "explanation": "The hall holds up to one hundred and twenty." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q004", "prompt": "Hall hire: £______.", "accept": ["1,800","1800"], "evidence": { "explanation": "Hire costs £1,800." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q005", "prompt": "Catering: £______ per head.", "accept": ["35","thirty-five"], "evidence": { "explanation": "Catering is £35 per head." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q006", "prompt": "Parking for ______ cars.", "accept": ["forty","40"], "evidence": { "explanation": "There is parking for forty cars." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q007", "prompt": "Deposit: ______ per cent.", "accept": ["twenty-five","25"], "evidence": { "explanation": "The deposit is twenty-five per cent." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q008", "prompt": "Viewing day: ______.", "accept": ["Tuesday"], "evidence": { "explanation": "The caller will visit on Tuesday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q009", "prompt": "Viewing time: ______ o'clock.", "accept": ["four","4"], "evidence": { "explanation": "The viewing is at four o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q010", "prompt": "Surname: ______.", "accept": ["Pemberton"], "evidence": { "explanation": "The caller spells P-E-M-B-E-R-T-O-N." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0030-s2",
+    "title": "Concert Hall Tour – Listening Section 2",
+    "topic": "Arts",
+    "tags": ["academic", "arts", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Concert Hall Tour – Listening Section 2",
+      "transcript": "Good morning, and welcome to the Grand Concert Hall. Today's tour will show you the parts of the building that audiences don't usually see.\n\nThe hall opened in 1898, and it seats twelve hundred people. It was restored in 2010, at a cost of twelve million pounds, and the restoration focused on improving the acoustics, which means the quality of the sound in the auditorium.\n\nWe begin in the main auditorium, where you can see the great organ, which has three thousand pipes and is one of the largest in the country. The walls are covered with wooden panels, which help to spread the sound evenly. Then we go backstage to see the dressing rooms and the rehearsal studio, and finally to the roof terrace, from where there are views of the city.\n\nThe tour lasts forty-five minutes and costs £6, and it starts from the foyer every hour from ten o'clock until four. Tours do not run on days when there is a matinee concert.\n\nPlease note that photography is not allowed in the auditorium during rehearsals. The café in the foyer is open all day. Now, if you'd like to follow me.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0030-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0030-q011", "prompt": "The hall opened in ______.", "accept": ["1898"], "evidence": { "explanation": "The speaker says 1898." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q012", "prompt": "The hall seats ______ people.", "accept": ["twelve hundred","1,200","1200"], "evidence": { "explanation": "The speaker says twelve hundred." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q013", "prompt": "The restoration took place in ______.", "accept": ["2010"], "evidence": { "explanation": "The speaker says 2010." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q014", "prompt": "The organ has ______ pipes.", "accept": ["three thousand","3,000","3000"], "evidence": { "explanation": "The speaker says three thousand pipes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q015", "prompt": "The tour lasts ______ minutes.", "accept": ["forty-five","forty five","45"], "evidence": { "explanation": "The speaker says forty-five minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q016", "prompt": "Tickets for the tour cost £______.", "accept": ["6","six"], "evidence": { "explanation": "The speaker says £6." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0030-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q017", "question": "What did the restoration mainly improve?", "options": ["The acoustics","The seating","The lighting","The entrance"], "correctIndex": 0, "evidence": { "explanation": "The restoration focused on improving the acoustics." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q018", "question": "What are the walls of the auditorium covered with?", "options": ["Wooden panels","Glass","Carpet","Metal sheets"], "correctIndex": 0, "evidence": { "explanation": "The walls are covered with wooden panels." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q019", "question": "Where does the tour start?", "options": ["The foyer","The roof terrace","The auditorium","The rehearsal studio"], "correctIndex": 0, "evidence": { "explanation": "The tour starts from the foyer." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q020", "question": "When do tours not run?", "options": ["On days with a matinee concert","On Mondays","In winter","On Sundays"], "correctIndex": 0, "evidence": { "explanation": "Tours do not run on days when there is a matinee concert." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0030-s3",
+    "title": "Planning a Work Placement – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Work Placement – Listening Section 3",
+      "transcript": "Ms Ortiz: Kwame, let's talk about your work placement. Where will you be going?\nKwame: I've been offered four weeks at a local newspaper.\nMs Ortiz: That's a good opportunity. When does it start?\nKwame: On the third of March.\nMs Ortiz: You'll need to prepare a few documents. First, your CV, which should be no longer than two pages.\nKwame: I've drafted it, but I'll send it to you to check.\nMs Ortiz: Good. Second, you must write a learning plan, saying what skills you hope to develop.\nKwame: I'd like to improve my interviewing and my writing skills.\nMs Ortiz: Sensible. And during the placement, keep a daily diary. It will help when you write your final report.\nKwame: How long should the report be?\nMs Ortiz: About fifteen hundred words. You'll submit it within two weeks of the end of the placement.\nKwame: Will you visit me at the newspaper?\nMs Ortiz: Yes, I'll visit once in the second week, to see how you are getting on.\nKwame: That's helpful. Thank you.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0030-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q021", "question": "Where will Kwame do his placement?", "options": ["A local newspaper","A radio station","A bank","A school"], "correctIndex": 0, "evidence": { "explanation": "Kwame has been offered four weeks at a local newspaper." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q022", "question": "How long is the placement?", "options": ["Two weeks","Three weeks","Four weeks","Six weeks"], "correctIndex": 2, "evidence": { "explanation": "The placement lasts four weeks." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q023", "question": "When does it start?", "options": ["The first of March","The third of March","The thirteenth of March","The thirtieth of March"], "correctIndex": 1, "evidence": { "explanation": "It starts on the third of March." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q024", "question": "How long should Kwame's CV be at most?", "options": ["One page","Two pages","Three pages","Five pages"], "correctIndex": 1, "evidence": { "explanation": "The CV should be no longer than two pages." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q025", "question": "How long should the final report be?", "options": ["About 500 words","About 1,000 words","About 1,500 words","About 3,000 words"], "correctIndex": 2, "evidence": { "explanation": "The report should be about fifteen hundred words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0030-q026", "question": "When will Ms Ortiz visit Kwame?", "options": ["In the first week","In the second week","In the third week","At the end"], "correctIndex": 1, "evidence": { "explanation": "She will visit once in the second week." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0030-s3-g2",
+          "instructions": "Which document does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "CV" },
+            { "key": "B", "label": "Learning plan" },
+            { "key": "C", "label": "Final report" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0030-q027", "prompt": "Should be no longer than two pages", "answer": "A", "evidence": { "explanation": "Ms Ortiz says the CV should be no longer than two pages." } },
+            { "kind": "matching", "id": "generated-listening-academic-0030-q028", "prompt": "Says what skills Kwame hopes to develop", "answer": "B", "evidence": { "explanation": "The learning plan lists skills to develop." } },
+            { "kind": "matching", "id": "generated-listening-academic-0030-q029", "prompt": "Should be about fifteen hundred words", "answer": "C", "evidence": { "explanation": "The final report is about fifteen hundred words." } },
+            { "kind": "matching", "id": "generated-listening-academic-0030-q030", "prompt": "Will be helped by keeping a daily diary", "answer": "C", "evidence": { "explanation": "The diary will help when Kwame writes the final report." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0030-s4",
+    "title": "The History of Football – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "sport", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Football – Listening Section 4",
+      "transcript": "Today's lecture looks at the history of football, the world's most popular sport.\n\nBall games have been played for thousands of years. In ancient China, a game called cuju, in which players kicked a leather ball into a net, was played over two thousand years ago. In medieval Europe, villages played rough games, sometimes with hundreds of players, over fields and streets, with few rules.\n\nThe modern game was born in England. In the early nineteenth century, football was played in public schools, but each school had its own rules, and this made matches between schools difficult. In 1863, representatives of several clubs met in London and formed the Football Association, which drew up a common set of rules. One key decision was to ban carrying the ball in the hands, and clubs that wanted to keep this formed the game of rugby.\n\nThe first international match was played in 1872, between Scotland and England in Glasgow, and it ended in a goalless draw. The sport spread quickly, carried by sailors, engineers and teachers to Europe and South America. FIFA, the international governing body, was founded in Paris in 1904, and the first World Cup was held in Uruguay in 1930, when the home team won.\n\nToday, FIFA has more than two hundred member associations. Women's football was very popular in England in the early twentieth century, but the Football Association banned women from playing on its grounds in 1921, and the ban lasted until 1971. Since then, the women's game has grown rapidly.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0030-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0030-q031", "prompt": "The ancient Chinese game was called ______.", "accept": ["cuju"], "evidence": { "explanation": "The lecturer names cuju." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q032", "prompt": "Medieval games sometimes involved ______ of players.", "accept": ["hundreds"], "evidence": { "explanation": "The lecturer says hundreds of players." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q033", "prompt": "The Football Association was formed in ______ in 1863.", "accept": ["London"], "evidence": { "explanation": "The lecturer says London." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q034", "prompt": "Clubs that wanted to carry the ball formed the game of ______.", "accept": ["rugby"], "evidence": { "explanation": "The lecturer says rugby." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q035", "prompt": "The first international match was played in ______.", "accept": ["1872"], "evidence": { "explanation": "The lecturer gives 1872." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q036", "prompt": "The first international match was played in ______ and ended in a goalless draw.", "accept": ["Glasgow"], "evidence": { "explanation": "The lecturer says Glasgow." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q037", "prompt": "FIFA was founded in ______ in 1904.", "accept": ["Paris"], "evidence": { "explanation": "The lecturer says Paris." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q038", "prompt": "The first World Cup was held in ______ in 1930.", "accept": ["Uruguay"], "evidence": { "explanation": "The lecturer says Uruguay." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q039", "prompt": "The Football Association banned women's football on its grounds in ______.", "accept": ["1921"], "evidence": { "explanation": "The lecturer gives 1921." } },
+            { "kind": "completion", "id": "generated-listening-academic-0030-q040", "prompt": "The ban lasted until ______.", "accept": ["1971"], "evidence": { "explanation": "The lecturer gives 1971." } }
+          ]
+        }
+      ]
+    }
   }
 ];
