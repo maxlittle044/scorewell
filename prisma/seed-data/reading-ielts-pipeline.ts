@@ -11948,5 +11948,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0027-p3",
+    "title": "The Story of Honey",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Honey is one of the oldest sweet foods known to humans, and one of the few that is made entirely by an animal without any human help. A single teaspoon represents the lifetime work of about twelve bees, and to produce a jar, the workers of a hive may visit millions of flowers. It is an extraordinary example of cooperation in nature, and it has also shaped human history.\n\nB. Bees make honey from nectar, the sugary liquid found in flowers. A worker bee sucks up the nectar and carries it to the hive in a special stomach, where enzymes begin to change it. Back in the hive, the bee passes the nectar to other workers, who continue the process, and then place it in wax cells, where the bees fan their wings to evaporate most of the water. When the honey is thick enough, the cells are sealed with wax to keep it fresh.\n\nC. People have been collecting honey for at least eight thousand years. A rock painting in a cave in Spain shows a figure climbing a rope to reach a wild bees' nest, while smoke is used to calm the insects. The ancient Egyptians valued honey highly, using it to sweeten food, to make offerings to their gods and to treat wounds. It is often claimed that pots of edible honey have been found in ancient tombs, though the story is difficult to prove.\n\nD. For much of history, honey was the main sweetener in Europe and Asia, and it was also used to make mead, a drink made by fermenting honey with water. Beeswax was almost as valuable, as it was used to make candles for churches and wealthy homes. When cheap sugar arrived from the plantations of the Caribbean in the seventeenth and eighteenth centuries, honey became less important as a food, but it continued to be used in cooking and medicine.\n\nE. Modern beekeeping changed in 1852, when an American minister, Lorenzo Langstroth, invented a hive with movable wooden frames. Because the bees build their comb on the frames, the beekeeper can remove honey without destroying the colony, as earlier methods often did. The Langstroth hive, with only small changes, is still used in many countries today.\n\nF. Honey has properties that make it useful in medicine. It contains very little water and a great deal of sugar, which prevents most bacteria from growing, and it also produces small amounts of substances that kill germs. Some hospitals now use specially prepared honey to dress wounds and burns. Sadly, the bees that make honey face many threats, including disease, pesticides and the loss of wild flowers, and beekeepers around the world are working to protect them.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0027-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The work behind a spoonful" },
+            { "key": "ii", "label": "How bees turn nectar into honey" },
+            { "key": "iii", "label": "Honey in the ancient world" },
+            { "key": "iv", "label": "A sweetener overtaken by sugar" },
+            { "key": "v", "label": "A hive that could be opened" },
+            { "key": "vi", "label": "Healing and threats" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0027-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the amount of work behind a spoonful of honey." } },
+            { "kind": "matching", "id": "generated-reading-general-0027-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes how bees make honey." } },
+            { "kind": "matching", "id": "generated-reading-general-0027-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes honey in the ancient world." } },
+            { "kind": "matching", "id": "generated-reading-general-0027-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes honey as a sweetener and its decline after sugar arrived." } },
+            { "kind": "matching", "id": "generated-reading-general-0027-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes medical uses and threats to bees." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0027-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q032", "statement": "A teaspoon of honey represents the lifetime work of about twelve bees.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q033", "statement": "Bees fan their wings to evaporate water from the honey.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q034", "statement": "It has been proved that edible honey was found in ancient tombs.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the story is difficult to prove." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q035", "statement": "Bees produce more honey in summer than in winter.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not compare honey production in different seasons." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0027-q036", "statement": "The Langstroth hive was invented in 1852.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E gives 1852." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0027-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0027-q037", "prompt": "Bees make honey from ______, the sugary liquid found in flowers.", "accept": ["nectar"], "evidence": { "explanation": "Paragraph B says nectar." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q038", "prompt": "A cave painting in ______ shows a figure climbing a rope to a bees' nest.", "accept": ["Spain"], "evidence": { "explanation": "Paragraph C says Spain." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q039", "prompt": "Mead is a drink made by ______ honey with water.", "accept": ["fermenting"], "evidence": { "explanation": "Paragraph D says fermenting." } },
+            { "kind": "completion", "id": "generated-reading-general-0027-q040", "prompt": "Lorenzo Langstroth invented a hive with movable wooden ______.", "accept": ["frames"], "evidence": { "explanation": "Paragraph E says frames." } }
+          ]
+        }
+      ]
+    }
   }
 ];
