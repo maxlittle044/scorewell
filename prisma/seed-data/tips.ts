@@ -121,4 +121,23 @@ export const TIPS: TipSeed[] = [
       ],
     },
   },
+  {
+    slug: "task-1-overview-paragraph",
+    title: "The Task 1 overview: the paragraph that lifts your band",
+    topic: "Writing",
+    tags: ["tips", "writing", "task-1", "exam-strategy"],
+    data: {
+      readMinutes: 6,
+      excerpt:
+        "Many candidates describe every number and never say what the data actually shows. A short overview fixes that, and it is the clearest gain in Academic Task 1.",
+      body: [
+        "In Academic Task 1, you describe a chart, graph, table or diagram in at least 150 words, and the task is marked on four criteria, one of which is Task Achievement. The public band descriptors treat a clear overview as a mark of Band 6 and above, and they describe Band 5 as detail given mechanically with no clear overview. In other words, the single paragraph that many candidates skip is the one that separates a middling score from a good one.",
+        "An overview is a short summary of the main trends or features of the whole visual, written without detailed figures. It answers the question, 'If the reader saw only this paragraph, what would they understand about the data?' For a line graph, that might be the overall direction of each line and which one changed most. For a bar chart, it might be which category was highest and lowest. For a process, it could be the number of stages and how it begins and ends.",
+        "A dependable structure has four paragraphs. First, an introduction that paraphrases the title of the visual in one sentence, changing the wording without changing the meaning. Second, the overview, in two or three sentences. Third and fourth, the detail paragraphs, in which you group related information and support each point with selected figures. That is about 170 to 190 words, and it fits comfortably into the recommended 20 minutes.",
+        "The most common mistake is putting the overview in the wrong place or leaving it out. Some candidates put it in the conclusion, where it is often too late to shape the detail, and others never write one at all. Put it straight after the introduction, and begin with a clear signal such as 'Overall, ...' or 'In general, ...'.",
+        "The second mistake is describing every number. You do not have time to, and the examiner does not want a list. Choose the figures that show the trends or the biggest differences, and group the rest. Use precise words for change, such as 'rose sharply' or 'fell gradually', and make comparisons instead of describing each item on its own.",
+        "Finally, keep to the facts. Task 1 does not ask for your opinion or for reasons the data does not show. If the graph does not say why sales fell, you should not say why. Check the tense against the time period, using the past for past dates and future forms only for projections, and leave two minutes at the end to check your figures against the visual.",
+      ],
+    },
+  },
 ];
