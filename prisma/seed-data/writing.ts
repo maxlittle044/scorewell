@@ -2798,4 +2798,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 20,
     },
   },
+
+  // ---- More Task 2 essays (ethical shopping, exams versus coursework, global English, care robots,
+  // exercise at work, public art, rehabilitation, leadership, saving water, solo travel) ----
+  {
+    slug: "task2-ethical-shopping-fair-trade",
+    title: "Task 2: Buying ethical products",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "consumerism", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people believe that consumers should buy only products that are made in an ethical way, even if they cost more. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-exams-versus-coursework",
+    title: "Task 2: Exams or continuous assessment?",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "assessment", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people think that final examinations are the fairest way to assess students, while others believe that continuous assessment through coursework is better. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-english-as-global-language",
+    title: "Task 2: English as a global language",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "language", "advantages-disadvantages"],
+    kind: "test",
+    data: {
+      prompt:
+        "English is increasingly used as a common language for business, science and travel around the world. What are the advantages and disadvantages of this trend?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-robots-caring-for-people",
+    title: "Task 2: Robots in caring roles",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "society", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Robots are being developed to care for elderly people and to help in hospitals. Do the advantages of using robots in caring roles outweigh the disadvantages?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-exercise-at-work",
+    title: "Task 2: Encouraging exercise at work",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "work", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many people who work in offices spend most of the day sitting down, and this can harm their health. What problems does this cause, and what can employers and employees do to solve them?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-public-art-and-monuments",
+    title: "Task 2: Spending public money on art",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "government", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that governments should spend public money on art, such as statues and murals, in public places, while others think this money should be used for essential services. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-prison-versus-rehabilitation",
+    title: "Task 2: Punishment or rehabilitation?",
+    taskType: "task2",
+    topic: "Crime",
+    tags: ["writing", "task-2", "crime", "society", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think that the main purpose of prison should be to punish criminals, while others believe it should be to rehabilitate them so that they can return to society. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-leaders-born-or-made",
+    title: "Task 2: Are leaders born or made?",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "work", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people say that great leaders are born with special qualities, while others believe that leadership can be learned. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-saving-water-individuals-industry",
+    title: "Task 2: Who should save water?",
+    taskType: "task2",
+    topic: "Environment",
+    tags: ["writing", "task-2", "environment", "responsibility", "two-part"],
+    kind: "test",
+    data: {
+      prompt:
+        "Water shortages are becoming a serious problem in many parts of the world. Who should be responsible for saving water, individuals or industry, and what measures can be taken?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-travelling-alone",
+    title: "Task 2: Travelling alone or in a group",
+    taskType: "task2",
+    topic: "Travel",
+    tags: ["writing", "task-2", "travel", "lifestyle", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "More people now choose to travel alone rather than with family, friends or an organised group. What are the advantages and disadvantages of travelling alone?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
