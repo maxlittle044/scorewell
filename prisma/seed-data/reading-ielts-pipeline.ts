@@ -9612,5 +9612,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0019-p1",
+    "title": "General Training Reading — Section 1: Language School and Bakery Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nBRIDGE LANGUAGE SCHOOL\nEvening Courses\n\nEnglish, Spanish and Japanese courses run on Monday, Wednesday and Thursday evenings from 6:30pm to 8:30pm. Each course lasts ten weeks and costs £180, including books. Students who pay in full before the first lesson receive a 10% discount.\n\nAll new students take a free placement test, which takes about 30 minutes, so that they can be placed in the correct level. Classes have a maximum of twelve students. Students who miss more than three lessons will not receive a certificate. The school library is open to students from 5:30pm, and a conversation club meets every Friday at 7:00pm; it is free for current students.\n\nTEXT 2\n\nOLD MILL BAKERY\nOpening Hours and Orders\n\nThe bakery opens at 6:30am and closes at 5:00pm from Monday to Saturday. On Sundays, it is open from 8:00am until noon. Bread sells out quickly, so we recommend arriving before 10:00am for the best choice. A loaf of sourdough costs £3.50.\n\nCustom cakes for birthdays and weddings must be ordered at least five days in advance, and a deposit of £20 is required. Gluten-free bread is baked on Tuesdays and Fridays only. Customers who bring their own bag receive 20p off their purchase. The bakery does not have a café, but there is a bench outside.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0019-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q001", "statement": "Language courses at the school run on Friday evenings.", "answer": "FALSE", "evidence": { "explanation": "Courses run on Monday, Wednesday and Thursday; only the conversation club is on Friday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q002", "statement": "Students who pay in full before the first lesson receive a discount.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states a 10% discount." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q003", "statement": "The placement test is free for new students.", "answer": "TRUE", "evidence": { "explanation": "Text 1 says all new students take a free placement test." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q004", "statement": "The school offers courses in French.", "answer": "NOT GIVEN", "evidence": { "explanation": "Only English, Spanish and Japanese are mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q005", "statement": "The bakery is open until 5:00pm on Sundays.", "answer": "FALSE", "evidence": { "explanation": "On Sundays it is open until noon." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q006", "statement": "The bakery has a café.", "answer": "FALSE", "evidence": { "explanation": "Text 2 says it does not have a café." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0019-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0019-q007", "prompt": "Each language course lasts ______ weeks.", "accept": ["ten","10"], "evidence": { "explanation": "Each course lasts ten weeks." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q008", "prompt": "Classes have a maximum of ______ students.", "accept": ["twelve","12"], "evidence": { "explanation": "The maximum is twelve students." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q009", "prompt": "Cakes must be ordered at least ______ days in advance.", "accept": ["five","5"], "evidence": { "explanation": "Custom cakes must be ordered at least five days in advance." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q010", "prompt": "The bakery opens at ______ from Monday to Saturday.", "accept": ["6:30am","6.30am"], "evidence": { "explanation": "The bakery opens at 6:30am." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0019-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0019-q011", "question": "How much does a language course cost?", "options": ["£120","£150","£180","£200"], "correctIndex": 2, "evidence": { "explanation": "A course costs £180." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0019-q012", "question": "What happens to students who miss more than three lessons?", "options": ["They pay a fine","They do not receive a certificate","They must repeat the course","They are asked to leave"], "correctIndex": 1, "evidence": { "explanation": "They will not receive a certificate." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0019-q013", "question": "On which days is gluten-free bread baked?", "options": ["Monday and Wednesday","Tuesday and Friday","Thursday and Saturday","Every day"], "correctIndex": 1, "evidence": { "explanation": "Gluten-free bread is baked on Tuesdays and Fridays." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0019-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Working from Home",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "BRIGHTON & LANE ACCOUNTANTS\nStaff Handbook — Section 9: Working from Home\n\nStaff may work from home for up to two days a week, with the agreement of their line manager. Requests must be made in writing at least a week in advance, and the arrangement is reviewed after three months. Staff who work from home must be available by telephone and email during normal working hours, from 9:00am to 5:30pm.\n\nThe company provides a laptop and a headset, but staff are responsible for their own broadband connection. Confidential client documents must not be printed at home, and must only be accessed through the company's secure network. Staff should also ensure that they have a suitable workspace, and the company will pay for one office chair if the employee does not have one. All staff must attend the office for the monthly team meeting, which is held on the first Monday of each month.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0019-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q014", "statement": "Staff may work from home for up to two days a week.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q015", "statement": "Requests to work from home may be made verbally.", "answer": "FALSE", "evidence": { "explanation": "Requests must be made in writing." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q016", "statement": "The company pays for employees' broadband connections.", "answer": "FALSE", "evidence": { "explanation": "Staff are responsible for their own broadband." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q017", "statement": "Staff working from home may print client documents at home.", "answer": "FALSE", "evidence": { "explanation": "Confidential client documents must not be printed at home." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q018", "statement": "Staff are allowed to work from home while travelling abroad.", "answer": "NOT GIVEN", "evidence": { "explanation": "Working abroad is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0019-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0019-q019", "prompt": "Requests must be made at least ______ in advance.", "accept": ["a week","one week","1 week"], "evidence": { "explanation": "Requests must be made at least a week in advance." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q020", "prompt": "The arrangement is reviewed after ______ months.", "accept": ["three","3"], "evidence": { "explanation": "The arrangement is reviewed after three months." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q021", "prompt": "Normal working hours are from 9:00am to ______.", "accept": ["5:30pm","5.30pm"], "evidence": { "explanation": "Working hours end at 5:30pm." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q022", "prompt": "The company provides a laptop and a ______.", "accept": ["headset"], "evidence": { "explanation": "The company provides a laptop and a headset." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q023", "prompt": "The monthly team meeting is held on the first ______ of each month.", "accept": ["Monday"], "evidence": { "explanation": "The meeting is on the first Monday of each month." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0019-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0019-q024", "question": "Who must agree to a request to work from home?", "options": ["The line manager","The company director","The HR department","A client"], "correctIndex": 0, "evidence": { "explanation": "Requests need the agreement of the line manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0019-q025", "question": "What will the company pay for if the employee does not have one?", "options": ["A desk","A monitor","An office chair","A printer"], "correctIndex": 2, "evidence": { "explanation": "The company will pay for one office chair." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0019-q026", "question": "How must confidential documents be accessed?", "options": ["By email","Through the secure network","On a memory stick","By printing them"], "correctIndex": 1, "evidence": { "explanation": "They must be accessed through the company's secure network." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0019-p3",
+    "title": "The Story of the Umbrella",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "everyday-objects", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The umbrella is such a common object that few people give it a thought until it rains. Yet the simple combination of a handle, a set of ribs and a canopy has a long history, and its development says a good deal about how people have dealt with sun and rain.\n\nB. The first umbrellas were made for shade, not rain. Carvings and paintings from ancient Egypt, Assyria and China show servants holding umbrellas over kings and nobles. Because only the important could afford someone to carry an umbrella for them, it became a symbol of rank, and in some countries, ordinary people were forbidden to use them.\n\nC. The Chinese are credited with making the umbrella waterproof. By around the eleventh century, they were treating paper and silk canopies with wax and lacquer, so that they could be used in the rain. The idea then spread to other parts of Asia, and eventually to Europe, where the umbrella was at first known mainly as an accessory for women.\n\nD. In England, the umbrella was slow to catch on for men. The traveller and philanthropist Jonas Hanway is often said to have been the first man to carry one regularly in London, from the 1750s, and it is said that he was jeered at by cab drivers, who feared that umbrellas would reduce the demand for cabs. Gradually, the objections faded, and by the end of the eighteenth century, umbrellas were a common sight.\n\nE. Early European umbrellas were heavy, with frames made of wood or whalebone. In 1852, Samuel Fox, an English steel maker, invented a lighter frame made from U-shaped steel ribs, which he marketed as the Paragon. Steel frames made umbrellas cheap enough for ordinary people to buy, and in 1928, Hans Haupt introduced the first pocket umbrella, which could be folded and carried in a bag.\n\nF. Today, umbrellas are produced in enormous numbers, most of them in China, and a great many are thrown away each year after breaking in the wind. Some designers have tried to make stronger umbrellas that do not turn inside out, while others sell repair services. In many countries, the umbrella remains a sign of a wet day and, in some places, of a hot, sunny one.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0019-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An everyday object with a long past" },
+            { "key": "ii", "label": "Shade and status" },
+            { "key": "iii", "label": "A waterproof invention" },
+            { "key": "iv", "label": "A gentleman with an umbrella" },
+            { "key": "v", "label": "Steel and the folding design" },
+            { "key": "vi", "label": "Umbrellas today" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0019-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the umbrella and its long history." } },
+            { "kind": "matching", "id": "generated-reading-general-0019-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the umbrella as shade and a symbol of rank." } },
+            { "kind": "matching", "id": "generated-reading-general-0019-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the Chinese waterproofing." } },
+            { "kind": "matching", "id": "generated-reading-general-0019-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Jonas Hanway carrying an umbrella in London." } },
+            { "kind": "matching", "id": "generated-reading-general-0019-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes umbrella production and use today." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0019-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q032", "statement": "The first umbrellas were designed to keep off the rain.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the first umbrellas were made for shade, not rain." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q033", "statement": "Umbrellas were a symbol of rank in some ancient societies.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says the umbrella became a symbol of rank." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q034", "statement": "Jonas Hanway carried an umbrella in London from the 1750s.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D says he did so from the 1750s." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q035", "statement": "Samuel Fox invented the first pocket umbrella.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says Hans Haupt introduced the first pocket umbrella." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0019-q036", "statement": "Most umbrellas today are produced in Europe.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says most are produced in China." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0019-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0019-q037", "prompt": "The Chinese treated paper and silk canopies with wax and ______.", "accept": ["lacquer"], "evidence": { "explanation": "Paragraph C says wax and lacquer." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q038", "prompt": "Cab drivers feared that umbrellas would reduce the demand for ______.", "accept": ["cabs"], "evidence": { "explanation": "Paragraph D says cabs." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q039", "prompt": "Samuel Fox marketed his steel frame as the ______.", "accept": ["Paragon"], "evidence": { "explanation": "Paragraph E says the Paragon." } },
+            { "kind": "completion", "id": "generated-reading-general-0019-q040", "prompt": "Hans Haupt introduced the first pocket umbrella in ______.", "accept": ["1928"], "evidence": { "explanation": "Paragraph E gives 1928." } }
+          ]
+        }
+      ]
+    }
   }
 ];
