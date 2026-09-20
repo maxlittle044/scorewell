@@ -5919,38 +5919,38 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
   },
   {
     "slug": "generated-listening-academic-0023-s3",
-    "title": "Planning a Group Presentation – Listening Section 3",
+    "title": "Preparing for a Class Debate – Listening Section 3",
     "topic": "Education",
     "tags": ["academic", "education", "multiple-choice", "matching"],
     "data": {
-      "audioLabel": "Planning a Group Presentation – Listening Section 3",
-      "transcript": "Dr Patel: Sam, let's go through your plan for the group presentation. What's the topic?\nSam: Our group has chosen the effects of noise pollution on wildlife.\nDr Patel: A good choice. How long will the presentation be?\nSam: Fifteen minutes, followed by five minutes for questions.\nDr Patel: And how are you dividing the work?\nSam: There are four of us. I'll introduce the topic, two others will present the findings, and Leila will give the conclusion.\nDr Patel: Sensible. What about visual aids?\nSam: We'll use slides for the main points. I'd like to keep the text short, so that people listen rather than read.\nDr Patel: Good. You could also give the audience a handout with the sources, so that they can follow up on their own.\nSam: That's a great idea. We also thought of playing a short recording of traffic noise as a demonstration.\nDr Patel: I like that, but check the room equipment first. The sound system in Room 4 is unreliable.\nSam: We'll test it on Monday. When is the presentation?\nDr Patel: Wednesday of next week. Please send me the slides by Tuesday afternoon.\nSam: We will. Thank you.",
+      "audioLabel": "Preparing for a Class Debate – Listening Section 3",
+      "transcript": "Prof Lindqvist: Tomas, let's talk about Thursday's debate. Remind me of the motion.\nTomas: We have to argue that cities should ban private cars from their centres.\nProf Lindqvist: A lively topic. How many people are on your team?\nTomas: Three. Ingrid gives the opening speech, I give the rebuttal, and Marco gives the closing summary.\nProf Lindqvist: Good. Each speaker has four minutes, so plan carefully. What will Ingrid's opening speech include?\nTomas: She'll define the motion and set out our two main arguments, on air quality and on safety.\nProf Lindqvist: Sensible. Where will you get your evidence?\nTomas: Mostly statistics from the city council's traffic report.\nProf Lindqvist: That's a reliable source. For your rebuttal, listen carefully to the other team, and answer their strongest point first, rather than the weakest.\nTomas: I'll try. And Marco's summary?\nProf Lindqvist: A closing summary should remind the audience of your main points, but it must not introduce any new arguments.\nTomas: Understood. Can we practise beforehand?\nProf Lindqvist: Yes, come to Room 12 on Tuesday afternoon and I'll time you. The debate itself is on Thursday at ten o'clock.\nTomas: Thank you, that's very helpful.",
       "groups": [
         {
           "id": "generated-listening-academic-0023-s3-g1",
           "instructions": "Choose the correct answer, A, B, C or D.",
           "questions": [
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q021", "question": "What is the topic of the group's presentation?", "options": ["Noise pollution and wildlife","Traffic in cities","Air quality","Sound in music"], "correctIndex": 0, "evidence": { "explanation": "Sam says the effects of noise pollution on wildlife." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q022", "question": "How long will the presentation itself last?", "options": ["Ten minutes","Fifteen minutes","Twenty minutes","Twenty-five minutes"], "correctIndex": 1, "evidence": { "explanation": "Sam says fifteen minutes, plus five for questions." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q023", "question": "How many students are in the group?", "options": ["Three","Four","Five","Six"], "correctIndex": 1, "evidence": { "explanation": "Sam says there are four of them." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q024", "question": "Who will give the conclusion?", "options": ["Sam","Dr Patel","Leila","Nobody has been chosen"], "correctIndex": 2, "evidence": { "explanation": "Leila will give the conclusion." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q025", "question": "Why does Dr Patel warn the group about Room 4?", "options": ["It is too small","The sound system is unreliable","It is booked on Wednesday","It has no screen"], "correctIndex": 1, "evidence": { "explanation": "Dr Patel says the sound system in Room 4 is unreliable." } },
-            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q026", "question": "When must the slides be sent to Dr Patel?", "options": ["Monday","Tuesday afternoon","Wednesday morning","Friday"], "correctIndex": 1, "evidence": { "explanation": "Dr Patel asks for the slides by Tuesday afternoon." } }
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q021", "question": "What is the motion for the debate?", "options": ["Cities should ban private cars from their centres","Public transport should be free","Cycling should be compulsory","Cities should build more roads"], "correctIndex": 0, "evidence": { "explanation": "Tomas says the motion is that cities should ban private cars from their centres." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q022", "question": "How many people are on Tomas's team?", "options": ["Two","Three","Four","Five"], "correctIndex": 1, "evidence": { "explanation": "Tomas says there are three of them." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q023", "question": "How long does each speaker have?", "options": ["Two minutes","Three minutes","Four minutes","Five minutes"], "correctIndex": 2, "evidence": { "explanation": "Prof Lindqvist says each speaker has four minutes." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q024", "question": "What will the team's two main arguments be about?", "options": ["Cost and speed","Air quality and safety","Noise and tourism","Health and jobs"], "correctIndex": 1, "evidence": { "explanation": "Tomas says the arguments will be on air quality and safety." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q025", "question": "Where will the team get most of their evidence?", "options": ["A newspaper article","A university textbook","The city council's traffic report","Interviews with drivers"], "correctIndex": 2, "evidence": { "explanation": "Tomas says mostly statistics from the city council's traffic report." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0023-q026", "question": "When can the team practise with Prof Lindqvist?", "options": ["Monday morning","Tuesday afternoon","Wednesday evening","Thursday morning"], "correctIndex": 1, "evidence": { "explanation": "Prof Lindqvist suggests Room 12 on Tuesday afternoon." } }
           ]
         },
         {
           "id": "generated-listening-academic-0023-s3-g2",
-          "instructions": "Which feature does each statement describe? Choose your answers from the box.",
+          "instructions": "Which speech does each statement describe? Choose your answers from the box.",
           "bank": [
-            { "key": "A", "label": "Slides" },
-            { "key": "B", "label": "Handout" },
-            { "key": "C", "label": "Recording" }
+            { "key": "A", "label": "Opening speech" },
+            { "key": "B", "label": "Rebuttal" },
+            { "key": "C", "label": "Closing summary" }
           ],
           "questions": [
-            { "kind": "matching", "id": "generated-listening-academic-0023-q027", "prompt": "Will contain short text for the main points", "answer": "A", "evidence": { "explanation": "Sam wants to keep the slide text short." } },
-            { "kind": "matching", "id": "generated-listening-academic-0023-q028", "prompt": "Lists sources for further reading", "answer": "B", "evidence": { "explanation": "Dr Patel suggests a handout with the sources." } },
-            { "kind": "matching", "id": "generated-listening-academic-0023-q029", "prompt": "Gives a demonstration of traffic noise", "answer": "C", "evidence": { "explanation": "Sam suggests a short recording of traffic noise." } },
-            { "kind": "matching", "id": "generated-listening-academic-0023-q030", "prompt": "Will be tested on Monday", "answer": "C", "evidence": { "explanation": "The sound system, needed for the recording, will be tested on Monday." } }
+            { "kind": "matching", "id": "generated-listening-academic-0023-q027", "prompt": "Defines the motion", "answer": "A", "evidence": { "explanation": "Ingrid's opening speech will define the motion." } },
+            { "kind": "matching", "id": "generated-listening-academic-0023-q028", "prompt": "Should answer the other team's strongest point first", "answer": "B", "evidence": { "explanation": "Prof Lindqvist advises answering the strongest point first in the rebuttal." } },
+            { "kind": "matching", "id": "generated-listening-academic-0023-q029", "prompt": "Must not introduce new arguments", "answer": "C", "evidence": { "explanation": "Prof Lindqvist says a closing summary must not introduce new arguments." } },
+            { "kind": "matching", "id": "generated-listening-academic-0023-q030", "prompt": "Sets out the team's two main arguments", "answer": "A", "evidence": { "explanation": "Ingrid's opening speech sets out the two main arguments." } }
           ]
         }
       ]
