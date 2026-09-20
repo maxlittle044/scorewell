@@ -10214,5 +10214,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0021-p1",
+    "title": "General Training Reading — Section 1: Hairdresser and Museum Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSTYLE STUDIO HAIRDRESSERS\nPrices and Appointments\n\nWe are open Tuesday to Saturday, from 9:00am to 6:00pm, and until 8:00pm on Thursdays. We are closed on Sundays and Mondays. A women's cut and blow-dry costs £42, a men's cut costs £22, and children under 12 pay £14. Colouring starts at £55.\n\nWe recommend booking at least two days in advance, particularly for Saturdays. Customers who arrive more than 15 minutes late may have to rebook. A patch test is required 48 hours before any first colouring treatment. Students with a valid card receive 15% off on Tuesdays and Wednesdays. Gift vouchers are available at the reception desk.\n\nTEXT 2\n\nCARRINGTON MUSEUM OF LOCAL HISTORY\nVisitor Information\n\nThe museum is open daily from 10:00am to 4:30pm, apart from 25 and 26 December. Admission is free, but donations are welcome. Guided tours run on Saturdays at 11:00am and 2:00pm; the cost is £4 and booking is not necessary.\n\nThe museum is on two floors, and a lift is available for visitors with wheelchairs or pushchairs. Photography is permitted without flash. Bags larger than a small backpack must be left in the cloakroom, which is free. The museum shop sells books, postcards and gifts, and the tea room serves sandwiches and cakes until 3:30pm.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0021-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q001", "statement": "The hairdresser is open on Mondays.", "answer": "FALSE", "evidence": { "explanation": "It is closed on Sundays and Mondays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q002", "statement": "Students receive a discount on Tuesdays and Wednesdays.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states 15% off on those days." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q003", "statement": "A patch test is needed before a first colouring treatment.", "answer": "TRUE", "evidence": { "explanation": "A patch test is required 48 hours before." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q004", "statement": "The hairdresser offers a home visit service.", "answer": "NOT GIVEN", "evidence": { "explanation": "Home visits are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q005", "statement": "Admission to the museum is free.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q006", "statement": "Guided tours must be booked in advance.", "answer": "FALSE", "evidence": { "explanation": "Booking is not necessary." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0021-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0021-q007", "prompt": "The hairdresser stays open until ______ on Thursdays.", "accept": ["8:00pm","8.00pm"], "evidence": { "explanation": "It stays open until 8:00pm on Thursdays." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q008", "prompt": "A men's cut costs ______.", "accept": ["£22","22 pounds"], "evidence": { "explanation": "A men's cut costs £22." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q009", "prompt": "The museum is closed on 25 and ______ December.", "accept": ["26"], "evidence": { "explanation": "The museum is closed on 25 and 26 December." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q010", "prompt": "Guided tours cost ______.", "accept": ["£4","4 pounds"], "evidence": { "explanation": "Tours cost £4." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0021-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0021-q011", "question": "How far in advance is booking recommended at the hairdresser?", "options": ["One day","At least two days","One week","One month"], "correctIndex": 1, "evidence": { "explanation": "The hairdresser recommends booking at least two days in advance." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0021-q012", "question": "What time does the tea room stop serving?", "options": ["2:00pm","3:30pm","4:30pm","5:00pm"], "correctIndex": 1, "evidence": { "explanation": "The tea room serves until 3:30pm." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0021-q013", "question": "What is the rule about photography in the museum?", "options": ["It is not allowed","It is allowed without flash","It is allowed only on Saturdays","It requires a permit"], "correctIndex": 1, "evidence": { "explanation": "Photography is permitted without flash." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0021-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Health and Safety at Work",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "NORTHFIELD FOODS\nStaff Handbook — Section 6: Health and Safety at Work\n\nAll employees share responsibility for health and safety. New staff receive a safety induction on their first day, which includes the location of fire exits, first-aid kits and assembly points. Refresher training is provided every twelve months, and attendance is compulsory.\n\nAccidents, however minor, must be reported to a supervisor on the same day and recorded in the accident book. Faulty equipment must be taken out of use immediately and reported, and staff must not attempt repairs themselves. Spills should be cleaned up at once or marked with a warning sign. Protective footwear is provided free, and must be worn in the warehouse at all times. The fire alarm is tested every Wednesday at 10:00am, and a full evacuation drill takes place twice a year. Staff who ignore safety rules may face disciplinary action.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0021-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q014", "statement": "New staff receive a safety induction on their first day.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q015", "statement": "Refresher training is optional.", "answer": "FALSE", "evidence": { "explanation": "Attendance at refresher training is compulsory." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q016", "statement": "Minor accidents do not need to be reported.", "answer": "FALSE", "evidence": { "explanation": "Accidents, however minor, must be reported." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q017", "statement": "Staff must pay for their own protective footwear.", "answer": "FALSE", "evidence": { "explanation": "Protective footwear is provided free." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q018", "statement": "The company provides free medical check-ups for staff.", "answer": "NOT GIVEN", "evidence": { "explanation": "Medical check-ups are not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0021-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0021-q019", "prompt": "Refresher training takes place every ______ months.", "accept": ["twelve","12"], "evidence": { "explanation": "Refresher training is every twelve months." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q020", "prompt": "Accidents must be recorded in the accident ______.", "accept": ["book"], "evidence": { "explanation": "Accidents are recorded in the accident book." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q021", "prompt": "The fire alarm is tested every ______ at 10:00am.", "accept": ["Wednesday"], "evidence": { "explanation": "The alarm is tested every Wednesday." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q022", "prompt": "A full evacuation drill takes place ______ a year.", "accept": ["twice","two times"], "evidence": { "explanation": "A drill takes place twice a year." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q023", "prompt": "Faulty equipment must be taken out of ______ immediately.", "accept": ["use"], "evidence": { "explanation": "Faulty equipment must be taken out of use." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0021-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0021-q024", "question": "Who should accidents be reported to?", "options": ["A supervisor","The company director","A first aider only","The police"], "correctIndex": 0, "evidence": { "explanation": "Accidents are reported to a supervisor." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0021-q025", "question": "Where must protective footwear be worn?", "options": ["In the office","In the canteen","In the warehouse","In the car park"], "correctIndex": 2, "evidence": { "explanation": "It must be worn in the warehouse at all times." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0021-q026", "question": "What should staff do about spills?", "options": ["Ignore them","Clean them up at once or mark them with a warning sign","Report them next week","Wait for the cleaners"], "correctIndex": 1, "evidence": { "explanation": "Spills should be cleaned up at once or marked with a warning sign." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0021-p3",
+    "title": "The Story of the Passport",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "travel", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few documents are as important to international travellers as the passport. Without one, it is impossible to cross most borders, and losing it abroad can turn a holiday into a crisis. Yet this small booklet is a relatively recent invention, and for much of history, travellers managed without one.\n\nB. The idea of a document that guarantees a traveller's safe passage is very old. In medieval Europe, rulers issued letters of safe conduct that asked others to allow the bearer to pass. An English law of 1414, from the reign of Henry V, refers to such a document. The word passport itself probably comes from the French passeport, meaning to pass through a port.\n\nC. By the nineteenth century, the need for passports was declining. The spread of railways made it easy to travel long distances, and governments in much of Europe were more concerned with encouraging trade than with controlling movement. For several decades, travellers could cross many borders with no papers at all.\n\nD. The First World War changed this. Governments feared spies and needed to control who entered their countries, so they introduced strict rules, including passports with photographs and physical descriptions. When the war ended, the rules were not abandoned. In 1920, the League of Nations held a conference in Paris to agree a standard passport booklet, and its main features remain familiar today.\n\nE. Passports also helped some of the most vulnerable people. After the war, many refugees had lost their nationality and were unable to travel. In 1922, the Norwegian explorer Fridtjof Nansen, who was the League of Nations' High Commissioner for Refugees, introduced a special document that came to be known as the Nansen passport, and it was eventually recognised by more than fifty countries.\n\nF. Today, most passports are electronic, containing a small chip that stores the holder's details and a digital photograph. Border officers can compare a traveller's face with the chip, which is intended to make forgery harder. Some people use the number of countries that citizens can visit without a visa as a measure of a passport's power, but that number changes as governments make and break agreements.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0021-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An essential but modern document" },
+            { "key": "ii", "label": "Early letters of safe conduct" },
+            { "key": "iii", "label": "A time of freer travel" },
+            { "key": "iv", "label": "War brings new controls" },
+            { "key": "v", "label": "Help for refugees" },
+            { "key": "vi", "label": "Chips and comparisons" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0021-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the passport as essential but recent." } },
+            { "kind": "matching", "id": "generated-reading-general-0021-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes early safe-conduct documents." } },
+            { "kind": "matching", "id": "generated-reading-general-0021-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the period of freer travel." } },
+            { "kind": "matching", "id": "generated-reading-general-0021-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the effects of the First World War." } },
+            { "kind": "matching", "id": "generated-reading-general-0021-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes electronic passports and comparisons." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0021-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q032", "statement": "Medieval rulers issued letters of safe conduct.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q033", "statement": "Railways made passports more necessary in the nineteenth century.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says railways made passports less necessary." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q034", "statement": "A standard passport booklet was agreed at a conference in 1920.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D gives 1920." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q035", "statement": "The Nansen passport was recognised by more than fifty countries.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0021-q036", "statement": "Electronic passports have made forgery impossible.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says the chip is intended to make forgery harder, not impossible." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0021-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0021-q037", "prompt": "An English law of ______ refers to a safe-conduct document.", "accept": ["1414"], "evidence": { "explanation": "Paragraph B gives 1414." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q038", "prompt": "The word passport probably comes from the French word ______.", "accept": ["passeport"], "evidence": { "explanation": "Paragraph B gives passeport." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q039", "prompt": "The 1920 conference was held in ______.", "accept": ["Paris"], "evidence": { "explanation": "Paragraph D says Paris." } },
+            { "kind": "completion", "id": "generated-reading-general-0021-q040", "prompt": "Nansen was the League of Nations' High Commissioner for ______.", "accept": ["Refugees"], "evidence": { "explanation": "Paragraph E says Refugees." } }
+          ]
+        }
+      ]
+    }
   }
 ];
