@@ -10505,6 +10505,59 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0032-p2",
+    "title": "The Story of Diamonds",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "economics", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Diamonds are among the most valued objects on Earth, prized as jewels and as symbols of love and wealth. Yet they are made of the same element as pencil lead, carbon. What makes a diamond different is the way in which its atoms are arranged, which is the result of tremendous heat and pressure, and which makes it the hardest natural substance known.\n\nB. Most natural diamonds formed between one and three billion years ago, about 150 kilometres below the surface of the Earth, where the temperature and pressure are extremely high. They were carried upwards in deep volcanic eruptions, which created vertical pipes of a rock called kimberlite, and it is in and around these pipes that diamonds are found today. Some are also found in river gravels, washed down from ancient sources.\n\nC. For centuries, India was the world's only significant source of diamonds, and they were traded to the courts of Asia and Europe. In the 1720s, diamonds were discovered in Brazil, and prices fell. The most important discovery came in South Africa in 1867, when a child named Erasmus Jacobs found a shiny stone on his family's farm. It turned out to be a diamond of 21 carats, and within a few years, thousands of prospectors had arrived.\n\nD. As the mines grew, so did competition. In 1888, the British businessman Cecil Rhodes formed the De Beers company, which took control of most of the mines in South Africa. By controlling the supply, the company was able to keep prices high, and for much of the twentieth century, it dominated the world's diamond trade. It is often described as one of the most successful cartels in history.\n\nE. Diamonds were not always the traditional choice for engagement rings. In 1947, an advertising agency employed by De Beers created the slogan \"A diamond is forever\", and the campaign that followed linked diamonds with romance and lasting commitment. Within a few decades, in the United States and later in Japan and other countries, a diamond ring had become almost a necessity for a couple planning to marry.\n\nF. Today, the diamond industry faces new challenges. Some diamonds have been mined in war zones, and their sale has been used to pay for conflict, which led to the introduction of a certification scheme, the Kimberley Process, in 2003. At the same time, laboratories can now make real diamonds, first achieved in 1954, and lab-grown stones, which are cheaper and cause less environmental damage, are attracting more buyers. Most diamonds, in fact, are not used as jewels at all, but as cutting and drilling tools in industry.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0032-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A hard form of a common element" },
+            { "key": "ii", "label": "Deep origins and volcanic pipes" },
+            { "key": "iii", "label": "A child's find and a rush" },
+            { "key": "iv", "label": "A company that controlled supply" },
+            { "key": "v", "label": "A slogan that changed a custom" },
+            { "key": "vi", "label": "Conflict, laboratories and tools" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0032-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes diamonds as a form of carbon." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes how diamonds formed and reached the surface." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the discoveries in India, Brazil and South Africa." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes De Beers and its control of supply." } },
+            { "kind": "matching", "id": "generated-reading-academic-0032-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes conflict diamonds, lab-grown stones and industrial uses." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0032-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q019", "statement": "Diamonds are made of the same element as pencil lead.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q020", "statement": "Most natural diamonds formed close to the surface of the Earth.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says they formed about 150 kilometres below the surface." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q021", "statement": "The first diamond found in South Africa in 1867 was discovered by a child.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0032-q022", "statement": "De Beers was founded by Erasmus Jacobs.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says De Beers was formed by Cecil Rhodes, not Erasmus Jacobs." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0032-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0032-q023", "prompt": "Diamonds are found in and around pipes of a rock called ______.", "accept": ["kimberlite"], "evidence": { "explanation": "Paragraph B names kimberlite." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q024", "prompt": "The De Beers company was formed in ______.", "accept": ["1888"], "evidence": { "explanation": "Paragraph D gives 1888." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q025", "prompt": "The slogan \"A diamond is forever\" was created in ______.", "accept": ["1947"], "evidence": { "explanation": "Paragraph E gives 1947." } },
+            { "kind": "completion", "id": "generated-reading-academic-0032-q026", "prompt": "The Kimberley Process was introduced in ______.", "accept": ["2003"], "evidence": { "explanation": "Paragraph F gives 2003." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
