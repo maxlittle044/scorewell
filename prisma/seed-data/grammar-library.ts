@@ -337,4 +337,46 @@ export const GRAMMAR_POINTS: GrammarPointSeed[] = [
     practiceSlug: "modal-verbs-practice",
     tags: ["grammar", "verbs", "task2"],
   },
+  {
+    slug: "gerunds-and-infinitives",
+    title: "Gerunds and infinitives",
+    category: "Verbs",
+    summary: "Enjoy doing, decide to do: which verbs take -ing, which take to, and why 'look forward to see' is wrong.",
+    explanation: [
+      "A gerund is the -ing form used as a noun (swimming, reducing); an infinitive is the base verb with 'to' (to swim, to reduce). Which one follows a verb depends on the first verb, and the choice is not always logical, so it is best learned in groups.",
+      "Some verbs take the gerund: enjoy, avoid, suggest, consider, finish, keep, admit, deny, practise, mind. Others take the infinitive: decide, want, hope, plan, agree, refuse, manage, afford, promise, fail. So it is 'I enjoy walking' and 'I decided to walk', never the other way round.",
+      "After a preposition, always use the gerund, because a preposition needs a noun form after it: 'interested in learning', 'instead of driving', 'by using'. This includes 'to' when it is part of a fixed phrase: 'look forward to seeing you', 'be used to working late', 'in addition to reducing costs'.",
+      "A few verbs take both, with a change in meaning. 'Stop doing' means to end an activity ('he stopped smoking'), while 'stop to do' means to pause in order to do something ('he stopped to smoke'). 'Remember to lock the door' is a duty; 'remember locking the door' is a memory of having done it.",
+      "To give a purpose, use 'to' plus the base verb: 'The tax was introduced to reduce traffic.' Use 'for' plus a gerund only to describe what something is used for: 'A calculator is used for solving equations.'",
+    ],
+    examples: [
+      {
+        wrong: "I look forward to see you next week.",
+        right: "I look forward to seeing you next week.",
+        note: "'To' is part of the phrase 'look forward to', so a gerund follows.",
+      },
+      {
+        wrong: "Some experts suggest to introduce a congestion charge.",
+        right: "Some experts suggest introducing a congestion charge.",
+        note: "'Suggest' takes the gerund, never the infinitive.",
+      },
+      {
+        wrong: "Many people are interested to learn a foreign language.",
+        right: "Many people are interested in learning a foreign language.",
+        note: "After the preposition 'in', use the gerund.",
+      },
+      {
+        wrong: "The government plans introducing new laws.",
+        right: "The government plans to introduce new laws.",
+        note: "'Plan' takes the infinitive.",
+      },
+      {
+        right: "A calculator is used for solving equations, and taxes are raised to fund public services.",
+        note: "'For' plus a gerund describes what something is used for; 'to' plus the base verb gives a purpose.",
+      },
+    ],
+    ieltsNote:
+      "Wrong verb patterns, such as 'suggest to do' or 'interested to learn', are among the most frequent errors in Task 2 and in Speaking, and they count against Grammatical Range and Accuracy every time they appear. Learning the verb groups, and always using a gerund after a preposition, removes most of them.",
+    tags: ["grammar", "verbs", "task2"],
+  },
 ];
