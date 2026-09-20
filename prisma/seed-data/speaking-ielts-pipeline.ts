@@ -5089,5 +5089,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0271",
+    "title": "Part 1: Dancing",
+    "part": "part1",
+    "topic": "Dancing",
+    "tags": ["speaking", "part-1", "dancing"],
+    "data": {
+      "questions": [
+        "Do you like dancing?",
+        "Have you ever taken dance lessons?",
+        "What kinds of dance are popular in your country?",
+        "Do you prefer to dance alone or with other people?",
+        "Do you enjoy watching dance performances?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0272",
+    "title": "Part 1: Rules and laws",
+    "part": "part1",
+    "topic": "Rules and laws",
+    "tags": ["speaking", "part-1", "rules-and-laws"],
+    "data": {
+      "questions": [
+        "Do you usually follow rules?",
+        "Are there any rules you think are unnecessary?",
+        "Did you have strict rules at home when you were a child?",
+        "Are there many rules at your workplace or school?",
+        "Do you think people in your country obey the law?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0273",
+    "title": "Part 1: Leadership",
+    "part": "part1",
+    "topic": "Leadership",
+    "tags": ["speaking", "part-1", "leadership"],
+    "data": {
+      "questions": [
+        "Would you like to be a leader?",
+        "Have you ever been in charge of a group?",
+        "Do you prefer to lead or to follow?",
+        "Who is a good leader that you know?",
+        "Do you think leadership is important in a team?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0274",
+    "title": "Part 1: Cultural differences",
+    "part": "part1",
+    "topic": "Cultural differences",
+    "tags": ["speaking", "part-1", "cultural-differences"],
+    "data": {
+      "questions": [
+        "Have you ever met people from other cultures?",
+        "What differences between cultures have you noticed?",
+        "Would you like to live in a different culture?",
+        "Do you enjoy trying customs from other countries?",
+        "Have you ever felt confused by a custom you did not understand?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0275",
+    "title": "Part 1: Mistakes and learning",
+    "part": "part1",
+    "topic": "Mistakes and learning",
+    "tags": ["speaking", "part-1", "mistakes-and-learning"],
+    "data": {
+      "questions": [
+        "Do you often make mistakes?",
+        "How do you feel when you make a mistake?",
+        "Do you learn more from mistakes or from success?",
+        "Have you ever made a mistake that turned out well?",
+        "Are you afraid of failing?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0271",
+    "title": "Part 2: Describe an occasion when you danced",
+    "part": "part2",
+    "topic": "Dancing",
+    "tags": ["speaking", "part-2", "dancing"],
+    "data": {
+      "questions": ["Describe an occasion when you danced"],
+      "cueCardPoints": [
+        "when and where it happened",
+        "who you danced with",
+        "what kind of dance it was",
+        "and explain how you felt about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0272",
+    "title": "Part 2: Describe a rule that you think is important",
+    "part": "part2",
+    "topic": "Rules and laws",
+    "tags": ["speaking", "part-2", "rules-and-laws"],
+    "data": {
+      "questions": ["Describe a rule that you think is important"],
+      "cueCardPoints": [
+        "what the rule is",
+        "where it applies",
+        "who made it",
+        "and explain why you think it is important"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0273",
+    "title": "Part 2: Describe a person who is a good leader",
+    "part": "part2",
+    "topic": "Leadership",
+    "tags": ["speaking", "part-2", "leadership"],
+    "data": {
+      "questions": ["Describe a person who is a good leader"],
+      "cueCardPoints": [
+        "who the person is",
+        "how you know them",
+        "what they do as a leader",
+        "and explain why you think they are a good leader"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0274",
+    "title": "Part 2: Describe a time when you learned about a different culture",
+    "part": "part2",
+    "topic": "Cultural differences",
+    "tags": ["speaking", "part-2", "cultural-differences"],
+    "data": {
+      "questions": ["Describe a time when you learned about a different culture"],
+      "cueCardPoints": [
+        "when it happened",
+        "how you learned about it",
+        "what you found interesting",
+        "and explain what you learned from it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0275",
+    "title": "Part 2: Describe a mistake that you learned something from",
+    "part": "part2",
+    "topic": "Mistakes and learning",
+    "tags": ["speaking", "part-2", "mistakes-and-learning"],
+    "data": {
+      "questions": ["Describe a mistake that you learned something from"],
+      "cueCardPoints": [
+        "what the mistake was",
+        "when it happened",
+        "what happened afterwards",
+        "and explain what you learned from it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0271",
+    "title": "Part 3: Dance and culture",
+    "part": "part3",
+    "topic": "Dancing",
+    "tags": ["speaking", "part-3", "dancing"],
+    "data": {
+      "questions": [
+        "Why is dance an important part of many cultures?",
+        "Are traditional dances still popular among young people?",
+        "How has technology changed the way people learn to dance?",
+        "Is dancing a good form of exercise?",
+        "Should dance be taught in schools?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0272",
+    "title": "Part 3: Law, order and society",
+    "part": "part3",
+    "topic": "Rules and laws",
+    "tags": ["speaking", "part-3", "rules-and-laws"],
+    "data": {
+      "questions": [
+        "Why do societies need rules and laws?",
+        "Should people ever break the law to protest against a rule?",
+        "How can governments encourage people to obey the law?",
+        "Are the punishments for breaking laws always fair?",
+        "Do you think there are too many rules in modern life?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0273",
+    "title": "Part 3: Leaders and followers",
+    "part": "part3",
+    "topic": "Leadership",
+    "tags": ["speaking", "part-3", "leadership"],
+    "data": {
+      "questions": [
+        "What qualities make someone a good leader?",
+        "Are leaders born or made?",
+        "Do men and women lead in different ways?",
+        "Why do some people follow leaders without question?",
+        "How can schools help students to develop leadership skills?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0274",
+    "title": "Part 3: Culture in a global world",
+    "part": "part3",
+    "topic": "Cultural differences",
+    "tags": ["speaking", "part-3", "cultural-differences"],
+    "data": {
+      "questions": [
+        "Why do people find it hard to understand other cultures?",
+        "How can travel help people to understand different cultures?",
+        "Is it important for countries to keep their own traditions?",
+        "Do you think cultures are becoming more similar?",
+        "How should schools teach students about other cultures?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0275",
+    "title": "Part 3: Failure, learning and success",
+    "part": "part3",
+    "topic": "Mistakes and learning",
+    "tags": ["speaking", "part-3", "mistakes-and-learning"],
+    "data": {
+      "questions": [
+        "Why are some people afraid of making mistakes?",
+        "Should schools reward effort more than results?",
+        "How can people learn to accept failure?",
+        "Do successful people usually have a history of failures?",
+        "Is it more important to avoid mistakes or to learn from them?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
