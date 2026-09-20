@@ -310,7 +310,7 @@ export const COURSES: CourseSeed[] = [
     tags: ["course", "grammar", "writing"],
     data: {
       description:
-        "Seven grammar points that cost the most marks in Task 1 and Task 2, each with a lesson and a practice test, finishing with the overview paragraph.",
+        "Seven grammar points that cost the most marks in Task 1 and Task 2, each with a lesson and a practice test, three short video lessons, and the overview paragraph to finish.",
       level: "Band 5.5 → 7",
       gradient: "from-sky-500 to-sky-700",
       lessons: [
@@ -331,6 +331,18 @@ export const COURSES: CourseSeed[] = [
           summary:
             "Say or tell, backshift and reported questions: the patterns behind 'she said me' and 'he asked where did I work'.",
           href: "/ielts/grammar/reported-speech",
+        },
+        {
+          title: "Indirect questions with if and whether",
+          summary:
+            "Turn a yes/no question into a clause, and see when only whether will do. Builds on reported speech.",
+          videoSlug: "if-and-whether-in-indirect-questions",
+        },
+        {
+          title: "Verb tenses in one map",
+          summary:
+            "The twelve forms as a grid of time and shape, and how to keep tense consistent. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "introducing-verb-tenses",
         },
         {
           title: "Future forms",
@@ -355,6 +367,12 @@ export const COURSES: CourseSeed[] = [
           summary:
             "Many or much, few or a few, fewer or less, and the number of or the amount of: the quantity language every Task 1 answer needs.",
           href: "/ielts/grammar/quantifiers-and-amounts",
+        },
+        {
+          title: "Population in Task 1 sentences",
+          summary:
+            "How the noun population behaves, with agreement and phrasing for Task 1 answers about people.",
+          videoSlug: "population-in-task-1-sentences",
         },
         {
           title: "The Task 1 overview",
