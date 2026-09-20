@@ -7040,5 +7040,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0032-s1",
+    "title": "Driving Lesson Booking – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Driving Lesson Booking – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Roadwise Driving School. How can I help you?\nCaller: Hello, I'd like to book some driving lessons, please.\nReceptionist: Certainly. May I take your surname?\nCaller: It's Kowalczyk, K-O-W-A-L-C-Z-Y-K.\nReceptionist: Thank you, Mr Kowalczyk. Have you driven before?\nCaller: Only a few times with my father, so I'm nearly a beginner. I'd like to learn in an automatic car.\nReceptionist: That's fine, we have several. One of our instructors, Peter, has space on Monday afternoons.\nCaller: Monday would be good. What time?\nReceptionist: He could see you at four o'clock.\nCaller: Perfect. How much does it cost?\nReceptionist: A single lesson is £34 an hour, and a block of ten lessons costs £300.\nCaller: I'll take the block of ten.\nReceptionist: Excellent. Where would you like to be picked up?\nCaller: From my home. It's eighteen Station Road.\nReceptionist: Thank you. And do you have a provisional licence?\nCaller: Yes, I do. My phone number is 07700 900518.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0032-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0032-q001", "prompt": "Surname: ______.", "accept": ["Kowalczyk"], "evidence": { "explanation": "The caller spells K-O-W-A-L-C-Z-Y-K." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q002", "prompt": "Type of car: ______.", "accept": ["automatic"], "evidence": { "explanation": "The caller wants an automatic car." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q003", "prompt": "Instructor: ______.", "accept": ["Peter"], "evidence": { "explanation": "The instructor is Peter." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q004", "prompt": "Day of first lesson: ______.", "accept": ["Monday"], "evidence": { "explanation": "The first lesson is on Monday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q005", "prompt": "Time: ______ o'clock.", "accept": ["four","4"], "evidence": { "explanation": "The lesson is at four o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q006", "prompt": "Price of a single lesson: £______ an hour.", "accept": ["34","thirty-four"], "evidence": { "explanation": "A single lesson is £34." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q007", "prompt": "Block of ten lessons: £______.", "accept": ["300","three hundred"], "evidence": { "explanation": "A block of ten costs £300." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q008", "prompt": "Pick-up address: eighteen ______ Road.", "accept": ["Station"], "evidence": { "explanation": "The address is eighteen Station Road." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q009", "prompt": "The caller has a ______ licence.", "accept": ["provisional"], "evidence": { "explanation": "The caller has a provisional licence." } },
+            { "kind": "completion", "id": "generated-listening-academic-0032-q010", "prompt": "Contact number: ______.", "accept": ["07700 900518"], "evidence": { "explanation": "The caller gives 07700 900518." } }
+          ]
+        }
+      ]
+    }
   }
 ];
