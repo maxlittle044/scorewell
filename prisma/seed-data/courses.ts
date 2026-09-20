@@ -337,6 +337,24 @@ export const COURSES: CourseSeed[] = [
           videoSlug: "discussing-technology-and-ai",
         },
         {
+          title: "Real conditionals",
+          summary:
+            "Zero and first conditionals for cause and effect in Task 2 and Part 3. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "real-conditionals-present-and-future",
+        },
+        {
+          title: "Simple past or present perfect?",
+          summary:
+            "Choosing by time word and link to now, with examples from Task 1 and Speaking. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "simple-past-or-present-perfect",
+        },
+        {
+          title: "Phrasal verbs: an introduction",
+          summary:
+            "Word order, register and formal alternatives. Watch the VOA clip, then read the written lesson.",
+          videoSlug: "phrasal-verbs-introduction",
+        },
+        {
           title: "Test what you've watched",
           summary:
             "Grammar tests with per-question explanations. Watching an explanation and applying it under time are different skills.",

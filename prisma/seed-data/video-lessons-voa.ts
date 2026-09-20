@@ -551,4 +551,97 @@ export const VOA_VIDEO_LESSONS: VideoLessonSeed[] = [
       },
     },
   },
+  {
+    slug: "real-conditionals-present-and-future",
+    title: "Real Conditionals: Present and Future",
+    topic: "Grammar",
+    tags: ["video-lesson", "grammar", "conditionals", "task-2", "speaking"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "The two conditionals for things that are true or likely, and how to use them for cause and effect in Task 2.",
+      keyPoints: [
+        "Zero conditional: if plus present simple, present simple. It states general truths: 'If water reaches 100 degrees, it boils.'",
+        "First conditional: if plus present simple, will plus base verb. It states real future possibilities.",
+        "Never put will in the if clause: 'If it will rain' is wrong; 'If it rains' is right.",
+        "'Unless' means 'if not', and takes a positive verb: 'Unless prices fall, people will spend less.'",
+        "In Task 2, first conditionals link a measure to its likely result, and hedging with may or might keeps them believable.",
+      ],
+      transcript: [
+        "Conditionals link a condition to a result. Real conditionals deal with things that are true or realistically possible. The zero conditional uses the present simple in both clauses and states a general truth: 'If you heat ice, it melts.' It is used for facts and rules, and 'when' can replace 'if' without a change of meaning.",
+        "The first conditional deals with a real possibility in the future. The pattern is if plus the present simple, then will plus the base verb: 'If the government raises taxes, people will spend less.' The important point is that the if clause takes the present simple even though the meaning is about the future. 'If the government will raise taxes' is wrong.",
+        "Punctuation and order are flexible. When the if clause comes first, use a comma: 'If it rains, we will stay inside.' When it comes second, no comma is needed: 'We will stay inside if it rains.' 'Unless' works as 'if not' and is followed by a positive verb: 'Unless we leave now, we will miss the train.'",
+        "You can replace will with another modal to change the strength of the result: 'If prices rise, people may buy less', 'If you want to pass, you should practise every day'. In Task 2, that flexibility is useful, because a first conditional with may or could makes a prediction you can defend, while will makes it sound certain.",
+        "First conditionals are ideal for the solution paragraphs in a problem-and-solution essay: 'If cities invest in cycling lanes, more people will choose to cycle.' In Speaking Part 3, they help you predict the effects of a policy, with a reason. For imaginary or unlikely situations, a different form is needed, the second conditional, covered in the grammar library.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "ECeiQzclT2g",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "simple-past-or-present-perfect",
+    title: "Simple Past or Present Perfect?",
+    topic: "Grammar",
+    tags: ["video-lesson", "grammar", "tenses", "task-1", "speaking"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "A practical way to choose between the past simple and the present perfect, using time words and the link to now.",
+      keyPoints: [
+        "Past simple: a finished time (yesterday, in 2019, three years ago, when I was young).",
+        "Present perfect: an unfinished time or no stated time (since, for, so far, already, yet, ever, just).",
+        "Never combine the present perfect with a finished time: 'I have seen him yesterday' is wrong.",
+        "'For' gives a length ('for six years') and 'since' gives a starting point ('since 2019').",
+        "In Task 1, 'rose in 2015' is a past event and 'has risen since 2015' describes a change that continues to now.",
+      ],
+      transcript: [
+        "The choice between the past simple and the present perfect confuses learners because both talk about the past. The question is not how long ago something happened, but whether the time period is finished, and whether the action connects to now.",
+        "The past simple belongs with a finished time. Words and phrases such as yesterday, last year, in 2019, three years ago and when I was a child close the period, so the past simple is the only choice: 'I visited Rome in 2019.' The present perfect belongs with an unfinished period or with no stated time: 'I have visited Rome twice', 'I have lived here since 2019'.",
+        "Watch the time words. 'Since', 'for', 'so far', 'already', 'yet', 'ever', 'never' and 'just' all point towards the present perfect. 'Since' gives a starting point (since 2019, since Monday), while 'for' gives a length of time (for six years, for a week). Mixing them up is one of the commonest errors: 'I have lived here for 2019' is wrong.",
+        "The most visible mistake is joining the present perfect to a finished time. 'I have seen him yesterday' and 'She has finished in 2018' are both wrong, because 'yesterday' and 'in 2018' are closed periods. If the sentence has a specific, finished time, use the past simple. Note that American English sometimes uses the past simple with 'already' and 'yet', but the exam accepts standard British forms, and consistency matters.",
+        "In IELTS, the contrast appears in Task 1 and in Speaking. A Task 1 graph might say 'Sales rose sharply in 2015', a past event, and later 'Sales have risen steadily since 2015', a change that continues. In Speaking Part 1, 'Have you ever...?' invites the present perfect, and the follow-up, 'When was that?', invites the past simple.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "EYi-RNiaZxw",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
+  {
+    slug: "phrasal-verbs-introduction",
+    title: "Phrasal Verbs: An Introduction",
+    topic: "Vocabulary",
+    tags: ["video-lesson", "vocabulary", "phrasal-verbs", "register", "speaking"],
+    data: {
+      lessonMinutes: 6,
+      summary:
+        "What phrasal verbs are, how their word order works, and when to choose a formal one-word alternative.",
+      keyPoints: [
+        "A phrasal verb is a verb plus a particle (up, off, out, in), and its meaning is often not literal.",
+        "Some are separable: 'turn off the light' and 'turn the light off'. With a pronoun, it goes in the middle: 'turn it off'.",
+        "Some are inseparable: 'look after the children', 'look after them', never 'look them after'.",
+        "Phrasal verbs are usually informal, and often have a more formal one-word equivalent.",
+        "In Task 2, prefer formal alternatives such as investigate, establish and discover.",
+      ],
+      transcript: [
+        "A phrasal verb is made of a verb and a small word, called a particle, such as up, off, out or in. The two together often have a meaning that you could not guess from the parts. 'Give up' means to stop trying, 'look after' means to care for, and 'turn down' can mean to refuse. English uses hundreds of them, especially in everyday speech.",
+        "Word order is the first thing to learn. Some phrasal verbs are separable, so the object can go in the middle or after the particle: 'She turned off the light' or 'She turned the light off'. But if the object is a pronoun, it must go in the middle: 'She turned it off', never 'She turned off it'. Others are inseparable: you say 'I look after my brother' and 'I look after him', and the verb and particle stay together.",
+        "The second thing to learn is register. Phrasal verbs are generally informal or neutral, and many have a more formal one-word equivalent. 'Find out' is 'discover', 'look into' is 'investigate', 'set up' is 'establish', 'carry out' is 'conduct', 'put off' is 'postpone', and 'come up with' is 'devise'. In conversation, both are natural, but in a formal essay, the one-word alternative usually sounds more academic.",
+        "That does not mean you should avoid phrasal verbs in the exam. In Speaking, they help your language sound natural, and a phrase such as 'I came across a great article' is better than a stiff formal one. In Task 2, use them sparingly and choose the formal form when the tone of the sentence is serious.",
+        "The best way to learn them is in context, not from long lists. Keep a small notebook with each phrasal verb in a sentence of your own, mark whether it is separable, and note a formal equivalent where there is one. Ten well-learned phrasal verbs, used accurately, are worth more than fifty half-remembered ones.",
+      ],
+      video: {
+        kind: "youtube",
+        src: "IyWmg86blgY",
+        credit: CREDIT,
+        placeholder: false,
+      },
+    },
+  },
 ];
