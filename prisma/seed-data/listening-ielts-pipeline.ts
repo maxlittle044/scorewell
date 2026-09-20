@@ -6908,5 +6908,137 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0031-s1",
+    "title": "Hair Salon Appointment Booking – Listening Section 1",
+    "topic": "Daily life",
+    "tags": ["academic", "daily-life", "form-completion"],
+    "data": {
+      "audioLabel": "Hair Salon Appointment Booking – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Studio Nine Hair Salon. How can I help you?\nCaller: Hello, I'd like to book a haircut and a colour, please.\nReceptionist: Certainly. May I take your surname?\nCaller: It's Okonkwo, O-K-O-N-K-W-O.\nReceptionist: Thank you, Ms Okonkwo. Which day would suit you?\nCaller: Friday, if possible.\nReceptionist: We have a space at three o'clock with Maria, one of our senior stylists.\nCaller: That's perfect. How much will it be?\nReceptionist: The cut is £38 and the colour starts at £60.\nCaller: I see. Do I need to do anything before the appointment?\nReceptionist: Yes, as it's your first colour with us, we'll need to do a patch test at least forty-eight hours beforehand. It takes about ten minutes and it's free.\nCaller: Could I do that tomorrow?\nReceptionist: Of course. And please arrive on time; if you're more than fifteen minutes late, we may have to change your appointment.\nCaller: Understood.\nReceptionist: We also take a deposit of £10 by card, which is deducted from your bill. May I have a contact number?\nCaller: 07700 900622.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0031-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0031-q001", "prompt": "Surname: ______.", "accept": ["Okonkwo"], "evidence": { "explanation": "The caller spells O-K-O-N-K-W-O." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q002", "prompt": "Services: haircut and ______.", "accept": ["colour","color"], "evidence": { "explanation": "The caller wants a haircut and a colour." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q003", "prompt": "Day of appointment: ______.", "accept": ["Friday"], "evidence": { "explanation": "The appointment is on Friday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q004", "prompt": "Time: ______ o'clock.", "accept": ["three","3"], "evidence": { "explanation": "The appointment is at three o'clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q005", "prompt": "Stylist: ______.", "accept": ["Maria"], "evidence": { "explanation": "The stylist is Maria." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q006", "prompt": "Price of the cut: £______.", "accept": ["38"], "evidence": { "explanation": "The cut is £38." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q007", "prompt": "Colour starts at: £______.", "accept": ["60","sixty"], "evidence": { "explanation": "The colour starts at £60." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q008", "prompt": "Patch test needed at least ______ hours beforehand.", "accept": ["forty-eight","forty eight","48"], "evidence": { "explanation": "The patch test is forty-eight hours beforehand." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q009", "prompt": "Deposit: £______.", "accept": ["10","ten"], "evidence": { "explanation": "The deposit is £10." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q010", "prompt": "Contact number: ______.", "accept": ["07700 900622"], "evidence": { "explanation": "The caller gives 07700 900622." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0031-s2",
+    "title": "Nursery School Open Day Talk – Listening Section 2",
+    "topic": "Education",
+    "tags": ["academic", "education", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Nursery School Open Day Talk – Listening Section 2",
+      "transcript": "Good morning, parents, and welcome to Little Oaks Nursery School. I'm going to tell you about how we work.\n\nOur nursery cares for children aged two to five, and we have places for sixty children in total. We are open from eight in the morning until six in the evening, Monday to Friday, and parents can choose between morning sessions, afternoon sessions and full days.\n\nEvery child has a key worker, a member of staff who gets to know the child and the family well. We have one adult for every four children under three, and one for every eight children over three. All our staff have first-aid training.\n\nThe day includes free play, story time, songs and outdoor activities. We have a large garden with a vegetable patch, and the children grow their own tomatoes and beans. Lunch is cooked on the premises, and it costs £3 a day. We ask parents to provide a change of clothes and a sun hat in summer.\n\nFees are £45 for a morning session and £80 for a full day. We offer a ten per cent discount for a second child from the same family. If you would like to register your child, please fill in the form at the reception desk. Now, if you'd like to look around.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0031-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0031-q011", "prompt": "The nursery cares for children aged ______ to five.", "accept": ["two","2"], "evidence": { "explanation": "The speaker says aged two to five." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q012", "prompt": "The nursery has places for ______ children.", "accept": ["sixty","60"], "evidence": { "explanation": "The speaker says sixty children." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q013", "prompt": "The nursery closes at ______ in the evening.", "accept": ["six","6"], "evidence": { "explanation": "The speaker says six in the evening." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q014", "prompt": "Every child has a ______ worker.", "accept": ["key"], "evidence": { "explanation": "The speaker says key worker." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q015", "prompt": "Lunch costs £______ a day.", "accept": ["3","three"], "evidence": { "explanation": "The speaker says £3 a day." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q016", "prompt": "A full day costs £______.", "accept": ["80","eighty"], "evidence": { "explanation": "The speaker says £80." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0031-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q017", "question": "What do the children grow in the garden?", "options": ["Tomatoes and beans","Flowers","Potatoes and carrots","Fruit trees"], "correctIndex": 0, "evidence": { "explanation": "They grow tomatoes and beans." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q018", "question": "What training do all staff have?", "options": ["First-aid training","Music training","Language training","Cooking training"], "correctIndex": 0, "evidence": { "explanation": "All staff have first-aid training." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q019", "question": "What do parents need to provide in summer?", "options": ["A change of clothes and a sun hat","Lunch","A blanket","A book"], "correctIndex": 0, "evidence": { "explanation": "Parents provide a change of clothes and a sun hat." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q020", "question": "What discount is offered for a second child?", "options": ["Five per cent","Ten per cent","Fifteen per cent","Twenty per cent"], "correctIndex": 1, "evidence": { "explanation": "A ten per cent discount is offered." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0031-s3",
+    "title": "Planning a Study Group Schedule – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Study Group Schedule – Listening Section 3",
+      "transcript": "Dr Farouk: Hannah, I hear you and your classmates are setting up a study group for the final exams.\nHannah: Yes, there are five of us. We want to meet twice a week.\nDr Farouk: That sounds sensible. How long will each session be?\nHannah: Two hours, in the library's group study room.\nDr Farouk: Have you booked it?\nHannah: Not yet. It has to be booked a week in advance, so I'll do that today.\nDr Farouk: Good. How will you organise the sessions?\nHannah: Each week, one person will lead a topic, and the others will ask questions.\nDr Farouk: Teaching others is an excellent way to learn. I'd also suggest doing past exam papers under timed conditions once a fortnight.\nHannah: That's a great idea. We could mark each other's answers.\nDr Farouk: Yes, but check the marking scheme carefully. And take short breaks, because it's hard to concentrate for two hours without one.\nHannah: We'll have a ten-minute break in the middle.\nDr Farouk: The exams begin on the fifth of June, so start your timed practice by the middle of May.\nHannah: We will. Thank you, Dr Farouk.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0031-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q021", "question": "How many students are in the study group?", "options": ["Three","Four","Five","Six"], "correctIndex": 2, "evidence": { "explanation": "Hannah says there are five of them." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q022", "question": "How often will the group meet?", "options": ["Once a week","Twice a week","Three times a week","Every day"], "correctIndex": 1, "evidence": { "explanation": "They want to meet twice a week." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q023", "question": "How long will each session be?", "options": ["One hour","Two hours","Three hours","Four hours"], "correctIndex": 1, "evidence": { "explanation": "Each session will last two hours." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q024", "question": "How far in advance must the study room be booked?", "options": ["One day","Three days","One week","Two weeks"], "correctIndex": 2, "evidence": { "explanation": "It has to be booked a week in advance." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q025", "question": "What does Dr Farouk suggest doing once a fortnight?", "options": ["Past exam papers under timed conditions","A group presentation","A visit to the tutor","A mock interview"], "correctIndex": 0, "evidence": { "explanation": "He suggests timed past papers once a fortnight." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0031-q026", "question": "When do the exams begin?", "options": ["The fifth of May","The fifth of June","The fifteenth of June","The fifth of July"], "correctIndex": 1, "evidence": { "explanation": "The exams begin on the fifth of June." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0031-s3-g2",
+          "instructions": "Which activity does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Leading a topic" },
+            { "key": "B", "label": "Timed practice" },
+            { "key": "C", "label": "Taking a break" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0031-q027", "prompt": "Happens once a week by one member of the group", "answer": "A", "evidence": { "explanation": "Each week, one person will lead a topic." } },
+            { "kind": "matching", "id": "generated-listening-academic-0031-q028", "prompt": "Involves marking each other's answers", "answer": "B", "evidence": { "explanation": "Hannah suggests marking each other's answers in timed practice." } },
+            { "kind": "matching", "id": "generated-listening-academic-0031-q029", "prompt": "Lasts ten minutes in the middle of a session", "answer": "C", "evidence": { "explanation": "Hannah says they will have a ten-minute break." } },
+            { "kind": "matching", "id": "generated-listening-academic-0031-q030", "prompt": "Should start by the middle of May", "answer": "B", "evidence": { "explanation": "Dr Farouk says to start timed practice by the middle of May." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-listening-academic-0031-s4",
+    "title": "The Development of the Bicycle – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "technology", "note-completion"],
+    "data": {
+      "audioLabel": "The Development of the Bicycle – Listening Section 4",
+      "transcript": "Today's lecture looks at how the bicycle developed, from a curious machine to one of the most widely used vehicles in the world.\n\nThe story begins in 1817, when the German inventor Karl von Drais built a wooden two-wheeled machine that riders pushed along with their feet. It had no pedals, and it was known as the running machine. It was popular for a while, but it was not comfortable.\n\nIn the 1860s, French makers added pedals to the front wheel, and the machine became known as the velocipede. Because the pedals turned the front wheel directly, larger wheels meant greater speed, and this led in the 1870s to the penny-farthing, with a huge front wheel and a tiny rear one. It was fast, but it was also dangerous, as riders sat high above the ground and could easily be thrown forward.\n\nA breakthrough came in 1885, when the English inventor John Kemp Starley produced the Rover safety bicycle, which had two wheels of equal size and a chain driving the rear wheel. It was safer and easier to ride, and it is the ancestor of the modern bicycle. In 1888, John Dunlop's pneumatic tyre made cycling more comfortable.\n\nThe 1890s saw a cycling boom. Bicycles gave ordinary people, and especially women, a new freedom to travel. The American campaigner Susan B. Anthony said that the bicycle had done more to emancipate women than anything else in the world.\n\nToday, the bicycle is used for transport, sport and leisure, and electric bikes are becoming increasingly popular. The Netherlands has more bicycles than people.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0031-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0031-q031", "prompt": "Karl von Drais built his machine in ______.", "accept": ["1817"], "evidence": { "explanation": "The lecturer says 1817." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q032", "prompt": "Drais's machine was made of ______.", "accept": ["wood","wooden"], "evidence": { "explanation": "The lecturer says wooden." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q033", "prompt": "The first machine had no ______.", "accept": ["pedals"], "evidence": { "explanation": "The lecturer says it had no pedals." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q034", "prompt": "In the 1860s, pedals were added to the ______ wheel.", "accept": ["front"], "evidence": { "explanation": "The lecturer says the front wheel." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q035", "prompt": "The 1870s machine with a huge front wheel was called the ______.", "accept": ["penny-farthing","penny farthing"], "evidence": { "explanation": "The lecturer says the penny-farthing." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q036", "prompt": "John Kemp Starley produced the Rover safety bicycle in ______.", "accept": ["1885"], "evidence": { "explanation": "The lecturer gives 1885." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q037", "prompt": "The safety bicycle had a ______ driving the rear wheel.", "accept": ["chain"], "evidence": { "explanation": "The lecturer says a chain." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q038", "prompt": "Dunlop's ______ tyre was developed in 1888.", "accept": ["pneumatic"], "evidence": { "explanation": "The lecturer says pneumatic tyre." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q039", "prompt": "The ______ saw a cycling boom.", "accept": ["1890s"], "evidence": { "explanation": "The lecturer says the 1890s." } },
+            { "kind": "completion", "id": "generated-listening-academic-0031-q040", "prompt": "The ______ has more bicycles than people.", "accept": ["Netherlands"], "evidence": { "explanation": "The lecturer says the Netherlands." } }
+          ]
+        }
+      ]
+    }
   }
 ];
