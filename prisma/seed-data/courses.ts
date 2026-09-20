@@ -310,7 +310,7 @@ export const COURSES: CourseSeed[] = [
     tags: ["course", "grammar", "writing"],
     data: {
       description:
-        "Six grammar points that cost the most marks in Task 1 and Task 2, each with a lesson and a practice test, finishing with the overview paragraph.",
+        "Seven grammar points that cost the most marks in Task 1 and Task 2, each with a lesson and a practice test, finishing with the overview paragraph.",
       level: "Band 5.5 → 7",
       gradient: "from-sky-500 to-sky-700",
       lessons: [
@@ -349,6 +349,12 @@ export const COURSES: CourseSeed[] = [
           summary:
             "Depend on, lead to, result in: the fixed prepositions that cost marks in almost every Task 2 script.",
           href: "/ielts/grammar/dependent-prepositions",
+        },
+        {
+          title: "Quantifiers and amounts",
+          summary:
+            "Many or much, few or a few, fewer or less, and the number of or the amount of: the quantity language every Task 1 answer needs.",
+          href: "/ielts/grammar/quantifiers-and-amounts",
         },
         {
           title: "The Task 1 overview",
