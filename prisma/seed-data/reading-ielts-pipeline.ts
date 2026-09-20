@@ -11719,5 +11719,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0026-p1",
+    "title": "General Training Reading — Section 1: Estate Agent and Driving School Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nHOMEFIND ESTATE AGENTS\nRenting a Property\n\nOur office is open Monday to Friday from 9:00am to 6:00pm and on Saturdays from 10:00am to 2:00pm. Viewings can be arranged at any time during opening hours, and evening viewings are available on Wednesdays until 8:00pm by appointment.\n\nTo rent a property, tenants must pay a deposit equal to five weeks' rent and the first month's rent in advance. A reference from your employer and one from a previous landlord are required, and all adult tenants must show a passport or driving licence. Our administration fee is £150 per tenancy. Pets are accepted only with the written permission of the landlord, and an extra deposit of £200 is required.\n\nTEXT 2\n\nSAFEDRIVE DRIVING SCHOOL\nLessons and Tests\n\nLessons cost £36 per hour when booked individually, or £320 for a block of ten. Each lesson lasts one hour, and lessons can be booked from 8:00am to 7:00pm, seven days a week. New pupils receive a free 30-minute assessment, so that the instructor can decide how many lessons are likely to be needed.\n\nPupils must hold a provisional licence before their first lesson. The school's cars have dual controls, and are less than two years old. The theory test can be practised using our free online course. We advise booking your practical test at least eight weeks in advance, because of high demand. Lessons cancelled with less than 48 hours' notice will be charged in full.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0026-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q001", "statement": "The estate agency is open on Saturday afternoons.", "answer": "FALSE", "evidence": { "explanation": "On Saturdays it closes at 2:00pm." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q002", "statement": "Evening viewings are available on Wednesdays by appointment.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q003", "statement": "Tenants must provide a reference from their employer.", "answer": "TRUE", "evidence": { "explanation": "A reference from an employer is required." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q004", "statement": "The estate agency charges a fee for arranging a mortgage.", "answer": "NOT GIVEN", "evidence": { "explanation": "Mortgages are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q005", "statement": "Pupils can book lessons only on weekdays.", "answer": "FALSE", "evidence": { "explanation": "Lessons can be booked seven days a week." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0026-q006", "statement": "New pupils receive a free assessment.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0026-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0026-q007", "prompt": "Tenants must pay a deposit equal to ______ weeks' rent.", "accept": ["five","5"], "evidence": { "explanation": "The deposit is equal to five weeks' rent." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q008", "prompt": "The administration fee is ______ per tenancy.", "accept": ["£150","150 pounds"], "evidence": { "explanation": "The fee is £150." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q009", "prompt": "A block of ten driving lessons costs ______.", "accept": ["£320","320 pounds"], "evidence": { "explanation": "A block of ten costs £320." } },
+            { "kind": "completion", "id": "generated-reading-general-0026-q010", "prompt": "Lessons cancelled with less than ______ hours' notice are charged in full.", "accept": ["48","forty-eight"], "evidence": { "explanation": "The notice period is 48 hours." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0026-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0026-q011", "question": "What extra deposit is required for pets?", "options": ["£100","£150","£200","£320"], "correctIndex": 2, "evidence": { "explanation": "An extra deposit of £200 is required." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0026-q012", "question": "How long is the free assessment for new pupils?", "options": ["15 minutes","30 minutes","45 minutes","One hour"], "correctIndex": 1, "evidence": { "explanation": "The assessment lasts 30 minutes." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0026-q013", "question": "How far ahead is booking the practical test advised?", "options": ["At least two weeks","At least four weeks","At least eight weeks","At least six months"], "correctIndex": 2, "evidence": { "explanation": "Booking at least eight weeks ahead is advised." } }
+          ]
+        }
+      ]
+    }
   }
 ];
