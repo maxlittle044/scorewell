@@ -7104,5 +7104,44 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0032-s3",
+    "title": "Preparing a Conference Abstract – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Preparing a Conference Abstract – Listening Section 3",
+      "transcript": "Dr Hoang: Elena, I hear that you'd like to present your research at the student conference. Have you started your abstract?\nElena: I've written a first draft. It's about how urban green spaces affect people's stress levels.\nDr Hoang: A good topic. What is the word limit?\nElena: Two hundred and fifty words. My draft is about three hundred, so I need to cut it.\nDr Hoang: Let's look at the structure. An abstract should have three parts. First, the background, which explains why the topic matters.\nElena: I've written four sentences for that, but I think two would be enough.\nDr Hoang: I agree. Second, the method. How did you collect your data?\nElena: I interviewed sixty people in three city parks, and I also asked them to fill in a short stress questionnaire.\nDr Hoang: Make sure the abstract states the number of participants clearly. Third, the results. What did you find?\nElena: People who spent at least twenty minutes in a park reported lower stress.\nDr Hoang: That's a clear finding, and it should get the most space. Avoid technical words that outsiders wouldn't understand.\nElena: I'll rewrite it in simpler language. When is the deadline?\nDr Hoang: The abstract must be submitted by the twelfth of April, and if it's accepted, you'll give a ten-minute presentation.\nElena: I'll send you the next draft on Friday.\nDr Hoang: Perfect.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0032-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q021", "question": "What is Elena's research about?", "options": ["Urban green spaces and stress","Traffic and noise","Housing and health","Diet and sleep"], "correctIndex": 0, "evidence": { "explanation": "Elena's topic is how urban green spaces affect stress." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q022", "question": "What is the word limit for the abstract?", "options": ["150 words","250 words","300 words","500 words"], "correctIndex": 1, "evidence": { "explanation": "The limit is two hundred and fifty words." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q023", "question": "How many people did Elena interview?", "options": ["Thirty","Forty","Sixty","Eighty"], "correctIndex": 2, "evidence": { "explanation": "Elena interviewed sixty people." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q024", "question": "What did Elena find?", "options": ["People who spent at least twenty minutes in a park reported lower stress","Parks made no difference","Older people were more stressed","Noise was the main cause of stress"], "correctIndex": 0, "evidence": { "explanation": "People who spent at least twenty minutes in a park reported lower stress." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q025", "question": "When is the deadline for the abstract?", "options": ["The second of April","The twelfth of April","The twentieth of April","The thirtieth of April"], "correctIndex": 1, "evidence": { "explanation": "The abstract must be submitted by the twelfth of April." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0032-q026", "question": "How long is the presentation if the abstract is accepted?", "options": ["Five minutes","Ten minutes","Fifteen minutes","Twenty minutes"], "correctIndex": 1, "evidence": { "explanation": "It will be a ten-minute presentation." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0032-s3-g2",
+          "instructions": "Which part of the abstract does each comment describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Background" },
+            { "key": "B", "label": "Method" },
+            { "key": "C", "label": "Results" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0032-q027", "prompt": "Should be shortened to about two sentences", "answer": "A", "evidence": { "explanation": "Elena's four sentences of background should be two." } },
+            { "kind": "matching", "id": "generated-listening-academic-0032-q028", "prompt": "Should state the number of participants clearly", "answer": "B", "evidence": { "explanation": "Dr Hoang says to state the number of participants." } },
+            { "kind": "matching", "id": "generated-listening-academic-0032-q029", "prompt": "Should be given the most space", "answer": "C", "evidence": { "explanation": "Dr Hoang says the results should get the most space." } },
+            { "kind": "matching", "id": "generated-listening-academic-0032-q030", "prompt": "Explains why the topic matters", "answer": "A", "evidence": { "explanation": "Dr Hoang says the background explains why the topic matters." } }
+          ]
+        }
+      ]
+    }
   }
 ];
