@@ -2582,4 +2582,220 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (university enrolment, online shopping, life expectancy,
+  // home energy use, seasonal rainfall) ----
+  {
+    slug: "task1-university-enrolment-subjects-bar-chart",
+    title: "Task 1: University enrolment by subject (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Education",
+    tags: ["writing", "task-1-academic", "education", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the number of students enrolled in five subject areas at one university in 2010 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "students (hundreds)",
+        categories: ["Business", "Engineering", "Medicine", "Arts", "Computing"],
+        series: [
+          { label: "2010", values: [42, 30, 18, 25, 12] },
+          { label: "2023", values: [48, 36, 24, 15, 40] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-online-shopping-adults-line-graph",
+    title: "Task 1: Adults who shop online in three countries (Line graph)",
+    taskType: "task1-academic",
+    topic: "Technology",
+    tags: ["writing", "task-1-academic", "technology", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of adults who bought goods online in three countries between 2010 and 2022. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "% of adults",
+        xLabels: ["2010", "2013", "2016", "2019", "2022"],
+        series: [
+          { label: "United Kingdom", values: [55, 66, 77, 84, 90] },
+          { label: "Spain", values: [22, 30, 42, 55, 68] },
+          { label: "Bulgaria", values: [8, 12, 19, 26, 38] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-life-expectancy-table",
+    title: "Task 1: Life expectancy at birth in four countries (Table)",
+    taskType: "task1-academic",
+    topic: "Health",
+    tags: ["writing", "task-1-academic", "health", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the average life expectancy at birth in four countries in 1970 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["Country", "1970 (years)", "2020 (years)"],
+        rows: [
+          { label: "Japan", values: [72, 85] },
+          { label: "Brazil", values: [59, 76] },
+          { label: "India", values: [50, 70] },
+          { label: "Nigeria", values: [42, 55] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-home-energy-use-pie-chart",
+    title: "Task 1: Energy use in a typical home (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Environment",
+    tags: ["writing", "task-1-academic", "environment", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows how a typical household in one country uses energy. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "% of household energy",
+        slices: [
+          { label: "Heating", value: 50 },
+          { label: "Hot water", value: 18 },
+          { label: "Appliances", value: 14 },
+          { label: "Lighting", value: 8 },
+          { label: "Cooking", value: 5 },
+          { label: "Other", value: 5 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-city-rainfall-seasons-bar-chart",
+    title: "Task 1: Seasonal rainfall in two cities (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Weather",
+    tags: ["writing", "task-1-academic", "weather", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average rainfall in each season in two cities. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "millimetres",
+        categories: ["Spring", "Summer", "Autumn", "Winter"],
+        series: [
+          { label: "City A", values: [110, 45, 130, 160] },
+          { label: "City B", values: [70, 95, 85, 40] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (wedding invitation, flexible hours, broken street light,
+  // thanking a colleague, describing a new job) ----
+  {
+    slug: "letter-inviting-relatives-to-wedding",
+    title: "Letter inviting relatives to your wedding",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal", "invitation"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are getting married and would like to invite relatives who live abroad. Write a letter to your aunt and uncle. In your letter: share your happy news, give details of the date and place of the wedding, and explain how they could travel to the event and where they could stay.",
+      instructions:
+        "Keep this warm and personal, as you would when writing to a relative. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-request-flexible-working-hours",
+    title: "Letter asking your manager for flexible working hours",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "request"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You would like to change your working hours for a few months so that you can take a course. Write a letter to your manager. In your letter: explain why you want to change your hours, describe the changes you are asking for, and say how you will make sure your work is not affected.",
+      instructions:
+        "A polite, semi-formal tone suits a manager you know well. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-council-broken-streetlight",
+    title: "Letter to the council about a broken street light",
+    taskType: "task1-general",
+    topic: "Community",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "test",
+    data: {
+      prompt:
+        "A street light near your home has not worked for several weeks, and the street is now dark and unsafe at night. Write a letter to the local council. In your letter: describe the problem and where it is, explain why it is a concern for local people, and say what you would like the council to do.",
+      instructions:
+        "State the problem clearly and keep the tone firm but polite. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-thanking-colleague-for-help",
+    title: "Letter thanking a colleague for help",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "thanks"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "A colleague helped you to complete an important project on time when you were very busy. Write a letter to your colleague. In your letter: thank them for their help, explain what difference it made, and suggest a way to show your appreciation.",
+      instructions:
+        "A warm, courteous tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-friend-describing-new-job",
+    title: "Letter to a friend describing a new job",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal", "news"],
+    kind: "test",
+    data: {
+      prompt:
+        "You have recently started a new job and want to tell a friend about it. Write a letter to your friend. In your letter: describe the job and the place where you work, say what you like and dislike about it so far, and invite your friend to visit.",
+      instructions:
+        "Keep this friendly and lively, as you would when writing to a good friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
