@@ -12283,5 +12283,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0030-p1",
+    "title": "General Training Reading — Section 1: Travel Agent and Furniture Store Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSUNTRAIL TRAVEL\nBooking Your Holiday\n\nOur shop is open Monday to Friday from 9:30am to 5:30pm, and on Saturdays from 10:00am to 4:00pm. Brochures are free, and our advisers will be pleased to help you plan a holiday. To confirm a booking, a deposit of 20% of the total cost is required, and the balance must be paid at least eight weeks before departure.\n\nAll travellers must ensure that their passports are valid for at least six months after the date of return. Travel insurance is strongly recommended, and can be added to your booking for £25 per person. Changes to a booking after confirmation are subject to a £30 amendment fee. Customers who cancel more than 60 days before departure will lose only their deposit.\n\nTEXT 2\n\nHOMESTYLE FURNITURE STORE\nDelivery, Returns and Offers\n\nOur showroom is open seven days a week, from 9:00am to 6:00pm. Delivery costs £35, but is free for orders over £500. Deliveries are made between Monday and Saturday, and customers are given a four-hour delivery window. An assembly service is available at £40 per item.\n\nGoods may be returned within 30 days if they are unused and in their original packaging, but collection of large items from the customer's home costs £25. All furniture is covered by a five-year guarantee against faults. Interest-free credit for 12 months is available on purchases over £300. The winter sale ends on 31 January.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0030-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q001", "statement": "The travel agency is open until 6:00pm on weekdays.", "answer": "FALSE", "evidence": { "explanation": "On weekdays it closes at 5:30pm." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q002", "statement": "Brochures at the travel agency are free.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q003", "statement": "Travel insurance is compulsory when booking a holiday.", "answer": "FALSE", "evidence": { "explanation": "It is strongly recommended, not compulsory." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q004", "statement": "The furniture store offers a free room design service.", "answer": "NOT GIVEN", "evidence": { "explanation": "A design service is not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q005", "statement": "The furniture store is open on Sundays.", "answer": "TRUE", "evidence": { "explanation": "The showroom is open seven days a week." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0030-q006", "statement": "Furniture must be returned within 14 days.", "answer": "FALSE", "evidence": { "explanation": "Goods may be returned within 30 days." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0030-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0030-q007", "prompt": "A deposit of ______ of the total cost is needed to confirm a booking.", "accept": ["20%","twenty per cent","20 per cent"], "evidence": { "explanation": "The deposit is 20%." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q008", "prompt": "The balance must be paid at least ______ weeks before departure.", "accept": ["eight","8"], "evidence": { "explanation": "The balance is due eight weeks before departure." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q009", "prompt": "Delivery is free for orders over ______.", "accept": ["£500","500 pounds"], "evidence": { "explanation": "Delivery is free for orders over £500." } },
+            { "kind": "completion", "id": "generated-reading-general-0030-q010", "prompt": "An assembly service costs ______ per item.", "accept": ["£40","40 pounds"], "evidence": { "explanation": "Assembly costs £40 per item." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0030-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0030-q011", "question": "How much is the amendment fee at the travel agency?", "options": ["£20","£25","£30","£40"], "correctIndex": 2, "evidence": { "explanation": "The amendment fee is £30." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0030-q012", "question": "How long must passports be valid after the return date?", "options": ["One month","Three months","Six months","One year"], "correctIndex": 2, "evidence": { "explanation": "Passports must be valid for six months after return." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0030-q013", "question": "How long is the interest-free credit period at the furniture store?", "options": ["Six months","Nine months","12 months","24 months"], "correctIndex": 2, "evidence": { "explanation": "Interest-free credit is for 12 months." } }
+          ]
+        }
+      ]
+    }
   }
 ];
