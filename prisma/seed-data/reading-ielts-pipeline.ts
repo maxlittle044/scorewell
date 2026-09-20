@@ -10665,6 +10665,59 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0033-p2",
+    "title": "Solar Eclipses",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "astronomy", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few natural events are as dramatic as a total solar eclipse. In the middle of the day, the sky darkens, the temperature drops, birds fall silent, and where the Sun had been, there is a black disc surrounded by a pale glow. For a few minutes, an observer standing in the right place sees something that ancient peoples often took as a sign that the world was in danger.\n\nB. A solar eclipse occurs when the Moon passes directly between the Earth and the Sun, and its shadow falls on part of the Earth. It happens because of a remarkable coincidence: the Sun is about 400 times wider than the Moon, but it is also about 400 times farther away, so the two appear almost the same size in the sky. When the Moon is close enough to the Earth, it can cover the Sun completely.\n\nC. Only observers inside a narrow strip, called the path of totality, see a total eclipse. This path is typically about 160 kilometres wide, and the Moon's shadow crosses the ground at speeds of well over a thousand kilometres an hour. Totality at any one place lasts for a few minutes at most, and the longest possible duration is a little over seven and a half minutes. Elsewhere, observers see only a partial eclipse, in which the Moon covers part of the Sun.\n\nD. Eclipses are more common than many people think, but a total eclipse at a given place is very rare. Somewhere on Earth, a total solar eclipse occurs about once every 18 months, but any one location will, on average, wait around 375 years for the next. This is why enthusiasts travel across the world to stand in the path of totality, and why so many people plan holidays around an eclipse years in advance.\n\nE. Eclipses have also advanced science. In 1868, astronomers studying the Sun's outer layer during an eclipse detected a bright yellow line that did not match any known element, and it led to the discovery of helium, which was found on Earth only years later. In 1919, the British astronomer Arthur Eddington photographed stars near the edge of the eclipsed Sun and found that their light was bent, as Albert Einstein's theory of general relativity had predicted.\n\nF. Watching an eclipse safely is essential. Looking directly at the Sun, even when most of it is covered, can permanently damage the eye, because the retina has no pain receptors to warn you. Only during the brief moments of totality is it safe to look without protection. At all other times, observers should use special eclipse glasses or a projection method, such as a pinhole camera, and ordinary sunglasses are not enough.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0033-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A striking and unsettling sight" },
+            { "key": "ii", "label": "A coincidence of size and distance" },
+            { "key": "iii", "label": "A narrow strip on the ground" },
+            { "key": "iv", "label": "Common in the sky, rare in one place" },
+            { "key": "v", "label": "Discoveries made in the shadow" },
+            { "key": "vi", "label": "Protecting the eyes" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0033-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes the effects of a total eclipse." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains that the Sun and Moon appear the same size." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the path of totality and its duration." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes how often eclipses occur." } },
+            { "kind": "matching", "id": "generated-reading-academic-0033-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes eye safety." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0033-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q019", "statement": "The Sun is about 400 times wider than the Moon.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q020", "statement": "A total eclipse lasts about an hour at any one place.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says totality lasts a few minutes at most." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q021", "statement": "A given location will, on average, see a total eclipse about once every 375 years.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0033-q022", "statement": "Helium was first discovered on Earth during the 1868 eclipse.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says it was detected in the Sun in 1868 and found on Earth only years later." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0033-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0033-q023", "prompt": "The path of totality is typically about ______ kilometres wide.", "accept": ["160"], "evidence": { "explanation": "Paragraph C gives about 160." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q024", "prompt": "The longest possible duration of totality is a little over ______ minutes.", "accept": ["seven and a half","7.5","seven"], "evidence": { "explanation": "Paragraph C says a little over seven and a half minutes." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q025", "prompt": "Arthur Eddington photographed stars near the eclipsed Sun in ______.", "accept": ["1919"], "evidence": { "explanation": "Paragraph E gives 1919." } },
+            { "kind": "completion", "id": "generated-reading-academic-0033-q026", "prompt": "Ordinary ______ are not enough to protect the eyes when looking at the Sun.", "accept": ["sunglasses"], "evidence": { "explanation": "Paragraph F says ordinary sunglasses are not enough." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
