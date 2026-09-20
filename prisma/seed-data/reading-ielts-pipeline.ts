@@ -9172,6 +9172,166 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0024-p1",
+    "title": "The History of Vaccination",
+    "sourceTestSet": "Academic",
+    "topic": "Health",
+    "tags": ["academic", "health", "history", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Long before anyone understood how disease worked, people had noticed that those who survived smallpox never caught it again. In parts of Asia, Africa and the Middle East, healers therefore tried to give healthy people a mild case on purpose, by scratching material from a smallpox sore into the skin. The practice, known as variolation, was risky, but it saved many lives.\n\nB. Variolation reached England in the early eighteenth century, largely through the efforts of Lady Mary Wortley Montagu, who had seen it in Istanbul and had her own children treated in 1721. Doctors tested the method with small groups before it became widely accepted, but about one in fifty patients still died from the treatment, and some of them spread the disease to others.\n\nC. A safer method was developed by the English doctor Edward Jenner. He had heard country people say that milkmaids who caught cowpox, a mild illness, did not catch smallpox. In 1796, he took material from a cowpox sore on a milkmaid and inserted it into the arm of an eight-year-old boy, James Phipps. Later, when Jenner exposed the boy to smallpox, he did not become ill.\n\nD. Jenner called his method vaccination, from the Latin word for cow, vacca. Governments soon began to promote it, and in some countries it became compulsory. Louis Pasteur later extended the idea to other diseases, and in 1885 he successfully treated a boy bitten by a rabid dog with a vaccine for rabies, which he had prepared from weakened material.\n\nE. During the twentieth century, vaccines were developed against diseases such as diphtheria, measles and polio. Jonas Salk announced a polio vaccine in 1955, and it was followed by an oral vaccine developed by Albert Sabin. Global campaigns followed, and in 1980 the World Health Organization declared that smallpox had been completely eradicated, the only human disease so far to have been removed from the world in this way.\n\nF. Vaccines protect not only individuals but whole communities. When a large enough proportion of a population is immune, the disease has difficulty spreading, and people who cannot be vaccinated, such as newborn babies, are indirectly protected, a principle known as herd immunity. Even so, the spread of false information about vaccine safety has led some parents to refuse vaccination, and outbreaks of measles have followed in places where coverage has fallen.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0024-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An ancient risky practice" },
+            { "key": "ii", "label": "Bringing the practice to Europe" },
+            { "key": "iii", "label": "The milkmaids and a famous experiment" },
+            { "key": "iv", "label": "A method extended to other diseases" },
+            { "key": "v", "label": "Vaccines and the eradication of a disease" },
+            { "key": "vi", "label": "Protecting a whole community" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0024-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes variolation." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes how variolation reached England." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Jenner's cowpox experiment." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Pasteur extending the idea to other diseases." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes herd immunity." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0024-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q006", "statement": "Variolation involved giving healthy people a mild case of smallpox on purpose.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q007", "statement": "Variolation was completely safe.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says about one in fifty patients still died." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q008", "statement": "Jenner tested his method on a boy called James Phipps.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C names James Phipps." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q009", "statement": "Jenner's method was welcomed by all doctors at once.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not describe doctors' reactions to Jenner." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0024-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0024-q010", "prompt": "Lady Mary Wortley Montagu had her own children treated in ______.", "accept": ["1721"], "evidence": { "explanation": "Paragraph B gives 1721." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q011", "prompt": "Jenner carried out his experiment in ______.", "accept": ["1796"], "evidence": { "explanation": "Paragraph C gives 1796." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q012", "prompt": "The word vaccination comes from the Latin word for ______.", "accept": ["cow"], "evidence": { "explanation": "Paragraph D says the Latin word for cow." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q013", "prompt": "Smallpox was declared eradicated in ______.", "accept": ["1980"], "evidence": { "explanation": "Paragraph E gives 1980." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0024-p2",
+    "title": "The Story of Salt",
+    "sourceTestSet": "Academic",
+    "topic": "History",
+    "tags": ["academic", "history", "food", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Salt is so common today that it is easy to forget how important it has been. The human body needs a small amount of sodium to control fluids and to send nerve signals, and for most of history, people had to obtain it from the sea or from the ground, because plants and meat do not provide enough in many regions.\n\nB. Salt was also the first great food preservative. Before refrigeration, meat and fish could be kept for months if they were packed in salt, which draws water out of food and stops the growth of bacteria. This made long sea voyages and winter survival possible, and cheeses, pickles and cured hams still depend on it.\n\nC. Because it was so valuable, salt shaped trade and politics. Ancient roads, such as the Via Salaria in Italy, were built to carry it, and some historians believe that the English word salary comes from the Latin word for the salt that was part of a Roman soldier's pay, although this is disputed. Many towns, including Salzburg in Austria, whose name means salt castle, grew rich on salt trade.\n\nD. Governments discovered that salt was an easy item to tax, since everyone needed it. In France, the hated gabelle tax made salt so expensive that it helped to cause anger against the monarchy, and it was abolished after the Revolution in 1790. In British India, the colonial government kept a monopoly on salt, and in 1930 Mahatma Gandhi led a march of about 240 miles to the coast at Dandi, where he made salt from seawater in protest.\n\nE. Salt is produced in two main ways. In warm coastal regions, seawater is let into shallow ponds and the sun evaporates the water, leaving crystals. Elsewhere, salt is mined from underground deposits left by ancient seas, and some mines, such as the Wieliczka mine in Poland, which has been worked since the Middle Ages, contain chapels and statues carved from salt.\n\nF. Today, the problem is not scarcity but excess. Health experts have linked eating too much salt to high blood pressure, and the World Health Organization recommends that adults eat less than five grams a day. Since most of the salt in modern diets comes from processed foods, many countries have encouraged manufacturers to reduce it.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0024-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Why the body needs it" },
+            { "key": "ii", "label": "Keeping food from spoiling" },
+            { "key": "iii", "label": "Roads, wages and wealth" },
+            { "key": "iv", "label": "A tax that changed history" },
+            { "key": "v", "label": "Two ways of making it" },
+            { "key": "vi", "label": "Too much of a good thing" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0024-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A explains why the body needs salt." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes salt as a preservative." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes salt in trade and wages." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes salt taxes and Gandhi's march." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q018", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes the health problems of eating too much salt." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0024-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q019", "statement": "Salt preserves food by drawing water out of it.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B says salt draws water out of food." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q020", "statement": "Historians agree that the word salary comes from salt.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says some historians believe this, although it is disputed." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q021", "statement": "The gabelle tax was abolished in 1790.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D gives 1790." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q022", "statement": "Gandhi's salt march was the largest protest in Indian history.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no comparison with other protests." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0024-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0024-q023", "prompt": "The name Salzburg means salt ______.", "accept": ["castle"], "evidence": { "explanation": "Paragraph C says salt castle." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q024", "prompt": "Gandhi's march to Dandi was about ______ miles long.", "accept": ["240"], "evidence": { "explanation": "Paragraph D gives about 240 miles." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q025", "prompt": "The Wieliczka mine is in ______.", "accept": ["Poland"], "evidence": { "explanation": "Paragraph E says Poland." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q026", "prompt": "Adults are advised to eat less than ______ grams of salt a day.", "accept": ["five","5"], "evidence": { "explanation": "Paragraph F says less than five grams." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-academic-0024-p3",
+    "title": "The Intelligence of Octopuses",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Octopuses are invertebrates, animals with no backbone, and are related to snails and clams rather than to fish. Yet scientists studying their behaviour have come to regard them as among the most intelligent animals in the sea. They have a brain, but most of their neurons, roughly two-thirds, are found in their eight arms, which can taste, touch and to some extent act independently.\n\nB. The bodies of octopuses are remarkable in other ways. They have three hearts, two to pump blood through the gills and one to pump it around the body, and their blood is blue because it contains a copper-based molecule rather than the iron-based haemoglobin found in humans. Having no bones, an octopus can squeeze through any gap larger than its beak, which is the only hard part of its body.\n\nC. Octopuses are masters of disguise. Their skin contains thousands of cells called chromatophores, which contain pigment and can be expanded or contracted within a fraction of a second, changing the animal's colour and pattern. Octopuses appear to be colour-blind, which puzzles scientists, but they can match the background so well that a predator may swim past without noticing them.\n\nD. In laboratory experiments, octopuses have learned to unscrew jars to reach food, to find their way through mazes, and to recognise individual human keepers, squirting water at those they dislike. In the wild, veined octopuses have been filmed collecting coconut shell halves, carrying them across the seabed and assembling them into a shelter, which is regarded as a form of tool use.\n\nE. Despite their abilities, octopuses live short lives. Many species live for only one to two years, and the female typically guards her eggs for weeks or months, without eating, and dies soon after they hatch. This means that young octopuses cannot learn from their parents, and researchers wonder how such an intelligent animal can develop its skills without teaching.\n\nF. Their intelligence has raised ethical questions. Some countries have recognised octopuses as sentient beings, animals able to feel pain, and have introduced rules on how they can be kept and killed. Others argue that the growth of octopus farming, planned in some places, would be cruel, given the animals' complex nature.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0024-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Not a fish, but a clever animal" },
+            { "key": "ii", "label": "Unusual anatomy" },
+            { "key": "iii", "label": "Changing colour to hide" },
+            { "key": "iv", "label": "Problem-solving and tool use" },
+            { "key": "v", "label": "A short life" },
+            { "key": "vi", "label": "Moral questions" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0024-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes octopuses as invertebrates with neurons spread through their arms." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes hearts, blue blood and the lack of bones." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes camouflage." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes problem-solving and tool use." } },
+            { "kind": "matching", "id": "generated-reading-academic-0024-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes ethical questions." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0024-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q032", "statement": "Octopuses are closely related to fish.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says they are related to snails and clams rather than fish." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q033", "statement": "An octopus has three hearts.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q034", "statement": "Octopuses are able to see colours better than humans can.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says they appear to be colour-blind." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q035", "statement": "Octopuses have been observed using coconut shells as shelter.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D describes veined octopuses doing this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0024-q036", "statement": "Octopuses in captivity live longer than those in the wild.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage gives no comparison of lifespans in captivity and the wild." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0024-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0024-q037", "prompt": "The blood of octopuses is blue because it contains a ______-based molecule.", "accept": ["copper"], "evidence": { "explanation": "Paragraph B says copper-based." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q038", "prompt": "The only hard part of an octopus's body is its ______.", "accept": ["beak"], "evidence": { "explanation": "Paragraph B says the beak." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q039", "prompt": "Colour changes are controlled by cells called ______.", "accept": ["chromatophores"], "evidence": { "explanation": "Paragraph C names chromatophores." } },
+            { "kind": "completion", "id": "generated-reading-academic-0024-q040", "prompt": "Many species of octopus live for only one to ______ years.", "accept": ["two","2"], "evidence": { "explanation": "Paragraph E says one to two years." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
