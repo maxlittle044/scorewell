@@ -12186,5 +12186,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0029-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Mobile Phones and Personal Devices",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "STONEHAVEN INSURANCE\nStaff Handbook — Section 15: Mobile Phones and Personal Devices\n\nEmployees may carry personal mobile phones at work, but they should be set to silent and used only during breaks or in designated areas. Personal calls should be kept short, and phones must not be used in meeting rooms, unless the meeting chair has given permission. Staff who work in the customer call centre must keep their phones in lockers during working hours, because of data security rules.\n\nStaff who are provided with a company phone are responsible for its care, and must report any loss or theft to the IT department within one hour, so that the device can be locked remotely. Company phones are provided for business use, although reasonable personal use is allowed, and the company will pay for a monthly data allowance of 10 gigabytes. Personal devices, such as tablets, laptops and memory sticks, must not be connected to the company network without the approval of the IT department. Photographs must not be taken inside the building without the permission of a manager. Employees driving on company business must not use a phone unless it is connected to a hands-free system.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0029-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q014", "statement": "Personal mobile phones must be set to silent at work.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q015", "statement": "Call centre staff may keep their phones on their desks.", "answer": "FALSE", "evidence": { "explanation": "They must keep their phones in lockers." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q016", "statement": "Lost company phones must be reported to the IT department within one hour.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q017", "statement": "Personal use of company phones is completely forbidden.", "answer": "FALSE", "evidence": { "explanation": "Reasonable personal use is allowed." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0029-q018", "statement": "The company provides free phone insurance for personal phones.", "answer": "NOT GIVEN", "evidence": { "explanation": "Insurance for personal phones is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0029-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0029-q019", "prompt": "Personal phones should be used only during breaks or in ______ areas.", "accept": ["designated"], "evidence": { "explanation": "The handbook says designated areas." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q020", "prompt": "Call centre staff must keep phones in lockers because of data ______ rules.", "accept": ["security"], "evidence": { "explanation": "The handbook says data security rules." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q021", "prompt": "Lost phones can be locked ______ by the IT department.", "accept": ["remotely"], "evidence": { "explanation": "The device can be locked remotely." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q022", "prompt": "The company pays for a monthly data allowance of ______ gigabytes.", "accept": ["10","ten"], "evidence": { "explanation": "The allowance is 10 gigabytes." } },
+            { "kind": "completion", "id": "generated-reading-general-0029-q023", "prompt": "Photographs must not be taken without the permission of a ______.", "accept": ["manager"], "evidence": { "explanation": "Manager's permission is required." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0029-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0029-q024", "question": "Who can give permission to use phones in meeting rooms?", "options": ["The meeting chair","The IT department","Any colleague","The director"], "correctIndex": 0, "evidence": { "explanation": "The meeting chair can give permission." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0029-q025", "question": "What must staff obtain before connecting a personal tablet to the company network?", "options": ["A manager's signature","IT department approval","A security pass","A new password"], "correctIndex": 1, "evidence": { "explanation": "IT department approval is required." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0029-q026", "question": "When may employees driving on company business use a phone?", "options": ["Never","Only when connected to a hands-free system","Only for short calls","Only for emergencies"], "correctIndex": 1, "evidence": { "explanation": "Only when connected to a hands-free system." } }
+          ]
+        }
+      ]
+    }
   }
 ];
