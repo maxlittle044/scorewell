@@ -11578,5 +11578,146 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0025-p1",
+    "title": "General Training Reading — Section 1: Tram Service and Vet Clinic Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nCITYLINK TRAM SERVICE\nTimetable and Fares\n\nTrams run every 8 minutes from 6:00am to 8:00pm, and every 15 minutes from 8:00pm to midnight. Services on Sundays start at 8:00am. A single ticket costs £2.20, and a day pass costs £6. Children under 5 travel free, and those aged 5 to 15 pay half fare.\n\nTickets must be bought before boarding, from the machines at each stop, and cannot be bought from the driver. Passengers without a valid ticket may be fined £50. Bicycles are allowed on trams outside the peak periods of 7:30am to 9:30am and 4:30pm to 6:30pm. Please offer your seat to elderly or disabled passengers.\n\nTEXT 2\n\nWILLOWS VETERINARY CLINIC\nOpening Hours and Services\n\nThe clinic is open from 8:30am to 6:30pm on weekdays, and from 9:00am to 12:00 noon on Saturdays. An emergency service is available at all other times; please call 07700 900734. Consultations cost £35, and a follow-up visit within two weeks is free. New clients should bring their pet's vaccination record.\n\nWe offer vaccinations, microchipping, dental care and a pet passport service. Please keep dogs on leads and cats in carriers in the waiting room. Pet insurance can be arranged at reception, and payment plans are available for major treatments.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0025-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q001", "statement": "Trams run every 8 minutes from 6:00am to 8:00pm.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q002", "statement": "Tickets can be bought from the tram driver.", "answer": "FALSE", "evidence": { "explanation": "Tickets cannot be bought from the driver." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q003", "statement": "Children under 5 travel free.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q004", "statement": "Bicycles are allowed on trams at all times.", "answer": "FALSE", "evidence": { "explanation": "They are not allowed during peak periods." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q005", "statement": "The vet clinic is open on Saturday afternoons.", "answer": "FALSE", "evidence": { "explanation": "It closes at noon on Saturdays." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q006", "statement": "The clinic offers pet grooming.", "answer": "NOT GIVEN", "evidence": { "explanation": "Grooming is not mentioned." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0025-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0025-q007", "prompt": "A day pass on the tram costs ______.", "accept": ["£6","6 pounds"], "evidence": { "explanation": "A day pass costs £6." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q008", "prompt": "Passengers without a valid ticket may be fined ______.", "accept": ["£50","50 pounds"], "evidence": { "explanation": "The fine is £50." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q009", "prompt": "A follow-up visit within ______ weeks is free.", "accept": ["two","2"], "evidence": { "explanation": "A follow-up within two weeks is free." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q010", "prompt": "Cats should be kept in ______ in the waiting room.", "accept": ["carriers"], "evidence": { "explanation": "Cats should be in carriers." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0025-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0025-q011", "question": "What do children aged 5 to 15 pay on the tram?", "options": ["Nothing","Half fare","Full fare","£1"], "correctIndex": 1, "evidence": { "explanation": "They pay half fare." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0025-q012", "question": "How much is a consultation at the vet clinic?", "options": ["£25","£35","£45","£50"], "correctIndex": 1, "evidence": { "explanation": "Consultations cost £35." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0025-q013", "question": "What should new clients bring to the clinic?", "options": ["Their pet's vaccination record","Proof of address","A payment card","A photograph of the pet"], "correctIndex": 0, "evidence": { "explanation": "New clients should bring the vaccination record." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0025-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Raising Concerns at Work",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "KESTREL ENGINEERING\nStaff Handbook — Section 13: Raising Concerns at Work\n\nThe company encourages employees to speak up if they see anything that appears to be illegal, unsafe or dishonest, such as fraud, bullying or breaches of safety rules. Concerns should first be raised with the employee's line manager. If the employee feels unable to do this, or if the concern involves the line manager, it may be raised with a member of the HR team or through the confidential telephone line, which is open 24 hours a day.\n\nAll concerns will be acknowledged within three working days, and the person raising the concern will be told what action, if any, is being taken. The company will treat the concern confidentially as far as possible, and employees will not be punished for raising a concern honestly, even if it turns out to be mistaken. Anyone who makes a false accusation deliberately may face disciplinary action. Records of concerns are kept for six years.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0025-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q014", "statement": "Employees should first raise a concern with their line manager.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q015", "statement": "The confidential telephone line is only open during office hours.", "answer": "FALSE", "evidence": { "explanation": "It is open 24 hours a day." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q016", "statement": "Employees can be punished for raising a concern that turns out to be mistaken.", "answer": "FALSE", "evidence": { "explanation": "They will not be punished if they raise it honestly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q017", "statement": "The company gives a reward to employees who report fraud.", "answer": "NOT GIVEN", "evidence": { "explanation": "Rewards are not mentioned." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q018", "statement": "Employees who make a deliberately false accusation may face disciplinary action.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0025-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0025-q019", "prompt": "Concerns will be acknowledged within ______ working days.", "accept": ["three","3"], "evidence": { "explanation": "Concerns are acknowledged within three working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q020", "prompt": "Records of concerns are kept for ______ years.", "accept": ["six","6"], "evidence": { "explanation": "Records are kept for six years." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q021", "prompt": "The confidential telephone line is open ______ hours a day.", "accept": ["24","twenty-four"], "evidence": { "explanation": "The line is open 24 hours a day." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q022", "prompt": "The company will treat the concern ______ as far as possible.", "accept": ["confidentially"], "evidence": { "explanation": "The handbook says confidentially." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q023", "prompt": "Examples of concerns include fraud, ______ and breaches of safety rules.", "accept": ["bullying"], "evidence": { "explanation": "The handbook lists bullying." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0025-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0025-q024", "question": "Who can employees go to if the concern involves their line manager?", "options": ["A member of the HR team","A customer","A colleague","The police only"], "correctIndex": 0, "evidence": { "explanation": "They may raise it with HR or through the confidential line." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0025-q025", "question": "Who will be told what action is being taken?", "options": ["Everyone in the company","The person raising the concern","Only the managers","Nobody"], "correctIndex": 1, "evidence": { "explanation": "The person raising the concern will be told." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0025-q026", "question": "What kinds of concern does the company encourage employees to raise?", "options": ["Complaints about the canteen","Anything illegal, unsafe or dishonest","Requests for pay rises","Suggestions for new products"], "correctIndex": 1, "evidence": { "explanation": "The company encourages speaking up about anything illegal, unsafe or dishonest." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "generated-reading-general-0025-p3",
+    "title": "The Story of the Vote",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "society", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Voting is so familiar to many people that it is easy to forget how recently it became available to most of them. For much of history, only a small number of people had a say in choosing their leaders, and the gradual widening of the right to vote is one of the great stories of modern times.\n\nB. The idea of voting is old. In ancient Athens, around 500 BC, male citizens gathered to vote on laws and decisions, and this is often described as the first form of democracy. However, women, slaves and foreigners, who made up most of the population, were excluded. In the Roman Republic, citizens also voted for officials, but rich people had greater influence than poor ones.\n\nC. In Europe and North America, the vote was extended slowly. In the nineteenth century, campaigners demanded that the vote should not depend on owning property, and by the early twentieth century, most men in many countries could vote. At first, voting was usually done aloud in public, which allowed employers and landlords to pressure voters. The secret ballot, in which people mark their choice in private, was introduced in Australia in the 1850s and in Britain in 1872, and it soon spread widely.\n\nD. Women had to campaign for decades. New Zealand became the first self-governing country to give women the vote in national elections, in 1893, followed by Australia in 1902 and Finland in 1906. In Britain, women over 30 who met certain conditions gained the vote in 1918, and equal voting rights with men came in 1928. In the United States, the 19th Amendment gave women the vote in 1920, though many Black citizens were still prevented from voting in practice until the 1960s.\n\nE. In some countries, progress was even slower. Women in Switzerland were not allowed to vote in national elections until 1971, and in Saudi Arabia they first voted in local elections in 2015. During the 1970s, many countries also lowered the voting age from 21 to 18, on the grounds that people who could work and serve in the army should be able to vote.\n\nF. Today, almost every country holds elections, but the quality of these varies enormously, and in some the results are not free or fair. Even where voting is open, many people choose not to take part, and turnout has fallen in a number of countries. Some countries, such as Australia, require people to vote, while others, such as Estonia, allow voting online. Whatever the method, the right to vote remains something that people around the world have fought hard to win.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0025-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A right taken for granted" },
+            { "key": "ii", "label": "Voting in the ancient world" },
+            { "key": "iii", "label": "From property to the secret ballot" },
+            { "key": "iv", "label": "The long campaign of women" },
+            { "key": "v", "label": "Late and lowering changes" },
+            { "key": "vi", "label": "Elections today" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0025-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the widening of the right to vote." } },
+            { "kind": "matching", "id": "generated-reading-general-0025-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes voting in ancient Athens and Rome." } },
+            { "kind": "matching", "id": "generated-reading-general-0025-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the removal of property qualifications and the secret ballot." } },
+            { "kind": "matching", "id": "generated-reading-general-0025-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes women's campaigns for the vote." } },
+            { "kind": "matching", "id": "generated-reading-general-0025-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes elections today." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0025-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q032", "statement": "In ancient Athens, women were allowed to vote.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says women were excluded." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q033", "statement": "The secret ballot was introduced in Britain in 1872.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C gives 1872." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q034", "statement": "New Zealand was the first self-governing country to give women the national vote.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q035", "statement": "Women in Switzerland gained the right to vote in national elections in 1920.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says 1971." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0025-q036", "statement": "Voting is compulsory in Estonia.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says Estonia allows online voting, but does not say voting is compulsory." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0025-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0025-q037", "prompt": "In ancient Athens, male ______ gathered to vote on laws.", "accept": ["citizens"], "evidence": { "explanation": "Paragraph B says male citizens." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q038", "prompt": "Early voting was usually done aloud in ______.", "accept": ["public"], "evidence": { "explanation": "Paragraph C says in public." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q039", "prompt": "The ______ Amendment gave American women the vote in 1920.", "accept": ["19th","nineteenth"], "evidence": { "explanation": "Paragraph D says the 19th Amendment." } },
+            { "kind": "completion", "id": "generated-reading-general-0025-q040", "prompt": "Many countries lowered the voting age from 21 to ______ in the 1970s.", "accept": ["18","eighteen"], "evidence": { "explanation": "Paragraph E says from 21 to 18." } }
+          ]
+        }
+      ]
+    }
   }
 ];
