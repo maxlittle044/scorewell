@@ -7333,5 +7333,40 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0034-s2",
+    "title": "Planetarium Visitor Briefing – Listening Section 2",
+    "topic": "Science",
+    "tags": ["academic", "science", "note-completion", "multiple-choice"],
+    "data": {
+      "audioLabel": "Planetarium Visitor Briefing – Listening Section 2",
+      "transcript": "Good morning, and welcome to the Aldergate Planetarium. Before the show begins, let me give you some information.\n\nThe planetarium was built in 1978, and its dome is eighteen metres wide, one of the largest in the country. The main show, called Journey to the Edge, lasts forty minutes and takes you on a tour of the solar system and beyond. It is shown every day at eleven o'clock, two o'clock and four o'clock.\n\nTickets cost £11 for adults and £7 for children, and a family ticket, covering two adults and up to three children, costs £30. Booking in advance is recommended, especially at weekends, since seats are limited to eighty per show.\n\nAfter the show, you can visit the exhibition hall, where there is a real fragment of a meteorite that visitors are allowed to touch, and a scale model of the solar system. The gift shop, next to the exhibition hall, sells telescopes, books and posters.\n\nPlease note that the show contains some loud sounds and moments of darkness, so it may not be suitable for very young children. Photography is not permitted during the show, as the flash can distract other visitors, but it is welcome in the exhibition hall. Latecomers cannot be admitted once the show has started, since the door is sealed for the dome lighting effects. Enjoy your visit.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0034-s2-g1",
+          "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0034-q011", "prompt": "The planetarium was built in ______.", "accept": ["1978"], "evidence": { "explanation": "The speaker says 1978." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q012", "prompt": "The dome is ______ metres wide.", "accept": ["eighteen","18"], "evidence": { "explanation": "The speaker says eighteen metres wide." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q013", "prompt": "The main show lasts ______ minutes.", "accept": ["forty","40"], "evidence": { "explanation": "The speaker says forty minutes." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q014", "prompt": "A family ticket covers two adults and up to ______ children.", "accept": ["three","3"], "evidence": { "explanation": "The speaker says up to three children." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q015", "prompt": "Seats are limited to ______ per show.", "accept": ["eighty","80"], "evidence": { "explanation": "The speaker says eighty per show." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q016", "prompt": "The gift shop is next to the exhibition ______.", "accept": ["hall"], "evidence": { "explanation": "The speaker says next to the exhibition hall." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0034-s2-g2",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q017", "question": "What can visitors touch in the exhibition hall?", "options": ["A telescope","A meteorite fragment","A model rocket","A piece of moon rock"], "correctIndex": 1, "evidence": { "explanation": "There is a real fragment of a meteorite that visitors are allowed to touch." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q018", "question": "Why might the show not suit very young children?", "options": ["It is too long","It contains loud sounds and darkness","It has no seats for children","It costs too much"], "correctIndex": 1, "evidence": { "explanation": "The show contains loud sounds and moments of darkness." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q019", "question": "Why is photography not permitted during the show?", "options": ["It is against copyright rules","The flash can distract other visitors","The dome is too dark to photograph","Staff have not been trained to help"], "correctIndex": 1, "evidence": { "explanation": "The flash can distract other visitors." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q020", "question": "What happens to latecomers?", "options": ["They wait for the next show","They can join quietly","They cannot be admitted once the show has started","They get a discount on the next show"], "correctIndex": 2, "evidence": { "explanation": "Latecomers cannot be admitted once the show has started." } }
+          ]
+        }
+      ]
+    }
   }
 ];
