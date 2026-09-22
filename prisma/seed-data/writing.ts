@@ -3716,4 +3716,219 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 0,
     },
   },
+
+  // ---- More Task 1 Academic charts (fast food spending, renewable share, commuting methods,
+  // household pets, mobile vs desktop internet) ----
+  {
+    slug: "task1-fast-food-spending-age-bar-chart",
+    title: "Task 1: Spending on fast food by age group (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Food",
+    tags: ["writing", "task-1-academic", "food", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the average weekly amount spent on fast food by people in four age groups in 2010 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "pounds per week",
+        categories: ["18–24", "25–39", "40–59", "60+"],
+        series: [
+          { label: "2010", values: [18, 15, 9, 4] },
+          { label: "2023", values: [27, 22, 14, 7] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-renewable-share-countries-line-graph",
+    title: "Task 1: Share of electricity from renewable sources (Line graph)",
+    taskType: "task1-academic",
+    topic: "Environment",
+    tags: ["writing", "task-1-academic", "environment", "line-graph"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The line graph below shows the percentage of electricity generated from renewable sources in three countries between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Use a range of language for describing change — avoid repeating 'increased' and 'decreased' throughout.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "line",
+        unit: "% of electricity generated",
+        xLabels: ["2000", "2005", "2010", "2015", "2020"],
+        series: [
+          { label: "Denmark", values: [17, 24, 33, 52, 66] },
+          { label: "Germany", values: [7, 10, 17, 30, 45] },
+          { label: "Poland", values: [2, 3, 7, 13, 17] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-commuting-methods-table",
+    title: "Task 1: Method of travel to work in four cities (Table)",
+    taskType: "task1-academic",
+    topic: "Transport",
+    tags: ["writing", "task-1-academic", "transport", "table"],
+    kind: "test",
+    data: {
+      prompt:
+        "The table below shows the percentage of commuters using each method of travel to work in four cities in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Remember to include an overview paragraph identifying the main trends before you report specific figures.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "table",
+        columns: ["City", "Car (%)", "Public transport (%)", "Walking or cycling (%)"],
+        rows: [
+          { label: "Amsterdam", values: [22, 30, 48] },
+          { label: "Houston", values: [78, 12, 10] },
+          { label: "Tokyo", values: [12, 65, 23] },
+          { label: "Nairobi", values: [30, 40, 30] },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-household-pets-pie-chart",
+    title: "Task 1: Types of pet kept by households (Pie chart)",
+    taskType: "task1-academic",
+    topic: "Society",
+    tags: ["writing", "task-1-academic", "society", "pie-chart"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "The pie chart below shows the types of pet kept by households in one country in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 0,
+      chart: {
+        type: "pie",
+        unit: "% of pet-owning households",
+        slices: [
+          { label: "Dogs", value: 38 },
+          { label: "Cats", value: 33 },
+          { label: "Fish", value: 12 },
+          { label: "Birds", value: 9 },
+          { label: "Other", value: 8 },
+        ],
+      },
+    },
+  },
+  {
+    slug: "task1-mobile-vs-desktop-internet-bar-chart",
+    title: "Task 1: Internet access by device (Bar chart)",
+    taskType: "task1-academic",
+    topic: "Technology",
+    tags: ["writing", "task-1-academic", "technology", "bar-chart"],
+    kind: "test",
+    data: {
+      prompt:
+        "The bar chart below shows the percentage of internet users accessing the internet by mobile phone and by desktop computer in four countries in 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      instructions:
+        "Describe the chart in your own words. Do not give your opinion, and do not speculate about causes the data does not show.",
+      minWords: 150,
+      minutes: 20,
+      chart: {
+        type: "bar",
+        unit: "% of internet users",
+        categories: ["India", "Brazil", "Germany", "South Korea"],
+        series: [
+          { label: "Mobile phone", values: [84, 76, 68, 90] },
+          { label: "Desktop computer", values: [30, 42, 65, 55] },
+        ],
+      },
+    },
+  },
+
+  // ---- More Task 1 General letters (university reference, noisy neighbours, mentor thanks,
+  // visa extension, new hobby) ----
+  {
+    slug: "letter-request-reference-university",
+    title: "Letter requesting a reference for a university application",
+    taskType: "task1-general",
+    topic: "Education",
+    tags: ["writing", "task-1-general", "letters", "formal", "request"],
+    kind: "test",
+    data: {
+      prompt:
+        "You are applying to a university and need a reference from a former teacher. Write a letter to your former teacher. In your letter: explain what you are applying for, remind them how they know you, and say what you would like them to include in the reference.",
+      instructions:
+        "A formal, polite tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-complaint-noisy-neighbours",
+    title: "Letter of complaint about noisy neighbours",
+    taskType: "task1-general",
+    topic: "Housing",
+    tags: ["writing", "task-1-general", "letters", "formal", "complaint"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You have been disturbed by noise from the flat next door on several occasions. Write a letter to your neighbour. In your letter: describe the problem, explain how it has affected you, and suggest what you would like them to do.",
+      instructions:
+        "State the facts calmly and keep the tone firm but polite. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-thanking-mentor-career-advice",
+    title: "Letter thanking a mentor for career advice",
+    taskType: "task1-general",
+    topic: "Work",
+    tags: ["writing", "task-1-general", "letters", "semi-formal", "thanks"],
+    kind: "test",
+    data: {
+      prompt:
+        "Someone gave you valuable advice that helped you in your career. Write a letter to that person. In your letter: thank them for their advice, explain how it helped you, and tell them about your progress since then.",
+      instructions:
+        "A warm, grateful tone is appropriate. Begin 'Dear Mr/Ms [Surname],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
+  {
+    slug: "letter-request-extend-visa",
+    title: "Letter asking about extending a visa",
+    taskType: "task1-general",
+    topic: "Travel",
+    tags: ["writing", "task-1-general", "letters", "formal", "enquiry"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "You are studying in another country and would like to stay longer than your current visa allows. Write a letter to the relevant office. In your letter: explain your situation, say how long you would like to extend your stay, and ask what documents you need to provide.",
+      instructions:
+        "A formal, polite tone is appropriate. Begin your letter 'Dear Sir or Madam,'.",
+      minWords: 150,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "letter-friend-new-hobby",
+    title: "Letter telling a friend about a new hobby",
+    taskType: "task1-general",
+    topic: "Friends and family",
+    tags: ["writing", "task-1-general", "letters", "informal", "news"],
+    kind: "test",
+    data: {
+      prompt:
+        "You have recently started a new hobby that you really enjoy. Write a letter to a friend. In your letter: describe the hobby and how you started it, explain what you enjoy about it, and invite your friend to try it with you.",
+      instructions:
+        "Keep this friendly and enthusiastic, as you would when writing to a good friend. Begin 'Dear [Name],'.",
+      minWords: 150,
+      minutes: 20,
+    },
+  },
 ];
