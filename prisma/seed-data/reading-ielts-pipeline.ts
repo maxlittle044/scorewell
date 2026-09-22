@@ -10878,6 +10878,60 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0034-p3",
+    "title": "The Deadliest Animal on Earth",
+    "sourceTestSet": "Academic",
+    "topic": "Health",
+    "tags": ["academic", "health", "science", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. If asked to name the animal that kills the most humans each year, most people would guess a shark, a snake or perhaps a lion. The true answer, by a wide margin, is the mosquito. Through the diseases they transmit, mosquitoes are linked to hundreds of thousands of human deaths annually, far more than any large predator, and this tiny insect has shaped human history in ways that are only now being fully understood.\n\nB. Only female mosquitoes bite. They require a meal of blood to obtain the protein needed to produce eggs, and it is during this bite that disease-causing organisms can pass from an infected person into the mosquito, and later, from the mosquito into another person. Male mosquitoes, by contrast, feed only on nectar and plant juices and play no part in spreading disease.\n\nC. The diseases spread by mosquitoes include malaria, dengue fever, yellow fever, Zika virus and several forms of encephalitis. Malaria alone, caused by a parasite carried in the mosquito's saliva, is responsible for hundreds of thousands of deaths each year, the majority of them young children in sub-Saharan Africa. Unlike many diseases, malaria does not spread directly between people; a mosquito is required to complete the parasite's life cycle.\n\nD. Mosquitoes locate a source of blood using several senses working together. They detect carbon dioxide, which animals exhale, from many metres away, and as they get closer, they respond to body heat, certain skin odours, and even the sight of a moving target. Some individual people seem to attract far more mosquito bites than others, and although scientists do not fully understand why, differences in skin bacteria and the chemicals in sweat appear to play a role.\n\nE. Efforts to control mosquitoes have included draining standing water, where the insects lay their eggs, spraying insecticides, and distributing bed nets treated with chemicals that repel or kill mosquitoes. More recently, scientists have experimented with releasing mosquitoes that have been genetically modified or infected with bacteria that prevent them from transmitting disease, with the aim of gradually reducing the population able to spread illness.\n\nF. Despite decades of effort, mosquito-borne diseases remain a major global health challenge, particularly in poorer countries with limited access to healthcare and prevention. Climate change is expected to expand the range in which certain mosquito species can survive, potentially exposing new regions to diseases that were previously confined to the tropics. For this reason, researchers argue that funding for mosquito control and vaccine development remains a public health priority.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0034-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "An unexpected killer" },
+            { "key": "ii", "label": "Only the females bite" },
+            { "key": "iii", "label": "A range of dangerous diseases" },
+            { "key": "iv", "label": "How mosquitoes find their targets" },
+            { "key": "v", "label": "Methods of control" },
+            { "key": "vi", "label": "A continuing challenge" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0034-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the mosquito as the deadliest animal." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B explains that only females bite." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the diseases mosquitoes spread." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes how mosquitoes find people to bite." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q031", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes methods used to control mosquitoes." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0034-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q032", "statement": "Sharks kill more humans each year than mosquitoes.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says mosquitoes cause far more deaths than any large predator." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q033", "statement": "Male mosquitoes bite humans to obtain blood.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says only female mosquitoes bite, and males feed on nectar and plant juices." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q034", "statement": "Malaria requires a mosquito to complete the parasite's life cycle.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q035", "statement": "Most people who die from malaria are elderly.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the majority are young children in sub-Saharan Africa." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q036", "statement": "Scientists have identified the exact number of mosquito species capable of spreading disease.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage does not give a specific number of disease-carrying species." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0034-p3-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0034-q037", "prompt": "Female mosquitoes need blood to obtain the ______ needed to produce eggs.", "accept": ["protein"], "evidence": { "explanation": "Paragraph B says protein." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q038", "prompt": "Malaria is caused by a parasite carried in the mosquito's ______.", "accept": ["saliva"], "evidence": { "explanation": "Paragraph C says saliva." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q039", "prompt": "Mosquitoes detect ______ from many metres away.", "accept": ["carbon dioxide"], "evidence": { "explanation": "Paragraph D says carbon dioxide." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q040", "prompt": "Bed nets are treated with chemicals that repel or ______ mosquitoes.", "accept": ["kill"], "evidence": { "explanation": "Paragraph E says repel or kill." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
