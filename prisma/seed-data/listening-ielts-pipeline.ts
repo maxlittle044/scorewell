@@ -7275,5 +7275,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0033-s4",
+    "title": "Coral Reefs – Listening Section 4",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "science", "note-completion"],
+    "data": {
+      "audioLabel": "Coral Reefs – Listening Section 4",
+      "transcript": "Today's lecture looks at coral reefs, some of the most productive and threatened ecosystems in the ocean.\n\nCorals are not plants but animals, small creatures called polyps that live in large colonies. Each polyp builds a hard skeleton of calcium carbonate, and over thousands of years, these skeletons accumulate to form reefs. Most reef-building corals live in a partnership with tiny algae called zooxanthellae, which live inside the coral's tissue and provide it with food through photosynthesis, in exchange for shelter.\n\nCoral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all known marine species, which is why they are sometimes called the rainforests of the sea. The largest reef system in the world is the Great Barrier Reef, off the coast of Australia, which stretches for more than 2,300 kilometres.\n\nReefs are very sensitive to temperature. When the water becomes too warm, corals expel the algae living inside them, and because the algae give corals much of their colour, the coral turns white, a process called bleaching. If the warm water does not last long, the coral can recover, but repeated or prolonged bleaching often kills it.\n\nOther threats include ocean acidification, which happens as the sea absorbs carbon dioxide from the atmosphere and becomes more acidic, making it harder for corals to build their skeletons. Pollution, overfishing and damage from anchors and divers add further pressure. Scientists estimate that reefs could provide services worth billions of dollars a year, through fishing, tourism and protecting coastlines from storms, so their loss would carry a heavy economic cost as well as an ecological one.\n\nConservation efforts include marine protected areas, where fishing and other damaging activities are restricted, and coral nurseries, where fragments of coral are grown and later transplanted onto damaged reefs.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0033-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0033-q031", "prompt": "Corals are small animals called ______.", "accept": ["polyps"], "evidence": { "explanation": "The lecturer says small creatures called polyps." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q032", "prompt": "Each polyp builds a hard skeleton of ______.", "accept": ["calcium carbonate"], "evidence": { "explanation": "The lecturer says calcium carbonate." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q033", "prompt": "Corals live in partnership with tiny algae called ______.", "accept": ["zooxanthellae"], "evidence": { "explanation": "The lecturer names zooxanthellae." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q034", "prompt": "Reefs support about a ______ of all known marine species.", "accept": ["quarter"], "evidence": { "explanation": "The lecturer says about a quarter." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q035", "prompt": "The Great Barrier Reef stretches for more than ______ kilometres.", "accept": ["2,300","2300"], "evidence": { "explanation": "The lecturer says more than 2,300 kilometres." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q036", "prompt": "When water becomes too warm, corals expel their ______.", "accept": ["algae"], "evidence": { "explanation": "The lecturer says corals expel the algae." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q037", "prompt": "The whitening of coral is called ______.", "accept": ["bleaching"], "evidence": { "explanation": "The lecturer names bleaching." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q038", "prompt": "The sea becoming more acidic is called ocean ______.", "accept": ["acidification"], "evidence": { "explanation": "The lecturer names ocean acidification." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q039", "prompt": "Reefs protect coastlines from ______.", "accept": ["storms"], "evidence": { "explanation": "The lecturer says protecting coastlines from storms." } },
+            { "kind": "completion", "id": "generated-listening-academic-0033-q040", "prompt": "Fragments of coral are grown in coral ______.", "accept": ["nurseries"], "evidence": { "explanation": "The lecturer names coral nurseries." } }
+          ]
+        }
+      ]
+    }
   }
 ];
