@@ -7368,5 +7368,44 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0034-s3",
+    "title": "Planning a Footpath Erosion Study – Listening Section 3",
+    "topic": "Education",
+    "tags": ["academic", "education", "multiple-choice", "matching"],
+    "data": {
+      "audioLabel": "Planning a Footpath Erosion Study – Listening Section 3",
+      "transcript": "Dr Almeida: Tomasz, let's discuss your plan for the fieldwork project. What have you decided on?\nTomasz: I'm going to study how footpath erosion affects plant growth on the hillside near the campus.\nDr Almeida: A good topic. How will you measure the erosion?\nTomasz: I'll photograph ten fixed points along the path every two weeks, and measure the width of bare ground at each point.\nDr Almeida: Sensible. And plant growth?\nTomasz: I'll count the number of plant species within a metre of each point, and compare areas close to the path with areas further away.\nDr Almeida: Good comparison. How long will the fieldwork run?\nTomasz: Twelve weeks, so I'll have six sets of measurements.\nDr Almeida: That should be enough to see a trend. Have you thought about safety?\nTomasz: I'll always go with another student, and I've registered the route with the department office.\nDr Almeida: Essential. What about permission to access the site?\nTomasz: The land belongs to the university, so I don't need separate permission, but I do need to avoid the areas marked as nesting sites for birds in spring.\nDr Almeida: Good, check the map again before you start. How will you record the data?\nTomasz: In a waterproof notebook, then I'll type it into a spreadsheet the same day.\nDr Almeida: That's wise, don't leave data sitting in a notebook for weeks. When is the first site visit?\nTomasz: Next Monday. I'll send you my first results by the end of that week.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0034-s3-g1",
+          "instructions": "Choose the correct answer, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q021", "question": "What is Tomasz's fieldwork project about?", "options": ["Footpath erosion and plant growth","Bird nesting habits","Soil types on a hillside","Water quality in a stream"], "correctIndex": 0, "evidence": { "explanation": "Tomasz is studying how footpath erosion affects plant growth." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q022", "question": "How often will Tomasz photograph the fixed points?", "options": ["Every week","Every two weeks","Every month","Every two months"], "correctIndex": 1, "evidence": { "explanation": "Tomasz will photograph the points every two weeks." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q023", "question": "How long will the fieldwork run?", "options": ["Six weeks","Eight weeks","Ten weeks","Twelve weeks"], "correctIndex": 3, "evidence": { "explanation": "The fieldwork will run for twelve weeks." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q024", "question": "Why does Tomasz not need separate permission to access the site?", "options": ["The land belongs to the university","The site is a public park","He has a research grant","The department already has permission"], "correctIndex": 0, "evidence": { "explanation": "The land belongs to the university." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q025", "question": "What must Tomasz avoid in spring?", "options": ["Areas with heavy footfall","Areas marked as bird nesting sites","Areas close to the road","Areas without fixed points"], "correctIndex": 1, "evidence": { "explanation": "He must avoid areas marked as nesting sites for birds in spring." } },
+            { "kind": "multiple-choice", "id": "generated-listening-academic-0034-q026", "question": "When is Tomasz's first site visit?", "options": ["This week","Next Monday","Next month","At the end of term"], "correctIndex": 1, "evidence": { "explanation": "The first site visit is next Monday." } }
+          ]
+        },
+        {
+          "id": "generated-listening-academic-0034-s3-g2",
+          "instructions": "Which measurement does each statement describe? Choose your answers from the box.",
+          "bank": [
+            { "key": "A", "label": "Erosion measurement" },
+            { "key": "B", "label": "Plant growth measurement" },
+            { "key": "C", "label": "Safety measure" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-listening-academic-0034-q027", "prompt": "Photographing ten fixed points", "answer": "A", "evidence": { "explanation": "Tomasz will photograph ten fixed points to measure erosion." } },
+            { "kind": "matching", "id": "generated-listening-academic-0034-q028", "prompt": "Counting plant species within a metre of each point", "answer": "B", "evidence": { "explanation": "Tomasz will count plant species within a metre of each point." } },
+            { "kind": "matching", "id": "generated-listening-academic-0034-q029", "prompt": "Always going with another student", "answer": "C", "evidence": { "explanation": "Tomasz will always go with another student for safety." } },
+            { "kind": "matching", "id": "generated-listening-academic-0034-q030", "prompt": "Registering the route with the department office", "answer": "C", "evidence": { "explanation": "Tomasz has registered the route with the department office." } }
+          ]
+        }
+      ]
+    }
   }
 ];
