@@ -12832,5 +12832,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0031-p3",
+    "title": "The Story of the Camera",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "technology", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Few inventions have changed how we remember our own lives as much as the camera. Before it existed, only the wealthy could afford a painted portrait, and most people went through life with no image of themselves at all. Today, billions of photographs are taken every day, most of them on phones, but the basic idea behind them is centuries old.\n\nB. The principle of the camera obscura, a dark box or room with a small hole that projects an image of the outside world onto a surface, was described by ancient Chinese and Greek thinkers, and by the sixteenth century, artists were using it to help them draw accurately. What no one could do for a long time was fix the image permanently, so that it did not fade the moment the light was removed.\n\nC. That problem was solved in the 1820s by the Frenchman Joseph Nicéphore Niépce, who used a light-sensitive substance spread on a metal plate and captured an image after an exposure that lasted several hours. His process was slow and impractical, but his partner, Louis Daguerre, refined it into the daguerreotype, announced to the public in 1839, which reduced exposure times to a few minutes and produced a sharp, detailed image on a silver-coated plate.\n\nD. Early cameras were bulky, expensive and required real skill to operate. That changed in 1888, when the American George Eastman introduced the Kodak camera, preloaded with a roll of film for a hundred exposures. Customers simply pressed a button, and when the roll was finished, they sent the whole camera back to the factory to have the pictures developed and the camera reloaded. The slogan, \"You press the button, we do the rest\", captured the idea perfectly, and photography became a hobby for ordinary people.\n\nE. Colour photography developed more slowly than black and white, and for decades most photographs remained monochrome even after colour processes existed, largely because of cost. The next great shift was digital. In 1975, an engineer at Kodak built the first digital camera prototype, though it was Kodak's own film business that the new technology would eventually undermine. Digital cameras became affordable for the public during the 1990s, and within two decades, they had replaced film almost entirely for casual use.\n\nF. Today, most photographs are taken on smartphones rather than dedicated cameras, and computer processing plays as large a part in the final image as the lens does. Even so, the underlying idea, that light passing through an opening can be captured to form a lasting picture, remains exactly what it was when ancient observers first noticed the effect in a darkened room.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0031-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A change in how we remember ourselves" },
+            { "key": "ii", "label": "An old principle without a permanent image" },
+            { "key": "iii", "label": "Fixing the image at last" },
+            { "key": "iv", "label": "A camera for everyone" },
+            { "key": "v", "label": "The shift to digital" },
+            { "key": "vi", "label": "The same idea, a new device" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0031-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes how the camera changed how ordinary people record their lives." } },
+            { "kind": "matching", "id": "generated-reading-general-0031-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes the camera obscura and the lack of a permanent image." } },
+            { "kind": "matching", "id": "generated-reading-general-0031-q029", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Niépce and Daguerre fixing the image." } },
+            { "kind": "matching", "id": "generated-reading-general-0031-q030", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the Kodak camera reaching ordinary people." } },
+            { "kind": "matching", "id": "generated-reading-general-0031-q031", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the arrival of digital cameras." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0031-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q032", "statement": "Before the camera, most people had no image of themselves.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A says most people went through life with no image of themselves." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q033", "statement": "Niépce's process could capture an image in a few seconds.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says the exposure lasted several hours." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q034", "statement": "The Kodak camera required customers to develop their own film.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says customers sent the whole camera back to the factory for developing." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q035", "statement": "Colour photography became common as soon as it was technically possible.", "answer": "FALSE", "evidence": { "explanation": "Paragraph E says most photographs remained monochrome for decades after colour processes existed, largely because of cost." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q036", "statement": "Digital cameras eventually affected Kodak's own film business.", "answer": "TRUE", "evidence": { "explanation": "Paragraph E says the new technology would eventually undermine Kodak's film business." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0031-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0031-q037", "prompt": "The daguerreotype was announced to the public in ______.", "accept": ["1839"], "evidence": { "explanation": "Paragraph C gives 1839." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q038", "prompt": "The Kodak camera was introduced in ______.", "accept": ["1888"], "evidence": { "explanation": "Paragraph D gives 1888." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q039", "prompt": "The Kodak camera came loaded with film for ______ exposures.", "accept": ["a hundred","100"], "evidence": { "explanation": "Paragraph D says a roll of film for a hundred exposures." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q040", "prompt": "The first digital camera prototype was built in ______.", "accept": ["1975"], "evidence": { "explanation": "Paragraph E gives 1975." } }
+          ]
+        }
+      ]
+    }
   }
 ];
