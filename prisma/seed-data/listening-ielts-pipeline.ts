@@ -7407,5 +7407,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0034-s4",
+    "title": "The History of Timekeeping – Listening Section 4",
+    "topic": "History",
+    "tags": ["academic", "history", "science", "note-completion"],
+    "data": {
+      "audioLabel": "The History of Timekeeping – Listening Section 4",
+      "transcript": "Today's lecture looks at how people have measured time throughout history, long before the clocks we rely on today.\n\nThe earliest device for tracking time was probably the sundial, which uses the changing position of a shadow cast by the sun to show the hour. Sundials were used in ancient Egypt more than three thousand years ago, but they had an obvious limitation: they were useless at night or on a cloudy day.\n\nTo measure time after dark, ancient civilisations developed the water clock, which released water at a steady rate from one container into another, marked with lines to show the passing hours. The Greek philosopher Plato is said to have used a water clock as an alarm to wake his students for lessons at dawn.\n\nMechanical clocks, driven by weights and gears rather than water or sunlight, first appeared in Europe in the thirteenth century, and were installed in the towers of churches and monasteries to call people to prayer at fixed hours. These early machines were not very accurate, often losing or gaining several minutes a day.\n\nAccuracy improved enormously in 1656, when the Dutch scientist Christiaan Huygens built the first pendulum clock, based on the discovery that a swinging pendulum takes the same time to complete each swing. Pendulum clocks reduced the daily error to under a minute, and they remained the most accurate timekeepers for more than two centuries.\n\nThe next major leap came with the quartz clock, developed in the 1920s, which uses a vibrating crystal of quartz to keep time with far greater precision than any mechanical device. Today, the most accurate clocks are atomic clocks, which measure time using the vibrations of atoms, and lose no more than a second over many millions of years, forming the basis of the world's official time standard.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0034-s4-g1",
+          "instructions": "Complete the notes with NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0034-q031", "prompt": "The earliest device for tracking time was probably the ______.", "accept": ["sundial"], "evidence": { "explanation": "The lecturer says the sundial." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q032", "prompt": "Sundials were used in ancient ______ more than three thousand years ago.", "accept": ["Egypt"], "evidence": { "explanation": "The lecturer says ancient Egypt." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q033", "prompt": "To measure time after dark, civilisations developed the ______.", "accept": ["water clock"], "evidence": { "explanation": "The lecturer names the water clock." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q034", "prompt": "Plato is said to have used a water clock to wake his students at ______.", "accept": ["dawn"], "evidence": { "explanation": "The lecturer says at dawn." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q035", "prompt": "Mechanical clocks first appeared in Europe in the ______ century.", "accept": ["thirteenth","13th"], "evidence": { "explanation": "The lecturer says the thirteenth century." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q036", "prompt": "Early mechanical clocks were installed in the towers of churches and ______.", "accept": ["monasteries"], "evidence": { "explanation": "The lecturer says monasteries." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q037", "prompt": "Christiaan Huygens built the first pendulum clock in ______.", "accept": ["1656"], "evidence": { "explanation": "The lecturer gives 1656." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q038", "prompt": "Pendulum clocks reduced the daily error to under a ______.", "accept": ["minute"], "evidence": { "explanation": "The lecturer says under a minute." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q039", "prompt": "The quartz clock was developed in the ______.", "accept": ["1920s"], "evidence": { "explanation": "The lecturer gives the 1920s." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q040", "prompt": "The most accurate clocks today are ______ clocks.", "accept": ["atomic"], "evidence": { "explanation": "The lecturer names atomic clocks." } }
+          ]
+        }
+      ]
+    }
   }
 ];
