@@ -3553,4 +3553,167 @@ export const WRITING_ITEMS: WritingSeed[] = [
       minutes: 20,
     },
   },
+
+  // ---- More Task 2 essays (online doctors, free public wifi, four-day school week, rural healthcare,
+  // influencers, national service, endangered languages, work-life balance, online reviews, online voting) ----
+  {
+    slug: "task2-remote-medical-consultations",
+    title: "Task 2: Seeing a doctor online",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "technology", "advantages-disadvantages"],
+    kind: "test",
+    data: {
+      prompt:
+        "More people are now able to consult a doctor online rather than visiting a clinic in person. What are the advantages and disadvantages of this development?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-free-public-wifi",
+    title: "Task 2: Free wifi in public places",
+    taskType: "task2",
+    topic: "Technology",
+    tags: ["writing", "task-2", "technology", "government", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that local governments should provide free wireless internet access in public places such as parks and libraries. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-four-day-school-week",
+    title: "Task 2: A shorter school week",
+    taskType: "task2",
+    topic: "Education",
+    tags: ["writing", "task-2", "education", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some people think schools should move to a four-day week, with longer school days, rather than the traditional five-day week. To what extent do you agree or disagree?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-urban-versus-rural-healthcare",
+    title: "Task 2: Healthcare in cities and in the countryside",
+    taskType: "task2",
+    topic: "Health",
+    tags: ["writing", "task-2", "health", "society", "problem-solution"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "In many countries, people living in rural areas have less access to good healthcare than those living in cities. What problems does this cause, and how can it be addressed?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-influence-of-social-media-influencers",
+    title: "Task 2: Social media influencers",
+    taskType: "task2",
+    topic: "Media",
+    tags: ["writing", "task-2", "media", "society", "two-part"],
+    kind: "test",
+    data: {
+      prompt:
+        "Some young people now see becoming a social media influencer as an attractive career. Why has this happened, and is it a positive or negative development?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-mandatory-national-service",
+    title: "Task 2: Compulsory national service",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "government", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some countries require young people to spend a period of time in national service, whether military or civilian, after leaving school. To what extent do you agree with this policy?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-preserving-endangered-languages",
+    title: "Task 2: Saving languages that are dying out",
+    taskType: "task2",
+    topic: "Culture",
+    tags: ["writing", "task-2", "culture", "language", "problem-solution"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many of the world's languages are at risk of disappearing as fewer people speak them. What problems does this cause, and what can be done to preserve endangered languages?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-work-life-balance",
+    title: "Task 2: Balancing work and personal life",
+    taskType: "task2",
+    topic: "Work",
+    tags: ["writing", "task-2", "work", "society", "opinion"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some people believe that employers should do more to help employees balance their working lives with their personal lives, while others think this is entirely the individual's responsibility. Discuss both views and give your own opinion.",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
+  {
+    slug: "task2-online-reviews-and-ratings",
+    title: "Task 2: Trusting online reviews",
+    taskType: "task2",
+    topic: "Consumer",
+    tags: ["writing", "task-2", "consumer", "technology", "opinion"],
+    kind: "test",
+    data: {
+      prompt:
+        "Many people rely on online reviews and star ratings before buying a product or choosing a restaurant. To what extent do you think online reviews are a reliable guide?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 40,
+    },
+  },
+  {
+    slug: "task2-should-voting-be-online",
+    title: "Task 2: Voting over the internet",
+    taskType: "task2",
+    topic: "Society",
+    tags: ["writing", "task-2", "society", "technology", "advantages-disadvantages"],
+    kind: "exercise",
+    data: {
+      prompt:
+        "Some countries are considering allowing citizens to vote in elections online instead of at a polling station. What are the advantages and disadvantages of online voting?",
+      instructions:
+        "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      minWords: 250,
+      minutes: 0,
+    },
+  },
 ];
