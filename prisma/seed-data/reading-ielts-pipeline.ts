@@ -10772,6 +10772,59 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0034-p1",
+    "title": "The Lives of Whales",
+    "sourceTestSet": "Academic",
+    "topic": "Nature",
+    "tags": ["academic", "nature", "animals", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. Whales are among the largest animals that have ever lived, and the blue whale, which can reach more than 30 metres in length and weigh over 150 tonnes, is the largest animal known to have existed, larger than any dinosaur. Whales are mammals, not fish: they breathe air through lungs, give birth to live young, and feed their calves on milk, just as land mammals do.\n\nB. Whales are divided into two main groups. Toothed whales, which include sperm whales, orcas and dolphins, hunt fish and squid using teeth and a form of sound-based navigation called echolocation. Baleen whales, which include the blue whale and the humpback whale, have no teeth. Instead, they filter huge numbers of small creatures, such as krill, from the water using plates of a bristle-like material called baleen that hang from the upper jaw.\n\nC. Whales evolved from land-dwelling ancestors around 50 million years ago. Fossils show a gradual transition, with early whale ancestors that had four legs and could walk on land, followed by species that spent increasing amounts of time in water, until the front legs became flippers and the back legs disappeared almost entirely. A few whale species still retain tiny, hidden leg bones as evidence of this ancestry.\n\nD. Many whale species undertake long migrations, travelling between cold waters, where food is abundant, and warmer waters, where they breed and give birth. The grey whale makes one of the longest migrations of any mammal, travelling up to 20,000 kilometres in a round trip each year between feeding grounds in the Arctic and breeding lagoons off the coast of Mexico.\n\nE. Whale communication is remarkable. Humpback whales produce long, complex sequences of sounds known as songs, which can last for over twenty minutes and are repeated for hours. Male humpbacks in a population tend to sing similar songs, which gradually change over time, and scientists are still investigating exactly what purpose the songs serve, though attracting mates is thought to be one function.\n\nF. Commercial whaling in the nineteenth and twentieth centuries reduced many whale populations drastically, and some species were hunted to the edge of extinction. An international ban on commercial whaling took effect in 1986, and since then, some populations, including the humpback whale, have recovered significantly, though others remain endangered, and threats such as ship strikes, entanglement in fishing gear and climate change continue to put pressure on whale populations worldwide.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0034-p1-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "The largest animals alive" },
+            { "key": "ii", "label": "Two different ways of feeding" },
+            { "key": "iii", "label": "Descended from land animals" },
+            { "key": "iv", "label": "Long journeys each year" },
+            { "key": "v", "label": "Songs beneath the waves" },
+            { "key": "vi", "label": "Hunted, banned and recovering" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0034-q001", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes whales as the largest animals and explains they are mammals." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q002", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes toothed whales and baleen whales." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q003", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes the evolution of whales from land ancestors." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q004", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes whale migrations." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q005", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes whaling, the ban and recovery." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0034-p1-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q006", "statement": "The blue whale is the largest animal known to have existed.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q007", "statement": "Baleen whales catch prey using teeth.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says baleen whales have no teeth and filter food using baleen plates." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q008", "statement": "All whale species have completely lost their leg bones.", "answer": "FALSE", "evidence": { "explanation": "Paragraph C says a few species still retain tiny, hidden leg bones." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q009", "statement": "The grey whale's migration is one of the longest of any mammal.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0034-p1-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0034-q010", "prompt": "Toothed whales use a form of sound-based navigation called ______.", "accept": ["echolocation"], "evidence": { "explanation": "Paragraph B names echolocation." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q011", "prompt": "Baleen whales feed on small creatures called ______.", "accept": ["krill"], "evidence": { "explanation": "Paragraph B names krill." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q012", "prompt": "Whales evolved from land-dwelling ancestors around ______ million years ago.", "accept": ["50"], "evidence": { "explanation": "Paragraph C gives 50 million years." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q013", "prompt": "The international ban on commercial whaling took effect in ______.", "accept": ["1986"], "evidence": { "explanation": "Paragraph F gives 1986." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
