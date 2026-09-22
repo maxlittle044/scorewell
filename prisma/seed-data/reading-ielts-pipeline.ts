@@ -12744,5 +12744,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0031-p1",
+    "title": "General Training Reading — Section 1: Car Wash and Skating Rink Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nSHINE BRIGHT HAND CAR WASH\nServices and Prices\n\nWe are open every day from 8:00am to 6:00pm, including public holidays. A basic wash costs £8, and a full valet, which includes the interior, costs £25. Customers can wait in our covered seating area, where free tea and coffee are provided, or leave the car and return within two hours.\n\nWe use biodegradable products, and all waste water is filtered before it drains away. Loyalty card holders receive their sixth wash free after five paid washes. Vans and larger vehicles are charged an extra £3. We do not accept card payments below £5; cash is always welcome.\n\nTEXT 2\n\nFROSTFIELD ICE RINK\nPublic Sessions and Membership\n\nPublic skating sessions run from Tuesday to Sunday, at various times throughout the day; please check the website for the current timetable. A single session costs £8.50, including skate hire. Season membership costs £120 and allows unlimited public sessions for six months.\n\nLockers are available for a £2 deposit, refunded when the key is returned. Children under 10 must be accompanied by an adult on the ice. The rink is closed every Monday for maintenance. Birthday parties can be booked for groups of up to fifteen, and include a private area for food afterwards.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0031-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q001", "statement": "The car wash is open on public holidays.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q002", "statement": "Customers must wait at the car wash while their car is cleaned.", "answer": "FALSE", "evidence": { "explanation": "Customers may leave the car and return within two hours." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q003", "statement": "Card payments are accepted for all amounts.", "answer": "FALSE", "evidence": { "explanation": "Card payments are not accepted below £5." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q004", "statement": "The car wash offers a discount for regular customers.", "answer": "TRUE", "evidence": { "explanation": "Loyalty card holders get their sixth wash free after five paid washes." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q005", "statement": "The ice rink is open every day of the week.", "answer": "FALSE", "evidence": { "explanation": "The rink is closed every Monday for maintenance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q006", "statement": "Skate hire is included in the price of a public session.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0031-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0031-q007", "prompt": "A full valet at the car wash costs £______.", "accept": ["25"], "evidence": { "explanation": "A full valet costs £25." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q008", "prompt": "Vans and larger vehicles are charged an extra £______.", "accept": ["3"], "evidence": { "explanation": "An extra £3 is charged for vans and larger vehicles." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q009", "prompt": "Season membership at the ice rink costs £______.", "accept": ["120"], "evidence": { "explanation": "Season membership costs £120." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q010", "prompt": "Lockers require a £______ deposit.", "accept": ["2"], "evidence": { "explanation": "Lockers need a £2 deposit." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0031-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0031-q011", "question": "What is provided free while customers wait at the car wash?", "options": ["Newspapers","Tea and coffee","Wifi","Snacks"], "correctIndex": 1, "evidence": { "explanation": "Free tea and coffee are provided in the seating area." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0031-q012", "question": "Who must accompany children under 10 on the ice?", "options": ["An instructor","An adult","An older child","A member of staff"], "correctIndex": 1, "evidence": { "explanation": "Children under 10 must be accompanied by an adult." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0031-q013", "question": "What does a birthday party booking include?", "options": ["Free skate hire for all guests","A private area for food","A free cake","Unlimited sessions"], "correctIndex": 1, "evidence": { "explanation": "Parties include a private area for food afterwards." } }
+          ]
+        }
+      ]
+    }
   }
 ];
