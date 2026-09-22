@@ -10825,6 +10825,59 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
     }
   },
   {
+    "slug": "generated-reading-academic-0034-p2",
+    "title": "The Story of the Microscope",
+    "sourceTestSet": "Academic",
+    "topic": "Science",
+    "tags": ["academic", "science", "history", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. While the telescope opened up the vastness of the universe, another instrument, developed at roughly the same time, opened up a world far too small to see with the naked eye. The microscope revealed that even a drop of water teems with living creatures, and it transformed biology and medicine as thoroughly as the telescope transformed astronomy.\n\nB. The earliest microscopes were simple devices, little more than a single curved lens set into a frame, similar to a strong magnifying glass. Spectacle makers in the Netherlands are usually credited with building the first compound microscope, which uses two or more lenses to achieve much greater magnification, around the year 1590, although the exact inventor and date remain uncertain.\n\nC. The instrument's potential was demonstrated by the Dutch tradesman Antonie van Leeuwenhoek, who, in the 1670s, ground his own lenses to a very high standard and built simple but powerful microscopes capable of magnifying an object several hundred times. Using these instruments, he became the first person to observe and describe bacteria, which he called \"animalcules\", as well as blood cells and the microscopic structure of muscle fibres.\n\nD. Leeuwenhoek's findings were at first met with scepticism by the Royal Society in London, the leading scientific body of the time, because no one else could immediately reproduce his results with his hand-ground lenses. Eventually, other observers confirmed his discoveries, and his careful, detailed letters describing what he saw are still regarded as a foundation of microbiology, the study of microscopic organisms.\n\nE. For more than two centuries, microscopes remained limited by the physical properties of visible light, which sets a fundamental limit on how small a detail can be seen. This limit was overcome in the 1930s with the invention of the electron microscope, which uses beams of electrons instead of light, and can magnify objects millions of times, revealing structures far smaller than any bacterium, including viruses and individual molecules.\n\nF. Microscopes remain essential today, not only in laboratories but also in medicine, industry and forensic science. Modern techniques allow scientists to observe living cells in real time, to track individual molecules moving inside a cell, and to examine materials at the scale of atoms. From a simple lens in a wooden frame, the instrument has become one of the most powerful tools in modern science.",
+      "durationMinutes": 20,
+      "groups": [
+        {
+          "id": "generated-reading-academic-0034-p2-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "A world too small to see" },
+            { "key": "ii", "label": "Early lenses and a compound design" },
+            { "key": "iii", "label": "A tradesman's remarkable discoveries" },
+            { "key": "iv", "label": "Doubt and eventual acceptance" },
+            { "key": "v", "label": "Beyond the limits of light" },
+            { "key": "vi", "label": "An essential tool today" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-academic-0034-q014", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A introduces the microscope and its importance." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q015", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes early lenses and the compound microscope." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q016", "prompt": "Which heading best summarises paragraph C?", "answer": "iii", "evidence": { "explanation": "Paragraph C describes Leeuwenhoek's discoveries." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q017", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes the Royal Society's scepticism and later acceptance." } },
+            { "kind": "matching", "id": "generated-reading-academic-0034-q018", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes the electron microscope overcoming the limits of light." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0034-p2-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q019", "statement": "The compound microscope was developed at about the same time as the telescope.", "answer": "TRUE", "evidence": { "explanation": "Paragraph A states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q020", "statement": "Historians are certain who invented the first compound microscope.", "answer": "FALSE", "evidence": { "explanation": "Paragraph B says the exact inventor and date remain uncertain." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q021", "statement": "Leeuwenhoek was the first person to observe bacteria.", "answer": "TRUE", "evidence": { "explanation": "Paragraph C states this." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-academic-0034-q022", "statement": "Other scientists immediately confirmed Leeuwenhoek's results.", "answer": "FALSE", "evidence": { "explanation": "Paragraph D says no one else could immediately reproduce his results." } }
+          ]
+        },
+        {
+          "id": "generated-reading-academic-0034-p2-g3",
+          "instructions": "Complete the sentences. NO MORE THAN TWO WORDS.",
+          "wordLimit": 2,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-academic-0034-q023", "prompt": "Leeuwenhoek called the tiny organisms he observed ______.", "accept": ["animalcules"], "evidence": { "explanation": "Paragraph C says he called them animalcules." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q024", "prompt": "Leeuwenhoek's discoveries were at first met with scepticism by the ______ in London.", "accept": ["Royal Society"], "evidence": { "explanation": "Paragraph D names the Royal Society." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q025", "prompt": "The electron microscope was invented in the ______.", "accept": ["1930s"], "evidence": { "explanation": "Paragraph E gives the 1930s." } },
+            { "kind": "completion", "id": "generated-reading-academic-0034-q026", "prompt": "Modern microscopes can examine materials at the scale of ______.", "accept": ["atoms"], "evidence": { "explanation": "Paragraph F says the scale of atoms." } }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "generated-reading-general-0017-p1",
     "title": "General Training Reading — Section 1: Yoga Studio and School Notices",
     "sourceTestSet": "General Training",
