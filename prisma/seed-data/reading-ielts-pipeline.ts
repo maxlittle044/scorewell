@@ -12788,5 +12788,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0031-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Grievance Procedure",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "GREENLAKE MANUFACTURING\nStaff Handbook — Section 17: Grievance Procedure\n\nEmployees who have a complaint about their treatment at work, or about a colleague's conduct, should first try to resolve it informally by speaking to the person concerned or to their line manager. Many issues can be settled this way without a formal process.\n\nIf informal discussion does not resolve the problem, the employee should submit a written grievance to their line manager, or to another manager if the complaint involves the line manager. A meeting will be arranged within ten working days to discuss the grievance, and the employee may bring a colleague or a trade union representative to this meeting.\n\nThe company will respond in writing within five working days of the meeting, setting out its decision and any action to be taken. Employees who are not satisfied with the outcome may appeal within five working days of receiving the decision, and the appeal will be heard by a more senior manager who was not involved in the original decision. Records of grievances are kept confidentially for three years.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0031-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q014", "statement": "Employees should first try to resolve a complaint informally.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q015", "statement": "A written grievance must always be sent to the line manager.", "answer": "FALSE", "evidence": { "explanation": "It goes to another manager if the complaint involves the line manager." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q016", "statement": "Employees may bring a colleague to the grievance meeting.", "answer": "TRUE", "evidence": { "explanation": "Employees may bring a colleague or a trade union representative." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q017", "statement": "There is no way to appeal against the outcome of a grievance.", "answer": "FALSE", "evidence": { "explanation": "Employees may appeal within five working days of receiving the decision." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0031-q018", "statement": "Grievance records are kept confidentially for three years.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0031-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0031-q019", "prompt": "A meeting will be arranged within ______ working days.", "accept": ["ten","10"], "evidence": { "explanation": "A meeting is arranged within ten working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q020", "prompt": "The company responds in writing within ______ working days of the meeting.", "accept": ["five","5"], "evidence": { "explanation": "A written response is given within five working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q021", "prompt": "An appeal must be made within ______ working days of the decision.", "accept": ["five","5"], "evidence": { "explanation": "An appeal must be made within five working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q022", "prompt": "Grievance records are kept for ______ years.", "accept": ["three","3"], "evidence": { "explanation": "Records are kept for three years." } },
+            { "kind": "completion", "id": "generated-reading-general-0031-q023", "prompt": "The appeal is heard by a more senior ______.", "accept": ["manager"], "evidence": { "explanation": "The appeal is heard by a more senior manager." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0031-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0031-q024", "question": "Who may an employee bring to the grievance meeting?", "options": ["Only a lawyer","A colleague or trade union representative","Only a family member","No one"], "correctIndex": 1, "evidence": { "explanation": "Employees may bring a colleague or a trade union representative." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0031-q025", "question": "Who hears an appeal?", "options": ["The same manager who made the decision","A more senior manager not involved in the decision","The HR department only","An outside mediator"], "correctIndex": 1, "evidence": { "explanation": "A more senior manager not involved in the original decision hears the appeal." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0031-q026", "question": "What should employees do first if they have a complaint?", "options": ["Submit a written grievance","Try to resolve it informally","Appeal immediately","Contact a trade union"], "correctIndex": 1, "evidence": { "explanation": "Employees should first try to resolve it informally." } }
+          ]
+        }
+      ]
+    }
   }
 ];
