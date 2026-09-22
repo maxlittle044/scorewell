@@ -13089,5 +13089,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0032-p2",
+    "title": "General Training Reading — Section 2: Staff Handbook, Company Property and Equipment",
+    "sourceTestSet": "General Training",
+    "topic": "Work",
+    "tags": ["general-training", "workplace", "true-false-not-given"],
+    "data": {
+      "passage": "SILVERTON ENGINEERING\nStaff Handbook — Section 21: Company Property and Equipment\n\nEmployees issued with company equipment, such as laptops, tools or safety clothing, are responsible for its proper care and must report any loss, theft or damage to their line manager within 24 hours. Equipment must be used only for work purposes, unless a manager has given specific permission for occasional personal use.\n\nAll equipment must be returned to the company on the employee's last day of employment, or earlier if requested. Employees who fail to return equipment may have its value deducted from their final pay, in line with their employment contract. Equipment should not be taken off site without authorisation from a line manager, except for laptops and phones issued for regular business use.\n\nDamaged equipment should be reported using the online equipment form, and a replacement will normally be issued within five working days. Employees must not attempt to repair equipment themselves. An annual equipment check is carried out every March, and employees must make their equipment available for inspection when asked.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0032-p2-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q014", "statement": "Employees must report lost or damaged equipment within 24 hours.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q015", "statement": "Employees may use company equipment for personal reasons at any time.", "answer": "FALSE", "evidence": { "explanation": "Personal use requires specific permission from a manager." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q016", "statement": "Equipment must be returned on the employee's last day of employment.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q017", "statement": "Employees are allowed to repair damaged equipment themselves.", "answer": "FALSE", "evidence": { "explanation": "Employees must not attempt to repair equipment themselves." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q018", "statement": "The annual equipment check takes place in March.", "answer": "TRUE", "evidence": { "explanation": "The handbook states this directly." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0032-p2-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0032-q019", "prompt": "Unreturned equipment's value may be deducted from an employee's final ______.", "accept": ["pay"], "evidence": { "explanation": "The value may be deducted from the employee's final pay." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q020", "prompt": "Damaged equipment should be reported using the online equipment ______.", "accept": ["form"], "evidence": { "explanation": "The handbook says the online equipment form." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q021", "prompt": "A replacement is normally issued within ______ working days.", "accept": ["five","5"], "evidence": { "explanation": "A replacement is issued within five working days." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q022", "prompt": "Employees must make their equipment available for ______ when asked.", "accept": ["inspection"], "evidence": { "explanation": "The handbook says available for inspection." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0032-p2-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q023", "question": "Who must be told about lost or damaged equipment?", "options": ["The line manager","The IT department","Human resources","A colleague"], "correctIndex": 0, "evidence": { "explanation": "Loss or damage must be reported to the line manager." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q024", "question": "Which items may be taken off site without special authorisation?", "options": ["Tools","Safety clothing","Laptops and phones issued for regular business use","Office furniture"], "correctIndex": 2, "evidence": { "explanation": "Laptops and phones issued for regular business use are excepted." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q025", "question": "When is the annual equipment check carried out?", "options": ["January","March","June","December"], "correctIndex": 1, "evidence": { "explanation": "The annual check is carried out every March." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q026", "question": "What must employees do before taking equipment off site?", "options": ["Nothing, it is always allowed","Get authorisation from a line manager","Inform HR in writing","Pay a deposit"], "correctIndex": 1, "evidence": { "explanation": "Equipment must not be taken off site without authorisation from a line manager, except for laptops and phones issued for regular use." } }
+          ]
+        }
+      ]
+    }
   }
 ];
