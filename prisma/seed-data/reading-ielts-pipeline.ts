@@ -13045,5 +13045,49 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0032-p1",
+    "title": "General Training Reading — Section 1: Martial Arts Club and Golf Club Notices",
+    "sourceTestSet": "General Training",
+    "topic": "Everyday life",
+    "tags": ["general-training", "notices", "everyday-life", "true-false-not-given"],
+    "data": {
+      "passage": "TEXT 1\n\nIRONGATE MARTIAL ARTS CLUB\nClasses and Membership\n\nWe offer classes in judo, karate and kickboxing, for both children and adults. Beginners' classes run on Monday and Wednesday evenings, and advanced classes on Thursdays and Saturdays. Monthly membership costs £45 and includes two classes a week; extra classes cost £6 each.\n\nAll new members must complete a short medical questionnaire before their first class, and children under 14 need written permission from a parent or guardian. Uniforms, called gis, can be bought from the club for £30, or members may bring their own if it meets the required standard. Grading examinations, which allow students to progress to a higher belt, take place every three months and cost £20.\n\nTEXT 2\n\nRIDGEWAY GOLF CLUB\nMembership and Visitor Information\n\nAnnual membership costs £850 for individuals, or £1,400 for a family of up to four. Members may play at any time, but visitors must book a tee time at least 48 hours in advance and pay a green fee of £35 on weekdays or £45 at weekends.\n\nThe clubhouse serves food from 8:00am to 8:00pm, and the pro shop sells equipment and clothing, with a 10% discount for members. Golf buggies can be hired for £25 for eighteen holes. New members receive three free lessons with a golf professional. The dress code requires collared shirts, and denim jeans are not permitted on the course.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0032-p1-g1",
+          "instructions": "Do the following statements agree with the information given? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q001", "statement": "Beginners' classes at the martial arts club run on Fridays.", "answer": "FALSE", "evidence": { "explanation": "Beginners' classes run on Monday and Wednesday." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q002", "statement": "Children under 14 need written permission to join the club.", "answer": "TRUE", "evidence": { "explanation": "Text 1 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q003", "statement": "Members must buy their uniform from the club.", "answer": "FALSE", "evidence": { "explanation": "Members may bring their own uniform if it meets the required standard." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q004", "statement": "Golf club members can play golf at any time.", "answer": "TRUE", "evidence": { "explanation": "Text 2 states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q005", "statement": "Visitors to the golf club can book a tee time on the day of their visit.", "answer": "FALSE", "evidence": { "explanation": "Visitors must book at least 48 hours in advance." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q006", "statement": "New golf club members receive free lessons.", "answer": "TRUE", "evidence": { "explanation": "New members receive three free lessons with a golf professional." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0032-p1-g2",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0032-q007", "prompt": "Monthly membership at the martial arts club costs £______.", "accept": ["45"], "evidence": { "explanation": "Monthly membership costs £45." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q008", "prompt": "Grading examinations take place every ______ months.", "accept": ["three","3"], "evidence": { "explanation": "Grading examinations take place every three months." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q009", "prompt": "Individual annual membership at the golf club costs £______.", "accept": ["850"], "evidence": { "explanation": "Individual membership costs £850." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q010", "prompt": "The green fee for visitors on weekdays is £______.", "accept": ["35"], "evidence": { "explanation": "The weekday green fee is £35." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0032-p1-g3",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q011", "question": "How much does an extra class at the martial arts club cost?", "options": ["£4","£6","£8","£10"], "correctIndex": 1, "evidence": { "explanation": "An extra class costs £6." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q012", "question": "What discount do golf club members receive in the pro shop?", "options": ["5%","10%","15%","20%"], "correctIndex": 1, "evidence": { "explanation": "Members receive a 10% discount." } },
+            { "kind": "multiple-choice", "id": "generated-reading-general-0032-q013", "question": "What is not permitted on the golf course?", "options": ["Golf buggies","Collared shirts","Denim jeans","Visitors"], "correctIndex": 2, "evidence": { "explanation": "Denim jeans are not permitted on the course." } }
+          ]
+        }
+      ]
+    }
   }
 ];
