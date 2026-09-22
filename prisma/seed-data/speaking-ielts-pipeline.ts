@@ -5599,5 +5599,260 @@ export const SPEAKING_TESTS_GENERATED: SpeakingSeed[] = [
       ],
       "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
     }
+  },
+  {
+    "slug": "generated-speaking-p1-0281",
+    "title": "Part 1: Gardening and growing plants",
+    "part": "part1",
+    "topic": "Gardening and growing plants",
+    "tags": ["speaking", "part-1", "gardening-and-growing-plants"],
+    "data": {
+      "questions": [
+        "Do you enjoy gardening?",
+        "Do you have a garden or any plants at home?",
+        "Did anyone in your family grow plants when you were young?",
+        "Would you like to grow your own vegetables?",
+        "Do you think gardening is a popular hobby in your country?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0282",
+    "title": "Part 1: Fitness and exercise routines",
+    "part": "part1",
+    "topic": "Fitness and exercise routines",
+    "tags": ["speaking", "part-1", "fitness-and-exercise-routines"],
+    "data": {
+      "questions": [
+        "Do you exercise regularly?",
+        "What kind of exercise do you prefer?",
+        "Did you play sports when you were a child?",
+        "Do you exercise alone or with other people?",
+        "Is exercise a popular activity where you live?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0283",
+    "title": "Part 1: Zoos and wildlife parks",
+    "part": "part1",
+    "topic": "Zoos and wildlife parks",
+    "tags": ["speaking", "part-1", "zoos-and-wildlife-parks"],
+    "data": {
+      "questions": [
+        "Have you ever been to a zoo?",
+        "Do you enjoy seeing animals in a zoo?",
+        "Did you visit a zoo as a child?",
+        "Do you think zoos are good places for children to learn?",
+        "Would you rather see animals in a zoo or in the wild?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0284",
+    "title": "Part 1: Online shopping",
+    "part": "part1",
+    "topic": "Online shopping",
+    "tags": ["speaking", "part-1", "online-shopping"],
+    "data": {
+      "questions": [
+        "Do you often shop online?",
+        "What kinds of things do you buy online?",
+        "Do you prefer shopping online or in physical shops?",
+        "Have you ever had a problem with something you bought online?",
+        "Do you think online shopping has changed in recent years?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p1-0285",
+    "title": "Part 1: Languages and accents",
+    "part": "part1",
+    "topic": "Languages and accents",
+    "tags": ["speaking", "part-1", "languages-and-accents"],
+    "data": {
+      "questions": [
+        "How many languages do you speak?",
+        "Do you find it easy to understand different accents?",
+        "Are there many accents in your country?",
+        "Have you ever had difficulty understanding someone because of their accent?",
+        "Do you like listening to people speak in different accents?"
+      ],
+      "guidance": "Answer each question naturally, extending your response beyond a single sentence where you can. Aim for two to four sentences per answer — long enough to show your range, short enough to stay conversational."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0281",
+    "title": "Part 2: Describe a garden that you have visited and liked",
+    "part": "part2",
+    "topic": "Gardening and growing plants",
+    "tags": ["speaking", "part-2", "gardening-and-growing-plants"],
+    "data": {
+      "questions": ["Describe a garden that you have visited and liked"],
+      "cueCardPoints": [
+        "where the garden was",
+        "when you visited it",
+        "what you saw there",
+        "and explain why you liked it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0282",
+    "title": "Part 2: Describe a form of exercise that you enjoy",
+    "part": "part2",
+    "topic": "Fitness and exercise routines",
+    "tags": ["speaking", "part-2", "fitness-and-exercise-routines"],
+    "data": {
+      "questions": ["Describe a form of exercise that you enjoy"],
+      "cueCardPoints": [
+        "what it is",
+        "how you learned to do it",
+        "how often you do it",
+        "and explain why you enjoy it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0283",
+    "title": "Part 2: Describe a zoo or wildlife park that you have visited",
+    "part": "part2",
+    "topic": "Zoos and wildlife parks",
+    "tags": ["speaking", "part-2", "zoos-and-wildlife-parks"],
+    "data": {
+      "questions": ["Describe a zoo or wildlife park that you have visited"],
+      "cueCardPoints": [
+        "where it was",
+        "when you went there",
+        "what animals you saw",
+        "and explain how you felt about the visit"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0284",
+    "title": "Part 2: Describe something you bought online that you were happy with",
+    "part": "part2",
+    "topic": "Online shopping",
+    "tags": ["speaking", "part-2", "online-shopping"],
+    "data": {
+      "questions": ["Describe something you bought online that you were happy with"],
+      "cueCardPoints": [
+        "what you bought",
+        "why you decided to buy it online",
+        "how the delivery went",
+        "and explain why you were happy with it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p2-0285",
+    "title": "Part 2: Describe a person you know who speaks with an interesting accent",
+    "part": "part2",
+    "topic": "Languages and accents",
+    "tags": ["speaking", "part-2", "languages-and-accents"],
+    "data": {
+      "questions": ["Describe a person you know who speaks with an interesting accent"],
+      "cueCardPoints": [
+        "who the person is",
+        "where the accent comes from",
+        "what it sounds like",
+        "and explain how you feel about it"
+      ],
+      "guidance": "You have 1 minute to prepare and should speak for 1–2 minutes. Use the preparation time to note four or five points, not one — running out early is a common way to lose marks."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0281",
+    "title": "Part 3: Gardens and green spaces",
+    "part": "part3",
+    "topic": "Gardening and growing plants",
+    "tags": ["speaking", "part-3", "gardening-and-growing-plants"],
+    "data": {
+      "questions": [
+        "Why do some people find gardening relaxing?",
+        "Are gardens important in cities?",
+        "Should schools teach children how to grow plants?",
+        "How has gardening changed with modern technology?",
+        "Do you think more people will grow their own food in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0282",
+    "title": "Part 3: Exercise and modern life",
+    "part": "part3",
+    "topic": "Fitness and exercise routines",
+    "tags": ["speaking", "part-3", "fitness-and-exercise-routines"],
+    "data": {
+      "questions": [
+        "Why do many people find it hard to exercise regularly?",
+        "Should employers encourage staff to exercise during the working day?",
+        "How has technology changed the way people exercise?",
+        "Are team sports more beneficial than individual exercise?",
+        "Do governments have a responsibility to promote physical activity?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0283",
+    "title": "Part 3: Zoos and animal welfare",
+    "part": "part3",
+    "topic": "Zoos and wildlife parks",
+    "tags": ["speaking", "part-3", "zoos-and-wildlife-parks"],
+    "data": {
+      "questions": [
+        "Should wild animals be kept in zoos at all?",
+        "What role can zoos play in protecting endangered species?",
+        "How have zoos changed in recent decades?",
+        "Is it better to spend money on zoos or on protecting animals in the wild?",
+        "Do you think people's attitudes towards zoos are changing?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0284",
+    "title": "Part 3: Online shopping and its effects",
+    "part": "part3",
+    "topic": "Online shopping",
+    "tags": ["speaking", "part-3", "online-shopping"],
+    "data": {
+      "questions": [
+        "Why has online shopping become so popular?",
+        "What effect has online shopping had on local shops?",
+        "Are there any risks in buying things online?",
+        "How might online shopping change in the future?",
+        "Do you think physical shops will disappear one day?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
+  },
+  {
+    "slug": "generated-speaking-p3-0285",
+    "title": "Part 3: Accents, identity and communication",
+    "part": "part3",
+    "topic": "Languages and accents",
+    "tags": ["speaking", "part-3", "languages-and-accents"],
+    "data": {
+      "questions": [
+        "Why do accents vary so much within one country?",
+        "Do people judge others based on their accent?",
+        "Should news presenters use a standard accent?",
+        "Is it important to lose a strong accent when learning a foreign language?",
+        "How might global communication affect regional accents in the future?"
+      ],
+      "guidance": "Part 3 answers should be developed and justified, not just stated. Give your view, explain the reasoning behind it, and where you can, acknowledge the counter-argument before resolving it."
+    }
   }
 ];
