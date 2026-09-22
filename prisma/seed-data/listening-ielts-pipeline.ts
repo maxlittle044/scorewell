@@ -7304,5 +7304,34 @@ export const LISTENING_TESTS_GENERATED: ListeningSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-listening-academic-0034-s1",
+    "title": "Optician Appointment Booking – Listening Section 1",
+    "topic": "Health",
+    "tags": ["academic", "health", "form-completion"],
+    "data": {
+      "audioLabel": "Optician Appointment Booking – Listening Section 1",
+      "transcript": "Receptionist: Good morning, Clearview Opticians. How can I help you?\nCaller: Hello, I'd like to book an eye test, please.\nReceptionist: Certainly. Have you visited us before?\nCaller: No, this would be my first time.\nReceptionist: Welcome. Could I take your surname?\nCaller: It's Delacroix, D-E-L-A-C-R-O-I-X.\nReceptionist: Thank you, Ms Delacroix. And your date of birth?\nCaller: The third of August, nineteen ninety-five.\nReceptionist: We have an appointment available on Wednesday at half past two.\nCaller: That works for me.\nReceptionist: Good. An eye test costs £25, but it's free if you're a student or over 60.\nCaller: I'm a student, so that's helpful.\nReceptionist: You'll need to bring your student card as proof. Do you currently wear glasses or contact lenses?\nCaller: Glasses, but they're quite old now.\nReceptionist: No problem, please bring them with you. May I have a contact number?\nCaller: Yes, it's 07700 900384.\nReceptionist: Thank you. And your email address, for the appointment confirmation?\nCaller: It's delacroix dot m at mailbox dot com.\nReceptionist: Perfect, we'll see you on Wednesday at half past two.",
+      "groups": [
+        {
+          "id": "generated-listening-academic-0034-s1-g1",
+          "instructions": "Complete the form with ONE WORD AND/OR A NUMBER for each question. Write NO MORE THAN ONE WORD AND/OR A NUMBER.",
+          "wordLimit": 1,
+          "questions": [
+            { "kind": "completion", "id": "generated-listening-academic-0034-q001", "prompt": "Surname: ______.", "accept": ["Delacroix"], "evidence": { "explanation": "The caller spells D-E-L-A-C-R-O-I-X." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q002", "prompt": "Date of birth: the third of ______.", "accept": ["August"], "evidence": { "explanation": "The caller was born on the third of August." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q003", "prompt": "Appointment day: ______.", "accept": ["Wednesday"], "evidence": { "explanation": "The appointment is on Wednesday." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q004", "prompt": "Appointment time: half past ______.", "accept": ["two","2"], "evidence": { "explanation": "The appointment is at half past two." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q005", "prompt": "Eye test cost: £______.", "accept": ["25"], "evidence": { "explanation": "An eye test costs £25." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q006", "prompt": "The caller must bring a student ______ as proof.", "accept": ["card"], "evidence": { "explanation": "The receptionist asks for a student card." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q007", "prompt": "The caller currently wears ______.", "accept": ["glasses"], "evidence": { "explanation": "The caller wears glasses." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q008", "prompt": "The caller should bring her old ______.", "accept": ["glasses"], "evidence": { "explanation": "The receptionist asks her to bring her glasses." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q009", "prompt": "Contact number: ______.", "accept": ["07700 900384"], "evidence": { "explanation": "The caller gives 07700 900384." } },
+            { "kind": "completion", "id": "generated-listening-academic-0034-q010", "prompt": "The appointment confirmation will be sent by ______.", "accept": ["email"], "evidence": { "explanation": "The receptionist asks for an email address for confirmation." } }
+          ]
+        }
+      ]
+    }
   }
 ];
