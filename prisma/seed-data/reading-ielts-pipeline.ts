@@ -13133,5 +13133,58 @@ export const READING_TESTS_GENERATED: ReadingSeed[] = [
         }
       ]
     }
+  },
+  {
+    "slug": "generated-reading-general-0032-p3",
+    "title": "The Story of the Circus",
+    "sourceTestSet": "General Training",
+    "topic": "History",
+    "tags": ["general-training", "history", "entertainment", "matching-headings", "true-false-not-given"],
+    "data": {
+      "passage": "A. The circus, with its acrobats, clowns and performing animals, is a form of entertainment recognised in almost every culture, yet its modern form is only a few centuries old. Travelling entertainers of various kinds, including jugglers, tightrope walkers and animal trainers, have existed since ancient times, but it was not until the eighteenth century that these separate acts were brought together under one roof to form what we now call a circus.\n\nB. The credit for creating the modern circus is usually given to Philip Astley, a former cavalry officer in England, who in 1768 built a ring, 42 feet across, in which he performed feats of horse riding. Astley discovered that this particular size of ring created the correct centrifugal force for a rider standing on a horse's back to keep balance, and this measurement, unchanged since, is still used in circus rings around the world today.\n\nC. Astley added other acts to his shows, including jugglers, acrobats and a clown, to entertain the audience between displays of horsemanship, and by doing so he effectively invented the format still recognisable in circuses today. His success inspired imitators across Europe, and by the early nineteenth century, permanent circus buildings had been constructed in several major cities.\n\nD. In the United States, the circus took on a different character in the second half of the nineteenth century, when P. T. Barnum, already famous as a showman, joined forces with James Bailey to create a vast travelling show, transported by railway from town to town. Their circus, which combined performers with an enormous menagerie of exotic animals, became known for its scale, and was advertised as \"The Greatest Show on Earth\".\n\nE. Circuses that use wild animals have become increasingly controversial. Concerns about the welfare of animals kept in cages and trained to perform have led many countries to introduce laws restricting or banning the use of wild animals in circuses altogether, and public attitudes towards animal performances have shifted considerably in recent decades.\n\nF. In response to these concerns, many circuses have moved away from animal acts entirely and focused instead on human performance. Cirque du Soleil, founded in Canada in 1984, has become one of the most successful examples of this approach, combining acrobatics, dance, music and elaborate costumes into theatrical productions without any animal acts, and its success has encouraged other companies to follow a similar path.",
+      "groups": [
+        {
+          "id": "generated-reading-general-0032-p3-g1",
+          "instructions": "Match each paragraph with the most suitable heading.",
+          "bank": [
+            { "key": "i", "label": "Old acts brought under one roof" },
+            { "key": "ii", "label": "An officer, a ring and a discovery" },
+            { "key": "iii", "label": "A format that spread across Europe" },
+            { "key": "iv", "label": "A vast travelling show in America" },
+            { "key": "v", "label": "Growing concern for animals" },
+            { "key": "vi", "label": "A show without animals" }
+          ],
+          "questions": [
+            { "kind": "matching", "id": "generated-reading-general-0032-q027", "prompt": "Which heading best summarises paragraph A?", "answer": "i", "evidence": { "explanation": "Paragraph A describes travelling entertainers combined into one show." } },
+            { "kind": "matching", "id": "generated-reading-general-0032-q028", "prompt": "Which heading best summarises paragraph B?", "answer": "ii", "evidence": { "explanation": "Paragraph B describes Astley's ring and his discovery about its size." } },
+            { "kind": "matching", "id": "generated-reading-general-0032-q029", "prompt": "Which heading best summarises paragraph D?", "answer": "iv", "evidence": { "explanation": "Paragraph D describes Barnum and Bailey's American travelling show." } },
+            { "kind": "matching", "id": "generated-reading-general-0032-q030", "prompt": "Which heading best summarises paragraph E?", "answer": "v", "evidence": { "explanation": "Paragraph E describes growing concern about animal welfare." } },
+            { "kind": "matching", "id": "generated-reading-general-0032-q031", "prompt": "Which heading best summarises paragraph F?", "answer": "vi", "evidence": { "explanation": "Paragraph F describes circuses moving away from animal acts." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0032-p3-g2",
+          "instructions": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q032", "statement": "The modern circus format is many thousands of years old.", "answer": "FALSE", "evidence": { "explanation": "Paragraph A says the modern form is only a few centuries old, although individual acts existed since ancient times." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q033", "statement": "Astley's ring measurement is still used in circuses today.", "answer": "TRUE", "evidence": { "explanation": "Paragraph B states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q034", "statement": "Barnum and Bailey's circus travelled by railway.", "answer": "TRUE", "evidence": { "explanation": "Paragraph D states this directly." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q035", "statement": "Every country has banned wild animals from circuses.", "answer": "NOT GIVEN", "evidence": { "explanation": "The passage says many countries have introduced restrictions, but does not say every country has done so." } },
+            { "kind": "true-false-not-given", "id": "generated-reading-general-0032-q036", "statement": "Cirque du Soleil uses wild animals in its shows.", "answer": "FALSE", "evidence": { "explanation": "Paragraph F says its productions have no animal acts." } }
+          ]
+        },
+        {
+          "id": "generated-reading-general-0032-p3-g3",
+          "instructions": "Complete the notes. NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+          "wordLimit": 3,
+          "questions": [
+            { "kind": "completion", "id": "generated-reading-general-0032-q037", "prompt": "Philip Astley built his ring in ______.", "accept": ["1768"], "evidence": { "explanation": "Paragraph B gives 1768." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q038", "prompt": "Astley's ring was ______ feet across.", "accept": ["42","forty-two"], "evidence": { "explanation": "Paragraph B says 42 feet." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q039", "prompt": "Barnum and Bailey's circus was advertised as \"The Greatest ______ on Earth\".", "accept": ["Show"], "evidence": { "explanation": "Paragraph D quotes this slogan." } },
+            { "kind": "completion", "id": "generated-reading-general-0032-q040", "prompt": "Cirque du Soleil was founded in ______.", "accept": ["1984"], "evidence": { "explanation": "Paragraph F gives 1984." } }
+          ]
+        }
+      ]
+    }
   }
 ];
